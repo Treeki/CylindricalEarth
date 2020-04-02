@@ -1,5 +1,9 @@
 Tools for researching the internals of Animal Crossing: New Horizons. More to come later...
 
+## Update notes
+
+- No BCSV changes in v1.1.2
+
 ## Stuff in here
 
 ### bcsv.py

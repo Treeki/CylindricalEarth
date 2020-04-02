@@ -140,6 +140,55 @@ preset_enum_names = {
 	0xdda5d566: 'enum_TwoGenders',
 }
 
+def analyse_value(key, value):
+	maybe_string = True
+	seen_zero = False
+	nonzero_bytes = 0
+
+	for index, byte in enumerate(value):
+		if byte > 0:
+			nonzero_bytes = index + 1
+
+			if seen_zero:
+				# non-zero char after a zero means this can't be a string
+				maybe_string = False
+			else:
+				# unprintable char means this can't be a string
+				if byte < 0x20:
+					maybe_string = False
+		else:
+			seen_zero = True
+
+	return maybe_string, nonzero_bytes
+
+
+def infer_type(rows, key, size):
+	# perform some S C I E N C E
+	maybe_string = True
+	max_size = 0
+	for row in rows:
+		_maybe_string, nonzero_bytes = analyse_value(key, row._data[key])
+		maybe_string &= _maybe_string
+		if nonzero_bytes > max_size:
+			max_size = nonzero_bytes
+
+	if size > 4:
+		return ('String', '') if maybe_string else None
+	else:
+		tag = ' # possible string' if maybe_string else ''
+		if max_size == 0:
+			return ((None, 'U8', 'U16', 'U16', 'U32')[size], ' # always 0')
+		elif max_size == 1:
+			return ('U8', '')
+		elif max_size == 2:
+			return ('U16', '')
+		elif max_size == 3 and size == 3:
+			return None
+		else:
+			return ('U32', '')
+
+
+
 def print_enum(prefix, enum):
 	en_names, jp_names = enum
 	en_names = list(map(repr, en_names))
@@ -172,7 +221,7 @@ def assign_name(key):
 				assigned_names.add(name)
 				return name
 
-with open('all_enums_v111.json', 'rb') as f:
+with open(sys.argv[2], 'rb') as f:
 	enums = json.load(f)
 for filename, enum_list in enums.items():
 	for key, enum in enum_list.items():
@@ -200,7 +249,10 @@ for filename in sorted(files):
 		print('class %s(Row):' % (filename[:-5]))
 		with open('%s/%s' % (path, filename), 'rb') as f:
 			b.load(f.read())
-		for key, (offset, size) in b.fields.items():
+		it = b.fields.items()
+		if '-sort' in sys.argv:
+			it = sorted(it)
+		for key, (offset, size) in it:
 			try:
 				name = preset_names[key]
 			except KeyError:
@@ -217,15 +269,11 @@ for filename in sorted(files):
 			else:
 				# let's make some assumptions
 				if key in type_overrides:
-					print('\t%s = %s(0x%08x)' % (name, type_overrides[key], key))
-				elif size == 1:
-					print('\t%s = U8(0x%08x)' % (name, key))
-				elif size == 2:
-					print('\t%s = U16(0x%08x)' % (name, key))
-				elif size == 4:
-					print('\t%s = U32(0x%08x)' % (name, key))
-				elif size > 8:
-					print('\t%s = String(0x%08x)' % (name, key))
+					typ = (type_overrides[key], '')
+				else:
+					typ = infer_type(b.rows, key, size)
+				if typ is not None:
+					print('\t%s = %s(0x%08x)%s' % (name, typ[0], key, typ[1]))
 				else:
 					print('\t%s = Field(0x%08x) # %d byte%s' % (name, key, size, '' if size == 1 else 's'))
 		print()

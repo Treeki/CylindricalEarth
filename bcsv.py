@@ -47,16 +47,16 @@ class Field:
 
 class U8(Field):
 	def decode(self, blob, context):
-		return struct.unpack('<B', blob)[0]
+		return struct.unpack_from('<B', blob, 0)[0]
 class U16(Field):
 	def decode(self, blob, context):
-		return struct.unpack('<H', blob)[0]
+		return struct.unpack_from('<H', blob, 0)[0]
 class U32(Field):
 	def decode(self, blob, context):
-		return struct.unpack('<I', blob)[0]
+		return struct.unpack_from('<I', blob, 0)[0]
 class Float(Field):
 	def decode(self, blob, context):
-		return struct.unpack('<f', blob)[0]
+		return struct.unpack_from('<f', blob, 0)[0]
 class String(Field):
 	def decode(self, blob, context):
 		try:
