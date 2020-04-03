@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<style>
+			body {
+				position: relative;
+				font-family: 'Tahoma', 'Verdana', sans-serif;
+			}
+			#map {
+				position: relative;
+				image-rendering: optimizeSpeed;
+				image-rendering: pixelated;
+				background-size: contain;
+			}
+			#tooltip {
+				position: absolute;
+				max-width: 18em;
+				padding: 0.5em;
+				border: 1px solid black;
+				background: rgba(40,40,40,0.8);
+				color: #eee;
+				box-shadow: black 2px 2px 2px;
+			}
+
+			.item {
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				background: white;
+				box-sizing: border-box;
+			}
+			.pickableItem {
+				border: 2px solid black;
+				border-radius: 4px;
+			}
+
+			.w2 { width: 16px; } .h2 { height: 16px; }
+			.w3 { width: 24px; } .h3 { height: 24px; }
+			.w4 { width: 32px; } .h4 { height: 32px; }
+			.w5 { width: 40px; } .h5 { height: 40px; }
+			.w6 { width: 48px; } .h6 { height: 48px; }
+			.w7 { width: 56px; } .h7 { height: 56px; }
+			.w8 { width: 64px; } .h8 { height: 64px; }
+
+			.WeedSpr { border-radius: 50%; background: #383; transform: scale(0.5); }
+
+			.FlwCosmos, .FlwTulip, .FlwPansy, .FlwRose, .FlwLily, .FlwAnemones, .FlwMum, .FlwHyacinth {
+				border-radius: 50%;
+				transform: scale(0.6);
+			}
+			[class*="PltFlw"][class*="Red"]       { background: red; }
+			[class*="PltFlw"][class*="Yellow"]    { background: yellow; }
+			[class*="PltFlw"][class*="White"]     { background: white; }
+			[class*="PltFlw"][class*="Orange"]    { background: orange; }
+			[class*="PltFlw"][class*="Pink"]      { background: pink; }
+			[class*="PltFlw"][class*="Black"]     { background: black; }
+			[class*="PltFlw"][class*="Purple"]    { background: purple; }
+			[class*="PltFlw"][class*="RedYellow"] { background: orangered; }
+			[class*="PltFlw"][class*="Blue"]      { background: blue; }
+			[class*="PltFlw"][class*="Gold"]      { background: gold; }
+			[class*="PltFlw"][class*="Green"]     { background: limegreen; }
+
+			.TreeOak, .TreeCedar, .TreePalm, .TreeBamboo {
+				border-radius: 50% 50% 0 0;
+				background: saddlebrown;
+			}
+			.TreeOakStump, .TreeCedarStump, .TreePalmStump, .TreeBambooStump {
+				border-radius: 50% 50% 0 0;
+				background: saddlebrown;
+			}
+			
+			.TreeFruit, .TreeMoney {
+				border-radius: 50% 50% 0 0;
+				border: 4px solid saddlebrown;
+			}
+			[class*="PltTreeApple"]  { background: red; }
+			[class*="PltTreeOrange"] { background: orange; }
+			[class*="PltTreePear"]   { background: greenyellow; }
+			[class*="PltTreePeach"]  { background: pink; }
+			[class*="PltTreeCherry"] { background: purple; }
+			.TreeMoney { background: gold; }
+			.pickableStone {
+				border-radius: 50%;
+				background: lightgrey;
+				transform: scale(0.5);
+			}
+			.Stone {
+				border-radius: 50% 50% 0 0;
+				background: lightgrey;
+				transform: scale(0.75);
+				border: 2px solid black;
+			}
+			.Fence {
+				background: saddlebrown;
+				transform: rotate(-45deg) scaleY(0.2);
+			}
+		</style>
+	</head>
+	<body>
+		<div id='map'></div>
+		<div id='tooltip' style='display: none'></div>
+	</body>
+	<script>
+		const map = document.querySelector('#map')
+		const tooltip = document.querySelector('#tooltip')
+		const mapScale = 8
+		const itemNames = {0xFFFE: '<null>'}
+		const itemClasses = {2502: ['pickableStone']}
+
+		let tooltipIndex = undefined
+		let mapData = null
+
+		fetch('mysteryIslands/item_names.json').then(v => v.json().then(v => Object.assign(itemNames, v)))
+		fetch('mysteryIslands/FgMainParam.json').then(v => {
+			v.json().then(v => {
+				for (const row of v) {
+					itemNames[row.id] = row.name
+					itemClasses[row.id] = [row._9b7aa0a0[0], row.name]
+				}
+
+				goForIt()
+				window.onhashchange = goForIt
+			})
+		})
+
+		function goForIt() {
+			let mapID = parseInt(window.location.hash.replace('#', ''), 10)
+			if (mapID === undefined)
+				mapID = 0
+			map.style.backgroundImage = `url('mysteryIslands/map${mapID}.png')`
+			fetch(`mysteryIslands/map${mapID}.json`).then(v => v.json().then(loadMap))
+		}
+
+		function lookupName(id) {
+			if (itemNames.hasOwnProperty(id)) {
+				return itemNames[id]
+			} else {
+				return 'Item' + id.toString(16)
+			}
+		}
+
+		function loadMap(data) {
+			mapData = data
+			map.style.width = `${mapData.width * mapScale}px`
+			map.style.height = `${(mapData.height - mapData.crop_from_top) * mapScale}px`
+			while (map.firstChild) {
+				map.removeChild(map.firstChild)
+			}
+
+			let	index = 0
+			for (const item of mapData.items) {
+				const element = document.createElement('div')
+				element.className = 'item'
+				element.style.left = `${item.x * mapScale + 1}px`
+				element.style.top = `${(item.y - mapData.crop_from_top) * mapScale + 1}px`
+				if (item.w > 1) element.classList.add(`w${item.w}`)
+				if (item.h > 1) element.classList.add(`h${item.h}`)
+				if (itemClasses.hasOwnProperty(item.type)) element.classList.add(...itemClasses[item.type])
+				if (item.type < 60000) element.classList.add('pickableItem')
+				map.appendChild(element)
+
+				element.dataset.index = index
+				index++
+			}
+		}
+
+		map.addEventListener('mousemove', e => {
+			const rect = map.getBoundingClientRect()
+			const index = e.target.dataset.index
+
+			if (index !== tooltipIndex) {
+				tooltipIndex = index
+				if (index !== undefined) {
+					const item = mapData.items[index]
+					tooltip.style.display = 'block'
+					tooltip.style.left = `${e.pageX}px`
+					tooltip.style.top = `${e.pageY}px`
+					let text = lookupName(item.type)
+					if (item.rot != 0) text += ` ${item.rot * 90}°`
+					if (item.a != 0) text += ` (A:${item.a})`
+					if (item.b != 0) text += ` (b:${item.b})`
+					if (item.c != 0) text += ` (c:${item.c})`
+					if (item.d != 0) text += ` (d:${item.d})`
+					tooltip.textContent = text
+				} else {
+					tooltip.style.display = 'none'
+				}
+			}
+		})
+	</script>
+</html>
