@@ -1,0 +1,4 @@
+@import url("../node_modules/jquery.fancytree/dist/skin-bootstrap/ui.fancytree.min.css");
+#tree { width: 100%; }
+
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");

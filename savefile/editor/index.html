@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Animal Crossing: New Horizons Savefile Editor</title>
+		<link rel="stylesheet" href="bundle.css">
+	</head>
+	<body>
+		<div class='container'>
+			<h1>AC:NH Save <s>Editor</s> Viewer</h1>
+			<div class='alert alert-info' role='alert' id='fileLoadAdvice' style='display:none'></div>
+			<div class='alert alert-danger' role='alert' id='fileLoadError' style='display:none'></div>
+
+			<ul class='nav nav-tabs' id='mainTabs' role='tablist'>
+				<li class='nav-item'><a class='nav-link active' id='infoTab' data-toggle='tab' href='#infoPane' role='tab' aria-controls='infoPane' aria-selected='true'>Info</a></li>
+				<li class='nav-item'><a class='nav-link' id='treeTab' data-toggle='tab' href='#treePane' role='tab' aria-controls='treePane' aria-selected='false'>Data Tree</a></li>
+			</ul>
+			<div class='tab-content' id='mainTabContent'>
+				<div class='tab-pane fade show active' id='infoPane' role='tabpanel' aria-labelledby='infoTab'>
+
+				</div>
+				<div class='tab-pane fade' id='treePane' role='tabpanel' aria-labelledby='treeTab'>
+					<table id='tree' class='table-hover mt-2'>
+						<colgroup>
+							<col width='40%'></col>
+							<col width='*'></col>
+							<col width='30%'></col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>Type</th><th>Name</th><th>Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src='bundle.js'></script>
+	</body>
+</html>

@@ -102,6 +102,10 @@ Pre-generated schemas for the savefile format, including original type/field nam
 
 Vaguely readable pseudo-C output. Not usable in its direct form due to missing information on types not included in the schema (primitive types that haven't been figured out, Switch SDK stuff, etc).
 
+### savefile/editor/*, captureData.py
+
+Browser-based editor for savefiles. Right now it's really just a viewer, to be honest... Built in TypeScript with Bootstrap and Fancytree.
+
 ## Ghidra Scripts
 
 ### ACEnumScraper2.py
