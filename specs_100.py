@@ -250,7 +250,7 @@ class AITag(Row):
 	))
 	UniqueID = U16(0x54706054)
 	_977adfce = String(0x977adfce) # size 32
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class AmiiboData(Row):
 	CharacterId = U32(0xc7ad2fdf)
@@ -271,7 +271,7 @@ class BgmPropertyControlParam(Row):
 
 class BgmPropertyParam(Row):
 	UniqueID = U16(0x54706054)
-	_13ab5198 = String(0x13ab5198) # size 66
+	Label = String(0x13ab5198) # string64
 
 class CalendarEventParam(Row):
 	_8c2aec6a = Enum(0x8c2aec6a, enum_8c2aec6a)
@@ -440,7 +440,7 @@ class CalendarEventParam(Row):
 
 class CharaMakeCheekTypeParam(Row):
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_977adfce = String(0x977adfce) # size 32
 	TexName = String(0xc05200e1) # string32
 
@@ -450,11 +450,11 @@ class CharaMakeEyeColorParam(Row):
 	_085e476d = U32(0x085e476d)
 	UniqueID = U16(0x54706054)
 	_977adfce = String(0x977adfce) # size 32
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class CharaMakeEyeTypeParam(Row):
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_977adfce = String(0x977adfce) # size 32
 	ResName = String(0xdcfb52e8) # string32
 	_dfa56cb9 = String(0xdfa56cb9) # size 34
@@ -468,7 +468,7 @@ class CharaMakeHairColorParam(Row):
 	_a05e5f9f = U32(0xa05e5f9f)
 	UniqueID = U16(0x54706054)
 	_977adfce = String(0x977adfce) # size 32
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class CharaMakeHairStyleParam(Row):
 	_5d966107 = U32(0x5d966107)
@@ -511,19 +511,19 @@ class CharaMakeHairStyleParam(Row):
 	ResName = String(0xdcfb52e8) # string32
 	_683b0a91 = String(0x683b0a91) # size 32
 	_d1b1b453 = U8(0xd1b1b453)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_977adfce = String(0x977adfce) # size 32
 	_617794ff = U8(0x617794ff)
 
 class CharaMakeMouthTypeParam(Row):
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_977adfce = String(0x977adfce) # size 32
 	ResName = String(0xdcfb52e8) # string32
 
 class CharaMakeNoseTypeParam(Row):
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_977adfce = String(0x977adfce) # size 32
 	NodeName = String(0x3a14deea) # string32
 
@@ -542,7 +542,7 @@ class CharaMakeSkinColorParam(Row):
 	_92b24a84 = U32(0x92b24a84)
 	UniqueID = U16(0x54706054)
 	_977adfce = String(0x977adfce) # size 32
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class ColEffectAttributeParam(Row):
 	UniqueID = U16(0x54706054)
@@ -855,7 +855,7 @@ class FgMainParam(Row):
 	Grow = U8(0xf5a73337)
 	ColorIndex = S8(0x64b8fff8)
 	DebugName = String(0x3f45f2bf) # string64
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_48ef0398 = String(0x48ef0398) # size 65
 
 class FieldCreateParam(Row):
@@ -937,7 +937,7 @@ class FieldLandMakingActionParam(Row):
 class FieldLandMakingError(Row):
 	UniqueID = U16(0x54706054)
 	_0b3be609 = U8(0x0b3be609) # possible string size 1
-	_69b161c4 = String(0x69b161c4) # size 30
+	Label = String(0x69b161c4) # string30
 	_04034aa7 = String(0x04034aa7) # size 60
 	CliffCreate = U8(0xf8a892fc)
 	_7703d2dd = String(0x7703d2dd) # size 50
@@ -1037,7 +1037,7 @@ class FieldMainFieldParam(Row):
 	UniqueID = U16(0x54706054)
 	FieldData = String(0x6e1ac981) # string32
 	_948eb946 = U8(0x948eb946)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	StructureData = String(0xecffb7c6) # string32
 	ItemData = String(0xcad74e4e) # string32
 
@@ -1256,7 +1256,7 @@ class FishStatusParam(Row):
 	_eac6a012 = U16(0xeac6a012)
 	_0e91fc27 = U8(0x0e91fc27)
 	DebugName = String(0xab51a3cf) # string32
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_3dc49bc2 = U8(0x3dc49bc2)
 	_1f875d3d = String(0x1f875d3d) # size 32
 	_1c8856db = String(0x1c8856db) # size 32
@@ -1458,7 +1458,7 @@ class InsectStatusParam(Row):
 	_5d4ef312 = U16(0x5d4ef312)
 	ItemID = U16(0x20cb67bc)
 	AppearFg = U8(0xbace6554) # size is 3, could this be an array?
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_e4b73f7d = String(0xe4b73f7d) # size 32
 	DebugName = String(0x3f45f2bf) # string64
 	_11b0b143 = String(0x11b0b143) # size 32
@@ -1490,7 +1490,7 @@ class ItemAct(Row):
 		('Chest' , 'タンス'),
 	))
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_036e8ebe = String(0x036e8ebe) # size 64
 	_31cb6b0a = U16(0x31cb6b0a)
 
@@ -1504,7 +1504,7 @@ class ItemClothGroup(Row):
 	_1e996a76 = U8(0x1e996a76)
 	_8048a3a7 = U8(0x8048a3a7)
 	_0cd7f9c5 = U8(0x0cd7f9c5)
-	_13ab5198 = String(0x13ab5198) # size 64
+	Label = String(0x13ab5198) # string64
 	_47f8f099 = U8(0x47f8f099)
 	_97eba4fc = U8(0x97eba4fc)
 	_9079071d = U8(0x9079071d)
@@ -1517,7 +1517,7 @@ class ItemClothGroup(Row):
 class ItemColor(Row):
 	UniqueID = U16(0x54706054)
 	_977adfce = String(0x977adfce) # size 32
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class ItemFilter(Row):
 	UniqueID = U16(0x54706054)
@@ -1538,13 +1538,13 @@ class ItemFilter(Row):
 	_19bb54c6 = U16(0x19bb54c6) # possible string size 2
 	CheckDonation = U8(0xffe069a3)
 	ItemNum = S8(0x8771aa09)
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class ItemFrom(Row):
 	UniqueID = U16(0x54706054)
 	_d62525d0 = U16(0xd62525d0)
 	_036e8ebe = String(0x036e8ebe) # size 64
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 
 class ItemKind(Row):
 	_d606a6c4 = Enum(0xd606a6c4, (
@@ -1647,7 +1647,7 @@ class ItemKind(Row):
 	CanNpcPresent = U8(0x0732bb98)
 	_2c1b3b5b = U8(0x2c1b3b5b)
 	_c37a683c = U8(0xc37a683c)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_d223f25c = U8(0xd223f25c)
 	_036e8ebe = String(0x036e8ebe) # size 64
 	_c8a5a762 = U8(0xc8a5a762)
@@ -1656,13 +1656,13 @@ class ItemKind(Row):
 
 class ItemMailAttachCategoryGroup(Row):
 	UniqueID = U16(0x54706054)
-	_3febc642 = String(0x3febc642) # size 50
+	Label = String(0x3febc642) # string50
 	_036e8ebe = String(0x036e8ebe) # size 64
 	_e4361c86 = String(0xe4361c86) # size 540
 
 class ItemMenuIcon(Row):
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_036e8ebe = String(0x036e8ebe) # size 64
 	ResName = String(0xdcfb52e8) # string32
 
@@ -1680,11 +1680,11 @@ class ItemNpcFtrActionParam(Row):
 	_2ca34410 = U16(0x2ca34410)
 	_977adfce = String(0x977adfce) # size 32
 	_6c6fdb31 = String(0x6c6fdb31) # size 64
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 
 class ItemNpcOutfitInfo(Row):
 	UniqueID = U16(0x54706054)
-	_13ab5198 = String(0x13ab5198) # size 64
+	Label = String(0x13ab5198) # string64
 	_977adfce = String(0x977adfce) # size 32
 	_e5c221d5 = U8(0xe5c221d5)
 	_8e07b21e = U8(0x8e07b21e) # possible string size 1
@@ -1695,7 +1695,7 @@ class ItemNpcRoomReplaceCategory(Row):
 	_84432956 = U8(0x84432956)
 	_8a647661 = U8(0x8a647661)
 	_a604b7cf = U8(0xa604b7cf)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_9f9b91e9 = U8(0x9f9b91e9)
 	_3594f417 = U8(0x3594f417)
 	_aa4f6b89 = U8(0xaa4f6b89)
@@ -1737,7 +1737,7 @@ class ItemNpcTopsForm(Row):
 class ItemOutfitCategory(Row):
 	UniqueID = U16(0x54706054)
 	Misc = U8(0x42ad246a) # size is 2, could this be an array?
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_03b7f760 = String(0x03b7f760) # size 32
 	_f71bffe7 = String(0xf71bffe7) # size 32
 	_1b93daa9 = String(0x1b93daa9) # size 32
@@ -1828,7 +1828,7 @@ class ItemOutfitInfo(Row):
 	BreakDamage = U16(0x68db76c2)
 	SpecialELink = U8(0x04ac1bea)
 	SpecialSLink = U8(0xbe782346)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_036e8ebe = String(0x036e8ebe) # size 64
 	Storage = U8(0xc89fb7af) # size is 2, could this be an array?
 
@@ -4753,7 +4753,7 @@ class ItemParam(Row):
 	FrontSwitch = U8(0x147e658d)
 	_48ef0398 = String(0x48ef0398) # size 64
 	_fd415a4c = U8(0xfd415a4c)
-	_3febc642 = String(0x3febc642) # size 50
+	Label = String(0x3febc642) # string50
 	_b8cc232c = String(0xb8cc232c) # size 64
 	_805cdabb = U8(0x805cdabb)
 
@@ -4766,7 +4766,7 @@ class ItemPlayerInitialOutfitBoyAWParam(Row):
 	Tops = U16(0x870f1e29)
 	Bottoms = U16(0xcc136eb5)
 	AcceMouth = U16(0x9403c267)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 
 class ItemPlayerInitialOutfitBoySSParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4777,7 +4777,7 @@ class ItemPlayerInitialOutfitBoySSParam(Row):
 	Tops = U16(0x870f1e29)
 	Bottoms = U16(0xcc136eb5)
 	AcceMouth = U16(0x9403c267)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 
 class ItemPlayerInitialOutfitGirlAWParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4788,7 +4788,7 @@ class ItemPlayerInitialOutfitGirlAWParam(Row):
 	Tops = U16(0x870f1e29)
 	Bottoms = U16(0xcc136eb5)
 	AcceMouth = U16(0x9403c267)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 
 class ItemPlayerInitialOutfitGirlSSParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4799,7 +4799,7 @@ class ItemPlayerInitialOutfitGirlSSParam(Row):
 	Tops = U16(0x870f1e29)
 	Bottoms = U16(0xcc136eb5)
 	AcceMouth = U16(0x9403c267)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 
 class ItemPlayerTopsForm(Row):
 	_1e4ff55f = U32(0x1e4ff55f)
@@ -4810,7 +4810,7 @@ class ItemPlayerTopsForm(Row):
 	_df7ab4c3 = String(0xdf7ab4c3) # size 64
 	_4e3ee3de = String(0x4e3ee3de) # size 64
 	_48ef0398 = String(0x48ef0398) # size 64
-	_13ab5198 = String(0x13ab5198) # size 64
+	Label = String(0x13ab5198) # string64
 	_036e8ebe = String(0x036e8ebe) # size 64
 	_15d08d9a = String(0x15d08d9a) # size 34
 
@@ -4894,13 +4894,13 @@ class ItemRemakeCommonPattern(Row):
 		('Cool'        , 'クール'),
 	))
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_5aebbfb5 = String(0x5aebbfb5) # size 66
 
 class ItemRemakeCommonPatternCategory(Row):
 	SortID = U32(0x8fb1ed85)
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class ItemSeasonalityParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4923,7 +4923,7 @@ class ItemSize(Row):
 	_09b64264 = U16(0x09b64264)
 	UniqueID = U16(0x54706054)
 	_16b8f524 = U8(0x16b8f524)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_977adfce = String(0x977adfce) # size 32
 	_bcb13daf = U8(0xbcb13daf)
 
@@ -4947,7 +4947,7 @@ class ItemStrSort(Row):
 class ItemUIContextMenu(Row):
 	UniqueID = U16(0x54706054)
 	Priority = U16(0x200dd382)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_036e8ebe = String(0x036e8ebe) # size 64
 	_026f0892 = String(0x026f0892) # size 32
 	AutoDisappear = U8(0xf2ce6e17) # size is 4, could this be an array?
@@ -4957,7 +4957,7 @@ class ItemUnitIcon(Row):
 	UniqueID = U16(0x54706054)
 	_fc86133a = U16(0xfc86133a)
 	_48ef0398 = String(0x48ef0398) # size 64
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	ColorIndex = S8(0x64b8fff8)
 	_036e8ebe = String(0x036e8ebe) # size 64
 	ModelName = String(0x39b5a93d) # string32
@@ -5333,7 +5333,7 @@ class NpcEquipRule(Row):
 		('Always'    , '◎'),
 	))
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_036e8ebe = String(0x036e8ebe) # size 64
 	_2c2a379e = U8(0x2c2a379e)
 	_a4396b29 = U8(0xa4396b29)
@@ -5451,7 +5451,7 @@ class NpcLooksParam(Row):
 	_5aa21d87 = U32(0x5aa21d87) # possible string size 4
 	_eb39552d = U32(0xeb39552d) # possible string size 4
 	UniqueID = U16(0x54706054)
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class NpcMoveRoomTemplate(Row):
 	RoomType = U32(0xd9a1f501)
@@ -5527,7 +5527,7 @@ class NpcSpClothSetParam(Row):
 	Bottoms = U16(0xcc136eb5)
 	Tops = U16(0x870f1e29)
 	AcceEye = U16(0x2b57b24a)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_036e8ebe = String(0x036e8ebe) # size 64
 
 class NpcSpModelScale(Row):
@@ -5549,7 +5549,7 @@ class NpcSpModelScale(Row):
 	_d654d84c = U32(0xd654d84c) # possible string size 4
 	UniqueID = U16(0x54706054)
 	_977adfce = String(0x977adfce) # size 32
-	_87bf00e8 = String(0x87bf00e8) # size 34
+	Label = String(0x87bf00e8) # string32
 
 class NpcSpServiceMotionRandom(Row):
 	UniqueID = U16(0x54706054)
@@ -5557,7 +5557,7 @@ class NpcSpServiceMotionRandom(Row):
 	EndHour = U8(0x675ca211)
 	StartHour = U8(0x8ae48661)
 	_9bee16d1 = String(0x9bee16d1) # size 66
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	SelectRate = U8(0x1e7ef977)
 	Type = U8(0xd1f6dae0) # size is 3, could this be an array?
 
@@ -5571,7 +5571,7 @@ class NpcSpServiceMotionWork(Row):
 	_c9e3287e = String(0xc9e3287e) # size 66
 	_3e18ffeb = U8(0x3e18ffeb)
 	_2b3f3307 = String(0x2b3f3307) # size 66
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_c4fd5839 = String(0xc4fd5839) # size 66
 	_1b73a037 = U8(0x1b73a037)
 	_2fcae33a = String(0x2fcae33a) # size 66
@@ -5766,7 +5766,7 @@ class ReleaseVersionParam(Row):
 	UniqueID = U16(0x54706054)
 	ReleaseKey = U16(0x76c190b2)
 	_977adfce = String(0x977adfce) # size 32
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 
 class RoomArchParam(Row):
 	UniqueID = U16(0x54706054)
@@ -5893,7 +5893,7 @@ class SoundAudioMusic(Row):
 	UniqueID = U16(0x54706054)
 	_3637ebb9 = U16(0x3637ebb9)
 	AudioMusicID = S16(0xd4892d19)
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 	_32bc8d59 = U16(0x32bc8d59) # possible string size 2
 
 class SoundInstruments(Row):
@@ -5905,7 +5905,7 @@ class SoundInstruments(Row):
 	_3637ebb9 = U16(0x3637ebb9)
 	UniqueID = U16(0x54706054)
 	_85cf1615 = String(0x85cf1615) # size 128
-	_87bf00e8 = String(0x87bf00e8) # size 32
+	Label = String(0x87bf00e8) # string32
 
 class SoundMaterialType(Row):
 	UniqueID = U16(0x54706054)

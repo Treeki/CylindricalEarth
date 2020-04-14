@@ -54,6 +54,15 @@ class U16(Field):
 class U32(Field):
 	def decode(self, blob, context):
 		return struct.unpack_from('<I', blob, 0)[0]
+class S8(Field):
+	def decode(self, blob, context):
+		return struct.unpack_from('<b', blob, 0)[0]
+class S16(Field):
+	def decode(self, blob, context):
+		return struct.unpack_from('<h', blob, 0)[0]
+class S32(Field):
+	def decode(self, blob, context):
+		return struct.unpack_from('<i', blob, 0)[0]
 class Float(Field):
 	def decode(self, blob, context):
 		return struct.unpack_from('<f', blob, 0)[0]
