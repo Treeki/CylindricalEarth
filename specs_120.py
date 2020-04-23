@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from bcsv import *
 
 enum_8c2aec6a = (
@@ -276,6 +275,19 @@ class CalendarEventCountryParam(Row):
 	UniqueID = U16(0x54706054)
 	Label = String(0x87bf00e8) # string32
 
+class CalendarEventJuneBrideExchange(Row):
+	_598463c8 = U32(0x598463c8)
+	_612bc6cf = U32(0x612bc6cf)
+	_ad1e04ad = U16(0xad1e04ad)
+	_a0bb7510 = U8(0xa0bb7510)
+	_7c226372 = U8(0x7c226372)
+
+class CalendarEventJuneBrideReward(Row):
+	_612bc6cf = U32(0x612bc6cf)
+	_60836eaa = U16(0x60836eaa) # possible string size 2
+	_657550b3 = U16(0x657550b3) # possible string size 2
+	_7c226372 = U32(0x7c226372)
+
 class CalendarEventParam(Row):
 	_70703269 = Enum(0x70703269, (
 		('Global'  , 'グローバル'),
@@ -292,6 +304,7 @@ class CalendarEventParam(Row):
 	UniqueID = U16(0x54706054)
 	Announce = U8(0x32c643e6)
 	BbsDays = U8(0x952cf32e)
+	_e5337bd9 = U8(0xe5337bd9)
 	BoardDesign = U8(0xceb81aff)
 	_a45750cc = U8(0xa45750cc)
 	_1ceb37a9 = U8(0x1ceb37a9)
@@ -443,10 +456,11 @@ class CalendarEventParam(Row):
 	_fc6134e3 = U8(0xfc6134e3)
 	WeatherPattern = String(0x062ec6cf) # string32
 	_4c8935ec = U8(0x4c8935ec)
-	_b63221ae = U32(0xb63221ae)
+	_b63221ae = U16(0xb63221ae)
 
 class CalendarEventRegionParam(Row):
 	_82bfcf29 = U32(0x82bfcf29) # possible string size 4
+	_8b3c9137 = U32(0x8b3c9137)
 	_af2602cd = U16(0xaf2602cd) # possible string size 2
 	_92462b7d = U16(0x92462b7d) # possible string size 2
 	_2066f76d = U16(0x2066f76d) # possible string size 2
@@ -711,7 +725,7 @@ class EventFlagsLifeSupportDailyParam(Row):
 	_679e3850 = U8(0x679e3850)
 	_afb1f366 = U8(0xafb1f366)
 	_fa93f14b = U8(0xfa93f14b)
-	_c47fe703 = U8(0xc47fe703) # possible string size 1
+	_c47fe703 = U8(0xc47fe703)
 	_45f320f2 = String(0x45f320f2) # size 64
 	_85cf1615 = String(0x85cf1615) # size 128
 	_60da5fef = U8(0x60da5fef)
@@ -774,7 +788,7 @@ class EventFlagsPlayerTempParam(Row):
 	DefaultValue = U16(0x797f5754)
 	MaxValue = U16(0x0110b14c)
 	UniqueID = U16(0x54706054)
-	_3dad9135 = U8(0x3dad9135) # possible string size 1
+	_3dad9135 = U8(0x3dad9135)
 	_3c7fb88f = U8(0x3c7fb88f)
 	_fa93f14b = U8(0xfa93f14b)
 	_45f320f2 = String(0x45f320f2) # size 64
@@ -814,6 +828,7 @@ class EventPlazaObjModelParam(Row):
 		('BulletinBoard' , 'BulletinBoard'),
 		('Campfire'      , 'Campfire'),
 	))
+	RoofMaterial = U16(0x83b54e59)
 	UniqueID = U16(0x54706054)
 	FlowFileName = String(0x364c173e) # string32
 	NearCulling = U8(0xb418fb3b)
@@ -1333,10 +1348,11 @@ class HumanAnimParam(Row):
 	_26911c10 = String(0x26911c10) # size 31
 
 class IndoorIdrParam(Row):
+	_607ccfce = U16(0x607ccfce) # possible string size 2
 	_91b7e30b = U16(0x91b7e30b)
 	_707e79ff = U16(0x707e79ff)
 	UniqueID = U16(0x54706054)
-	_4b9c4229 = String(0x4b9c4229) # size 66
+	_4b9c4229 = String(0x4b9c4229) # size 64
 
 class IndoorPhotoStudioItemParam(Row):
 	_d5a8bf7e = Enum(0xd5a8bf7e, enum_CompassNESW)
@@ -1688,9 +1704,9 @@ class ItemKind(Row):
 
 class ItemMailAttachCategoryGroup(Row):
 	UniqueID = U16(0x54706054)
-	_e4361c86 = String(0xe4361c86) # size 540
+	_e4361c86 = String(0xe4361c86) # size 693
 	Label = String(0x3febc642) # string50
-	_036e8ebe = String(0x036e8ebe) # size 64
+	_036e8ebe = String(0x036e8ebe) # size 67
 
 class ItemMenuIcon(Row):
 	UniqueID = U16(0x54706054)
@@ -1778,6 +1794,7 @@ class ItemOutfitCategory(Row):
 	Label = String(0x87bf00e8) # string32
 	Misc = U8(0x42ad246a) # size is 2, could this be an array?
 	_977adfce = String(0x977adfce) # size 32
+	_a9f8ee25 = String(0xa9f8ee25) # size 32
 	_6ce1d85c = String(0x6ce1d85c) # size 20
 	_4ec849ec = String(0x4ec849ec) # size 20
 	_f71bffe7 = String(0xf71bffe7) # size 32
@@ -3125,6 +3142,7 @@ class ItemParam(Row):
 		('NotForSale', '非売品'),
 		('NotSee'    , '掲載不可'),
 	))
+	_8900b8a0 = U32(0x8900b8a0)
 	_db1a2f07 = Enum(0xdb1a2f07, (
 		('None'                     , 'なし'),
 		('ShopDefault'              , '店_初期'),
@@ -4819,7 +4837,7 @@ class ItemParam(Row):
 	_02169dc7 = U16(0x02169dc7)
 	_c353ef20 = U16(0xc353ef20) # possible string size 2
 	_bcf5d17a = U16(0xbcf5d17a)
-	_bee071da = U16(0xbee071da) # possible string size 2
+	_bee071da = U16(0xbee071da)
 	FloorTableId = U16(0xc833b068)
 	_9ec34ed4 = U16(0x9ec34ed4)
 	_9bd046a2 = U16(0x9bd046a2)
@@ -5063,6 +5081,13 @@ class ItemUnitIcon(Row):
 	_036e8ebe = String(0x036e8ebe) # size 64
 	_48ef0398 = String(0x48ef0398) # size 67
 
+class JuneBrideWallFloor(Row):
+	_23a01e5b = U32(0x23a01e5b)
+	_4e718582 = U16(0x4e718582)
+	_a1249129 = U16(0xa1249129)
+	UniqueID = U16(0x54706054)
+	_350e1ef9 = U16(0x350e1ef9)
+
 class LocalizeNameConvertParam(Row):
 	UniqueID = U16(0x54706054)
 	BaseName = String(0x50edd045) # string32
@@ -5194,6 +5219,13 @@ class MessageCardSelectPresentSp(Row):
 	_e060d3cd = U16(0xe060d3cd)
 	ItemRemakeType = U8(0xc233727b) # size is 2, could this be an array?
 
+class MuseumArtDonateInfo(Row):
+	_be776e71 = U32(0xbe776e71) # possible string size 4
+	ModelID = U16(0xfdeed09c)
+	UniqueID = U16(0x54706054)
+	WatchItem = U16(0xb76b7d37)
+	CameraParamName = String(0xb16c3035) # string33
+
 class MuseumFossilDonateInfo(Row):
 	_be776e71 = Enum(0xbe776e71, enum_be776e71)
 	ModelID = U16(0xfdeed09c)
@@ -5238,6 +5270,22 @@ class MuseumNameboardInfo(Row):
 	_b58d7541 = U16(0xb58d7541)
 	UniqueID = U16(0x54706054)
 	ModelResName = String(0xfad4ff78) # string65
+	_c1bb7d2d = U16(0xc1bb7d2d) # possible string size 3
+
+class MuseumStampRackInfo(Row):
+	_be776e71 = U32(0xbe776e71)
+	_98ff7f38 = U32(0x98ff7f38)
+	_e23f2c58 = U32(0xe23f2c58)
+	_b02f0c17 = U16(0xb02f0c17)
+	_f78f76c7 = U16(0xf78f76c7)
+	_caef5f77 = U16(0xcaef5f77)
+	_d4f5b3e6 = U16(0xd4f5b3e6)
+	UniqueID = U16(0x54706054)
+	_a90b807e = U8(0xa90b807e)
+	_0512b63c = String(0x0512b63c) # size 32
+	_4ab9b98a = String(0x4ab9b98a) # size 32
+	_96d80132 = String(0x96d80132) # size 32
+	_ed4b6070 = U8(0xed4b6070)
 
 class MuseumWatchPoint(Row):
 	SilhouetteID = U32(0x3e884a6d)
@@ -5303,7 +5351,9 @@ class MysteryTourParam(Row):
 	_88bd09c2 = String(0x88bd09c2) # size 32
 	_4e5cd9f3 = String(0x4e5cd9f3) # size 32
 	_8f2f4bf9 = String(0x8f2f4bf9) # size 32
-	SelectWeight = U8(0xd89a0db0) # size is 2, could this be an array?
+	_0b3d1d54 = String(0x0b3d1d54) # size 32
+	SelectWeight = U8(0xd89a0db0)
+	_b1589411 = U8(0xb1589411)
 
 class NmlNpcParam(Row):
 	_a54f92fd = U32(0xa54f92fd)
@@ -5613,7 +5663,9 @@ class NpcMsgBullfestParam(Row):
 	_3b13a395 = U16(0x3b13a395) # possible string size 2
 	ShoesID = U16(0xf07156d2)
 	SocksID = U16(0xe113ac8d)
+	_ebb9a634 = U16(0xebb9a634) # possible string size 2
 	TopsID = U16(0xdfb46994)
+	_003c0210 = U16(0x003c0210) # possible string size 2
 	UniqueID = U16(0x54706054)
 	_7991b277 = U16(0x7991b277)
 	_92a60974 = U32(0x92a60974) # possible string size 4
@@ -5769,7 +5821,8 @@ class PlayerStateParam(Row):
 	_fce7d916 = U8(0xfce7d916)
 	_a84507aa = U8(0xa84507aa)
 	_c033d95a = U8(0xc033d95a) # possible string size 1
-	WaitType = U8(0x9067bb0e) # size is 3, could this be an array?
+	_ed32aade = U8(0xed32aade)
+	WaitType = U8(0x9067bb0e) # size is 2, could this be an array?
 
 class RadioCM(Row):
 	SelectRate = Float(0x293ee089)
@@ -6357,6 +6410,8 @@ lookup = {
 	'BgmPropertyControlParam.bcsv': BgmPropertyControlParam,
 	'BgmPropertyParam.bcsv': BgmPropertyParam,
 	'CalendarEventCountryParam.bcsv': CalendarEventCountryParam,
+	'CalendarEventJuneBrideExchange.bcsv': CalendarEventJuneBrideExchange,
+	'CalendarEventJuneBrideReward.bcsv': CalendarEventJuneBrideReward,
 	'CalendarEventParam.bcsv': CalendarEventParam,
 	'CalendarEventRegionParam.bcsv': CalendarEventRegionParam,
 	'CharaMakeCheekTypeParam.bcsv': CharaMakeCheekTypeParam,
@@ -6440,6 +6495,7 @@ lookup = {
 	'ItemStrSort.bcsv': ItemStrSort,
 	'ItemUIContextMenu.bcsv': ItemUIContextMenu,
 	'ItemUnitIcon.bcsv': ItemUnitIcon,
+	'JuneBrideWallFloor.bcsv': JuneBrideWallFloor,
 	'LocalizeNameConvertParam.bcsv': LocalizeNameConvertParam,
 	'MannequinCoodinate.bcsv': MannequinCoodinate,
 	'MaterialType.bcsv': MaterialType,
@@ -6450,11 +6506,13 @@ lookup = {
 	'MessageCardSelectDesignSp.bcsv': MessageCardSelectDesignSp,
 	'MessageCardSelectPresent.bcsv': MessageCardSelectPresent,
 	'MessageCardSelectPresentSp.bcsv': MessageCardSelectPresentSp,
+	'MuseumArtDonateInfo.bcsv': MuseumArtDonateInfo,
 	'MuseumFossilDonateInfo.bcsv': MuseumFossilDonateInfo,
 	'MuseumNPCLayoutInfo.bcsv': MuseumNPCLayoutInfo,
 	'MuseumNPCSilhouette.bcsv': MuseumNPCSilhouette,
 	'MuseumNPCSpotTalk.bcsv': MuseumNPCSpotTalk,
 	'MuseumNameboardInfo.bcsv': MuseumNameboardInfo,
+	'MuseumStampRackInfo.bcsv': MuseumStampRackInfo,
 	'MuseumWatchPoint.bcsv': MuseumWatchPoint,
 	'MysteryTourFieldParam.bcsv': MysteryTourFieldParam,
 	'MysteryTourFishParam.bcsv': MysteryTourFishParam,
