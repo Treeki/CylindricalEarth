@@ -97,18 +97,35 @@ class NoexsClient:
         self._recv_result() #ignored
         return result
 
+    def write(self, addr, data):
+        self.sock.sendall(struct.pack('<BQI', int(Command.WRITE), addr, len(data)))
+        self._assert_result_ok(throwaway=True)
+
+        self.sock.sendall(data)
+        self._assert_result_ok()
+
     def resume(self):
         self.sock.sendall(struct.pack('<B', int(Command.CONTINUE)))
         self._assert_result_ok()
+
     def pause(self):
         self.sock.sendall(struct.pack('<B', int(Command.PAUSE)))
         self._assert_result_ok()
+
     def attach(self, pid):
         self.sock.sendall(struct.pack('<BQ', int(Command.ATTACH), pid))
         self._assert_result_ok()
+
     def detach(self):
         self.sock.sendall(struct.pack('<B', int(Command.DETACH)))
         self._assert_result_ok()
+
+    def set_breakpoint(self, id, addr, flags):
+        self.sock.sendall(struct.pack('<BIQQ', int(Command.SET_BREAKPOINT), id, addr, flags))
+        self._assert_result_ok()
+
+    def set_watchpoint(self, id, addr, flags):
+        raise NotImplementedError
 
     def get_pids(self):
         self.sock.sendall(struct.pack('<B', int(Command.GET_PIDS)))
