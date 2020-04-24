@@ -1479,7 +1479,7 @@ struct s_ec5af5d2 {                                /* 0x4 big, align 4 */
 struct GSaveFg {                                   /* 0x928 big, align 4 */
   _7b9816fb                         _bc584dbe;                                 // @0x0 size 0x900, align 1
   u16                               SpecialityFruit;                           // @0x900 size 0x2, align 2
-  u16                               _4db3bdd0;                                 // @0x902 size 0x2, align 2
+  u16                               SisterFruit;                               // @0x902 size 0x2, align 2
   u32                               _e88f809d[8];                              // @0x904 size 0x4, align 4
   u8                                VillageFlower;                             // @0x924 size 0x1, align 1
   u8                                SpecialityFlower;                          // @0x925 size 0x1, align 1
