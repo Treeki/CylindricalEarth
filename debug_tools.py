@@ -191,7 +191,7 @@ class ItemTag2D:
                     yield x,y,val
 
 
-nx = NoexsClient(('192.168.0.121', 7331))
+nx = NoexsClient(('10.0.128.113', 7331))
 nx.attach(find_ACNH(nx))
 print(nx.get_status())
 
@@ -227,6 +227,7 @@ def u32(re_p): return nx.peek32(re_to_nx(re_p))
 def u16(re_p): return nx.peek16(re_to_nx(re_p))
 def u8(re_p):  return nx.peek8(re_to_nx(re_p))
 def read(re_p, size): return nx.read(re_to_nx(re_p), size)
+def write(re_p, data): return nx.write(re_to_nx(re_p), data)
 
 
 def readRectHU(re_p):
@@ -251,6 +252,6 @@ if __name__ == '__main__':
     for x,y,tag in layers[0].tags.nonZeroTagIterator:
         print(f'{x},{y} {tag:8x}')
 
-field = FieldSystem.get().defaultField
-main = field.itemLayers
-nx.resume()
+# field = FieldSystem.get().defaultField
+# main = field.itemLayers
+# nx.resume()

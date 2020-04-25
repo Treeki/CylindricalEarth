@@ -137,10 +137,33 @@ def handle_enum_getter(fn):
 			return getReferencesFrom(add_x1.address)[0].toAddress
 	print('FAILED TO FIND MEMCPY')
 
-for ref in getReferencesTo(toAddr('BcsvHeader_isJPEnums')):
+def find_bcsvheader_isjpenums():
+	fn_name = 'BcsvHeader_isJPEnums'
+
+	addr = toAddr(fn_name)
+	if addr is not None:
+		return addr
+	
+	print('%s not found, searching all functions for it...' % fn_name)
+
+	fm = currentProgram.getFunctionManager()
+	funcs = fm.getFunctions(True)
+	for func in funcs:
+		addr = func.getEntryPoint()
+		instr = getInstructionAt(addr)
+		if instr is not None and instr.mnemonicString == 'cbz':
+			if getInt(addr.add(4)) == 0x39402c08:
+				if getInt(addr.add(8)) == 0x7100011f:
+					if getInt(addr.add(12)) == 0x1a9f07e0:
+						func.setName(fn_name, ghidra.program.model.symbol.SourceType.DEFAULT)
+						print('Found it at %r' % addr)
+						return addr
+
+	raise ValueError('Couldn\'t find %s' % fn_name)
+
+for ref in getReferencesTo(find_bcsvheader_isjpenums()):
 	track_jpe_cond_call(ref.fromAddress)
 
 import json
 with open('bcsv_enum_results.json', 'w') as f:
 	json.dump(results, f, indent=4, sort_keys=True)
-
