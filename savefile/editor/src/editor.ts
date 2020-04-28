@@ -1,7 +1,7 @@
 import "bootstrap"
 import $ from "jquery"
-import { identifySaveVersion, Schema, findOneMatchingType, SchemaType, loadSchema, Accessor, StructAccessor, PrimitiveAccessor, ArrayAccessor, TreeAccessor, gameData, setGameData } from "./data"
-import { decryptSave } from "./crypto"
+import { identifySaveVersion, Schema, findOneMatchingType, SchemaType, loadSchema, Accessor, StructAccessor, EditableAccessor, TreeAccessor, gameData, setGameData, updateHashes } from "./data"
+import { decryptSave, encryptSave } from "./crypto"
 import "jquery.fancytree"
 import "jquery.fancytree/dist/modules/jquery.fancytree.edit"
 import "jquery.fancytree/dist/modules/jquery.fancytree.table"
@@ -119,7 +119,7 @@ class EditContext {
 	readonly tree: Fancytree.Fancytree
 	readonly root: StructAccessor
 
-	constructor(node: JQuery, readonly header: ArrayBuffer, readonly data: ArrayBuffer, offset: number, schema: Schema, type: SchemaType) {
+	constructor(node: JQuery, readonly header: ArrayBuffer, readonly data: ArrayBuffer, offset: number, schema: Schema, type: SchemaType, readonly filename: string) {
 		this.root = new StructAccessor(schema, new DataView(data), offset, type, 'root')
 		this.tree = node.fancytree({
 			source: buildNodeChildren(this.root),
@@ -129,6 +129,15 @@ class EditContext {
 			icon: false,
 			renderColumns: (event, data) => this._renderColumns(event, data),
 			dblclick: (event, data) => {
+				const acc = data.node.data.accessor as Accessor|EditableAccessor
+				if ('getEditableStr' in acc) {
+					const oldVal = acc.getEditableStr()
+					const newVal = prompt('New value', oldVal)
+					if (newVal !== null) {
+						acc.setEditableStr(newVal)
+						data.node.render(true)
+					}
+				}
 				return true
 			}
 		})
@@ -139,6 +148,20 @@ class EditContext {
 		const cols = node.tr.querySelectorAll('td')
 		cols[1].textContent	= node.data.fieldName
 		cols[2].textContent = node.data.accessor.displayValue
+	}
+
+	saveFile() {
+		updateHashes(this.data, 0, this.root.type, this.root.schema)
+
+		const eData = encryptSave(this.header, this.data)
+		const blob = new Blob([eData], {type: 'application/octet-stream'})
+		const url = URL.createObjectURL(blob)
+		const link = document.getElementById('downloadBtn') as HTMLAnchorElement
+		if (link.href !== undefined)
+			URL.revokeObjectURL(link.href)
+		link.download = this.filename
+		link.href = url
+		link.classList.remove('d-none')
 	}
 }
 
@@ -187,7 +210,7 @@ async function loadHtml5FileAsync(headerFile: File, bodyFile: File) {
 		context.tree.widget.destroy()
 		context = null
 	}
-	context = new EditContext($('#tree'), headerBuffer, bodyBuffer, 0, schema, type)
+	context = new EditContext($('#tree'), headerBuffer, bodyBuffer, 0, schema, type, bodyFile.name)
 }
 
 const fileStateMachine = new FileStateMachine({
@@ -203,12 +226,52 @@ function killEvent(e: Event) {
 	e.preventDefault()
 }
 
+
+let rawImportFlag = false
+
 document.body.addEventListener('dragenter', killEvent, false)
 document.body.addEventListener('dragover', killEvent, false)
 document.body.addEventListener('drop', e => {
 	killEvent(e)
+
 	const files = e.dataTransfer?.files
-	if (files)
+	if (files) {
+		if (rawImportFlag) {
+			rawImportFlag = false
+			files[0].arrayBuffer().then(buf => {
+				if (context !== null) {
+					const ctxArray = new Uint8Array(context.data)
+					const newArray = new Uint8Array(buf)
+					ctxArray.set(newArray)
+					loadAdvice('File replaced')
+				}
+			})
+			return
+		}
 		fileStateMachine.dropFiles(files)
+	}
 }, false)
+
+
+document.getElementById('saveBtn')?.addEventListener('click', () => {
+	context?.saveFile()
+})
+
+// this is a bad hack, should be better
+document.getElementById('exportRawBtn')?.addEventListener('click', () => {
+	if (context === null)
+		return
+	const blob = new Blob([context.data], {type: 'application/octet-stream'})
+	const url = URL.createObjectURL(blob)
+	const link = document.getElementById('downloadBtn') as HTMLAnchorElement
+	if (link.href !== undefined)
+		URL.revokeObjectURL(link.href)
+	link.download = 'rawData.bin'
+	link.href = url
+	link.classList.remove('d-none')
+	loadAdvice('File exported, click Download')
+})
+document.getElementById('importRawBtn')?.addEventListener('click', () => {
+	rawImportFlag = true
+})
 

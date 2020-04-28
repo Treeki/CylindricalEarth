@@ -28457,6 +28457,9 @@ function mult32(a, b) {
     const high = ((ah * bl) + (al * bh)) & 0xFFFF;
     return ((high << 16) >>> 0) + (al * bl);
 }
+function rol(v, by) {
+    return ((v << by) | (v >>> (32 - by))) >>> 0;
+}
 class SeadRandom {
     constructor(initial) {
         if (initial === undefined)
@@ -28500,11 +28503,37 @@ function decryptSave(header, body) {
     return new aes_js_1.ModeOfOperation.ctr(key, new aes_js_1.Counter(iv)).decrypt(new Uint8Array(body)).buffer;
 }
 exports.decryptSave = decryptSave;
+function encryptSave(header, body) {
+    const seedData = new Uint32Array(header, 0x100);
+    const key = pullBytes(seedData, 0);
+    const iv = pullBytes(seedData, 2);
+    return new aes_js_1.ModeOfOperation.ctr(key, new aes_js_1.Counter(iv)).encrypt(new Uint8Array(body)).buffer;
+}
+exports.encryptSave = encryptSave;
+function murmurHash3(data) {
+    // we assume the count is always gonna be a multiple of 4 for now...
+    let hash = 0;
+    for (let i = 0; i < data.length; i += 1) {
+        const k = mult32(rol(mult32(data[i], 0xcc9e2d51), 15), 0x1b873593);
+        hash = (hash ^ k) >>> 0;
+        hash = rol(hash, 13);
+        hash = (mult32(hash, 5) + 0xe6546b64) >>> 0;
+    }
+    hash = (hash ^ (data.length * 4)) >>> 0;
+    hash = (hash ^ (hash >>> 16)) >>> 0;
+    hash = mult32(hash, 0x85ebca6b);
+    hash = (hash ^ (hash >>> 13)) >>> 0;
+    hash = mult32(hash, 0xc2b2ae35);
+    hash = (hash ^ (hash >>> 16)) >>> 0;
+    return hash;
+}
+exports.murmurHash3 = murmurHash3;
 
 },{"aes-js":1}],11:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const aes_js_1 = require("aes-js");
+const crypto_1 = require("./crypto");
 function loadSchema(json) {
     const schema = json;
     for (const id of Object.keys(schema.types)) {
@@ -28643,7 +28672,7 @@ const speciesEmoji = [
     '🐙', '🐦', '🦅', '🐧', '🐷', '🐰', '🦏', '🐑',
     '🐿', '🐯', '🐺'
 ];
-primitivePrettifiers['_1339e934'] = acc => {
+primitivePrettifiers['Game::NpcNormalID'] = acc => {
     const species = acc.view.getUint8(acc.offset);
     const whom = acc.view.getUint8(acc.offset + 1);
     const unk = acc.view.getUint8(acc.offset + 2);
@@ -28675,7 +28704,6 @@ class PrimitiveAccessor {
         this.type = type;
         this.name = name;
         this.hasChildren = false;
-        this.hasLongDisplay = false;
     }
     get value() {
         switch (this.type.name) {
@@ -28689,10 +28717,70 @@ class PrimitiveAccessor {
             case 's64': return [this.view.getInt32(this.offset + 4, true), this.view.getInt32(this.offset, true)];
             case 'f32': return this.view.getFloat32(this.offset, true);
             case 'f64': return this.view.getFloat64(this.offset, true);
-            case 'bool': return (this.view.getUint32(this.offset) != 0);
+            case 'bool': return (this.view.getUint8(this.offset) != 0);
             case 'char': return this.view.getUint8(this.offset);
             case 'char16': return this.view.getUint16(this.offset, true);
             default: return new Uint8Array(this.view.buffer, this.view.byteOffset + this.offset, this.type.size);
+        }
+    }
+    getEditableStr() {
+        const v = this.value;
+        if (v instanceof Uint8Array)
+            return aes_js_1.utils.hex.fromBytes(v);
+        else
+            return v.toString();
+    }
+    setEditableStr(str) {
+        switch (this.type.name) {
+            case 'char':
+            case 'u8':
+                this.view.setUint8(this.offset, parseInt(str));
+                break;
+            case 'char16':
+            case 'u16':
+                this.view.setUint16(this.offset, parseInt(str), true);
+                break;
+            case 'u32':
+                this.view.setUint32(this.offset, parseInt(str) >>> 0, true);
+                break;
+            case 'u64':
+                const a = eval(str); // lmao this is bad
+                this.view.setUint32(this.offset + 4, a[0] >>> 0, true);
+                this.view.setUint32(this.offset, a[1] >>> 0, true);
+                break;
+            case 's8':
+                this.view.setInt8(this.offset, parseInt(str));
+                break;
+            case 's16':
+                this.view.setInt16(this.offset, parseInt(str), true);
+                break;
+            case 's32':
+                this.view.setInt32(this.offset, parseInt(str) >>> 0, true);
+                break;
+            case 's64':
+                const a_ = eval(str); // lmao this is bad
+                this.view.setInt32(this.offset + 4, a_[0], true);
+                this.view.setInt32(this.offset, a_[1], true);
+                break;
+            case 'f32':
+                this.view.setFloat32(this.offset, parseFloat(str), true);
+                break;
+            case 'f64':
+                this.view.setFloat64(this.offset, parseFloat(str), true);
+                break;
+            case 'bool':
+                this.view.setUint8(this.offset, (str == 'true') ? 1 : 0);
+                break;
+            default:
+                const newData = aes_js_1.utils.hex.toBytes(str);
+                if (newData.byteLength === this.type.size) {
+                    const buf = new Uint8Array(this.view.buffer, this.view.byteOffset + this.offset, this.type.size);
+                    buf.set(newData, 0);
+                }
+                else {
+                    alert('bad size');
+                }
+                break;
         }
     }
     get displayType() {
@@ -28725,7 +28813,6 @@ class StructAccessor {
         this.type = type;
         this.name = name;
         this.hasChildren = true;
-        this.hasLongDisplay = false;
     }
     get fields() {
         return this.type.fields;
@@ -28802,7 +28889,6 @@ class ArrayAccessor {
         this.length = length;
         this.name = name;
         this.hasChildren = true;
-        this.hasLongDisplay = false;
     }
     get displayChildrenCount() { return this.length[0]; }
     getChild(i) {
@@ -28848,7 +28934,6 @@ class PrimitiveArrayAccessor extends ArrayAccessor {
         this.length = length;
         this.name = name;
         this.hasChildren = false;
-        this.hasLongDisplay = true;
     }
     get displayValue() {
         const totalLen = this.length[0] * this.length[1];
@@ -28869,34 +28954,48 @@ class PrimitiveArrayAccessor extends ArrayAccessor {
 }
 exports.PrimitiveArrayAccessor = PrimitiveArrayAccessor;
 class EventFlagAccessor {
-    constructor(view, offset, flag) {
+    constructor(view, offset, flag, is8bit) {
         this.view = view;
         this.offset = offset;
         this.flag = flag;
+        this.is8bit = is8bit;
         this.hasChildren = false;
-        this.hasLongDisplay = false;
     }
     get displayType() { return this.flag.jpName; }
     get displayValue() {
-        const value = this.view.getUint16(this.offset, true);
+        const value = this.is8bit ? this.view.getUint8(this.offset) : this.view.getUint16(this.offset, true);
         if ('maximum' in this.flag) {
             if (this.flag.maximum == 1)
                 return (value == 0) ? 'false' : 'true';
         }
         return value.toString();
     }
+    getEditableStr() {
+        return this.displayValue;
+    }
+    setEditableStr(str) {
+        let value;
+        if ('maximum' in this.flag && this.flag.maximum == 1)
+            value = (str == 'true') ? 1 : 0;
+        else
+            value = parseInt(str);
+        if (this.is8bit)
+            this.view.setUint8(this.offset, value);
+        else
+            this.view.setUint16(this.offset, value, true);
+    }
 }
 exports.EventFlagAccessor = EventFlagAccessor;
 class EventFlagsAccessor {
-    constructor(schema, view, offset, type, name, key) {
+    constructor(schema, view, offset, type, name, key, is8bit = false) {
         this.schema = schema;
         this.view = view;
         this.offset = offset;
         this.type = type;
         this.name = name;
         this.key = key;
+        this.is8bit = is8bit;
         this.hasChildren = true;
-        this.hasLongDisplay = false;
         this.flags = exports.gameData.eventFlags[key];
         console.log(this.flags);
     }
@@ -28904,7 +29003,8 @@ class EventFlagsAccessor {
     get displayType() { return this.type.name; }
     get displayValue() { return `<${this.flags.length} flags>`; }
     getChild(index) {
-        return new EventFlagAccessor(this.view, this.offset + 2 * this.flags[index].id, this.flags[index]);
+        const sz = this.is8bit ? 1 : 2;
+        return new EventFlagAccessor(this.view, this.offset + sz * this.flags[index].id, this.flags[index], this.is8bit);
     }
     getChildTitle(index) { return this.flags[index].enName; }
 }
@@ -28919,7 +29019,7 @@ customAccessorFactories['SaveEventFlagLandTemp'] = (schema, view, offset, type, 
     return new EventFlagsAccessor(schema, view, offset, type, name, 'landTemp');
 };
 customAccessorFactories['SaveEventFlagNpcMemory'] = (schema, view, offset, type, name) => {
-    return new EventFlagsAccessor(schema, view, offset, type, name, 'npcMemory');
+    return new EventFlagsAccessor(schema, view, offset, type, name, 'npcMemory', true);
 };
 customAccessorFactories['SaveEventFlagNpcSave'] = (schema, view, offset, type, name) => {
     return new EventFlagsAccessor(schema, view, offset, type, name, 'npcSave');
@@ -28947,8 +29047,41 @@ function identifySaveVersion(body) {
     };
 }
 exports.identifySaveVersion = identifySaveVersion;
+function updateHashes(body, offset, type, schema) {
+    // console.log(`updates for ${type.name}`)
+    for (let i = type.fields.length - 1; i >= 0; i--) {
+        const field = type.fields[i];
+        // console.log(`looking at ${field.name}`)
+        if (field.id === 0xd35a9251) {
+            // this is a hash that needs updating
+            const hashStart = offset + field.offset + 4;
+            const hashEnd = offset + type.size;
+            const hashData = new Uint32Array(body, hashStart, (hashEnd - hashStart) >> 2);
+            const dv = new DataView(body, offset + field.offset, 4);
+            const existingHash = dv.getUint32(0, true);
+            const newHash = crypto_1.murmurHash3(hashData);
+            if (existingHash === newHash) {
+                console.log(`no change in hash for ${type.name}`);
+            }
+            else {
+                console.log(`hash for ${type.name} updated`);
+                dv.setUint32(0, newHash, true);
+            }
+        }
+        else if (field.type in schema.types) {
+            // do the old nested update
+            const count = field.length[0] * field.length[1];
+            const fieldType = schema.types[field.type];
+            if (fieldType.name === 'SaveProfileJPEG')
+                continue; // this breaks things fsr
+            for (let j = 0; j < count; j++)
+                updateHashes(body, offset + field.offset + (j * fieldType.size), fieldType, schema);
+        }
+    }
+}
+exports.updateHashes = updateHashes;
 
-},{"aes-js":1}],12:[function(require,module,exports){
+},{"./crypto":10,"aes-js":1}],12:[function(require,module,exports){
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -28962,6 +29095,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+var _a, _b, _c;
 Object.defineProperty(exports, "__esModule", { value: true });
 require("bootstrap");
 const jquery_1 = __importDefault(require("jquery"));
@@ -29071,9 +29205,10 @@ function expandNode(event, data) {
     data.result = buildNodeChildren(data.node.data.accessor);
 }
 class EditContext {
-    constructor(node, header, data, offset, schema, type) {
+    constructor(node, header, data, offset, schema, type, filename) {
         this.header = header;
         this.data = data;
+        this.filename = filename;
         this.root = new data_1.StructAccessor(schema, new DataView(data), offset, type, 'root');
         this.tree = node.fancytree({
             source: buildNodeChildren(this.root),
@@ -29083,6 +29218,15 @@ class EditContext {
             icon: false,
             renderColumns: (event, data) => this._renderColumns(event, data),
             dblclick: (event, data) => {
+                const acc = data.node.data.accessor;
+                if ('getEditableStr' in acc) {
+                    const oldVal = acc.getEditableStr();
+                    const newVal = prompt('New value', oldVal);
+                    if (newVal !== null) {
+                        acc.setEditableStr(newVal);
+                        data.node.render(true);
+                    }
+                }
                 return true;
             }
         });
@@ -29092,6 +29236,18 @@ class EditContext {
         const cols = node.tr.querySelectorAll('td');
         cols[1].textContent = node.data.fieldName;
         cols[2].textContent = node.data.accessor.displayValue;
+    }
+    saveFile() {
+        data_1.updateHashes(this.data, 0, this.root.type, this.root.schema);
+        const eData = crypto_1.encryptSave(this.header, this.data);
+        const blob = new Blob([eData], { type: 'application/octet-stream' });
+        const url = URL.createObjectURL(blob);
+        const link = document.getElementById('downloadBtn');
+        if (link.href !== undefined)
+            URL.revokeObjectURL(link.href);
+        link.download = this.filename;
+        link.href = url;
+        link.classList.remove('d-none');
     }
 }
 let context = null;
@@ -29130,7 +29286,7 @@ function loadHtml5FileAsync(headerFile, bodyFile) {
             context.tree.widget.destroy();
             context = null;
         }
-        context = new EditContext(jquery_1.default('#tree'), headerBuffer, bodyBuffer, 0, schema, type);
+        context = new EditContext(jquery_1.default('#tree'), headerBuffer, bodyBuffer, 0, schema, type, bodyFile.name);
     });
 }
 const fileStateMachine = new FileStateMachine({
@@ -29144,14 +29300,48 @@ function killEvent(e) {
     e.stopPropagation();
     e.preventDefault();
 }
+let rawImportFlag = false;
 document.body.addEventListener('dragenter', killEvent, false);
 document.body.addEventListener('dragover', killEvent, false);
 document.body.addEventListener('drop', e => {
     var _a;
     killEvent(e);
     const files = (_a = e.dataTransfer) === null || _a === void 0 ? void 0 : _a.files;
-    if (files)
+    if (files) {
+        if (rawImportFlag) {
+            rawImportFlag = false;
+            files[0].arrayBuffer().then(buf => {
+                if (context !== null) {
+                    const ctxArray = new Uint8Array(context.data);
+                    const newArray = new Uint8Array(buf);
+                    ctxArray.set(newArray);
+                    loadAdvice('File replaced');
+                }
+            });
+            return;
+        }
         fileStateMachine.dropFiles(files);
+    }
 }, false);
+(_a = document.getElementById('saveBtn')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', () => {
+    context === null || context === void 0 ? void 0 : context.saveFile();
+});
+// this is a bad hack, should be better
+(_b = document.getElementById('exportRawBtn')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', () => {
+    if (context === null)
+        return;
+    const blob = new Blob([context.data], { type: 'application/octet-stream' });
+    const url = URL.createObjectURL(blob);
+    const link = document.getElementById('downloadBtn');
+    if (link.href !== undefined)
+        URL.revokeObjectURL(link.href);
+    link.download = 'rawData.bin';
+    link.href = url;
+    link.classList.remove('d-none');
+    loadAdvice('File exported, click Download');
+});
+(_c = document.getElementById('importRawBtn')) === null || _c === void 0 ? void 0 : _c.addEventListener('click', () => {
+    rawImportFlag = true;
+});
 
 },{"./app.css":9,"./crypto":10,"./data":11,"bootstrap":2,"jquery":7,"jquery.fancytree":4,"jquery.fancytree/dist/modules/jquery.fancytree.edit":3,"jquery.fancytree/dist/modules/jquery.fancytree.table":5}]},{},[12]);

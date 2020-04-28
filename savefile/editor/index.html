@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class='container'>
-			<h1>AC:NH Save <s>Editor</s> Viewer</h1>
+			<h1>AC:NH Save Editor</h1>
 			<div class='alert alert-info' role='alert' id='fileLoadAdvice' style='display:none'></div>
 			<div class='alert alert-danger' role='alert' id='fileLoadError' style='display:none'></div>
 
@@ -28,6 +28,13 @@
 					<br>
 					<br>
 					you'll have to refresh the page to load a different file. I'll fix that eventually
+					<br>
+					<button type='button' class='btn btn-primary' id='saveBtn'>Save File</button>
+					<a class='btn btn-primary d-none' id='downloadBtn'>Download File</a>
+					<hr>
+					Debugging Stuff:
+					<button class='btn btn-secondary' id='exportRawBtn'>Export Raw Data</button>
+					<button class='btn btn-secondary' id='importRawBtn'>Import Raw Data</button>
 				</div>
 				<div class='tab-pane fade' id='treePane' role='tabpanel' aria-labelledby='treeTab'>
 					<table id='tree' class='table-hover mt-2'>

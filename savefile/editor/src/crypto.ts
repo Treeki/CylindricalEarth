@@ -9,6 +9,10 @@ function mult32(a: number, b: number) {
 	return ((high << 16) >>> 0) + (al * bl)
 }
 
+function rol(v: number, by: number) {
+	return ((v << by) | (v >>> (32 - by))) >>> 0
+}
+
 class SeadRandom {
 	_a: number
 	_b: number
@@ -59,4 +63,33 @@ export function decryptSave(header: ArrayBuffer, body: ArrayBuffer): ArrayBuffer
 	const iv = pullBytes(seedData, 2)
 
 	return new ModeOfOperation.ctr(key, new Counter(iv)).decrypt(new Uint8Array(body)).buffer
+}
+
+export function encryptSave(header: ArrayBuffer, body: ArrayBuffer): ArrayBuffer {
+	const seedData = new Uint32Array(header, 0x100)
+	const key = pullBytes(seedData, 0)
+	const iv = pullBytes(seedData, 2)
+
+	return new ModeOfOperation.ctr(key, new Counter(iv)).encrypt(new Uint8Array(body)).buffer
+}
+
+export function murmurHash3(data: Uint32Array): number {
+	// we assume the count is always gonna be a multiple of 4 for now...
+	let hash = 0
+
+	for (let i = 0; i < data.length; i += 1) {
+		const k = mult32(rol(mult32(data[i], 0xcc9e2d51), 15), 0x1b873593)
+		hash = (hash ^ k) >>> 0
+		hash = rol(hash, 13)
+		hash = (mult32(hash, 5) + 0xe6546b64) >>> 0
+	}
+
+	hash = (hash ^ (data.length * 4)) >>> 0
+	hash = (hash ^ (hash >>> 16)) >>> 0
+	hash = mult32(hash, 0x85ebca6b)
+	hash = (hash ^ (hash >>> 13)) >>> 0
+	hash = mult32(hash, 0xc2b2ae35)
+	hash = (hash ^ (hash >>> 16)) >>> 0
+
+	return hash
 }

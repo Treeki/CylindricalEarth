@@ -1,4 +1,5 @@
 import { utils } from "aes-js"
+import { murmurHash3 } from "./crypto"
 
 export interface SchemaField {
 	id: number
@@ -193,7 +194,7 @@ const speciesEmoji = [
 	'🐿', '🐯', '🐺'
 ]
 
-primitivePrettifiers['_1339e934'] = acc => {
+primitivePrettifiers['Game::NpcNormalID'] = acc => {
 	const species = acc.view.getUint8(acc.offset)
 	const whom = acc.view.getUint8(acc.offset+1)
 	const unk = acc.view.getUint8(acc.offset+2)
@@ -224,7 +225,6 @@ export interface Accessor {
 	displayType: string
 	displayValue: string
 	hasChildren: boolean
-	hasLongDisplay: boolean
 }
 
 export interface TreeAccessor extends Accessor {
@@ -233,8 +233,13 @@ export interface TreeAccessor extends Accessor {
 	getChildTitle(index: number): string
 }
 
+export interface EditableAccessor extends Accessor {
+	getEditableStr(): string
+	setEditableStr(str: string): void
+}
 
-export class PrimitiveAccessor implements Accessor {
+
+export class PrimitiveAccessor implements EditableAccessor {
 	constructor(readonly view: DataView, readonly offset: number, readonly type: SchemaPrimitive, readonly name: string) {
 	}
 
@@ -250,15 +255,54 @@ export class PrimitiveAccessor implements Accessor {
 			case 's64': return [this.view.getInt32(this.offset + 4, true), this.view.getInt32(this.offset, true)]
 			case 'f32': return this.view.getFloat32(this.offset, true)
 			case 'f64': return this.view.getFloat64(this.offset, true)
-			case 'bool': return (this.view.getUint32(this.offset) != 0)
+			case 'bool': return (this.view.getUint8(this.offset) != 0)
 			case 'char': return this.view.getUint8(this.offset)
 			case 'char16': return this.view.getUint16(this.offset, true)
 			default: return new Uint8Array(this.view.buffer, this.view.byteOffset + this.offset, this.type.size)
 		}
 	}
 
+	getEditableStr(): string {
+		const v = this.value
+		if (v instanceof Uint8Array)
+			return utils.hex.fromBytes(v)
+		else
+			return v.toString()
+	}
+	setEditableStr(str: string): void {
+		switch (this.type.name) {
+			case 'char': case 'u8': this.view.setUint8(this.offset, parseInt(str)); break
+			case 'char16': case 'u16': this.view.setUint16(this.offset, parseInt(str), true); break
+			case 'u32': this.view.setUint32(this.offset, parseInt(str) >>> 0, true); break
+			case 'u64':
+				const a = eval(str) // lmao this is bad
+				this.view.setUint32(this.offset + 4, a[0] >>> 0, true)
+				this.view.setUint32(this.offset, a[1] >>> 0, true)
+				break
+			case 's8': this.view.setInt8(this.offset, parseInt(str)); break
+			case 's16': this.view.setInt16(this.offset, parseInt(str), true); break
+			case 's32': this.view.setInt32(this.offset, parseInt(str) >>> 0, true); break
+			case 's64':
+				const a_ = eval(str) // lmao this is bad
+				this.view.setInt32(this.offset + 4, a_[0], true)
+				this.view.setInt32(this.offset, a_[1], true)
+				break
+			case 'f32': this.view.setFloat32(this.offset, parseFloat(str), true); break
+			case 'f64': this.view.setFloat64(this.offset, parseFloat(str), true); break
+			case 'bool': this.view.setUint8(this.offset, (str == 'true') ? 1 : 0); break
+			default:
+				const newData = utils.hex.toBytes(str)
+				if (newData.byteLength === this.type.size) {
+					const buf = new Uint8Array(this.view.buffer, this.view.byteOffset + this.offset, this.type.size)
+					buf.set(newData, 0)
+				} else {
+					alert('bad size')
+				}
+				break
+		}
+	}
+
 	hasChildren = false
-	hasLongDisplay = false
 	get displayType(): string {
 		return this.type.name
 	}
@@ -350,7 +394,6 @@ export class StructAccessor implements TreeAccessor {
 	}
 
 	hasChildren = true
-	hasLongDisplay = false
 	get displayChildrenCount(): number { return this.type.fields.length }
 	getChild(index: number) { return this.getField(this.type.fields[index]) }
 	getChildTitle(index: number) { return this.type.fields[index].name }
@@ -368,7 +411,6 @@ export class ArrayAccessor implements TreeAccessor {
 	}
 
 	hasChildren = true
-	hasLongDisplay = false
 	get displayChildrenCount(): number { return this.length[0] }
 	getChild(i: number): Accessor {
 		if (this.length[1] > 1) {
@@ -414,7 +456,6 @@ export class PrimitiveArrayAccessor extends ArrayAccessor {
 	}
 
 	hasChildren = false
-	hasLongDisplay = true
 
 	get displayValue(): string {
 		const totalLen = this.length[0] * this.length[1]
@@ -434,20 +475,34 @@ export class PrimitiveArrayAccessor extends ArrayAccessor {
 }
 
 
-export class EventFlagAccessor implements Accessor {
-	constructor(readonly view: DataView, readonly offset: number, readonly flag: EventFlagMeta|EventFlagWithMaxMeta) {
+export class EventFlagAccessor implements EditableAccessor {
+	constructor(readonly view: DataView, readonly offset: number, readonly flag: EventFlagMeta|EventFlagWithMaxMeta, readonly is8bit: boolean) {
 	}
 
 	hasChildren = false
-	hasLongDisplay = false
 	get displayType(): string { return this.flag.jpName }
 	get displayValue(): string {
-		const value = this.view.getUint16(this.offset, true)
+		const value = this.is8bit ? this.view.getUint8(this.offset) : this.view.getUint16(this.offset, true)
 		if ('maximum' in this.flag) {
 			if (this.flag.maximum == 1)
 				return (value == 0) ? 'false' : 'true'
 		}
 		return value.toString()
+	}
+
+	getEditableStr(): string {
+		return this.displayValue
+	}
+	setEditableStr(str: string) {
+		let value
+		if ('maximum' in this.flag && this.flag.maximum == 1)
+			value = (str == 'true') ? 1 : 0
+		else
+			value = parseInt(str)
+		if (this.is8bit)
+			this.view.setUint8(this.offset, value)
+		else
+			this.view.setUint16(this.offset, value, true)
 	}
 }
 
@@ -460,19 +515,20 @@ export class EventFlagsAccessor implements TreeAccessor {
 		readonly offset: number,
 		readonly type: SchemaPrimitive,
 		readonly name: string,
-		readonly key: keyof GameData['eventFlags']
+		readonly key: keyof GameData['eventFlags'],
+		readonly is8bit: boolean = false
 	) {
 		this.flags = gameData!.eventFlags[key]
 		console.log(this.flags)
 	}
 
 	hasChildren = true
-	hasLongDisplay = false
 	get displayChildrenCount(): number { return this.flags.length }
 	get displayType(): string { return this.type.name }
 	get displayValue(): string { return `<${this.flags.length} flags>` }
 	getChild(index: number): Accessor {
-		return new EventFlagAccessor(this.view, this.offset + 2 * this.flags[index].id, this.flags[index])
+		const sz = this.is8bit ? 1 : 2
+		return new EventFlagAccessor(this.view, this.offset + sz * this.flags[index].id, this.flags[index], this.is8bit)
 	}
 	getChildTitle(index: number): string { return this.flags[index].enName }
 }
@@ -487,7 +543,7 @@ customAccessorFactories['SaveEventFlagLandTemp'] = (schema, view, offset, type, 
 	return new EventFlagsAccessor(schema, view, offset, type, name, 'landTemp')
 }
 customAccessorFactories['SaveEventFlagNpcMemory'] = (schema, view, offset, type, name) => {
-	return new EventFlagsAccessor(schema, view, offset, type, name, 'npcMemory')
+	return new EventFlagsAccessor(schema, view, offset, type, name, 'npcMemory', true)
 }
 customAccessorFactories['SaveEventFlagNpcSave'] = (schema, view, offset, type, name) => {
 	return new EventFlagsAccessor(schema, view, offset, type, name, 'npcSave')
@@ -521,3 +577,36 @@ export function identifySaveVersion(body: ArrayBuffer): ACSaveVersion|null {
 		encryptionMethod: dv.getUint16(0xC, true)
 	}
 }
+
+
+export function updateHashes(body: ArrayBuffer, offset: number, type: SchemaType, schema: Schema) {
+	// console.log(`updates for ${type.name}`)
+	for (let i = type.fields.length - 1; i >= 0; i--) {
+		const field = type.fields[i]
+		// console.log(`looking at ${field.name}`)
+		if (field.id === 0xd35a9251) {
+			// this is a hash that needs updating
+			const hashStart = offset + field.offset + 4
+			const hashEnd = offset + type.size
+			const hashData = new Uint32Array(body, hashStart, (hashEnd - hashStart) >> 2)
+			const dv = new DataView(body, offset + field.offset, 4)
+			const existingHash = dv.getUint32(0, true)
+			const newHash = murmurHash3(hashData)
+			if (existingHash === newHash) {
+				console.log(`no change in hash for ${type.name}`)
+			} else {
+				console.log(`hash for ${type.name} updated`)
+				dv.setUint32(0, newHash, true)
+			}
+		} else if (field.type in schema.types) {
+			// do the old nested update
+			const count = field.length[0] * field.length[1]
+			const fieldType = schema.types[field.type]
+			if (fieldType.name === 'SaveProfileJPEG')
+				continue // this breaks things fsr
+			for (let j = 0; j < count; j++)
+				updateHashes(body, offset + field.offset + (j * fieldType.size), fieldType, schema)
+		}
+	}
+}
+
