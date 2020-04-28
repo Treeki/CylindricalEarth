@@ -4405,7 +4405,7 @@ class CharaMakeCheekTypeParam(Row):
 	TexName = String(0xc05200e1) # string32
 
 class CharaMakeEyeColorParam(Row):
-	_68bed0ef = U32(0x68bed0ef)
+	BaseColorB = Float(0x68bed0ef)
 	BaseColorG = Float(0xa05e5f9f)
 	BaseColorR = Float(0x085e476d)
 	UniqueID = U16(0x54706054)
@@ -4420,7 +4420,7 @@ class CharaMakeEyeTypeParam(Row):
 	_dfa56cb9 = String(0xdfa56cb9) # size 34
 
 class CharaMakeHairColorParam(Row):
-	_68bed0ef = U32(0x68bed0ef)
+	BaseColorB = Float(0x68bed0ef)
 	BaseColorG = Float(0xa05e5f9f)
 	BaseColorR = Float(0x085e476d)
 	_16c95acc = U32(0x16c95acc)

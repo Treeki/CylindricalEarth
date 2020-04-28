@@ -286,7 +286,7 @@ preset_names = {
 	0x675ca211: 'EndHour u8',
 	0x680f7f95: 'Month2005 u8',
 	0x68460c05: 'ScaleOffset f32',
-	0x68bef0ef: 'BaseColorB f32',
+	0x68bed0ef: 'BaseColorB f32',
 	0x68cf5938: 'BridgeTypeName string32',
 	0x68db76c2: 'BreakDamage u16',
 	0x69660415: 'Amount3 u16',
