@@ -34,6 +34,7 @@ def identifyFunc(fn):
 		addr = addr.add(4)
 
 
+from ghidra.program.model.symbol import SourceType
 
 base_typeInfo = toAddr('BcsvReader_typeInfo')
 baseName = 'BcsvReader'
@@ -44,6 +45,7 @@ vtables = {}
 bases = {}
 known_chains = []
 classes_in_order = []
+bcsvNS = getNamespace(None, 'Bcsv')
 
 def pick_name(n):
 	if n not in used_names:
@@ -118,7 +120,7 @@ for chain in known_chains:
 for chain in known_chains:
 	print(' -> '.join([names[info] for info in reversed(chain)]))
 
-already_named = set()
+'''already_named = set()
 def applyVtable(vtable, clsname, methnames):
 	for i,name in enumerate(methnames):
 		meth = getLong(vtable.add(i * 8))
@@ -138,7 +140,7 @@ def applyVtable(vtable, clsname, methnames):
 			else:
 				fn.setName(fullname, ghidra.program.model.symbol.SourceType.DEFAULT)
 		already_named.add(meth)
-
+'''
 
 dtmgr = currentProgram.dataTypeManager
 category = ghidra.program.model.data.CategoryPath('/bcsv')
@@ -147,7 +149,12 @@ category = ghidra.program.model.data.CategoryPath('/bcsv')
 for info in classes_in_order:
 	name = names[info]
 	vtable = vtables[info]
-	createLabel(info, '%s_typeInfo' % name, True)
+	ns = getSymbolAt(vtable).parentNamespace
+	print('would name info=%r vt=%r ns=%r to %s' % (info, vtable, ns, name))
+	if ns.name != name:
+		ns.setParentNamespace(bcsvNS)
+		ns.symbol.setName(name, SourceType.ANALYSIS)
+	'''createLabel(info, '%s_typeInfo' % name, True)
 	createLabel(vtable, '%s_vtable' % name, True)
 	applyVtable(vtable, name, ('isDerivedFrom', 'getTypeInfo', 'dtor', 'dtorDeleting', 'vf20', 'vf28', 'getName', 'deallocBuffers', 'populateBuffers'))
 
@@ -157,6 +164,6 @@ for info in classes_in_order:
 		baseType = dtmgr.getDataType(category, names[bases[info]])
 		typ.add(baseType, 0, 'base', '')
 		handler = ghidra.program.model.data.DataTypeConflictHandler.ConflictResolutionPolicy.RENAME_AND_ADD.handler
-		dtmgr.addDataType(typ, handler)
+		dtmgr.addDataType(typ, handler)'''
 
 

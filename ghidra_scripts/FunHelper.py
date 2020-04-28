@@ -1,5 +1,6 @@
 # time for some fun
 from ghidra.app.plugin.core.navigation.locationreferences import ReferenceUtils
+from ghidra.program.model.symbol import SourceType
 
 s_text = getMemoryBlock('.text')
 s_init_array = getMemoryBlock('.init_array')
@@ -143,26 +144,24 @@ def name_eventflow_classes(path):
 				missing.add(key)
 				name = 'EventFlow%s%08X' % (what, key)
 			addr = toAddr(getLong(qmap.address.add(i * 16 + 8)))
-			getFunctionAt(addr).setName(name + '_build', ghidra.program.model.symbol.SourceType.DEFAULT)
+			#getFunctionAt(addr).setName(name + '_build', ghidra.program.model.symbol.SourceType.DEFAULT)
 
 			# find ctor
 			ctor = getReferencesFrom(addr.add(0x24))[0].toAddress
-			print('ctor %s = %r' % (name, ctor))
-			getFunctionAt(ctor).setName(name + '_ctor', ghidra.program.model.symbol.SourceType.DEFAULT)
+			#print('ctor %s = %r' % (name, ctor))
+			#getFunctionAt(ctor).setName(name + '_ctor', ghidra.program.model.symbol.SourceType.DEFAULT)
 
 			# find vtable
 			vt = findEvFlowVtable(ctor)
-			print('vt %s = %r' % (name, vt))
-			createLabel(vt, name+'_vtable', True)
+			#createLabel(vt, name+'_vtable', True)
 			vtables_to_names[vt.offset] = name
+			vtsym = getSymbolAt(vt)
+			vtns = vtsym.parentNamespace
+			print('vt %r is %r' % (name,vtns))
 
-			# this doesn't work for all of them but it does work for most...I think?
-			if what == 'Action':
-				invoke = toAddr(getLong(vt.add(0x58)))
-				getFunctionAt(invoke).setName(name + '_invoke', ghidra.program.model.symbol.SourceType.DEFAULT)
-			elif what == 'Query':
-				invoke = toAddr(getLong(vt.add(0x30)))
-				getFunctionAt(invoke).setName(name + '_decide', ghidra.program.model.symbol.SourceType.DEFAULT)
+			if vtns.name != name:
+				vtns.symbol.setName(name, SourceType.ANALYSIS)
+
 		#in_json = set(names.keys())
 		#noted = in_json - in_exec
 		#for n in noted:
@@ -180,7 +179,7 @@ def name_eventflow_classes(path):
 # STEP 5: use the FindInstructionsNotInsideFunctionScript and CreateFunctionsFromSelection scripts
 
 # STEP 6: set up some eventflow stuff
-#name_eventflow_classes('/Volumes/HFS/repos/switch/CylindricalEarth/evfl/eventflow_actor_info.json')
+name_eventflow_classes('/Volumes/HFS/repos/switch/CylindricalEarth/evfl/evflActors120.json')
 #import json
 #with open('/Volumes/HFS/repos/switch/CylindricalEarth/evfl/eventflow_vtables.json', 'w') as f:
 #	json.dump(vtables_to_names, f)

@@ -1,9 +1,14 @@
 import struct
 import zlib
+import sys
 
 class File:
 	def __init__(self, row_class):
-		self.fields = {}
+		if sys.version_info[0] == 2:
+			from collections import OrderedDict
+			self.fields = OrderedDict()
+		else:
+			self.fields = {}
 		self.rows = []
 		self.row_class = row_class
 		self.by_id = {}
@@ -33,6 +38,8 @@ class File:
 			entry_pos = pos + (i * entry_size)
 			row = self.row_class({key: blob[entry_pos+start:entry_pos+start+end] for (key, (start, end)) in self.fields.items()}, self)
 			self.rows.append(row)
+			if hasattr(row, 'UniqueID'):
+				self.by_id[row.UniqueID] = row
 			if hasattr(row, 'id'):
 				self.by_id[row.id] = row
 

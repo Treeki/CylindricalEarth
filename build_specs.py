@@ -3,70 +3,146 @@ import json
 import os
 import sys
 
-print('from bcsv import *')
-print()
-
 preset_names = {
 	0x00244ce4: 'BeforeDays u8',
+	0x003c0210: 'UmbrellaID u16',
+	0x0058e1ec: 'Month2042 u8',
+	0x007a831b: 'Month2026 u8',
+	0x00c1577d: 'StructureInfoUniqueID u16',
 	0x0110b14c: 'MaxValue u16',
 	0x0207a2af: 'SpNpcID u16',
+	0x026c5579: 'MonthNorth u8',
+	0x026f0892: 'MSLabel string32',
 	0x03200971: 'RainHat u16',
+	0x03218b32: 'ReFabricPattern1Color1 u8',
 	0x0329d696: 'BonusFive u8',
+	0x036e8ebe: 'Name string64',
+	0x04034aa7: 'Name string60',
 	0x0424930f: 'UseExteriorLight u8',
 	0x04a47035: 'NumberingId u16',
 	0x04ac1bea: 'SpecialELink u8',
+	0x04e041c5: 'Day2017 u8',
 	0x06012035: 'CanGift u8',
 	0x062ec6cf: 'WeatherPattern string32',
+	0x06da20a1: 'WdayNorth u8',
+	0x06e9bc8c: 'MaxValue4 u32',
 	0x0732bb98: 'CanNpcPresent u8',
+	0x07d45b0f: 'ReFabricPattern3Color1 u8',
+	0x07d60b3d: 'NameWithTitle u8',
+	0x08238405: 'AccentWall u16',
+	0x085e476d: 'BaseColorR f32',
 	0x086f5f3a: 'LocalizeTexture u8',
+	0x08d23365: 'DefaultHeredity u8',
 	0x0909f3d4: 'Property u8',
+	0x09b64264: 'MemoryUnitNum u16',
 	0x09b714f9: 'AnimeTypeWateringCan string64',
+	0x09c60fd9: 'Rate6 u8',
 	0x09d75f40: 'IsUseXlink u8',
+	0x09df4299: 'Reward2 u32',
+	0x0ac45a99: 'Month2033 u8',
+	0x0aca2b48: 'ReFabricPattern5Color1 u8',
+	0x0ae6386e: 'Month2057 u8',
 	0x0b52f5bb: 'FloorType u16',
 	0x0b6d59d2: 'Size s8',
+	0x0c315945: 'CollisionHeight f32',
 	0x0c98243c: 'AnimeTypeDrink string64',
+	0x0cb402a3: 'ReFabricPatternNum s8',
+	0x0cc4e7b5: 'USes u8',
+	0x0d664b5c: 'Door0 u16',
+	0x0e3ffb75: 'ReFabricPattern7Color1 u8',
+	0x0e5e9847: 'Day2002 u8',
 	0x0eb7fa40: 'ToiletType u8',
 	0x0f230d34: 'SilhouettePosX f32',
 	0x0f30a50e: 'MusicNo u16',
+	0x0f4323e2: 'RegionUs u8',
 	0x0f640691: 'PosterItemID s16',
 	0x0f9f6747: 'WallTableId u16',
 	0x110a7053: 'MessageLabel u16',
+	0x110ca7b2: 'MuseumNpcRace u32',
+	0x1144c9a1: 'NameLong string128',
+	0x11bf9036: 'Day2059 u8',
+	0x12735d82: 'ReBodyPattern4Color0 u8',
 	0x127ccfd9: 'Reward u16',
 	0x128a3d9b: 'ItemCategoryGroup u32',
+	0x12cf2cf5: 'Month2025 u8',
+	0x12ed4e02: 'Month2041 u8',
 	0x137dd804: 'AppearArea u8',
+	0x13a65775: 'Amount1 u16',
 	0x13ab5198: 'Label string64',
 	0x147e658d: 'FrontSwitch u8',
 	0x158a4c61: 'DemoDistance f32',
+	0x1655ee2b: 'Day2014 u8',
+	0x16868dbf: 'ReBodyPattern6Color0 u8',
+	0x16b8f524: 'HalfUnitSizeX u8',
+	0x18539780: 'Month2054 u8',
+	0x1871f577: 'Month2030 u8',
+	0x19bb54c6: 'ItemKind6 u16',
 	0x1abe6e96: 'SelectSecond u16',
+	0x1b232b43: 'Day2028 u8',
 	0x1b53db71: 'WatchPosY f32',
+	0x1b73a037: 'Rate5 u8',
+	0x1b98fdf8: 'ReBodyPattern0Color0 u8',
+	0x1bbfa75e: 'Material1 u16',
 	0x1bcd4858: 'CanSetCloset u8',
 	0x1be772f0: 'MaxLevel u8',
+	0x1ceb37a9: 'Day2001 u8',
+	0x1d69405f: 'RainWare u16',
 	0x1d99c513: 'Studio u8',
 	0x1e7ef977: 'SelectRate u8',
+	0x1f301724: 'EUen u8',
+	0x1f6d2dc5: 'ReBodyPattern2Color0 u8',
+	0x1fb9e99d: 'Month2019 u8',
 	0x200dd382: 'Priority u16',
 	0x20cb67bc: 'ItemID u16',
+	0x218b1e19: 'Day2011 u8',
+	0x224c7f34: 'DaySouth u8',
+	0x22d9c02d: 'Month2009 u8',
 	0x23e7c2a0: 'Social u32',
 	0x24da7ada: 'Kind u8',
+	0x24db7d76: 'ItemKind7 u16',
+	0x2511dcc7: 'Month2020 u8',
+	0x2533be30: 'Month2044 u8',
 	0x2633f2c1: 'WatchPosX f32',
+	0x264302f3: 'Day2038 u8',
+	0x265ef22d: 'Color2 u8',
+	0x26911c10: 'ToolAsCommand string30',
 	0x26bd5137: 'EventObjUniqueID u16',
 	0x26db5137: 'EventObjUniqueID u16',
+	0x27450132: 'GetScale f32', # I think?
+	0x2760bc87: 'SeasonSummerLevel u8',
 	0x287db05d: 'Month u8',
 	0x291a1b04: 'Cap u16',
 	0x293ee089: 'SelectRate f32',
+	0x29ecb129: 'RemakeKitNum u16',
 	0x2b09d942: 'EndMinute u8',
+	0x2b17a56c: 'Day2060 u8',
+	0x2b35c79b: 'Day2004 u8',
 	0x2b57b24a: 'AcceEye u16',
+	0x2c1b3b5b: 'CanNpcBirthdayPresent u8',
 	0x2c40799e: 'NameboardAngleY f32',
 	0x2c447591: 'AsCommand string65',
 	0x2c6a189e: 'GrowupFg u16',
+	0x2ca34410: 'NpcFtrActionTool u16',
+	0x2cdfb986: 'Day2049 u8',
 	0x2e17a0a7: 'SoundAttribute u16',
+	0x2f1b930d: 'Label string8',
+	0x2f8d67b2: 'Month2051 u8',
+	0x2faf0545: 'Month2035 u8',
 	0x31450aa2: 'MainType u8',
 	0x318ebbf2: 'TextureWindow u8',
+	0x31cb6b0a: 'Collision u8',
 	0x32432484: 'SilhouettePosY f32',
 	0x32c0c064: 'HeadColor u16',
 	0x32c643e6: 'Announce u8',
+	0x333eb1f7: 'Day2012 u8',
 	0x33af13e1: 'NpcTalkType u8',
 	0x344b17d7: 'MaxValue u32',
+	0x34bf6b29: 'Reward3 u32',
+	0x34c8eed5: 'NpcLabel string8',
+	0x34eb5dc3: 'Color1 u8',
 	0x3543c34a: 'Horizon u8',
+	0x3574933b: 'DonateItemFirst u16',
+	0x3594f417: 'CanPutWorkStuff u8',
 	0x35ac1bb4: 'GrowLevel u8',
 	0x35c78d62: 'LookAtType u8',
 	0x35fd6466: 'ForbidOverwrite u8',
@@ -74,9 +150,13 @@ preset_names = {
 	0x364c173e: 'FlowFileName string32',
 	0x368210c4: 'ItemCategory u32',
 	0x374d00da: 'PosX s16',
+	0x378611de: 'Month2047 u8',
 	0x378b2f14: 'AppearStage u8',
+	0x37a47329: 'Month2023 u8',
 	0x3835a9dd: 'StartMinute u8',
 	0x38762eaa: 'ObjCheckRate f32',
+	0x395b7795: 'AccEye u16',
+	0x39806875: 'Day2007 u8',
 	0x39b5a93d: 'ModelName string32',
 	0x39cb9646: 'Material u16',
 	0x39dede36: 'SerialID s16',
@@ -84,91 +164,185 @@ preset_names = {
 	0x3a14deea: 'NodeName string32',
 	0x3a1fca06: 'Direction s8',
 	0x3af6dfe2: 'BagID u16',
+	0x3b89953c: 'MaxValue5 u32',
 	0x3b94564c: 'OffsetZ s16',
+	0x3c835e2c: 'NameShort string128',
+	0x3cda3274: 'ItemHHADirection u8',
 	0x3ce2e8d8: 'PacketId s32',
+	0x3cf05708: 'PolygonLimit u16',
+	0x3d1aaaab: 'Month2036 u8',
+	0x3d38c85c: 'Month2052 u8',
 	0x3d4f3f42: 'CanSell u8',
+	0x3dc49bc2: 'IsCreateBait u8',
+	0x3e18ffeb: 'Rate3 u8',
 	0x3e78dc38: 'FtrPlace u8',
 	0x3e884a6d: 'SilhouetteID u32',
 	0x3f45f2bf: 'DebugName string64',
 	0x3f858678: 'Smartphone u16',
 	0x3fe43170: 'FlagLand s32',
 	0x3febc642: 'Label string50',
+	0x40876b17: 'BehaviorType u8',
 	0x4154052c: 'OffsetX s16',
 	0x4171a41d: 'FlagPlayer s32',
 	0x41935ae1: 'AnimeTypeBook string64',
 	0x41977699: 'NpcColor u8',
 	0x41afe839: 'BodyColor u16',
+	0x41f881e4: 'ReBodyPattern7Color1 u8',
+	0x425f85d3: 'EUfr u8',
 	0x42739ab0: 'UseToolLeft u8',
 	0x42ad246a: 'Misc u8',
 	0x42bdd56f: 'DoorMaterial u16',
+	0x42e82ded: 'HasNightLight u8',
 	0x430dbf65: 'FlagType u8',
+	0x43403b15: 'Day2027 u8',
+	0x436259e2: 'Day2043 u8',
 	0x43d8a434: 'HasEigyoLight u8',
 	0x443c0fb7: 'LabelLong string64',
+	0x450d51d9: 'ReBodyPattern5Color1 u8',
 	0x454b2adc: 'InitLive u8', # dunno
+	0x45f320f2: 'Key string64',
+	0x45ffea9a: 'Frames u16',
 	0x46c45907: 'Value u16',
 	0x46e66708: 'ItemFrom string32',
 	0x46e8c73e: 'StaticField u8',
 	0x472724ed: 'CanBury u8',
 	0x4765b463: 'WatchPointID u16',
 	0x478dd182: 'AccessoryID u16',
+	0x47daf9cb: 'Month2016 u8',
+	0x4813219e: 'ReBodyPattern3Color1 u8',
+	0x48ef0398: 'ResName string64',
 	0x49129b27: 'CanSetItem u8',
 	0x49803457: 'MoveAs u8',
 	0x499e42f9: 'ArchUniqueID u16',
 	0x49cc96d0: 'ValidEffect u8',
+	0x49dc8060: 'Day2056 u8',
+	0x49fee297: 'Day2032 u8',
+	0x4ac8ebbc: 'RegionEu u8',
+	0x4ae88c28: 'EUru u8',
+	0x4b9c4229: 'ResourceName string64',
 	0x4c24f1cf: 'DefaultValue u32',
+	0x4c8935ec: 'WeekNorth u8',
+	0x4ce6f1a3: 'ReBodyPattern1Color1 u8',
+	0x4d642049: 'Month2003 u8',
 	0x4d8d53ba: 'PosZ s16',
+	0x4d9888d3: 'Strength u8',
 	0x4e46c669: 'PropertyID u16',
+	0x4e7f3849: 'Reward1 u32',
+	0x50650a2b: 'DonateItemSecond u16',
+	0x50aa5754: 'ReFabricPattern2Color0 u8',
 	0x50edd045: 'BaseName string32',
 	0x5195e4bd: 'FloorScale f32',
+	0x51d7f60c: 'Day2040 u8',
+	0x51f594fb: 'Day2024 u8',
+	0x5218c48c: 'CanUsePhotoStudio u8',
 	0x524596a2: 'BottomsID u16',
+	0x52852838: 'Month2058 u8',
 	0x52f0badd: 'CalendarEventKey string32',
+	0x54062da5: 'Amount2 u16',
+	0x545f8769: 'ReFabricPattern0Color0 u8',
 	0x54706054: 'UniqueID u16',
+	0x548a7eda: 'TWzh u8',
+	0x556f5625: 'Month2015 u8',
+	0x558685c5: 'KRko u8',
 	0x55c343c4: 'AnimeTypeFirewood string64',
 	0x57c98e5b: 'FootColor u16',
+	0x57e889b2: 'SmartphoneRemakeCommonPattern s16',
+	0x5819934d: 'Month2029 u8',
 	0x58aff4fb: 'ItemTableId u16',
 	0x58da05ed: 'WaterCheck u8',
+	0x5941f72e: 'ReFabricPattern6Color0 u8',
 	0x5971a42e: 'WaitFrame u32',
+	0x598463c8: 'RequiredNum u32',
+	0x5aebbfb5: 'TextureResName string64',
+	0x5b4b4d79: 'Day2031 u8',
+	0x5b692f8e: 'Day2055 u8',
 	0x5b7ca0b2: 'SeriesId u8',
 	0x5ba37406: 'NpcSpLabel string32',
 	0x5baf48a0: 'NpcNoEntry u8',
 	0x5c1c3044: 'BridgeTypeId u16',
+	0x5c1fdd8e: 'Material2 u16',
+	0x5c835193: 'Day2018 u8',
 	0x5cf3a1a1: 'WatchPosZ f32',
 	0x5d389fbf: 'CanPut u8',
+	0x5db42713: 'ReFabricPattern4Color0 u8',
+	0x5e1b2e16: 'ItemKind5 u16',
 	0x5e2aa87d: 'AnimeTypeUmbrella string64',
 	0x5f384120: 'TextLotId s16',
+	0x5fd18fa7: 'Month2000 u8',
+	0x60836eaa: 'PriorityReward u16',
+	0x612bc6cf: 'UniqueID u32',
+	0x617ff43e: 'Material3 u16',
+	0x61e37823: 'Day2008 u8',
 	0x623dc307: 'Nature u8',
+	0x62b1a617: 'Month2010 u8',
+	0x62c23ed0: 'ReFabricPattern0VisibleOff u8',
+	0x637b07a6: 'ItemKind4 u16',
+	0x638671f9: 'JPja u8',
 	0x64b8fff8: 'ColorIndex s8',
+	0x65503f9f: 'ParentItemName u16',
+	0x6579bafd: 'Month2039 u8',
+	0x6609063e: 'Day2045 u8',
+	0x662b64c9: 'Day2021 u8',
 	0x675ca211: 'EndHour u8',
+	0x680f7f95: 'Month2005 u8',
 	0x68460c05: 'ScaleOffset f32',
-	0x68cf5938: 'BridgeTypeName string32',
+	0x68bef0ef: 'BaseColorB f32',
 	0x68cf5938: 'BridgeTypeName string32',
 	0x68db76c2: 'BreakDamage u16',
+	0x69660415: 'Amount3 u16',
 	0x69834ab9: 'NpcEnd u8',
 	0x69a9bb3c: 'CastLabel u8',
 	0x69b161c4: 'Label string30',
 	0x6aa33bf0: 'Name u16',
 	0x6ab4b6fb: 'EffectAttribute u16',
 	0x6ac5a6df: 'BuryItem u16',
+	0x6c95bd4b: 'Day2034 u8',
+	0x6cb7dfbc: 'Day2050 u8',
+	0x6d294255: 'HeredityC u8',
 	0x6e1ac981: 'FieldData string32',
 	0x6efc082c: 'FloorHeight f32',
+	0x6fe50188: 'Month2048 u8',
+	0x700409f9: 'Month2013 u8',
 	0x70216bfa: 'AnimeTypeFood string64',
 	0x718b024d: 'Price s32',
 	0x71bf253b: 'BromideItemID s16',
+	0x72573f73: 'MysteryTourFieldUniqueID u16',
 	0x736adca8: 'FlagAnim u16', # possibly?
 	0x73a932ae: 'EventEnd s8',
 	0x7404ebb3: 'TouchRumble u8',
+	0x749ecb27: 'Day2022 u8',
 	0x74b2eb78: 'AttrCollectBit u8',
+	0x74bca9d0: 'Day2046 u8',
 	0x75e35e54: 'SilhouettePosZ f32',
 	0x76c190b2: 'ReleaseKey u16',
 	0x76e7fe08: 'ChangeFg u16',
+	0x7703d2dd: 'AsCommand string50',
 	0x797f5754: 'DefaultValue u16',
+	0x79ad3f84: 'AccMouth u16',
 	0x79be959d: 'SeasonScore s32',
+	0x7a09986c: 'MysteryTourItemUniqueID u16',
+	0x7a6965c5: 'UnlockTrigger u8',
+	0x7abad07b: 'Month2006 u8',
+	0x7c1b4734: 'SeasonAutumnLevel u8',
+	0x7c226372: 'JuneBrideProgress u8',
 	0x7c6fde34: 'AnimeTypeFishingRod string64',
 	0x7d016b27: 'RoomIndex s16',
 	0x7d740fa4: 'EventName string32',
+	0x7e027052: 'Day2053 u8',
+	0x7e2012a5: 'Day2037 u8',
+	0x805cdabb: 'ItemReleaseVersion u8',
+	0x813c0f10: 'Day2006 u8',
 	0x81a43e76: 'NpcType u8',
 	0x83b54e59: 'RoofMaterial u16',
+	0x84432956: 'CanPutKitchen u8',
+	0x8584af39: 'Month2053 u8',
+	0x85a6cdce: 'Month2037 u8',
+	0x85cf1615: 'Name string128',
 	0x85e386bb: 'AnimeTypeBag string64',
+	0x85fb9dd5: 'PointName string65',
+	0x869fb739: 'Reward4 u32',
+	0x86a4988e: 'Rate2 u8',
+	0x86efa036: 'RumbleForEdit u8',
 	0x870f1e29: 'Tops u16',
 	0x8771aa09: 'ItemNum s8',
 	0x8792265f: 'AppearValue u16',
@@ -176,147 +350,320 @@ preset_names = {
 	0x87ff95cc: 'Output u8',
 	0x895442dc: 'IsSpecial u8',
 	0x89a3482c: 'Item u16',
+	0x89a9492c: 'MaxValue2 u32',
 	0x89be1d8f: 'UseMyDesign u8',
+	0x8a647661: 'CanPutDisplay u8',
 	0x8ae48661: 'StartHour u8',
+	0x8b64d51b: 'DesignSummer2 u16',
+	0x8b82d692: 'Day2013 u8',
+	0x8cc22007: 'DesignSpring1 u16',
 	0x8d58a3bf: 'EventBegin u8',
+	0x8f18144c: 'Month2022 u8',
 	0x8f24f1a4: 'RotateOffsetY f32',
+	0x8f3a76bb: 'Month2046 u8',
 	0x8fb1ed85: 'SortID u32',
 	0x8fced711: 'LandingUniqueID u16',
 	0x8ff469e1: 'CapID u16',
 	0x9067bb0e: 'WaitType u8',
 	0x90bc0855: 'CanFtr u8',
+	0x919ea52a: 'BirthMDay u8',
 	0x91eaeedd: 'BattlePoint u8',
 	0x926d7dd8: 'UpdateParts u8',
+	0x9389a0fe: 'Day2005 u8',
 	0x9403c267: 'AcceMouth u16',
+	0x94113760: 'Rate1 u8',
 	0x9456b6a3: 'BirthMonth u8',
+	0x9463dee3: 'Day2048 u8',
+	0x947875dd: 'CeilingUniqueID u16',
+	0x948eb946: 'OutsideTemplateKind u8',
 	0x94d6cb5d: 'RuleColor u16',
 	0x952cf32e: 'BbsDays u8',
+	0x9538fa22: 'DesignAutumn2 u16',
 	0x9611c929: 'NpcSpClothSet u16',
+	0x96ba28fe: 'Comment string64',
+	0x97136220: 'Month2034 u8',
+	0x973100d7: 'Month2050 u8',
 	0x973fae34: 'Tool u16',
+	0x977adfce: 'Name string32',
+	0x97bf6f9e: 'TransOffsetZ f32',
+	0x9916cf87: 'AnimeTypeBloom string64',
+	0x9937797c: 'Day2010 u8',
 	0x9951a44b: 'AnimeTypeHandGlass string64',
+	0x9a65a748: 'Month2008 u8',
 	0x9b0b7ce4: 'WindowName string64',
 	0x9b433dd5: 'CanEat u8',
 	0x9bc85bd0: 'SpotType u8',
+	0x9bd046a2: 'ItemShareTextureUniqueID u16',
+	0x9bebc317: 'ItemKind9 u16',
+	0x9bee16d1: 'ASCommand string66',
 	0x9c32cf82: 'CarpetMaterial s32',
 	0x9c8a400b: 'Construction u8',
 	0x9cb82a1e: 'Sand u8',
+	0x9d8fd955: 'Month2045 u8',
+	0x9dadbba2: 'Month2021 u8',
 	0x9e19c94c: 'UseCurtain u8',
+	0x9eff6596: 'Day2039 u8',
 	0x9f253177: 'WallScale f32',
+	0x9f9b91e9: 'CanPutFish u8',
 	0x9ff07c89: 'LocalizeModel u8',
+	0xa05e5f9f: 'BaseColorG f32',
+	0xa0cd9212: 'Month2031 u8',
+	0xa0d9d29e: 'IntervalTime u8',
 	0xa0e569dc: 'CurtainUniqueID u16',
+	0xa0eff0e5: 'Month2055 u8',
+	0xa1868b65: 'Amount6 u16',
 	0xa1b074dd: 'NpcLookAction u8',
 	0xa2fe7f71: 'BackColor u16',
+	0xa3249a9d: 'ReBodyPattern0Color1 u8',
+	0xa39f4c26: 'Day2029 u8',
+	0xa3cfc752: 'Rate4 u8',
 	0xa425d8a5: 'MsgFile string64',
+	0xa45750cc: 'Day2000 u8',
 	0xa4db9685: 'HasJmp u8',
 	0xa4f6da11: 'FishPoint s8',
 	0xa5f3bd28: 'NameboardPosZ f32',
+	0xa604b7cf: 'CanPutFood u8',
 	0xa6324d34: 'AcceptAccess u8',
+	0xa68beaa7: 'ItemKind8 u16',
+	0xa7058ef8: 'Month2018 u8',
+	0xa75689ff: 'FlagLand1 s32',
+	0xa7d14aa0: 'ReBodyPattern2Color1 u8',
 	0xa8644472: 'ConditionType u8',
 	0xa88f23cf: 'ResourceName string33',
+	0xa903f753: 'Day2058 u8',
+	0xa99f7b4e: 'Material6 u16',
 	0xa9de0384: 'RainActive u8',
 	0xa9f6fac2: 'BgmEnd u8',
+	0xaa4f6b89: 'CanPutUtility u8',
+	0xaa512967: 'Month2040 u8',
+	0xaa734b90: 'Month2024 u8',
+	0xaa9bfc6e: 'CurtainTexUniqueID u16',
+	0xaacf3ae7: 'ReBodyPattern4Color1 u8',
 	0xab51a3cf: 'DebugName string32',
+	0xab9b88d6: 'ItemKind1 u16',
+	0xac0593cc: 'CanDoze u8',
 	0xac4a3345: 'NfpType u8',
 	0xac69956e: 'EventHalf s8',
+	0xad1e04ad: 'ExchangeItem u16',
+	0xae3add78: 'DemoNetLockState u8',
+	0xae3aeada: 'ReBodyPattern6Color1 u8',
+	0xaeb768f7: 'USen u8',
+	0xaee9894e: 'Day2015 u8',
 	0xaf3beca5: 'ItemLayer u8',
+	0xaf88956b: 'InnerType u8',
+	0xafb1f366: 'CountOtherVillage u8',
+	0xb0304b0d: 'ReBodyPatternNum s8',
 	0xb109a778: 'AnimeTypeSitDown string64',
 	0xb12e26da: 'GroupIndex s8',
 	0xb12e26da: 'GroupIndex s8',
+	0xb1589411: 'StatusPattern u8',
 	0xb16c3035: 'CameraParamName string33',
+	0xb17a68bc: 'Rate7 u8',
 	0xb1f384dc: 'FishPattern s16',
 	0xb244d814: 'RotateOffsetX f32',
+	0xb25a5f0b: 'Month2056 u8',
+	0xb2764c2d: 'ReFabricPattern5Color0 u8',
+	0xb2783dfc: 'Month2032 u8',
+	0xb2ac5428: 'CanPutForBase u8',
 	0xb418fb3b: 'NearCulling u8',
+	0xb44dbf73: 'Seasonality u32',
+	0xb4c9609c: 'MaxValue3 u32',
+	0xb52fe52e: 'CanSellSimple u8',
+	0xb58d7541: 'DonateItemThird u16',
 	0xb5980451: 'ReFabric s16',
+	0xb63221ae: 'WeekSouth u8',
 	0xb662662c: 'RideHeight f32',
+	0xb6839c10: 'ReFabricPattern7Color0 u8',
 	0xb694c63b: 'ContinuousTime u16',
+	0xb6e2ff22: 'Day2003 u8',
+	0xb6f501d2: 'HouseShapeUniqueID u16',
 	0xb76b7d37: 'WatchItem u16',
+	0xb7a46956: 'PicItem u16',
 	0xb7a6c4a8: 'CastType u8',
 	0xb7c9dd05: 'EscapeScale f32',
+	0xb8c6e47e: 'Month2027 u8',
+	0xb8cc232c: 'ItemName string64',
+	0xb8e48689: 'Month2043 u8',
 	0xba007e4f: 'ReadyDays u8',
 	0xbace6554: 'AppearFg u8',
+	0xbb66edcb: 'LabelShort string128',
 	0xbb9c816e: 'Umbrella u16',
+	0xbb9dec57: 'ReFabricPattern1Color0 u8',
+	0xbbff9e89: 'Reward5 u32',
+	0xbc5c26a0: 'Day2016 u8',
+	0xbcb13daf: 'HalfUnitSizeZ u8',
+	0xbcf5d17a: 'DiyRecipeID s16',
+	0xbd439866: 'EUes u8',
 	0xbd7682f5: 'MaxValue u8',
+	0xbe17c845: 'NutItem u16',
+	0xbe26d70e: 'EventLabel string64',
 	0xbe782346: 'SpecialSLink u8',
+	0xbf683c6a: 'ReFabricPattern3Color0 u8',
 	0xbfba247c: 'SlopeTableId u16',
 	0xc05200e1: 'TexName string32',
 	0xc17c7ca8: 'MainDays u8',
 	0xc187c516: 'Height f32',
+	0xc1bb7d2d: 'VisibleOff u8',
+	0xc206b71e: 'Month2007 u8',
 	0xc233727b: 'ItemRemakeType u8',
+	0xc2e9eebe: 'EUnl u8',
 	0xc33a894e: 'ItemNameUniqueID u16',
 	0xc35f78ed: 'TargetShadow u8',
+	0xc47fe703: 'IsEDay u8',
 	0xc61c279a: 'ReBody s16',
+	0xc69c75c0: 'Day2036 u8',
+	0xc6be1737: 'Day2052 u8',
+	0xc6ddbf67: 'TalkFlowName string64',
 	0xc70be94f: 'LocalizeAnim u8',
+	0xc7208ade: 'HeredityA u8',
 	0xc733aa77: 'Variation u16',
 	0xc7ad2fdf: 'CharacterId u32',
 	0xc833b068: 'FloorTableId u16',
+	0xc8848b74: 'RotateOffsetZ f32',
 	0xc89fb7af: 'Storage u8',
+	0xc8a5a762: 'CanSetInTrashBox u8',
+	0xc8b86e9c: 'Month2012 u8',
 	0xcad74e4e: 'ItemData string32',
 	0xcb358e51: 'AnimeTypeBasket string64',
 	0xcb5eb33f: 'RemakeID s16',
+	0xcb625ad7: 'DesignSpring2 u16',
+	0xcbbe9d2d: 'ScoreMultiplier f32',
+	0xcc00ceb5: 'Day2047 u8',
 	0xcc136eb5: 'Bottoms u16',
+	0xcc22ac42: 'Day2023 u8',
+	0xccc4afcb: 'DesignSummer1 u16',
+	0xce0933fc: 'MaxValue1 u32',
 	0xce827d47: 'Shoes u16',
 	0xceb81aff: 'BoardDesign u8',
 	0xd01f154e: 'TransOffsetY f32',
 	0xd069f90c: 'StageName string32',
 	0xd06d98dc: 'AnimeTypeSmartPhone string64',
 	0xd086a528: 'TargetInsect u8',
-	0xd15bdbb6: 'EquipGetRecipe s16',
+	0xd0917a07: 'Month2060 u8',
+	0xd0b318f0: 'Month2004 u8',
+	0xd15bdbb6: 'ItemKind3 u16',
 	0xd1f6dae0: 'Type u8',
 	0xd200ffd3: 'WatchAngleY f32',
+	0xd22a8fc9: 'CNzh u8',
+	0xd29880f2: 'DesignAutumn1 u16',
 	0xd2c59675: 'LightParamName string32',
+	0xd35f282e: 'Material4 u16',
+	0xd40bb8d9: 'Day2051 u8',
+	0xd429da2e: 'Day2035 u8',
 	0xd4697ff8: 'CanPlant u8',
 	0xd4892d19: 'AudioMusicID s16',
 	0xd55938bd: 'DefaultValue u8',
 	0xd5692bff: 'Day u8',
+	0xd5952530: 'HeredityB u8',
+	0xd59ff85e: 'BuryItem2 u16',
 	0xd605c40d: 'NpcBegin u8',
 	0xd6b82305: 'NeedType u8',
+	0xd75966ed: 'Month2049 u8',
 	0xd7ded52a: 'LabelType u8',
 	0xd862189a: 'DefaultSwitch u8',
 	0xd89a0db0: 'SelectWeight u8',
+	0xd8f76b76: 'DayNorth u8',
 	0xd941db12: 'EquipRule string32',
+	0xd95f1f46: 'Day2009 u8',
 	0xd9a1f501: 'RoomType u32',
+	0xda01c243: 'EyeAcceID u16',
+	0xda0b5c29: 'WaitScale f32',
+	0xda0dc172: 'Month2011 u8',
 	0xda63a0cc: 'WallType u16',
+	0xdaaf8ba0: 'ToyItemID u16',
 	0xdadfa19a: 'EnglishName string32',
 	0xdae27694: 'CanSetChest u8',
+	0xdb46d805: 'Amount4 u16',
 	0xdca79149: 'Reaction u8',
 	0xdcfb52e8: 'ResName string32',
+	0xddc5dd98: 'Month2038 u8',
+	0xde9703ac: 'Day2020 u8',
+	0xdeb3f8dc: 'NpcDefaultSwitch u8',
+	0xdeb5615b: 'Day2044 u8',
 	0xdf33ee48: 'NameboardPosX f32',
 	0xdf881359: 'ResourceName string32',
 	0xdfb46994: 'TopsID u16',
 	0xe07863ab: 'SpecialSelect u8',
+	0xe0a5f428: 'Month2028 u8',
+	0xe0f6f32f: 'FlagLand2 s32',
 	0xe113ac8d: 'SocksID u16',
+	0xe1fd904b: 'ReFabricPattern6Color1 u8',
 	0xe23c6453: 'InsectPattern s16',
 	0xe24d9b0e: 'CaptureDiyIcon u8',
 	0xe253c7f8: 'NameboardPosY f32',
 	0xe2bff7f5: 'SendPlayReport u8',
+	0xe2d0ac54: 'PlacementKey string32',
 	0xe3a28616: 'WindowUniqueID u16',
+	0xe3d548eb: 'Day2054 u8',
+	0xe3f72a1c: 'Day2030 u8',
+	0xe43f36f6: 'Day2019 u8',
+	0xe5084076: 'ReFabricPattern4Color1 u8',
+	0xe5337bd9: 'BcatLevel u8',
+	0xe5644dde: 'EUit u8',
+	0xe626f1b5: 'Amount5 u16',
+	0xe76de8c2: 'Month2001 u8',
 	0xe7e965db: 'PlayerNoEntry u8',
+	0xe8163031: 'ReFabricPattern2Color1 u8',
+	0xe8ffd1ee: 'BuryItem3 u16',
+	0xe91978ea: 'Rate8 u8',
+	0xe949f39e: 'Day2025 u8',
+	0xe96b9169: 'Day2041 u8',
+	0xea394f5d: 'Month2059 u8',
+	0xeaadf252: 'SeasonSpringLevel u8',
+	0xebb9a634: 'ToolID u16',
+	0xec3bf206: 'ItemKind2 u16',
+	0xece3e00c: 'ReFabricPattern0Color1 u8',
 	0xecf95b05: 'Offset f32',
+	0xecfe9ddb: 'EnableStageChange u8',
 	0xecffb7c6: 'StructureData string32',
 	0xed7f3cfe: 'TransOffsetX f32',
+	0xedd33140: 'Month2014 u8',
+	0xee3f019e: 'Material5 u16',
 	0xee9ce68d: 'BridgeTypeUniqueID u16',
+	0xef1f311c: 'CanPutInsect u8',
 	0xf07156d2: 'ShoesID u16',
+	0xf0af46fb: 'ReBodyPattern3Color0 u8',
 	0xf0cf80ff: 'Color u32',
+	0xf0fe7aec: 'HeredityD u8',
+	0xf14285f2: 'Day2033 u8',
+	0xf160e705: 'Day2057 u8',
 	0xf196e054: 'NetPlay u8',
 	0xf2ce6e17: 'AutoDisappear u8',
 	0xf37316e6: 'AIFlowName string64',
+	0xf3d8fa00: 'USfr u8',
 	0xf429d772: 'HelmetID u16',
+	0xf45a96c6: 'ReBodyPattern1Color0 u8',
 	0xf4678f13: 'DigItem u16',
 	0xf489f3c5: 'HasDoorWindow u8',
+	0xf551b995: 'EUde u8',
 	0xf58109f5: 'SilhouettePoint u8',
 	0xf5a73337: 'Grow u8',
+	0xf5d8472c: 'Month2002 u8',
 	0xf68a2366: 'MessageLabel string32',
 	0xf6b34c16: 'SpNpcCloth s16',
 	0xf75ddf51: 'Dummy u8',
 	0xf8316716: 'Depth f32',
 	0xf8a892fc: 'CliffCreate u8',
 	0xf8be7f94: 'SmartphoneRemakePattern u16',
+	0xf8d7413b: 'MonthSouth u8',
+	0xf944e681: 'ReBodyPattern7Color0 u8',
 	0xfad4ff78: 'ModelResName string65',
 	0xfbb451bf: 'PoseTrans u8',
+	0xfbde3e87: 'Day2042 u8',
+	0xfbfc5c70: 'Day2026 u8',
 	0xfc275e86: 'CapturePreset string32',
+	0xfc5fe459: 'Reward6 u32',
+	0xfc6134e3: 'WdaySouth u8',
+	0xfc86133a: 'CatalogItemUniqueID u16',
 	0xfca98253: 'AnimeTypeNet string64',
+	0xfce7d916: 'StopAutoSave u8',
+	0xfd415a4c: 'CanNotLookFace u8',
 	0xfd9af1e1: 'ItemUniqueID u16',
+	0xfdb136bc: 'ReBodyPattern5Color0 u8',
 	0xfdeed09c: 'ModelID u16',
+	0xfe807868: 'RegionAsia u8',
+	0xff468c5f: 'RegionJp u8',
+	0xff669eae: 'Month2017 u8',
 	0xffe069a3: 'CheckDonation u8',
 
 	# field outside template
@@ -417,15 +764,8 @@ preset_names = {
 	0x6841b0c2: 'sep0408',
 	0x339772b5: 'sep1923',
 }
-preset_enum_names = {
-	0x9b7aa0a0: 'enum_GroundedItemType',
-	0x19a9348c: 'enum_OuterMapChunkType',
-	0xd5a8bf7e: 'enum_CompassNESW',
-	0x7dcd5be1: 'enum_NoneHighNormalLow',
-	0x64330cb0: 'enum_CompassNS',
-	0xf80e9fee: 'enum_GenderBias',
-	0xdda5d566: 'enum_TwoGenders',
-}
+
+missing_hashes = set()
 
 def analyse_value(key, value):
 	maybe_string = True
@@ -467,111 +807,99 @@ def infer_type(rows, key, size):
 
 
 
-def print_enum(prefix, enum):
-	en_names, jp_names = enum
+def print_enum(prefix, en_names, jp_names):
 	en_names = list(map(repr, en_names))
 	jp_names = list(map(repr, jp_names))
 	max_len = max(map(len, en_names))
 	for e, j in zip(en_names, jp_names):
 		print('%s(%s, %s),' % (prefix, e.ljust(max_len), j))
 
-path = sys.argv[1]
-files = os.listdir(path)
-
-enum_uses = {}
-shared_enums = []
-shared_enum_names = []
-enum_remaps = {}
-assigned_names = set()
-
-def assign_name(key):
-	try:
-		base = preset_enum_names[key]
-	except KeyError:
-		base = 'enum_%08x' % key
-	if base not in assigned_names:
-		assigned_names.add(base)
-		return base
-	else:
-		for i in range(1, 1000):
-			name = '%s_%03d' % (base, i)
-			if name not in assigned_names:
-				assigned_names.add(name)
-				return name
-
-with open(sys.argv[2], 'rb') as f:
-	enums = json.load(f)
-for filename, enum_list in enums.items():
-	for key, enum in enum_list.items():
-		key = int(key)
-		enumkey = str(enum) # terrible hack
-		if enumkey in enum_uses:
-			if enum not in shared_enums:
-				name = assign_name(key)
-				shared_enums.append(enum)
-				shared_enum_names.append(name)
-				enum_remaps[enum_uses[enumkey]] = name
-			enum_remaps[(filename, key)] = enum_remaps[enum_uses[enumkey]]
-		else:
-			enum_uses[enumkey] = (filename, key)
-
-for name, enum in zip(shared_enum_names, shared_enums):
-	print('%s = (' % name)
-	print_enum('\t', enum)
-	print(')')
+if __name__ == '__main__':
+	print('from bcsv import *')
 	print()
 
-for filename in sorted(files):
-	if filename.endswith('.bcsv'):
-		b = bcsv.File(bcsv.Row)
-		print('class %s(Row):' % (filename[:-5]))
-		with open('%s/%s' % (path, filename), 'rb') as f:
-			b.load(f.read())
-		it = b.fields.items()
-		if '-sort' in sys.argv:
-			it = sorted(it)
-		for key, (offset, size) in it:
-			try:
-				name = preset_names[key]
-			except KeyError:
-				name = '_%08x' % key
-			if ' ' in name:
-				# this is something we know, for sure
-				name, typ = name.split(' ')
-				if typ.startswith('string'):
-					print('\t%s = String(0x%08x) # %s' % (name, key, typ))
-				else:
-					types = dict(
-						u8=('U8',1), s8=('S8',1), u16=('U16',2), s16=('S16',2),
-						u32=('U32',4), s32=('S32',4), f32=('Float',4))
-					typ, esize = types[typ]
-					if size > esize:
-						# TODO handle this correctly
-						suffix = ' # size is %d, could this be an array?' % size
-					else:
-						suffix = ''
-					print('\t%s = %s(0x%08x)%s' % (name, typ, key, suffix))
+	path = sys.argv[1]
+	files = os.listdir(path)
 
-			elif filename in enums and str(key) in enums[filename]:
-				assert(size == 4)
+	with open(sys.argv[2], 'rb') as f:
+		enumData = json.load(f)
+
+	# build info for each field we know of
+	enLookup, jpLookup = {}, {}
+
+	for enumKey, enum in enumData.items():
+		if 'bcsvFields' in enum:
+			for f in enum['bcsvFields']:
+				enLookup[tuple(f)] = enumKey
+		if 'jpBcsvFields' in enum:
+			for f in enum['jpBcsvFields']:
+				jpLookup[tuple(f)] = enumKey
+
+	pairs = []
+	for field in enLookup.keys():
+		pair = enLookup[field], jpLookup[field]
+		if pair not in pairs:
+			pairs.append(pair)
+			print('enum_%s_%s = (' % pair)
+			print_enum('\t', enumData[pair[0]]['choices'], enumData[pair[1]]['choices'])
+			print(')')
+			print()
+
+	for filename in sorted(files):
+		if filename.endswith('.bcsv'):
+			strippedName = filename[:-5]
+			b = bcsv.File(bcsv.Row)
+			print('class %s(Row):' % strippedName)
+			with open('%s/%s' % (path, filename), 'rb') as f:
+				b.load(f.read())
+			it = b.fields.items()
+			if '-sort' in sys.argv:
+				it = sorted(it)
+			for key, (offset, size) in it:
 				try:
-					remap = enum_remaps[(filename, key)]
-					print('\t%s = Enum(0x%08x, %s)' % (name, key, remap))
+					name = preset_names[key]
 				except KeyError:
-					print('\t%s = Enum(0x%08x, (' % (name, key))
-					print_enum('\t\t', enums[filename][str(key)])
-					print('\t))')
-			else:
-				# let's make some assumptions
-				typ = infer_type(b.rows, key, size)
-				if typ is not None:
-					print('\t%s = %s(0x%08x)%s' % (name, typ[0], key, typ[1]))
-				else:
-					print('\t%s = Field(0x%08x) # %d byte%s' % (name, key, size, '' if size == 1 else 's'))
-		print()
+					name = '_%08x' % key
+					missing_hashes.add(key)
+				if ' ' in name:
+					# this is something we know, for sure
+					name, typ = name.split(' ')
+					if typ.startswith('string'):
+						print('\t%s = String(0x%08x) # %s' % (name, key, typ))
+					else:
+						types = dict(
+							u8=('U8',1), s8=('S8',1), u16=('U16',2), s16=('S16',2),
+							u32=('U32',4), s32=('S32',4), f32=('Float',4))
+						typ, esize = types[typ]
+						if size > esize:
+							# TODO handle this correctly
+							suffix = ' # size is %d, could this be an array?' % size
+						else:
+							suffix = ''
+						print('\t%s = %s(0x%08x)%s' % (name, typ, key, suffix))
 
-print('lookup = {')
-for filename in sorted(files):
-	if filename.endswith('.bcsv'):
-		print('\t%r: %s,' % (filename, filename[:-5]))
-print('}')
+				elif (strippedName, key) in enLookup:
+					assert(size == 4)
+					en = enLookup[(strippedName, key)]
+					jp = jpLookup[(strippedName, key)]
+					print('\t%s = Enum(0x%08x, enum_%s_%s)' % (name, key, en, jp))
+				else:
+					# let's make some assumptions
+					typ = infer_type(b.rows, key, size)
+					if typ is not None:
+						print('\t%s = %s(0x%08x)%s' % (name, typ[0], key, typ[1]))
+					else:
+						print('\t%s = Field(0x%08x) # %d byte%s' % (name, key, size, '' if size == 1 else 's'))
+			print()
+
+	print('lookup = {')
+	for filename in sorted(files):
+		if filename.endswith('.bcsv'):
+			print('\t%r: %s,' % (filename, filename[:-5]))
+	print('}')
+
+
+if '-p' in sys.argv:
+	with open('hashlist.txt', 'w') as f:
+		for h in missing_hashes:
+			f.write('%08x:00000000\n' % h)

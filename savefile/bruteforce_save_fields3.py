@@ -42,8 +42,10 @@ def attemptstr(s):
 for name in basetypes:
     _attempt(typekeys, name)
 
-def buildWordgramPool():
-    source_names = [s.strip() for s in open('allstr','rb')]
+def buildWordgramPool(path=None):
+    if path is None:
+        path = 'allstr'
+    source_names = [s.strip() for s in open(path,'rb')]
     pool = set()
 
     casesplitRE = re.compile(b'[A-Z][a-z]*')
@@ -173,6 +175,59 @@ def guessTypesStrategy():
                 attemptstr(f'{prefix}{w}{i}')
                 attemptstr(f'{prefix}{w}<{i}>')
                 attemptstr(f'{prefix}{w}[{i}]')
+
+
+
+pool = set()
+noLetter = re.compile('[^A-Za-z]')
+looksLikeConstant = re.compile('^c[A-Z]')
+hkName = re.compile('^hk[A-Z]')
+
+def looksBad(s):
+    for c in s:
+        if ord(c) > 127:
+            return True
+    return False
+
+allCapsRE = re.compile('^[A-Z]+$')
+casesplitRE = re.compile('[A-Z][a-z]*')
+def addCS(pool, s):
+    bits = casesplitRE.findall(s)
+    for groupSize in range(1, min(len(bits), 10)):
+        for i in range(len(bits) - groupSize + 1):
+            group = bits[i:i+groupSize]
+            pool.add(''.join(group))
+
+for line in open('../../strs120filter'):
+    if line.startswith('__'): continue
+    if line.startswith('_Z'): continue
+    if line.startswith('N2nn'): continue
+    if line.startswith('N4pead'): continue
+    if line.startswith('eyJ'): continue
+    if hkName.match(line): continue
+    if looksBad(line): continue
+    for bit in noLetter.split(line):
+        if re.match(looksLikeConstant, bit):
+            bit = bit[1:]
+        if len(bit) > 5 and allCapsRE.match(bit):
+            continue
+        if bit:
+            addCS(pool, bit)
+
+with open('../evfl/evflActors120.json', 'r') as f:
+    for v in json.load(f).values():
+        for n in v['actions']:
+            addCS(pool, n.replace('EventFlowAction', ''))
+        for n in v['queries']:
+            addCS(pool, n.replace('EventFlowQuery', ''))
+
+with open('wordlist2.txt', 'w') as f:
+    for p in pool:
+        f.write(p)
+        f.write('\n')
+
+import sys
+sys.exit()
 
 strategy(buildWordgramPool())
 strategy(buildStringPool())

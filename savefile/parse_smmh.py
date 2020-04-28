@@ -117,7 +117,7 @@ class SaveDefinition:
             self.types[type_obj.id] = type_obj
 
 
-'''
+
 import os
 type_hashes = set()
 field_hashes = set()
@@ -130,9 +130,17 @@ for name in os.listdir(sys.argv[1]):
                 type_hashes.add(field.type_id)
                 field_hashes.add(field.id)
 
-with open('all_save_field_keys.json', 'w') as f:
-    json.dump({'t': list(type_hashes), 'f': list(field_hashes)}, f)
-'''
+with open('typeHashes', 'w') as f:
+    for h in type_hashes:
+        if h not in TYPE_KEYS or TYPE_KEYS[h] == None:
+            f.write(f'{h:08x}:00000000\n')
+with open('fieldHashes', 'w') as f:
+    for h in field_hashes:
+        if h not in FIELD_KEYS or FIELD_KEYS[h] == None:
+            f.write(f'{h:08x}:00000000\n')
+#with open('all_save_field_keys.json', 'w') as f:
+#    json.dump({'t': list(type_hashes), 'f': list(field_hashes)}, f)
+
 
 def dump(path, version):
     types = {}

@@ -16,7 +16,7 @@ import sys
 DEBUG = False
 ONLY_FUNC = None #toAddr(0x7100cb9470)
 
-BCSV_PATH = '/Volumes/HFS/repos/switch/ac112upd/romfs/Bcsv'
+BCSV_PATH = '/Volumes/HFS/repos/switch/ac120upd/romfs/Bcsv'
 EARTH = '/Volumes/HFS/repos/switch/CylindricalEarth'
 if EARTH not in sys.path:
     sys.path.append(EARTH)
@@ -26,7 +26,7 @@ from build_specs import preset_names
 
 CALL_KLUDGES = {
     # ItemParam's vf20 calls into this instead of just using memset...
-    0x7100A42EC0: 0x5f
+    0x7100A9F5E0: 0x60
 }
 
 dtManager = currentProgram.dataTypeManager
@@ -257,11 +257,11 @@ def findAllEnums():
 
 
 
-SAFE_REGEX = re.compile('^[A-Za-z_][A-Za-z0-9_]+$')
+SAFE_REGEX = re.compile('^[A-Za-z0-9_]+$')
 
 def isEnumSafe(choices):
     for c in choices:
-        if SAFE_REGEX.match(c) is None:
+        if SAFE_REGEX.match(c) is None and c != '':
             return False
     return True
 
@@ -277,6 +277,31 @@ def scanEnums():
             enumTypeMapU16[key] = dt
 
 
+def enumIsUpToDate(enum, dt):
+    if len(enum['choices']) != dt.count:
+        return False
+    for i, c in enumerate(enum['choices']):
+        nameInDt = dt.getName(i)
+        if nameInDt == '' or (nameInDt != c and nameInDt != ('%s__%d' % (c,i))):
+            return False
+    return True
+
+
+def clearOutEnum(dt):
+    for n in dt.names:
+        dt.remove(n)
+
+def populateEnum(enum, dt):
+    for i, choice in enumerate(enum['choices']):
+        if choice == '':
+            dt.add('__%d'%i, i)
+            continue
+
+        try:
+            dt.add(choice, i)
+        except:
+            dt.add(choice + ('__%d'%i), i)
+
 def syncEnums():
     if not enumNames:
         scanEnums()
@@ -284,38 +309,39 @@ def syncEnums():
     # sync all the stuff up
     n = 0
     for key, enum in enumInfo.iteritems():
-        if key not in enumTypeMap:
+        if key in enumTypeMap:
+            if not enumIsUpToDate(enum, enumTypeMap[key]):
+                print('{} is out of date'.format(key))
+                clearOutEnum(enumTypeMap[key])
+                populateEnum(enum, enumTypeMap[key])
+        else:
             if isEnumSafe(enum['choices']):
                 # gotta throw this one in!
                 name = 'Enum' + key
                 dt = EnumDataType(enumCatPath, name, 4, dtManager)
                 dt.description = 'hash ' + key
-                for i, choice in enumerate(enum['choices']):
-                    try:
-                        dt.add(choice, i)
-                    except:
-                        dt.add(choice + ('__%d'%i), i)
+                populateEnum(enum, dt)
                 dtManager.addDataType(dt, handler)
                 enumTypeMap[key] = dt
                 enumNames[key] = name
             else:
-                print('{} is not safe'.format(enum))
+                pass
 
         if key in enumTypeMap and 'needsU16Variant' in enum:
             name = enumNames[key] + '_u16'
             if key not in enumTypeMapU16:
                 dt = EnumDataType(enumCatPath, name, 2, dtManager)
                 dt.description = 'hashU16 ' + key
-                for i, choice in enumerate(enum['choices']):
-                    try:
-                        dt.add(choice, i)
-                    except:
-                        dt.add(choice + ('__%d'%i), i)
+                populateEnum(enum, dt)
                 dtManager.addDataType(dt, handler)
                 enumTypeMapU16[key] = dt
             else:
                 if enumTypeMapU16[key].name != name:
                     enumTypeMapU16[key].name = name
+                if not enumIsUpToDate(enum, enumTypeMapU16[key]):
+                    print('{} u16 is out of date'.format(key))
+                    clearOutEnum(enumTypeMapU16[key])
+                    populateEnum(enum, enumTypeMapU16[key])
 
 
         # poke the enum's text array
@@ -423,16 +449,15 @@ def stripTypeFromName(name):
 
 def declareBcsvOffsets(bcsvNames):
     for bcsvName in bcsvNames:
-        if bcsvName == 'CalendarEventCountryParam': continue
-        if bcsvName == 'CalendarEventRegionParam': continue
         if bcsvName == 'SoundAmbientPlacementParam': continue
         if bcsvName == 'SoundMaterialType': continue
         if bcsvName == 'WeatherPatternParam': continue
-        vtable = toAddr(bcsvName + '_vtable')
+        #vtable = toAddr(bcsvName + '_vtable')
 
         namespace = getNamespace(bcsvNS, bcsvName)
-        if namespace is None:
-            namespace = symbolTable.createNameSpace(bcsvNS, bcsvName, SourceType.USER_DEFINED)
+        #if namespace is None:
+        #    namespace = symbolTable.createNameSpace(bcsvNS, bcsvName, SourceType.USER_DEFINED)
+        vtable = getSymbol('vtable', namespace).address
 
         # step 1, we want to scrape vf20 for stuff
         vf20addr = toAddr(getLong(vtable.add(0x20)))
@@ -468,7 +493,7 @@ def declareBcsvOffsets(bcsvNames):
                 removeDataAt(addr)
                 createData(addr, intDT)
                 symbolTable.createLabel(addr, name, namespace, SourceType.USER_DEFINED)
-            elif sym.name != name:
+            elif sym.name != name and not sym.name.startswith(name):
                 removeDataAt(addr)
                 createData(addr, intDT)
                 sym.setNameAndNamespace(name, namespace, SourceType.USER_DEFINED)
@@ -558,15 +583,18 @@ def defineBcsvEnumCaches():
         print('%s . %08x -> array %r' % (whichBcsv, fieldKey, whichArray))
 
         enum = enumInfo[jp]
+        fldInfo = [whichBcsv, fieldKey]
         if 'jpBcsvFields' not in enum:
             enum['jpBcsvFields'] = []
-        enum['jpBcsvFields'].append([whichBcsv, fieldKey])
+        if fldInfo not in enum['jpBcsvFields']:
+            enum['jpBcsvFields'].append(fldInfo)
 
         enum = enumInfo[en]
         enum['needsU16Variant'] = True
         if 'bcsvFields' not in enum:
             enum['bcsvFields'] = []
-        enum['bcsvFields'].append([whichBcsv, fieldKey])
+        if fldInfo not in enum['bcsvFields']:
+            enum['bcsvFields'].append(fldInfo)
 
         namespace = getNamespace(bcsvNS, whichBcsv)
 
@@ -584,7 +612,9 @@ def defineBcsvEnumCaches():
 
 # now let's get those 
 #enumInfo = findAllEnums()
-with open('enumData.json', 'r') as f:
+#with open('enumData120.json', 'w') as f:
+#   json.dump(enumInfo, f, indent=4)
+with open('enumData120.json', 'r') as f:
     enumInfo = json.load(f)
 
 enumTypeMap = {}
@@ -593,13 +623,13 @@ enumNames = {}
 
 syncEnums()
 
-defineBcsvEnumCaches()
-
 # just gonna rely on the names I already put together
-#bcsvNames = [x.replace('.bcsv', '') for x in os.listdir(BCSV_PATH) if x.endswith('.bcsv')]
-#declareBcsvOffsets(bcsvNames)
+bcsvNames = [x.replace('.bcsv', '') for x in os.listdir(BCSV_PATH) if x.endswith('.bcsv')]
+declareBcsvOffsets(bcsvNames)
+
+#defineBcsvEnumCaches()
 
 
-with open('enumData.json', 'w') as f:
-    json.dump(enumInfo, f, indent=4)
+with open('enumData120.json', 'w') as f:
+    json.dump(enumInfo, f, indent=4, sort_keys=True)
 
