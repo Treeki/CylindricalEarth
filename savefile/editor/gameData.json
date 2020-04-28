@@ -341,6 +341,12 @@
                 "maximum": 65535
             },
             {
+                "enName": "PeddlingAvailableSlo",
+                "id": 44,
+                "jpName": "\u884c\u5546\u89e3\u7981\u6e08|\u30ec\u30a4\u30b8",
+                "maximum": 1
+            },
+            {
                 "enName": "MarketBuilt",
                 "id": 45,
                 "jpName": "\u307e\u3081\u3064\u3076\u5546\u5e97\u304c\u5efa\u3063\u305f",
@@ -375,6 +381,12 @@
                 "id": 50,
                 "jpName": "\u521d\u56de\u30ab\u30d6\u4fa1\u30d1\u30bf\u30fc\u30f3\u9069\u7528\u6e08\u307f\u30d5\u30e9\u30b0",
                 "maximum": 1
+            },
+            {
+                "enName": "FoxArtStockCount",
+                "id": 51,
+                "jpName": "\u3064\u306d\u304d\u3061|\u7f8e\u8853\u54c1\u306e\u5728\u5eab",
+                "maximum": 4
             },
             {
                 "enName": "EventPlazaBuiltToday",
@@ -1601,10 +1613,52 @@
                 "maximum": 1
             },
             {
+                "enName": "MuseumConstruction2",
+                "id": 294,
+                "jpName": "\u535a\u7269\u99281\u21922\u3078\u306e\u5de5\u4e8b\u4e2d",
+                "maximum": 5
+            },
+            {
+                "enName": "MuseumGrowupEnable2",
+                "id": 295,
+                "jpName": "\u535a\u7269\u99282\u3078\u306e\u6210\u9577\u6761\u4ef6\u9054\u6210",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlWantsPainting",
+                "id": 304,
+                "jpName": "\u30d5\u30fc\u30bf\u306e\u7d75\u753b\u30af\u30a8\u30b9\u30c8\u3092\u958b\u59cb\u3057\u305f",
+                "maximum": 1
+            },
+            {
                 "enName": "CampTodaySelectMoveOutNpc",
                 "id": 305,
                 "jpName": "\u30ad\u30e3\u30f3\u30d7\u5834|\u5f37\u5236\u8ee2\u51faNPC\u304c\u4f55\u756a\u76ee\u306e\u4f4f\u4eba\u304b\uff1f(0:\u672a\u62bd\u9078/\u62bd\u9078\u5bfe\u8c61\u306a\u3057)",
                 "maximum": 10
+            },
+            {
+                "enName": "Museum3Built",
+                "id": 306,
+                "jpName": "\u535a\u7269\u9928\u2461\u5b8c\u6210",
+                "maximum": 1
+            },
+            {
+                "enName": "Museum3BuiltToday",
+                "id": 307,
+                "jpName": "\u535a\u7269\u9928\u2461\u5b8c\u6210\u5f53\u65e5\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "CountMuseum2AfterBuild",
+                "id": 308,
+                "jpName": "\u535a\u7269\u9928\u2461|\u30aa\u30fc\u30d7\u30f3\u3057\u3066\u4f55\u65e5\u76ee\u304b",
+                "maximum": 10000
+            },
+            {
+                "enName": "Museum2ConstructionToday",
+                "id": 309,
+                "jpName": "\u4eca\u65e5\u3001\u535a\u7269\u9928\u2461\u5de5\u4e8b\u5f53\u65e5\u3067\u3042\u308b\u304b\uff1f",
+                "maximum": 1
             },
             {
                 "enName": "GrowUpAfterPatch1_1",
@@ -1613,10 +1667,88 @@
                 "maximum": 1
             },
             {
+                "enName": "GrowUpAfterPatch1_2",
+                "id": 311,
+                "jpName": "1.2\u9069\u7528\u3057\u3066\u6210\u9577\u51e6\u7406\u3092\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "EarthdaySloFirstVisit",
+                "id": 315,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc\u306e\u521d\u56de\u30ec\u30a4\u30b8\u3092\u4e88\u7d04\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "SloPeddlerPurchaceToday",
+                "id": 317,
+                "jpName": "\u30ec\u30a4\u30b8\u884c\u5546|\u4eca\u56de\u306e\u6765\u8a2a\u3067\u5cf6\u306e\u8ab0\u304b\u304c\u5546\u54c1\u8cfc\u5165\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxPreVisitToday",
+                "id": 318,
+                "jpName": "\u3064\u306d\u304d\u3061\u304c\u4eca\u65e5\u4e8b\u524d\u6765\u8a2a\u3059\u308b",
+                "maximum": 1
+            },
+            {
                 "enName": "AnyPlayerHouseBuilt",
                 "id": 319,
                 "jpName": "\u4f4f\u4eba\u306e\u8ab0\u304b\u306e\u30de\u30a4\u30db\u30fc\u30e0\u304c\uff11\u5ea6\u3067\u3082\u5efa\u3063\u305f\u3053\u3068\u304c\u3042\u308b",
                 "maximum": 1
+            },
+            {
+                "enName": "MuseumFishStampRackLotID1",
+                "id": 320,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|1\u3064\u76ee\u306e\u30b5\u30ab\u30ca\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
+            },
+            {
+                "enName": "MuseumFishStampRackLotID2",
+                "id": 321,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|2\u3064\u76ee\u306e\u30b5\u30ab\u30ca\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
+            },
+            {
+                "enName": "MuseumFishStampRackLotID3",
+                "id": 322,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|3\u3064\u76ee\u306e\u30b5\u30ab\u30ca\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
+            },
+            {
+                "enName": "MuseumInsectStampRackLotID1",
+                "id": 323,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|1\u3064\u76ee\u306e\u30e0\u30b7\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
+            },
+            {
+                "enName": "MuseumInsectStampRackLotID2",
+                "id": 324,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|2\u3064\u76ee\u306e\u30e0\u30b7\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
+            },
+            {
+                "enName": "MuseumInsectStampRackLotID3",
+                "id": 325,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|3\u3064\u76ee\u306e\u30e0\u30b7\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
+            },
+            {
+                "enName": "MuseumFossilStampRackLotID1",
+                "id": 326,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|1\u3064\u76ee\u306e\u304b\u305b\u304d\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
+            },
+            {
+                "enName": "MuseumFossilStampRackLotID2",
+                "id": 327,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|2\u3064\u76ee\u306e\u304b\u305b\u304d\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
+            },
+            {
+                "enName": "MuseumFossilStampRackLotID3",
+                "id": 328,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0|3\u3064\u76ee\u306e\u304b\u305b\u304d\u306e\u30b9\u30bf\u30f3\u30d7\u53f0ID",
+                "maximum": 50
             },
             {
                 "enName": "AOC_EventFlag_000",
@@ -1628,6 +1760,108 @@
                 "enName": "AOC_EventFlag_001",
                 "id": 330,
                 "jpName": "AOC\u540c\u671f\u30d5\u30e9\u30b0| 001 NSO\u52a0\u5165\u7279\u5178",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxPreVisitReserve",
+                "id": 332,
+                "jpName": "\u4e8b\u524d\u6765\u8a2a\u3064\u306d\u304d\u3061\u3092\u7fcc\u65e5\u306b\u4e88\u7d04\u3059\u308b",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxMovedToMarket",
+                "id": 333,
+                "jpName": "\u3064\u306d\u304d\u3061|\u6765\u8a2a\u6642\u306b\u30d5\u30a3\u30fc\u30eb\u30c9\u304b\u3089\u8239\u3078\u79fb\u52d5\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxAndShipReserve",
+                "id": 334,
+                "jpName": "\u3064\u306d\u304d\u3061\u8239\uff0b\u30d5\u30a3\u30fc\u30eb\u30c9\u3092\u4e88\u7d04\u3059\u308b",
+                "maximum": 1
+            },
+            {
+                "enName": "BCAT_EventFlag_002",
+                "id": 335,
+                "jpName": "\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\u89e3\u7981",
+                "maximum": 1
+            },
+            {
+                "enName": "BCAT_EventFlag_004",
+                "id": 336,
+                "jpName": "x)\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u89e3\u7981",
+                "maximum": 1
+            },
+            {
+                "enName": "BCAT_EventFlag_001",
+                "id": 337,
+                "jpName": "\u30e1\u30fc\u30c7\u30fc\u89e3\u7981",
+                "maximum": 1
+            },
+            {
+                "enName": "BCAT_EventFlag_003",
+                "id": 338,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u89e3\u7981",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxPreVisit1Today",
+                "id": 343,
+                "jpName": "\u3064\u306d\u304d\u30611\u56de\u76ee\u306e\u4e8b\u524d\u6765\u8a2a\u5f53\u65e5",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxPreVisit2Today",
+                "id": 344,
+                "jpName": "\u3064\u306d\u304d\u30612\u56de\u76ee\u306e\u4e8b\u524d\u6765\u8a2a\u5f53\u65e5",
+                "maximum": 1
+            },
+            {
+                "enName": "EarthdaySloFirstVisitToday",
+                "id": 345,
+                "jpName": "\u4eca\u65e5\u304c\u30a2\u30fc\u30b9\u30c7\u30fc\u306e\u521d\u56de\u30ec\u30a4\u30b8\u6765\u8a2a\u65e5",
+                "maximum": 1
+            },
+            {
+                "enName": "UnlockJuneBrideSeq",
+                "id": 347,
+                "jpName": "\u30b2\u30fc\u30e0\u9032\u884c\u7684\u306b\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u89e3\u7981",
+                "maximum": 1
+            },
+            {
+                "enName": "RandomKey1",
+                "id": 348,
+                "jpName": "\u30e9\u30f3\u30c0\u30e0\u30ad\u30fca",
+                "maximum": 65535
+            },
+            {
+                "enName": "RandomKey2",
+                "id": 349,
+                "jpName": "\u30e9\u30f3\u30c0\u30e0\u30ad\u30fcb",
+                "maximum": 65535
+            },
+            {
+                "enName": "RandomKey3",
+                "id": 350,
+                "jpName": "\u30e9\u30f3\u30c0\u30e0\u30ad\u30fcc",
+                "maximum": 65535
+            },
+            {
+                "enName": "RandomKey4",
+                "id": 351,
+                "jpName": "\u30e9\u30f3\u30c0\u30e0\u30ad\u30fcd",
+                "maximum": 65535
+            },
+            {
+                "enName": "FoxPreVisitAlreadyBuyToday",
+                "id": 352,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u65e5\u8ab0\u304b\u304c\u4e8b\u524d\u6765\u8a2a\u4e2d\u306b\u7f8e\u8853\u54c1\u3092\u8cb7\u3063\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "RcoHasResolvedMoveKitBug",
+                "id": 353,
+                "jpName": "\u3044\u305b\u3064\u30ad\u30c3\u30c8\u30d0\u30b0\u3092\u89e3\u6d88\u3057\u305f\u304b",
                 "maximum": 1
             }
         ],
@@ -1943,6 +2177,30 @@
                 "id": 64,
                 "jpName": "\u3068\u305f\u3051\u3051|\u901a\u4fe1\u4e2d\u306b\u30d0\u30fc\u30b9\u30c7\u30fc\u30e9\u30a4\u30d6\u8074\u3044\u305f\uff1f",
                 "maximum": 1
+            },
+            {
+                "enName": "FoxEnterBalloon",
+                "id": 65,
+                "jpName": "\u3064\u306d\u304d\u3061|\u5165\u5e97\u6642\u5f37\u5236\u4f1a\u8a71or\u30d0\u30eb\u30fc\u30f3\u3092\u51fa\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxExitBalloon",
+                "id": 66,
+                "jpName": "\u3064\u306d\u304d\u3061|\u9000\u5e97\u6642\u5f37\u5236\u4f1a\u8a71or\u30d0\u30eb\u30fc\u30f3\u3092\u51fa\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "JuneBrideCeremonyDemoAfterNow",
+                "id": 68,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u7d50\u5a5a\u5f0f\u30c7\u30e2\u76f4\u5f8c\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "RemakeJuneBrideTalkTimeAfterNow",
+                "id": 71,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u6b53\u8ac7\u76f4\u5f8c\u304b\uff1f(\u30ea\u30e1\u30a4\u30af\u89e3\u7981\u5f8c)",
+                "maximum": 1
             }
         ],
         "miles": [
@@ -2071,6 +2329,12 @@
                 "id": 7,
                 "jpName": "6\u7a2e\u985e\u306e\u30d5\u30eb\u30fc\u30c4\u3092\u690d\u3048\u305f",
                 "maximum": 6
+            },
+            {
+                "enName": "PlantBushSeedling",
+                "id": 92,
+                "jpName": "\u5404\u7a2e\u4f4e\u6728\u306e\u82d7\u3092\u690d\u3048\u305f",
+                "maximum": 3
             },
             {
                 "enName": "SellShell",
@@ -2277,6 +2541,12 @@
                 "maximum": 1
             },
             {
+                "enName": "DonateFake",
+                "id": 90,
+                "jpName": "\u5bc4\u8d08\u3057\u3088\u3046\u3068\u3057\u305f\u7f8e\u8853\u54c1\u304c\u8d0b\u4f5c\u3060\u3063\u305f",
+                "maximum": 1
+            },
+            {
                 "enName": "DropPresentinWater",
                 "id": 80,
                 "jpName": "\u98a8\u8239\u306e\u30d7\u30ec\u30bc\u30f3\u30c8\u3092\u6483\u3061\u6c34\u306e\u4e2d\u306b\u843d\u3068\u3057\u305f",
@@ -2341,6 +2611,12 @@
                 "id": 17,
                 "jpName": "\u3068\u305f\u3051\u3051\u306e\u30e9\u30a4\u30d6\u3092\u89b3\u305f",
                 "maximum": 5
+            },
+            {
+                "enName": "BuyatTsunekichiShop",
+                "id": 91,
+                "jpName": "\u3044\u306a\u308a\u30de\u30fc\u30b1\u30c3\u30c8\u3067\u82b8\u8853\u54c1\u3092\u8cb7\u3063\u305f",
+                "maximum": 3
             },
             {
                 "enName": "BeFriendwithVillager",
@@ -3373,13 +3649,138 @@
                 "enName": "TakePicture",
                 "id": 190,
                 "jpName": "\u30ab\u30e1\u30e9\u3067\u5199\u771f\u3092\u64ae\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDPlantCosmos",
+                "id": 192,
+                "jpName": "\u30b3\u30b9\u30e2\u30b9\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u6e08\u307f\uff09"
+            },
+            {
+                "enName": "EDReplantTree",
+                "id": 193,
+                "jpName": "\u30d5\u30eb\u30fc\u30c4\u3092\u98df\u3079\u3066\u3001\u6728\u3092\u690d\u3048\u66ff\u3048\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDPlantPalm",
+                "id": 194,
+                "jpName": "\u6d77\u5cb8\u306b\u30e4\u30b7\u306e\u5b9f\u3092\u690d\u3048\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDPlantCosmosSP",
+                "id": 195,
+                "jpName": "\u30b3\u30b9\u30e2\u30b9\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u5916\uff09"
+            },
+            {
+                "enName": "EDDIYFence",
+                "id": 196,
+                "jpName": "\u82b1\u58c7\u7528\u306e\u67f5\u3092\u3064\u304f\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDDIYCorolla",
+                "id": 197,
+                "jpName": "\u82b1\u3092\u6458\u3093\u3067\u82b1\u51a0\u3092\u3064\u304f\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDDIYFlowerWreath",
+                "id": 198,
+                "jpName": "\u82b1\u3092\u6458\u3093\u3067\u30ea\u30fc\u30b9\u3092\u3064\u304f\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDSendFlower",
+                "id": 199,
+                "jpName": "\u8ab0\u304b\u306b\u82b1\u3092\u8d08\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDDecorateFlower",
+                "id": 200,
+                "jpName": "\u4e00\u8f2a\u306e\u82b1\u3092\u98fe\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDWearFlower",
+                "id": 201,
+                "jpName": "\u82b1\u98fe\u308a\u3092\u8eab\u306b\u3064\u3051\u308b\u6d3b\u52d5"
+            },
+            {
+                "enName": "EDPlantRose",
+                "id": 207,
+                "jpName": "\u30d0\u30e9\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u6e08\u307f\uff09"
+            },
+            {
+                "enName": "EDPlantTulip",
+                "id": 208,
+                "jpName": "\u30c1\u30e5\u30fc\u30ea\u30c3\u30d7\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u6e08\u307f\uff09"
+            },
+            {
+                "enName": "EDPlantHyacinth",
+                "id": 209,
+                "jpName": "\u30d2\u30e4\u30b7\u30f3\u30b9\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u6e08\u307f\uff09"
+            },
+            {
+                "enName": "EDPlantAnemones",
+                "id": 210,
+                "jpName": "\u30a2\u30cd\u30e2\u30cd\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u6e08\u307f\uff09"
+            },
+            {
+                "enName": "EDPlantPansy",
+                "id": 211,
+                "jpName": "\u30d1\u30f3\u30b8\u30fc\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u6e08\u307f\uff09"
+            },
+            {
+                "enName": "EDPlantYuri",
+                "id": 212,
+                "jpName": "\u30e6\u30ea\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u6e08\u307f\uff09"
+            },
+            {
+                "enName": "EDPlantMum",
+                "id": 213,
+                "jpName": "\u30ad\u30af\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u6e08\u307f\uff09"
+            },
+            {
+                "enName": "EDPlantRoseSP",
+                "id": 214,
+                "jpName": "\u30d0\u30e9\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u5916\uff09"
+            },
+            {
+                "enName": "EDPlantTulipSP",
+                "id": 215,
+                "jpName": "\u30c1\u30e5\u30fc\u30ea\u30c3\u30d7\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u5916\uff09"
+            },
+            {
+                "enName": "EDPlantHyacinthSP",
+                "id": 216,
+                "jpName": "\u30d2\u30e4\u30b7\u30f3\u30b9\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u5916\uff09"
+            },
+            {
+                "enName": "EDPlantAnemonesSP",
+                "id": 217,
+                "jpName": "\u30a2\u30cd\u30e2\u30cd\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u5916\uff09"
+            },
+            {
+                "enName": "EDPlantPansySP",
+                "id": 218,
+                "jpName": "\u30d1\u30f3\u30b8\u30fc\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u5916\uff09"
+            },
+            {
+                "enName": "EDPlantYuriSP",
+                "id": 219,
+                "jpName": "\u30e6\u30ea\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u5916\uff09"
+            },
+            {
+                "enName": "EDPlantMumSP",
+                "id": 220,
+                "jpName": "\u30ad\u30af\u306e\u7a2e\u3092\u690d\u3048\u308b\u6d3b\u52d5\uff08\u6d41\u901a\u5916\uff09"
+            },
+            {
+                "enName": "EDPlantShrub",
+                "id": 221,
+                "jpName": "\u4f4e\u6728\u306e\u82d7\u3092\u690d\u3048\u308b\u6d3b\u52d5"
             }
         ],
         "npcMemory": [
             {
                 "enName": "TalkFreeMultiDayEventNow",
                 "id": 0,
-                "jpName": "\u4eca\u3001\u671f\u9593\u578b\u30a4\u30d9\u30f3\u30c8\u7528\u306eFreeF\u3092\u805e\u3044\u305f\u304b\uff1f",
+                "jpName": "\uff08\u30dc\u30c4\uff09\u4eca\u3001\u671f\u9593\u578b\u30a4\u30d9\u30f3\u30c8\u7528\u306eFreeF\u3092\u805e\u3044\u305f\u304b\uff1f",
                 "maximum": 1
             },
             {
@@ -3404,6 +3805,12 @@
                 "enName": "EasterGetRecipeFlag",
                 "id": 4,
                 "jpName": "\u30a4\u30fc\u30b9\u30bf\u30fc|\u3053\u306eNPC\u304b\u3089\u30ea\u30a2\u30af\u30b7\u30e7\u30f3\u4f1a\u8a71\u3067\u30ec\u30b7\u30d4\u3092\u53d7\u3051\u53d6\u3063\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "TalkProgressMuseumBuilt2",
+                "id": 5,
+                "jpName": "\u535a\u7269\u99282\u3078\u306e\u62e1\u5f35\u306b\u95a2\u3059\u308bFreeH_Progress\u3092\u805e\u3044\u305f\u304b\uff1f",
                 "maximum": 1
             },
             {
@@ -3452,6 +3859,12 @@
                 "enName": "HasAcquaintanceship",
                 "id": 13,
                 "jpName": "\u9762\u8b58\u3042\u308a\u304b",
+                "maximum": 1
+            },
+            {
+                "enName": "SitBenchFlag",
+                "id": 14,
+                "jpName": "NPC\u3092\u30d9\u30f3\u30c1\u306b\u5ea7\u3089\u305b\u308b",
                 "maximum": 1
             },
             {
@@ -4307,6 +4720,18 @@
                 "id": 43,
                 "jpName": "\u5f37\u5236\u8ee2\u51fa\u306b\u6307\u5b9a\u3057\u305f\u4f4f\u4eba\u756a\u53f7",
                 "maximum": 10
+            },
+            {
+                "enName": "DisplayJuneBridePresent",
+                "id": 44,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9 | \u7d75\u76bf\u3092\u98fe\u308b\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "ProgressDaysJuneBrideParty",
+                "id": 45,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9 | \u7d50\u5a5a\u30d1\u30fc\u30c6\u30a3\u306b\u53c2\u52a0\u3057\u3066\u304b\u3089\u306e\u7d4c\u904e\u65e5\u6570",
+                "maximum": 7
             }
         ],
         "npcTemp": [
@@ -4733,6 +5158,12 @@
                 "maximum": 1
             },
             {
+                "enName": "ReijiTalkBeforeFlag",
+                "id": 31,
+                "jpName": "\u30ec\u30a4\u30b8|\u884c\u5546\u3067\u4f1a\u8a71\u3057\u305f\u3053\u3068\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "RollanTalkTodayFlag",
                 "id": 33,
                 "jpName": "\u30ed\u30fc\u30e9\u30f3|\u4eca\u65e5\u3059\u3067\u306b\u4f1a\u8a71\u3057\u305f\uff1f",
@@ -4988,6 +5419,12 @@
                 "enName": "RollanTalkBeforeFlag",
                 "id": 86,
                 "jpName": "\u30ed\u30fc\u30e9\u30f3|\u4eca\u307e\u3067\u306b\u4f1a\u8a71\u3057\u305f\u3053\u3068\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "TunekichiTalkBefore",
+                "id": 88,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u307e\u3067\u306b\u4f1a\u8a71\u3057\u305f\u3053\u3068\u3042\u308b\uff1f",
                 "maximum": 1
             },
             {
@@ -5384,6 +5821,24 @@
                 "enName": "SzaHeardAboutHousingKit",
                 "id": 184,
                 "jpName": "\u305f\u306c\u304d\u3061|\u571f\u5730\u78ba\u4fdd\u89e3\u7981\u306e\u8aac\u660e\u805e\u3044\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxTalkTodayFlag",
+                "id": 191,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u65e5\u3064\u306d\u304d\u3061\u3068\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxBuyTodayFlag",
+                "id": 192,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u65e5\u3044\u306a\u308a\u30de\u30fc\u30b1\u30c3\u30c8\u3067\u8cb7\u3044\u7269\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxBuyArtTodayFlag",
+                "id": 193,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u65e5\u3044\u306a\u308a\u30de\u30fc\u30b1\u30c3\u30c8\u3067\u7f8e\u8853\u54c1\u8cb7\u3063\u305f\uff1f",
                 "maximum": 1
             },
             {
@@ -8915,9 +9370,99 @@
                 "maximum": 1
             },
             {
+                "enName": "AlwJuneBrideDayCount",
+                "id": 888,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74\u30af\u30ea\u30a2\u3057\u305f\u56de\u6570",
+                "maximum": 64
+            },
+            {
                 "enName": "EasterCannotGetNnpcRecipeFlag",
                 "id": 889,
                 "jpName": "\u30a4\u30fc\u30b9\u30bf\u30fc|\u4e00\u822cNPC\u304b\u3089\u53d7\u3051\u53d6\u308a\u640d\u306d\u305f\u30ec\u30b7\u30d4\u304c\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideQuestStartFlag",
+                "id": 890,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u30af\u30a8\u30b9\u30c8\u958b\u59cb\u30d5\u30e9\u30b0",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideQuestClearFlag",
+                "id": 891,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u65e5\u30af\u30ea\u30a2\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "StampRallyRunningForPlayer",
+                "id": 892,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\u306b\u53c2\u52a0\u4e2d\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlInsectStampRally1",
+                "id": 893,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30e0\u30b7\uff091\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlInsectStampRally2",
+                "id": 894,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30e0\u30b7\uff092\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlInsectStampRally3",
+                "id": 895,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30e0\u30b7\uff093\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFishStampRally1",
+                "id": 896,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30b5\u30ab\u30ca\uff091\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFishStampRally2",
+                "id": 897,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30b5\u30ab\u30ca\uff092\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFishStampRally3",
+                "id": 898,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30b5\u30ab\u30ca\uff093\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFossilStampRally1",
+                "id": 899,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u304b\u305b\u304d\uff091\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFossilStampRally2",
+                "id": 900,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u304b\u305b\u304d\uff092\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFossilStampRally3",
+                "id": 901,
+                "jpName": "\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u304b\u305b\u304d\uff093\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlpJuneBrideExchangeFlag",
+                "id": 902,
+                "jpName": "\u30ab\u30a4\u30be\u30fc/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u65e5\u4ea4\u63db\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideRemakeOpenFlag",
+                "id": 903,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u30ea\u30e1\u30a4\u30af\u30c6\u30fc\u30de\u89e3\u7981\u6e08\u307f\uff1f",
                 "maximum": 1
             },
             {
@@ -8933,6 +9478,12 @@
                 "maximum": 1
             },
             {
+                "enName": "GetMayDayTicket",
+                "id": 907,
+                "jpName": "\u30e1\u30fc\u30c7\u30fc|\u30e1\u30fc\u30c7\u30fc\u308a\u3087\u3053\u3046\u3051\u3093\u3092\u5165\u624b\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "PAnnouncePreEaster",
                 "id": 909,
                 "jpName": "\u5cf6\u5185\u653e\u9001|\u30a4\u30fc\u30b9\u30bf\u30fc\u6e96\u5099\u671f\u9593\u306e\u653e\u9001\u3092\u805e\u3044\u305f\uff1f",
@@ -8943,6 +9494,30 @@
                 "id": 912,
                 "jpName": "\u30a4\u30fc\u30b9\u30bf\u30fc|\u305f\u307e\u3054\u98a8\u8239\u3092\u30ec\u30b7\u30d4\u6392\u51fa\u6570\u304c\u306a\u3044\u72b6\u614b\u3067\u6483\u3061\u843d\u3068\u3057\u305f\u6570\u3092\u30ab\u30a6\u30f3\u30c8",
                 "maximum": 7
+            },
+            {
+                "enName": "RcoEarthDayAnnouncement",
+                "id": 913,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc|\u6848\u5185\u6240\u305f\u306c\u304d\u3061\u306e\u30a2\u30fc\u30b9\u30c7\u30fc\u544a\u77e5\u3092\u805e\u3044\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "RcoEarthDayGetHedge",
+                "id": 914,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc|\u30a2\u30fc\u30b9\u30c7\u30fc\u671f\u9593\u306b\u305f\u306c\u304d\u3061\u304b\u3089\u300c\u3044\u3051\u304c\u304d\u300d\u3082\u3089\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "SloTalkAboutHedge",
+                "id": 915,
+                "jpName": "\u30ec\u30a4\u30b8|\u30ec\u30a4\u30b8\u304b\u3089\u300c\u3044\u3051\u304c\u304d\u300d\u306e\u8a71\u3092\u3055\u308c\u305f\u3053\u3068\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "SloBuyCount",
+                "id": 916,
+                "jpName": "\u30ec\u30a4\u30b8|\u884c\u5546\u30ec\u30a4\u30b8\u304b\u3089\u8cb7\u3044\u7269\u3057\u305f\u56de\u6570",
+                "maximum": 3
             },
             {
                 "enName": "TalkRumorOVlgFavoriteToday",
@@ -8960,6 +9535,12 @@
                 "enName": "PhoneCallPrintServiceDelayFlag",
                 "id": 921,
                 "jpName": "\u30dd\u30b9\u30bf\u30fc\u89e3\u7981\u5165\u96fb\u304c\u6b21\u56de\u30b2\u30fc\u30e0\u958b\u59cb\u6642\u306b\u5148\u5ef6\u3070\u3057\u3055\u308c\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "EarthdayDailyAllClear",
+                "id": 922,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc\u7528\u306e5\u500d\u65e5\u8ab2\u3092\u4e21\u65b9\u30af\u30ea\u30a2\u3057\u305f\u3053\u3068\u304c\u3042\u308b",
                 "maximum": 1
             },
             {
@@ -8999,6 +9580,66 @@
                 "maximum": 9999
             },
             {
+                "enName": "DodHeardAboutMayDayTravelTicket",
+                "id": 929,
+                "jpName": "\u30e1\u30fc\u30c7\u30fc|\u30e2\u30fc\u30ea\u30fc|\u305f\u306c\u304d\u3061\u304b\u3089\u9810\u304b\u3063\u305f\u30e1\u30fc\u30c7\u30fc\u65c5\u884c\u5238\u306e\u8aac\u660e\u805e\u3044\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "UseMayDayTicket",
+                "id": 930,
+                "jpName": "\u30e1\u30fc\u30c7\u30fc|\u30e1\u30fc\u30c7\u30fc\u65c5\u884c\u5238\u3092\u4f7f\u7528\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlShowPaintingMyself",
+                "id": 934,
+                "jpName": "\u30d5\u30fc\u30bf|\u81ea\u5206\u304c\u7d75\u753b\u30af\u30a8\u30b9\u30c8\u3092\u9054\u6210\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "Owl1stTalkMuseum2",
+                "id": 935,
+                "jpName": "\u30d5\u30fc\u30bf|\u535a\u7269\u9928\u2461\u5b8c\u6210\u5f8c\u306e\u6328\u62f6\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlPaintingQuestExplain",
+                "id": 936,
+                "jpName": "\u30d5\u30fc\u30bf|\u7d75\u753b\u30af\u30a8\u30b9\u30c8\u306e\u8aac\u660e\u3092\u53d7\u3051\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FutaReadyForMuseum2",
+                "id": 937,
+                "jpName": "\u30d5\u30fc\u30bf|\u535a\u7269\u9928\u2461\u5efa\u8a2d\u6761\u4ef6\u9054\u6210\u306e\u5831\u544a\u3092\u805e\u3044\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "HeldCeremonyMuseum2",
+                "id": 938,
+                "jpName": "\u30bb\u30ec\u30e2\u30cb|\u535a\u7269\u9928\u2461\u3092\u958b\u3044\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "EarthdayDailyClearNum",
+                "id": 939,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc\u5c02\u7528\u30af\u30a8\u30b9\u30c8\u3092\u4eca\u65e5\u30af\u30ea\u30a2\u3057\u305f\u6570",
+                "maximum": 2
+            },
+            {
+                "enName": "OwlShowPaintingBeforeQuest",
+                "id": 940,
+                "jpName": "\u30d5\u30fc\u30bf|\u7d75\u753b\u30af\u30a8\u30b9\u30c8\u524d\u306b\u7d75\u753b\u3092\u898b\u305b\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlPaintingQuestDeclined",
+                "id": 941,
+                "jpName": "\u30d5\u30fc\u30bf|\u7d75\u753b\u30af\u30a8\u30b9\u30c8\u3067\u5bc4\u8d08\u3092\u65ad\u3063\u305f\u3053\u3068\u3042\u308b",
+                "maximum": 1
+            },
+            {
                 "enName": "LastIslandRepApproachVillagerIndex",
                 "id": 942,
                 "jpName": "\u6700\u5f8c\u306b\u5cf6\u8a55\u5224\u30a2\u30c3\u30d7\u30a2\u30d7\u30ed\u30fc\u30c1\u4f1a\u8a71\u3092\u3057\u305fNPC\u306e\u4f4f\u4eba\u756a\u53f7",
@@ -9011,10 +9652,58 @@
                 "maximum": 1
             },
             {
+                "enName": "ClearMayDayTour",
+                "id": 945,
+                "jpName": "\u30e1\u30fc\u30c7\u30fc\u30c4\u30a2\u30fc\u306e\u8b0e\u89e3\u304d\u3092\u30af\u30ea\u30a2\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "NnpcApproachNoIslandRepCount",
                 "id": 946,
                 "jpName": "\u30a2\u30d7\u30ed\u30fc\u30c1\u4f1a\u8a71\uff5c\u8a55\u5224UP\u5fdc\u63f4\u4f1a\u8a71\u3092\u898b\u306a\u3044\u307e\u307e\u7d4c\u904e\u3057\u305f\u30d7\u30ec\u30a4\u65e5\u6570",
                 "maximum": 3
+            },
+            {
+                "enName": "JuneBridePlacementDataClearFlag",
+                "id": 947,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u914d\u7f6e\u30c7\u30fc\u30bf\u30af\u30ea\u30a2",
+                "maximum": 1
+            },
+            {
+                "enName": "SloGetHedge",
+                "id": 948,
+                "jpName": "\u30ec\u30a4\u30b8|\u30ec\u30a4\u30b8\u304b\u3089\u300c\u3044\u3051\u304c\u304d\u300d\u3092\u3082\u3089\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "XctGerReward",
+                "id": 949,
+                "jpName": "\u30e1\u30fc\u30c7\u30fc|\u307f\u3057\u3089\u306c\u30cd\u30b3\u304b\u3089\u5831\u916c\u3092\u3082\u3089\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "SpnJuneBrideClearTalkFrag",
+                "id": 950,
+                "jpName": "\u30d1\u30cb\u30a8\u30eb/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u65e5\u30af\u30ea\u30a2\u5f8c\u306e\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideTalkBeforeFlag",
+                "id": 951,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u9762\u8b58\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlpJuneBrideTalkBeforeFlag",
+                "id": 952,
+                "jpName": "\u30ab\u30a4\u30be\u30fc/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u9762\u8b58\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "SpnJuneBrideTalkEventFrag",
+                "id": 953,
+                "jpName": "\u30d1\u30cb\u30a8\u30eb/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74\u30a4\u30d9\u30f3\u30c8\u671f\u9593\u4e2d\u306b\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
             },
             {
                 "enName": "PynVisitYear",
@@ -9029,9 +9718,51 @@
                 "maximum": 1
             },
             {
+                "enName": "OwlStampPlayed",
+                "id": 956,
+                "jpName": "\u30d5\u30fc\u30bf|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\u306b\u53c2\u52a0\u3057\u305f\u3053\u3068\u304c\u3042\u308b",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampPocketWasFull",
+                "id": 959,
+                "jpName": "\u30d5\u30fc\u30bf|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\u5831\u916c\u53d7\u3051\u53d6\u308a\u3067\u30dd\u30b1\u30c3\u30c8\u3044\u3063\u3071\u3044\u3060\u3063\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotInsectReward",
+                "id": 960,
+                "jpName": "\u30d5\u30fc\u30bf|\u305d\u306e\u65e5\u3001\u30b9\u30bf\u30f3\u30d7(\u30e0\u30b7)\u5831\u916c\u3092\u8cb0\u3063\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotFishReward",
+                "id": 961,
+                "jpName": "\u30d5\u30fc\u30bf|\u305d\u306e\u65e5\u3001\u30b9\u30bf\u30f3\u30d7(\u30b5\u30ab\u30ca)\u5831\u916c\u3092\u8cb0\u3063\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotFossilReward",
+                "id": 962,
+                "jpName": "\u30d5\u30fc\u30bf|\u305d\u306e\u65e5\u3001\u30b9\u30bf\u30f3\u30d7(\u5316\u77f3)\u5831\u916c\u3092\u8cb0\u3063\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "DocDeliveryPurchaseExplain",
+                "id": 981,
+                "jpName": "\u30ed\u30c9\u30ea\u30fc|\u5b85\u914d\u30fb\u8cb7\u53d6\u30b5\u30fc\u30d3\u30b9\u306e\u8aac\u660e\u805e\u3044\u305f\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "TalkRumorN2TodayAnyone",
                 "id": 982,
                 "jpName": "\u4eca\u65e5\u8ab0\u304b\u306bRumorN2\u3092\u805e\u3044\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "TownNewsHeardMuseum2OpenFlag",
+                "id": 983,
+                "jpName": "\u6751\u5185\u653e\u9001|\u535a\u7269\u9928\u5efa\u7269\u2461\u304c\u5efa\u3063\u305f\u544a\u77e5\u3092\u805e\u3044\u305f\uff1f",
                 "maximum": 1
             },
             {
@@ -9041,15 +9772,381 @@
                 "maximum": 1
             },
             {
+                "enName": "OwlStampGotInsect",
+                "id": 989,
+                "jpName": "\u30d5\u30fc\u30bf|\u305d\u306e\u65e5\u3001\u30d5\u30fc\u30bf\u30b9\u30bf\u30f3\u30d7(\u30e0\u30b7)\u3092\u62bc\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotFish",
+                "id": 990,
+                "jpName": "\u30d5\u30fc\u30bf|\u305d\u306e\u65e5\u3001\u30d5\u30fc\u30bf\u30b9\u30bf\u30f3\u30d7(\u30b5\u30ab\u30ca)\u3092\u62bc\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotFossil",
+                "id": 991,
+                "jpName": "\u30d5\u30fc\u30bf|\u305d\u306e\u65e5\u3001\u30d5\u30fc\u30bf\u30b9\u30bf\u30f3\u30d7(\u5316\u77f3)\u3092\u62bc\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "CompleteEventMayDay",
+                "id": 992,
+                "jpName": "\u30e1\u30fc\u30c7\u30fc\u30a4\u30d9\u30f3\u30c8\u304c\u5168\u3066\u5b8c\u4e86\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideDayAlreadyCount",
+                "id": 993,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u307e\u3067\u306b\u4f55\u65e5\u76ee\u307e\u3067\u30af\u30ea\u30a2\u3057\u305f\u304b\u7528\u30ab\u30a6\u30f3\u30c8",
+                "maximum": 64
+            },
+            {
+                "enName": "PAnnounceEarthDay",
+                "id": 994,
+                "jpName": "\u5cf6\u5185\u653e\u9001|\u30a2\u30fc\u30b9\u30c7\u30fc\u521d\u56de\u30ed\u30b0\u30a4\u30f3\u6642\u306e\u653e\u9001\u3092\u805e\u3044\u305f\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "TipsChatFlag",
                 "id": 995,
                 "jpName": "\u30c1\u30e3\u30c3\u30c8\u8aac\u660e\u30c0\u30a4\u30a2\u30ed\u30b0\u3092\u898b\u305f\u304b\uff1f",
                 "maximum": 1
             },
             {
+                "enName": "RcoEarthDayAnnouncementPre",
+                "id": 996,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc|\u6848\u5185\u6240\u305f\u306c\u304d\u3061\u306e\u30a2\u30fc\u30b9\u30c7\u30fc\u6e96\u5099\u4e2d\u544a\u77e5\u3092\u805e\u3044\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxPreVisitBuyArtFlag",
+                "id": 997,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4e8b\u524d\u6765\u8a2a\u4e2d\u306b\u7f8e\u8853\u54c1\u3092\u8cb7\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxPreVisitWantSellFlag",
+                "id": 998,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4e8b\u524d\u6765\u8a2a\u3067\u7f8e\u8853\u54c1\u3092\u58f2\u308a\u8fbc\u307f\u4e2d\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "SloTalkedToday",
+                "id": 999,
+                "jpName": "\u30ec\u30a4\u30b8|\u4eca\u65e5\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "CurrentJuneBrideTheme",
+                "id": 1003,
+                "jpName": "\u73fe\u5728\u306e\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u306e\u30c6\u30fc\u30de",
+                "maximum": 2
+            },
+            {
+                "enName": "PreviousJuneBrideTheme",
+                "id": 1004,
+                "jpName": "\u524d\u56de\u306e\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u306e\u30c6\u30fc\u30de",
+                "maximum": 2
+            },
+            {
+                "enName": "IsSelectedJuneBrideCuteThisYear",
+                "id": 1005,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74\u30ad\u30e5\u30fc\u30c8\u304c\u9078\u3070\u308c\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "IsSelectedJuneBrideChicThisYear",
+                "id": 1006,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74\u30b7\u30c3\u30af\u304c\u9078\u3070\u308c\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "IsSelectedJuneBrideGardenThisYear",
+                "id": 1007,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74\u30ac\u30fc\u30c7\u30f3\u304c\u9078\u3070\u308c\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "LastPlayJuneBrideYear",
+                "id": 1010,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u6700\u5f8c\u306b\u904a\u3093\u3060\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u306e\u5e74",
+                "maximum": 9999
+            },
+            {
+                "enName": "FoxFirstTalkInShipFlag",
+                "id": 1011,
+                "jpName": "\u3064\u306d\u304d\u3061|\u8239\u5185\u3067\u4f1a\u8a71\u3057\u305f\u3053\u3068\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxInvitedShipFlag",
+                "id": 1012,
+                "jpName": "\u3064\u306d\u304d\u3061|\u8239\u3078\u8a98\u5c0e\u3055\u308c\u305f\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "NoticeAboutSmartPhoneCase",
                 "id": 1013,
                 "jpName": "\u4f5c\u696d\u53f0\u30ea\u30e1\u30a4\u30af|\u30b9\u30de\u30db\u30b1\u30fc\u30b9\u306e\u8aac\u660e\u30c0\u30a4\u30a2\u30ed\u30b0\u898b\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBridePleaseShootFlag",
+                "id": 1014,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u5199\u771f\u3082\u64ae\u3063\u3066\u3068\u8a00\u308f\u308c\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlPaintingQuestReminder",
+                "id": 1015,
+                "jpName": "\u30d5\u30fc\u30bf|\u305d\u306e\u65e5\u3001\u7f8e\u8853\u54c1\u63d0\u51fa\u306e\u50ac\u4fc3\u3092\u53d7\u3051\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "DocUsePurchaseServiceFalg",
+                "id": 1017,
+                "jpName": "\u30ed\u30c9\u30ea\u30fc|\u8cb7\u53d6\u30b5\u30fc\u30d3\u30b9\u4f7f\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "UsePurchaseBOXFalg",
+                "id": 1018,
+                "jpName": "\u8cb7\u53d6BOX\u4f7f\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxForcedTalkTodayFlag",
+                "id": 1019,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u65e5\u304a\u5e97\u3067\u5165\u5e97\u6642\u306e\u5f37\u5236\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxForcedTalk2TodayFlag",
+                "id": 1020,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u65e5\u304a\u5e97\u3067\u9000\u5e97\u6642\u306e\u5f37\u5236\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "EDDIYFlowerWreathOrderYear",
+                "id": 1022,
+                "jpName": "\u82b1\u3092\u6458\u3093\u3067\u30ea\u30fc\u30b9\u3092\u3064\u304f\u308b\u6d3b\u52d5\u53d7\u6ce8\u5e74",
+                "maximum": 9999
+            },
+            {
+                "enName": "EDDIYCorollaOrderYear",
+                "id": 1023,
+                "jpName": "\u82b1\u3092\u6458\u3093\u3067\u82b1\u51a0\u3092\u3064\u304f\u308b\u6d3b\u52d5\u53d7\u6ce8\u5e74",
+                "maximum": 9999
+            },
+            {
+                "enName": "OwlStampGotRewardExplain",
+                "id": 1024,
+                "jpName": "\u30d5\u30fc\u30bf|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\u5831\u916c\u306f\u4e8c\u91cd\u306b\u8cb0\u3048\u306a\u3044\u8aac\u660e\u3092\u53d7\u3051\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "UseNavigationMayDayTour",
+                "id": 1025,
+                "jpName": "\u30e1\u30fc\u30c7\u30fc|\u7dca\u6025\u8131\u51fa\u30b5\u30fc\u30d3\u30b9\u3092\u4f7f\u7528\u4e2d\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FirstPlayAfterMuseumBuilt2Flag",
+                "id": 1026,
+                "jpName": "\u535a\u7269\u99282\u306b\u62e1\u5f35\u3057\u305f\u3042\u3068\u306e\u30d7\u30ec\u30a4\u521d\u65e5\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideTotalClearCount",
+                "id": 1028,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74\u30af\u30ea\u30a2\u3057\u305f\u56de\u6570\uff08\uff11\u65e5\u4f55\u56de\u3067\u3082\uff09",
+                "maximum": 256
+            },
+            {
+                "enName": "SloTalkedWeedFirst",
+                "id": 1029,
+                "jpName": "\u30ec\u30a4\u30b8|\u96d1\u8349\u521d\u56de\u4f1a\u8a71\u3057\u305f\u3053\u3068\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "SpnJuneBrideGetFenceFrag",
+                "id": 1030,
+                "jpName": "\u30d1\u30cb\u30a8\u30eb/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74\u67f5\u3082\u3089\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "SpnJuneBrideNotGetFenceTodayFrag",
+                "id": 1031,
+                "jpName": "\u30d1\u30cb\u30a8\u30eb/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u65e5\u67f5\u3082\u3089\u3048\u306a\u304b\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "JuneBrideBGMHasUnlocked",
+                "id": 1032,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74BGM\u304c\u89e3\u7981\u3055\u308c\u3066\u3044\u308b\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "XctFirstTalk",
+                "id": 1034,
+                "jpName": "\u307f\u3057\u3089\u306c\u30cd\u30b3/\u30e1\u30fc\u30c7\u30fc|\u9762\u8b58\u3042\u308b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "PAnnounceJuneBride",
+                "id": 1035,
+                "jpName": "\u5cf6\u5185\u653e\u9001|\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u521d\u56de\u30ed\u30b0\u30a4\u30f3\u6642\u306e\u653e\u9001\u3092\u805e\u3044\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "StandByPhoneCallJuneBrideSpn",
+                "id": 1036,
+                "jpName": "\u96fb\u8a71\u30c7\u30e2|\u4eca\u5e74\u30d1\u30cb\u30a8\u30eb\u304b\u3089\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u544a\u77e5\u3055\u308c\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlpJuneBrideGetStickFrag",
+                "id": 1037,
+                "jpName": "\u30ab\u30a4\u30be\u30fc/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u4eca\u5e74\u30b9\u30c6\u30c3\u30ad\u3082\u3089\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "LastApproachVillagerIndex",
+                "id": 1039,
+                "jpName": "\u6700\u5f8c\u306b\u30a2\u30d7\u30ed\u30fc\u30c1\u4f1a\u8a71\u3092\u3057\u305fNPC\u306e\u4f4f\u4eba\u756a\u53f7",
+                "maximum": 10
+            },
+            {
+                "enName": "StandByPhoneCallJuneBride",
+                "id": 1040,
+                "jpName": "\u96fb\u8a71\u30c7\u30e2|\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u544a\u77e5\u96fb\u8a71\u3059\u308b\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBridePartyTalkFlag",
+                "id": 1044,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u30d1\u30fc\u30c6\u30a3\u306e\u6848\u5185\u3055\u308c\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideLastDayTalkFlag",
+                "id": 1045,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u6700\u7d42\u65e5\u306e\u6328\u62f6\u3055\u308c\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "VisitFriendMileageGet",
+                "id": 1046,
+                "jpName": "\u3088\u305d\u306e\u5cf6\u3078\u306e\u304a\u3067\u304b\u3051\u30de\u30a4\u30eb\u30b2\u30c3\u30c8",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideBalloonFlag",
+                "id": 1047,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u30d0\u30eb\u30fc\u30f3\u51fa\u3059\u72b6\u614b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "GstRichItemFlag",
+                "id": 1049,
+                "jpName": "\u3086\u3046\u305f\u308d\u3046|\u9ad8\u4fa1\u306a\u54c1\u3082\u3089\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "PlayerPocketUIEnableInCommuneIsland",
+                "id": 1052,
+                "jpName": "\u30d7\u30ec\u30a4\u30e4\u30fc|\u30b3\u30df\u30e5\u30fc\u30f3\u5cf6\u3067\u306e\u30dd\u30b1\u30c3\u30c8UI\u89e3\u7981",
+                "maximum": 1
+            },
+            {
+                "enName": "GotoMysteryTour",
+                "id": 1053,
+                "jpName": "\u30e2\u30fc\u30ea\u30fc|\u30df\u30b9\u30c6\u30ea\u30fc\u30c4\u30a2\u30fc\u5cf6\u306b\u884c\u3063\u305f\u56de\u6570",
+                "maximum": 5
+            },
+            {
+                "enName": "EnableGotoRareMysteryTour",
+                "id": 1054,
+                "jpName": "\u30e2\u30fc\u30ea\u30fc|\u30df\u30b9\u30c6\u30ea\u30fc\u30c4\u30a2\u30fc\u306e\u30ec\u30a2\u5cf6\u306b\u884c\u3063\u3066\u3044\u3044\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "VisitMysteryTourID20",
+                "id": 1055,
+                "jpName": "ID: 20\u306e\u30df\u30b9\u30c6\u30ea\u30fc\u30c4\u30a2\u30fc\u5cf6\u306b\u305d\u306e\u65e5\u884c\u3063\u305f\u3053\u3068\u304c\u3042\u308b",
+                "maximum": 1
+            },
+            {
+                "enName": "PAnnounceStampRally",
+                "id": 1056,
+                "jpName": "\u5cf6\u5185\u653e\u9001|\u56fd\u969b\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\u306e\u653e\u9001\u3092\u805e\u3044\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxPreVisitBuyArtMaxFlag",
+                "id": 1057,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4e8b\u524d\u6765\u8a2a\u4e2d\u306b2\u500b\u7f8e\u8853\u54c1\u3092\u8cb7\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "EDDIYFlowerWreathClearYear",
+                "id": 1060,
+                "jpName": "\u82b1\u3092\u6458\u3093\u3067\u30ea\u30fc\u30b9\u3092\u3064\u304f\u308b\u6d3b\u52d5\u9054\u6210\u5e74",
+                "maximum": 9999
+            },
+            {
+                "enName": "EDDIYCorollaClearYear",
+                "id": 1061,
+                "jpName": "\u82b1\u3092\u6458\u3093\u3067\u82b1\u51a0\u3092\u3064\u304f\u308b\u6d3b\u52d5\u9054\u6210\u5e74",
+                "maximum": 9999
+            },
+            {
+                "enName": "InducedNpcNum",
+                "id": 1068,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148\u3067\u52e7\u8a98\u3057\u305fNPC\u306e\u6570",
+                "maximum": 3
+            },
+            {
+                "enName": "TalkFreeMultiDayEventTodayFlag",
+                "id": 1069,
+                "jpName": "\u4eca\u65e5\u3001\u671f\u9593\u578b\u30a4\u30d9\u30f3\u30c8\u7528\u306eFreeF\u3092\u805e\u3044\u305f\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "EarthDayBonus",
+                "id": 1070,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc\u306e5\u500d\u30af\u30a8\u30b9\u30c8\u3092\u30af\u30ea\u30a2\u3057\u305f\u65e5\u30d5\u30e9\u30b0",
+                "maximum": 65535
+            },
+            {
+                "enName": "TalkVillagerClearToday",
+                "id": 1071,
+                "jpName": "\u65e5\u8ab2\u3042\u3044\u3055\u3064\u6d3b\u52d5\u3092\u4eca\u65e5\u30af\u30ea\u30a2\u6e08\u307f",
+                "maximum": 1
+            },
+            {
+                "enName": "EarthDayFirstQuestSystem",
+                "id": 1072,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc\u306e5\u500d\u30af\u30a8\u30b9\u30c8\u3092\u307e\u3060\u51fa\u3057\u3066\u3044\u306a\u3044\uff08\u30b7\u30b9\u30c6\u30e0\u7528\uff09",
+                "maximum": 1
+            },
+            {
+                "enName": "EarthDayFirstQuestTalk",
+                "id": 1073,
+                "jpName": "\u30a2\u30fc\u30b9\u30c7\u30fc\u306e5\u500d\u30af\u30a8\u30b9\u30c8\u3092\u307e\u3060\u51fa\u3057\u3066\u3044\u306a\u3044\uff08\u4f1a\u8a71\u7528\uff09",
+                "maximum": 1
+            },
+            {
+                "enName": "MailSendFlag_EarthDayNotice",
+                "id": 1075,
+                "jpName": "\u624b\u7d19|\u30a2\u30fc\u30b9\u30c7\u30fc\u5c0e\u5165\u306e\u624b\u7d19\u3092\u9001\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "PAnnounceMayDayTour",
+                "id": 1076,
+                "jpName": "\u5cf6\u5185\u653e\u9001|\u30a2\u30fc\u30b9\u30c7\u30fc\u521d\u56de\u30ed\u30b0\u30a4\u30f3\u6642\u306e\u653e\u9001\u3092\u805e\u3044\u305f\uff1f",
                 "maximum": 1
             }
         ],
@@ -9393,6 +10490,12 @@
                 "maximum": 1
             },
             {
+                "enName": "ReijiTalkSceneFlag",
+                "id": 6,
+                "jpName": "\u30ec\u30a4\u30b8|\u3053\u306e\u30b7\u30fc\u30f3\u3067\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "RcmTalkSceneFlag",
                 "id": 7,
                 "jpName": "\u307e\u3081\u304d\u3061|\u3053\u306e\u30b7\u30fc\u30f3\u3067\u4f1a\u8a71\u3057\u305f\uff1f",
@@ -9435,6 +10538,12 @@
                 "maximum": 2
             },
             {
+                "enName": "CatchBeeCount",
+                "id": 16,
+                "jpName": "\u30cf\u30c1\u3092\u9023\u7d9a\u3067\u6355\u307e\u3048\u305f\u56de\u6570\u7528\u30ab\u30a6\u30f3\u30c8",
+                "maximum": 5
+            },
+            {
                 "enName": "CatchInsectFesGetNum",
                 "id": 17,
                 "jpName": "\u30e0\u30b7\u53d6\u308a\u5927\u4f1a|\u30e0\u30b7\u53d6\u5f97\u6570",
@@ -9450,6 +10559,48 @@
                 "enName": "SzaTalkInsideOffice",
                 "id": 20,
                 "jpName": "\u3057\u305a\u3048|\u5f79\u5834\u30b7\u30fc\u30f3\u5185\u3067\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxBuyNowFlag",
+                "id": 21,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u56de\u306e\u5165\u5e97\u4e2d\u306b\u8cb7\u3044\u7269\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxCheckItemFlag0",
+                "id": 22,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u56de\u306e\u5165\u5e97\u4e2d\u306bA\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u30c1\u30a7\u30c3\u30af\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxCheckItemFlag1",
+                "id": 23,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u56de\u306e\u5165\u5e97\u4e2d\u306bB\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u30c1\u30a7\u30c3\u30af\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxCheckItemFlag2",
+                "id": 24,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u56de\u306e\u5165\u5e97\u4e2d\u306bC\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u30c1\u30a7\u30c3\u30af\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxCheckItemFlag3",
+                "id": 25,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u56de\u306e\u5165\u5e97\u4e2d\u306bD\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u30c1\u30a7\u30c3\u30af\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxCheckItemFlag4",
+                "id": 26,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u56de\u306e\u5165\u5e97\u4e2d\u306bE\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u30c1\u30a7\u30c3\u30af\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxCheckItemFlag5",
+                "id": 27,
+                "jpName": "\u3064\u306d\u304d\u3061|\u4eca\u56de\u306e\u5165\u5e97\u4e2d\u306bF\u306e\u30a2\u30a4\u30c6\u30e0\u3092\u30c1\u30a7\u30c3\u30af\u3057\u305f\uff1f",
                 "maximum": 1
             },
             {
@@ -9783,6 +10934,36 @@
                 "maximum": 1
             },
             {
+                "enName": "FoxEnterBalloon",
+                "id": 93,
+                "jpName": "\u3064\u306d\u304d\u3061|\u5165\u5e97\u6642\u30d0\u30eb\u30fc\u30f3\u3092\u51fa\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxExitBalloon",
+                "id": 94,
+                "jpName": "\u3064\u306d\u304d\u3061|\u9000\u5e97\u6642\u30d0\u30eb\u30fc\u30f3\u3092\u51fa\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "XctTalkMayDayTourNow",
+                "id": 96,
+                "jpName": "\u307f\u3057\u3089\u306c\u30cd\u30b3|\u30e1\u30fc\u30c7\u30fc\u30c4\u30a2\u30fc\u3067\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "DocMayDayTourFirstTalkDone",
+                "id": 97,
+                "jpName": "\u30ed\u30c9\u30ea\u30fc|\u30e1\u30fc\u30c7\u30fc\u30c4\u30a2\u30fc\u5230\u7740\u5f37\u5236\u4f1a\u8a71\u6e08",
+                "maximum": 1
+            },
+            {
+                "enName": "InJuneBrideStudio",
+                "id": 103,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9\u5c02\u7528\u30b9\u30c6\u30fc\u30b8\u5185\u304b\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "MyDesignExchangeCallMyIdList",
                 "id": 104,
                 "jpName": "\u30de\u30a4\u30c7\u30b6\u30a4\u30f3\u4ea4\u63db\u7aef\u672b|\u3053\u306e\u30b7\u30fc\u30f3\u3067\u81ea\u8eab\u306eID\u4e00\u89a7\u3092\u53d6\u5f97\u3057\u305f\u304b\uff1f",
@@ -9801,10 +10982,76 @@
                 "maximum": 1
             },
             {
+                "enName": "IsJuneBrideCeremonyDemo",
+                "id": 110,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u7d50\u5a5a\u5f0f\u30bb\u30ec\u30e2\u30cb\u30fc\u30c7\u30e2\u4e2d\u304b\uff1f",
+                "maximum": 1
+            },
+            {
                 "enName": "FreeISelectCount",
                 "id": 111,
                 "jpName": "FreeI\u4f1a\u8a71|\u5831\u916c\u3092\u518d\u62bd\u9078\u3057\u305f\u56de\u6570",
                 "maximum": 9
+            },
+            {
+                "enName": "ShopPlayerInNextGoto",
+                "id": 112,
+                "jpName": "\u30b7\u30e7\u30c3\u30d7|NextGoto\u3092\u8e0f\u3093\u3060\u304b\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideDayScoreCount",
+                "id": 115,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u3082\u3089\u3048\u308b\u3042\u3044\u306e\u3051\u3063\u3057\u3087\u3046\u6570\u7528\u30ab\u30a6\u30f3\u30c8",
+                "maximum": 16
+            },
+            {
+                "enName": "DocHintMayDayTour",
+                "id": 117,
+                "jpName": "\u30ed\u30c9\u30ea\u30fc|\u30e1\u30fc\u30c7\u30fc\u30c4\u30a2\u30fc\u306e\u8b0e\u89e3\u304d\u30d2\u30f3\u30c8\u7528\u30ab\u30a6\u30f3\u30c8",
+                "maximum": 4
+            },
+            {
+                "enName": "AlwJuneBrideSitDownFlag",
+                "id": 118,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u5ea7\u3063\u3066\u3044\u308b\u3068\u304d\u306e\u53d7\u3051\u6e21\u3057\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBrideBouquetFlag",
+                "id": 119,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u30d6\u30fc\u30b1\u3057\u307e\u3063\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "PublicAnnounceEarthDayToday",
+                "id": 120,
+                "jpName": "\u5cf6\u5185\u653e\u9001|\u4eca\u65e5\u30a2\u30fc\u30b9\u30c7\u30fc\u306e\u30cb\u30e5\u30fc\u30b9\u3092\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "AlwJuneBridePartyEndFlag",
+                "id": 121,
+                "jpName": "\u30ea\u30b5/\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u30d1\u30fc\u30c6\u30a3\u7d42\u308f\u308b\u5834\u5408\u306e\u4f1a\u8a71\u805e\u3044\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "RecommendDIYtrialMayDay",
+                "id": 122,
+                "jpName": "\u305f\u306c\u304d\u3061/\u30e1\u30fc\u30c7\u30fc|DIY\u4f53\u9a13\u4f1a\u3092\u53d7\u3051\u308b\u3088\u3046\u306b\u52e7\u3081\u3089\u308c\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxCheckArtCount",
+                "id": 123,
+                "jpName": "\u3064\u306d\u304d\u3061|\u30c1\u30a7\u30c3\u30af\u3057\u305f\u7f8e\u8853\u54c1\u306e\u6570",
+                "maximum": 3
+            },
+            {
+                "enName": "IsJuneBrideDemoSitStart",
+                "id": 125,
+                "jpName": "\u30b8\u30e5\u30fc\u30f3\u30d6\u30e9\u30a4\u30c9|\u5ea7\u308a\u72b6\u614b\u3067\u30bb\u30ec\u30e2\u30cb\u30fc\u30c7\u30e2\u958b\u59cb\u3057\u305f\u304b\uff1f",
+                "maximum": 1
             }
         ],
         "playerVisit": [
@@ -10083,6 +11330,108 @@
                 "id": 63,
                 "jpName": "\u3074\u3087\u3093\u305f\u308d\u3046|\u4eca\u65e5\u304a\u3067\u304b\u3051\u5148\u3067\u80cc\u5f8c\u304b\u3089\u8a71\u3057\u304b\u3051\u305f\u3053\u3068\u3042\u308b\uff1f",
                 "maximum": 1
+            },
+            {
+                "enName": "StampRallyRunningForPlayer",
+                "id": 64,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\u306b\u53c2\u52a0\u4e2d\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlInsectStampRally1",
+                "id": 65,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30e0\u30b7\uff091\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlInsectStampRally2",
+                "id": 66,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30e0\u30b7\uff092\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlInsectStampRally3",
+                "id": 67,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30e0\u30b7\uff093\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFishStampRally1",
+                "id": 68,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30b5\u30ab\u30ca\uff091\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFishStampRally2",
+                "id": 69,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30b5\u30ab\u30ca\uff092\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFishStampRally3",
+                "id": 70,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u30b5\u30ab\u30ca\uff093\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFossilStampRally1",
+                "id": 71,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u304b\u305b\u304d\uff091\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFossilStampRally2",
+                "id": 72,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u304b\u305b\u304d\uff092\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlFossilStampRally3",
+                "id": 73,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\uff08\u304b\u305b\u304d\uff093\u3064\u76ee\u3092\u62bc\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampPocketWasFull",
+                "id": 74,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\u5831\u916c\u53d7\u3051\u53d6\u308a\u3067\u30dd\u30b1\u30c3\u30c8\u3044\u3063\u3071\u3044\u3060\u3063\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotInsect",
+                "id": 75,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u305d\u306e\u65e5\u3001\u30d5\u30fc\u30bf\u30b9\u30bf\u30f3\u30d7(\u30e0\u30b7)\u3092\u62bc\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotFish",
+                "id": 76,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u305d\u306e\u65e5\u3001\u30d5\u30fc\u30bf\u30b9\u30bf\u30f3\u30d7(\u30b5\u30ab\u30ca)\u3092\u62bc\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotFossil",
+                "id": 77,
+                "jpName": "\u304a\u51fa\u304b\u3051\u5148|\u305d\u306e\u65e5\u3001\u30d5\u30fc\u30bf\u30b9\u30bf\u30f3\u30d7(\u5316\u77f3)\u3092\u62bc\u3057\u305f",
+                "maximum": 1
+            },
+            {
+                "enName": "FoxTalkFlag",
+                "id": 78,
+                "jpName": "\u3064\u306d\u304d\u3061|\u304a\u3067\u304b\u3051\u5148\u3067\u4f1a\u8a71\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "DC_FoxBuyTodayFlag",
+                "id": 79,
+                "jpName": "\u3064\u306d\u304d\u3061|\u304a\u3067\u304b\u3051\u5148\u306e\u3044\u306a\u308a\u30de\u30fc\u30b1\u30c3\u30c8\u3067\u8cb7\u3044\u7269\u3057\u305f\uff1f",
+                "maximum": 1
+            },
+            {
+                "enName": "OwlStampGotRewardExplain",
+                "id": 80,
+                "jpName": "\u30d5\u30fc\u30bf|\u30b9\u30bf\u30f3\u30d7\u30e9\u30ea\u30fc\u5831\u916c\u306f\u4e8c\u91cd\u306b\u8cb0\u3048\u306a\u3044\u8aac\u660e\u3092\u53d7\u3051\u305f",
+                "maximum": 1
             }
         ]
     },
@@ -10093,11 +11442,11 @@
         },
         "60001": {
             "item": 3360,
-            "name": "PltTreeApple"
+            "name": "PltTreeOak4"
         },
         "60002": {
             "item": 3365,
-            "name": "PltTreeOrange"
+            "name": "PltTreeOak4"
         },
         "60005": {
             "item": 5152,
@@ -10121,27 +11470,27 @@
         },
         "60015": {
             "item": 2627,
-            "name": "PltFlwCosmos1Red"
+            "name": "PltFlwCosmos0"
         },
         "60016": {
             "item": 2628,
-            "name": "PltFlwCosmos2Red"
+            "name": "PltFlwCosmos1"
         },
         "60017": {
             "item": 3824,
-            "name": "PltFlwCosmos3Red"
+            "name": "PltFlwCosmos2"
         },
         "60018": {
             "item": 2630,
-            "name": "PltFlwCosmos1White"
+            "name": "PltFlwCosmos0"
         },
         "60019": {
             "item": 2631,
-            "name": "PltFlwCosmos2White"
+            "name": "PltFlwCosmos1"
         },
         "60020": {
             "item": 3826,
-            "name": "PltFlwCosmos3White"
+            "name": "PltFlwCosmos2"
         },
         "60022": {
             "item": 2815,
@@ -10153,19 +11502,19 @@
         },
         "60025": {
             "item": 65534,
-            "name": "Hole"
+            "name": "UnitIconHoleOn"
         },
         "60033": {
             "item": 2624,
-            "name": "PltWeedAut1A"
+            "name": "PltWeedAut01A"
         },
         "60034": {
             "item": 2624,
-            "name": "PltWeedAut1B"
+            "name": "PltWeedAut01B"
         },
         "60035": {
             "item": 2624,
-            "name": "PltWeedAut1C"
+            "name": "PltWeedAut01C"
         },
         "60038": {
             "item": 2624,
@@ -10181,15 +11530,15 @@
         },
         "60041": {
             "item": 2865,
-            "name": "PltFlwCosmos1Yellow"
+            "name": "PltFlwCosmos0"
         },
         "60042": {
             "item": 2866,
-            "name": "PltFlwCosmos2Yellow"
+            "name": "PltFlwCosmos1"
         },
         "60043": {
             "item": 3828,
-            "name": "PltFlwCosmos3Yellow"
+            "name": "PltFlwCosmos2"
         },
         "60063": {
             "item": 65534,
@@ -10257,51 +11606,111 @@
         },
         "60104": {
             "item": 3370,
-            "name": "PltTreePear"
+            "name": "PltTreeOak4"
         },
         "60105": {
             "item": 3381,
-            "name": "PltTreeCherry"
+            "name": "PltTreeOak4"
         },
         "60106": {
             "item": 3375,
-            "name": "PltTreePeach"
+            "name": "PltTreeOak4"
+        },
+        "60107": {
+            "item": 2861,
+            "name": "PltBushAzalea3"
+        },
+        "60108": {
+            "item": 12747,
+            "name": "PltBushAzalea0"
+        },
+        "60109": {
+            "item": 2861,
+            "name": "PltBushAzalea2"
+        },
+        "60111": {
+            "item": 2861,
+            "name": "PltBushAzalea4"
+        },
+        "60112": {
+            "item": 2860,
+            "name": "PltBushAzalea1"
+        },
+        "60113": {
+            "item": 3022,
+            "name": "PltBushHibiscus3"
+        },
+        "60114": {
+            "item": 12752,
+            "name": "PltBushHibiscus0"
+        },
+        "60115": {
+            "item": 3022,
+            "name": "PltBushHibiscus2"
+        },
+        "60116": {
+            "item": 3022,
+            "name": "PltBushHibiscus4"
+        },
+        "60117": {
+            "item": 3021,
+            "name": "PltBushHibiscus1"
+        },
+        "60118": {
+            "item": 3027,
+            "name": "PltBushHolly3"
+        },
+        "60119": {
+            "item": 12757,
+            "name": "PltBushHolly0"
+        },
+        "60120": {
+            "item": 3027,
+            "name": "PltBushHolly2"
+        },
+        "60121": {
+            "item": 3026,
+            "name": "PltBushHolly1"
+        },
+        "60122": {
+            "item": 3027,
+            "name": "PltBushHolly4"
         },
         "60151": {
             "item": 2878,
-            "name": "PltFlwCosmos2Black"
+            "name": "PltFlwCosmos1"
         },
         "60152": {
             "item": 3832,
-            "name": "PltFlwCosmos3Orange"
+            "name": "PltFlwCosmos2"
         },
         "60153": {
             "item": 3834,
-            "name": "PltFlwCosmos3Black"
+            "name": "PltFlwCosmos2"
         },
         "60154": {
             "item": 3830,
-            "name": "PltFlwCosmos3Pink"
+            "name": "PltFlwCosmos2"
         },
         "60155": {
             "item": 2877,
-            "name": "PltFlwCosmos1Black"
+            "name": "PltFlwCosmos0"
         },
         "60156": {
             "item": 2873,
-            "name": "PltFlwCosmos1Orange"
+            "name": "PltFlwCosmos0"
         },
         "60157": {
             "item": 2874,
-            "name": "PltFlwCosmos2Orange"
+            "name": "PltFlwCosmos1"
         },
         "60158": {
             "item": 2869,
-            "name": "PltFlwCosmos1Pink"
+            "name": "PltFlwCosmos0"
         },
         "60159": {
             "item": 2870,
-            "name": "PltFlwCosmos2Pink"
+            "name": "PltFlwCosmos1"
         },
         "60160": {
             "item": 65534,
@@ -10325,39 +11734,39 @@
         },
         "60165": {
             "item": 2624,
-            "name": "PltWeedAut3"
+            "name": "PltWeedAut03"
         },
         "60178": {
             "item": 65534,
-            "name": "StoneA"
+            "name": "stoneA"
         },
         "60179": {
             "item": 65534,
-            "name": "StoneB"
+            "name": "stoneB"
         },
         "60180": {
             "item": 65534,
-            "name": "StoneE"
+            "name": "stoneE"
         },
         "60181": {
             "item": 65534,
-            "name": "StoneD"
+            "name": "stoneD"
         },
         "60182": {
             "item": 65534,
-            "name": "StoneC"
+            "name": "stoneC"
         },
         "60183": {
             "item": 2624,
-            "name": "PltWeedAut2B"
+            "name": "PltWeedAut02B"
         },
         "60184": {
             "item": 2624,
-            "name": "PltWeedAut2C"
+            "name": "PltWeedAut02C"
         },
         "60185": {
             "item": 2624,
-            "name": "PltWeedAut2A"
+            "name": "PltWeedAut02A"
         },
         "60200": {
             "item": 2624,
@@ -10389,367 +11798,367 @@
         },
         "60214": {
             "item": 2624,
-            "name": "PltWeedWin1A"
+            "name": "PltWeedWin01A"
         },
         "60215": {
             "item": 2624,
-            "name": "PltWeedWin1B"
+            "name": "PltWeedWin01B"
         },
         "60216": {
             "item": 2624,
-            "name": "PltWeedWin1C"
+            "name": "PltWeedWin01C"
         },
         "60217": {
             "item": 2624,
-            "name": "PltWeedWin2A"
+            "name": "PltWeedWin02A"
         },
         "60218": {
             "item": 2624,
-            "name": "PltWeedWin2B"
+            "name": "PltWeedWin02B"
         },
         "60219": {
             "item": 2624,
-            "name": "PltWeedWin2C"
+            "name": "PltWeedWin02C"
         },
         "60220": {
             "item": 2624,
-            "name": "PltWeedWin3"
+            "name": "PltWeedWin03"
         },
         "60221": {
             "item": 2881,
-            "name": "PltFlwTulip1White"
+            "name": "PltFlwTulip0"
         },
         "60222": {
             "item": 2882,
-            "name": "PltFlwTulip2White"
+            "name": "PltFlwTulip1"
         },
         "60223": {
             "item": 3836,
-            "name": "PltFlwTulip3White"
+            "name": "PltFlwTulip2"
         },
         "60224": {
             "item": 2885,
-            "name": "PltFlwTulip1Red"
+            "name": "PltFlwTulip0"
         },
         "60225": {
             "item": 2886,
-            "name": "PltFlwTulip2Red"
+            "name": "PltFlwTulip1"
         },
         "60226": {
             "item": 3838,
-            "name": "PltFlwTulip3Red"
+            "name": "PltFlwTulip2"
         },
         "60227": {
             "item": 2889,
-            "name": "PltFlwTulip1Yellow"
+            "name": "PltFlwTulip0"
         },
         "60228": {
             "item": 2890,
-            "name": "PltFlwTulip2Yellow"
+            "name": "PltFlwTulip1"
         },
         "60229": {
             "item": 3840,
-            "name": "PltFlwTulip3Yellow"
+            "name": "PltFlwTulip2"
         },
         "60230": {
             "item": 2893,
-            "name": "PltFlwTulip1Pink"
+            "name": "PltFlwTulip0"
         },
         "60231": {
             "item": 2894,
-            "name": "PltFlwTulip2Pink"
+            "name": "PltFlwTulip1"
         },
         "60232": {
             "item": 3842,
-            "name": "PltFlwTulip3Pink"
+            "name": "PltFlwTulip2"
         },
         "60233": {
             "item": 2897,
-            "name": "PltFlwTulip1Orange"
+            "name": "PltFlwTulip0"
         },
         "60234": {
             "item": 2898,
-            "name": "PltFlwTulip2Orange"
+            "name": "PltFlwTulip1"
         },
         "60235": {
             "item": 3844,
-            "name": "PltFlwTulip3Orange"
+            "name": "PltFlwTulip2"
         },
         "60236": {
             "item": 2901,
-            "name": "PltFlwTulip1Purple"
+            "name": "PltFlwTulip0"
         },
         "60237": {
             "item": 2902,
-            "name": "PltFlwTulip2Purple"
+            "name": "PltFlwTulip1"
         },
         "60238": {
             "item": 3846,
-            "name": "PltFlwTulip3Purple"
+            "name": "PltFlwTulip2"
         },
         "60239": {
             "item": 2905,
-            "name": "PltFlwTulip1Black"
+            "name": "PltFlwTulip0"
         },
         "60240": {
             "item": 2906,
-            "name": "PltFlwTulip2Black"
+            "name": "PltFlwTulip1"
         },
         "60241": {
             "item": 3848,
-            "name": "PltFlwTulip3Black"
+            "name": "PltFlwTulip2"
         },
         "60242": {
             "item": 2909,
-            "name": "PltFlwPansy1White"
+            "name": "PltFlwPansy0"
         },
         "60243": {
             "item": 2910,
-            "name": "PltFlwPansy2White"
+            "name": "PltFlwPansy1"
         },
         "60244": {
             "item": 3850,
-            "name": "PltFlwPansy3White"
+            "name": "PltFlwPansy2"
         },
         "60245": {
             "item": 2913,
-            "name": "PltFlwPansy1Red"
+            "name": "PltFlwPansy0"
         },
         "60246": {
             "item": 2914,
-            "name": "PltFlwPansy2Red"
+            "name": "PltFlwPansy1"
         },
         "60247": {
             "item": 3852,
-            "name": "PltFlwPansy3Red"
+            "name": "PltFlwPansy2"
         },
         "60248": {
             "item": 2917,
-            "name": "PltFlwPansy1Yellow"
+            "name": "PltFlwPansy0"
         },
         "60249": {
             "item": 2918,
-            "name": "PltFlwPansy2Yellow"
+            "name": "PltFlwPansy1"
         },
         "60250": {
             "item": 3854,
-            "name": "PltFlwPansy3Yellow"
+            "name": "PltFlwPansy2"
         },
         "60251": {
             "item": 2921,
-            "name": "PltFlwPansy1RedYellow"
+            "name": "PltFlwPansy0"
         },
         "60252": {
             "item": 2922,
-            "name": "PltFlwPansy2RedYellow"
+            "name": "PltFlwPansy1"
         },
         "60253": {
             "item": 3856,
-            "name": "PltFlwPansy3RedYellow"
+            "name": "PltFlwPansy2"
         },
         "60254": {
             "item": 2925,
-            "name": "PltFlwPansy1Purple"
+            "name": "PltFlwPansy0"
         },
         "60255": {
             "item": 2926,
-            "name": "PltFlwPansy2Purple"
+            "name": "PltFlwPansy1"
         },
         "60256": {
             "item": 3858,
-            "name": "PltFlwPansy3Purple"
+            "name": "PltFlwPansy2"
         },
         "60257": {
             "item": 2929,
-            "name": "PltFlwPansy1Blue"
+            "name": "PltFlwPansy0"
         },
         "60258": {
             "item": 2930,
-            "name": "PltFlwPansy2Blue"
+            "name": "PltFlwPansy1"
         },
         "60259": {
             "item": 3860,
-            "name": "PltFlwPansy3Blue"
+            "name": "PltFlwPansy2"
         },
         "60260": {
             "item": 2933,
-            "name": "PltFlwRose1White"
+            "name": "PltFlwRose0"
         },
         "60261": {
             "item": 2934,
-            "name": "PltFlwRose2White"
+            "name": "PltFlwRose1"
         },
         "60262": {
             "item": 3862,
-            "name": "PltFlwRose3White"
+            "name": "PltFlwRose2"
         },
         "60263": {
             "item": 2937,
-            "name": "PltFlwRose1Red"
+            "name": "PltFlwRose0"
         },
         "60264": {
             "item": 2938,
-            "name": "PltFlwRose2Red"
+            "name": "PltFlwRose1"
         },
         "60265": {
             "item": 3864,
-            "name": "PltFlwRose3Red"
+            "name": "PltFlwRose2"
         },
         "60266": {
             "item": 2941,
-            "name": "PltFlwRose1Yellow"
+            "name": "PltFlwRose0"
         },
         "60267": {
             "item": 2942,
-            "name": "PltFlwRose2Yellow"
+            "name": "PltFlwRose1"
         },
         "60268": {
             "item": 3866,
-            "name": "PltFlwRose3Yellow"
+            "name": "PltFlwRose2"
         },
         "60269": {
             "item": 2945,
-            "name": "PltFlwRose1Pink"
+            "name": "PltFlwRose0"
         },
         "60270": {
             "item": 2946,
-            "name": "PltFlwRose2Pink"
+            "name": "PltFlwRose1"
         },
         "60271": {
             "item": 3868,
-            "name": "PltFlwRose3Pink"
+            "name": "PltFlwRose2"
         },
         "60272": {
             "item": 2949,
-            "name": "PltFlwRose1Orange"
+            "name": "PltFlwRose0"
         },
         "60273": {
             "item": 2950,
-            "name": "PltFlwRose2Orange"
+            "name": "PltFlwRose1"
         },
         "60274": {
             "item": 3870,
-            "name": "PltFlwRose3Orange"
+            "name": "PltFlwRose2"
         },
         "60275": {
             "item": 2953,
-            "name": "PltFlwRose1Purple"
+            "name": "PltFlwRose0"
         },
         "60276": {
             "item": 2954,
-            "name": "PltFlwRose2Purple"
+            "name": "PltFlwRose1"
         },
         "60277": {
             "item": 3872,
-            "name": "PltFlwRose3Purple"
+            "name": "PltFlwRose2"
         },
         "60278": {
             "item": 2957,
-            "name": "PltFlwRose1Black"
+            "name": "PltFlwRose0"
         },
         "60279": {
             "item": 2958,
-            "name": "PltFlwRose2Black"
+            "name": "PltFlwRose1"
         },
         "60280": {
             "item": 3874,
-            "name": "PltFlwRose3Black"
+            "name": "PltFlwRose2"
         },
         "60281": {
             "item": 2961,
-            "name": "PltFlwRose1Blue"
+            "name": "PltFlwRose0"
         },
         "60282": {
             "item": 2962,
-            "name": "PltFlwRose2Blue"
+            "name": "PltFlwRose1"
         },
         "60283": {
             "item": 3876,
-            "name": "PltFlwRose3Blue"
+            "name": "PltFlwRose2"
         },
         "60284": {
             "item": 2965,
-            "name": "PltFlwRose1Gold"
+            "name": "PltFlwRoseGold0"
         },
         "60285": {
             "item": 2966,
-            "name": "PltFlwRose2Gold"
+            "name": "PltFlwRoseGold1"
         },
         "60286": {
             "item": 3878,
-            "name": "PltFlwRose3Gold"
+            "name": "PltFlwRoseGold2"
         },
         "60296": {
             "item": 2981,
-            "name": "PltFlwYuri1White"
+            "name": "PltFlwYuri0"
         },
         "60297": {
             "item": 2982,
-            "name": "PltFlwYuri2White"
+            "name": "PltFlwYuri1"
         },
         "60298": {
             "item": 3886,
-            "name": "PltFlwYuri3White"
+            "name": "PltFlwYuri2"
         },
         "60299": {
             "item": 2985,
-            "name": "PltFlwYuri1Red"
+            "name": "PltFlwYuri0"
         },
         "60300": {
             "item": 2986,
-            "name": "PltFlwYuri2Red"
+            "name": "PltFlwYuri1"
         },
         "60301": {
             "item": 3888,
-            "name": "PltFlwYuri3Red"
+            "name": "PltFlwYuri2"
         },
         "60302": {
             "item": 2989,
-            "name": "PltFlwYuri1Yellow"
+            "name": "PltFlwYuri0"
         },
         "60303": {
             "item": 2990,
-            "name": "PltFlwYuri2Yellow"
+            "name": "PltFlwYuri1"
         },
         "60304": {
             "item": 3890,
-            "name": "PltFlwYuri3Yellow"
+            "name": "PltFlwYuri2"
         },
         "60305": {
             "item": 2993,
-            "name": "PltFlwYuri1Pink"
+            "name": "PltFlwYuri0"
         },
         "60306": {
             "item": 2994,
-            "name": "PltFlwYuri2Pink"
+            "name": "PltFlwYuri1"
         },
         "60307": {
             "item": 3892,
-            "name": "PltFlwYuri3Pink"
+            "name": "PltFlwYuri2"
         },
         "60308": {
             "item": 2997,
-            "name": "PltFlwYuri1Orange"
+            "name": "PltFlwYuri0"
         },
         "60309": {
             "item": 2998,
-            "name": "PltFlwYuri2Orange"
+            "name": "PltFlwYuri1"
         },
         "60310": {
             "item": 3894,
-            "name": "PltFlwYuri3Orange"
+            "name": "PltFlwYuri2"
         },
         "60311": {
             "item": 3001,
-            "name": "PltFlwYuri1Black"
+            "name": "PltFlwYuri0"
         },
         "60312": {
             "item": 3002,
-            "name": "PltFlwYuri2Black"
+            "name": "PltFlwYuri1"
         },
         "60313": {
             "item": 3896,
-            "name": "PltFlwYuri3Black"
+            "name": "PltFlwYuri2"
         },
         "60346": {
             "item": 65534,
@@ -10761,83 +12170,83 @@
         },
         "60352": {
             "item": 3380,
-            "name": "PltTreeCherry3"
+            "name": "PltTreeOak3"
         },
         "60353": {
             "item": 3379,
-            "name": "PltTreeCherry2"
+            "name": "PltTreeOak2"
         },
         "60354": {
             "item": 3377,
-            "name": "PltTreeCherry0"
+            "name": "PltTreeOak0"
         },
         "60355": {
             "item": 3378,
-            "name": "PltTreeCherry1"
+            "name": "PltTreeOak1"
         },
         "60356": {
             "item": 3371,
-            "name": "PltTreePeach0"
+            "name": "PltTreeOak0"
         },
         "60357": {
             "item": 3372,
-            "name": "PltTreePeach1"
+            "name": "PltTreeOak1"
         },
         "60358": {
             "item": 3373,
-            "name": "PltTreePeach2"
+            "name": "PltTreeOak2"
         },
         "60359": {
             "item": 3374,
-            "name": "PltTreePeach3"
+            "name": "PltTreeOak3"
         },
         "60360": {
             "item": 3361,
-            "name": "PltTreeOrange0"
+            "name": "PltTreeOak0"
         },
         "60361": {
             "item": 3362,
-            "name": "PltTreeOrange1"
+            "name": "PltTreeOak1"
         },
         "60362": {
             "item": 3363,
-            "name": "PltTreeOrange2"
+            "name": "PltTreeOak2"
         },
         "60363": {
             "item": 3364,
-            "name": "PltTreeOrange3"
+            "name": "PltTreeOak3"
         },
         "60364": {
             "item": 3366,
-            "name": "PltTreePear0"
+            "name": "PltTreeOak0"
         },
         "60365": {
             "item": 3367,
-            "name": "PltTreePear1"
+            "name": "PltTreeOak1"
         },
         "60366": {
             "item": 3368,
-            "name": "PltTreePear2"
+            "name": "PltTreeOak2"
         },
         "60367": {
             "item": 3369,
-            "name": "PltTreePear3"
+            "name": "PltTreeOak3"
         },
         "60368": {
             "item": 3357,
-            "name": "PltTreeApple1"
+            "name": "PltTreeOak1"
         },
         "60369": {
             "item": 3358,
-            "name": "PltTreeApple2"
+            "name": "PltTreeOak2"
         },
         "60370": {
             "item": 3359,
-            "name": "PltTreeApple3"
+            "name": "PltTreeOak3"
         },
         "60371": {
             "item": 3356,
-            "name": "PltTreeApple0"
+            "name": "PltTreeOak0"
         },
         "60373": {
             "item": 65534,
@@ -10853,327 +12262,407 @@
         },
         "60378": {
             "item": 3918,
-            "name": "PltFlwHyacinth3Red"
+            "name": "PltFlwHyacinth2"
         },
         "60379": {
             "item": 3906,
-            "name": "PltFlwAnemones3Red"
+            "name": "PltFlwAnemone2"
         },
         "60380": {
             "item": 3932,
-            "name": "PltFlwMum3Red"
+            "name": "PltFlwMum2"
         },
         "60381": {
             "item": 3770,
-            "name": "PltFlwMum1Red"
+            "name": "PltFlwMum0"
         },
         "60382": {
             "item": 3771,
-            "name": "PltFlwMum2Red"
+            "name": "PltFlwMum1"
         },
         "60383": {
             "item": 3725,
-            "name": "PltFlwAnemones1Red"
+            "name": "PltFlwAnemone0"
         },
         "60384": {
             "item": 3726,
-            "name": "PltFlwAnemones2Red"
+            "name": "PltFlwAnemone1"
         },
         "60385": {
             "item": 3746,
-            "name": "PltFlwHyacinth1Red"
+            "name": "PltFlwHyacinth0"
         },
         "60386": {
             "item": 3747,
-            "name": "PltFlwHyacinth2Red"
+            "name": "PltFlwHyacinth1"
         },
         "60388": {
             "item": 3910,
-            "name": "PltFlwHyacinth3White"
+            "name": "PltFlwHyacinth2"
         },
         "60389": {
             "item": 3733,
-            "name": "PltFlwHyacinth2White"
+            "name": "PltFlwHyacinth1"
         },
         "60390": {
             "item": 3732,
-            "name": "PltFlwHyacinth1White"
+            "name": "PltFlwHyacinth0"
         },
         "60391": {
             "item": 3737,
-            "name": "PltFlwHyacinth2Yellow"
+            "name": "PltFlwHyacinth1"
         },
         "60392": {
             "item": 3912,
-            "name": "PltFlwHyacinth3Yellow"
+            "name": "PltFlwHyacinth2"
         },
         "60393": {
             "item": 3736,
-            "name": "PltFlwHyacinth1Yellow"
+            "name": "PltFlwHyacinth0"
         },
         "60394": {
             "item": 3920,
-            "name": "PltFlwHyacinth3Blue"
+            "name": "PltFlwHyacinth2"
         },
         "60395": {
             "item": 3914,
-            "name": "PltFlwHyacinth3Pink"
+            "name": "PltFlwHyacinth2"
         },
         "60396": {
             "item": 3916,
-            "name": "PltFlwHyacinth3Orange"
+            "name": "PltFlwHyacinth2"
         },
         "60397": {
             "item": 3922,
-            "name": "PltFlwHyacinth3Purple"
+            "name": "PltFlwHyacinth2"
         },
         "60398": {
             "item": 3753,
-            "name": "PltFlwHyacinth2Purple"
+            "name": "PltFlwHyacinth1"
         },
         "60399": {
             "item": 3752,
-            "name": "PltFlwHyacinth1Purple"
+            "name": "PltFlwHyacinth0"
         },
         "60400": {
             "item": 3743,
-            "name": "PltFlwHyacinth2Orange"
+            "name": "PltFlwHyacinth1"
         },
         "60401": {
             "item": 3740,
-            "name": "PltFlwHyacinth2Pink"
+            "name": "PltFlwHyacinth1"
         },
         "60402": {
             "item": 3739,
-            "name": "PltFlwHyacinth1Pink"
+            "name": "PltFlwHyacinth0"
         },
         "60403": {
             "item": 3749,
-            "name": "PltFlwHyacinth1Blue"
+            "name": "PltFlwHyacinth0"
         },
         "60404": {
             "item": 3750,
-            "name": "PltFlwHyacinth2Blue"
+            "name": "PltFlwHyacinth1"
         },
         "60405": {
             "item": 3742,
-            "name": "PltFlwHyacinth1Orange"
+            "name": "PltFlwHyacinth0"
+        },
+        "60409": {
+            "item": 12749,
+            "name": "PltBushHydrangea0"
+        },
+        "60411": {
+            "item": 12750,
+            "name": "PltBushHydrangea0"
+        },
+        "60412": {
+            "item": 3799,
+            "name": "PltBushHydrangea1"
+        },
+        "60413": {
+            "item": 3800,
+            "name": "PltBushHydrangea2"
+        },
+        "60414": {
+            "item": 3800,
+            "name": "PltBushHydrangea3"
+        },
+        "60415": {
+            "item": 3800,
+            "name": "PltBushHydrangea4"
+        },
+        "60416": {
+            "item": 3795,
+            "name": "PltBushHydrangea1"
+        },
+        "60417": {
+            "item": 3796,
+            "name": "PltBushHydrangea2"
+        },
+        "60418": {
+            "item": 3796,
+            "name": "PltBushHydrangea3"
+        },
+        "60419": {
+            "item": 3796,
+            "name": "PltBushHydrangea4"
         },
         "60420": {
             "item": 3756,
-            "name": "PltFlwMum1White"
+            "name": "PltFlwMum0"
         },
         "60421": {
             "item": 3760,
-            "name": "PltFlwMum1Yellow"
+            "name": "PltFlwMum0"
         },
         "60422": {
             "item": 3763,
-            "name": "PltFlwMum1Purple"
+            "name": "PltFlwMum0"
         },
         "60423": {
             "item": 3766,
-            "name": "PltFlwMum1Pink"
+            "name": "PltFlwMum0"
         },
         "60424": {
             "item": 3757,
-            "name": "PltFlwMum2White"
+            "name": "PltFlwMum1"
         },
         "60425": {
             "item": 3924,
-            "name": "PltFlwMum3White"
+            "name": "PltFlwMum2"
         },
         "60426": {
             "item": 3761,
-            "name": "PltFlwMum2Yellow"
+            "name": "PltFlwMum1"
         },
         "60427": {
             "item": 3764,
-            "name": "PltFlwMum2Purple"
+            "name": "PltFlwMum1"
         },
         "60428": {
             "item": 3767,
-            "name": "PltFlwMum2Pink"
+            "name": "PltFlwMum1"
         },
         "60429": {
             "item": 3926,
-            "name": "PltFlwMum3Yellow"
+            "name": "PltFlwMum2"
         },
         "60430": {
             "item": 3928,
-            "name": "PltFlwMum3Purple"
+            "name": "PltFlwMum2"
         },
         "60431": {
             "item": 3930,
-            "name": "PltFlwMum3Pink"
+            "name": "PltFlwMum2"
         },
         "60433": {
             "item": 3711,
-            "name": "PltFlwAnemones1White"
+            "name": "PltFlwAnemone0"
         },
         "60434": {
             "item": 3712,
-            "name": "PltFlwAnemones2White"
+            "name": "PltFlwAnemone1"
         },
         "60435": {
             "item": 3898,
-            "name": "PltFlwAnemones3White"
+            "name": "PltFlwAnemone2"
         },
         "60436": {
             "item": 3718,
-            "name": "PltFlwAnemones1Blue"
+            "name": "PltFlwAnemone0"
         },
         "60437": {
             "item": 3728,
-            "name": "PltFlwAnemones1Purple"
+            "name": "PltFlwAnemone0"
         },
         "60438": {
             "item": 3721,
-            "name": "PltFlwAnemones1Pink"
+            "name": "PltFlwAnemone0"
         },
         "60439": {
             "item": 3715,
-            "name": "PltFlwAnemones1Orange"
+            "name": "PltFlwAnemone0"
         },
         "60440": {
             "item": 3719,
-            "name": "PltFlwAnemones2Blue"
+            "name": "PltFlwAnemone1"
         },
         "60441": {
             "item": 3902,
-            "name": "PltFlwAnemones3Blue"
+            "name": "PltFlwAnemone2"
         },
         "60442": {
             "item": 3729,
-            "name": "PltFlwAnemones2Purple"
+            "name": "PltFlwAnemone1"
         },
         "60443": {
             "item": 3908,
-            "name": "PltFlwAnemones3Purple"
+            "name": "PltFlwAnemone2"
         },
         "60444": {
             "item": 3722,
-            "name": "PltFlwAnemones2Pink"
+            "name": "PltFlwAnemone1"
         },
         "60445": {
             "item": 3904,
-            "name": "PltFlwAnemones3Pink"
+            "name": "PltFlwAnemone2"
         },
         "60446": {
             "item": 3716,
-            "name": "PltFlwAnemones2Orange"
+            "name": "PltFlwAnemone1"
         },
         "60447": {
             "item": 3900,
-            "name": "PltFlwAnemones3Orange"
+            "name": "PltFlwAnemone2"
+        },
+        "60448": {
+            "item": 3787,
+            "name": "PltBushAzalea1"
+        },
+        "60449": {
+            "item": 12748,
+            "name": "PltBushAzalea0"
+        },
+        "60450": {
+            "item": 3788,
+            "name": "PltBushAzalea2"
+        },
+        "60451": {
+            "item": 3788,
+            "name": "PltBushAzalea3"
+        },
+        "60452": {
+            "item": 3788,
+            "name": "PltBushAzalea4"
+        },
+        "60453": {
+            "item": 12751,
+            "name": "PltBushHibiscus0"
+        },
+        "60454": {
+            "item": 3791,
+            "name": "PltBushHibiscus1"
+        },
+        "60455": {
+            "item": 3792,
+            "name": "PltBushHibiscus2"
+        },
+        "60456": {
+            "item": 3792,
+            "name": "PltBushHibiscus3"
+        },
+        "60457": {
+            "item": 3792,
+            "name": "PltBushHibiscus4"
         },
         "60466": {
             "item": 3778,
-            "name": "PltFlwMum1Green"
+            "name": "PltFlwMum0"
         },
         "60467": {
             "item": 3779,
-            "name": "PltFlwMum2Green"
+            "name": "PltFlwMum1"
         },
         "60468": {
             "item": 3934,
-            "name": "PltFlwMum3Green"
+            "name": "PltFlwMum2"
         },
         "60472": {
             "item": 3909,
-            "name": "PltFlwHyacinth0White"
+            "name": "PltFlwHyacinthSeedling"
         },
         "60474": {
             "item": 3925,
-            "name": "PltFlwMum0Yellow"
+            "name": "PltFlwMumSeedling"
         },
         "60475": {
             "item": 3911,
-            "name": "PltFlwHyacinth0Yellow"
+            "name": "PltFlwHyacinthSeedling"
         },
         "60479": {
             "item": 3917,
-            "name": "PltFlwHyacinth0Red"
+            "name": "PltFlwHyacinthSeedling"
         },
         "60482": {
             "item": 3905,
-            "name": "PltFlwAnemones0Red"
+            "name": "PltFlwAnemoneSeedling"
         },
         "60483": {
             "item": 3897,
-            "name": "PltFlwAnemones0White"
+            "name": "PltFlwAnemoneSeedling"
         },
         "60487": {
             "item": 3899,
-            "name": "PltFlwAnemones0Orange"
+            "name": "PltFlwAnemoneSeedling"
         },
         "60488": {
             "item": 3931,
-            "name": "PltFlwM0Red"
+            "name": "PltFlwMumSeedling"
         },
         "60489": {
             "item": 3923,
-            "name": "PltFlwMum0White"
+            "name": "PltFlwMumSeedling"
         },
         "60490": {
             "item": 3839,
-            "name": "PltFlwTulip0Yellow"
+            "name": "PltFlwTulipSeedling"
         },
         "60496": {
             "item": 3849,
-            "name": "PltFlwPansy0White"
+            "name": "PltFlwPansySeedling"
         },
         "60497": {
             "item": 3851,
-            "name": "PltFlwPansy0Red"
+            "name": "PltFlwPansySeedling"
         },
         "60498": {
             "item": 3853,
-            "name": "PltFlwPansy0Yellow"
+            "name": "PltFlwPansySeedling"
         },
         "60502": {
             "item": 3861,
-            "name": "PltFlwRose0White"
+            "name": "PltFlwRoseSeedling"
         },
         "60503": {
             "item": 3863,
-            "name": "PltFlwRose0Red"
+            "name": "PltFlwRoseSeedling"
         },
         "60504": {
             "item": 3865,
-            "name": "PltFlwRose0Yellow"
+            "name": "PltFlwRoseSeedling"
         },
         "60507": {
             "item": 3889,
-            "name": "PltFlwYuri0Yellow"
+            "name": "PltFlwYuriSeedling"
         },
         "60512": {
             "item": 3885,
-            "name": "PltFlwYuri0White"
+            "name": "PltFlwYuriSeedling"
         },
         "60513": {
             "item": 3887,
-            "name": "PltFlwYuri0Red"
+            "name": "PltFlwYuriSeedling"
         },
         "60514": {
             "item": 3823,
-            "name": "PltFlwCosmos0Red"
+            "name": "PltFlwCosmosSeedling"
         },
         "60515": {
             "item": 3837,
-            "name": "PltFlwTulip0Red"
+            "name": "PltFlwTulipSeedling"
         },
         "60516": {
             "item": 3827,
-            "name": "PltFlwCosmos0Yellow"
+            "name": "PltFlwCosmosSeedling"
         },
         "60517": {
             "item": 3825,
-            "name": "PltFlwCosmos0White"
+            "name": "PltFlwCosmosSeedling"
         },
         "60521": {
             "item": 3835,
-            "name": "PltFlwTulip0White"
+            "name": "PltFlwTulipSeedling"
         },
         "60523": {
             "item": 65534,
@@ -11337,23 +12826,23 @@
         },
         "60572": {
             "item": 4426,
-            "name": "PltTreeMoney4"
+            "name": "PltTreeOak4"
         },
         "60573": {
             "item": 4439,
-            "name": "PltTreeMoney3"
+            "name": "PltTreeOak3"
         },
         "60574": {
             "item": 4438,
-            "name": "PltTreeMoney2"
+            "name": "PltTreeOak2"
         },
         "60575": {
             "item": 4436,
-            "name": "PltTreeMoney0"
+            "name": "PltTreeOak0"
         },
         "60576": {
             "item": 4437,
-            "name": "PltTreeMoney1"
+            "name": "PltTreeOak1"
         },
         "60594": {
             "item": 65534,
@@ -11369,43 +12858,139 @@
         },
         "60604": {
             "item": 65534,
-            "name": "PltTreeFruitStump1"
+            "name": "PltTreeOak1Stump"
         },
         "60605": {
             "item": 65534,
-            "name": "PltTreeFruitStump2"
+            "name": "PltTreeOak2Stump"
         },
         "60606": {
             "item": 65534,
-            "name": "PltTreeFruitStump3"
+            "name": "PltTreeOak3Stump"
         },
         "60607": {
             "item": 65534,
-            "name": "PltTreeFruitStump4"
+            "name": "PltTreeOak4Stump"
         },
         "60609": {
             "item": 7651,
-            "name": "PltFlwLily3"
+            "name": "PltFlwLily"
         },
         "60610": {
             "item": 65534,
-            "name": "FenceWoodNatural"
+            "name": "FenceWoodWhite"
         },
         "60611": {
             "item": 65534,
-            "name": "FenceLattice3"
+            "name": "FenceLattice"
         },
         "60612": {
             "item": 65534,
-            "name": "FenceCommune"
+            "name": "FenceHorizontalLog"
+        },
+        "60660": {
+            "item": 12478,
+            "name": "PltBushOsmanthus4"
+        },
+        "60661": {
+            "item": 12478,
+            "name": "PltBushOsmanthus3"
+        },
+        "60662": {
+            "item": 12477,
+            "name": "PltBushOsmanthus1"
+        },
+        "60663": {
+            "item": 12478,
+            "name": "PltBushOsmanthus2"
+        },
+        "60664": {
+            "item": 12753,
+            "name": "PltBushOsmanthus0"
+        },
+        "60665": {
+            "item": 12482,
+            "name": "PltBushOsmanthus4"
+        },
+        "60666": {
+            "item": 12482,
+            "name": "PltBushOsmanthus3"
+        },
+        "60667": {
+            "item": 12482,
+            "name": "PltBushOsmanthus2"
+        },
+        "60668": {
+            "item": 12754,
+            "name": "PltBushOsmanthus0"
+        },
+        "60669": {
+            "item": 12481,
+            "name": "PltBushOsmanthus1"
+        },
+        "60670": {
+            "item": 12756,
+            "name": "PltBushCamellia0"
+        },
+        "60671": {
+            "item": 12491,
+            "name": "PltBushCamellia1"
+        },
+        "60672": {
+            "item": 12492,
+            "name": "PltBushCamellia2"
+        },
+        "60673": {
+            "item": 12492,
+            "name": "PltBushCamellia3"
+        },
+        "60674": {
+            "item": 12755,
+            "name": "PltBushCamellia0"
+        },
+        "60675": {
+            "item": 12492,
+            "name": "PltBushCamellia4"
+        },
+        "60676": {
+            "item": 12488,
+            "name": "PltBushCamellia1"
+        },
+        "60677": {
+            "item": 12489,
+            "name": "PltBushCamellia2"
+        },
+        "60678": {
+            "item": 12489,
+            "name": "PltBushCamellia3"
+        },
+        "60679": {
+            "item": 12489,
+            "name": "PltBushCamellia4"
+        },
+        "60680": {
+            "item": 65534,
+            "name": "FenceIkegaki"
+        },
+        "60683": {
+            "item": 65534,
+            "name": "FenceJuneBride"
         },
         "60684": {
             "item": 65534,
             "name": "FenceEasterEgg"
         },
+        "60685": {
+            "item": 65534,
+            "name": "FenceJuneBride"
+        },
+        "60686": {
+            "item": 65534,
+            "name": "FenceJuneBride"
+        },
         "60694": {
             "item": 2799,
-            "name": "PltTreeEasterEgg"
+            "name": "PltTreeOak4"
         }
     },
     "houseDoorNames": {
@@ -11983,6 +13568,41 @@
         "173": "HouseWallNAWoodsidingJ"
     },
     "items": {
+        "2": "scenic painting",
+        "5": "graceful painting",
+        "6": "graceful painting",
+        "9": "quaint painting",
+        "10": "quaint painting",
+        "13": "basic painting",
+        "14": "basic painting",
+        "17": "famous painting",
+        "18": "famous painting",
+        "20": "perfect painting",
+        "23": "serene painting",
+        "24": "serene painting",
+        "27": "wistful painting",
+        "28": "wistful painting",
+        "31": "moving painting",
+        "32": "moving painting",
+        "34": "warm painting",
+        "38": "dynamic painting",
+        "41": "jolly painting",
+        "42": "jolly painting",
+        "44": "common painting",
+        "46": "proper painting",
+        "48": "nice painting",
+        "50": "flowery painting",
+        "52": "moody painting",
+        "55": "amazing painting",
+        "56": "amazing painting",
+        "65": "scary painting",
+        "66": "scary painting",
+        "68": "worthy painting",
+        "71": "solemn painting",
+        "72": "solemn painting",
+        "75": "wild painting right half",
+        "76": "wild painting right half",
+        "78": "calm painting",
         "80": "clackercart",
         "83": "rocking horse",
         "85": "train set",
@@ -12270,6 +13890,21 @@
         "1328": "school desk",
         "1329": "podium",
         "1330": "basic teacher's desk",
+        "1331": "motherly statue",
+        "1332": "motherly statue",
+        "1333": "gallant statue",
+        "1334": "gallant statue",
+        "1335": "robust statue",
+        "1336": "robust statue",
+        "1337": "ancient statue",
+        "1338": "ancient statue",
+        "1339": "great statue",
+        "1341": "beautiful statue",
+        "1342": "beautiful statue",
+        "1343": "mystic statue",
+        "1344": "mystic statue",
+        "1345": "valiant statue",
+        "1346": "valiant statue",
         "1348": "hamster cage",
         "1374": "sea snail",
         "1375": "venus comb",
@@ -12720,7 +14355,7 @@
         "2655": "Blue striped shirt",
         "2670": "Yellow layered tank",
         "2672": "Green silk shirt",
-        "2674": "Red raglan tee",
+        "2674": "Red raglan shirt",
         "2677": "Yellow tweed dress",
         "2686": "Pop gumdrop dress",
         "2687": "Mint tropical muumuu",
@@ -12777,8 +14412,11 @@
         "2813": "medium young bamboo",
         "2814": "large young bamboo",
         "2815": "bamboo tree",
+        "2820": "white-azalea start",
         "2822": "slingshot",
         "2823": "White dress shirt",
+        "2860": "young white azalea",
+        "2861": "white-azalea bush",
         "2863": "yellow cosmos",
         "2864": "yellow-cosmos bag",
         "2865": "yellow-cosmos stems",
@@ -12888,6 +14526,12 @@
         "2999": "black lilies",
         "3001": "black-lily stems",
         "3002": "black-lily buds",
+        "3019": "red-hibiscus start",
+        "3021": "young red hibiscus",
+        "3022": "red-hibiscus bush",
+        "3024": "holly start",
+        "3026": "young holly",
+        "3027": "holly bush",
         "3054": "Light blue belted dotted dress",
         "3055": "Navy blue sailor's tee",
         "3056": "Gray simple parka",
@@ -12984,7 +14628,7 @@
         "3261": "Gray sleeveless sweater dress",
         "3262": "Blue argyle vest",
         "3263": "wasp nest",
-        "3264": "Camel explorer tee",
+        "3264": "Camel explorer shirt",
         "3265": "White flashy jacket",
         "3266": "Red-striped necktie work shirt",
         "3268": "White sushi chef's outfit",
@@ -13030,6 +14674,7 @@
         "3333": "LCD TV (20 in.)",
         "3334": "Navy blue track jacket",
         "3335": "Navy blue track pants",
+        "3336": "White cake dress",
         "3337": "Red kilt",
         "3339": "Gray waistcoat",
         "3340": "deer decoration",
@@ -13125,7 +14770,7 @@
         "3468": "beach towel",
         "3469": "boot",
         "3470": "old tire",
-        "3471": "switch",
+        "3471": "light switch",
         "3472": "golden toilet",
         "3473": "golden seat",
         "3474": "Gray tailored jacket",
@@ -13336,6 +14981,18 @@
         "3783": "den desk",
         "3784": "den chair",
         "3785": "potted ivy",
+        "3786": "pink-azalea start",
+        "3787": "young pink azalea",
+        "3788": "pink-azalea bush",
+        "3790": "yellow-hibiscus start",
+        "3791": "young yellow hibiscus",
+        "3792": "yellow-hibiscus bush",
+        "3794": "pink-hydrangea start",
+        "3795": "young pink hydrangea",
+        "3796": "pink-hydrangea bush",
+        "3798": "blue-hydrangea start",
+        "3799": "young blue hydrangea",
+        "3800": "blue-hydrangea bush",
         "3802": "pine bonsai tree",
         "3804": "Navy blue layered shirt",
         "3805": "mush parasol",
@@ -13505,7 +15162,7 @@
         "4036": "log decorative shelves",
         "4037": "log wall-mounted clock",
         "4038": "log stool",
-        "4039": "log sofa",
+        "4039": "log chair",
         "4040": "log dining table",
         "4041": "log bed",
         "4042": "log bench",
@@ -14690,6 +16347,7 @@
         "5689": "Hair Color pompadour wig",
         "5690": "Hair Color samurai wig",
         "5691": "Hair Color matronly bun",
+        "5692": "White bridal veil",
         "5693": "Pink bun wig",
         "5695": "Red geisha wig",
         "5696": "Hair Color composer's wig",
@@ -16545,10 +18203,10 @@
         "8393": "green kitchen mat",
         "8394": "blue kitchen mat",
         "8395": "yellow kitchen mat",
-        "8396": "Green raglan tee",
-        "8397": "Blue raglan tee",
-        "8398": "Black raglan tee",
-        "8399": "White raglan tee",
+        "8396": "Green raglan shirt",
+        "8397": "Blue raglan shirt",
+        "8398": "Black raglan shirt",
+        "8399": "White raglan shirt",
         "8400": "Blue gilet and shirt",
         "8401": "Red gilet and shirt",
         "8402": "Gray gilet and shirt",
@@ -17501,9 +19159,9 @@
         "9428": "Orange sunflower dress",
         "9429": "Navy blue sunflower dress",
         "9430": "Dark green clover dress",
-        "9431": "Avocado explorer tee",
-        "9432": "Beige explorer tee",
-        "9433": "Blue explorer tee",
+        "9431": "Avocado explorer shirt",
+        "9432": "Beige explorer shirt",
+        "9433": "Blue explorer shirt",
         "9434": "Red guayabera shirt",
         "9435": "Brown guayabera shirt",
         "9436": "Blue guayabera shirt",
@@ -20050,6 +21708,7 @@
         "12209": "\u30d1\u30cb\u30a8\u30eb\u306e\u305b\u3093\u305f\u304f\u304a\u3051",
         "12210": "\u30d1\u30cb\u30a8\u30eb\u306e\u3082\u306e\u307b\u3057\u30ed\u30fc\u30d7",
         "12212": "\u30c7\u30e2\u7528\u305f\u306c\u304d\u30de\u30a4\u30eb\u30ab\u30fc\u30c9",
+        "12214": "Bell-bag rug",
         "12229": "\u30d1\u30cb\u30a8\u30eb\u306e\u3044\u3057\u304c\u307e",
         "12230": "festive top set",
         "12285": "\u30b3\u30df\u30e5\u30fc\u30f3\u5cf6\u5c02\u7528\u67f5",
@@ -20069,6 +21728,17 @@
         "12374": "campsite sign",
         "12396": "Nook Inc. silk rug",
         "12398": "Bunny Day arch",
+        "12401": "wedding bench",
+        "12402": "wedding arch",
+        "12403": "wedding cake",
+        "12404": "wedding head table",
+        "12405": "wedding chair",
+        "12406": "wedding table",
+        "12407": "wedding decoration",
+        "12408": "wedding candle set",
+        "12409": "wedding pipe organ",
+        "12410": "wedding welcome board",
+        "12411": "wedding flower stand",
         "12412": "wobbling Zipper toy",
         "12413": "Bunny Day lamp",
         "12414": "Bunny Day bed",
@@ -20082,6 +21752,9 @@
         "12424": "White OK Motors cap",
         "12425": "White OK Motors jacket",
         "12426": "Green camper tee",
+        "12431": "white wedding flooring",
+        "12433": "brown wedding flooring",
+        "12434": "green wedding flooring",
         "12436": "Bunny Day table",
         "12437": "Bunny Day wardrobe",
         "12438": "Bunny Day basket",
@@ -20107,6 +21780,34 @@
         "12458": "Orange wood-egg shoes",
         "12459": "Blue sky-egg shoes",
         "12460": "Purple water-egg shoes",
+        "12461": "wedding-party wall",
+        "12462": "blue wedding rug",
+        "12464": "white wedding rug",
+        "12465": "red wedding rug",
+        "12466": "white wedding wall",
+        "12468": "brown wedding wall",
+        "12469": "green wedding wall",
+        "12470": "thank-you Mom mug",
+        "12471": "thank-you Dad mug",
+        "12472": "Rover's briefcase",
+        "12476": "yellow-tea-olive start",
+        "12477": "young yellow tea olive",
+        "12478": "yellow-tea-olive bush",
+        "12480": "orange-tea-olive start",
+        "12481": "young orange tea olive",
+        "12482": "orange-tea-olive bush",
+        "12484": "fossil plaque",
+        "12485": "bug plaque",
+        "12486": "fish plaque",
+        "12487": "red-camellia start",
+        "12488": "young red camellia",
+        "12489": "red-camellia bush",
+        "12490": "pink-camellia start",
+        "12491": "young pink camellia",
+        "12492": "pink-camellia bush",
+        "12495": "White wedding pumps",
+        "12496": "White wedding shoes",
+        "12497": "White wedding tuxedo",
         "12509": "earth egg",
         "12510": "stone egg",
         "12511": "leaf egg",
@@ -20114,11 +21815,55 @@
         "12513": "sky egg",
         "12514": "water egg",
         "12517": "Bunny Day wreath",
+        "12533": "rock-head statue ",
+        "12534": "rock-head statue ",
+        "12535": "informative statue",
+        "12536": "informative statue",
+        "12537": "tremendous statue",
+        "12538": "tremendous statue",
+        "12539": "warrior statue",
+        "12540": "warrior statue",
+        "12541": "familiar statue",
         "12543": "Nintendo Switch",
         "12544": "egg message bottle",
+        "12546": "heart crystal",
+        "12565": "Reese & Cyrus photo plate",
+        "12570": "wild painting left half",
+        "12571": "wild painting left half",
+        "12575": "Red handmade cape",
+        "12576": "Red handmade crown",
+        "12577": "Yellow summer-solstice crown",
         "12578": "Bunny Day wand",
         "12579": "ACNH Nintendo Switch",
-        "12630": "Bunny Day fence"
+        "12615": "worn axe",
+        "12618": "twinkling painting",
+        "12619": "academic painting",
+        "12620": "academic painting",
+        "12621": "sinking painting",
+        "12622": "detailed painting",
+        "12623": "detailed painting",
+        "12624": "glowing painting",
+        "12625": "mysterious painting",
+        "12629": "scenic painting",
+        "12630": "Bunny Day fence",
+        "12695": "wedding wand",
+        "12741": "world map",
+        "12747": "white-azalea nursery",
+        "12748": "pink-azalea nursery",
+        "12749": "blue-hydrangea nursery",
+        "12750": "pink-hydrangea nursery",
+        "12751": "yellow-hibiscus nursery",
+        "12752": "red-hibiscus nursery",
+        "12753": "yellow-tea-olive nursery",
+        "12754": "orange-tea-olive nursery",
+        "12755": "red-camellia nursery",
+        "12756": "pink-camellia nursery",
+        "12757": "holly nursery",
+        "12758": "hedge",
+        "12894": "wedding fence",
+        "12959": "Beige winter-solstice sweater",
+        "12982": "Coral coral Nook Inc. aloha shirt",
+        "12983": "Green green Nook Inc. aloha shirt"
     },
     "outsideParts": {
         "16": "FldOutNShip00",

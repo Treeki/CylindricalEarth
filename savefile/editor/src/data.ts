@@ -224,6 +224,7 @@ export interface Accessor {
 	displayType: string
 	displayValue: string
 	hasChildren: boolean
+	hasLongDisplay: boolean
 }
 
 export interface TreeAccessor extends Accessor {
@@ -257,6 +258,7 @@ export class PrimitiveAccessor implements Accessor {
 	}
 
 	hasChildren = false
+	hasLongDisplay = false
 	get displayType(): string {
 		return this.type.name
 	}
@@ -348,6 +350,7 @@ export class StructAccessor implements TreeAccessor {
 	}
 
 	hasChildren = true
+	hasLongDisplay = false
 	get displayChildrenCount(): number { return this.type.fields.length }
 	getChild(index: number) { return this.getField(this.type.fields[index]) }
 	getChildTitle(index: number) { return this.type.fields[index].name }
@@ -365,6 +368,7 @@ export class ArrayAccessor implements TreeAccessor {
 	}
 
 	hasChildren = true
+	hasLongDisplay = false
 	get displayChildrenCount(): number { return this.length[0] }
 	getChild(i: number): Accessor {
 		if (this.length[1] > 1) {
@@ -410,6 +414,7 @@ export class PrimitiveArrayAccessor extends ArrayAccessor {
 	}
 
 	hasChildren = false
+	hasLongDisplay = true
 
 	get displayValue(): string {
 		const totalLen = this.length[0] * this.length[1]
@@ -418,7 +423,7 @@ export class PrimitiveArrayAccessor extends ArrayAccessor {
 			return String.fromCodePoint(...codepoints)
 		} else {
 			const bits = []
-			const threshold = 8
+			const threshold = 16
 			for (let i = 0; i < threshold && i < totalLen; i++)
 				bits.push(this.getChild(i).displayValue)
 			if (totalLen > threshold)
@@ -434,6 +439,7 @@ export class EventFlagAccessor implements Accessor {
 	}
 
 	hasChildren = false
+	hasLongDisplay = false
 	get displayType(): string { return this.flag.jpName }
 	get displayValue(): string {
 		const value = this.view.getUint16(this.offset, true)
@@ -461,6 +467,7 @@ export class EventFlagsAccessor implements TreeAccessor {
 	}
 
 	hasChildren = true
+	hasLongDisplay = false
 	get displayChildrenCount(): number { return this.flags.length }
 	get displayType(): string { return this.type.name }
 	get displayValue(): string { return `<${this.flags.length} flags>` }

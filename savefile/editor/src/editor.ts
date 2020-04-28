@@ -127,7 +127,10 @@ class EditContext {
 			extensions: ['edit', 'table'],
 			table: {nodeColumnIdx: 0, checkboxColumnIdx: -1, indentation: 24},
 			icon: false,
-			renderColumns: (event, data) => this._renderColumns(event, data)
+			renderColumns: (event, data) => this._renderColumns(event, data),
+			dblclick: (event, data) => {
+				return true
+			}
 		})
 	}
 

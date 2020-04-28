@@ -223,6 +223,7 @@ def ptr(re_p):
     value = nx.peek64(re_to_nx(re_p))
     return 0 if value == 0 else nx_to_re(value)
 def u64(re_p): return nx.peek64(re_to_nx(re_p))
+def f32(re_p): return struct.unpack('<f', struct.pack('<I', nx.peek32(re_to_nx(re_p))))[0]
 def u32(re_p): return nx.peek32(re_to_nx(re_p))
 def u16(re_p): return nx.peek16(re_to_nx(re_p))
 def u8(re_p):  return nx.peek8(re_to_nx(re_p))

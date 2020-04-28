@@ -28675,6 +28675,7 @@ class PrimitiveAccessor {
         this.type = type;
         this.name = name;
         this.hasChildren = false;
+        this.hasLongDisplay = false;
     }
     get value() {
         switch (this.type.name) {
@@ -28724,6 +28725,7 @@ class StructAccessor {
         this.type = type;
         this.name = name;
         this.hasChildren = true;
+        this.hasLongDisplay = false;
     }
     get fields() {
         return this.type.fields;
@@ -28800,6 +28802,7 @@ class ArrayAccessor {
         this.length = length;
         this.name = name;
         this.hasChildren = true;
+        this.hasLongDisplay = false;
     }
     get displayChildrenCount() { return this.length[0]; }
     getChild(i) {
@@ -28845,6 +28848,7 @@ class PrimitiveArrayAccessor extends ArrayAccessor {
         this.length = length;
         this.name = name;
         this.hasChildren = false;
+        this.hasLongDisplay = true;
     }
     get displayValue() {
         const totalLen = this.length[0] * this.length[1];
@@ -28854,7 +28858,7 @@ class PrimitiveArrayAccessor extends ArrayAccessor {
         }
         else {
             const bits = [];
-            const threshold = 8;
+            const threshold = 16;
             for (let i = 0; i < threshold && i < totalLen; i++)
                 bits.push(this.getChild(i).displayValue);
             if (totalLen > threshold)
@@ -28870,6 +28874,7 @@ class EventFlagAccessor {
         this.offset = offset;
         this.flag = flag;
         this.hasChildren = false;
+        this.hasLongDisplay = false;
     }
     get displayType() { return this.flag.jpName; }
     get displayValue() {
@@ -28891,6 +28896,7 @@ class EventFlagsAccessor {
         this.name = name;
         this.key = key;
         this.hasChildren = true;
+        this.hasLongDisplay = false;
         this.flags = exports.gameData.eventFlags[key];
         console.log(this.flags);
     }
@@ -29075,7 +29081,10 @@ class EditContext {
             extensions: ['edit', 'table'],
             table: { nodeColumnIdx: 0, checkboxColumnIdx: -1, indentation: 24 },
             icon: false,
-            renderColumns: (event, data) => this._renderColumns(event, data)
+            renderColumns: (event, data) => this._renderColumns(event, data),
+            dblclick: (event, data) => {
+                return true;
+            }
         });
     }
     _renderColumns(event, data) {

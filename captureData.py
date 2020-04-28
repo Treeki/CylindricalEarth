@@ -78,7 +78,7 @@ for msbt_name, json_key, fname, rowclass in justnames:
 	f = bcsv.File(rowclass)
 	f.load(open(bcsv_path + '/' + fname + '.bcsv', 'rb').read())
 	for row in f.rows:
-		output[json_key][row.id] = row._39b5a93d
+		output[json_key][row.UniqueID] = row.ModelName
 
 	m = msbt.MSBT()
 	m.load(msgArc.get_file_data(msbt_name))
@@ -91,37 +91,37 @@ output['fg'] = {}
 f = bcsv.File(FgMainParam)
 f.load(open(bcsv_path + '/FgMainParam.bcsv', 'rb').read())
 for row in f.rows:
-	output['fg'][row.id] = {'name': row.name, 'item': row._f4678f13}
+	output['fg'][row.UniqueID] = {'name': row.ModelName, 'item': row.DigItem}
 
 
 output['outsideParts'] = {}
 f = bcsv.File(FieldOutsideParts)
 f.load(open(bcsv_path + '/FieldOutsideParts.bcsv', 'rb').read())
 for row in f.rows:
-	output['outsideParts'][row.id] = row._39b5a93d
+	output['outsideParts'][row.UniqueID] = row.ModelName
 
 
 output['terrainUnits'] = {}
 f = bcsv.File(FieldLandMakingUnitModelParam)
 f.load(open(bcsv_path + '/FieldLandMakingUnitModelParam.bcsv', 'rb').read())
 for row in f.rows:
-	output['terrainUnits'][row.id] = row._39b5a93d
+	output['terrainUnits'][row.UniqueID] = row.ModelName
 
 
 evflags = (
 	('EventFlagsAocParam', EventFlagsAocParam, 'aoc', None),
 	('EventFlagsBcatParam', EventFlagsBcatParam, 'bcat', None),
-	('EventFlagsHouseParam', EventFlagsHouseParam, 'house', '_344b17d7'),
-	('EventFlagsLandParam', EventFlagsLandParam, 'land', '_344b17d7'),
-	('EventFlagsLandTempParam', EventFlagsLandTempParam, 'landTemp', '_0110b14c'),
-	('EventFlagsNpcMemoryParam', EventFlagsNpcMemoryParam, 'npcMemory', '_bd7682f5'),
-	('EventFlagsNpcSaveParam', EventFlagsNpcSaveParam, 'npcSave', '_344b17d7'),
-	('EventFlagsNpcTempParam', EventFlagsNpcTempParam, 'npcTemp', '_0110b14c'),
+	('EventFlagsHouseParam', EventFlagsHouseParam, 'house', 'MaxValue'),
+	('EventFlagsLandParam', EventFlagsLandParam, 'land', 'MaxValue'),
+	('EventFlagsLandTempParam', EventFlagsLandTempParam, 'landTemp', 'MaxValue'),
+	('EventFlagsNpcMemoryParam', EventFlagsNpcMemoryParam, 'npcMemory', 'MaxValue'),
+	('EventFlagsNpcSaveParam', EventFlagsNpcSaveParam, 'npcSave', 'MaxValue'),
+	('EventFlagsNpcTempParam', EventFlagsNpcTempParam, 'npcTemp', 'MaxValue'),
 	('EventFlagsPlayerActivityParam', EventFlagsPlayerActivityParam, 'playerActivity', None),
-	('EventFlagsPlayerParam', EventFlagsPlayerParam, 'player', '_344b17d7'),
-	('EventFlagsPlayerTempParam', EventFlagsPlayerTempParam, 'playerTemp', '_0110b14c'),
-	('EventFlagsPlayerVisitParam', EventFlagsPlayerVisitParam, 'playerVisit', '_0110b14c'),
-	('EventFlagsLifeSupportAchievementParam', EventFlagsLifeSupportAchievementParam, 'miles', '_1be772f0'),
+	('EventFlagsPlayerParam', EventFlagsPlayerParam, 'player', 'MaxValue'),
+	('EventFlagsPlayerTempParam', EventFlagsPlayerTempParam, 'playerTemp', 'MaxValue'),
+	('EventFlagsPlayerVisitParam', EventFlagsPlayerVisitParam, 'playerVisit', 'MaxValue'),
+	('EventFlagsLifeSupportAchievementParam', EventFlagsLifeSupportAchievementParam, 'miles', 'MaxLevel'),
 	('EventFlagsLifeSupportDailyParam', EventFlagsLifeSupportDailyParam, 'milesPlus', None),
 )
 
@@ -132,9 +132,9 @@ for (fname, rowclass, key, maxkey) in evflags:
 	output['eventFlags'][key] = []
 	for row in f.rows:
 		output['eventFlags'][key].append({
-			'id': row.id,
-			'enName': row.name_en,
-			'jpName': row.name_jp,
+			'id': row.UniqueID,
+			'enName': row.Key,
+			'jpName': row.Name,
 		})
 		if maxkey:
 			output['eventFlags'][key][-1]['maximum'] = getattr(row, maxkey)
