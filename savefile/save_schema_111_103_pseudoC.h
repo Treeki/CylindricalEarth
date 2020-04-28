@@ -876,7 +876,7 @@ struct s_3cec5cfe {                                /* 0x24c00 big, align 2 */
   GSaveFieldLandMakingMapData       Map[112][96];                              // @0x0 size 0xe, align 2
 };
 struct GSaveItemMarketingRoute {                   /* 0x2 big, align 1 */
-  u8                                _86322311;                                 // @0x0 size 0x1, align 1
+  u8                                VillageMarketingType;                      // @0x0 size 0x1, align 1
   u8                                VillageLotId;                              // @0x1 size 0x1, align 1
 };
 struct GSaveAnimal {                               /* 0x12ab0 big, align 8 */
