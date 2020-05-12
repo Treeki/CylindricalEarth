@@ -3,7 +3,7 @@ from ghidra.program.model.data import ArrayDataType
 handler = ghidra.program.model.data.DataTypeConflictHandler.ConflictResolutionPolicy.RENAME_AND_ADD.handler
 
 import json
-with open('/Volumes/HFS/repos/switch/CylindricalEarth/savefile/save_schema_120_109.json', 'r') as f:
+with open('/Volumes/HFS/repos/switch/CylindricalEarth/savefile/save_schema_131080_131078.json', 'r') as f:
 	stuff = json.load(f)
 with open('/Volumes/HFS/repos/switch/CylindricalEarth/savefile/save_io_structure.json', 'r') as f:
 	sioData = json.load(f)
@@ -94,10 +94,16 @@ for key, typ in stuff['types'].iteritems():
 for key, typ in stuff['types'].iteritems():
 	key = int(key)
 	dt = typeMap[key]
+	if dt.length != typ['size']:
+		print('bad size for %s, is %x and must be %x' % (typ['name'], dt.length, typ['size']))
+		dt.deleteAll()
+		print('%x after deleteAll' % dt.length)
+		dt.growStructure(typ['size'])
+		print('grown to %x' % dt.length)
 	for field in typ['fields']:
 		comp = dt.getComponentAt(field['offset'])
 		print('checking field %s at %d' % (field['name'], field['offset']))
-		if not comp.fieldName:
+		if not comp.fieldName or comp.fieldName != field['name']:
 			print('replacing field %s' % field['name'])
 			fdt = typeMap[field['type']]
 			if field['length'][1] > 1:
@@ -110,6 +116,7 @@ for key, typ in stuff['types'].iteritems():
 			comp.fieldName = field['name'] # justin case,
 
 
+'''
 # finally, generate all of the nodes
 nodeDT = dtmgr.getDataType('ac114_try2/auto_structs/SaveNode')
 
@@ -184,3 +191,4 @@ for key, sioInfo in sioData.iteritems():
 			else:
 				comp.fieldName = field['name'] # justin case, (2)
 
+'''

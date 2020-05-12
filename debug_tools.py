@@ -252,6 +252,6 @@ if __name__ == '__main__':
     for x,y,tag in layers[0].tags.nonZeroTagIterator:
         print(f'{x},{y} {tag:8x}')
 
-field = FieldSystem.get().defaultField
-main = field.itemLayers
+#field = FieldSystem.get().defaultField
+#main = field.itemLayers
 nx.resume()

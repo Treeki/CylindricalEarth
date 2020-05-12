@@ -215,11 +215,20 @@ for line in open('../../strs120filter'):
             addCS(pool, bit)
 
 with open('../evfl/evflActors120.json', 'r') as f:
-    for v in json.load(f).values():
+    stuff = json.load(f)
+    for v in stuff['actors'].values():
         for n in v['actions']:
             addCS(pool, n.replace('EventFlowAction', ''))
         for n in v['queries']:
             addCS(pool, n.replace('EventFlowQuery', ''))
+    for bit in stuff['keys']:
+        if re.match(looksLikeConstant, bit):
+            bit = bit[1:]
+        addCS(pool, bit)
+    for bit in stuff['values']:
+        if re.match(looksLikeConstant, bit):
+            bit = bit[1:]
+        addCS(pool, bit)
 
 with open('wordlist2.txt', 'w') as f:
     for p in pool:

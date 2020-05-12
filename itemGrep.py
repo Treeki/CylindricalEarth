@@ -1,21 +1,30 @@
 import bcsv
 import specs
 import sys
+import json
 
 b = bcsv.File(specs.ItemParam)
 b.load(open('../ac120upd/romfs/Bcsv/ItemParam.bcsv', 'rb').read())
+
+stuff = json.load(open('savefile/editor/gameData.json', 'r'))
 
 pall = False
 if '-all' in sys.argv:
     sys.argv.remove('-all')
     pall = True
 
+def getname(iid):
+    try:
+        return stuff['items'][str(iid)]
+    except KeyError:
+        return '???'
+
 def prow(row):
     if pall:
         for fld in row.fields():
             print(f'{fld} -> {getattr(row,fld)}')
     else:
-        print(f'{row.UniqueID} - {row.Label}')
+        print(f'{row.UniqueID} - {row.Label} - {getname(row.UniqueID)}')
 
 mode = sys.argv[1]
 if mode == 'agg':
