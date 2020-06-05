@@ -25,7 +25,7 @@ struct GSavePlayerOther {                          /* 0x36080 big, align 8 */
   u8 gap_33011[3];
   GSaveMoney                        Savings;                                // @0x33014 size 0x8, align 4
   GSaveMoney                        BoxSell;                                // @0x3301c size 0x8, align 4
-  s_51985494                        _abd9d4a4;                              // @0x33024 size 0x1400, align 2
+  GSaveCraftingRecipeCollect        CraftingRecipeCollect;                  // @0x33024 size 0x1400, align 2
   GSaveDate                         MoveOutBoxMoney;                        // @0x34424 size 0x4, align 2
   GSaveNetPlayerID                  NetPlayerID;                            // @0x34428 size 0x58, align 8
   GSaveNetMailBox                   NetMailBox;                             // @0x34480 size 0x660, align 8
@@ -38,8 +38,8 @@ struct GSavePlayerOther {                          /* 0x36080 big, align 8 */
   GSaveInsectCollection             InsectCollection;                       // @0x35976 size 0xd6, align 2
   GSaveDiveFishCollection           DiveFishCollection;                     // @0x35a4c size 0x82, align 2
   u8 gap_35ace[2];
-  s_2c3a15dc                        _9c82a14d;                              // @0x35ad0 size 0x104, align 4
-  s_b16331d2                        _82e306e0;                              // @0x35bd4 size 0x204, align 4
+  s_2c3a15dc                        ReceivedAoC;                            // @0x35ad0 size 0x104, align 4
+  s_b16331d2                        ReceivedBCAT;                           // @0x35bd4 size 0x204, align 4
   GSaveMoney                        KabuBuy;                                // @0x35dd8 size 0x8, align 4
   GSaveMoney                        KabuSell;                               // @0x35de0 size 0x8, align 4
   GSaveLandId                       PreviousLandId;                         // @0x35de8 size 0x1c, align 4
@@ -56,7 +56,7 @@ struct GSaveNormalNpcBitFlag {                     /* 0x8c big, align 4 */
 struct GSaveMyDesignPalette {                      /* 0x2d big, align 1 */
   u8                                Colors[45];                             // @0x0 size 0x1, align 1
 };
-struct s_0838b933 {                                /* 0x10 big, align 4 */
+struct GSavePostingReserveMilage {                 /* 0x10 big, align 4 */
   bool                              Reserved;                               // @0x0 size 0x1, align 1
   u8 gap_1[3];
   GSaveItemName                     Present;                                // @0x4 size 0x8, align 4
@@ -89,17 +89,17 @@ struct GSaveFriendData {                           /* 0x70 big, align 8 */
   GSavePlayerId                     PlayerId;                               // @0x10 size 0x38, align 4
   GSaveTime                         UpdateTime;                             // @0x48 size 0x8, align 2
   GSaveTime                         SendTime;                               // @0x50 size 0x8, align 2
-  u32                               _31254404;                              // @0x58 size 0x4, align 4
+  u32                               SendMailCountTotal;                     // @0x58 size 0x4, align 4
   u32                               _cd529e90;                              // @0x5c size 0x4, align 4
   Game::CharaMakeSetting            CharaMakeSetting;                       // @0x60 size 0xc, align 2
   u8                                SendMailCountToday;                     // @0x6c size 0x1, align 1
-  u8                                DayEventRatio;                          // @0x6d size 0x1, align 1
+  u8                                _27a22258;                              // @0x6d size 0x1, align 1
   _44c6787c                         Status;                                 // @0x6e size 0x1, align 1
 };
 struct GSaveWordCoordinateName {                   /* 0x60 big, align 2 */
   s_1fc7814b                        CoordinateName;                         // @0x0 size 0x60, align 2
 };
-struct s_1e26c44b {                                /* 0x4 big, align 4 */
+struct GSaveItemFreeParam {                        /* 0x4 big, align 4 */
   _2f681072                         Type;                                   // @0x0 size 0x4, align 4
 };
 struct s_1fc7814b {                                /* 0x60 big, align 2 */
@@ -112,16 +112,16 @@ struct GSaveWordTownName {                         /* 0x14 big, align 2 */
   s_8aa46560                        TownName;                               // @0x0 size 0x14, align 2
 };
 struct GSavePlayerTool {                           /* 0x8b8 big, align 8 */
-  s_53540b81                        Tool;                                   // @0x0 size 0x8b0, align 8
+  GSaveItemNameWithMyDesign         Tool;                                   // @0x0 size 0x8b0, align 8
   u8                                LinkHolder;                             // @0x8b0 size 0x1, align 1
-  s8                                _d3e5cb31;                              // @0x8b1 size 0x1, align 1
+  s8                                IndexInHolder;                          // @0x8b1 size 0x1, align 1
 };
 struct GSavePostingReserveList {                   /* 0x9610 big, align 4 */
-  s_987fde57                        ListTomorrowNpc[30];                    // @0x0 size 0x2b4, align 4
-  s_aed7b967                        ListTomorrowSystem[16];                 // @0x5118 size 0x2b4, align 4
-  s_cab7d1b6                        ListInScene[4];                         // @0x7c58 size 0x2b8, align 4
-  s_0838b933                        ListMilage[5];                          // @0x8738 size 0x10, align 4
-  s_6ab47142                        ListCatalog[5];                         // @0x8788 size 0x2e8, align 4
+  GSavePostingReserveTomorrowNpc    ListTomorrowNpc[30];                    // @0x0 size 0x2b4, align 4
+  GSavePostingReserveTomorrowSystem ListTomorrowSystem[16];                 // @0x5118 size 0x2b4, align 4
+  GSavePostingReserveInScene        ListInScene[4];                         // @0x7c58 size 0x2b8, align 4
+  GSavePostingReserveMilage         ListMilage[5];                          // @0x8738 size 0x10, align 4
+  GSavePostingReserveCatalog        ListCatalog[5];                         // @0x8788 size 0x2e8, align 4
 };
 struct s_28557cb4 {                                /* 0xb540 big, align 8 */
   GSaveFriendData                   Buffer[400];                            // @0x0 size 0x70, align 8
@@ -187,7 +187,7 @@ struct GSaveItemName {                             /* 0x8 big, align 4 */
   u16                               UniqueID;                               // @0x0 size 0x2, align 2
   GSaveItemSystemParam              SystemParam;                            // @0x2 size 0x1, align 1
   GSaveItemAdditionalParam          AdditionalParam;                        // @0x3 size 0x1, align 1
-  s_1e26c44b                        FreeParam;                              // @0x4 size 0x4, align 4
+  GSaveItemFreeParam                FreeParam;                              // @0x4 size 0x4, align 4
 };
 struct GSaveProfileJPEG {                          /* 0x23008 big, align 4 */
   s_7b602b39                        _d35a9251;                              // @0x0 size 0x4, align 4
@@ -224,7 +224,7 @@ struct GSaveVersion {                              /* 0x100 big, align 4 */
 struct s_5173e60a {                                /* 0x40 big, align 2 */
   char16                            Buffer[32];                             // @0x0 size 0x2, align 2
 };
-struct s_51985494 {                                /* 0x1400 big, align 2 */
+struct GSaveCraftingRecipeCollect {                /* 0x1400 big, align 2 */
   _7421b0a6                         RecipeCollectBit;                       // @0x0 size 0x100, align 1
   _7421b0a6                         RecipeMadeBit;                          // @0x100 size 0x100, align 1
   _7421b0a6                         RecipeNewBit;                           // @0x200 size 0x100, align 1
@@ -234,7 +234,7 @@ struct s_51985494 {                                /* 0x1400 big, align 2 */
 struct GSaveMyDesignVersion {                      /* 0x4 big, align 4 */
   u32                               SaveDataVersion;                        // @0x0 size 0x4, align 4
 };
-struct s_53540b81 {                                /* 0x8b0 big, align 8 */
+struct GSaveItemNameWithMyDesign {                 /* 0x8b0 big, align 8 */
   GSaveItemName                     ItemName;                               // @0x0 size 0x8, align 4
   GSaveMyDesignPro                  MyDesign;                               // @0x8 size 0x8a8, align 8
 };
@@ -243,9 +243,9 @@ struct GSaveSetting {                              /* 0x1 big, align 1 */
 };
 struct GSaveMail {                                 /* 0x99d0 big, align 8 */
   GSaveMailText                     MailText;                               // @0x0 size 0x2440, align 4
-  bool                              _00d05b0c;                              // @0x2440 size 0x1, align 1
+  bool                              HandWritingUsed;                        // @0x2440 size 0x1, align 1
   u8 gap_2441[3];
-  s_caa46015                        HandWritten;                            // @0x2444 size 0x7538, align 4
+  GSaveHandWritten                  HandWritten;                            // @0x2444 size 0x7538, align 4
   u32                               UniqueId;                               // @0x997c size 0x4, align 4
   _01851482                         MailId;                                 // @0x9980 size 0x8, align 8
   _a8d2a4d4                         FromPopId;                              // @0x9988 size 0x8, align 8
@@ -275,8 +275,8 @@ struct GSaveMailText {                             /* 0x2440 big, align 4 */
   u8 gap_2375[1];
   s_d18feb1f                        SealList[20];                           // @0x2376 size 0xa, align 2
 };
-struct s_6ab47142 {                                /* 0x2e8 big, align 4 */
-  s_c9db04e6                        ReserveBase;                            // @0x0 size 0x2b0, align 4
+struct GSavePostingReserveCatalog {                /* 0x2e8 big, align 4 */
+  GSavePostingReserveBase           ReserveBase;                            // @0x0 size 0x2b0, align 4
   GSavePlayerId                     ToPlayerId;                             // @0x2b0 size 0x38, align 4
 };
 struct GSavePlayer {                               /* 0x35ac8 big, align 8 */
@@ -306,7 +306,7 @@ struct GSavePlayerOutfit {                         /* 0x1198 big, align 8 */
   GSaveItemName                     _32f5d7ae;                              // @0x1190 size 0x8, align 4
 };
 struct GSaveAmiibo {                               /* 0xa0 big, align 4 */
-  s_8ad098fb                        _e51f22f7;                              // @0x0 size 0x10, align 4
+  GSaveSpecialNpcBitFlag            _e51f22f7;                              // @0x0 size 0x10, align 4
   GSaveNormalNpcBitFlag             _2c6cce47;                              // @0x10 size 0x8c, align 4
   _44c6787c                         FlagOther;                              // @0x9c size 0x1, align 1
 };
@@ -315,10 +315,10 @@ struct GSaveFriendList {                           /* 0xb548 big, align 8 */
   ::nn::time::PosixTime             _6ff0412c;                              // @0xb540 size 0x8, align 8
 };
 struct GSaveClockTimeList {                        /* 0x180 big, align 1 */
-  _4a3f6323                         ClockTimeList[16];                      // @0x0 size 0x18, align 1
+  Game::ClockTimeBuffers            ClockTimeList[16];                      // @0x0 size 0x18, align 1
 };
 struct s_75f0022c {                                /* 0x10 big, align 4 */
-  s_8ad098fb                        _920964e2;                              // @0x0 size 0x10, align 4
+  GSaveSpecialNpcBitFlag            _920964e2;                              // @0x0 size 0x10, align 4
 };
 struct GSaveCoordinateList {                       /* 0x8fc0 big, align 8 */
   GSaveCoordinate                   Coordinate[8];                          // @0x0 size 0x11f8, align 8
@@ -358,7 +358,7 @@ struct GSaveDate {                                 /* 0x4 big, align 2 */
 struct GSaveCharaMake {                            /* 0x2b8 big, align 8 */
   Game::CharaMakeSetting            CharaMakeSetting;                       // @0x0 size 0xc, align 2
   u8 gap_c[4];
-  GSaveMyDesignNormal               _beb5fa24;                              // @0x10 size 0x2a8, align 8
+  GSaveMyDesignNormal               FacePaintMyDesignNormal;                // @0x10 size 0x2a8, align 8
 };
 struct s_85955d55 {                                /* 0x5c big, align 4 */
   _e0b64e79                         NameInfo;                               // @0x0 size 0x58, align 4
@@ -392,8 +392,8 @@ struct s_8a06c9a5 {                                /* 0x9c44 big, align 4 */
 struct s_8aa46560 {                                /* 0x14 big, align 2 */
   char16                            Buffer[10];                             // @0x0 size 0x2, align 2
 };
-struct s_8ad098fb {                                /* 0x10 big, align 4 */
-  u32                               _dd4562ae[4];                           // @0x0 size 0x4, align 4
+struct GSaveSpecialNpcBitFlag {                    /* 0x10 big, align 4 */
+  u32                               SpecialNpcBitFlag[4];                   // @0x0 size 0x4, align 4
 };
 struct GSavePlayerItemMaterial {                   /* 0x140 big, align 4 */
   GSaveItemName                     Item[32];                               // @0x0 size 0x8, align 4
@@ -404,10 +404,10 @@ struct GSaveChangeStickInfo {                      /* 0x2 big, align 1 */
   bool                              IsUseCoordinate;                        // @0x1 size 0x1, align 1
 };
 struct GSaveCoordinateOutfit {                     /* 0x1190 big, align 8 */
-  s_53540b81                        Cap;                                    // @0x0 size 0x8b0, align 8
+  GSaveItemNameWithMyDesign         Cap;                                    // @0x0 size 0x8b0, align 8
   GSaveItemName                     AcceEye;                                // @0x8b0 size 0x8, align 4
   GSaveItemName                     AcceMouth;                              // @0x8b8 size 0x8, align 4
-  s_53540b81                        Tops;                                   // @0x8c0 size 0x8b0, align 8
+  GSaveItemNameWithMyDesign         Tops;                                   // @0x8c0 size 0x8b0, align 8
   GSaveItemName                     Bottoms;                                // @0x1170 size 0x8, align 4
   GSaveItemName                     Socks;                                  // @0x1178 size 0x8, align 4
   GSaveItemName                     Shoes;                                  // @0x1180 size 0x8, align 4
@@ -420,8 +420,8 @@ struct s_96c02c2e {                                /* 0xa4 big, align 4 */
   GSaveItemName                     Item[20];                               // @0x0 size 0x8, align 4
   u32                               _4c5f8125;                              // @0xa0 size 0x4, align 4
 };
-struct s_987fde57 {                                /* 0x2b4 big, align 4 */
-  s_c9db04e6                        ReserveBase;                            // @0x0 size 0x2b0, align 4
+struct GSavePostingReserveTomorrowNpc {            /* 0x2b4 big, align 4 */
+  GSavePostingReserveBase           ReserveBase;                            // @0x0 size 0x2b0, align 4
   Game::NpcNormalID                 FromNpcId;                              // @0x2b0 size 0x3, align 1
 };
 struct s_9cfe48be {                                /* 0x60 big, align 2 */
@@ -442,8 +442,8 @@ struct GSaveItemSystemParam {                      /* 0x1 big, align 1 */
 struct s_ac6c2327 {                                /* 0x8c big, align 4 */
   GSaveNormalNpcBitFlag             _920964e2;                              // @0x0 size 0x8c, align 4
 };
-struct s_aed7b967 {                                /* 0x2b4 big, align 4 */
-  s_c9db04e6                        ReserveBase;                            // @0x0 size 0x2b0, align 4
+struct GSavePostingReserveTomorrowSystem {         /* 0x2b4 big, align 4 */
+  GSavePostingReserveBase           ReserveBase;                            // @0x0 size 0x2b0, align 4
   u8                                FromSystemId;                           // @0x2b0 size 0x1, align 1
 };
 struct s_b16331d2 {                                /* 0x204 big, align 4 */
@@ -451,7 +451,7 @@ struct s_b16331d2 {                                /* 0x204 big, align 4 */
   s32                               AddPos;                                 // @0x200 size 0x4, align 4
 };
 struct GSavePersonalPlayReportInfo {               /* 0xd10 big, align 8 */
-  s64                               _db196362;                              // @0x0 size 0x8, align 8
+  s64                               MainPlayerTotalPlayTime;                // @0x0 size 0x8, align 8
   s64                               TotalPlayTime;                          // @0x8 size 0x8, align 8
   s_ebd6060b                        PlayReportCounter;                      // @0x10 size 0x400, align 4
   s_965e2bbb                        _351a3f3f;                              // @0x410 size 0x100, align 4
@@ -480,9 +480,9 @@ struct GSavePlayerHandleName {                     /* 0xa big, align 2 */
   u16                               NounId;                                 // @0x4 size 0x2, align 2
   u8                                NounLevel;                              // @0x6 size 0x1, align 1
   u8                                NounGenderType;                         // @0x7 size 0x1, align 1
-  u8                                _fa0a936b;                              // @0x8 size 0x1, align 1
+  u8                                NounGenderTypePrev;                     // @0x8 size 0x1, align 1
 };
-struct s_c9db04e6 {                                /* 0x2b0 big, align 4 */
+struct GSavePostingReserveBase {                   /* 0x2b0 big, align 4 */
   bool                              Reserved;                               // @0x0 size 0x1, align 1
   bool                              TextUsed;                               // @0x1 size 0x1, align 1
   u16                               CardDesignId;                           // @0x2 size 0x2, align 2
@@ -492,13 +492,13 @@ struct s_c9db04e6 {                                /* 0x2b0 big, align 4 */
   s_87bef85e                        Body;                                   // @0x70 size 0x1e0, align 2
   s_341c3493                        Footer;                                 // @0x250 size 0x60, align 2
 };
-struct s_caa46015 {                                /* 0x7538 big, align 4 */
+struct GSaveHandWritten {                          /* 0x7538 big, align 4 */
   u8                                Image[30000];                           // @0x0 size 0x1, align 1
   u8                                Palette[4];                             // @0x7530 size 0x1, align 1
   u32                               VerticesNum;                            // @0x7534 size 0x4, align 4
 };
-struct s_cab7d1b6 {                                /* 0x2b8 big, align 4 */
-  s_c9db04e6                        ReserveBase;                            // @0x0 size 0x2b0, align 4
+struct GSavePostingReserveInScene {                /* 0x2b8 big, align 4 */
+  GSavePostingReserveBase           ReserveBase;                            // @0x0 size 0x2b0, align 4
   u8                                ReserveType;                            // @0x2b0 size 0x1, align 1
   u8                                FromType;                               // @0x2b1 size 0x1, align 1
   Game::NpcNormalID                 FromNpcId;                              // @0x2b2 size 0x3, align 1
@@ -547,8 +547,8 @@ struct GSaveItemRemakeCollectBit {                 /* 0x7d0 big, align 4 */
   _f941cca8                         CollectBitFlag;                         // @0x0 size 0x7d0, align 4
 };
 struct GSavePlayerItemInsectFishBox {              /* 0x148 big, align 4 */
-  s_87958bd4                        _56dff120;                              // @0x0 size 0xa4, align 4
-  s_87958bd4                        _f9b72084;                              // @0xa4 size 0xa4, align 4
+  s_87958bd4                        ItemHolderMyVillage;                    // @0x0 size 0xa4, align 4
+  s_87958bd4                        ItemHolderOtherVillage;                 // @0xa4 size 0xa4, align 4
 };
 struct GSaveItemAdditionalParam {                  /* 0x1 big, align 1 */
   _28a7a613                         Type;                                   // @0x0 size 0x1, align 1
@@ -620,8 +620,8 @@ struct GSaveBirthdayMessage {                      /* 0x230 big, align 8 */
 struct GSaveNetMailBox {                           /* 0x660 big, align 8 */
   GSaveNetMailData                  DeleteList[100];                        // @0x0 size 0x10, align 8
   ::nn::time::SteadyClockTimePoint  ActivateTime;                           // @0x640 size 0x18, align 8
-  u32                               _7630490c;                              // @0x658 size 0x4, align 4
-  u8                                _e1cc0f3d;                              // @0x65c size 0x1, align 1
+  u32                               OfficialMailCountTotal;                 // @0x658 size 0x4, align 4
+  u8                                OfficialMailCountToday;                 // @0x65c size 0x1, align 1
   u8                                BgReceiveCount;                         // @0x65d size 0x1, align 1
 };
 struct GSaveAudioRegister {                        /* 0x20 big, align 4 */
@@ -629,10 +629,10 @@ struct GSaveAudioRegister {                        /* 0x20 big, align 4 */
 };
 struct GSavePlayerVisitorNpc {                     /* 0x88 big, align 8 */
   _d58a9885                         HgcOutfit;                              // @0x0 size 0x48, align 4
-  _382f646e                         _a2a59bc9;                              // @0x48 size 0x8, align 8
-  s32                               _f264f901;                              // @0x50 size 0x4, align 4
+  _382f646e                         HgcFashionThemeBit;                     // @0x48 size 0x8, align 8
+  s32                               HgcTodayFashionTheme;                   // @0x50 size 0x4, align 4
   GSaveItemName                     GulRewardItem;                          // @0x54 size 0x8, align 4
-  GSaveItemName                     _9af9e370;                              // @0x5c size 0x8, align 4
+  GSaveItemName                     HgcSampleItem;                          // @0x5c size 0x8, align 4
   GSaveItemName                     HgcRewardItem;                          // @0x64 size 0x8, align 4
   GSaveItemName                     CodeRecipeUser;                         // @0x6c size 0x8, align 4
   GSaveItemName                     _46d1ef70;                              // @0x74 size 0x8, align 4
@@ -695,7 +695,7 @@ struct GSavePlayerHouseRoom {                      /* 0x65c8 big, align 4 */
 struct GSaveProfile {                              /* 0x69508 big, align 4 */
   GSaveVersion                      Version;                                // @0x0 size 0x100, align 4
   s_7b602b39                        _d35a9251;                              // @0x100 size 0x4, align 4
-  GSaveProfileJPEG                  _72d77700[3];                           // @0x104 size 0x23008, align 4
+  GSaveProfileJPEG                  StockJPEGArray[3];                      // @0x104 size 0x23008, align 4
   u8                                MainIndex;                              // @0x6911c size 0x1, align 1
   u8                                _5d1fcb04[1003];                        // @0x6911d size 0x1, align 1
 };
@@ -794,7 +794,7 @@ struct GSaveWeather {                              /* 0x14c big, align 4 */
   GSaveTime                         UpdateTime;                             // @0x0 size 0x8, align 2
   s32                               YesterdayWeatherPattern;                // @0x8 size 0x4, align 4
   s32                               TodayWeatherPattern;                    // @0xc size 0x4, align 4
-  s32                               TransferReasonLife;                     // @0x10 size 0x4, align 4
+  s32                               TommorowWeatherPattern;                 // @0x10 size 0x4, align 4
   s_e4ba56bd                        WeatherArea;                            // @0x14 size 0x4, align 4
   u32                               _3bb101ca;                              // @0x18 size 0x4, align 4
   s_99f29105                        CloudPattern[24];                       // @0x1c size 0x4, align 4
@@ -825,14 +825,14 @@ struct GSaveNpcVillager {                          /* 0x1d6d48 big, align 8 */
   GSaveAnimal                       MoveInAnimal[4];                        // @0xbab70 size 0x12ab0, align 8
   GSaveAnimal                       MoveOutAnimal[10];                      // @0x105630 size 0x12ab0, align 8
   GSaveQuest                        Quest;                                  // @0x1c0110 size 0x1a8, align 4
-  GSaveDate                         _7f077d1b;                              // @0x1c02b8 size 0x4, align 2
+  GSaveDate                         LastSurpriseDate;                       // @0x1c02b8 size 0x4, align 2
   GSaveNpcArchive                   NpcArchive[400];                        // @0x1c02bc size 0xe8, align 4
   s8                                NpcBirthdayHouse;                       // @0x1d6d3c size 0x1, align 1
   s8                                MoveOutVillagerIndex;                   // @0x1d6d3d size 0x1, align 1
   s8                                MoveOutSkipCount;                       // @0x1d6d3e size 0x1, align 1
   s8                                MoveOutTalkCount;                       // @0x1d6d3f size 0x1, align 1
   s8                                MoveOutFixedFlag;                       // @0x1d6d40 size 0x1, align 1
-  s8                                _54ab3cf5;                              // @0x1d6d41 size 0x1, align 1
+  s8                                NewestVillagerIndex;                    // @0x1d6d41 size 0x1, align 1
   s8                                MoveStopVillagerIndex;                  // @0x1d6d42 size 0x1, align 1
   s8                                DIYVillagerArray[3];                    // @0x1d6d43 size 0x1, align 1
   s8                                _611f391f;                              // @0x1d6d46 size 0x1, align 1
@@ -855,7 +855,7 @@ struct GSaveCampSite {                             /* 0x4 big, align 4 */
 struct GSaveLandTime {                             /* 0xe0 big, align 8 */
   GSaveTime                         LastGrowUpTime;                         // @0x0 size 0x8, align 2
   GSaveDate                         CreateDate;                             // @0x8 size 0x4, align 2
-  bool                              _cfdaaf93;                              // @0xc size 0x1, align 1
+  bool                              SummerTimeFlag;                         // @0xc size 0x1, align 1
   bool                              InitializeFlag;                         // @0xd size 0x1, align 1
   u8 gap_e[2];
   nn::time::ClockSnapshot           ClockSnapshot;                          // @0x10 size 0xd0, align 8
@@ -928,7 +928,7 @@ struct s_3f77a59c {                                /* 0x14 big, align 2 */
   char16                            Buffer[10];                             // @0x0 size 0x2, align 2
 };
 struct GSaveOutsideField {                         /* 0x92 big, align 2 */
-  _6b60f863                         FieldBlockData;                         // @0x0 size 0x90, align 2
+  Game::FieldBlockData              FieldBlockData;                         // @0x0 size 0x90, align 2
   u16                               TemplateUniqueId;                       // @0x90 size 0x2, align 2
 };
 struct GSaveStructureData {                        /* 0x14 big, align 4 */
@@ -985,7 +985,7 @@ struct GSaveNpcStockItemData {                     /* 0x2c big, align 4 */
 struct GSaveMainFieldStructure {                   /* 0x398 big, align 4 */
   GSaveStructureData                StructureList[46];                      // @0x0 size 0x14, align 4
 };
-struct s_577c8b11 {                                /* 0x1b8 big, align 4 */
+struct GSaveObjectSnowManFamily {                  /* 0x1b8 big, align 4 */
   GSaveObjectSnowMan                CreateSnowManList[4];                   // @0x0 size 0x6c, align 4
   bool                              IsCreateSnowMan;                        // @0x1b0 size 0x1, align 1
   u8 gap_1b1[3];
@@ -1031,7 +1031,7 @@ struct GSaveLandMyDesign {                         /* 0x27e08 big, align 8 */
   GSaveMyDesignPro                  MyDesignPros[50];                       // @0x84d0 size 0x8a8, align 8
   GSaveMyDesignNormal               FlagMyDesign;                           // @0x235a0 size 0x2a8, align 8
   GSaveMyDesignPro                  TailorMyDesigns[8];                     // @0x23848 size 0x8a8, align 8
-  s_a92a1233                        _34970788[8];                           // @0x27d88 size 0x10, align 8
+  s_a92a1233                        ExhibitAccounts[8];                     // @0x27d88 size 0x10, align 8
 };
 struct GSaveNpcHouse {                             /* 0x1d4 big, align 4 */
   s_9a46020a                        HouseLevel;                             // @0x0 size 0x4, align 4
@@ -1068,7 +1068,7 @@ struct GSaveLand {                                 /* 0x4fa0d8 big, align 8 */
   GSaveShop                         Shop;                                   // @0x40ece8 size 0x2d98, align 4
   GSaveMuseum                       Museum;                                 // @0x411a80 size 0x3404, align 4
   GSaveVisitorNpc                   VisitorNpc;                             // @0x414e84 size 0x78, align 4
-  s_577c8b11                        SnowManFamily;                          // @0x414efc size 0x1b8, align 4
+  GSaveObjectSnowManFamily          SnowManFamily;                          // @0x414efc size 0x1b8, align 4
   GSaveFg                           Fg;                                     // @0x4150b4 size 0x928, align 4
   GSaveItemMarketingRoute           ItemMarketingRoute;                     // @0x4159dc size 0x2, align 1
   u8 gap_4159de[2];
@@ -1155,7 +1155,7 @@ struct GSaveMemory {                               /* 0x5f0 big, align 4 */
   GSaveWordNickName                 NickName;                               // @0x138 size 0x14, align 2
   GSaveWordGreeting                 Greeting;                               // @0x14c size 0x420, align 2
   GSaveDate                         GreetingSetDate;                        // @0x56c size 0x4, align 2
-  GSaveMailReceiveInfo              _54e818b8[4];                           // @0x570 size 0x10, align 4
+  GSaveMailReceiveInfo              MailReceiveInfoStock[4];                // @0x570 size 0x10, align 4
   GSaveDate                         LastMailSendDate;                       // @0x5b0 size 0x4, align 2
   GSaveItemName                     ClothesPTops;                           // @0x5b4 size 0x8, align 4
   s16                               _58b5e808;                              // @0x5bc size 0x2, align 2
@@ -1164,7 +1164,7 @@ struct GSaveMemory {                               /* 0x5f0 big, align 4 */
   GSaveDate                         LastTalkDate;                           // @0x5c0 size 0x4, align 2
   GSaveLandId                       LastTalkLandId;                         // @0x5c4 size 0x1c, align 4
   GSavePlayerHandleName             HandleName;                             // @0x5e0 size 0xa, align 2
-  GSaveDate                         _60809709;                              // @0x5ea size 0x4, align 2
+  GSaveDate                         HandleNameUpdateDate;                   // @0x5ea size 0x4, align 2
 };
 struct GSaveShopZakka {                            /* 0x16d0 big, align 4 */
   GSaveItemName                     ShopItem[7][64];                        // @0x0 size 0x8, align 4
@@ -1191,7 +1191,7 @@ struct GSaveWordTasteName {                        /* 0x60 big, align 2 */
 struct GSaveFgOther {                              /* 0x23c big, align 4 */
   GSavePlayerId                     WateringVisitor[10];                    // @0x0 size 0x38, align 4
   GSaveGrowUpParam                  GrowUpData;                             // @0x230 size 0x4, align 4
-  _54ed4ece                         _c33a99de;                              // @0x234 size 0x4, align 4
+  _54ed4ece                         BuildCelebrationHHA;                    // @0x234 size 0x4, align 4
   u32                               _f380f477;                              // @0x238 size 0x4, align 4
 };
 struct s_99f29105 {                                /* 0x4 big, align 4 */
@@ -1240,7 +1240,7 @@ struct GSaveShop {                                 /* 0x2d98 big, align 4 */
 };
 struct GSaveQuestSick {                            /* 0x3c big, align 4 */
   GSaveQuestBase                    Base;                                   // @0x0 size 0x34, align 4
-  GSaveDate                         _28f8f65a;                              // @0x34 size 0x4, align 2
+  GSaveDate                         CureDate;                               // @0x34 size 0x4, align 2
   u16                               _f04b63da;                              // @0x38 size 0x2, align 2
   u8                                OccurRatio;                             // @0x3a size 0x1, align 1
 };
@@ -1310,7 +1310,7 @@ struct GSavePlayerHouse {                          /* 0x26400 big, align 4 */
   u16                               OrderRoofUniqueID;                      // @0xc size 0x2, align 2
   u16                               OrderDoorUniqueID;                      // @0xe size 0x2, align 2
   GSaveMoney                        Loan;                                   // @0x10 size 0x8, align 4
-  GSaveMoney                        _2390f9f0;                              // @0x18 size 0x8, align 4
+  GSaveMoney                        ReturnsLoan;                            // @0x18 size 0x8, align 4
   GSaveEventFlagHouse               EventFlag;                              // @0x20 size 0x100, align 2
   GSavePlayerHouseRoom              RoomList[6];                            // @0x120 size 0x65c8, align 4
   s8                                PlayerList[2];                          // @0x263d0 size 0x1, align 1
@@ -1343,7 +1343,7 @@ struct GSaveLightMemory {                          /* 0x14c big, align 4 */
   GSaveEventFlagNpcMemory           EventFlag;                              // @0x38 size 0x100, align 1
   GSaveDate                         LastTalkDate;                           // @0x138 size 0x4, align 2
   GSavePlayerHandleName             HandleName;                             // @0x13c size 0xa, align 2
-  GSaveDate                         _60809709;                              // @0x146 size 0x4, align 2
+  GSaveDate                         HandleNameUpdateDate;                   // @0x146 size 0x4, align 2
 };
 struct s_d7e35b57 {                                /* 0x180920 big, align 8 */
   s_17010e57                        Stock;                                  // @0x0 size 0x180920, align 8
@@ -1354,7 +1354,7 @@ struct GSaveNetLandProfile {                       /* 0x8 big, align 8 */
 struct GSaveVisitorNpc {                           /* 0x78 big, align 4 */
   s_b77de181                        VisitorNpc[7];                          // @0x0 size 0x4, align 4
   V3f                               CreatePos;                              // @0x1c size 0xc, align 4
-  V3f                               _61e631dc;                              // @0x28 size 0xc, align 4
+  V3f                               CreateBocPos;                           // @0x28 size 0xc, align 4
   bool                              IsNormalLive[7];                        // @0x34 size 0x1, align 1
   bool                              IsBirthdayLive[7];                      // @0x3b size 0x1, align 1
   u8 gap_42[2];
@@ -1390,7 +1390,7 @@ struct s_e898dfa7 {                                /* 0x60 big, align 2 */
 struct GSaveVillageMelody {                        /* 0x10 big, align 8 */
   GSaveVillageMelodyData            MelodyDataList;                         // @0x0 size 0x8, align 8
   u8                                UsingIndex;                             // @0x8 size 0x1, align 1
-  u8                                _583a1fa1;                              // @0x9 size 0x1, align 1
+  u8                                ValidMaxIndex;                          // @0x9 size 0x1, align 1
 };
 struct s_e96a97e3 {                                /* 0x4 big, align 4 */
   s32                               Enum;                                   // @0x0 size 0x4, align 4
@@ -1409,7 +1409,7 @@ struct GSaveFg {                                   /* 0x928 big, align 4 */
   _7b9816fb                         _bc584dbe;                              // @0x0 size 0x900, align 1
   u16                               SpecialityFruit;                        // @0x900 size 0x2, align 2
   u16                               SisterFruit;                            // @0x902 size 0x2, align 2
-  u32                               _e88f809d[8];                           // @0x904 size 0x4, align 4
+  u32                               TreeMoneyInfoList[8];                   // @0x904 size 0x4, align 4
   u8                                VillageFlower;                          // @0x924 size 0x1, align 1
   u8                                SpecialityFlower;                       // @0x925 size 0x1, align 1
 };
@@ -1450,8 +1450,8 @@ struct s_fa4606a3 {                                /* 0xe0ad8 big, align 8 */
   s32                               IndexTable[30];                         // @0xe0a60 size 0x4, align 4
 };
 struct GSaveMyDesignListOrder {                    /* 0x64 big, align 1 */
-  s8                                _4ec4bbe0[50];                          // @0x0 size 0x1, align 1
-  s8                                _c31762e4[50];                          // @0x32 size 0x1, align 1
+  s8                                MyDesignListOrderNormals[50];           // @0x0 size 0x1, align 1
+  s8                                MyDesignListOrderPros[50];              // @0x32 size 0x1, align 1
 };
 struct GSaveQuestCatch {                           /* 0x3c big, align 4 */
   GSaveQuestBase                    Base;                                   // @0x0 size 0x34, align 4
@@ -1464,7 +1464,7 @@ struct GSaveBBS {                                  /* 0x77d0 big, align 8 */
   GSaveDate                         Date;                                   // @0x0 size 0x4, align 2
   s_87bef85e                        Body;                                   // @0x4 size 0x1e0, align 2
   s_341c3493                        Footer;                                 // @0x1e4 size 0x60, align 2
-  s_caa46015                        HandWrite;                              // @0x244 size 0x7538, align 4
+  GSaveHandWritten                  HandWrite;                              // @0x244 size 0x7538, align 4
   GSavePlayerId                     PlayerId;                               // @0x777c size 0x38, align 4
   u16                               _5d1fcb04;                              // @0x77b4 size 0x2, align 2
   u16                               DesignId;                               // @0x77b6 size 0x2, align 2

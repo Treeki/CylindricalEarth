@@ -1,0 +1,410 @@
+{
+   "ActionBindData" : [
+      {
+         "Key" : "EventFlowActionEventFlagNpcAdd",
+         "Value" : "EventFlowActionEventFlagAdd"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagNpcOff",
+         "Value" : "EventFlowActionEventFlagOff"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagNpcOn",
+         "Value" : "EventFlowActionEventFlagOn"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagNpcRemains",
+         "Value" : "EventFlowActionEventFlagRemains"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagNpcSet",
+         "Value" : "EventFlowActionEventFlagSet"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagSystemAdd",
+         "Value" : "EventFlowActionEventFlagAdd"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagSystemOff",
+         "Value" : "EventFlowActionEventFlagOff"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagSystemOn",
+         "Value" : "EventFlowActionEventFlagOn"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagSystemRemains",
+         "Value" : "EventFlowActionEventFlagRemains"
+      },
+      {
+         "Key" : "EventFlowActionEventFlagSystemSet",
+         "Value" : "EventFlowActionEventFlagSet"
+      },
+      {
+         "Key" : "EventFlowActionNetBreakUpSessionVillage",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetCheckNSA",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetCloseSession",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetConnectInit",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetDestroySessionVillage",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetEndSessionVillage",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetInitLocal",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetLeaveSessionVillage",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetLoginNEX",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetOpenSession",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNetShutdown",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNotifyUseNSOAppli",
+         "Value" : "EventFlowActionNetCommon"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeBlockWanderState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeChangeHandToolState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeConversationPretenseState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeFollowState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeGoToDestinationState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeInvisibleState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeOwlPostTalkState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeOwlWaitState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeSpNpcTurnState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeSpNpcTurnStateSpWait",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeSpVisitorTurnState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcChangeWaitState",
+         "Value" : "EventFlowActionNpcChangeAIState"
+      },
+      {
+         "Key" : "EventFlowActionNpcDecideDeliveryQuestReward",
+         "Value" : "EventFlowActionNpcDecideQuestReward"
+      },
+      {
+         "Key" : "EventFlowActionNpcDecideGeneralQuestReward",
+         "Value" : "EventFlowActionNpcDecideQuestReward"
+      },
+      {
+         "Key" : "EventFlowActionNpcDecideVisitPQuestReward",
+         "Value" : "EventFlowActionNpcDecideQuestReward"
+      },
+      {
+         "Key" : "EventFlowActionNpcDecideVisitPresent",
+         "Value" : "EventFlowActionNpcDecideQuestReward"
+      },
+      {
+         "Key" : "EventFlowActionSetCheckResultConvReaction",
+         "Value" : "EventFlowActionSetCheckResult"
+      },
+      {
+         "Key" : "EventFlowActionSetCheckResultStructureDoor",
+         "Value" : "EventFlowActionSetCheckResult"
+      },
+      {
+         "Key" : "EventFlowActionSetEasterApproachVillagerIndex",
+         "Value" : "EventFlowActionSetLastApproachNpcVillagerIndex"
+      },
+      {
+         "Key" : "EventFlowActionSetEventRewardToPlayerBaggage",
+         "Value" : "EventFlowActionNpcSetQuestRewardToPlayerBaggage"
+      },
+      {
+         "Key" : "EventFlowActionSetIslandReputationApproachVillagerIndex",
+         "Value" : "EventFlowActionSetLastApproachNpcVillagerIndex"
+      },
+      {
+         "Key" : "EventFlowActionSetNpcNameFromOwner",
+         "Value" : "EventFlowActionSetNpcName"
+      },
+      {
+         "Key" : "EventFlowActionSetNpcNameLostQuestClient",
+         "Value" : "EventFlowActionSetNpcName"
+      }
+   ],
+   "QueryBindData" : [
+      {
+         "Key" : "EventFlowQueryEventFlagNpcBool",
+         "Value" : "EventFlowQueryEventFlagBool"
+      },
+      {
+         "Key" : "EventFlowQueryEventFlagNpcInt",
+         "Value" : "EventFlowQueryEventFlagInt"
+      },
+      {
+         "Key" : "EventFlowQueryEventFlagNpcMax",
+         "Value" : "EventFlowQueryEventFlagMax"
+      },
+      {
+         "Key" : "EventFlowQueryEventFlagSystemBool",
+         "Value" : "EventFlowQueryEventFlagBool"
+      },
+      {
+         "Key" : "EventFlowQueryEventFlagSystemInt",
+         "Value" : "EventFlowQueryEventFlagInt"
+      },
+      {
+         "Key" : "EventFlowQueryEventFlagSystemMax",
+         "Value" : "EventFlowQueryEventFlagMax"
+      },
+      {
+         "Key" : "EventFlowQueryGeneralTalkChoice2",
+         "Value" : "EventFlowQueryGeneralChoice"
+      },
+      {
+         "Key" : "EventFlowQueryGeneralTalkChoice3",
+         "Value" : "EventFlowQueryGeneralChoice"
+      },
+      {
+         "Key" : "EventFlowQueryGeneralTalkChoice4",
+         "Value" : "EventFlowQueryGeneralChoice"
+      },
+      {
+         "Key" : "EventFlowQueryGeneralTalkChoice5",
+         "Value" : "EventFlowQueryGeneralChoice"
+      },
+      {
+         "Key" : "EventFlowQueryGeneralTalkChoice6",
+         "Value" : "EventFlowQueryGeneralChoice"
+      },
+      {
+         "Key" : "EventFlowQueryGeneralTalkChoice7",
+         "Value" : "EventFlowQueryGeneralChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMailDestinationChoice",
+         "Value" : "EventFlowQueryGeneralChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiKindItemSelectIncludeChoice3",
+         "Value" : "EventFlowQueryMultiKindItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiKindItemSelectIncludeChoice4",
+         "Value" : "EventFlowQueryMultiKindItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiKindItemSelectIncludeChoice5",
+         "Value" : "EventFlowQueryMultiKindItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiKindPresetItemIncludeChoice3",
+         "Value" : "EventFlowQueryMultiKindItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiKindPresetItemIncludeChoice4",
+         "Value" : "EventFlowQueryMultiKindItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiKindPresetItemIncludeChoice5",
+         "Value" : "EventFlowQueryMultiKindItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice3",
+         "Value" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice4",
+         "Value" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice5",
+         "Value" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiMessageCategoryPresetItemIncludeChoice3",
+         "Value" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiMessageCategoryPresetItemIncludeChoice4",
+         "Value" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryMultiMessageCategoryPresetItemIncludeChoice5",
+         "Value" : "EventFlowQueryMultiMessageCategoryItemSelectIncludeChoice"
+      },
+      {
+         "Key" : "EventFlowQueryNetIsFriendOnlySession",
+         "Value" : "EventFlowQueryNetCheckVillageType"
+      },
+      {
+         "Key" : "EventFlowQueryNetIsNeedPassword",
+         "Value" : "EventFlowQueryNetCheckVillageType"
+      },
+      {
+         "Key" : "EventFlowQueryNpcGeneralTalkChoice",
+         "Value" : "EventFlowQueryGeneralChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice10",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice2",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice3",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice4",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice5",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice6",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice7",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice8",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoice9",
+         "Value" : "EventFlowQueryRandomChoice"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious10",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious2",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious3",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious4",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious5",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious6",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious7",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious8",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQueryRandomChoiceExcludePrevious9",
+         "Value" : "EventFlowQueryRandomChoiceExcludePrevious"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice10",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice2",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice3",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice4",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice5",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice6",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice7",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice8",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQuerySubflowResultChoice9",
+         "Value" : "EventFlowQueryCheckSubflowResult"
+      },
+      {
+         "Key" : "EventFlowQueryUISelectedItemIsDecorated",
+         "Value" : "EventFlowQueryItemIsDecoratedAtTalkNpcHouse"
+      }
+   ]
+}

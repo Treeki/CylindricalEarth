@@ -17,6 +17,7 @@ if not os.path.exists(html_dir):
 	os.makedirs(html_dir)
 
 for filename, row_class in specs.lookup.items():
+	if filename != 'FgMainParam.bcsv': continue
 	html = []
 	html.append('<!DOCTYPE html>')
 	html.append('<html>')
@@ -43,9 +44,9 @@ for filename, row_class in specs.lookup.items():
 		crow = []
 		for field in row_class.fields():
 			value = getattr(row, field)
-			html.append('<td>%r</td>' % (value, ))
 			if isinstance(value, bytes):
 				value = binascii.hexlify(value).decode('ascii')
+			html.append('<td>%r</td>' % (value, ))
 			crow.append(value)
 			obj[field] = value
 		html.append('</tr>')

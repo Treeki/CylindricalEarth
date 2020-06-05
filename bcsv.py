@@ -93,6 +93,12 @@ class Enum(Field):
 				return self.values_en[v]
 		except KeyError:
 			return '_UNK_%08x_' % v
+class RawData(Field):
+	def __init__(self, key, size):
+		super(RawData, self).__init__(key)
+		self.size = size
+	def decode(self, blob, context):
+		return bytes(struct.unpack('<%dB' % self.size, blob))
 
 class Row:
 	def __init__(self, data, context):
