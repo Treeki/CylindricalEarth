@@ -4982,14 +4982,14 @@ class FishBeyQuestParam(Row):
 class FishStatusParam(Row):
 	AppearArea = Enum(0x64330cb0, enum_3bcfd82ce180_8ccc4bd385f8)
 	AppearType = Enum(0x0de2a3be, enum_7a531090c8c0_d059b6858b92)
-	_770288fd = Enum(0x770288fd, enum_b308e10c72b9_c2aae04b2493)
+	BuoyLv = Enum(0x770288fd, enum_b308e10c72b9_c2aae04b2493)
 	EscapeScale = Float(0xb7c9dd05)
 	FishMuseumAction = Enum(0x132dd5b9, enum_01016811d685_37fe72043e75)
 	_4108715d = U32(0x4108715d)
 	SearchRadius = Enum(0x7ec9ada7, enum_b308e10c72b9_c2aae04b2493)
 	ShadowType = Enum(0xac0ebe24, enum_a28161dd393f_a28161dd393f)
 	ItemID = U16(0x20cb67bc)
-	_eac6a012 = U16(0xeac6a012)
+	OpenDonatedNum = U16(0xeac6a012)
 	ToyItemID = U16(0xdaaf8ba0)
 	UniqueID = U16(0x54706054)
 	DebugName = String(0xab51a3cf) # string32
@@ -5021,8 +5021,8 @@ class HumanAnimParam(Row):
 	ToolAsCommand = String(0x26911c10) # string30
 
 class IndoorIdrParam(Row):
-	_91b7e30b = U16(0x91b7e30b)
-	_707e79ff = U16(0x707e79ff)
+	DecorationObjNum = U16(0x91b7e30b)
+	FossilObjNum = U16(0x707e79ff)
 	UniqueID = U16(0x54706054)
 	ResourceName = String(0x4b9c4229) # string64
 
@@ -5247,7 +5247,7 @@ class ItemNpcFtrActionParam(Row):
 	UniqueID = U16(0x54706054)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
-	_6c6fdb31 = String(0x6c6fdb31) # size 64
+	NpcFtrActionAsName = String(0x6c6fdb31) # string64
 
 class ItemNpcOutfitInfo(Row):
 	UniqueID = U16(0x54706054)
@@ -5395,7 +5395,7 @@ class ItemParam(Row):
 	_02169dc7 = U16(0x02169dc7)
 	CookingRecipeID = U16(0xc353ef20)
 	DiyRecipeID = S16(0xbcf5d17a)
-	_bee071da = U16(0xbee071da) # possible string size 2
+	FakeArtConvertId = U16(0xbee071da)
 	FloorTableId = U16(0xc833b068)
 	_9ec34ed4 = U16(0x9ec34ed4)
 	ItemShareTextureUniqueID = U16(0x9bd046a2)
