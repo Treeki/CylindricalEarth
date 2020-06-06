@@ -98,7 +98,7 @@ class RawData(Field):
 		super(RawData, self).__init__(key)
 		self.size = size
 	def decode(self, blob, context):
-		return bytes(struct.unpack('<%dB' % self.size, blob))
+		return bytes(struct.unpack_from('<%dB' % self.size, blob, 0))
 
 class Row:
 	def __init__(self, data, context):

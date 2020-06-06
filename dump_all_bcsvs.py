@@ -1,4 +1,4 @@
-import bcsv, binascii, csv, importlib, json, os, os.path, sys
+import bcsv, binascii, csv, html, importlib, json, os, os.path, sys
 
 in_path = sys.argv[1]
 out_dir = sys.argv[2]
@@ -17,14 +17,13 @@ if not os.path.exists(html_dir):
 	os.makedirs(html_dir)
 
 for filename, row_class in specs.lookup.items():
-	if filename != 'FgMainParam.bcsv': continue
-	html = []
-	html.append('<!DOCTYPE html>')
-	html.append('<html>')
-	html.append('<body>')
+	bits = []
+	bits.append('<!DOCTYPE html>')
+	bits.append('<html>')
+	bits.append('<body>')
 	objs = []
 
-	html.append('<h1>%s</h1>' % filename)
+	bits.append('<h1>%s</h1>' % filename)
 
 	b = bcsv.File(row_class)
 	with open('%s/%s' % (in_path, filename), 'rb') as f:
@@ -32,33 +31,40 @@ for filename, row_class in specs.lookup.items():
 
 	csvw = csv.writer(open('%s/%s.csv' % (csv_dir, filename.replace('.bcsv', '')), 'w'))
 
-	html.append('<table>')
-	html.append('<tr>')
+	bits.append('<table>')
+	bits.append('<tr>')
 	for field in row_class.fields():
-		html.append('<th>%s</th>' % field)
+		bits.append('<th>%s</th>' % field)
 	csvw.writerow(row_class.fields())
-	html.append('</tr>')
+	bits.append('</tr>')
 	for row in b.rows:
-		html.append('<tr>')
+		bits.append('<tr>')
 		obj = {}
 		crow = []
 		for field in row_class.fields():
 			value = getattr(row, field)
 			if isinstance(value, bytes):
-				value = binascii.hexlify(value).decode('ascii')
-			html.append('<td>%r</td>' % (value, ))
-			crow.append(value)
-			obj[field] = value
-		html.append('</tr>')
+				htmlValue = binascii.hexlify(value).decode('ascii')
+				dataValue = htmlValue
+			elif isinstance(value, tuple):
+				htmlValue = "<span title='%s'>%s</span>" % (html.escape(value[1], True), html.escape(value[0]))
+				dataValue = value
+			else:
+				htmlValue = repr(value)
+				dataValue = htmlValue
+			bits.append('<td>%s</td>' % htmlValue)
+			crow.append(dataValue)
+			obj[field] = dataValue
+		bits.append('</tr>')
 		objs.append(obj)
 		csvw.writerow(crow)
-	html.append('</table>')
+	bits.append('</table>')
 
-	html.append('</body>')
-	html.append('</html>')
+	bits.append('</body>')
+	bits.append('</html>')
 
 	with open('%s/%s.html' % (html_dir, filename.replace('.bcsv', '')), 'w') as f:
-		for line in html:
+		for line in bits:
 			f.write(line)
 			f.write('\n')
 	with open('%s/%s.json' % (json_dir, filename.replace('.bcsv', '')), 'w') as f:
