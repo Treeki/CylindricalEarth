@@ -43,16 +43,21 @@ for filename, row_class in specs.lookup.items():
 		crow = []
 		for field in row_class.fields():
 			value = getattr(row, field)
+			htmlTitle = None
 			if isinstance(value, bytes):
 				htmlValue = binascii.hexlify(value).decode('ascii')
 				dataValue = htmlValue
 			elif isinstance(value, tuple):
-				htmlValue = "<span title='%s'>%s</span>" % (html.escape(value[1], True), html.escape(value[0]))
+				htmlValue = html.escape(value[0])
+				htmlTitle = html.escape(value[1])
 				dataValue = value
 			else:
 				htmlValue = repr(value)
 				dataValue = htmlValue
-			bits.append('<td>%s</td>' % htmlValue)
+			if htmlTitle is not None:
+				bits.append("<td title='%s'>%s</td>" % (htmlTitle, htmlValue))
+			else:
+				bits.append(htmlValue)
 			crow.append(dataValue)
 			obj[field] = dataValue
 		bits.append('</tr>')
