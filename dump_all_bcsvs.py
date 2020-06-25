@@ -1,4 +1,4 @@
-import bcsv, binascii, csv, html, importlib, json, os, os.path, sys
+import bcsv, csv, html, importlib, json, os, os.path, sys
 
 in_path = sys.argv[1]
 out_dir = sys.argv[2]
@@ -44,7 +44,7 @@ for filename, row_class in specs.lookup.items():
 		for field in row_class.fields():
 			value = getattr(row, field)
 			if isinstance(value, bytes):
-				htmlValue = binascii.hexlify(value).decode('ascii')
+				htmlValue = value.hex()
 				dataValue = htmlValue
 			elif isinstance(value, tuple):
 				htmlValue = "<span title='%s'>%s</span>" % (html.escape(value[1], True), html.escape(value[0]))
