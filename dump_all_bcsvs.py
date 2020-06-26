@@ -23,7 +23,7 @@ for filename, row_class in specs.lookup.items():
 	bits.append('<head>')
 	bits.append('<meta charset=utf-8>')
 	bits.append('<title>%s</title>' % filename)
-	bits.append('</meta>')
+	bits.append('</head>')
 	bits.append('<body>')
 	objs = []
 
