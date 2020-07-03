@@ -443,6 +443,7 @@ enum_2c1ecb54c4b5_fa9288c80a2d = (
 	('Bottoms'       , 'ボトムス'),
 	('Socks'         , '靴下'),
 	('Shoes'         , '靴'),
+	('Marinesuit'    , 'マリンスーツ'),
 	('Scoop'         , 'スコップ'),
 	('Axe'           , 'オノ'),
 	('FishingRod'    , 'つりざお'),
@@ -503,6 +504,8 @@ enum_2c1ecb54c4b5_fa9288c80a2d = (
 	('Hammer'        , 'かなづち'),
 	('Brush'         , 'はけ'),
 	('Bouquet'       , 'ブーケ'),
+	('Scallop'       , 'ホタテ'),
+	('Canvas'        , 'キャンバス'),
 )
 
 enum_2c27ffe999d6_e4da0c79dac6 = (
@@ -518,6 +521,7 @@ enum_2c27ffe999d6_e4da0c79dac6 = (
 	('Negative'     , 'F9：ネガティブ系'),
 	('Plant'        , 'F10：植物系'),
 	('Smartphone'   , 'F11：スマホ系'),
+	('Seafood'      , 'F12：海の幸系'),
 )
 
 enum_2d78bfb5905f_6f798aada062 = (
@@ -562,6 +566,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexTopYshirtsHWhite'                 , 'はんそでワイシャツ'),
 	('TopsTexTopYshirtsNWhite'                 , 'ノースリーブえりつきシャツ'),
 	('TopsTexOnepieceAlineLRabbit'             , 'ウサギなふく'),
+	('TopsTexTopCoatLPirate'                   , 'かいぞくのコート'),
 	('TopsTexOnepieceAlineLHeroine'            , 'ヒロインスーツ'),
 	('TopsTexTopCoatLHanten'                   , 'はんてん'),
 	('TopsTexOnepieceBoxLBathrobes'            , 'バスローブ'),
@@ -785,6 +790,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexOnepieceAlineNHalterneckstripe'   , 'ホルターネックのワンピース'),
 	('TopsTexTopTshirtsHPocketshirts'          , 'ポケットつきＴシャツ'),
 	('TopsTexOnepieceKimonoLMiko'              , 'みこしょうぞく'),
+	('TopsTexOnepieceBalloonHPirate'           , 'かいぞくのワンピース'),
 	('BottomsTexSkirtBoxCorduroy'              , 'コーデュロイスカート'),
 	('BottomsTexPantsWideGaucho'               , 'ガウチョパンツ'),
 	('TopsTexOnepieceBoxNModern'               , 'モガなワンピース'),
@@ -920,6 +926,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('BottomsTexSkirtLongWrap'                 , 'ベルトのまきスカート'),
 	('BottomsTexSkirtLongEmbroidery'           , 'ししゅうのはながらスカート'),
 	('BottomsTexSkirtLongGeometric'            , 'きかがくししゅうのスカート'),
+	('AccessoryGlassmouthDiver'                , 'シュノーケル'),
 	('AccessoryGlassCyber'                     , 'サイバーサングラス'),
 	('TopsTexTopOuterLMuffler'                 , 'チェックマフラーつきセーター'),
 	('TopsTexTopCoatLMuffler'                  , 'ロングデニムカーディガン'),
@@ -1076,6 +1083,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('CapHatSafetyhat'                         , 'あんぜんヘルメット'),
 	('CapHatCock'                              , 'コックさんのぼうし'),
 	('CapHatPolice'                            , 'けいかんのぼうし'),
+	('CapHatPirate'                            , 'かいぞくのぼうし'),
 	('CapHatAjiro'                             , 'かさぼうし'),
 	('CapHatUshanka'                           , 'フェイクファーハット'),
 	('CapHatTriangle'                          , 'さんかくきん'),
@@ -1649,9 +1657,25 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexTopCoatHChildren'                 , 'てづくりのマント'),
 	('CapOrnamentAChildren'                    , 'てづくりのおうかん'),
 	('CapHatSummer'                            , 'げしさいのはなかんむり'),
+	('ShoesLowcutMermaid'                      , 'マーメイドなくつ'),
+	('CapOrnamentCMermaid'                     , 'マーメイドなティアラ'),
+	('AccessoryGlassPiratespatch'              , 'かいぞくのアイパッチ'),
+	('AccessoryMouthPirates'                   , 'かいぞくのひげ'),
+	('BottomsTexPantsNormalPirates'            , 'かいぞくのズボン'),
+	('ShoesKneePirates'                        , 'かいぞくのブーツ'),
+	('CapHatPiratesbandana'                    , 'かいぞくのバンダナ'),
+	('TopsTexOnepieceAlongLPirates'            , 'かいぞくのおたからローブ'),
+	('TopsTexOnepieceOverallLPirates0'         , 'かいぞくのふく'),
+	('TopsTexOnepieceAlongNMermaiddress'       , 'マーメイドなおさかなドレス'),
+	('TopsTexOnepieceDressNMermaid'            , 'マーメイドなプリンセスドレス'),
 	('TopsTexTopOuterLWintersolstice'          , 'とうじのセーター'),
+	('CapOrnamentCPirate'                      , 'かいぞくのおたからおうかん'),
 	('TopsTexTopYshirtsHNookyellow'            , 'たぬきかいはつアロハ・コーラル'),
 	('TopsTexTopYshirtsHNookgreen'             , 'たぬきかいはつアロハ・グリーン'),
+	('TopsTexMarinesuitNormalLNook'            , 'たぬきかいはつマリンスーツ'),
+	('TopsTexMarinesuitNormalLRashguard'       , 'はっぱがらマリンスーツ'),
+	('TopsTexMarinesuitNormalNGreco'           , 'ボーダーのマリンスーツ'),
+	('AccessoryGlassmouthNook'                 , 'たぬきかいはつシュノーケル'),
 	('TopsTexTopTshirtsLBorder'                , 'ボーダーＴシャツ'),
 	('TopsTexTopYshirtsLMountain'              , 'マウンテンパーカー'),
 	('TopsTexTopCoatLDuffle'                   , 'ダッフルコート'),
@@ -1675,9 +1699,10 @@ enum_30e2684ee89a_599636c94afd = (
 )
 
 enum_322263f6b5a3_7a83210f041c = (
-	('Before', '前日'),
+	('Before', '未設定'),
 	('Skip'  , '中止'),
 	('Same'  , '同時開催'),
+	('After' , '翌日'),
 )
 
 enum_34f1ef8cdbcc_52861a019f72 = (
@@ -1901,17 +1926,22 @@ enum_47e581a0f3c1_94306367028d = (
 	('WearGorgeousTops'          , 'ゴージャスな服を着用'),
 	('WearActiveTops'            , 'アクティブな服を着用'),
 	('WearElegantTops'           , 'エレガントな服を着用'),
-	('SwimmingSet'               , '水泳'),
+	('RacerSet'                  , 'レーサー'),
 	('AfootballSet'              , 'アメフト'),
 	('SoccerSet'                 , 'サッカー'),
 	('BasketballSet'             , 'バスケ'),
 	('SkiSet'                    , 'スキー'),
 	('BaseballSet'               , '野球'),
 	('CowboySet'                 , 'カウボーイ'),
-	('RacerSet'                  , 'レーサー'),
 	('BycycleSet'                , 'サイクル'),
 	('JockeySet'                 , 'ジョッキー'),
 	('MotherSet'                 , 'はは報酬'),
+	('PirateSet'                 , '海賊報酬'),
+	('SwimmingSet'               , 'マリンスーツ'),
+	('CatSet'                    , 'ネコ'),
+	('RabbitSet'                 , 'ウサギ'),
+	('BearSet'                   , 'クマ'),
+	('SheepSet'                  , 'ヒツジ'),
 )
 
 enum_48fbbb9e63e7_c771014390e5 = (
@@ -2132,6 +2162,7 @@ enum_5db8059c5629_f2952caee23e = (
 	('Tops'                 , '装備品：トップス'),
 	('Bottoms'              , '装備品：ボトムス'),
 	('Onepiece'             , '装備品：ワンピース'),
+	('WetSuit'              , '装備品：マリンスーツ'),
 	('Socks'                , '装備品：靴下'),
 	('Shoes'                , '装備品：靴'),
 	('Cap'                  , '装備品：帽子'),
@@ -2444,6 +2475,46 @@ enum_5db8059c5629_f2952caee23e = (
 	('Can'                  , 'あきカン'),
 	('Boots'                , 'ながぐつ'),
 	('Tire'                 , 'タイヤ'),
+	('Fish54'               , 'ロブスター'),
+	('Wakame'               , 'ワカメ'),
+	('Umibudou'             , 'ウミブドウ'),
+	('Uni'                  , 'ウニ'),
+	('Fujitsubo'            , 'フジツボ'),
+	('Kaki'                 , 'カキ'),
+	('Sazae'                , 'サザエ'),
+	('Awabi'                , 'アワビ'),
+	('Akoyagai'             , 'アコヤガイ'),
+	('Hotate'               , 'ホタテ'),
+	('Isogintyaku'          , 'イソギンチャク'),
+	('Hitode'               , 'ヒトデ'),
+	('Namako'               , 'ナマコ'),
+	('Umiushi'              , 'ウミウシ'),
+	('Hiramushi'            , 'ヒラムシ'),
+	('Shako'                , 'シャコ'),
+	('Amaebi'               , 'アマエビ'),
+	('Kurumaebi'            , 'クルマエビ'),
+	('Iseebi'               , 'イセエビ'),
+	('Zuwaigani'            , 'ズワイガニ'),
+	('Tarabagani'           , 'タラバガニ'),
+	('Takaashigani'         , 'タカアシガニ'),
+	('Tako'                 , 'タコ'),
+	('Chinanago'            , 'チンアナゴ'),
+	('Oumugai'              , 'オウムガイ'),
+	('Kabutogani'           , 'カブトガニ'),
+	('Daiougusokumushi'     , 'ダイオウグソクムシ'),
+	('Hotaruika'            , 'ホタルイカ'),
+	('Gazami'               , 'ガザミ'),
+	('Koumoridako'          , 'コウモリダコ'),
+	('Shakogai'             , 'オオシャコガイ'),
+	('Hoya'                 , 'ホヤ'),
+	('Mizukurage'           , 'ミズクラゲ'),
+	('Mendako'              , 'メンダコ'),
+	('Paipuuni'             , 'パイプウニ'),
+	('Baigai'               , 'バイガイ'),
+	('Senjunamako'          , 'センジュナマコ'),
+	('DungenessCrab'        , 'ダンジネスクラブ'),
+	('Kairoudouketsu'       , 'カイロウドウケツ'),
+	('Muhrugai'             , 'ムールガイ'),
 	('Apple'                , 'リンゴ'),
 	('Orange'               , 'オレンジ'),
 	('Pear'                 , 'ナシ'),
@@ -2610,6 +2681,8 @@ enum_5db8059c5629_f2952caee23e = (
 	('EggFish'              , 'サカナのたまご'),
 	('MessageBottleEgg'     , 'たまごのメッセージボトル'),
 	('Love'                 , 'あいのけっしょう'),
+	('Pearl'                , 'しんじゅ'),
+	('PirateQuest'          , 'むせんき'),
 )
 
 enum_5fe6f47ed555_cd0b35a4b9fb = (
@@ -2725,14 +2798,22 @@ enum_6bc751394207_9a22cc494738 = (
 	('EnableToDemoStandSpeak', 'デモ立ちSpeak可'),
 	('EnableToDemoSitSpeak'  , 'デモ座りSpeak可'),
 	('EnableToDemoBedSpeak'  , 'デモベッドSpeak可'),
+	('EnableToDemoSwimSpeak' , 'デモ泳ぎSpeak可'),
 	('IsDemo'                , 'デモ状態'),
 )
 
 enum_6d22f468bc18_bb56dd7d751d = (
 	('None'       , '0'),
+	('Brazil'     , '6'),
+	('Japan'      , '10'),
+	('France'     , '25'),
+	('Spain'      , '26'),
+	('Italy'      , '28'),
+	('Germany'    , '29'),
 	('Europe'     , '33'),
 	('EachCountry', '37'),
 	('World'      , '38'),
+	('Northern'   , '39'),
 	('Southern'   , '40'),
 )
 
@@ -2821,6 +2902,7 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('ShopVarietyShovel'        , '店_店売り：スコップ'),
 	('ShopVarietyWatering'      , '店_店売り：ジョウロ'),
 	('ShopVarietySlingShot'     , '店_店売り：パチンコ'),
+	('ShopVarietyManieSuit'     , '店_店売り：水着'),
 	('Shop_EnableShovel'        , '店_スコップ解禁'),
 	('Shop_EnableAxe'           , '店_オノ解禁'),
 	('ShopRecipeBook2'          , '店_レシピブック2'),
@@ -2879,11 +2961,13 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('JohnnyQuest'              , 'ジョニークエスト'),
 	('JohnnyQuestDust'          , 'ジョニークエストごみ'),
 	('JohnnyQuestReward'        , 'ジョニークエスト報酬'),
+	('PirateQuestReward'        , '海賊クエスト報酬'),
 	('TournamentFishing'        , 'つり大会'),
 	('TournamentInsect'         , 'ムシとり大会'),
 	('CountDown'                , 'カウントダウン'),
 	('BeyDailyFishModel'        , 'ジャスティン(来訪)'),
 	('ChyDailyInsectModel'      , 'レオン(来訪)'),
+	('SeoReward'                , 'ラコスケ報酬'),
 	('RecycleBox'               , 'リサイクルBOX'),
 	('ShopSeed_Chrysanthemum'   , '販売種_菊'),
 	('ShopSeed_Lily'            , '販売種_ユリ'),
@@ -2921,10 +3005,12 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('DIYCherryBrossom'         , '<DIY>桜の花びら'),
 	('DIYSnowCrystal'           , '<DIY>雪の結晶'),
 	('DIYEasterEgg'             , '<DIY>イースターのたまご'),
+	('DIYPearl'                 , '<DIY>しんじゅ'),
 	('MotherDay'                , '<リージョン>母の日'),
 	('WoldChildDay'             , '<リージョン>ワールドチャイルド'),
 	('FatherDay'                , '<リージョン>父の日'),
 	('SummerSolstice'           , '<リージョン>夏至祭'),
+	('StarFestival'             , '<リージョン>七夕'),
 	('WinterSolstice_Southern'  , '<リージョン>冬至祭（６月南半球）'),
 	('DeliveryPocketCamp'       , '<永続配信>ポケ森コラボ'),
 	('Easter'                   , 'イースター'),
@@ -2964,6 +3050,7 @@ enum_7a6babece06f_675c7f6d8dcb = (
 	('DisableOnlyLowerBody'     , '下半身再生不可'),
 	('EnableOnlyLowerBody_Sit'  , '下半身再生可(座り系)'),
 	('EnableOnlyLowerBody_Bed'  , '下半身再生可(寝る系)'),
+	('EnableOnlyLowerBody_Swim' , '下半身再生可(泳ぎ系)'),
 	('EnableOnlyLowerBody_Stand', '下半身再生可(立ち系)'),
 )
 
@@ -3056,6 +3143,8 @@ enum_870fe161ccb7_b6b6458365a4 = (
 	('Christmas'    , 'クリスマス'),
 	('Easter'       , 'イースター'),
 	('Wedding'      , 'ウェディング'),
+	('Pirate'       , 'かいぞく'),
+	('Mermaid'      , 'マーメイド'),
 )
 
 enum_872b31abf9f9_cc7475a100e8 = (
@@ -3124,6 +3213,13 @@ enum_876f2a44aa3e_ea533d18da76 = (
 	('EasterCapHat'           , 'イースター：ひらめき：からコンプ'),
 	('EasterTops'             , 'イースター：ひらめき：ふくコンプ'),
 	('Efitem'                 , '＜Efアイテム直接指定＞'),
+	('Seo01'                  , '＜ラコスケ（マーメイド）＞'),
+)
+
+enum_8b856bc35b2c_59489a51cf1a = (
+	('Stop'  , '静止'),
+	('Flick' , 'ゆらゆら'),
+	('GoStop', '飛び飛び'),
 )
 
 enum_8bcffcdc34f9_75d5da8d5621 = (
@@ -3160,6 +3256,14 @@ enum_917e0a06d70e_917e0a06d70e = (
 	('ON' , 'ON'),
 )
 
+enum_92fb5e5480cc_92fb5e5480cc = (
+	('SS', 'SS'),
+	('S' , 'S'),
+	('M' , 'M'),
+	('L' , 'L'),
+	('LL', 'LL'),
+)
+
 enum_93cb28c3569f_1cf1287084ce = (
 	('NoSelect'           , '指定無し'),
 	('SelectRecipeSeason' , 'レシピ用季節'),
@@ -3189,6 +3293,11 @@ enum_a099ed9ed7e6_1fc5597471f3 = (
 	('MailBoxTypeC', 'ポスト：タイプC'),
 	('MailBoxTypeD', 'ポスト：タイプD'),
 	('MailBoxTypeE', 'ポスト：タイプE'),
+)
+
+enum_a1951c2696f6_44fbfe232c2e = (
+	('Aquatic', '生き物'),
+	('Weed'   , '海藻'),
 )
 
 enum_a28161dd393f_a28161dd393f = (
@@ -3241,6 +3350,8 @@ enum_a3f2105dc205_cf3454689058 = (
 	('Mother'       , 'おかん'),
 	('Space'        , '宇宙'),
 	('JuneBride'    , 'ジューンブライド'),
+	('Mermaid'      , 'マーメイド'),
+	('Sign'         , '星座'),
 )
 
 enum_a55023d0faad_4d2a3ca36fe8 = (
@@ -3405,6 +3516,9 @@ enum_c1ee150f0e21_f567104db912 = (
 enum_c247708f9bb1_67b0834c6103 = (
 	('None'                , '（なし）'),
 	('MileCard'            , 'たぬきマイルカード'),
+	('MarineSuit'          , 'マリンスーツ'),
+	('Pearl'               , 'しんじゅ'),
+	('PirateQuest'         , 'むせんき'),
 	('Leaf'                , '葉っぱ'),
 	('LeafYellow'          , '葉っぱ：黄'),
 	('RoomWall'            , '壁紙'),
@@ -3574,6 +3688,14 @@ enum_c247708f9bb1_67b0834c6103 = (
 	('Love'                , 'あいのけっしょう'),
 )
 
+enum_c2aae04b2493_c2aae04b2493 = (
+	('1', '1'),
+	('2', '2'),
+	('3', '3'),
+	('4', '4'),
+	('5', '5'),
+)
+
 enum_c2f1120003e9_c2f1120003e9 = (
 	('Default'          , 'Default'),
 	('MainField'        , 'MainField'),
@@ -3738,6 +3860,9 @@ enum_d6b51049aa8c_eb2a552f77d1 = (
 	('NpcSpTopsAlpOnepieceN'              , 'NpcSpTopsAlpOnepieceN'),
 	('NpcSpTopsAlwOnepieceDressN'         , 'NpcSpTopsAlwOnepieceDressN'),
 	('NpcSpTopsAlpTshirtsL'               , 'NpcSpTopsAlpTshirtsL'),
+	('PlayerTopsMarinesuitNormalL'        , 'PlayerTopsMarinesuitNormalL'),
+	('PlayerTopsMarinesuitNormalN'        , 'PlayerTopsMarinesuitNormalN'),
+	('PlayerTopsMarinesuitNormalH'        , 'PlayerTopsMarinesuitNormalH'),
 	('PlayerTopsTopTshirtsH'              , 'PlayerTopsTopTshirtsH'),
 	('PlayerTopsTopOuterL'                , 'PlayerTopsTopOuterL'),
 	('PlayerTopsTopCoatL'                 , 'PlayerTopsTopCoatL'),
@@ -3805,6 +3930,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('ChairFB'                   , 'イス：前後'),
 	('ChairLeftFB'               , 'イス：前後：左半分'),
 	('ChairCenterF'              , 'イス：前：中央のみ'),
+	('ChairSwitch'               , 'イス：スイッチ'),
 	('ChairFLRTouchSwitch'       , 'イス：SP：接触スイッチ'),
 	('Bed'                       , 'ベッド：通常'),
 	('BedSwitch'                 , 'ベッド：スイッチ'),
@@ -3823,6 +3949,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('ClockPigeon'               , '時計：ハト'),
 	('ClockDigital'              , '時計：デジタル'),
 	('ClockSwitch'               , '時計：スイッチ'),
+	('ClockTrigger'              , '時計：トリガー'),
 	('WorkBench'                 , '作業台'),
 	('LoopAuto'                  , 'ループ'),
 	('LoopSwitch'                , 'ループ：スイッチ'),
@@ -3830,6 +3957,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('LoopTrigger'               , 'ループ：トリガー'),
 	('LoopAutoOnOff'             , 'ループ：オンオフ'),
 	('LoopTriggerOnOff'          , 'ループ：トリガー：オンオフ'),
+	('LoopTriggerWaitEndOnKeep'  , 'ループ終了待ち：トリガー'),
 	('TriggerOnce'               , 'トリガー'),
 	('TriggerOnOff'              , 'トリガー：オンオフ'),
 	('TriggerRestart'            , 'トリガー：上書き'),
@@ -3874,6 +4002,7 @@ enum_daac3d573f2d_daac3d573f2d = (
 	('20_Tool'           , '20_Tool'),
 	('30_Insect'         , '30_Insect'),
 	('31_Fish'           , '31_Fish'),
+	('32_DiveFish'       , '32_DiveFish'),
 	('33_Shell'          , '33_Shell'),
 	('34_Fossil'         , '34_Fossil'),
 	('40_Plant'          , '40_Plant'),
@@ -3898,7 +4027,6 @@ enum_daac3d573f2d_daac3d573f2d = (
 )
 
 enum_de3dece1349b_9af5c41bec95 = (
-	('Bouquet'                       , 'ブーケ'),
 	('AccessoryOneEye'               , 'アクセサリ：片目'),
 	('AccessoryMouth'                , 'アクセサリ：口'),
 	('AccessoryMouthInvisibleNose'   , 'アクセサリ：口(鼻なし)'),
@@ -3928,6 +4056,7 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('ShoesSoft'                     , '靴：やわらかい'),
 	('Socks'                         , '靴下'),
 	('Tops'                          , 'トップス'),
+	('Marinesuit'                    , 'マリンスーツ'),
 	('Onepiece'                      , 'ワンピース'),
 	('None'                          , 'なし'),
 	('Bottoms'                       , 'ボトムス'),
@@ -4004,7 +4133,9 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('Doughnut'                      , 'ドーナッツ'),
 	('TkkGuitar'                     , 'とたけけギター'),
 	('Duster'                        , 'はたき'),
+	('Bouquet'                       , 'ブーケ'),
 	('Broom'                         , 'ほうき'),
+	('Scallop'                       , 'ホタテ'),
 	('Book'                          , '本'),
 	('SmallBook'                     , '本(小)'),
 	('Firewood'                      , '薪'),
@@ -4137,6 +4268,7 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('TopsDefault'       , '装備品：トップスデフォルト'),
 	('Tops'              , '装備品：トップス'),
 	('OnePiece'          , '装備品：ワンピース'),
+	('MarineSuit'        , '装備品：マリンスーツ'),
 	('BottomsDefault'    , '装備品：ボトムスデフォルト'),
 	('Bottoms'           , '装備品：ボトムス'),
 	('Socks'             , '装備品：くつした'),
@@ -4197,6 +4329,7 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('StarPiece'         , '星のかけら'),
 	('Insect'            , '生き物：ムシ'),
 	('Fish'              , '生き物：サカナ'),
+	('DiveFish'          , '生き物：海の幸'),
 	('ShellDrift'        , '漂着貝'),
 	('ShellFish'         , '生き物：潮干狩り貝'),
 	('FishToy'           , 'サカナ模型'),
@@ -4223,10 +4356,12 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('HousingKitRcoQuest', 'ハウジングキット：移住クエスト'),
 	('HousingKitBirdge'  , 'ハウジングキット：橋用'),
 	('Money'             , 'ベル（お金）'),
+	('FireworkM'         , '花火（置き）'),
 	('BdayCupcake'       , 'バースデーカップケーキ'),
 	('YutaroWisp'        , 'ゆうたろうのたましい'),
 	('JohnnyQuest'       , 'ジョニークエスト'),
 	('JohnnyQuestDust'   , 'ジョニークエストごみ'),
+	('PirateQuest'       , '海賊クエスト'),
 	('QuestWrapping'     , 'クエスト配達プレゼントBOX'),
 	('LostQuest'         , 'おとしもの'),
 	('LostQuestDust'     , 'おとしものゴミ'),
@@ -5278,7 +5413,7 @@ class ItemAct(Row):
 	_8b1904b9 = Enum(0x8b1904b9, enum_a099ed9ed7e6_1fc5597471f3)
 	UniqueID = U16(0x54706054)
 	Collision = U8(0x31cb6b0a)
-	_d2a5c5cf = U8(0xd2a5c5cf)
+	DemoType = U8(0xd2a5c5cf)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
 	_0e387a24 = U32(0x0e387a24)
@@ -5455,8 +5590,8 @@ class ItemOutfitCategory(Row):
 	UseToolLeft = U8(0x42739ab0) # size is 2, could this be an array?
 
 class ItemOutfitHangerInfo(Row):
-	ItemLayout = U32(0x9dcea17e)
-	ItemSize = U32(0xe06fb090)
+	ItemLayout = Enum(0x9dcea17e, enum_478bafec288f_571514e8ca3c)
+	ItemSize = Enum(0xe06fb090, enum_52e1af9ea232_bc050e1554c9)
 	UniqueID = U16(0x54706054)
 	Label = String(0x87bf00e8) # string32
 	ResName = String(0x48ef0398) # string64
@@ -6498,7 +6633,7 @@ class RoomWindowParam(Row):
 	WindowName = String(0x9b0b7ce4) # string64
 
 class SeafoodAppearParam(Row):
-	AppearArea = U32(0x64330cb0)
+	AppearArea = Enum(0x64330cb0, enum_3bcfd82ce180_8ccc4bd385f8)
 	ItemID = U16(0x20cb67bc)
 	ProbAprDaytime = U16(0x9c4a43c0)
 	ProbAprMorningAndEvening = U16(0x0dbbebb5)
@@ -6538,15 +6673,15 @@ class SeafoodAppearParam(Row):
 	ProbSepNight = U16(0x260ec620) # size is 4, could this be an array?
 
 class SeafoodShadowInfoParam(Row):
-	_093dfe4f = U32(0x093dfe4f)
+	ModelScale = Float(0x093dfe4f)
 	UniqueID = U16(0x54706054)
 	ModelResName = String(0xfad4ff78) # string65
 
 class SeafoodStatusParam(Row):
-	_fbace208 = U32(0xfbace208)
-	_de78df0f = U32(0xde78df0f) # possible string size 4
-	_afeb1bf1 = U32(0xafeb1bf1)
-	ShadowType = U32(0xac0ebe24)
+	ActionType = Enum(0xfbace208, enum_8b856bc35b2c_59489a51cf1a)
+	_de78df0f = Enum(0xde78df0f, enum_a1951c2696f6_44fbfe232c2e)
+	CaptureLevel = Enum(0xafeb1bf1, enum_c2aae04b2493_c2aae04b2493)
+	ShadowType = Enum(0xac0ebe24, enum_92fb5e5480cc_92fb5e5480cc)
 	ItemID = U16(0x20cb67bc)
 	_d42df0b4 = U16(0xd42df0b4)
 	UniqueID = U16(0x54706054)
