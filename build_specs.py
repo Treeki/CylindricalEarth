@@ -2,6 +2,7 @@ import bcsv
 import json
 import os
 import sys
+import zlib
 
 preset_names = {
 	0x000d3b51: 'NormalScaleNB f32',
@@ -13,6 +14,7 @@ preset_names = {
 	0x010c5bb2: 'StartDayN2 u8',
 	0x010d74a6: 'ItemUnitIcon.hshCstringRef',
 	0x0110b14c: 'MaxValue u16',
+	0x013cbdbd: 'PoseTransDive u8',
 	0x0153341a: 'CanSelectEDay u8',
 	0x0207a2af: 'SpNpcID u16',
 	0x02694909: 'ProbMayMidnight u16',
@@ -41,6 +43,7 @@ preset_names = {
 	0x059d1682: 'ItemHHASet.hshCstringRef',
 	0x06012035: 'CanGift u8',
 	0x062ec6cf: 'WeatherPattern string32',
+	0x066fbe8e: 'InWaterBody u8',
 	0x069f18ae: 'OuterLNormalScaleMaskG f32',
 	0x06bcf848: 'ProbMarchDaytime u16',
 	0x06da20a1: 'WdayNorth u8',
@@ -86,11 +89,13 @@ preset_names = {
 	0x0d664b5c: 'Door0 u16',
 	0x0dbbebb5: 'ProbAprMorningAndEvening u16',
 	0x0de2a3be: 'AppearType.hshCstringRef',
+	0x0e387a24: 'SwitchableOnWall u8',
 	0x0e3ffb75: 'ReFabricPattern7Color1 u8',
 	0x0e5e9847: 'Day2002 u8',
 	0x0e609bc1: 'InnerType111 u8',
 	0x0e6ca0d4: 'Seasonality.hshCstringRef',
 	0x0e7ab6a6: 'VmPauseType.hshCstringRef',
+	0x0e91fc27: 'IsSidewaysShow u8',
 	0x0ea3371f: 'StrSortIdEUpt u16',
 	0x0eb7fa40: 'ToiletType u8',
 	0x0ed6caf4: 'TopRotateOffsetX f32',
@@ -106,6 +111,7 @@ preset_names = {
 	0x110a7053: 'MessageLabel u16',
 	0x110ca7b2: 'MuseumNpcRace u32',
 	0x1144c9a1: 'NameLong string128',
+	0x116f007f: 'CaptureGardeningIcon u8',
 	0x11b0b143: 'ResNameField string32',
 	0x11bf9036: 'Day2059 u8',
 	0x12735d82: 'ReBodyPattern4Color0 u8',
@@ -222,7 +228,6 @@ preset_names = {
 	0x265ef22d: 'Color2 u8',
 	0x267c99f7: 'ProbDecDaytime u16',
 	0x26911c10: 'ToolAsCommand string30',
-	0x26bd5137: 'EventObjUniqueID u16',
 	0x26db5137: 'EventObjUniqueID u16',
 	0x27450132: 'GetScale f32', # I think?
 	0x27563267: 'PeakRotateOffsetX f32',
@@ -232,6 +237,7 @@ preset_names = {
 	0x28227483: 'StartMoS4 u8',
 	0x28297660: 'ItemUICategory.hshCstringRef',
 	0x2849dec1: 'ProbJulyEvening2 u16',
+	0x286be1f4: 'BO2Index s16',
 	0x287db05d: 'Month u8',
 	0x2895fa3f: 'InnerType023 u8',
 	0x291a1b04: 'Cap u16',
@@ -269,6 +275,7 @@ preset_names = {
 	0x2f8d67b2: 'Month2051 u8',
 	0x2faf0545: 'Month2035 u8',
 	0x2fcae33a: 'ASCommand6 string66',
+	0x2fe593c3: 'UISortID s16',
 	0x3103d389: 'ASCommand8 string66',
 	0x31450aa2: 'MainType u8',
 	0x318ebbf2: 'TextureWindow u8',
@@ -285,6 +292,7 @@ preset_names = {
 	0x33a1e925: 'SWParts.hshCstringRef',
 	0x33af13e1: 'NpcTalkType u8',
 	0x33b6e344: 'TopRotateOffsetY f32',
+	0x33ddefc8: 'SelectCalendarEventSeason string64',
 	0x344b17d7: 'MaxValue u32',
 	0x348d7b06: 'ItemMenu.hshCstringRef',
 	0x34a742ad: 'CraftUnlock.hshCstringRef',
@@ -333,6 +341,7 @@ preset_names = {
 	0x3a737394: 'ProbJanuaryNight u16',
 	0x3ab25276: 'SkinEdgeColorR f32',
 	0x3af6dfe2: 'BagID u16',
+	0x3b13a395: 'OT2Index s16',
 	0x3b27f030: 'ArriveDist f32', # maybe, might be a collision
 	0x3b89953c: 'MaxValue5 u32',
 	0x3b94564c: 'OffsetZ s16',
@@ -386,6 +395,7 @@ preset_names = {
 	0x454b2adc: 'InitLive u8', # dunno
 	0x45f320f2: 'Key string64',
 	0x45ffea9a: 'Frames u16',
+	0x46489ce7: 'HangerInfo u8',
 	0x46c45907: 'Value u16',
 	0x46e66708: 'ItemFrom string32',
 	0x46e8c73e: 'StaticField u8',
@@ -399,6 +409,7 @@ preset_names = {
 	0x4813219e: 'ReBodyPattern3Color1 u8',
 	0x4875e383: 'Bush_N u8',
 	0x48a92c68: 'Movie0 u32',
+	0x48e540d2: 'NormalScaleBottomsG f32',
 	0x48ef0398: 'ResName string64',
 	0x49129b27: 'CanSetItem u8',
 	0x49295020: 'Scale.hshCstringRef',
@@ -452,6 +463,7 @@ preset_names = {
 	0x524596a2: 'BottomsID u16',
 	0x5248f261: 'S3Parts.hshCstringRef',
 	0x5255a95f: 'InnerType003 u8',
+	0x5267ce60: 'GE2Index s16',
 	0x5270eb75: 'ItemKind.hshCstringRef',
 	0x52852838: 'Month2058 u8',
 	0x529eeeae: 'Book1 u32',
@@ -516,6 +528,7 @@ preset_names = {
 	0x5e1b2e16: 'ItemKind5 u16',
 	0x5e2aa87d: 'AnimeTypeUmbrella string64',
 	0x5e853057: 'ProbSepDaytime u16',
+	0x5ef56066: 'KO1Index s16',
 	0x5f384120: 'TextLotId s16',
 	0x5f405bfb: 'BoardColorID u32',
 	0x5fad728f: 'StartDayNorth u16',
@@ -560,6 +573,7 @@ preset_names = {
 	0x662b64c9: 'Day2021 u8',
 	0x6654378d: 'FactoryType.hshCstringRef',
 	0x66b4a4c1: 'SPWeather_N u8',
+	0x673446c4: 'FU2Index s16',
 	0x675ca211: 'EndHour u8',
 	0x67850558: 'RainEquipment u8',
 	0x679e3850: 'CancelEDay u8',
@@ -617,7 +631,7 @@ preset_names = {
 	0x72573f73: 'MysteryTourFieldUniqueID u16',
 	0x730cefc8: 'BeesRunAway u8',
 	0x736adca8: 'FlagAnim u16', # possibly?
-	0x73a932ae: 'EventEnd s8',
+	0x73a932ae: 'EventEnd u8',
 	0x7404ebb3: 'TouchRumble u8',
 	0x74169994: 'TopRotateOffsetZ f32',
 	0x748fcd76: 'EndDayN4 u8',
@@ -628,6 +642,7 @@ preset_names = {
 	0x74be6041: 'BridgePattern.hshCstringRef',
 	0x74ea1d73: 'ProbAugMorningAndEvening u16',
 	0x74f1f060: 'MsID u16',
+	0x754c57c7: 'AN1Index s16',
 	0x75c905d8: 'Movie1 u32',
 	0x75e35e54: 'SilhouettePosZ f32',
 	0x7629cd4e: 'HighlightColorR f32',
@@ -646,11 +661,13 @@ preset_names = {
 	0x78a12603: 'ProbFebruayNight u16',
 	0x78d8aa8e: 'ProbNovemberEvening2 u16',
 	0x797f5754: 'DefaultValue u16',
+	0x7991b277: 'ZK1Index s16',
 	0x79ad3f84: 'AccMouth u16',
 	0x79be959d: 'SeasonScore s32',
 	0x7a09986c: 'MysteryTourItemUniqueID u16',
 	0x7a6965c5: 'UnlockTrigger u8',
 	0x7abad07b: 'Month2006 u8',
+	0x7b1d9990: 'HA1Index s16',
 	0x7b2fdfc1: 'ItemHobbyType.hshCstringRef',
 	0x7bb31852: 'N1Parts.hshCstringRef',
 	0x7c00c111: 'ProbMarchNight u16',
@@ -675,6 +692,7 @@ preset_names = {
 	0x7ec9ada7: 'SearchRadius.hshCstringRef',
 	0x7eda5810: 'OnepieceNNormalScaleMaskR f32',
 	0x7f5b6179: 'CraftRecipeSeason.hshCstringRef',
+	0x8005cfa2: 'NormalScaleBottomsB f32',
 	0x8027726f: 'ProbJuneMidnight u16',
 	0x8048a3a7: 'FashionThemeWork u8',
 	0x805cdabb: 'ItemReleaseVersion u8',
@@ -736,6 +754,7 @@ preset_names = {
 	0x8b8c8093: 'SyncNoCheck u8',
 	0x8bbcd514: 'InnerType100 u8',
 	0x8bc9a76f: 'StartDayS1 u8',
+	0x8c03fdc7: 'FU1Index s16',
 	0x8cc22007: 'DesignSpring1 u16',
 	0x8d3bad84: 'TimeZoneOutdoorNoonLevel u8',
 	0x8d40260e: 'ProbAugustNight u16',
@@ -749,12 +768,14 @@ preset_names = {
 	0x8f24f1a4: 'RotateOffsetY f32',
 	0x8f3a76bb: 'Month2046 u8',
 	0x8f4fe5ee: 'BackRotateOffsetY f32',
+	0x8f5c3da3: 'ZUnitIndex s8',
 	0x8fb1ed85: 'SortID u32',
 	0x8fced711: 'LandingUniqueID u16',
 	0x8feba08a: 'ProbMayNight u16',
 	0x8ff469e1: 'CapID u16',
 	0x8ff6331b: 'StrSortIdJPja u16',
 	0x90299d5a: 'InnerType022 u8',
+	0x902a2293: 'HA2Index s16',
 	0x90466afd: 'Category.hshCstringRef',
 	0x9067bb0e: 'WaitType u8',
 	0x9079071d: 'FashionThemeStage u8',
@@ -770,6 +791,7 @@ preset_names = {
 	0x9217f8b8: 'ProbDecNight u16',
 	0x926d7dd8: 'UpdateParts u8',
 	0x92827ae7: 'TimeZoneIndoorNoonLevel u8',
+	0x92a60974: 'ZK2Index s16',
 	0x92b24a84: 'SkinEdgeColorG f32',
 	0x93036ed8: 'ResourceNameSp2 string33',
 	0x9389a0fe: 'Day2005 u8',
@@ -835,6 +857,7 @@ preset_names = {
 	0x9e19c94c: 'UseCurtain u8',
 	0x9e1d1e9f: 'ResourceNameSp4 string33',
 	0x9e46d33c: 'DesignAlways3 u16',
+	0x9e7becc4: 'AN2Index s16',
 	0x9ebf2c04: 'ProbSeptemberDaytime u16',
 	0x9eea1288: 'Hobby.hshCstringRef',
 	0x9eff6596: 'Day2039 u8',
@@ -921,7 +944,6 @@ preset_names = {
 	0xad1e04ad: 'ExchangeItem u16',
 	0xad49b4ea: 'InnerType032 u8',
 	0xada9eb19: 'ProbAugNight u16',
-	0xae3add78: 'DemoNetLockState u8',
 	0xae3add79: 'DemoNetLockState u8',
 	0xae3aeada: 'ReBodyPattern6Color1 u8',
 	0xae63cef0: 'NpcFtrActionHoldTime s32',
@@ -973,6 +995,7 @@ preset_names = {
 	0xb5980451: 'ReFabric s16',
 	0xb5a652fa: 'ReefType.hshCstringRef',
 	0xb5a8fc2e: 'Sakura_N u8',
+	0xb5c2db65: 'KO2Index s16',
 	0xb5f54c3a: 'StartMoS3 u8',
 	0xb63221ae: 'WeekSouth u8',
 	0xb64fedad: 'NormalScaleMaskG f32',
@@ -995,6 +1018,7 @@ preset_names = {
 	0xb8cc232c: 'ItemName string64',
 	0xb8e48689: 'Month2043 u8',
 	0xb92c3183: 'EventFlowEntryName string40',
+	0xb9507563: 'GE1Index s16',
 	0xb96c2db5: 'ProbOctoberMidnight u16',
 	0xb98477a7: 'Food2 u32',
 	0xb99c565a: 'ViewSortID u16',
@@ -1051,6 +1075,7 @@ preset_names = {
 	0xc33a894e: 'ItemNameUniqueID u16',
 	0xc34424c7: 'Food0 u32',
 	0xc353ef20: 'CookingRecipeID u16',
+	0xc35c5af7: 'BO1Index s16',
 	0xc35f78ed: 'TargetShadow u8',
 	0xc47fe703: 'IsEDay u8',
 	0xc4bb5846: 'Dream0 u32',
@@ -1069,6 +1094,7 @@ preset_names = {
 	0xc733aa77: 'Variation u16',
 	0xc74f6b43: 'ProbJunDaytime u16',
 	0xc785e927: 'StartDaySouth u16',
+	0xc7a5b572: 'NormalScaleBottomsA f32',
 	0xc7ad2fdf: 'CharacterId u32',
 	0xc7e37192: 'ProbSeptemberMidnight u16',
 	0xc7f82afd: 'StepLevel.hshCstringRef',
@@ -1115,6 +1141,7 @@ preset_names = {
 	0xceb81aff: 'BoardDesign u8',
 	0xcfca2366: 'TimeZoneIndoorNightLevel u8',
 	0xd01f154e: 'TransOffsetY f32',
+	0xd0241896: 'OT1Index s16',
 	0xd069f90c: 'StageName string32',
 	0xd06d98dc: 'AnimeTypeSmartPhone string64',
 	0xd086a528: 'TargetInsect u8',
@@ -1211,6 +1238,7 @@ preset_names = {
 	0xe06fb090: 'ItemSize.hshCstringRef',
 	0xe07863ab: 'SpecialSelect u8',
 	0xe0a5f428: 'Month2028 u8',
+	0xe0e55820: 'NormalScaleBottomsR f32',
 	0xe0f10f2f: 'EndMoS2 u8',
 	0xe0f6f32f: 'FlagLand2 s32',
 	0xe113ac8d: 'SocksID u16',
@@ -1286,6 +1314,7 @@ preset_names = {
 	0xee0961fa: 'VillageDevelopmentLevel u8',
 	0xee3f019e: 'Material5 u16',
 	0xee9ce68d: 'BridgeTypeUniqueID u16',
+	0xef0088e8: 'XUnitIndex s8',
 	0xef18bb10: 'W0Parts.hshCstringRef',
 	0xef1f311c: 'CanPutInsect u8',
 	0xef79de0f: 'Layer.hshCstringRef',
@@ -1375,6 +1404,11 @@ preset_names = {
 	0xffe069a3: 'CheckDonation u8',
 }
 
+# checks just to make sure
+for h,s in preset_names.items():
+	if zlib.crc32(s.encode('ascii')) != h:
+		raise Exception('bad hash ' + s)
+
 type_overrides = {
 	'FgMainParam': {
 		0x123efcf1: ('Float', ()),
@@ -1400,6 +1434,9 @@ type_overrides = {
 		0x42cd8039: ('RawData', ('4',)), # AITagBitRankC bitfield
 		0x12d4d7a6: ('RawData', ('4',)), # AITagBitRankS bitfield
 	},
+	'ItemSize': {
+		0x801351e6: ('Float', ()),
+	},
 	'MuseumWatchPoint': {
 		0x1f3893e5: ('Float', ()),
 		0x2258ba55: ('Float', ()),
@@ -1416,7 +1453,7 @@ type_overrides = {
 	},
 }
 
-missing_hashes = set()
+missing_hashes = {}
 
 def analyse_value(key, value):
 	maybe_string = True
@@ -1453,6 +1490,7 @@ def infer_type(rows, key, size):
 	if size > 4:
 		return ('String', ' # size %d' % size) if maybe_string else None
 	else:
+		#tag = (' # possible string size %d' % size) if maybe_string else (' # unk%d' % size)
 		tag = (' # possible string size %d' % size) if maybe_string else ''
 		return ((None, 'U8', 'U16', 'U16', 'U32')[size], tag)
 
@@ -1507,18 +1545,19 @@ if __name__ == '__main__':
 			if '-sort' in sys.argv:
 				it = sorted(it)
 			for key, (offset, size) in it:
+				hasName = False
 				try:
 					name = preset_names[key]
 					name = name.replace('.hshCstringRef', '')
+					hasName = True
 				except KeyError:
 					name = '_%08x' % key
-					missing_hashes.add(key)
 				if strippedName in type_overrides and key in type_overrides[strippedName]:
 					if ' ' in name: name = name.split(' ')[0]
 					cls_name, cls_args = type_overrides[strippedName][key]
 					prefix = ['0x%08x' % key]
 					prefix[1:] = cls_args
-					print('\t%s = %s(%s)' % (name, cls_name, ', '.join(prefix)))
+					print('\t%s = %s(%s) # size %d' % (name, cls_name, ', '.join(prefix), size))
 				elif ' ' in name:
 					# this is something we know, for sure
 					name, typ = name.split(' ')
@@ -1548,6 +1587,24 @@ if __name__ == '__main__':
 						print('\t%s = %s(0x%08x)%s' % (name, typ[0], key, typ[1]))
 					else:
 						print('\t%s = Field(0x%08x) # %d byte%s' % (name, key, size, '' if size == 1 else 's'))
+
+				if not hasName:
+					possible = []
+					if size == 1:
+						possible.append('u8')
+						possible.append('s8')
+					elif size == 2:
+						possible.append('u16')
+						possible.append('s16')
+					elif size == 4:
+						if (strippedName, key) in enLookup:
+							possible.append('hshCstringRef')
+						else:
+							possible.append('u32')
+							possible.append('s32')
+					else:
+						possible.append('string%d' % size)
+					missing_hashes[key] = '/'.join(possible)
 			print()
 
 	print('lookup = {')
@@ -1559,5 +1616,8 @@ if __name__ == '__main__':
 
 if '-p' in sys.argv:
 	with open('hashlist.txt', 'w') as f:
-		for h in missing_hashes:
+		for h in missing_hashes.keys():
 			f.write('%08x:00000000\n' % h)
+	with open('unkFields.txt', 'w') as f:
+		for h,v in missing_hashes.items():
+			f.write('%x %s\n' % (h,v))

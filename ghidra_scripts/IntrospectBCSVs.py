@@ -143,17 +143,23 @@ def applyVtable(vtable, clsname, methnames):
 '''
 
 dtmgr = currentProgram.dataTypeManager
+symbolTable = currentProgram.symbolTable
 category = ghidra.program.model.data.CategoryPath('/bcsv')
 
 # and apply all these names
 for info in classes_in_order:
 	name = names[info]
 	vtable = vtables[info]
-	ns = getSymbolAt(vtable).parentNamespace
-	print('would name info=%r vt=%r ns=%r to %s' % (info, vtable, ns, name))
-	if ns.name != name:
-		ns.setParentNamespace(bcsvNS)
-		ns.symbol.setName(name, SourceType.ANALYSIS)
+	vtSym = getSymbolAt(vtable)
+	ns = vtSym.parentNamespace
+	print('would name info=%r vt=%r vtSym=%r ns=%r to %s' % (info, vtable, vtSym, ns, name))
+	#if ns.name != name:
+	#	ns.setParentNamespace(bcsvNS)
+	#	ns.symbol.setName(name, SourceType.ANALYSIS)
+	ns = getNamespace(bcsvNS, name)
+	if ns is None:
+		ns = currentProgram.symbolTable.createNameSpace(bcsvNS, name, SourceType.ANALYSIS)
+	vtSym.setNameAndNamespace('vtable', ns, SourceType.ANALYSIS)
 	'''createLabel(info, '%s_typeInfo' % name, True)
 	createLabel(vtable, '%s_vtable' % name, True)
 	applyVtable(vtable, name, ('isDerivedFrom', 'getTypeInfo', 'dtor', 'dtorDeleting', 'vf20', 'vf28', 'getName', 'deallocBuffers', 'populateBuffers'))

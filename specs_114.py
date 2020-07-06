@@ -4300,7 +4300,7 @@ class CalendarEventParam(Row):
 	DayNorth = U8(0xd8f76b76)
 	DaySouth = U8(0x224c7f34)
 	EventBegin = U8(0x8d58a3bf)
-	EventEnd = S8(0x73a932ae)
+	EventEnd = U8(0x73a932ae)
 	EventHalf = S8(0xac69956e)
 	LabelLong = String(0x443c0fb7) # string64
 	LabelShort = String(0xbb66edcb) # string128
@@ -4745,7 +4745,7 @@ class FgMainParam(Row):
 	CollisionHeight = Float(0x0c315945)
 	InsectParam = Enum(0x360b721a, enum_80fe2e01edeb_a0944789ee2d)
 	Kind = Enum(0x9b7aa0a0, enum_282b3f1c6bd6_e34f70824d5a)
-	_123efcf1 = Float(0x123efcf1)
+	_123efcf1 = Float(0x123efcf1) # size 4
 	BuryItem = U16(0x6ac5a6df)
 	BuryItem2 = U16(0xd59ff85e)
 	BuryItem3 = U16(0xe8ffd1ee)
@@ -4762,8 +4762,8 @@ class FgMainParam(Row):
 	Grow = U8(0xf5a73337)
 	Label = String(0x87bf00e8) # string32
 	ModelName = String(0x39b5a93d) # string32
-	Nature = RawData(0x623dc307, 2)
-	_a4b2d66d = RawData(0xa4b2d66d, 1)
+	Nature = RawData(0x623dc307, 2) # size 2
+	_a4b2d66d = RawData(0xa4b2d66d, 1) # size 1
 	ResName = String(0x48ef0398) # string64
 
 class FieldCreateParam(Row):
@@ -4994,7 +4994,7 @@ class FishStatusParam(Row):
 	UniqueID = U16(0x54706054)
 	DebugName = String(0xab51a3cf) # string32
 	IsCreateBait = U8(0x3dc49bc2)
-	_0e91fc27 = U8(0x0e91fc27)
+	IsSidewaysShow = U8(0x0e91fc27)
 	Label = String(0x87bf00e8) # string32
 	_1f875d3d = String(0x1f875d3d) # size 32
 	ResName = String(0x48ef0398) # string64
@@ -5008,7 +5008,7 @@ class GmoFootprintParam(Row):
 
 class HumanAnimParam(Row):
 	LowerSetting = Enum(0x0b69ec1a, enum_7a6babece06f_675c7f6d8dcb)
-	_2fe593c3 = U16(0x2fe593c3)
+	UISortID = S16(0x2fe593c3)
 	UniqueID = U16(0x54706054)
 	_9f5123d4 = U8(0x9f5123d4)
 	_d5217761 = U8(0xd5217761)
@@ -5016,7 +5016,7 @@ class HumanAnimParam(Row):
 	_84761fb6 = U8(0x84761fb6)
 	CancelFootprint = U8(0xfc3116b5)
 	Comment = String(0x96ba28fe) # string64
-	Misc = RawData(0x42ad246a, 3)
+	Misc = RawData(0x42ad246a, 3) # size 3
 	MoveAs = U8(0x49803457)
 	ToolAsCommand = String(0x26911c10) # string30
 
@@ -5128,7 +5128,7 @@ class InsectStatusParam(Row):
 	_5d4ef312 = U16(0x5d4ef312)
 	ToyItemID = U16(0xdaaf8ba0)
 	UniqueID = U16(0x54706054)
-	AppearFg = RawData(0xbace6554, 3)
+	AppearFg = RawData(0xbace6554, 3) # size 3
 	DebugName = String(0x3f45f2bf) # string64
 	Label = String(0x87bf00e8) # string32
 	Property = U8(0x0909f3d4)
@@ -5307,7 +5307,7 @@ class ItemOutfitCategory(Row):
 	_555442aa = U8(0x555442aa)
 	HandToolAsName = String(0x03b7f760) # string32
 	Label = String(0x87bf00e8) # string32
-	Misc = RawData(0x42ad246a, 2)
+	Misc = RawData(0x42ad246a, 2) # size 2
 	Name = String(0x977adfce) # string32
 	ToolLeftModelName = String(0x6ce1d85c) # string20
 	ToolRightModelName = String(0x4ec849ec) # string20
@@ -5331,7 +5331,7 @@ class ItemOutfitInfo(Row):
 	Name = String(0x036e8ebe) # string64
 	SpecialELink = U8(0x04ac1bea)
 	SpecialSLink = U8(0xbe782346)
-	Storage = RawData(0xc89fb7af, 2)
+	Storage = RawData(0xc89fb7af, 2) # size 2
 
 class ItemParam(Row):
 	AudioPreset = Enum(0x2654be7c, enum_ded670ccf8f3_2f430bbb6124)
@@ -5383,7 +5383,7 @@ class ItemParam(Row):
 	ItemUnitIcon = Enum(0x010d74a6, enum_c247708f9bb1_67b0834c6103)
 	LampType = Enum(0xd65f862b, enum_19d95e13020f_5e46daa0967c)
 	LocalWindType = Enum(0x9a3fb47c, enum_4db76367118c_3ca2ed9ace4f)
-	_85c63b71 = Float(0x85c63b71)
+	_85c63b71 = Float(0x85c63b71) # size 4
 	NpcGender = Enum(0x8392798c, enum_046a2d7d535d_d28a72f9a4ec)
 	NpcOutfit = Enum(0x60c99a5e, enum_f659111fbd89_a8479914e95b)
 	OutfitSE = Enum(0x041c3234, enum_6adf97f83acf_3609f958a376)
@@ -5404,10 +5404,10 @@ class ItemParam(Row):
 	SlopeTableId = U16(0xbfba247c)
 	UniqueID = U16(0x54706054)
 	WallTableId = U16(0x0f9f6747)
-	AITagBitRankA = RawData(0xe8c448b2, 4)
-	AITagBitRankB = RawData(0xfa71e75c, 4)
-	AITagBitRankC = RawData(0x42cd8039, 4)
-	AITagBitRankS = RawData(0x12d4d7a6, 4)
+	AITagBitRankA = RawData(0xe8c448b2, 4) # size 4
+	AITagBitRankB = RawData(0xfa71e75c, 4) # size 4
+	AITagBitRankC = RawData(0x42cd8039, 4) # size 4
+	AITagBitRankS = RawData(0x12d4d7a6, 4) # size 4
 	CanNotLookFace = U8(0xfd415a4c)
 	CaptureClosetIcon = U8(0xe4697080)
 	CaptureDiyIcon = U8(0xe24d9b0e)
@@ -5576,7 +5576,7 @@ class ItemShareTexture(Row):
 	ResName = String(0xdcfb52e8) # string32
 
 class ItemSize(Row):
-	_801351e6 = U32(0x801351e6)
+	_801351e6 = Float(0x801351e6) # size 4
 	MemoryUnitNum = U16(0x09b64264)
 	PolygonLimit = U16(0x3cf05708)
 	UniqueID = U16(0x54706054)
@@ -5793,9 +5793,9 @@ class MuseumWatchPoint(Row):
 	SilhouetteID = U32(0x3e884a6d)
 	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
 	_35ac2c17 = Enum(0x35ac2c17, enum_23f7dd8d5dc1_9e5af7814467)
-	_1f3893e5 = Float(0x1f3893e5)
-	_2258ba55 = Float(0x2258ba55)
-	_65f8c085 = Float(0x65f8c085)
+	_1f3893e5 = Float(0x1f3893e5) # size 4
+	_2258ba55 = Float(0x2258ba55) # size 4
+	_65f8c085 = Float(0x65f8c085) # size 4
 	WatchAngleY = Float(0xd200ffd3)
 	WatchPosX = Float(0x2633f2c1)
 	WatchPosY = Float(0x1b53db71)
@@ -5811,11 +5811,11 @@ class MysteryTourFieldParam(Row):
 
 class MysteryTourFishParam(Row):
 	UniqueID = U16(0x54706054)
-	TargetShadow = RawData(0xc35f78ed, 2)
+	TargetShadow = RawData(0xc35f78ed, 2) # size 2
 
 class MysteryTourInsectParam(Row):
 	UniqueID = U16(0x54706054)
-	TargetInsect = RawData(0xd086a528, 14)
+	TargetInsect = RawData(0xd086a528, 14) # size 14
 
 class MysteryTourItemParam(Row):
 	UniqueID = U16(0x54706054) # size is 4, could this be an array?
@@ -5990,7 +5990,7 @@ class NpcLife(Row):
 	SeasonSpringLevel = U8(0xeaadf252)
 	SeasonSummerLevel = U8(0x2760bc87)
 	SeasonWinterLevel = U8(0xb2540403)
-	SpotType = RawData(0x9bc85bd0, 3)
+	SpotType = RawData(0x9bc85bd0, 3) # size 3
 	TimeZoneIndoorEarlyMorningLevel = U8(0x154eee75)
 	TimeZoneIndoorEveningLevel = U8(0xd2ab4a8f)
 	TimeZoneIndoorMidnightLevel = U8(0xa0b3903d)
@@ -6048,46 +6048,46 @@ class NpcMoveRoomTemplate(Row):
 	Direction = S8(0x3a1fca06)
 	GroupIndex = S8(0xb12e26da)
 	Size = S8(0x0b6d59d2)
-	_ef0088e8 = U8(0xef0088e8)
-	_8f5c3da3 = U32(0x8f5c3da3)
+	XUnitIndex = S8(0xef0088e8)
+	ZUnitIndex = S8(0x8f5c3da3) # size is 4, could this be an array?
 
 class NpcMsgBullfestParam(Row):
 	NpcMsgBullfestCondition = Enum(0xddf1f8bf, enum_47e581a0f3c1_94306367028d)
-	_754c57c7 = U16(0x754c57c7)
-	_9e7becc4 = U16(0x9e7becc4) # possible string size 2
+	AN1Index = S16(0x754c57c7)
+	AN2Index = S16(0x9e7becc4)
 	AccessoryID = U16(0x478dd182)
-	_c35c5af7 = U16(0xc35c5af7)
-	_286be1f4 = U16(0x286be1f4) # possible string size 2
+	BO1Index = S16(0xc35c5af7)
+	BO2Index = S16(0x286be1f4)
 	BagID = U16(0x3af6dfe2)
 	BottomsID = U16(0x524596a2)
 	CapID = U16(0x8ff469e1)
 	CombinationNum = U16(0xcd89ffeb)
 	EyeAcceID = U16(0xda01c243)
-	_8c03fdc7 = U16(0x8c03fdc7)
-	_673446c4 = U16(0x673446c4) # possible string size 2
-	_b9507563 = U16(0xb9507563)
-	_5267ce60 = U16(0x5267ce60) # possible string size 2
-	_7b1d9990 = U16(0x7b1d9990)
-	_902a2293 = U16(0x902a2293) # possible string size 2
+	FU1Index = S16(0x8c03fdc7)
+	FU2Index = S16(0x673446c4)
+	GE1Index = S16(0xb9507563)
+	GE2Index = S16(0x5267ce60)
+	HA1Index = S16(0x7b1d9990)
+	HA2Index = S16(0x902a2293)
 	HelmetID = U16(0xf429d772)
-	_5ef56066 = U16(0x5ef56066)
-	_b5c2db65 = U16(0xb5c2db65) # possible string size 2
-	_d0241896 = U16(0xd0241896)
-	_3b13a395 = U16(0x3b13a395) # possible string size 2
+	KO1Index = S16(0x5ef56066)
+	KO2Index = S16(0xb5c2db65)
+	OT1Index = S16(0xd0241896)
+	OT2Index = S16(0x3b13a395)
 	ShoesID = U16(0xf07156d2)
 	SocksID = U16(0xe113ac8d)
 	TopsID = U16(0xdfb46994)
 	UniqueID = U16(0x54706054)
-	_7991b277 = U16(0x7991b277)
-	_92a60974 = U32(0x92a60974) # possible string size 4
+	ZK1Index = S16(0x7991b277)
+	ZK2Index = S16(0x92a60974) # size is 4, could this be an array?
 
 class NpcRoomTemplate(Row):
 	RoomType = U32(0xd9a1f501)
 	Direction = S8(0x3a1fca06)
 	GroupIndex = S8(0xb12e26da)
 	Size = S8(0x0b6d59d2)
-	_ef0088e8 = U8(0xef0088e8)
-	_8f5c3da3 = U32(0x8f5c3da3)
+	XUnitIndex = S8(0xef0088e8)
+	ZUnitIndex = S8(0x8f5c3da3) # size is 4, could this be an array?
 
 class NpcSpClothSetParam(Row):
 	AcceEye = U16(0x2b57b24a)
@@ -6102,10 +6102,10 @@ class NpcSpClothSetParam(Row):
 	Name = String(0x036e8ebe) # string64
 
 class NpcSpModelScale(Row):
-	_c7a5b572 = U32(0xc7a5b572)
-	_8005cfa2 = U32(0x8005cfa2) # possible string size 4
-	_48e540d2 = U32(0x48e540d2) # possible string size 4
-	_e0e55820 = U32(0xe0e55820) # possible string size 4
+	NormalScaleBottomsA = Float(0xc7a5b572)
+	NormalScaleBottomsB = Float(0x8005cfa2)
+	NormalScaleBottomsG = Float(0x48e540d2)
+	NormalScaleBottomsR = Float(0xe0e55820)
 	NormalScaleHA = Float(0x91f4a29c)
 	NormalScaleHB = Float(0xd654d84c)
 	NormalScaleHG = Float(0x1eb4573c)
@@ -6239,7 +6239,7 @@ class RecipeCraftParam(Row):
 	Material6 = U16(0xa99f7b4e)
 	SerialID = S16(0x39dede36)
 	UniqueID = U16(0x54706054)
-	_33ddefc8 = String(0x33ddefc8) # size 66
+	SelectCalendarEventSeason = String(0x33ddefc8) # string64
 
 class ReleaseVersionParam(Row):
 	ReleaseKey = U16(0x76c190b2)
@@ -6493,7 +6493,7 @@ class StructureHouseShapeParam(Row):
 	Name = String(0x977adfce) # string32
 
 class StructureHouseWallParam(Row):
-	_60680c93 = Enum(0x60680c93, enum_106465ec3a51_1268c2c082da)
+	HouseDoorStep = Enum(0x60680c93, enum_106465ec3a51_1268c2c082da)
 	CustomizeSortID = U16(0x37d4e515)
 	_9c2d6dc6 = U16(0x9c2d6dc6)
 	HouseShapeUniqueID = U16(0xb6f501d2)

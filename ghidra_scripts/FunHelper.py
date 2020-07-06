@@ -7,19 +7,23 @@ s_init_array = getMemoryBlock('.init_array')
 s_rodata = getMemoryBlock('.rodata.1') # not sure if it's .1 in all bins?
 s_data = getMemoryBlock('.data')
 
-def do_all_inits():
+def get_all_inits():
 	addr = s_init_array.start
-	num = 0
 	while addr < s_init_array.end:
-		ptr = getDataAt(addr).value
+		yield getDataAt(addr).value
+		addr = addr.add(8)
+
+
+def do_all_inits():
+	num = 0
+	for ptr in get_all_inits():
 		if getInstructionAt(ptr) is None:
 			disassemble(ptr)
 		if getFunctionAt(ptr) is None:
 			createFunction(ptr, None)
 		fn = getFunctionAt(ptr)
 		if fn.name.startswith('FUN_'):
-			fn.setName('Init%04d' % num, ghidra.program.model.symbol.SourceType.DEFAULT)
-		addr = addr.add(8)
+			fn.setName('Init%04d_130' % num, ghidra.program.model.symbol.SourceType.DEFAULT)
 		num += 1
 
 
@@ -117,16 +121,38 @@ def findEvFlowVtable(ctor):
 				return ref.toAddress
 
 
+def find_init(addr):
+	for check in inits:
+		if addr < check:
+			return check
+
+
 vtables_to_names = {}
+#missinga = open('/Users/ash/src/hashcat/missing_actions', 'w')
+#missingq = open('/Users/ash/src/hashcat/missing_queries', 'w')
+	
 
 def name_eventflow_classes(path):
-	import json
+	'''import json
 	with open(path, 'r') as f:
 		data = json.load(f)
 	queries, actions = {}, {}
 	for ac in data.values():
 		for q,k in ac['queries'].iteritems(): queries[k] = q
-		for a,k in ac['actions'].iteritems(): actions[k] = a
+		for a,k in ac['actions'].iteritems(): actions[k] = a'''
+	path = '/Users/ash/src/hashcat'
+	queries, actions = {}, {}
+	for line in open(path+'/actions_cracked', 'r'):
+		line = line.strip()
+		if line:
+			a,b,c = line.split(':')
+			actions[int(a,16)] = c
+	for line in open(path+'/queries_cracked', 'r'):
+		line = line.strip()
+		if line:
+			a,b,c = line.split(':')
+			queries[int(a,16)] = c
+
 	for names,baseaddr,what in ((queries,'eventFlowQueryMap','Query'), (actions,'eventFlowActionMap','Action')):
 		in_exec = set()
 		missing = set()
@@ -143,6 +169,10 @@ def name_eventflow_classes(path):
 				#print('missing %08x!' % key)
 				missing.add(key)
 				name = 'EventFlow%s%08X' % (what, key)
+				if what == 'Query':
+					missingq.write('%08x:00000000\n' % key)
+				else:
+					missinga.write('%08x:00000000\n' % key)
 			addr = toAddr(getLong(qmap.address.add(i * 16 + 8)))
 			#getFunctionAt(addr).setName(name + '_build', ghidra.program.model.symbol.SourceType.DEFAULT)
 
@@ -157,10 +187,15 @@ def name_eventflow_classes(path):
 			vtables_to_names[vt.offset] = name
 			vtsym = getSymbolAt(vt)
 			vtns = vtsym.parentNamespace
-			print('vt %r is %r' % (name,vtns))
+			#print('vt %r is %r' % (name,vtns))
 
 			if vtns.name != name:
+				print('would rename %r to %r' % (vtns,name))
 				vtns.symbol.setName(name, SourceType.ANALYSIS)
+
+			init = find_init(ctor)
+			#print('%r goes with %r' % (vtns, getFunctionAt(init)))
+			initmap[init].append(vtns)
 
 		#in_json = set(names.keys())
 		#noted = in_json - in_exec
@@ -175,14 +210,47 @@ def name_eventflow_classes(path):
 # STEP 3: disassemble all code
 #locate_undefined_candidates(getFirstFunction().entryPoint)
 # STEP 4: set all code ptrs (vtables, etc) to actual references
-#scan_data_for_code_ptrs()
+scan_data_for_code_ptrs()
 # STEP 5: use the FindInstructionsNotInsideFunctionScript and CreateFunctionsFromSelection scripts
 
+'''
+inits = list(get_all_inits())
+addr = s_init_array.start
+for i in xrange(len(inits) - 1):
+	a = inits[i]
+	b = inits[i + 1]
+	delta = getFunctionAt(b).body.minAddress.subtract(getFunctionAt(a).body.maxAddress) - 1
+	if delta < 0x10:
+		setEOLComment(addr.add(8 + i * 8), '-')
+	else:
+		setEOLComment(addr.add(8 + i * 8), '0x%x' % delta)
+
+initmap = {}
+for init in inits:
+	initmap[init] = []
+'''
+
 # STEP 6: set up some eventflow stuff
-name_eventflow_classes('/Volumes/HFS/repos/switch/CylindricalEarth/evfl/evflActors120.json')
+#name_eventflow_classes('/Volumes/HFS/repos/switch/CylindricalEarth/evfl/evflActors120.json')
 #import json
 #with open('/Volumes/HFS/repos/switch/CylindricalEarth/evfl/eventflow_vtables.json', 'w') as f:
 #	json.dump(vtables_to_names, f)
+
+'''
+for init in inits:
+	if len(initmap[init]) > 1:
+		print(getFunctionAt(init))
+		for i in initmap[init]:
+			print(i)
+	elif len(initmap[init]) == 1:
+		ns = initmap[init][0]
+		initsym = getSymbolAt(init)
+		if initsym.name != 'STATIC_INIT_':
+			initsym.setNameAndNamespace('STATIC_INIT_', ns, SourceType.USER_DEFINED)
+'''
+
+#missingq.close()
+#missinga.close()
 
 #addr = getFirstFunction().entryPoint
 #while True:

@@ -16,8 +16,8 @@ import sys
 DEBUG = False
 ONLY_FUNC = None #toAddr(0x7100cb9470)
 
-BCSV_PATH = '/Volumes/HFS/repos/switch/ac120upd/romfs/Bcsv'
-EARTH = '/Volumes/HFS/repos/switch/CylindricalEarth'
+BCSV_PATH = '/data/switch/ac130_upd/romfs/Bcsv'
+EARTH = '/home/ash/src/CylindricalEarth'
 if EARTH not in sys.path:
     sys.path.append(EARTH)
 
@@ -26,7 +26,7 @@ from build_specs import preset_names
 
 CALL_KLUDGES = {
     # ItemParam's vf20 calls into this instead of just using memset...
-    0x7100A9F5E0: 0x60
+    0x7100b24ad0: 0x62
 }
 
 dtManager = currentProgram.dataTypeManager
@@ -444,7 +444,7 @@ def stripTypeFromName(name):
     if ' ' in name:
         return name[:name.find(' ')]
     else:
-        return name
+        return name.replace('.hshCstringRef','')
 
 
 def declareBcsvOffsets(bcsvNames):
@@ -460,6 +460,7 @@ def declareBcsvOffsets(bcsvNames):
         vtable = getSymbol('vtable', namespace).address
 
         # step 1, we want to scrape vf20 for stuff
+        print('doing %s with vtable %r' % (bcsvName, vtable))
         vf20addr = toAddr(getLong(vtable.add(0x20)))
         vf20fn = getFunctionAt(vf20addr)
         size = vf20fn.body.numAddresses
@@ -482,6 +483,7 @@ def declareBcsvOffsets(bcsvNames):
             removeDataAt(initFlagAddr)
             createData(initFlagAddr, boolDT)
             sym.setNameAndNamespace(flagName, namespace, SourceType.DEFAULT)
+
         for i,(key,field) in enumerate(bcsv.fields.iteritems()):
             addr = toAddr((initFlagAddrValue + (i * 4) + 4) & ~3)
             sym = getSymbolAt(addr)
@@ -493,10 +495,13 @@ def declareBcsvOffsets(bcsvNames):
                 removeDataAt(addr)
                 createData(addr, intDT)
                 symbolTable.createLabel(addr, name, namespace, SourceType.USER_DEFINED)
-            elif sym.name != name and not sym.name.startswith(name):
+            elif sym.name != name and ('.hshC' in sym.name or (not sym.name.startswith(name))):
                 removeDataAt(addr)
                 createData(addr, intDT)
                 sym.setNameAndNamespace(name, namespace, SourceType.USER_DEFINED)
+            oldEnumSym = getSymbol('enumCache_%08x' % key, namespace)
+            if oldEnumSym != None and key in preset_names:
+                oldEnumSym.setName('enumCache_%s' % preset_names[key].replace('.hshCstringRef',''), SourceType.USER_DEFINED)
 
 
 def resolveEnumFromGetter(fn):
@@ -520,9 +525,11 @@ def resolveEnumFromCrcParse(callInsn):
     for insn in currentProgram.getListing().getCodeUnits(fn.getBody(), True):
         if insn.mnemonicString == 'bl':
             bls_seen.append(insn.getOperandReferences(0)[0].toAddress)
-    for i, f in enumerate(bls_seen):
-        if f == cxa_guard_release:
-            return resolveEnumFromGetter(getFunctionAt(bls_seen[i + 1]))
+    print(bls_seen)
+    return resolveEnumFromGetter(getFunctionAt(bls_seen[0]))
+    #for i, f in enumerate(bls_seen):
+    #    if f == cxa_guard_release:
+    #        return resolveEnumFromGetter(getFunctionAt(bls_seen[i + 1]))
 
 
 
@@ -612,9 +619,9 @@ def defineBcsvEnumCaches():
 
 # now let's get those 
 #enumInfo = findAllEnums()
-#with open('enumData120.json', 'w') as f:
-#   json.dump(enumInfo, f, indent=4)
-with open('enumData120.json', 'r') as f:
+#with open(EARTH + '/enumData130.json', 'w') as f:
+#   json.dump(enumInfo, f, indent=4, sort_keys=True)
+with open(EARTH + '/enumData130.json', 'r') as f:
     enumInfo = json.load(f)
 
 enumTypeMap = {}
@@ -627,9 +634,9 @@ syncEnums()
 bcsvNames = [x.replace('.bcsv', '') for x in os.listdir(BCSV_PATH) if x.endswith('.bcsv')]
 declareBcsvOffsets(bcsvNames)
 
-#defineBcsvEnumCaches()
+defineBcsvEnumCaches()
 
 
-with open('enumData120.json', 'w') as f:
+with open(EARTH + '/enumData130.json', 'w') as f:
     json.dump(enumInfo, f, indent=4, sort_keys=True)
 

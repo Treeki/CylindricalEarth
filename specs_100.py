@@ -402,12 +402,6 @@ enum_282b3f1c6bd6_e34f70824d5a = (
 	('TreeBambooStump', '植物：木：竹：切り株'),
 	('TreeFruit'      , '植物：木：果物'),
 	('TreeEasterEgg'  , '植物：木：イースターのタマゴ'),
-	('BushAzalea'     , '植物：低木：ツツジ'),
-	('BushHydrangea'  , '植物：低木：あじさい'),
-	('BushHibiscus'   , '植物：低木：ハイビスカス'),
-	('BushCamellia'   , '植物：低木：ツバキ'),
-	('BushHolly'      , '植物：低木：ヒイラギ'),
-	('BushOsmathus'   , '植物：低木：キンモクセイ'),
 	('WeedSpr'        , '植物：雑草：春'),
 	('WeedSmr'        , '植物：雑草：夏'),
 	('WeedAut0'       , '植物：雑草：秋０'),
@@ -443,7 +437,6 @@ enum_2c1ecb54c4b5_fa9288c80a2d = (
 	('Bottoms'       , 'ボトムス'),
 	('Socks'         , '靴下'),
 	('Shoes'         , '靴'),
-	('Marinesuit'    , 'マリンスーツ'),
 	('Scoop'         , 'スコップ'),
 	('Axe'           , 'オノ'),
 	('FishingRod'    , 'つりざお'),
@@ -503,9 +496,6 @@ enum_2c1ecb54c4b5_fa9288c80a2d = (
 	('Smoothie'      , 'スムージー'),
 	('Hammer'        , 'かなづち'),
 	('Brush'         , 'はけ'),
-	('Bouquet'       , 'ブーケ'),
-	('Scallop'       , 'ホタテ'),
-	('Canvas'        , 'キャンバス'),
 )
 
 enum_2c27ffe999d6_e4da0c79dac6 = (
@@ -521,7 +511,6 @@ enum_2c27ffe999d6_e4da0c79dac6 = (
 	('Negative'     , 'F9：ネガティブ系'),
 	('Plant'        , 'F10：植物系'),
 	('Smartphone'   , 'F11：スマホ系'),
-	('Seafood'      , 'F12：海の幸系'),
 )
 
 enum_2d78bfb5905f_6f798aada062 = (
@@ -566,7 +555,6 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexTopYshirtsHWhite'                 , 'はんそでワイシャツ'),
 	('TopsTexTopYshirtsNWhite'                 , 'ノースリーブえりつきシャツ'),
 	('TopsTexOnepieceAlineLRabbit'             , 'ウサギなふく'),
-	('TopsTexTopCoatLPirate'                   , 'かいぞくのコート'),
 	('TopsTexOnepieceAlineLHeroine'            , 'ヒロインスーツ'),
 	('TopsTexTopCoatLHanten'                   , 'はんてん'),
 	('TopsTexOnepieceBoxLBathrobes'            , 'バスローブ'),
@@ -641,7 +629,6 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexTopYshirtsLTiedsweater'           , 'トレンディーなふく'),
 	('TopsTexTopYshirtsLSportsjersey'          , 'スポーツジャージ'),
 	('BottomsTexPantsNormalSportsjersey'       , 'スポーツジャージのズボン'),
-	('TopsTexOnepieceDressNWedding'            , 'じゅんぱくのドレス'),
 	('BottomsTexSkirtAlineKilt'                , 'キルト'),
 	('TopsTexTopYshirtsLGilet'                 , 'ベストつきワイシャツ'),
 	('BottomsTexSkirtAlineSailorNavy'          , 'セーラーふくのスカート'),
@@ -790,7 +777,6 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexOnepieceAlineNHalterneckstripe'   , 'ホルターネックのワンピース'),
 	('TopsTexTopTshirtsHPocketshirts'          , 'ポケットつきＴシャツ'),
 	('TopsTexOnepieceKimonoLMiko'              , 'みこしょうぞく'),
-	('TopsTexOnepieceBalloonHPirate'           , 'かいぞくのワンピース'),
 	('BottomsTexSkirtBoxCorduroy'              , 'コーデュロイスカート'),
 	('BottomsTexPantsWideGaucho'               , 'ガウチョパンツ'),
 	('TopsTexOnepieceBoxNModern'               , 'モガなワンピース'),
@@ -926,7 +912,6 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('BottomsTexSkirtLongWrap'                 , 'ベルトのまきスカート'),
 	('BottomsTexSkirtLongEmbroidery'           , 'ししゅうのはながらスカート'),
 	('BottomsTexSkirtLongGeometric'            , 'きかがくししゅうのスカート'),
-	('AccessoryGlassmouthDiver'                , 'シュノーケル'),
 	('AccessoryGlassCyber'                     , 'サイバーサングラス'),
 	('TopsTexTopOuterLMuffler'                 , 'チェックマフラーつきセーター'),
 	('TopsTexTopCoatLMuffler'                  , 'ロングデニムカーディガン'),
@@ -1083,7 +1068,6 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('CapHatSafetyhat'                         , 'あんぜんヘルメット'),
 	('CapHatCock'                              , 'コックさんのぼうし'),
 	('CapHatPolice'                            , 'けいかんのぼうし'),
-	('CapHatPirate'                            , 'かいぞくのぼうし'),
 	('CapHatAjiro'                             , 'かさぼうし'),
 	('CapHatUshanka'                           , 'フェイクファーハット'),
 	('CapHatTriangle'                          , 'さんかくきん'),
@@ -1304,7 +1288,6 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('CapWigRegent'                            , 'リーゼント'),
 	('CapWigSamurai'                           , 'ちょんまげ'),
 	('CapWigOnionhair'                         , 'たまねぎヘアー'),
-	('CapWigWedding'                           , 'じゅんぱくのヴェール'),
 	('CapWigDoublebun'                         , 'おだんごあたま'),
 	('CapBangsHeadphone'                       , 'ヘッドホン'),
 	('CapHelmetHeaddress'                      , 'ヘッドドレス'),
@@ -1651,31 +1634,6 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('ShoesLowcutEggforest'                    , 'ウッディなたまごのくつ'),
 	('ShoesLowcutEggsky'                       , 'そらとぶたまごのくつ'),
 	('ShoesLowcutEggfish'                      , 'サカナのたまごのくつ'),
-	('ShoesLowcutJunepumps'                    , 'じゅんぱくのパンプス'),
-	('ShoesLowcutJuneshoes'                    , 'じゅんぱくのシューズ'),
-	('TopsTexOnepieceOverallLJune'             , 'じゅんぱくのタキシード'),
-	('TopsTexTopCoatHChildren'                 , 'てづくりのマント'),
-	('CapOrnamentAChildren'                    , 'てづくりのおうかん'),
-	('CapHatSummer'                            , 'げしさいのはなかんむり'),
-	('ShoesLowcutMermaid'                      , 'マーメイドなくつ'),
-	('CapOrnamentCMermaid'                     , 'マーメイドなティアラ'),
-	('AccessoryGlassPiratespatch'              , 'かいぞくのアイパッチ'),
-	('AccessoryMouthPirates'                   , 'かいぞくのひげ'),
-	('BottomsTexPantsNormalPirates'            , 'かいぞくのズボン'),
-	('ShoesKneePirates'                        , 'かいぞくのブーツ'),
-	('CapHatPiratesbandana'                    , 'かいぞくのバンダナ'),
-	('TopsTexOnepieceAlongLPirates'            , 'かいぞくのおたからローブ'),
-	('TopsTexOnepieceOverallLPirates0'         , 'かいぞくのふく'),
-	('TopsTexOnepieceAlongNMermaiddress'       , 'マーメイドなおさかなドレス'),
-	('TopsTexOnepieceDressNMermaid'            , 'マーメイドなプリンセスドレス'),
-	('TopsTexTopOuterLWintersolstice'          , 'とうじのセーター'),
-	('CapOrnamentCPirate'                      , 'かいぞくのおたからおうかん'),
-	('TopsTexTopYshirtsHNookyellow'            , 'たぬきかいはつアロハ・コーラル'),
-	('TopsTexTopYshirtsHNookgreen'             , 'たぬきかいはつアロハ・グリーン'),
-	('TopsTexMarinesuitNormalLNook'            , 'たぬきかいはつマリンスーツ'),
-	('TopsTexMarinesuitNormalLRashguard'       , 'はっぱがらマリンスーツ'),
-	('TopsTexMarinesuitNormalNGreco'           , 'ボーダーのマリンスーツ'),
-	('AccessoryGlassmouthNook'                 , 'たぬきかいはつシュノーケル'),
 	('TopsTexTopTshirtsLBorder'                , 'ボーダーＴシャツ'),
 	('TopsTexTopYshirtsLMountain'              , 'マウンテンパーカー'),
 	('TopsTexTopCoatLDuffle'                   , 'ダッフルコート'),
@@ -1699,10 +1657,9 @@ enum_30e2684ee89a_599636c94afd = (
 )
 
 enum_322263f6b5a3_7a83210f041c = (
-	('Before', '未設定'),
+	('Before', '前日'),
 	('Skip'  , '中止'),
 	('Same'  , '同時開催'),
-	('After' , '翌日'),
 )
 
 enum_34f1ef8cdbcc_52861a019f72 = (
@@ -1719,9 +1676,6 @@ enum_34f1ef8cdbcc_52861a019f72 = (
 	('Kitchen'   , 'キッチン'),
 	('Exercise'  , '運動'),
 	('Outdoor'   , 'アウトドア'),
-	('Lamp'      , '照明'),
-	('Dresser'   , 'ドレッサー'),
-	('Chest'     , '服収納'),
 )
 
 enum_3b7b05ca4a0a_52b2ca6f0581 = (
@@ -1872,7 +1826,6 @@ enum_44bd12ada204_11a50a2b435c = (
 	('CountdownStall', 'CountdownStall'),
 	('BulletinBoard' , 'BulletinBoard'),
 	('Campfire'      , 'Campfire'),
-	('Wind'          , 'Wind'),
 )
 
 enum_4547a8a48a03_a84b967e0ad7 = (
@@ -1895,7 +1848,7 @@ enum_478bafec288f_571514e8ca3c = (
 	('Floor_DownerFront', '台になる：手前半分'),
 	('Floor_DownerUpper', '台になる：上物可'),
 	('Floor_Upper'      , '上物可'),
-	('Floor_Gate'       , '床置き：門：3xX'),
+	('Floor_Gate'       , '床置き：門：3x1'),
 	('Floor_Corner'     , '床置き：コーナー：3x3'),
 	('Wall_NoCol'       , '壁掛け：0'),
 	('Wall_HalfUnit'    , '壁掛け：0.5'),
@@ -1904,7 +1857,7 @@ enum_478bafec288f_571514e8ca3c = (
 )
 
 enum_47e581a0f3c1_94306367028d = (
-	('None'                      , '直指定'),
+	('None'                      , '無し'),
 	('NpcRelatedTops'            , 'NPC関連服'),
 	('NpcRelatedAccessory'       , 'NPC関連アクセサリ'),
 	('CapOrHelmet'               , '帽子・被り物'),
@@ -1926,22 +1879,6 @@ enum_47e581a0f3c1_94306367028d = (
 	('WearGorgeousTops'          , 'ゴージャスな服を着用'),
 	('WearActiveTops'            , 'アクティブな服を着用'),
 	('WearElegantTops'           , 'エレガントな服を着用'),
-	('RacerSet'                  , 'レーサー'),
-	('AfootballSet'              , 'アメフト'),
-	('SoccerSet'                 , 'サッカー'),
-	('BasketballSet'             , 'バスケ'),
-	('SkiSet'                    , 'スキー'),
-	('BaseballSet'               , '野球'),
-	('CowboySet'                 , 'カウボーイ'),
-	('BycycleSet'                , 'サイクル'),
-	('JockeySet'                 , 'ジョッキー'),
-	('MotherSet'                 , 'はは報酬'),
-	('PirateSet'                 , '海賊報酬'),
-	('SwimmingSet'               , 'マリンスーツ'),
-	('CatSet'                    , 'ネコ'),
-	('RabbitSet'                 , 'ウサギ'),
-	('BearSet'                   , 'クマ'),
-	('SheepSet'                  , 'ヒツジ'),
 )
 
 enum_48fbbb9e63e7_c771014390e5 = (
@@ -2134,555 +2071,486 @@ enum_5c6b871e086e_81d76143976e = (
 	('LittleFtr'        , '小さめの家具'),
 	('RoughShoes'       , 'しぶい靴'),
 	('UiniqueFtr'       , '珍家具'),
-	('ColorfulClothes'  , 'カラフル服'),
-	('ShoulderBag'      , 'ショルダーバッグ'),
-	('NormalGlasses'    , 'GEメガネ'),
-	('KoDoll'           , 'KO人形'),
-	('JuicyEquip'       , 'ジューシー装備'),
-	('BathItem'         , 'バスアイテム'),
-	('BeachFtr'         , 'ビーチ家具'),
-	('FairyShoes'       , 'メルヘン靴'),
-	('RockBottoms'      , 'ロックなパンツ'),
-	('RockBoots'        , 'ロックなブーツ'),
-	('Fossil'           , '化石'),
-	('SleepGoods'       , '快眠グッズ'),
-	('ToolItem'         , '工具アイテム'),
-	('PlayAtHome'       , '自宅玩具'),
-	('Handicraft'       , '手芸アイテム'),
-	('LivingFtr'        , 'ZK生活家具'),
-	('Headgear'         , '被り物'),
 )
 
 enum_5db8059c5629_f2952caee23e = (
-	('Leaf'                 , '葉っぱ'),
-	('LeafDesign'           , '葉っぱ（マイデザイン）'),
-	('Wall'                 , '壁紙'),
-	('Floor'                , '床板'),
-	('Carpet'               , 'ラグ'),
-	('Tops'                 , '装備品：トップス'),
-	('Bottoms'              , '装備品：ボトムス'),
-	('Onepiece'             , '装備品：ワンピース'),
-	('WetSuit'              , '装備品：マリンスーツ'),
-	('Socks'                , '装備品：靴下'),
-	('Shoes'                , '装備品：靴'),
-	('Cap'                  , '装備品：帽子'),
-	('Wig'                  , '装備品：かぶりもの'),
-	('Glasses'              , '装備品：メガネ'),
-	('Bag'                  , '装備品：バッグ'),
-	('Umbrella'             , '装備品：かさ'),
-	('Fishingrod'           , 'つりざお'),
-	('GFishingrod'          , 'つりざお：金'),
-	('Net'                  , 'あみ'),
-	('GNet'                 , 'あみ：金'),
-	('Scoop'                , 'スコップ'),
-	('Gscoop'               , 'スコップ：金'),
-	('Axe'                  , 'オノ'),
-	('GAxe'                 , 'オノ：金'),
-	('AxeDull'              , 'オノ（切れない）'),
-	('Watering'             , 'じょうろ'),
-	('GWatering'            , 'じょうろ：金'),
-	('Pachinko'             , 'パチンコ'),
-	('GPachinko'            , 'パチンコ：金'),
-	('ToolChangeStick'      , '変身ステッキ'),
-	('ToolRiverJump'        , '川越えツール'),
-	('ToolLadder'           , 'ハシゴ'),
-	('Bridge'               , '橋'),
-	('Slope'                , '坂'),
-	('ToolGroundMaker'      , '道造成キット'),
-	('ToolRiverMaker'       , '川造成キット'),
-	('ToolCliffMaker'       , '崖造成キット'),
-	('Helmet'               , 'たぬき開発ヘルメット'),
-	('Fence'                , '柵'),
-	('Post'                 , 'ポスト'),
-	('Tent'                 , 'ハウジングキット：黄'),
-	('TentWhite'            , 'ハウジングキット：白'),
-	('Cracker'              , 'クラッカー'),
-	('Ocarina'              , 'オカリナ'),
-	('Panflute'             , 'パンフルート'),
-	('Tambourine'           , 'タンバリン'),
-	('GlowStick'            , 'スティックライト'),
-	('Uchiwa'               , 'うちわ'),
-	('Music'                , 'ミュージック'),
-	('Fossil'               , '化石'),
-	('FossilJ'              , '鑑定済化石'),
-	('SeedPitfall'          , 'おとしあなのタネ'),
-	('RemakeKit'            , 'リメイクキット'),
-	('SmartphoneCase'       , 'スマホケース'),
-	('Medicine'             , 'おくすり'),
-	('Timer'                , 'タイマー'),
-	('Honeycomb'            , 'ハチの巣'),
-	('FishBait'             , 'サカナの撒き餌'),
-	('Cardboard'            , 'ダンボール'),
-	('Present'              , 'プレゼントBOX'),
-	('Present2'             , 'プレゼントBOX：クエスト用'),
-	('WrappingPaper'        , 'ラッピング済みアイテム'),
-	('WPaperYellow'         , 'ラッピングペーパー：イエロー'),
-	('WPaperPink'           , 'ラッピングペーパー：ピンク'),
-	('WPaperOrange'         , 'ラッピングペーパー：オレンジ'),
-	('WPaperLightGreen'     , 'ラッピングペーパー：キミドリ'),
-	('WPaperGreen'          , 'ラッピングペーパー：ミドリ'),
-	('WPaperMint'           , 'ラッピングペーパー：ミント'),
-	('WPaperLightBlue'      , 'ラッピングペーパー：ライトブルー'),
-	('WPaperPurple'         , 'ラッピングペーパー：パープル'),
-	('WPaperNavy'           , 'ラッピングペーパー：ネイビー'),
-	('WPaperBlue'           , 'ラッピングペーパー：ブルー'),
-	('WPaperWhite'          , 'ラッピングペーパー：ホワイト'),
-	('WPaperRed'            , 'ラッピングペーパー：レッド'),
-	('WPaperGold'           , 'ラッピングペーパー：ゴールド'),
-	('WPaperBrown'          , 'ラッピングペーパー：ブラウン'),
-	('WPaperGray'           , 'ラッピングペーパー：グレー'),
-	('WPaperBlack'          , 'ラッピングペーパー：ブラック'),
-	('WBagYellow'           , 'ラッピング袋：イエロー'),
-	('WBagPink'             , 'ラッピング袋：ピンク'),
-	('WBagOrange'           , 'ラッピング袋：オレンジ'),
-	('WBagLightGreen'       , 'ラッピング袋：キミドリ'),
-	('WBagGreen'            , 'ラッピング袋：ミドリ'),
-	('WBagMint'             , 'ラッピング袋：ミント'),
-	('WBagLightBlue'        , 'ラッピング袋：ライトブルー'),
-	('WBagPurple'           , 'ラッピング袋：パープル'),
-	('WBagNavy'             , 'ラッピング袋：ネイビー'),
-	('WBagBlue'             , 'ラッピング袋：ブルー'),
-	('WBagWhite'            , 'ラッピング袋：ホワイト'),
-	('WBagRed'              , 'ラッピング袋：レッド'),
-	('WBagGold'             , 'ラッピング袋：ゴールド'),
-	('WBagBrown'            , 'ラッピング袋：ブラウン'),
-	('WBagGary'             , 'ラッピング袋：グレー'),
-	('WBagBlack'            , 'ラッピング袋：ブラック'),
-	('YellowPaperBag'       , '汎用紙袋'),
-	('Coin'                 , 'ベル：コイン'),
-	('MoneyBag010'          , 'ベル：金袋小'),
-	('MoneyBag039'          , 'ベル：金袋中'),
-	('MoneyBag069'          , 'ベル：金袋大'),
-	('Book'                 , '落とし物：本'),
-	('LostQuestPorch'       , '落とし物：巾着'),
-	('LostQuestMemo'        , '落とし物：本（かきもの）'),
-	('Porch'                , '落とし物：ポーチ'),
-	('OddGlove'             , '落とし物：片方の手袋'),
-	('AutumnLeaf'           , 'もみじのはっぱ'),
-	('SnowCrystal'          , '雪の結晶'),
-	('SnowCrystalLarge'     , '雪の大結晶'),
-	('Sakurapetal'          , 'さくらのはなびら'),
-	('StarPiece'            , 'ほしのかけら'),
-	('StarPieceRare'        , 'ほしのかけら：レア'),
-	('StarPieceSeason'      , 'xほしのかけら：季節'),
-	('ChristmasOrnamentA'   , 'クリスマスオーナメント赤'),
-	('StarpieceCapricornus' , 'やぎざのかけら'),
-	('ChristmasOrnamentB'   , 'クリスマスオーナメント青'),
-	('StarpieceAquarius'    , 'みずがめざのかけら'),
-	('ChristmasOrnamentC'   , 'クリスマスオーナメント金'),
-	('StarpiecePisces'      , 'うおざのかけら'),
-	('StarpieceAries'       , 'おひつじざのかけら'),
-	('JohnyParts'           , 'つうしんそうちのパーツ'),
-	('StarpieceTaurus'      , 'おうしざのかけら'),
-	('JohnnyQuestDust1'     , 'さびたパーツ'),
-	('StarpieceGemini'      , 'ふたござのかけら'),
-	('StarpieceCancer'      , 'かにざのかけら'),
-	('StarpieceLeo'         , 'ししざのかけら'),
-	('StarpieceVirgo'       , 'おとめざのかけら'),
-	('StarpieceLibra'       , 'てんびんざのかけら'),
-	('StarpieceScorpio'     , 'さそりざのかけら'),
-	('StarpieceSagittarius' , 'いてざのかけら'),
-	('YutaroWisp'           , 'ゆうたろうのたましい'),
-	('BdayCupcake'          , 'バースデーカップケーキ'),
-	('BottleRecipe'         , 'メッセージボトル'),
-	('PaperRecipe'          , 'レシピ'),
-	('DIYRecipeFence'       , 'レシピ：柵'),
-	('DIYRecipeFtr'         , 'レシピ：家具'),
-	('BookRecipe'           , 'レシピ本'),
-	('HowtoBookHair'        , 'ハウツー本：髪'),
-	('HowtoBookExpansion'   , 'ハウツー本：機能拡張'),
-	('MyDesignPro'          , 'マイデザインPRO'),
-	('PlaneTicket'          , 'こうくうけん'),
-	('TailorTicket'         , 'したてやひきかえけん'),
-	('BellExchangeTicket'   , 'ベルひきかえけん'),
-	('RollanTicket'         , 'ローランひきかえけん'),
-	('OreStone'             , '鉱石：いし'),
-	('OreClay'              , '鉱石：ねんど'),
-	('OreIron'              , '鉱石：鉄鉱石'),
-	('OreGold'              , '鉱石：金鉱石'),
-	('Shell0'               , 'アコヤガイのかいがら'),
-	('Oyster'               , 'カキのかいがら'),
-	('Shell1'               , 'ホラガイ'),
-	('Shell2'               , 'シャコガイ'),
-	('Shell3'               , 'サンゴ'),
-	('Shell4'               , 'ホネガイ'),
-	('Shell5'               , 'ホタテガイ'),
-	('Shell6'               , 'エビスガイ'),
-	('Shell7'               , 'タカラガイ'),
-	('Shell8'               , 'サンドダラー'),
-	('ShellSummer'          , 'なつのかいがら'),
-	('ShellFIshAsari'       , 'アサリ'),
-	('InsAmenbo'            , 'アメンボ'),
-	('InsAri'               , 'アリ'),
-	('InsOkera'             , 'オケラ'),
-	('InsKa'                , 'カ'),
-	('InsGa'                , 'ガ'),
-	('InsNishikiohtsu'      , 'ニシキオオツバメガ'),
-	('InsKumo'              , 'クモ'),
-	('InsMinomushi'         , 'ミノムシ'),
-	('InsGengorou'          , 'ゲンゴロウ'),
-	('InsKonohamushi'       , 'コノハムシ'),
-	('InsSasori'            , 'サソリ'),
-	('InsTaranchura'        , 'タランチュラ'),
-	('InsHachi'             , 'ハチ'),
-	('InsAburazemi'         , 'アブラゼミ'),
-	('InsKumazemi'          , 'クマゼミ'),
-	('InsTsukutsuku'        , 'ツクツクホウシ'),
-	('InsHigurashi'         , 'ヒグラシ'),
-	('InsMinminzemi'        , 'ミンミンゼミ'),
-	('InsSeminonukegara'    , 'セミのぬけがら'),
-	('InsDangomushi'        , 'ダンゴムシ'),
-	('InsMukade'            , 'ムカデ'),
-	('InsAosuji'            , 'アオスジアゲハ'),
-	('InsAkaeri'            , 'アカエリアゲハ'),
-	('InsAgehacho'          , 'アゲハチョウ'),
-	('InsArekisandora'      , 'アレクサンドラアゲハ'),
-	('InsOhkabamadara'      , 'オオカバマダラ'),
-	('InsOhgomamadara'      , 'オオゴマダラ'),
-	('InsOhmurasaki'        , 'オオムラサキ'),
-	('InsKarasuageha'       , 'カラスアゲハ'),
-	('InsMiirotateha'       , 'ミイロタテハ'),
-	('InsMorufuocho'        , 'モルフォチョウ'),
-	('InsMonkicho'          , 'モンキチョウ'),
-	('InsMonshirocho'       , 'モンシロチョウ'),
-	('InsAkiakane'          , 'アキアカネ'),
-	('InsOniyanma'          , 'オニヤンマ'),
-	('InsGinyanma'          , 'ギンヤンマ'),
-	('Itotonbo'             , 'イトトンボ'),
-	('InsNomi'              , 'ノミ'),
-	('InsHae'               , 'ハエ'),
-	('InsInago'             , 'イナゴ'),
-	('InsKirigirisu'        , 'キリギリス'),
-	('InsKohrogi'           , 'コオロギ'),
-	('InsShoryobatta'       , 'ショウリョウバッタ'),
-	('InsSuzumushi'         , 'スズムシ'),
-	('InsTonosamabatta'     , 'トノサマバッタ'),
-	('InsHanmyou'           , 'ハンミョウ'),
-	('InsFunamushi'         , 'フナムシ'),
-	('InsFunkorogashi'      , 'フンコロガシ'),
-	('InsHotaru'            , 'ホタル'),
-	('InsMitsubachi'        , 'ミツバチ'),
-	('InsYadokari'          , 'ヤドカリ'),
-	('InsGomadarakamikiri'  , 'カミキリムシ'),
-	('InsBaiorinmushi'      , 'バイオリンムシ'),
-	('InsRuriboshikamikiri' , 'ルリボシカミキリ'),
-	('InsOugononikuwa'      , 'オウゴンオニクワガタ'),
-	('InsOhkuwagata'        , 'オオクワガタ'),
-	('InsOhsenchikogane'    , 'コガネムシ'),
-	('InsKanabun'           , 'カナブン'),
-	('InsKabutomushi'       , 'カブトムシ'),
-	('InsKamemushi'         , 'カメムシ'),
-	('InsGirafanokogiri'    , 'ギラファノコギリクワ'),
-	('InsKohkasasu'         , 'コーカサスオオカブト'),
-	('InsGoraiasu'          , 'ゴライアスハナムグリ'),
-	('InsJinmenkamemushi'   , 'ジンメンカメムシ'),
-	('InsZoukabuto'         , 'ゾウカブト'),
-	('InsTamamushi'         , 'タマムシ'),
-	('InsNanafushi'         , 'ナナフシ'),
-	('InsNijiirokuwagata'   , 'ニジイロクワガタ'),
-	('InsNokogirikuwagata'  , 'ノコギリクワガタ'),
-	('InsPurachinakogane'   , 'プラチナコガネ'),
-	('InsHerakuresu'        , 'ヘラクレスオオカブト'),
-	('InsHousekizoumushi'   , 'ホウセキゾウムシ'),
-	('InsHosoakakuwagata'   , 'ホソアカクワガタ'),
-	('InsMiyamakuwagata'    , 'ミヤマクワガタ'),
-	('InsYonagunisan'       , 'ヨナグニサン'),
-	('InsKatatsumuri'       , 'カタツムリ'),
-	('InsKamakiri'          , 'カマキリ'),
-	('FtrInsectTagame'      , 'タガメ'),
-	('InsTentoumushi'       , 'テントウムシ'),
-	('InsHanakamakiri'      , 'ハナカマキリ'),
-	('FishAyu'              , 'アユ'),
-	('FishArowana'          , 'アロワナ'),
-	('FishYellowparch'      , 'イエローパーチ'),
-	('FishUgui'             , 'ウグイ'),
-	('FtrFishRanchu'        , 'ランチュウ'),
-	('FishAngelfish'        , 'エンゼルフィッシュ'),
-	('FishEndorikerii'      , 'エンドリケリー'),
-	('FishOikawa'           , 'オイカワ'),
-	('FishKamitsukigame'    , 'カミツキガメ'),
-	('FishGuppi'            , 'グッピー'),
-	('FishSyanhaigani'      , 'シャンハイガニ'),
-	('FishSuppon'           , 'スッポン'),
-	('FishTanago'           , 'タナゴ'),
-	('FishThirapia'         , 'ティラピア'),
-	('FishDemekin'          , 'デメキン'),
-	('FishDokutaafish'      , 'ドクターフィッシュ'),
-	('FishDojou'            , 'ドジョウ'),
-	('FishDolado'           , 'ドラド'),
-	('FishDonko'            , 'ドンコ'),
-	('FishNeontetora'       , 'ネオンテトラ'),
-	('FishPaiku'            , 'パイク'),
-	('FishPirania'          , 'ピラニア'),
-	('FishPiraruku'         , 'ピラルク'),
-	('FishFuna'             , 'フナ'),
-	('FishBlackbass'        , 'ブラックバス'),
-	('FishBlueguill'        , 'ブルーギル'),
-	('FishBeta'             , 'ベタ'),
-	('FishRainbowfish'      , 'レインボーフィッシュ'),
-	('FishWakasagi'         , 'ワカサギ'),
-	('FishItou'             , 'イトウ'),
-	('FishOoiwana'          , 'オオイワナ'),
-	('FishGoldenTorauto'    , 'ゴールデントラウト'),
-	('FishYamame'           , 'ヤマメ'),
-	('FishOtamajakusi'      , 'オタマジャクシ'),
-	('FishGa'               , 'ガー'),
-	('FishKaeru'            , 'カエル'),
-	('FishKingyo'           , 'キンギョ'),
-	('FishKoi'              , 'コイ'),
-	('FishZarigani'         , 'ザリガニ'),
-	('FishNamazu'           , 'ナマズ'),
-	('FishNishikigoi'       , 'ニシキゴイ'),
-	('FishMedaka'           , 'メダカ'),
-	('FishRaigyo'           , 'ライギョ'),
-	('FishKingsalmon'       , 'キングサーモン'),
-	('FishSake'             , 'サケ'),
-	('FishTyouzame'         , 'チョウザメ'),
-	('FishAji'              , 'アジ'),
-	('FishAntyobi'          , 'アンチョビ'),
-	('FishIka'              , 'イカ'),
-	('FishIshidai'          , 'イシダイ'),
-	('FishUtsubo'           , 'ウツボ'),
-	('FishEi'               , 'エイ'),
-	('FishKajiki'           , 'カジキ'),
-	('FishKarei'            , 'カレイ'),
-	('FishKumanomi'         , 'クマノミ'),
-	('FishKurione'          , 'クリオネ'),
-	('FishKobanzame'        , 'コバンザメ'),
-	('FishSame'             , 'サメ'),
-	('FishShiira'           , 'シイラ'),
-	('FishSirakansu'        , 'シーラカンス'),
-	('FishShumokuzame'      , 'シュモクザメ'),
-	('FishJinbeezame'       , 'ジンベエザメ'),
-	('FishSuzuki'           , 'スズキ'),
-	('FishTai'              , 'タイ'),
-	('FishTatsunootoshigo'  , 'タツノオトシゴ'),
-	('FishChouchouuo'       , 'チョウチョウウオ'),
-	('FishChouchinankou'    , 'チョウチンアンコウ'),
-	('FishDemenigisu'       , 'デメニギス'),
-	('FishNaporeonfish'     , 'ナポレオンフィッシュ'),
-	('FishNanyouhagi'       , 'ナンヨウハギ'),
-	('FishNokogirizame'     , 'ノコギリザメ'),
-	('FishHanahigeutubo'    , 'ハナヒゲウツボ'),
-	('FishHarisenbon'       , 'ハリセンボン'),
-	('FishHirame'           , 'ヒラメ'),
-	('FishFugu'             , 'フグ'),
-	('FishMaguro'           , 'マグロ'),
-	('FishManbou'           , 'マンボウ'),
-	('FishMinokasago'       , 'ミノカサゴ'),
-	('FishRyuuguunotukai'   , 'リュウグウノツカイ'),
-	('FishRouninaji'        , 'ロウニンアジ'),
-	('Can'                  , 'あきカン'),
-	('Boots'                , 'ながぐつ'),
-	('Tire'                 , 'タイヤ'),
-	('Fish54'               , 'ロブスター'),
-	('Wakame'               , 'ワカメ'),
-	('Umibudou'             , 'ウミブドウ'),
-	('Uni'                  , 'ウニ'),
-	('Fujitsubo'            , 'フジツボ'),
-	('Kaki'                 , 'カキ'),
-	('Sazae'                , 'サザエ'),
-	('Awabi'                , 'アワビ'),
-	('Akoyagai'             , 'アコヤガイ'),
-	('Hotate'               , 'ホタテ'),
-	('Isogintyaku'          , 'イソギンチャク'),
-	('Hitode'               , 'ヒトデ'),
-	('Namako'               , 'ナマコ'),
-	('Umiushi'              , 'ウミウシ'),
-	('Hiramushi'            , 'ヒラムシ'),
-	('Shako'                , 'シャコ'),
-	('Amaebi'               , 'アマエビ'),
-	('Kurumaebi'            , 'クルマエビ'),
-	('Iseebi'               , 'イセエビ'),
-	('Zuwaigani'            , 'ズワイガニ'),
-	('Tarabagani'           , 'タラバガニ'),
-	('Takaashigani'         , 'タカアシガニ'),
-	('Tako'                 , 'タコ'),
-	('Chinanago'            , 'チンアナゴ'),
-	('Oumugai'              , 'オウムガイ'),
-	('Kabutogani'           , 'カブトガニ'),
-	('Daiougusokumushi'     , 'ダイオウグソクムシ'),
-	('Hotaruika'            , 'ホタルイカ'),
-	('Gazami'               , 'ガザミ'),
-	('Koumoridako'          , 'コウモリダコ'),
-	('Shakogai'             , 'オオシャコガイ'),
-	('Hoya'                 , 'ホヤ'),
-	('Mizukurage'           , 'ミズクラゲ'),
-	('Mendako'              , 'メンダコ'),
-	('Paipuuni'             , 'パイプウニ'),
-	('Baigai'               , 'バイガイ'),
-	('Senjunamako'          , 'センジュナマコ'),
-	('DungenessCrab'        , 'ダンジネスクラブ'),
-	('Kairoudouketsu'       , 'カイロウドウケツ'),
-	('Muhrugai'             , 'ムールガイ'),
-	('Apple'                , 'リンゴ'),
-	('Orange'               , 'オレンジ'),
-	('Pear'                 , 'ナシ'),
-	('Peach'                , 'モモ'),
-	('Cherry'               , 'さくらんぼ'),
-	('Coconut'              , 'ヤシの実'),
-	('BanbooShoot'          , 'たけのこ'),
-	('Kabu'                 , 'カブ'),
-	('BadKabu'              , 'くさったカブ'),
-	('Mush0'                , 'りっぱなキノコ'),
-	('Mush1'                , 'まるいキノコ'),
-	('Mush2'                , 'ほそいキノコ'),
-	('Mush3'                , 'ひらたいキノコ'),
-	('Mush4'                , 'めずらしいキノコ'),
-	('DIYBranch'            , 'きのえだ'),
-	('DIYPinecone'          , 'まつぼっくり'),
-	('DIYAcorn'             , 'どんぐり'),
-	('DIYWoodNormal'        , 'もくざい'),
-	('DIYWoodSoft'          , 'やわらかいもくざい'),
-	('DIYWoodHard'          , 'かたいもくざい'),
-	('DIYBamboo'            , '竹材'),
-	('DIYBambooSpring'      , 'はるのわかたけ'),
-	('SeedPaperbag0'        , 'あかい種袋'),
-	('SeedPaperbag1'        , 'しろい種袋'),
-	('SeedPaperbag2'        , 'きいろい種袋'),
-	('SeedPaperbag3'        , 'オレンジの種袋'),
-	('Rose0'                , 'あかいバラ'),
-	('Rose1'                , 'しろいバラ'),
-	('Rose2'                , 'きいろいバラ'),
-	('Rose3'                , 'ピンクのバラ'),
-	('Rose4'                , 'オレンジのバラ'),
-	('Rose5'                , 'むらさきのバラ'),
-	('Rose6'                , 'くろいバラ'),
-	('Rose7'                , 'あおいバラ'),
-	('GoldenRose'           , '金のバラ'),
-	('Cosmos0'              , 'しろいコスモス'),
-	('Cosmos1'              , 'あかいコスモス'),
-	('Cosmos2'              , 'きいろいコスモス'),
-	('Cosmos3'              , 'ピンクのコスモス'),
-	('Cosmos4'              , 'オレンジのコスモス'),
-	('Cosmos5'              , 'くろいコスモス'),
-	('Turip0'               , 'あかいチューリップ'),
-	('Turip1'               , 'しろいチューリップ'),
-	('Turip2'               , 'きいろいチューリップ'),
-	('Turip3'               , 'ピンクのチューリップ'),
-	('Turip4'               , 'むらさきチューリップ'),
-	('Turip5'               , 'くろいチューリップ'),
-	('Pansi0'               , 'しろいパンジー'),
-	('Turip6'               , 'オレンジチューリップ'),
-	('Pansi1'               , 'きいろいパンジー'),
-	('Pansi2'               , 'あかいパンジー'),
-	('Pansi3'               , 'むらさきのパンジー'),
-	('Pansi4'               , 'あかきいろパンジー'),
-	('Pansi5'               , 'あおいパンジー'),
-	('Yuri0'                , 'しろいユリ'),
-	('Yuri1'                , 'きいろいユリ'),
-	('Yuri2'                , 'あかいユリ'),
-	('Yuri3'                , 'オレンジのユリ'),
-	('Yuri4'                , 'ピンクのユリ'),
-	('Yuri5'                , 'くろいユリ'),
-	('Anemone0'             , 'しろいアネモネ'),
-	('Anemone1'             , 'あかいアネモネ'),
-	('Anemone2'             , 'オレンジのアネモネ'),
-	('Anemone3'             , 'ピンクのアネモネ'),
-	('Anemone4'             , 'むらさきのアネモネ'),
-	('Anemone5'             , 'あおいアネモネ'),
-	('Hyacinth0'            , 'しろいヒヤシンス'),
-	('Hyacinth1'            , 'きいろいヒヤシンス'),
-	('Hyacinth2'            , 'あかいヒヤシンス'),
-	('Hyacinth3'            , 'オレンジのヒヤシンス'),
-	('Hyacinth4'            , 'ピンクのヒヤシンス'),
-	('Hyacinth5'            , 'むらさきのヒヤシンス'),
-	('Hyacinth6'            , 'あおいヒヤシンス'),
-	('Mum0'                 , 'しろいキク'),
-	('Mum1'                 , 'きいろいキク'),
-	('Mum2'                 , 'あかいキク'),
-	('Mum3'                 , 'ピンクのキク'),
-	('Mum4'                 , 'みどりのキク'),
-	('Mum5'                 , 'むらさきのキク'),
-	('PltRose0'             , 'あかいバラのかぶ'),
-	('PltRose1'             , 'しろいバラのかぶ'),
-	('PltRose2'             , 'きいろいバラのかぶ'),
-	('PltRose3'             , 'ピンクのバラのかぶ'),
-	('PltRose4'             , 'オレンジのバラのかぶ'),
-	('PltRose5'             , 'むらさきのバラのかぶ'),
-	('PltRose6'             , 'くろいバラのかぶ'),
-	('PltRose7'             , 'あおいバラのかぶ'),
-	('PltGoldenRose'        , '金のバラのかぶ'),
-	('PltCosmos0'           , 'しろいコスモスのかぶ'),
-	('PltCosmos1'           , 'あかいコスモスのかぶ'),
-	('PltCosmos2'           , 'きいろいコスモスのかぶ'),
-	('PltCosmos3'           , 'ピンクのコスモスのかぶ'),
-	('PltCosmos4'           , 'オレンジのコスモスのかぶ'),
-	('PltCosmos5'           , 'くろいコスモスのかぶ'),
-	('PltTurip0'            , 'あかいチューリップのかぶ'),
-	('PltTurip1'            , 'しろいチューリップのかぶ'),
-	('PltTurip2'            , 'きいろいチューリップのかぶ'),
-	('PltTurip3'            , 'ピンクのチューリップのかぶ'),
-	('PltTurip4'            , 'むらさきチューリップのかぶ'),
-	('PltTurip5'            , 'くろいチューリップのかぶ'),
-	('PltTurip6'            , 'オレンジのチューリップのかぶ'),
-	('PltPansi0'            , 'しろいパンジーのかぶ'),
-	('PltPansi1'            , 'きいろいパンジーのかぶ'),
-	('PltPansi2'            , 'あかいパンジーのかぶ'),
-	('PltPansi3'            , 'むらさきのパンジーのかぶ'),
-	('PltPansi4'            , 'あかきいろパンジーのかぶ'),
-	('PltPansi5'            , 'あおいパンジーのかぶ'),
-	('PltYuri0'             , 'しろいユリのかぶ'),
-	('PltYuri1'             , 'きいろいユリのかぶ'),
-	('PltYuri2'             , 'あかいユリのかぶ'),
-	('PltYuri3'             , 'オレンジのユリのかぶ'),
-	('PltYuri4'             , 'ピンクのユリのかぶ'),
-	('PltYuri5'             , 'くろいユリのかぶ'),
-	('PltAnemone0'          , 'しろいアネモネのかぶ'),
-	('PltAnemone1'          , 'あかいアネモネのかぶ'),
-	('PltAnemone2'          , 'オレンジのアネモネのかぶ'),
-	('PltAnemone3'          , 'ピンクのアネモネのかぶ'),
-	('PltAnemone4'          , 'むらさきのアネモネのかぶ'),
-	('PltAnemone5'          , 'あおいアネモネのかぶ'),
-	('PltHyacinth0'         , 'しろいヒヤシンスのかぶ'),
-	('PltHyacinth1'         , 'きいろいヒヤシンスのかぶ'),
-	('PltHyacinth2'         , 'あかいヒヤシンスのかぶ'),
-	('PltHyacinth3'         , 'オレンジのヒヤシンスのかぶ'),
-	('PltHyacinth4'         , 'ピンクのヒヤシンスのかぶ'),
-	('PltHyacinth5'         , 'むらさきのヒヤシンスのかぶ'),
-	('PltHyacinth6'         , 'あおいヒヤシンスのかぶ'),
-	('PltMum0'              , 'しろいキクのかぶ'),
-	('PltMum1'              , 'きいろいキクのかぶ'),
-	('PltMum2'              , 'あかいキクのかぶ'),
-	('PltMum3'              , 'ピンクのキクのかぶ'),
-	('PltMum4'              , 'みどりのキクのかぶ'),
-	('PltMum5'              , 'むらさきのキクのかぶ'),
-	('PltSuzuran'           , 'スズランのかぶ'),
-	('SeedlingBush'         , '低木の苗'),
-	('Seedling'             , '木の苗'),
-	('PltOak'               , '広葉樹'),
-	('SeedlingConifer'      , '針葉樹の苗'),
-	('PltConifer'           , '針葉樹'),
-	('PltBamboo'            , '竹'),
-	('PltPalm'              , 'ヤシの木'),
-	('PltApple'             , 'リンゴの木'),
-	('PltOrange'            , 'オレンジの木'),
-	('PltPear'              , 'ナシの木'),
-	('PltPeach'             , 'モモの木'),
-	('PltCherry'            , 'さくらんぼの木'),
-	('PltMoney'             , '金のなる木'),
-	('Weed'                 , 'ざっそう'),
-	('PltAzaleaWhite'       , 'しろいツツジのかぶ'),
-	('PltAzaleaPink'        , 'ピンクのツツジのかぶ'),
-	('PltHydrangeaPink'     , 'ピンクのアジサイのかぶ'),
-	('PltHydrangeaBlue'     , 'あおいアジサイのかぶ'),
-	('PltHibiscusRed'       , 'あかいハイビスカスのかぶ'),
-	('PltHibiscusYellow'    , 'きいろいハイビスカスのかぶ'),
-	('PltBushOsmathusYellow', 'きいろいキンモクセイのかぶ'),
-	('PltBushOsmathusOrange', 'オレンジキンモクセイのかぶ'),
-	('PltBushCamelliaRed'   , 'あかいツバキのかぶ'),
-	('PltBushCamelliaPink'  , 'ピンクツバキのかぶ'),
-	('PltHolly'             , 'ヒイラギのかぶ'),
-	('EggGround'            , 'じめんのたまご'),
-	('EggRock'              , 'いわのたまご'),
-	('EggLeaf'              , 'はっぱのたまご'),
-	('EggForest'            , 'もりのたまご'),
-	('EggSky'               , 'そらとぶたまご'),
-	('EggFish'              , 'サカナのたまご'),
-	('MessageBottleEgg'     , 'たまごのメッセージボトル'),
-	('Love'                 , 'あいのけっしょう'),
-	('Pearl'                , 'しんじゅ'),
-	('PirateQuest'          , 'むせんき'),
+	('Leaf'                , '葉っぱ'),
+	('LeafDesign'          , '葉っぱ（マイデザイン）'),
+	('Wall'                , '壁紙'),
+	('Floor'               , '床板'),
+	('Carpet'              , 'ラグ'),
+	('Tops'                , '装備品：トップス'),
+	('Bottoms'             , '装備品：ボトムス'),
+	('Onepiece'            , '装備品：ワンピース'),
+	('Socks'               , '装備品：靴下'),
+	('Shoes'               , '装備品：靴'),
+	('Cap'                 , '装備品：帽子'),
+	('Wig'                 , '装備品：かぶりもの'),
+	('Glasses'             , '装備品：メガネ'),
+	('Bag'                 , '装備品：バッグ'),
+	('Umbrella'            , '装備品：かさ'),
+	('Fishingrod'          , 'つりざお'),
+	('GFishingrod'         , 'つりざお：金'),
+	('Net'                 , 'あみ'),
+	('GNet'                , 'あみ：金'),
+	('Scoop'               , 'スコップ'),
+	('Gscoop'              , 'スコップ：金'),
+	('Axe'                 , 'オノ'),
+	('GAxe'                , 'オノ：金'),
+	('AxeDull'             , 'オノ（切れない）'),
+	('Watering'            , 'じょうろ'),
+	('GWatering'           , 'じょうろ：金'),
+	('Pachinko'            , 'パチンコ'),
+	('GPachinko'           , 'パチンコ：金'),
+	('ToolChangeStick'     , '変身ステッキ'),
+	('ToolRiverJump'       , '川越えツール'),
+	('ToolLadder'          , 'ハシゴ'),
+	('Bridge'              , '橋'),
+	('Slope'               , '坂'),
+	('ToolGroundMaker'     , '道造成キット'),
+	('ToolRiverMaker'      , '川造成キット'),
+	('ToolCliffMaker'      , '崖造成キット'),
+	('Helmet'              , 'たぬき開発ヘルメット'),
+	('Fence'               , '柵'),
+	('Post'                , 'ポスト'),
+	('Tent'                , 'ハウジングキット：黄'),
+	('TentWhite'           , 'ハウジングキット：白'),
+	('Cracker'             , 'クラッカー'),
+	('Ocarina'             , 'オカリナ'),
+	('Panflute'            , 'パンフルート'),
+	('Tambourine'          , 'タンバリン'),
+	('GlowStick'           , 'スティックライト'),
+	('Uchiwa'              , 'うちわ'),
+	('Music'               , 'ミュージック'),
+	('Fossil'              , '化石'),
+	('FossilJ'             , '鑑定済化石'),
+	('SeedPitfall'         , 'おとしあなのタネ'),
+	('RemakeKit'           , 'リメイクキット'),
+	('SmartphoneCase'      , 'スマホケース'),
+	('Medicine'            , 'おくすり'),
+	('Timer'               , 'タイマー'),
+	('Honeycomb'           , 'ハチの巣'),
+	('FishBait'            , 'サカナの撒き餌'),
+	('Cardboard'           , 'ダンボール'),
+	('Present'             , 'プレゼントBOX'),
+	('Present2'            , 'プレゼントBOX：クエスト用'),
+	('WrappingPaper'       , 'ラッピング済みアイテム'),
+	('WPaperYellow'        , 'ラッピングペーパー：イエロー'),
+	('WPaperPink'          , 'ラッピングペーパー：ピンク'),
+	('WPaperOrange'        , 'ラッピングペーパー：オレンジ'),
+	('WPaperLightGreen'    , 'ラッピングペーパー：キミドリ'),
+	('WPaperGreen'         , 'ラッピングペーパー：ミドリ'),
+	('WPaperMint'          , 'ラッピングペーパー：ミント'),
+	('WPaperLightBlue'     , 'ラッピングペーパー：ライトブルー'),
+	('WPaperPurple'        , 'ラッピングペーパー：パープル'),
+	('WPaperNavy'          , 'ラッピングペーパー：ネイビー'),
+	('WPaperBlue'          , 'ラッピングペーパー：ブルー'),
+	('WPaperWhite'         , 'ラッピングペーパー：ホワイト'),
+	('WPaperRed'           , 'ラッピングペーパー：レッド'),
+	('WPaperGold'          , 'ラッピングペーパー：ゴールド'),
+	('WPaperBrown'         , 'ラッピングペーパー：ブラウン'),
+	('WPaperGray'          , 'ラッピングペーパー：グレー'),
+	('WPaperBlack'         , 'ラッピングペーパー：ブラック'),
+	('WBagYellow'          , 'ラッピング袋：イエロー'),
+	('WBagPink'            , 'ラッピング袋：ピンク'),
+	('WBagOrange'          , 'ラッピング袋：オレンジ'),
+	('WBagLightGreen'      , 'ラッピング袋：キミドリ'),
+	('WBagGreen'           , 'ラッピング袋：ミドリ'),
+	('WBagMint'            , 'ラッピング袋：ミント'),
+	('WBagLightBlue'       , 'ラッピング袋：ライトブルー'),
+	('WBagPurple'          , 'ラッピング袋：パープル'),
+	('WBagNavy'            , 'ラッピング袋：ネイビー'),
+	('WBagBlue'            , 'ラッピング袋：ブルー'),
+	('WBagWhite'           , 'ラッピング袋：ホワイト'),
+	('WBagRed'             , 'ラッピング袋：レッド'),
+	('WBagGold'            , 'ラッピング袋：ゴールド'),
+	('WBagBrown'           , 'ラッピング袋：ブラウン'),
+	('WBagGary'            , 'ラッピング袋：グレー'),
+	('WBagBlack'           , 'ラッピング袋：ブラック'),
+	('YellowPaperBag'      , '汎用紙袋'),
+	('Coin'                , 'ベル：コイン'),
+	('MoneyBag010'         , 'ベル：金袋小'),
+	('MoneyBag039'         , 'ベル：金袋中'),
+	('MoneyBag069'         , 'ベル：金袋大'),
+	('Book'                , '落とし物：本'),
+	('LostQuestPorch'      , '落とし物：巾着'),
+	('LostQuestMemo'       , '落とし物：本（かきもの）'),
+	('Porch'               , '落とし物：ポーチ'),
+	('OddGlove'            , '落とし物：片方の手袋'),
+	('AutumnLeaf'          , 'もみじのはっぱ'),
+	('SnowCrystal'         , '雪の結晶'),
+	('SnowCrystalLarge'    , '雪の大結晶'),
+	('Sakurapetal'         , 'さくらのはなびら'),
+	('StarPiece'           , 'ほしのかけら'),
+	('StarPieceRare'       , 'ほしのかけら：レア'),
+	('StarPieceSeason'     , 'xほしのかけら：季節'),
+	('ChristmasOrnamentA'  , 'クリスマスオーナメント赤'),
+	('StarpieceCapricornus', 'やぎざのかけら'),
+	('ChristmasOrnamentB'  , 'クリスマスオーナメント青'),
+	('StarpieceAquarius'   , 'みずがめざのかけら'),
+	('ChristmasOrnamentC'  , 'クリスマスオーナメント金'),
+	('StarpiecePisces'     , 'うおざのかけら'),
+	('StarpieceAries'      , 'おひつじざのかけら'),
+	('JohnyParts'          , 'つうしんそうちのパーツ'),
+	('StarpieceTaurus'     , 'おうしざのかけら'),
+	('JohnnyQuestDust1'    , 'さびたパーツ'),
+	('StarpieceGemini'     , 'ふたござのかけら'),
+	('StarpieceCancer'     , 'かにざのかけら'),
+	('StarpieceLeo'        , 'ししざのかけら'),
+	('StarpieceVirgo'      , 'おとめざのかけら'),
+	('StarpieceLibra'      , 'てんびんざのかけら'),
+	('StarpieceScorpio'    , 'さそりざのかけら'),
+	('StarpieceSagittarius', 'いてざのかけら'),
+	('YutaroWisp'          , 'ゆうたろうのたましい'),
+	('BdayCupcake'         , 'バースデーカップケーキ'),
+	('BottleRecipe'        , 'メッセージボトル'),
+	('PaperRecipe'         , 'レシピ'),
+	('DIYRecipeFence'      , 'レシピ：柵'),
+	('DIYRecipeFtr'        , 'レシピ：家具'),
+	('BookRecipe'          , 'レシピ本'),
+	('HowtoBookHair'       , 'ハウツー本：髪'),
+	('HowtoBookExpansion'  , 'ハウツー本：機能拡張'),
+	('MyDesignPro'         , 'マイデザインPRO'),
+	('PlaneTicket'         , 'こうくうけん'),
+	('TailorTicket'        , 'したてやひきかえけん'),
+	('BellExchangeTicket'  , 'ベルひきかえけん'),
+	('RollanTicket'        , 'ローランひきかえけん'),
+	('OreStone'            , '鉱石：いし'),
+	('OreClay'             , '鉱石：ねんど'),
+	('OreIron'             , '鉱石：鉄鉱石'),
+	('OreGold'             , '鉱石：金鉱石'),
+	('Shell0'              , 'アコヤガイのかいがら'),
+	('Oyster'              , 'カキのかいがら'),
+	('Shell1'              , 'ホラガイ'),
+	('Shell2'              , 'シャコガイ'),
+	('Shell3'              , 'サンゴ'),
+	('Shell4'              , 'ホネガイ'),
+	('Shell5'              , 'ホタテガイ'),
+	('Shell6'              , 'エビスガイ'),
+	('Shell7'              , 'タカラガイ'),
+	('Shell8'              , 'サンドダラー'),
+	('ShellSummer'         , 'なつのかいがら'),
+	('ShellFIshAsari'      , 'アサリ'),
+	('InsAmenbo'           , 'アメンボ'),
+	('InsAri'              , 'アリ'),
+	('InsOkera'            , 'オケラ'),
+	('InsKa'               , 'カ'),
+	('InsGa'               , 'ガ'),
+	('InsNishikiohtsu'     , 'ニシキオオツバメガ'),
+	('InsKumo'             , 'クモ'),
+	('InsMinomushi'        , 'ミノムシ'),
+	('InsGengorou'         , 'ゲンゴロウ'),
+	('InsKonohamushi'      , 'コノハムシ'),
+	('InsSasori'           , 'サソリ'),
+	('InsTaranchura'       , 'タランチュラ'),
+	('InsHachi'            , 'ハチ'),
+	('InsAburazemi'        , 'アブラゼミ'),
+	('InsKumazemi'         , 'クマゼミ'),
+	('InsTsukutsuku'       , 'ツクツクホウシ'),
+	('InsHigurashi'        , 'ヒグラシ'),
+	('InsMinminzemi'       , 'ミンミンゼミ'),
+	('InsSeminonukegara'   , 'セミのぬけがら'),
+	('InsDangomushi'       , 'ダンゴムシ'),
+	('InsMukade'           , 'ムカデ'),
+	('InsAosuji'           , 'アオスジアゲハ'),
+	('InsAkaeri'           , 'アカエリアゲハ'),
+	('InsAgehacho'         , 'アゲハチョウ'),
+	('InsArekisandora'     , 'アレクサンドラアゲハ'),
+	('InsOhkabamadara'     , 'オオカバマダラ'),
+	('InsOhgomamadara'     , 'オオゴマダラ'),
+	('InsOhmurasaki'       , 'オオムラサキ'),
+	('InsKarasuageha'      , 'カラスアゲハ'),
+	('InsMiirotateha'      , 'ミイロタテハ'),
+	('InsMorufuocho'       , 'モルフォチョウ'),
+	('InsMonkicho'         , 'モンキチョウ'),
+	('InsMonshirocho'      , 'モンシロチョウ'),
+	('InsAkiakane'         , 'アキアカネ'),
+	('InsOniyanma'         , 'オニヤンマ'),
+	('InsGinyanma'         , 'ギンヤンマ'),
+	('Itotonbo'            , 'イトトンボ'),
+	('InsNomi'             , 'ノミ'),
+	('InsHae'              , 'ハエ'),
+	('InsInago'            , 'イナゴ'),
+	('InsKirigirisu'       , 'キリギリス'),
+	('InsKohrogi'          , 'コオロギ'),
+	('InsShoryobatta'      , 'ショウリョウバッタ'),
+	('InsSuzumushi'        , 'スズムシ'),
+	('InsTonosamabatta'    , 'トノサマバッタ'),
+	('InsHanmyou'          , 'ハンミョウ'),
+	('InsFunamushi'        , 'フナムシ'),
+	('InsFunkorogashi'     , 'フンコロガシ'),
+	('InsHotaru'           , 'ホタル'),
+	('InsMitsubachi'       , 'ミツバチ'),
+	('InsYadokari'         , 'ヤドカリ'),
+	('InsGomadarakamikiri' , 'カミキリムシ'),
+	('InsBaiorinmushi'     , 'バイオリンムシ'),
+	('InsRuriboshikamikiri', 'ルリボシカミキリ'),
+	('InsOugononikuwa'     , 'オウゴンオニクワガタ'),
+	('InsOhkuwagata'       , 'オオクワガタ'),
+	('InsOhsenchikogane'   , 'コガネムシ'),
+	('InsKanabun'          , 'カナブン'),
+	('InsKabutomushi'      , 'カブトムシ'),
+	('InsKamemushi'        , 'カメムシ'),
+	('InsGirafanokogiri'   , 'ギラファノコギリクワ'),
+	('InsKohkasasu'        , 'コーカサスオオカブト'),
+	('InsGoraiasu'         , 'ゴライアスハナムグリ'),
+	('InsJinmenkamemushi'  , 'ジンメンカメムシ'),
+	('InsZoukabuto'        , 'ゾウカブト'),
+	('InsTamamushi'        , 'タマムシ'),
+	('InsNanafushi'        , 'ナナフシ'),
+	('InsNijiirokuwagata'  , 'ニジイロクワガタ'),
+	('InsNokogirikuwagata' , 'ノコギリクワガタ'),
+	('InsPurachinakogane'  , 'プラチナコガネ'),
+	('InsHerakuresu'       , 'ヘラクレスオオカブト'),
+	('InsHousekizoumushi'  , 'ホウセキゾウムシ'),
+	('InsHosoakakuwagata'  , 'ホソアカクワガタ'),
+	('InsMiyamakuwagata'   , 'ミヤマクワガタ'),
+	('InsYonagunisan'      , 'ヨナグニサン'),
+	('InsKatatsumuri'      , 'カタツムリ'),
+	('InsKamakiri'         , 'カマキリ'),
+	('FtrInsectTagame'     , 'タガメ'),
+	('InsTentoumushi'      , 'テントウムシ'),
+	('InsHanakamakiri'     , 'ハナカマキリ'),
+	('FishAyu'             , 'アユ'),
+	('FishArowana'         , 'アロワナ'),
+	('FishYellowparch'     , 'イエローパーチ'),
+	('FishUgui'            , 'ウグイ'),
+	('FtrFishRanchu'       , 'ランチュウ'),
+	('FishAngelfish'       , 'エンゼルフィッシュ'),
+	('FishEndorikerii'     , 'エンドリケリー'),
+	('FishOikawa'          , 'オイカワ'),
+	('FishKamitsukigame'   , 'カミツキガメ'),
+	('FishGuppi'           , 'グッピー'),
+	('FishSyanhaigani'     , 'シャンハイガニ'),
+	('FishSuppon'          , 'スッポン'),
+	('FishTanago'          , 'タナゴ'),
+	('FishThirapia'        , 'ティラピア'),
+	('FishDemekin'         , 'デメキン'),
+	('FishDokutaafish'     , 'ドクターフィッシュ'),
+	('FishDojou'           , 'ドジョウ'),
+	('FishDolado'          , 'ドラド'),
+	('FishDonko'           , 'ドンコ'),
+	('FishNeontetora'      , 'ネオンテトラ'),
+	('FishPaiku'           , 'パイク'),
+	('FishPirania'         , 'ピラニア'),
+	('FishPiraruku'        , 'ピラルク'),
+	('FishFuna'            , 'フナ'),
+	('FishBlackbass'       , 'ブラックバス'),
+	('FishBlueguill'       , 'ブルーギル'),
+	('FishBeta'            , 'ベタ'),
+	('FishRainbowfish'     , 'レインボーフィッシュ'),
+	('FishWakasagi'        , 'ワカサギ'),
+	('FishItou'            , 'イトウ'),
+	('FishOoiwana'         , 'オオイワナ'),
+	('FishGoldenTorauto'   , 'ゴールデントラウト'),
+	('FishYamame'          , 'ヤマメ'),
+	('FishOtamajakusi'     , 'オタマジャクシ'),
+	('FishGa'              , 'ガー'),
+	('FishKaeru'           , 'カエル'),
+	('FishKingyo'          , 'キンギョ'),
+	('FishKoi'             , 'コイ'),
+	('FishZarigani'        , 'ザリガニ'),
+	('FishNamazu'          , 'ナマズ'),
+	('FishNishikigoi'      , 'ニシキゴイ'),
+	('FishMedaka'          , 'メダカ'),
+	('FishRaigyo'          , 'ライギョ'),
+	('FishKingsalmon'      , 'キングサーモン'),
+	('FishSake'            , 'サケ'),
+	('FishTyouzame'        , 'チョウザメ'),
+	('FishAji'             , 'アジ'),
+	('FishAntyobi'         , 'アンチョビ'),
+	('FishIka'             , 'イカ'),
+	('FishIshidai'         , 'イシダイ'),
+	('FishUtsubo'          , 'ウツボ'),
+	('FishEi'              , 'エイ'),
+	('FishKajiki'          , 'カジキ'),
+	('FishKarei'           , 'カレイ'),
+	('FishKumanomi'        , 'クマノミ'),
+	('FishKurione'         , 'クリオネ'),
+	('FishKobanzame'       , 'コバンザメ'),
+	('FishSame'            , 'サメ'),
+	('FishShiira'          , 'シイラ'),
+	('FishSirakansu'       , 'シーラカンス'),
+	('FishShumokuzame'     , 'シュモクザメ'),
+	('FishJinbeezame'      , 'ジンベエザメ'),
+	('FishSuzuki'          , 'スズキ'),
+	('FishTai'             , 'タイ'),
+	('FishTatsunootoshigo' , 'タツノオトシゴ'),
+	('FishChouchouuo'      , 'チョウチョウウオ'),
+	('FishChouchinankou'   , 'チョウチンアンコウ'),
+	('FishDemenigisu'      , 'デメニギス'),
+	('FishNaporeonfish'    , 'ナポレオンフィッシュ'),
+	('FishNanyouhagi'      , 'ナンヨウハギ'),
+	('FishNokogirizame'    , 'ノコギリザメ'),
+	('FishHanahigeutubo'   , 'ハナヒゲウツボ'),
+	('FishHarisenbon'      , 'ハリセンボン'),
+	('FishHirame'          , 'ヒラメ'),
+	('FishFugu'            , 'フグ'),
+	('FishMaguro'          , 'マグロ'),
+	('FishManbou'          , 'マンボウ'),
+	('FishMinokasago'      , 'ミノカサゴ'),
+	('FishRyuuguunotukai'  , 'リュウグウノツカイ'),
+	('FishRouninaji'       , 'ロウニンアジ'),
+	('Can'                 , 'あきカン'),
+	('Boots'               , 'ながぐつ'),
+	('Tire'                , 'タイヤ'),
+	('Apple'               , 'リンゴ'),
+	('Orange'              , 'オレンジ'),
+	('Pear'                , 'ナシ'),
+	('Peach'               , 'モモ'),
+	('Cherry'              , 'さくらんぼ'),
+	('Coconut'             , 'ヤシの実'),
+	('BanbooShoot'         , 'たけのこ'),
+	('Kabu'                , 'カブ'),
+	('BadKabu'             , 'くさったカブ'),
+	('SquashOrange'        , 'オレンジのカボチャ'),
+	('SquashYellow'        , 'きいろいカボチャ'),
+	('SquashGreen'         , 'みどりのカボチャ'),
+	('SquashWhite'         , 'しろいカボチャ'),
+	('Mush0'               , 'りっぱなキノコ'),
+	('Mush1'               , 'まるいキノコ'),
+	('Mush2'               , 'ほそいキノコ'),
+	('Mush3'               , 'ひらたいキノコ'),
+	('Mush4'               , 'めずらしいキノコ'),
+	('DIYBranch'           , 'きのえだ'),
+	('DIYPinecone'         , 'まつぼっくり'),
+	('DIYAcorn'            , 'どんぐり'),
+	('DIYWoodNormal'       , 'もくざい'),
+	('DIYWoodSoft'         , 'やわらかいもくざい'),
+	('DIYWoodHard'         , 'かたいもくざい'),
+	('DIYBamboo'           , '竹材'),
+	('DIYBambooSpring'     , 'はるのわかたけ'),
+	('SeedPaperbag0'       , 'あかい種袋'),
+	('SeedPaperbag1'       , 'しろい種袋'),
+	('SeedPaperbag2'       , 'きいろい種袋'),
+	('SeedPaperbag3'       , 'オレンジの種袋'),
+	('Rose0'               , 'あかいバラ'),
+	('Rose1'               , 'しろいバラ'),
+	('Rose2'               , 'きいろいバラ'),
+	('Rose3'               , 'ピンクのバラ'),
+	('Rose4'               , 'オレンジのバラ'),
+	('Rose5'               , 'むらさきのバラ'),
+	('Rose6'               , 'くろいバラ'),
+	('Rose7'               , 'あおいバラ'),
+	('GoldenRose'          , '金のバラ'),
+	('Cosmos0'             , 'しろいコスモス'),
+	('Cosmos1'             , 'あかいコスモス'),
+	('Cosmos2'             , 'きいろいコスモス'),
+	('Cosmos3'             , 'ピンクのコスモス'),
+	('Cosmos4'             , 'オレンジのコスモス'),
+	('Cosmos5'             , 'くろいコスモス'),
+	('Turip0'              , 'あかいチューリップ'),
+	('Turip1'              , 'しろいチューリップ'),
+	('Turip2'              , 'きいろいチューリップ'),
+	('Turip3'              , 'ピンクのチューリップ'),
+	('Turip4'              , 'むらさきチューリップ'),
+	('Turip5'              , 'くろいチューリップ'),
+	('Pansi0'              , 'しろいパンジー'),
+	('Turip6'              , 'オレンジチューリップ'),
+	('Pansi1'              , 'きいろいパンジー'),
+	('Pansi2'              , 'あかいパンジー'),
+	('Pansi3'              , 'むらさきのパンジー'),
+	('Pansi4'              , 'あかきいろパンジー'),
+	('Pansi5'              , 'あおいパンジー'),
+	('Yuri0'               , 'しろいユリ'),
+	('Yuri1'               , 'きいろいユリ'),
+	('Yuri2'               , 'あかいユリ'),
+	('Yuri3'               , 'オレンジのユリ'),
+	('Yuri4'               , 'ピンクのユリ'),
+	('Yuri5'               , 'くろいユリ'),
+	('Anemone0'            , 'しろいアネモネ'),
+	('Anemone1'            , 'あかいアネモネ'),
+	('Anemone2'            , 'オレンジのアネモネ'),
+	('Anemone3'            , 'ピンクのアネモネ'),
+	('Anemone4'            , 'むらさきのアネモネ'),
+	('Anemone5'            , 'あおいアネモネ'),
+	('Hyacinth0'           , 'しろいヒヤシンス'),
+	('Hyacinth1'           , 'きいろいヒヤシンス'),
+	('Hyacinth2'           , 'あかいヒヤシンス'),
+	('Hyacinth3'           , 'オレンジのヒヤシンス'),
+	('Hyacinth4'           , 'ピンクのヒヤシンス'),
+	('Hyacinth5'           , 'むらさきのヒヤシンス'),
+	('Hyacinth6'           , 'あおいヒヤシンス'),
+	('Mum0'                , 'しろいキク'),
+	('Mum1'                , 'きいろいキク'),
+	('Mum2'                , 'あかいキク'),
+	('Mum3'                , 'ピンクのキク'),
+	('Mum4'                , 'みどりのキク'),
+	('Mum5'                , 'むらさきのキク'),
+	('PltRose0'            , 'あかいバラのかぶ'),
+	('PltRose1'            , 'しろいバラのかぶ'),
+	('PltRose2'            , 'きいろいバラのかぶ'),
+	('PltRose3'            , 'ピンクのバラのかぶ'),
+	('PltRose4'            , 'オレンジのバラのかぶ'),
+	('PltRose5'            , 'むらさきのバラのかぶ'),
+	('PltRose6'            , 'くろいバラのかぶ'),
+	('PltRose7'            , 'あおいバラのかぶ'),
+	('PltGoldenRose'       , '金のバラのかぶ'),
+	('PltCosmos0'          , 'しろいコスモスのかぶ'),
+	('PltCosmos1'          , 'あかいコスモスのかぶ'),
+	('PltCosmos2'          , 'きいろいコスモスのかぶ'),
+	('PltCosmos3'          , 'ピンクのコスモスのかぶ'),
+	('PltCosmos4'          , 'オレンジのコスモスのかぶ'),
+	('PltCosmos5'          , 'くろいコスモスのかぶ'),
+	('PltTurip0'           , 'あかいチューリップのかぶ'),
+	('PltTurip1'           , 'しろいチューリップのかぶ'),
+	('PltTurip2'           , 'きいろいチューリップのかぶ'),
+	('PltTurip3'           , 'ピンクのチューリップのかぶ'),
+	('PltTurip4'           , 'むらさきチューリップのかぶ'),
+	('PltTurip5'           , 'くろいチューリップのかぶ'),
+	('PltTurip6'           , 'オレンジのチューリップのかぶ'),
+	('PltPansi0'           , 'しろいパンジーのかぶ'),
+	('PltPansi1'           , 'きいろいパンジーのかぶ'),
+	('PltPansi2'           , 'あかいパンジーのかぶ'),
+	('PltPansi3'           , 'むらさきのパンジーのかぶ'),
+	('PltPansi4'           , 'あかきいろパンジーのかぶ'),
+	('PltPansi5'           , 'あおいパンジーのかぶ'),
+	('PltYuri0'            , 'しろいユリのかぶ'),
+	('PltYuri1'            , 'きいろいユリのかぶ'),
+	('PltYuri2'            , 'あかいユリのかぶ'),
+	('PltYuri3'            , 'オレンジのユリのかぶ'),
+	('PltYuri4'            , 'ピンクのユリのかぶ'),
+	('PltYuri5'            , 'くろいユリのかぶ'),
+	('PltAnemone0'         , 'しろいアネモネのかぶ'),
+	('PltAnemone1'         , 'あかいアネモネのかぶ'),
+	('PltAnemone2'         , 'オレンジのアネモネのかぶ'),
+	('PltAnemone3'         , 'ピンクのアネモネのかぶ'),
+	('PltAnemone4'         , 'むらさきのアネモネのかぶ'),
+	('PltAnemone5'         , 'あおいアネモネのかぶ'),
+	('PltHyacinth0'        , 'しろいヒヤシンスのかぶ'),
+	('PltHyacinth1'        , 'きいろいヒヤシンスのかぶ'),
+	('PltHyacinth2'        , 'あかいヒヤシンスのかぶ'),
+	('PltHyacinth3'        , 'オレンジのヒヤシンスのかぶ'),
+	('PltHyacinth4'        , 'ピンクのヒヤシンスのかぶ'),
+	('PltHyacinth5'        , 'むらさきのヒヤシンスのかぶ'),
+	('PltHyacinth6'        , 'あおいヒヤシンスのかぶ'),
+	('PltMum0'             , 'しろいキクのかぶ'),
+	('PltMum1'             , 'きいろいキクのかぶ'),
+	('PltMum2'             , 'あかいキクのかぶ'),
+	('PltMum3'             , 'ピンクのキクのかぶ'),
+	('PltMum4'             , 'みどりのキクのかぶ'),
+	('PltMum5'             , 'むらさきのキクのかぶ'),
+	('PltSuzuran'          , 'スズランのかぶ'),
+	('Seedling'            , '木の苗'),
+	('PltOak'              , '広葉樹'),
+	('SeedlingConifer'     , '針葉樹の苗'),
+	('PltConifer'          , '針葉樹'),
+	('PltBamboo'           , '竹'),
+	('PltPalm'             , 'ヤシの木'),
+	('PltApple'            , 'リンゴの木'),
+	('PltOrange'           , 'オレンジの木'),
+	('PltPear'             , 'ナシの木'),
+	('PltPeach'            , 'モモの木'),
+	('PltCherry'           , 'さくらんぼの木'),
+	('PltMoney'            , '金のなる木'),
+	('Weed'                , 'ざっそう'),
+	('EggGround'           , 'じめんのたまご'),
+	('EggRock'             , 'いわのたまご'),
+	('EggLeaf'             , 'はっぱのたまご'),
+	('EggForest'           , 'もりのたまご'),
+	('EggSky'              , 'そらとぶたまご'),
+	('EggFish'             , 'サカナのたまご'),
+	('MessageBottleEgg'    , 'たまごのメッセージボトル'),
 )
 
 enum_5fe6f47ed555_cd0b35a4b9fb = (
@@ -2802,21 +2670,6 @@ enum_6bc751394207_9a22cc494738 = (
 	('IsDemo'                , 'デモ状態'),
 )
 
-enum_6d22f468bc18_bb56dd7d751d = (
-	('None'       , '0'),
-	('Brazil'     , '6'),
-	('Japan'      , '10'),
-	('France'     , '25'),
-	('Spain'      , '26'),
-	('Italy'      , '28'),
-	('Germany'    , '29'),
-	('Europe'     , '33'),
-	('EachCountry', '37'),
-	('World'      , '38'),
-	('Northern'   , '39'),
-	('Southern'   , '40'),
-)
-
 enum_6f6d6ff1098e_dbf69e6d0415 = (
 	('None'     , 'なし'),
 	('MakeFall' , '崖 -> 滝'),
@@ -2902,7 +2755,6 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('ShopVarietyShovel'        , '店_店売り：スコップ'),
 	('ShopVarietyWatering'      , '店_店売り：ジョウロ'),
 	('ShopVarietySlingShot'     , '店_店売り：パチンコ'),
-	('ShopVarietyManieSuit'     , '店_店売り：水着'),
 	('Shop_EnableShovel'        , '店_スコップ解禁'),
 	('Shop_EnableAxe'           , '店_オノ解禁'),
 	('ShopRecipeBook2'          , '店_レシピブック2'),
@@ -2936,9 +2788,6 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('LaurentWallFloor'         , 'ローラン壁床'),
 	('ShoesBagShop'             , 'シャンク'),
 	('HgcQuestReward'           , 'ことの報酬'),
-	('Gardening'                , '園芸店'),
-	('InariMarket'              , 'いなりマーケット'),
-	('InariMarketFake'          , 'いなりマーケット_贋作'),
 	('TkkGood'                  , 'とたけけ_ゴキゲン！'),
 	('TkkBad'                   , 'とたけけ_フキゲン'),
 	('TkkRelax'                 , 'とたけけ_まったり'),
@@ -2961,13 +2810,11 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('JohnnyQuest'              , 'ジョニークエスト'),
 	('JohnnyQuestDust'          , 'ジョニークエストごみ'),
 	('JohnnyQuestReward'        , 'ジョニークエスト報酬'),
-	('PirateQuestReward'        , '海賊クエスト報酬'),
 	('TournamentFishing'        , 'つり大会'),
 	('TournamentInsect'         , 'ムシとり大会'),
 	('CountDown'                , 'カウントダウン'),
 	('BeyDailyFishModel'        , 'ジャスティン(来訪)'),
 	('ChyDailyInsectModel'      , 'レオン(来訪)'),
-	('SeoReward'                , 'ラコスケ報酬'),
 	('RecycleBox'               , 'リサイクルBOX'),
 	('ShopSeed_Chrysanthemum'   , '販売種_菊'),
 	('ShopSeed_Lily'            , '販売種_ユリ'),
@@ -3005,16 +2852,8 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('DIYCherryBrossom'         , '<DIY>桜の花びら'),
 	('DIYSnowCrystal'           , '<DIY>雪の結晶'),
 	('DIYEasterEgg'             , '<DIY>イースターのたまご'),
-	('DIYPearl'                 , '<DIY>しんじゅ'),
-	('MotherDay'                , '<リージョン>母の日'),
-	('WoldChildDay'             , '<リージョン>ワールドチャイルド'),
-	('FatherDay'                , '<リージョン>父の日'),
-	('SummerSolstice'           , '<リージョン>夏至祭'),
-	('StarFestival'             , '<リージョン>七夕'),
-	('WinterSolstice_Southern'  , '<リージョン>冬至祭（６月南半球）'),
 	('DeliveryPocketCamp'       , '<永続配信>ポケ森コラボ'),
 	('Easter'                   , 'イースター'),
-	('JuneBride'                , 'ジューンブライド'),
 	('FutureItem'               , '■アップデート向け■'),
 	('NotAvailable'             , '◆入手不可◆'),
 )
@@ -3050,17 +2889,7 @@ enum_7a6babece06f_675c7f6d8dcb = (
 	('DisableOnlyLowerBody'     , '下半身再生不可'),
 	('EnableOnlyLowerBody_Sit'  , '下半身再生可(座り系)'),
 	('EnableOnlyLowerBody_Bed'  , '下半身再生可(寝る系)'),
-	('EnableOnlyLowerBody_Swim' , '下半身再生可(泳ぎ系)'),
 	('EnableOnlyLowerBody_Stand', '下半身再生可(立ち系)'),
-)
-
-enum_7e3c45b5eddf_18ce80c1336a = (
-	('None'                   , 'なし'),
-	('EarthDayFlowerCrown'    , 'アースデー：はなかんむり'),
-	('EarthDayFlowerWreath'   , 'アースデー：はなのリース'),
-	('EarthDayFlowerFurniture', 'アースデー：はなの家具'),
-	('EarthDayFlowerTool'     , 'アースデー：はなの道具'),
-	('EarthDayFlower'         , 'アースデー：はな'),
 )
 
 enum_7f4abdaa06e5_875003339aa7 = (
@@ -3090,7 +2919,6 @@ enum_80fe2e01edeb_a0944789ee2d = (
 	('RedPinkFlower'        , '赤・桃系の花'),
 	('BluePurpleBlackFlower', '青・紫・黒系の花'),
 	('YellowFlower'         , '黄色系の花'),
-	('Bush'                 , '低木'),
 	('MatureTreeOak'        , '広葉樹（成木）'),
 	('MatureTreeCedar'      , '針葉樹（成木）'),
 	('MatureTreePalm'       , 'ヤシの木（成木）'),
@@ -3142,9 +2970,6 @@ enum_870fe161ccb7_b6b6458365a4 = (
 	('Mother'       , 'はは'),
 	('Christmas'    , 'クリスマス'),
 	('Easter'       , 'イースター'),
-	('Wedding'      , 'ウェディング'),
-	('Pirate'       , 'かいぞく'),
-	('Mermaid'      , 'マーメイド'),
 )
 
 enum_872b31abf9f9_cc7475a100e8 = (
@@ -3212,14 +3037,6 @@ enum_876f2a44aa3e_ea533d18da76 = (
 	('EasterFish'             , 'イースター：ひらめき：サカナ'),
 	('EasterCapHat'           , 'イースター：ひらめき：からコンプ'),
 	('EasterTops'             , 'イースター：ひらめき：ふくコンプ'),
-	('Efitem'                 , '＜Efアイテム直接指定＞'),
-	('Seo01'                  , '＜ラコスケ（マーメイド）＞'),
-)
-
-enum_8b856bc35b2c_59489a51cf1a = (
-	('Stop'  , '静止'),
-	('Flick' , 'ゆらゆら'),
-	('GoStop', '飛び飛び'),
 )
 
 enum_8bcffcdc34f9_75d5da8d5621 = (
@@ -3256,14 +3073,6 @@ enum_917e0a06d70e_917e0a06d70e = (
 	('ON' , 'ON'),
 )
 
-enum_92fb5e5480cc_92fb5e5480cc = (
-	('SS', 'SS'),
-	('S' , 'S'),
-	('M' , 'M'),
-	('L' , 'L'),
-	('LL', 'LL'),
-)
-
 enum_93cb28c3569f_1cf1287084ce = (
 	('NoSelect'           , '指定無し'),
 	('SelectRecipeSeason' , 'レシピ用季節'),
@@ -3278,7 +3087,6 @@ enum_9601b1ddc20d_b837359c7300 = (
 
 enum_960b44c579bc_90f80471d9f2 = (
 	('Normal', '通常'),
-	('MayDay', 'メーデー'),
 )
 
 enum_9cef5ff8f2fc_3c4e63ce8503 = (
@@ -3293,11 +3101,6 @@ enum_a099ed9ed7e6_1fc5597471f3 = (
 	('MailBoxTypeC', 'ポスト：タイプC'),
 	('MailBoxTypeD', 'ポスト：タイプD'),
 	('MailBoxTypeE', 'ポスト：タイプE'),
-)
-
-enum_a1951c2696f6_44fbfe232c2e = (
-	('Aquatic', '生き物'),
-	('Weed'   , '海藻'),
 )
 
 enum_a28161dd393f_a28161dd393f = (
@@ -3347,11 +3150,6 @@ enum_a3f2105dc205_cf3454689058 = (
 	('Shell'        , 'かいがら'),
 	('IronWood'     , 'アイアンウッド'),
 	('Easter'       , 'イースター'),
-	('Mother'       , 'おかん'),
-	('Space'        , '宇宙'),
-	('JuneBride'    , 'ジューンブライド'),
-	('Mermaid'      , 'マーメイド'),
-	('Sign'         , '星座'),
 )
 
 enum_a55023d0faad_4d2a3ca36fe8 = (
@@ -3516,9 +3314,6 @@ enum_c1ee150f0e21_f567104db912 = (
 enum_c247708f9bb1_67b0834c6103 = (
 	('None'                , '（なし）'),
 	('MileCard'            , 'たぬきマイルカード'),
-	('MarineSuit'          , 'マリンスーツ'),
-	('Pearl'               , 'しんじゅ'),
-	('PirateQuest'         , 'むせんき'),
 	('Leaf'                , '葉っぱ'),
 	('LeafYellow'          , '葉っぱ：黄'),
 	('RoomWall'            , '壁紙'),
@@ -3586,8 +3381,6 @@ enum_c247708f9bb1_67b0834c6103 = (
 	('PltCedar'            , '針葉樹'),
 	('PltPalm'             , 'ヤシの木'),
 	('PltBamboo'           , '竹'),
-	('SeedlingBush'        , '低木の苗'),
-	('PltBush'             , '低木'),
 	('SeedPaperbag'        , '花の種袋'),
 	('Seed'                , '花の種'),
 	('DIYBranch'           , 'D：枝'),
@@ -3685,15 +3478,6 @@ enum_c247708f9bb1_67b0834c6103 = (
 	('EggSky'              , 'そらとぶたまご'),
 	('EggFish'             , 'サカナのたまご'),
 	('MessageBottleEgg'    , 'たまごのメッセージボトル'),
-	('Love'                , 'あいのけっしょう'),
-)
-
-enum_c2aae04b2493_c2aae04b2493 = (
-	('1', '1'),
-	('2', '2'),
-	('3', '3'),
-	('4', '4'),
-	('5', '5'),
 )
 
 enum_c2f1120003e9_c2f1120003e9 = (
@@ -3854,15 +3638,6 @@ enum_d6b51049aa8c_eb2a552f77d1 = (
 	('PlayerTopsTopTshirtsmydesignN'      , 'PlayerTopsTopTshirtsmydesignN'),
 	('PlayerTopsTopOutermydesignL'        , 'PlayerTopsTopOutermydesignL'),
 	('PlayerTopsOnepieceRobeL'            , 'PlayerTopsOnepieceRobeL'),
-	('NpcSpTopsXctTshirtsN'               , 'NpcSpTopsXctTshirtsN'),
-	('NpcSpBottomsFoxApronNS'             , 'NpcSpBottomsFoxApronNS'),
-	('NpcSpTopsAlwOnepieceN'              , 'NpcSpTopsAlwOnepieceN'),
-	('NpcSpTopsAlpOnepieceN'              , 'NpcSpTopsAlpOnepieceN'),
-	('NpcSpTopsAlwOnepieceDressN'         , 'NpcSpTopsAlwOnepieceDressN'),
-	('NpcSpTopsAlpTshirtsL'               , 'NpcSpTopsAlpTshirtsL'),
-	('PlayerTopsMarinesuitNormalL'        , 'PlayerTopsMarinesuitNormalL'),
-	('PlayerTopsMarinesuitNormalN'        , 'PlayerTopsMarinesuitNormalN'),
-	('PlayerTopsMarinesuitNormalH'        , 'PlayerTopsMarinesuitNormalH'),
 	('PlayerTopsTopTshirtsH'              , 'PlayerTopsTopTshirtsH'),
 	('PlayerTopsTopOuterL'                , 'PlayerTopsTopOuterL'),
 	('PlayerTopsTopCoatL'                 , 'PlayerTopsTopCoatL'),
@@ -3930,7 +3705,6 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('ChairFB'                   , 'イス：前後'),
 	('ChairLeftFB'               , 'イス：前後：左半分'),
 	('ChairCenterF'              , 'イス：前：中央のみ'),
-	('ChairSwitch'               , 'イス：スイッチ'),
 	('ChairFLRTouchSwitch'       , 'イス：SP：接触スイッチ'),
 	('Bed'                       , 'ベッド：通常'),
 	('BedSwitch'                 , 'ベッド：スイッチ'),
@@ -3949,7 +3723,6 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('ClockPigeon'               , '時計：ハト'),
 	('ClockDigital'              , '時計：デジタル'),
 	('ClockSwitch'               , '時計：スイッチ'),
-	('ClockTrigger'              , '時計：トリガー'),
 	('WorkBench'                 , '作業台'),
 	('LoopAuto'                  , 'ループ'),
 	('LoopSwitch'                , 'ループ：スイッチ'),
@@ -3957,7 +3730,6 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('LoopTrigger'               , 'ループ：トリガー'),
 	('LoopAutoOnOff'             , 'ループ：オンオフ'),
 	('LoopTriggerOnOff'          , 'ループ：トリガー：オンオフ'),
-	('LoopTriggerWaitEndOnKeep'  , 'ループ終了待ち：トリガー'),
 	('TriggerOnce'               , 'トリガー'),
 	('TriggerOnOff'              , 'トリガー：オンオフ'),
 	('TriggerRestart'            , 'トリガー：上書き'),
@@ -3975,13 +3747,11 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('MailBoxTypeD'              , 'ポスト：タイプD'),
 	('MailBoxTypeE'              , 'ポスト：タイプE'),
 	('TrashBox'                  , 'ゴミ箱'),
-	('Bamboo'                    , 'たなばたのささ'),
 	('SingInsect'                , '鳴くムシ'),
 	('MoveBox'                   , '初期支給プレゼントBOX'),
 	('MyDesignRug'               , 'マイデザインラグ'),
 	('MusicJacket'               , 'ミュージックジャケット'),
 	('Bromide'                   , 'ブロマイド'),
-	('StampRack'                 , 'スタンプ台(国際ミュージアム)'),
 )
 
 enum_daac3d573f2d_daac3d573f2d = (
@@ -4002,7 +3772,6 @@ enum_daac3d573f2d_daac3d573f2d = (
 	('20_Tool'           , '20_Tool'),
 	('30_Insect'         , '30_Insect'),
 	('31_Fish'           , '31_Fish'),
-	('32_DiveFish'       , '32_DiveFish'),
 	('33_Shell'          , '33_Shell'),
 	('34_Fossil'         , '34_Fossil'),
 	('40_Plant'          , '40_Plant'),
@@ -4056,7 +3825,6 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('ShoesSoft'                     , '靴：やわらかい'),
 	('Socks'                         , '靴下'),
 	('Tops'                          , 'トップス'),
-	('Marinesuit'                    , 'マリンスーツ'),
 	('Onepiece'                      , 'ワンピース'),
 	('None'                          , 'なし'),
 	('Bottoms'                       , 'ボトムス'),
@@ -4070,7 +3838,6 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('Net'                           , 'アミ：下位'),
 	('NetMiddleLevel'                , 'アミ：中位'),
 	('NetUpperLevel'                 , 'アミ：上位'),
-	('AxeFragile'                    , 'オノ：壊れかけ'),
 	('Axe'                           , 'オノ：下位'),
 	('AxeMiddleLevel'                , 'オノ：中位'),
 	('AxeUpperLevel'                 , 'オノ：上位'),
@@ -4133,9 +3900,7 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('Doughnut'                      , 'ドーナッツ'),
 	('TkkGuitar'                     , 'とたけけギター'),
 	('Duster'                        , 'はたき'),
-	('Bouquet'                       , 'ブーケ'),
 	('Broom'                         , 'ほうき'),
-	('Scallop'                       , 'ホタテ'),
 	('Book'                          , '本'),
 	('SmallBook'                     , '本(小)'),
 	('Firewood'                      , '薪'),
@@ -4268,7 +4033,6 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('TopsDefault'       , '装備品：トップスデフォルト'),
 	('Tops'              , '装備品：トップス'),
 	('OnePiece'          , '装備品：ワンピース'),
-	('MarineSuit'        , '装備品：マリンスーツ'),
 	('BottomsDefault'    , '装備品：ボトムスデフォルト'),
 	('Bottoms'           , '装備品：ボトムス'),
 	('Socks'             , '装備品：くつした'),
@@ -4302,8 +4066,6 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('Timer'             , 'タイマー'),
 	('TreeSeedling'      , '植物：木の苗'),
 	('Tree'              , '植物：木'),
-	('BushSeedling'      , '植物：低木の苗'),
-	('Bush'              , '植物：低木'),
 	('Vegetable'         , '植物：野菜'),
 	('Weed'              , '植物：雑草'),
 	('FlowerSeed'        , '植物：花の種'),
@@ -4329,7 +4091,6 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('StarPiece'         , '星のかけら'),
 	('Insect'            , '生き物：ムシ'),
 	('Fish'              , '生き物：サカナ'),
-	('DiveFish'          , '生き物：海の幸'),
 	('ShellDrift'        , '漂着貝'),
 	('ShellFish'         , '生き物：潮干狩り貝'),
 	('FishToy'           , 'サカナ模型'),
@@ -4356,12 +4117,10 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('HousingKitRcoQuest', 'ハウジングキット：移住クエスト'),
 	('HousingKitBirdge'  , 'ハウジングキット：橋用'),
 	('Money'             , 'ベル（お金）'),
-	('FireworkM'         , '花火（置き）'),
 	('BdayCupcake'       , 'バースデーカップケーキ'),
 	('YutaroWisp'        , 'ゆうたろうのたましい'),
 	('JohnnyQuest'       , 'ジョニークエスト'),
 	('JohnnyQuestDust'   , 'ジョニークエストごみ'),
-	('PirateQuest'       , '海賊クエスト'),
 	('QuestWrapping'     , 'クエスト配達プレゼントBOX'),
 	('LostQuest'         , 'おとしもの'),
 	('LostQuestDust'     , 'おとしものゴミ'),
@@ -4371,15 +4130,10 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('MilePlaneTicket'   , 'マイル航空券'),
 	('RollanTicket'      , 'ローラン引換券'),
 	('EasterEgg'         , 'イースターのたまご'),
-	('LoveCrystal'       , 'あいのけっしょう'),
 	('Giftbox'           , '初期支給プレゼントBOX'),
 	('PinataStick'       , '装備専用：ピニャータ割り棒'),
 	('NpcOutfit'         , '装備品：NPC専用'),
 	('PlayerDemoOutfit'  , '装備品：プレイヤ演出専用'),
-	('Picture'           , '芸術品：絵画'),
-	('Sculpture'         , '芸術品：彫刻'),
-	('PictureFake'       , '芸術品：絵画贋作'),
-	('SculptureFake'     , '芸術品：彫刻贋作'),
 	('SmartPhone'        , 'スマホ'),
 	('DummyFtr'          , 'ダミー家具'),
 	('SequenceOnly'      , 'シーケンス専用'),
@@ -4427,16 +4181,6 @@ enum_f6bb6e7f3141_66cb3d119f1c = (
 	('IdrMuseumFossil_0', '[かせき]古生代の部屋'),
 	('IdrMuseumFossil_1', '[かせき]中生代の部屋'),
 	('IdrMuseumFossil_2', '[かせき]新生代の部屋'),
-	('IdrMuseumArt_0'   , '芸術品部屋1'),
-	('IdrMuseumArt_1'   , '芸術品部屋2'),
-)
-
-enum_f8068b894699_70f716c481de = (
-	('Wedding', '挙式'),
-	('Banquet', '披露宴'),
-	('Cute'   , 'キュート'),
-	('Chic'   , 'シック'),
-	('Garden' , 'ガーデン'),
 )
 
 enum_f924f1356c8c_64c17a17e85b = (
@@ -4453,215 +4197,188 @@ enum_f924f1356c8c_64c17a17e85b = (
 class AITag(Row):
 	AITagCategory = Enum(0xa8eacf70, enum_b22a0f29d59e_f465b9e811ce)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
+	Label = String(0x87bf00e8) # string32
 
 class AmiiboData(Row):
 	CharacterId = U32(0xc7ad2fdf)
-	NumberingId = U16(0x04a47035)
 	SpNpcCloth = S16(0xf6b34c16)
+	NumberingId = U16(0x04a47035)
+	NpcType = U8(0x81a43e76)
 	NfpType = U8(0xac4a3345)
 	NpcLabel = String(0x34c8eed5) # string8
-	NpcType = U8(0x81a43e76)
-	Reaction = U8(0xdca79149)
 	SeriesId = U8(0x5b7ca0b2)
+	Reaction = U8(0xdca79149)
 	Studio = U8(0x1d99c513) # size is 4, could this be an array?
 
 class BgmPropertyControlParam(Row):
-	PropertyID = U16(0x4e46c669)
 	UniqueID = U16(0x54706054)
 	Value = U16(0x46c45907)
+	PropertyID = U16(0x4e46c669)
 	Name = String(0x85cf1615) # string128
 
 class BgmPropertyParam(Row):
 	UniqueID = U16(0x54706054)
 	Label = String(0x13ab5198) # string64
 
-class CalendarEventCountryParam(Row):
-	FlagAnim = U16(0x736adca8)
-	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
-
-class CalendarEventJuneBrideExchange(Row):
-	RequiredNum = U32(0x598463c8)
-	UniqueID = U32(0x612bc6cf)
-	ExchangeItem = U16(0xad1e04ad)
-	DispInteriorMode = U8(0xa0bb7510)
-	JuneBrideProgress = U8(0x7c226372)
-
-class CalendarEventJuneBrideReward(Row):
-	UniqueID = U32(0x612bc6cf)
-	PriorityReward = U16(0x60836eaa)
-	SubordinateReward = U16(0x657550b3)
-	JuneBrideProgress = U8(0x7c226372) # size is 4, could this be an array?
-
 class CalendarEventParam(Row):
-	EventType = Enum(0x70703269, enum_7797cc9a6dbe_5f875c1a6730)
-	FlagLand1 = S32(0xa75689ff)
-	FlagLand2 = S32(0xe0f6f32f)
-	_52c75c1e = Enum(0x52c75c1e, enum_322263f6b5a3_7a83210f041c)
 	_8c2aec6a = Enum(0x8c2aec6a, enum_322263f6b5a3_7a83210f041c)
+	EventType = Enum(0x70703269, enum_7797cc9a6dbe_5f875c1a6730)
+	_52c75c1e = Enum(0x52c75c1e, enum_322263f6b5a3_7a83210f041c)
 	UniqueID = U16(0x54706054)
-	Announce = U8(0x32c643e6)
-	BbsDays = U8(0x952cf32e)
-	BcatLevel = U8(0xe5337bd9)
-	BoardDesign = U8(0xceb81aff)
-	Day2000 = U8(0xa45750cc)
-	Day2001 = U8(0x1ceb37a9)
-	Day2002 = U8(0x0e5e9847)
-	Day2003 = U8(0xb6e2ff22)
-	Day2004 = U8(0x2b35c79b)
-	Day2005 = U8(0x9389a0fe)
-	Day2006 = U8(0x813c0f10)
-	Day2007 = U8(0x39806875)
-	Day2008 = U8(0x61e37823)
-	Day2009 = U8(0xd95f1f46)
-	Day2010 = U8(0x9937797c)
-	Day2011 = U8(0x218b1e19)
-	Day2012 = U8(0x333eb1f7)
-	Day2013 = U8(0x8b82d692)
-	Day2014 = U8(0x1655ee2b)
-	Day2015 = U8(0xaee9894e)
-	Day2016 = U8(0xbc5c26a0)
-	Day2017 = U8(0x04e041c5)
-	Day2018 = U8(0x5c835193)
-	Day2019 = U8(0xe43f36f6)
-	Day2020 = U8(0xde9703ac)
-	Day2021 = U8(0x662b64c9)
-	Day2022 = U8(0x749ecb27)
-	Day2023 = U8(0xcc22ac42)
-	Day2024 = U8(0x51f594fb)
-	Day2025 = U8(0xe949f39e)
-	Day2026 = U8(0xfbfc5c70)
-	Day2027 = U8(0x43403b15)
-	Day2028 = U8(0x1b232b43)
-	Day2029 = U8(0xa39f4c26)
-	Day2030 = U8(0xe3f72a1c)
-	Day2031 = U8(0x5b4b4d79)
-	Day2032 = U8(0x49fee297)
-	Day2033 = U8(0xf14285f2)
-	Day2034 = U8(0x6c95bd4b)
-	Day2035 = U8(0xd429da2e)
-	Day2036 = U8(0xc69c75c0)
-	Day2037 = U8(0x7e2012a5)
-	Day2038 = U8(0x264302f3)
-	Day2039 = U8(0x9eff6596)
-	Day2040 = U8(0x51d7f60c)
-	Day2041 = U8(0xe96b9169)
-	Day2042 = U8(0xfbde3e87)
-	Day2043 = U8(0x436259e2)
-	Day2044 = U8(0xdeb5615b)
-	Day2045 = U8(0x6609063e)
-	Day2046 = U8(0x74bca9d0)
-	Day2047 = U8(0xcc00ceb5)
-	Day2048 = U8(0x9463dee3)
-	Day2049 = U8(0x2cdfb986)
-	Day2050 = U8(0x6cb7dfbc)
-	Day2051 = U8(0xd40bb8d9)
-	Day2052 = U8(0xc6be1737)
-	Day2053 = U8(0x7e027052)
-	Day2054 = U8(0xe3d548eb)
-	Day2055 = U8(0x5b692f8e)
-	Day2056 = U8(0x49dc8060)
-	Day2057 = U8(0xf160e705)
-	Day2058 = U8(0xa903f753)
-	Day2059 = U8(0x11bf9036)
-	Day2060 = U8(0x2b17a56c)
-	DayNorth = U8(0xd8f76b76)
-	DaySouth = U8(0x224c7f34)
-	EventBegin = U8(0x8d58a3bf)
-	EventEnd = U8(0x73a932ae)
-	EventHalf = S8(0xac69956e)
-	LabelLong = String(0x443c0fb7) # string64
-	LabelShort = String(0xbb66edcb) # string128
-	MainDays = U8(0xc17c7ca8)
-	Month2000 = U8(0x5fd18fa7)
-	Month2001 = U8(0xe76de8c2)
-	Month2002 = U8(0xf5d8472c)
-	Month2003 = U8(0x4d642049)
-	Month2004 = U8(0xd0b318f0)
-	Month2005 = U8(0x680f7f95)
-	Month2006 = U8(0x7abad07b)
-	Month2007 = U8(0xc206b71e)
-	Month2008 = U8(0x9a65a748)
-	Month2009 = U8(0x22d9c02d)
-	Month2010 = U8(0x62b1a617)
-	Month2011 = U8(0xda0dc172)
-	Month2012 = U8(0xc8b86e9c)
-	Month2013 = U8(0x700409f9)
-	Month2014 = U8(0xedd33140)
-	Month2015 = U8(0x556f5625)
-	Month2016 = U8(0x47daf9cb)
-	Month2017 = U8(0xff669eae)
-	Month2018 = U8(0xa7058ef8)
-	Month2019 = U8(0x1fb9e99d)
-	Month2020 = U8(0x2511dcc7)
-	Month2021 = U8(0x9dadbba2)
-	Month2022 = U8(0x8f18144c)
-	Month2023 = U8(0x37a47329)
-	Month2024 = U8(0xaa734b90)
-	Month2025 = U8(0x12cf2cf5)
-	Month2026 = U8(0x007a831b)
-	Month2027 = U8(0xb8c6e47e)
-	Month2028 = U8(0xe0a5f428)
-	Month2029 = U8(0x5819934d)
-	Month2030 = U8(0x1871f577)
-	Month2031 = U8(0xa0cd9212)
-	Month2032 = U8(0xb2783dfc)
-	Month2033 = U8(0x0ac45a99)
-	Month2034 = U8(0x97136220)
-	Month2035 = U8(0x2faf0545)
-	Month2036 = U8(0x3d1aaaab)
-	Month2037 = U8(0x85a6cdce)
-	Month2038 = U8(0xddc5dd98)
-	Month2039 = U8(0x6579bafd)
-	Month2040 = U8(0xaa512967)
 	Month2041 = U8(0x12ed4e02)
-	Month2042 = U8(0x0058e1ec)
-	Month2043 = U8(0xb8e48689)
-	Month2044 = U8(0x2533be30)
-	Month2045 = U8(0x9d8fd955)
-	Month2046 = U8(0x8f3a76bb)
-	Month2047 = U8(0x378611de)
-	Month2048 = U8(0x6fe50188)
-	Month2049 = U8(0xd75966ed)
-	Month2050 = U8(0x973100d7)
-	Month2051 = U8(0x2f8d67b2)
-	Month2052 = U8(0x3d38c85c)
-	Month2053 = U8(0x8584af39)
-	Month2054 = U8(0x18539780)
-	Month2055 = U8(0xa0eff0e5)
-	Month2056 = U8(0xb25a5f0b)
-	Month2057 = U8(0x0ae6386e)
-	Month2058 = U8(0x52852838)
-	Month2059 = U8(0xea394f5d)
-	Month2060 = U8(0xd0917a07)
-	MonthNorth = U8(0x026c5579)
-	MonthSouth = U8(0xf8d7413b)
-	MsgFile = String(0xa425d8a5) # string64
-	NameLong = String(0x1144c9a1) # string128
 	NameShort = String(0x3c835e2c) # string128
+	NameLong = String(0x1144c9a1) # string128
+	EventBegin = U8(0x8d58a3bf)
+	EventHalf = S8(0xac69956e)
+	EventEnd = S8(0x73a932ae)
 	NpcBegin = U8(0xd605c40d)
 	NpcEnd = U8(0x69834ab9)
-	OpenAllYear = U8(0x4b4d3c12)
-	Output = U8(0x87ff95cc)
+	LabelLong = String(0x443c0fb7) # string64
+	WeatherPattern = String(0x062ec6cf) # string32
+	Announce = U8(0x32c643e6)
+	RegionJp = U8(0xff468c5f)
+	RegionUs = U8(0x0f4323e2)
+	RegionEu = U8(0x4ac8ebbc)
+	RegionAsia = U8(0xfe807868)
+	MsgFile = String(0xa425d8a5) # string64
+	TalkFlowName = String(0xc6ddbf67) # string64
 	_b92288a3 = U8(0xb92288a3)
 	ReadyDays = U8(0xba007e4f)
-	WdayNorth = U8(0x06da20a1)
-	WdaySouth = U8(0xfc6134e3)
+	MainDays = U8(0xc17c7ca8)
+	BbsDays = U8(0x952cf32e)
+	BoardDesign = U8(0xceb81aff)
+	Output = U8(0x87ff95cc)
 	WeekNorth = U8(0x4c8935ec)
-	WeekSouth = U8(0xb63221ae) # size is 3, could this be an array?
-
-class CalendarEventRegionParam(Row):
-	RegionEventCountry1 = Enum(0x82bfcf29, enum_6d22f468bc18_bb56dd7d751d)
-	SortID = S32(0x8b3c9137)
-	_af2602cd = U16(0xaf2602cd) # possible string size 2
-	_92462b7d = U16(0x92462b7d) # possible string size 2
-	_2066f76d = U16(0x2066f76d) # possible string size 2
-	_1d06dedd = U16(0x1d06dedd) # possible string size 2
-	UniqueID = U16(0x54706054)
-	EventLabel = String(0xbe26d70e) # string64
-	ItemFrom = String(0x46e66708) # string32
+	WdayNorth = U8(0x06da20a1)
+	MonthNorth = U8(0x026c5579)
+	DayNorth = U8(0xd8f76b76)
+	WeekSouth = U8(0xb63221ae)
+	WdaySouth = U8(0xfc6134e3)
+	MonthSouth = U8(0xf8d7413b)
+	DaySouth = U8(0x224c7f34)
+	Month2000 = U8(0x5fd18fa7)
+	Day2000 = U8(0xa45750cc)
+	Month2001 = U8(0xe76de8c2)
+	Day2001 = U8(0x1ceb37a9)
+	Month2002 = U8(0xf5d8472c)
+	Day2002 = U8(0x0e5e9847)
+	Month2003 = U8(0x4d642049)
+	Day2003 = U8(0xb6e2ff22)
+	Month2004 = U8(0xd0b318f0)
+	Day2004 = U8(0x2b35c79b)
+	Month2005 = U8(0x680f7f95)
+	Day2005 = U8(0x9389a0fe)
+	Month2006 = U8(0x7abad07b)
+	Day2006 = U8(0x813c0f10)
+	Month2007 = U8(0xc206b71e)
+	Day2007 = U8(0x39806875)
+	Month2008 = U8(0x9a65a748)
+	Day2008 = U8(0x61e37823)
+	Month2009 = U8(0x22d9c02d)
+	Day2009 = U8(0xd95f1f46)
+	Month2010 = U8(0x62b1a617)
+	Day2010 = U8(0x9937797c)
+	Month2011 = U8(0xda0dc172)
+	Day2011 = U8(0x218b1e19)
+	Month2012 = U8(0xc8b86e9c)
+	Day2012 = U8(0x333eb1f7)
+	Month2013 = U8(0x700409f9)
+	Day2013 = U8(0x8b82d692)
+	Month2014 = U8(0xedd33140)
+	Day2014 = U8(0x1655ee2b)
+	Month2015 = U8(0x556f5625)
+	Day2015 = U8(0xaee9894e)
+	Month2016 = U8(0x47daf9cb)
+	Day2016 = U8(0xbc5c26a0)
+	Month2017 = U8(0xff669eae)
+	Day2017 = U8(0x04e041c5)
+	Month2018 = U8(0xa7058ef8)
+	Day2018 = U8(0x5c835193)
+	Month2019 = U8(0x1fb9e99d)
+	Day2019 = U8(0xe43f36f6)
+	Month2020 = U8(0x2511dcc7)
+	Day2020 = U8(0xde9703ac)
+	Month2021 = U8(0x9dadbba2)
+	Day2021 = U8(0x662b64c9)
+	Month2022 = U8(0x8f18144c)
+	Day2022 = U8(0x749ecb27)
+	Month2023 = U8(0x37a47329)
+	Day2023 = U8(0xcc22ac42)
+	Month2024 = U8(0xaa734b90)
+	Day2024 = U8(0x51f594fb)
+	Month2025 = U8(0x12cf2cf5)
+	Day2025 = U8(0xe949f39e)
+	Month2026 = U8(0x007a831b)
+	Day2026 = U8(0xfbfc5c70)
+	Month2027 = U8(0xb8c6e47e)
+	Day2027 = U8(0x43403b15)
+	Month2028 = U8(0xe0a5f428)
+	Day2028 = U8(0x1b232b43)
+	Month2029 = U8(0x5819934d)
+	Day2029 = U8(0xa39f4c26)
+	Month2030 = U8(0x1871f577)
+	Day2030 = U8(0xe3f72a1c)
+	Month2031 = U8(0xa0cd9212)
+	Day2031 = U8(0x5b4b4d79)
+	Month2032 = U8(0xb2783dfc)
+	Day2032 = U8(0x49fee297)
+	Month2033 = U8(0x0ac45a99)
+	Day2033 = U8(0xf14285f2)
+	Month2034 = U8(0x97136220)
+	Day2034 = U8(0x6c95bd4b)
+	Month2035 = U8(0x2faf0545)
+	Day2035 = U8(0xd429da2e)
+	Month2036 = U8(0x3d1aaaab)
+	Day2036 = U8(0xc69c75c0)
+	Month2037 = U8(0x85a6cdce)
+	Day2037 = U8(0x7e2012a5)
+	Month2038 = U8(0xddc5dd98)
+	Day2038 = U8(0x264302f3)
+	Month2039 = U8(0x6579bafd)
+	Day2039 = U8(0x9eff6596)
+	Month2040 = U8(0xaa512967)
+	Day2040 = U8(0x51d7f60c)
+	LabelShort = String(0xbb66edcb) # string128
+	Day2041 = U8(0xe96b9169)
+	Month2042 = U8(0x0058e1ec)
+	Day2042 = U8(0xfbde3e87)
+	Month2043 = U8(0xb8e48689)
+	Day2043 = U8(0x436259e2)
+	Month2044 = U8(0x2533be30)
+	Day2044 = U8(0xdeb5615b)
+	Month2045 = U8(0x9d8fd955)
+	Day2045 = U8(0x6609063e)
+	Month2046 = U8(0x8f3a76bb)
+	Day2046 = U8(0x74bca9d0)
+	Month2047 = U8(0x378611de)
+	Day2047 = U8(0xcc00ceb5)
+	Month2048 = U8(0x6fe50188)
+	Day2048 = U8(0x9463dee3)
+	Month2049 = U8(0xd75966ed)
+	Day2049 = U8(0x2cdfb986)
+	Month2050 = U8(0x973100d7)
+	Day2050 = U8(0x6cb7dfbc)
+	Month2051 = U8(0x2f8d67b2)
+	Day2051 = U8(0xd40bb8d9)
+	Month2052 = U8(0x3d38c85c)
+	Day2052 = U8(0xc6be1737)
+	Month2053 = U8(0x8584af39)
+	Day2053 = U8(0x7e027052)
+	Month2054 = U8(0x18539780)
+	Day2054 = U8(0xe3d548eb)
+	Month2055 = U8(0xa0eff0e5)
+	Day2055 = U8(0x5b692f8e)
+	Month2056 = U8(0xb25a5f0b)
+	Day2056 = U8(0x49dc8060)
+	Month2057 = U8(0x0ae6386e)
+	Day2057 = U8(0xf160e705)
+	Month2058 = U8(0x52852838)
+	Day2058 = U8(0xa903f753)
+	Month2059 = U8(0xea394f5d)
+	Day2059 = U8(0x11bf9036)
+	Month2060 = U8(0xd0917a07)
+	Day2060 = U8(0x2b17a56c)
 
 class CharaMakeCheekTypeParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4674,8 +4391,8 @@ class CharaMakeEyeColorParam(Row):
 	BaseColorG = Float(0xa05e5f9f)
 	BaseColorR = Float(0x085e476d)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
+	Label = String(0x87bf00e8) # string32
 
 class CharaMakeEyeTypeParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4685,60 +4402,60 @@ class CharaMakeEyeTypeParam(Row):
 	StungResName = String(0xdfa56cb9) # string32
 
 class CharaMakeHairColorParam(Row):
-	BaseColorB = Float(0x68bed0ef)
-	BaseColorG = Float(0xa05e5f9f)
-	BaseColorR = Float(0x085e476d)
 	HighlightColorB = Float(0x16c95acc)
 	HighlightColorG = Float(0xde29d5bc)
 	HighlightColorR = Float(0x7629cd4e)
+	BaseColorR = Float(0x085e476d)
+	BaseColorB = Float(0x68bed0ef)
+	BaseColorG = Float(0xa05e5f9f)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
+	Label = String(0x87bf00e8) # string32
 
 class CharaMakeHairStyleParam(Row):
-	BackRotateOffsetX = Float(0xb22fcc5e)
-	BackRotateOffsetY = Float(0x8f4fe5ee)
-	BackRotateOffsetZ = Float(0xc8ef9f3e)
+	PeakRotateOffsetZ = Float(0x5d966107)
+	PeakRotateOffsetY = Float(0x1a361bd7)
+	PeakRotateOffsetX = Float(0x27563267)
+	PeakTransOffsetZ = Float(0x3a1f9e56)
+	PeakTransOffsetY = Float(0x7dbfe486)
+	PeakTransOffsetX = Float(0x40dfcd36)
+	FrontRotateOffsetZ = Float(0xb35e860e)
 	BackTransOffsetX = Float(0x866b76fe)
 	BackTransOffsetY = Float(0xbb0b5f4e)
 	BackTransOffsetZ = Float(0xfcab259e)
-	FrontRotateOffsetX = Float(0xc99ed56e)
-	FrontRotateOffsetY = Float(0xf4fefcde)
-	FrontRotateOffsetZ = Float(0xb35e860e)
-	FrontTransOffsetX = Float(0x8659e834)
-	FrontTransOffsetY = Float(0xbb39c184)
-	FrontTransOffsetZ = Float(0xfc99bb54)
-	LeftRotateOffsetX = Float(0xc95b5e7d)
-	LeftRotateOffsetY = Float(0xf43b77cd)
-	LeftRotateOffsetZ = Float(0xb39b0d1d)
-	LeftTransOffsetX = Float(0x43d2fb34)
-	LeftTransOffsetY = Float(0x7eb2d284)
-	LeftTransOffsetZ = Float(0x3912a854)
-	PeakRotateOffsetX = Float(0x27563267)
-	PeakRotateOffsetY = Float(0x1a361bd7)
-	PeakRotateOffsetZ = Float(0x5d966107)
-	PeakTransOffsetX = Float(0x40dfcd36)
-	PeakTransOffsetY = Float(0x7dbfe486)
-	PeakTransOffsetZ = Float(0x3a1f9e56)
-	RightRotateOffsetX = Float(0x29c748f7)
-	RightRotateOffsetY = Float(0x14a76147)
-	RightRotateOffsetZ = Float(0x53071b97)
-	RightTransOffsetX = Float(0x0a2d6f3e)
-	RightTransOffsetY = Float(0x374d468e)
-	RightTransOffsetZ = Float(0x70ed3c5e)
-	TopRotateOffsetX = Float(0x0ed6caf4)
-	TopRotateOffsetY = Float(0x33b6e344)
-	TopRotateOffsetZ = Float(0x74169994)
+	BackRotateOffsetX = Float(0xb22fcc5e)
+	BackRotateOffsetY = Float(0x8f4fe5ee)
+	BackRotateOffsetZ = Float(0xc8ef9f3e)
 	TopTransOffsetX = Float(0x19eec64f)
 	TopTransOffsetY = Float(0x248eefff)
 	TopTransOffsetZ = Float(0x632e952f)
+	TopRotateOffsetX = Float(0x0ed6caf4)
+	TopRotateOffsetY = Float(0x33b6e344)
+	TopRotateOffsetZ = Float(0x74169994)
+	LeftTransOffsetX = Float(0x43d2fb34)
+	LeftTransOffsetY = Float(0x7eb2d284)
+	FrontRotateOffsetY = Float(0xf4fefcde)
+	LeftRotateOffsetX = Float(0xc95b5e7d)
+	LeftRotateOffsetY = Float(0xf43b77cd)
+	LeftRotateOffsetZ = Float(0xb39b0d1d)
+	RightTransOffsetX = Float(0x0a2d6f3e)
+	RightTransOffsetY = Float(0x374d468e)
+	RightTransOffsetZ = Float(0x70ed3c5e)
+	RightRotateOffsetX = Float(0x29c748f7)
+	RightRotateOffsetY = Float(0x14a76147)
+	RightRotateOffsetZ = Float(0x53071b97)
+	FrontTransOffsetX = Float(0x8659e834)
+	FrontTransOffsetY = Float(0xbb39c184)
+	FrontTransOffsetZ = Float(0xfc99bb54)
+	FrontRotateOffsetX = Float(0xc99ed56e)
+	LeftTransOffsetZ = Float(0x3912a854)
 	UniqueID = U16(0x54706054)
+	ResName = String(0xdcfb52e8) # string32
 	CapResName = String(0x683b0a91) # string32
-	InvisibleEarL = U8(0x617794ff)
 	InvisibleEarR = U8(0xd1b1b453)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
-	ResName = String(0xdcfb52e8) # string32
+	InvisibleEarL = U8(0x617794ff)
 
 class CharaMakeMouthTypeParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4756,38 +4473,38 @@ class CharaMakeSkinColorParam(Row):
 	CheekOrangeColorB = Float(0xc25cdc73)
 	CheekOrangeColorG = Float(0x0abc5303)
 	CheekOrangeColorR = Float(0xa2bc4bf1)
-	CheekPinkColorB = Float(0x384e882c)
-	CheekPinkColorG = Float(0xf0ae075c)
-	CheekPinkColorR = Float(0x58ae1fae)
-	SkinBaseColorB = Float(0x2dae0aa4)
-	SkinBaseColorG = Float(0xe54e85d4)
 	SkinBaseColorR = Float(0x4d4e9d26)
-	SkinEdgeColorB = Float(0x5a52c5f4)
-	SkinEdgeColorG = Float(0x92b24a84)
+	SkinBaseColorG = Float(0xe54e85d4)
+	SkinBaseColorB = Float(0x2dae0aa4)
 	SkinEdgeColorR = Float(0x3ab25276)
+	CheekPinkColorB = Float(0x384e882c)
+	SkinEdgeColorB = Float(0x5a52c5f4)
+	CheekPinkColorR = Float(0x58ae1fae)
+	CheekPinkColorG = Float(0xf0ae075c)
+	SkinEdgeColorG = Float(0x92b24a84)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
+	Label = String(0x87bf00e8) # string32
 
 class ColEffectAttributeParam(Row):
 	UniqueID = U16(0x54706054)
 	Name = String(0x977adfce) # string32
 
 class ColGroundAttributeParam(Row):
-	EffectAttribute = U16(0x6ab4b6fb)
-	SoundAttribute = U16(0x2e17a0a7)
 	UniqueID = U16(0x54706054)
+	SoundAttribute = U16(0x2e17a0a7)
+	EffectAttribute = U16(0x6ab4b6fb)
 	ViewSortID = U16(0xb99c565a)
+	WaterCheck = U8(0x58da05ed)
 	CanBury = U8(0x472724ed)
+	_0254bd05 = U8(0x0254bd05)
 	DebugName = String(0xab51a3cf) # string32
+	PlayerNoEntry = U8(0xe7e965db)
+	NpcNoEntry = U8(0x5baf48a0)
 	FtrPlace = U8(0x3e78dc38)
 	_2e1e45c3 = String(0x2e1e45c3) # size 16
 	_bd859433 = String(0xbd859433) # size 16
-	_0254bd05 = U8(0x0254bd05)
-	NpcNoEntry = U8(0x5baf48a0)
-	PlayerNoEntry = U8(0xe7e965db)
-	Sand = U8(0x9cb82a1e)
-	WaterCheck = U8(0x58da05ed) # size is 2, could this be an array?
+	Sand = U8(0x9cb82a1e) # size is 2, could this be an array?
 
 class ColSoundAttributeParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4797,173 +4514,149 @@ class DuckingParam(Row):
 	UniqueID = U16(0x54706054)
 	Name = String(0x85cf1615) # string128
 
-class EventFlagsAocParam(Row):
-	DefaultValue = U16(0x797f5754)
-	MaxValue = U16(0x0110b14c)
-	UniqueID = U16(0x54706054)
-	_fa93f14b = U8(0xfa93f14b)
-	Key = String(0x45f320f2) # string64
-	Name = String(0x85cf1615) # string128
-
-class EventFlagsBcatParam(Row):
-	FlagLand = S32(0x3fe43170)
-	DefaultValue = U16(0x797f5754)
-	MaxValue = U16(0x0110b14c)
-	UniqueID = U16(0x54706054)
-	_fa93f14b = U8(0xfa93f14b)
-	Key = String(0x45f320f2) # string64
-	Name = String(0x85cf1615) # string128
-
 class EventFlagsHouseParam(Row):
 	DefaultValue = U32(0x4c24f1cf)
 	MaxValue = U32(0x344b17d7)
 	UniqueID = U16(0x54706054)
-	_5140e4b4 = U8(0x5140e4b4) # possible string size 1
 	_fa93f14b = U8(0xfa93f14b)
-	Key = String(0x45f320f2) # string64
 	Name = String(0x85cf1615) # string128
+	Key = String(0x45f320f2) # string64
+	_5140e4b4 = U8(0x5140e4b4) # possible string size 1
 
 class EventFlagsLandParam(Row):
-	_fdb1f290 = Enum(0xfdb1f290, enum_6375519ed254_5b8e07b717c6)
-	DefaultValue = U32(0x4c24f1cf)
-	_fca0adb0 = Enum(0xfca0adb0, enum_c3ddc88645a5_d774c8361500)
 	_93f49ec4 = Enum(0x93f49ec4, enum_10c129883403_814d6adbca21)
 	MaxValue = U32(0x344b17d7)
+	DefaultValue = U32(0x4c24f1cf)
+	_fca0adb0 = Enum(0xfca0adb0, enum_c3ddc88645a5_d774c8361500)
+	_fdb1f290 = Enum(0xfdb1f290, enum_6375519ed254_5b8e07b717c6)
 	UniqueID = U16(0x54706054)
-	Key = String(0x45f320f2) # string64
 	Name = String(0x85cf1615) # string128
-	SendPlayReport = U8(0xe2bff7f5)
-	SyncNoCheck = U8(0x8b8c8093)
+	Key = String(0x45f320f2) # string64
+	SendPlayReport = U8(0xe2bff7f5) # size is 2, could this be an array?
 
 class EventFlagsLandTempParam(Row):
-	DefaultValue = U16(0x797f5754)
-	MaxValue = U16(0x0110b14c)
 	UniqueID = U16(0x54706054)
-	_5140e4b4 = U8(0x5140e4b4)
-	_3dad9135 = U8(0x3dad9135)
-	_3c7fb88f = U8(0x3c7fb88f)
-	_fa93f14b = U8(0xfa93f14b)
+	MaxValue = U16(0x0110b14c)
+	DefaultValue = U16(0x797f5754)
 	_4f7333fd = U8(0x4f7333fd)
-	Key = String(0x45f320f2) # string64
+	_fa93f14b = U8(0xfa93f14b)
+	_5140e4b4 = U8(0x5140e4b4)
 	Name = String(0x85cf1615) # string128
+	Key = String(0x45f320f2) # string64
+	_3c7fb88f = U16(0x3c7fb88f)
 
 class EventFlagsLifeSupportAchievementParam(Row):
-	FlagLand = S32(0x3fe43170)
-	FlagPlayer = S32(0x4171a41d)
+	WaitFrame = U32(0x5971a42e)
 	LifeSupportStamp = Enum(0x95cc0f22, enum_2c27ffe999d6_e4da0c79dac6)
+	FlagLand = S32(0x3fe43170)
 	MaxValue1 = U32(0xce0933fc)
 	MaxValue2 = U32(0x89a9492c)
 	MaxValue3 = U32(0xb4c9609c)
 	MaxValue4 = U32(0x06e9bc8c)
 	MaxValue5 = U32(0x3b89953c)
+	FlagPlayer = S32(0x4171a41d)
 	Reward1 = U32(0x4e7f3849)
-	Reward2 = U32(0x09df4299)
+	Reward6 = U32(0xfc5fe459)
 	Reward3 = U32(0x34bf6b29)
 	Reward4 = U32(0x869fb739)
 	Reward5 = U32(0xbbff9e89)
-	Reward6 = U32(0xfc5fe459)
-	WaitFrame = U32(0x5971a42e)
+	Reward2 = U32(0x09df4299)
 	UniqueID = U16(0x54706054)
-	IsSpecial = U8(0x895442dc)
 	Key = String(0x45f320f2) # string64
-	MaxLevel = U8(0x1be772f0)
 	Name = String(0x85cf1615) # string128
+	IsSpecial = U8(0x895442dc)
+	MaxLevel = U8(0x1be772f0)
 
 class EventFlagsLifeSupportDailyParam(Row):
-	_b5761610 = Enum(0xb5761610, enum_9601b1ddc20d_b837359c7300)
 	WaitFrame = U32(0x5971a42e)
+	_b5761610 = Enum(0xb5761610, enum_9601b1ddc20d_b837359c7300)
 	AppearValue = U16(0x8792265f)
 	GenreID = U16(0x7eabefae)
-	ItemNameUniqueID = U16(0xc33a894e)
-	MaxValue = U16(0x0110b14c)
-	MsID = U16(0x74f1f060)
-	Reward = U16(0x127ccfd9)
 	UniqueID = U16(0x54706054)
-	BonusFive = U8(0x0329d696)
-	CanSelectEDay = U8(0x0153341a)
-	CancelEDay = U8(0x679e3850)
-	CountOtherVillage = U8(0xafb1f366)
+	ItemNameUniqueID = U16(0xc33a894e)
+	MsID = U16(0x74f1f060)
+	MaxValue = U16(0x0110b14c)
+	Reward = U16(0x127ccfd9)
+	Weighting = U8(0xf163e8be)
 	_fa93f14b = U8(0xfa93f14b)
-	IsEDay = U8(0xc47fe703)
 	Key = String(0x45f320f2) # string64
-	Name = String(0x85cf1615) # string128
+	CountOtherVillage = U8(0xafb1f366)
 	NetPlaySelect = U8(0x60da5fef)
 	SpecialSelect = U8(0xe07863ab)
-	Weighting = U8(0xf163e8be) # size is 2, could this be an array?
+	BonusFive = U8(0x0329d696)
+	Name = String(0x85cf1615) # string128
 
 class EventFlagsNpcMemoryParam(Row):
 	UniqueID = U16(0x54706054)
-	_5f77b61a = U8(0x5f77b61a)
-	_5140e4b4 = U8(0x5140e4b4)
-	_8d401df7 = U8(0x8d401df7)
 	DefaultValue = U8(0xd55938bd)
+	Name = String(0x85cf1615) # string128
 	_fa93f14b = U8(0xfa93f14b)
 	Key = String(0x45f320f2) # string64
 	MaxValue = U8(0xbd7682f5)
-	Name = String(0x85cf1615) # string128
+	_5140e4b4 = U8(0x5140e4b4)
+	_5f77b61a = U8(0x5f77b61a)
+	_8d401df7 = U8(0x8d401df7)
 
 class EventFlagsNpcSaveParam(Row):
-	DefaultValue = U32(0x4c24f1cf)
 	MaxValue = U32(0x344b17d7)
+	DefaultValue = U32(0x4c24f1cf)
 	UniqueID = U16(0x54706054)
-	_5140e4b4 = U8(0x5140e4b4)
-	_fa93f14b = U8(0xfa93f14b)
-	Key = String(0x45f320f2) # string64
 	Name = String(0x85cf1615) # string128
+	_5140e4b4 = U8(0x5140e4b4)
+	Key = String(0x45f320f2) # string64
+	_fa93f14b = U8(0xfa93f14b)
 
 class EventFlagsNpcTempParam(Row):
-	DefaultValue = U16(0x797f5754)
-	MaxValue = U16(0x0110b14c)
 	UniqueID = U16(0x54706054)
-	_5f77b61a = U8(0x5f77b61a) # possible string size 1
-	_8d401df7 = U8(0x8d401df7)
+	MaxValue = U16(0x0110b14c)
+	DefaultValue = U16(0x797f5754)
 	_fa93f14b = U8(0xfa93f14b)
-	Key = String(0x45f320f2) # string64
 	Name = String(0x85cf1615) # string128
+	Key = String(0x45f320f2) # string64
+	_5f77b61a = U8(0x5f77b61a) # possible string size 1
+	_8d401df7 = U32(0x8d401df7)
 
 class EventFlagsPlayerActivityParam(Row):
-	MaxValue = U16(0x0110b14c)
-	MessageLabel = U16(0x110a7053)
-	_ccd4c25f = U16(0xccd4c25f)
-	_e6317726 = U16(0xe6317726)
 	UniqueID = U16(0x54706054)
+	MessageLabel = U16(0x110a7053)
+	_e6317726 = U16(0xe6317726)
+	_ccd4c25f = U16(0xccd4c25f)
+	MaxValue = U16(0x0110b14c)
 	_fa93f14b = U8(0xfa93f14b) # possible string size 1
-	Key = String(0x45f320f2) # string64
 	Name = String(0x85cf1615) # string128
+	Key = String(0x45f320f2) # string64
 
 class EventFlagsPlayerParam(Row):
 	DefaultValue = U32(0x4c24f1cf)
 	MaxValue = U32(0x344b17d7)
 	UniqueID = U16(0x54706054)
+	_fa93f14b = U8(0xfa93f14b)
+	Name = String(0x85cf1615) # string128
+	Key = String(0x45f320f2) # string64
 	_5140e4b4 = U8(0x5140e4b4)
 	_bed25a86 = U8(0xbed25a86)
-	_c436ce69 = U8(0xc436ce69)
-	_fa93f14b = U8(0xfa93f14b)
-	Key = String(0x45f320f2) # string64
-	Name = String(0x85cf1615) # string128
-	SendPlayReport = U8(0xe2bff7f5) # size is 2, could this be an array?
+	SendPlayReport = U8(0xe2bff7f5) # size is 3, could this be an array?
 
 class EventFlagsPlayerTempParam(Row):
-	DefaultValue = U16(0x797f5754)
-	MaxValue = U16(0x0110b14c)
 	UniqueID = U16(0x54706054)
-	_3dad9135 = U8(0x3dad9135)
-	_3c7fb88f = U8(0x3c7fb88f)
+	MaxValue = U16(0x0110b14c)
+	DefaultValue = U16(0x797f5754)
 	_fa93f14b = U8(0xfa93f14b)
-	Key = String(0x45f320f2) # string64
 	Name = String(0x85cf1615) # string128
+	Key = String(0x45f320f2) # string64
+	_3c7fb88f = U8(0x3c7fb88f)
 
 class EventFlagsPlayerVisitParam(Row):
+	UniqueID = U16(0x54706054)
 	DefaultValue = U16(0x797f5754)
 	MaxValue = U16(0x0110b14c)
-	UniqueID = U16(0x54706054)
-	_fa93f14b = U8(0xfa93f14b)
-	Key = String(0x45f320f2) # string64
 	Name = String(0x85cf1615) # string128
+	Key = String(0x45f320f2) # string64
+	_fa93f14b = U16(0xfa93f14b)
 
 class EventPlazaFtrParam(Row):
-	EventFtrDirection = Enum(0xc150fba5, enum_4547a8a48a03_a84b967e0ad7)
 	EventFtrSwitch = Enum(0x24726310, enum_917e0a06d70e_917e0a06d70e)
+	EventFtrDirection = Enum(0xc150fba5, enum_4547a8a48a03_a84b967e0ad7)
 	ItemNameUniqueID = U16(0xc33a894e)
 	UniqueID = U16(0x54706054)
 
@@ -4974,75 +4667,70 @@ class EventPlazaGround(Row):
 class EventPlazaObjModelParam(Row):
 	DemoDistance = Float(0x158a4c61)
 	_a9c1118b = Enum(0xa9c1118b, enum_44bd12ada204_11a50a2b435c)
-	RoofMaterial = U16(0x83b54e59)
 	UniqueID = U16(0x54706054)
-	FlowFileName = String(0x364c173e) # string32
-	NearCulling = U8(0xb418fb3b)
 	ResourceName = String(0xdf881359) # string32
+	FlowFileName = String(0x364c173e) # string32
+	NearCulling = U8(0xb418fb3b) # size is 2, could this be an array?
 
 class EventPlazaPlacementParam(Row):
-	_036dd90c = U32(0x036dd90c)
-	EventType = Enum(0x70703269, enum_f3c18336bb2d_2196d32cce4c)
 	_24e5b19d = U32(0x24e5b19d)
+	_036dd90c = U32(0x036dd90c)
 	PlacementKind = Enum(0x65a97fab, enum_5174da149586_78f560476764)
-	EventFtrUniqueID = U16(0x20dd4435)
-	EventObjUniqueID = U16(0x26db5137)
-	OffsetX = S16(0x4154052c)
-	OffsetZ = S16(0x3b94564c)
+	EventType = Enum(0x70703269, enum_f3c18336bb2d_2196d32cce4c)
 	UniqueID = U16(0x54706054)
-	CalendarEventKey = String(0x52f0badd) # string32
-	_e6c63c5c = String(0xe6c63c5c) # size 32
-	_7215b154 = String(0x7215b154) # size 32
+	EventObjUniqueID = U16(0x26db5137)
+	OffsetZ = S16(0x3b94564c)
+	OffsetX = S16(0x4154052c)
+	EventFtrUniqueID = U16(0x20dd4435)
 	NpcSpLabel = String(0x5ba37406) # string32
 	PlacementKey = String(0xe2d0ac54) # string32
+	CalendarEventKey = String(0x52f0badd) # string32
 	VisitorNpcLabel = String(0x7e322ef0) # string32
-
-class FadeOutDuckingParam(Row):
-	UniqueID = U16(0x54706054)
-	Name = String(0x85cf1615) # string128
+	_7215b154 = String(0x7215b154) # size 32
+	_e6c63c5c = String(0xe6c63c5c) # size 34
 
 class FgFlowerHeredity(Row):
 	Kind = Enum(0x9b7aa0a0, enum_282b3f1c6bd6_e34f70824d5a)
-	Name = U16(0x6aa33bf0)
 	_753336dd = U16(0x753336dd) # possible string size 2
-	DefaultHeredity = U8(0x08d23365)
-	HeredityA = U8(0xc7208ade)
-	HeredityB = U8(0xd5952530)
+	Name = U16(0x6aa33bf0)
+	HeredityD = U8(0xf0fe7aec)
 	HeredityC = U8(0x6d294255)
-	HeredityD = U8(0xf0fe7aec) # size is 4, could this be an array?
+	HeredityB = U8(0xd5952530)
+	HeredityA = U8(0xc7208ade)
+	DefaultHeredity = U8(0x08d23365) # size is 4, could this be an array?
 
 class FgMainParam(Row):
-	CollisionHeight = Float(0x0c315945)
-	InsectParam = Enum(0x360b721a, enum_80fe2e01edeb_a0944789ee2d)
 	Kind = Enum(0x9b7aa0a0, enum_282b3f1c6bd6_e34f70824d5a)
-	_123efcf1 = Float(0x123efcf1) # size 4
+	CollisionHeight = Float(0x0c315945)
+	_123efcf1 = Float(0x123efcf1)
+	InsectParam = Enum(0x360b721a, enum_80fe2e01edeb_a0944789ee2d)
+	UniqueID = U16(0x54706054)
+	NutItem = U16(0xbe17c845)
+	PicItem = U16(0xb7a46956)
+	DigItem = U16(0xf4678f13)
 	BuryItem = U16(0x6ac5a6df)
 	BuryItem2 = U16(0xd59ff85e)
 	BuryItem3 = U16(0xe8ffd1ee)
-	ChangeFg = U16(0x76e7fe08)
-	DigItem = U16(0xf4678f13)
-	EffectAttribute = U16(0x6ab4b6fb)
 	GrowupFg = U16(0x2c6a189e)
-	NutItem = U16(0xbe17c845)
-	PicItem = U16(0xb7a46956)
+	EffectAttribute = U16(0x6ab4b6fb)
 	SoundAttribute = U16(0x2e17a0a7)
-	UniqueID = U16(0x54706054)
+	ChangeFg = U16(0x76e7fe08)
+	ModelName = String(0x39b5a93d) # string32
+	_a4b2d66d = RawData(0xa4b2d66d, 1)
+	Nature = RawData(0x623dc307, 2)
+	Grow = U8(0xf5a73337)
 	ColorIndex = S8(0x64b8fff8)
 	DebugName = String(0x3f45f2bf) # string64
-	Grow = U8(0xf5a73337)
 	Label = String(0x87bf00e8) # string32
-	ModelName = String(0x39b5a93d) # string32
-	Nature = RawData(0x623dc307, 2) # size 2
-	_a4b2d66d = RawData(0xa4b2d66d, 1) # size 1
 	ResName = String(0x48ef0398) # string64
 
 class FieldCreateParam(Row):
-	FactoryType = Enum(0x6654378d, enum_c2f1120003e9_c2f1120003e9)
 	PhotoStudioRoomNo = Enum(0x65d009e1, enum_30e2684ee89a_599636c94afd)
 	RoomType = Enum(0x897261e3, enum_42f04d307ef8_30984578ef41)
+	FactoryType = Enum(0x6654378d, enum_c2f1120003e9_c2f1120003e9)
 	ItemLayer = U8(0xaf3beca5)
+	StaticField = U8(0x46e8c73e)
 	StageName = String(0xd069f90c) # string32
-	StaticField = U8(0x46e8c73e) # size is 3, could this be an array?
 
 class FieldDistantViewParam(Row):
 	UniqueID = U16(0x54706054)
@@ -5050,26 +4738,26 @@ class FieldDistantViewParam(Row):
 
 class FieldLandMakingActionParam(Row):
 	ActionRange = Enum(0x59485fad, enum_0e2adceecdfa_0e2adceecdfa)
+	Layer = Enum(0xef79de0f, enum_784cf9486925_255fffffb8d5)
+	SuccessResult = Enum(0x4932f93e, enum_a3c5bfa601e4_a3c5bfa601e4)
 	_75fee4b0 = Enum(0x75fee4b0, enum_70471eeaa222_c602c1a479c5)
 	MeshEdgeDirType = Enum(0x0bcf172f, enum_5bb07f38004e_feaae8200c31)
-	FallActionType = Enum(0x281f90a8, enum_6f6d6ff1098e_dbf69e6d0415)
-	Layer = Enum(0xef79de0f, enum_784cf9486925_255fffffb8d5)
 	PlaneChangeType = Enum(0xe421a842, enum_60ad9adbd84b_bd137f5ee888)
+	FallActionType = Enum(0x281f90a8, enum_6f6d6ff1098e_dbf69e6d0415)
 	_7674c4d6 = Enum(0x7674c4d6, enum_62e4c6f51ad1_474f8f35cfdc)
-	SuccessResult = Enum(0x4932f93e, enum_a3c5bfa601e4_a3c5bfa601e4)
-	_7c8e7f81 = U8(0x7c8e7f81)
+	UpdateParts = U8(0x926d7dd8)
 	_f9a37bdc = U8(0xf9a37bdc)
 	MainType = U8(0x31450aa2)
-	UpdateParts = U8(0x926d7dd8)
+	_7c8e7f81 = U8(0x7c8e7f81)
 
 class FieldLandMakingError(Row):
 	UniqueID = U16(0x54706054)
-	AsCommand = String(0x7703d2dd) # string50
-	CliffCreate = U8(0xf8a892fc)
 	_0b3be609 = U8(0x0b3be609) # possible string size 1
-	EventFlowEntryName = String(0xb92c3183) # string40
 	Label = String(0x69b161c4) # string30
 	Name = String(0x04034aa7) # string60
+	CliffCreate = U8(0xf8a892fc)
+	AsCommand = String(0x7703d2dd) # string50
+	EventFlowEntryName = String(0xb92c3183) # string40
 
 class FieldLandMakingRoadKindParam(Row):
 	GroundAttributeUniqueID = U16(0x2df085cc)
@@ -5077,434 +4765,446 @@ class FieldLandMakingRoadKindParam(Row):
 	MessageLabel = String(0xf68a2366) # string32
 
 class FieldLandMakingUnitModelParam(Row):
-	_d943e2bd = Enum(0xd943e2bd, enum_4270b8b74b46_c144e90289f3)
 	CornerType = Enum(0x9dfa9b39, enum_06495113f123_3d33eb822663)
-	EdgePatternType = Enum(0x0d54d810, enum_e88a63f4642d_4d2cf72813b3)
+	_d943e2bd = Enum(0xd943e2bd, enum_4270b8b74b46_c144e90289f3)
 	InnerType000 = Enum(0xeb4430c7, enum_717e8e90873e_eb9d94566e11)
-	ModelType = Enum(0xc01e47a7, enum_555bb220c90f_a5afdf39ebc3)
-	StepLevel = Enum(0xc7f82afd, enum_2a04dcc2be18_4ae6d2210ecb)
 	TriangleType = Enum(0x59d78633, enum_b0f707938ca8_32e4190d51a4)
+	EdgePatternType = Enum(0x0d54d810, enum_e88a63f4642d_4d2cf72813b3)
+	StepLevel = Enum(0xc7f82afd, enum_2a04dcc2be18_4ae6d2210ecb)
+	ModelType = Enum(0xc01e47a7, enum_555bb220c90f_a5afdf39ebc3)
 	UniqueID = U16(0x54706054)
 	Variation = U16(0xc733aa77)
-	FishPoint = S8(0xa4f6da11)
-	InnerType001 = U8(0xf85c61d4)
+	InnerType130 = U8(0xcc1cafc4)
 	InnerType002 = U8(0xeae9ce3a)
-	InnerType003 = U8(0x5255a95f)
-	InnerType010 = U8(0x7d802f01)
-	InnerType011 = U8(0xc53c4864)
 	InnerType012 = U8(0xd789e78a)
-	InnerType013 = U8(0x6f3580ef)
-	InnerType020 = U8(0x3a2055d1)
-	InnerType021 = U8(0x829c32b4)
 	InnerType022 = U8(0x90299d5a)
-	InnerType023 = U8(0x2895fa3f)
-	InnerType030 = U8(0x07407c61)
-	InnerType031 = U8(0xbffc1b04)
 	InnerType032 = U8(0xad49b4ea)
+	InnerType003 = U8(0x5255a95f)
+	InnerType013 = U8(0x6f3580ef)
+	InnerType023 = U8(0x2895fa3f)
 	InnerType033 = U8(0x15f5d38f)
 	InnerType100 = U8(0x8bbcd514)
-	InnerType101 = U8(0x3300b271)
-	InnerType102 = U8(0x21b51d9f)
-	InnerType103 = U8(0x99097afa)
 	InnerType110 = U8(0xb6dcfca4)
-	InnerType111 = U8(0x0e609bc1)
-	InnerType112 = U8(0x1cd5342f)
-	InnerType113 = U8(0xa469534a)
 	InnerType120 = U8(0xf17c8674)
+	InnerType031 = U8(0xbffc1b04)
+	InnerType101 = U8(0x3300b271)
+	InnerType111 = U8(0x0e609bc1)
 	InnerType121 = U8(0x49c0e111)
-	InnerType122 = U8(0x5b754eff)
-	InnerType123 = U8(0xe3c9299a)
-	InnerType130 = U8(0xcc1cafc4)
 	InnerType131 = U8(0x74a0c8a1)
+	InnerType102 = U8(0x21b51d9f)
+	InnerType112 = U8(0x1cd5342f)
+	InnerType122 = U8(0x5b754eff)
 	InnerType132 = U8(0x6615674f)
+	InnerType103 = U8(0x99097afa)
+	InnerType113 = U8(0xa469534a)
+	InnerType123 = U8(0xe3c9299a)
 	InnerType133 = U8(0xdea9002a)
+	InnerType021 = U8(0x829c32b4)
+	InnerType011 = U8(0xc53c4864)
+	InnerType001 = U8(0xf85c61d4)
+	InnerType030 = U8(0x07407c61)
+	InnerType020 = U8(0x3a2055d1)
+	InnerType010 = U8(0x7d802f01)
 	ModelName = String(0x39b5a93d) # string32
+	FishPoint = S8(0xa4f6da11)
 
 class FieldMainFieldParam(Row):
 	UniqueID = U16(0x54706054)
 	FieldData = String(0x6e1ac981) # string32
-	ItemData = String(0xcad74e4e) # string32
-	Label = String(0x87bf00e8) # string32
 	OutsideTemplateKind = U8(0x948eb946)
+	Label = String(0x87bf00e8) # string32
 	StructureData = String(0xecffb7c6) # string32
+	ItemData = String(0xcad74e4e) # string32
+
+class FieldMysteryTourFieldParam(Row):
+	MysteryTourFieldOutside = U32(0xe8fa8b93)
+	UniqueID = U16(0x54706054) # size is 4, could this be an array?
+
+class FieldMysteryTourItemParam(Row):
+	UniqueID = U16(0x54706054) # size is 4, could this be an array?
+
+class FieldMysteryTourParam(Row):
+	ItemPlacementKind = U32(0xdd59b554) # possible string size 4
+	UniqueID = U16(0x54706054)
+	MysteryTourItemUniqueID = U16(0x7a09986c)
+	MysteryTourFieldUniqueID = U16(0x72573f73)
+	InsectPattern = S16(0xe23c6453)
+	FishPattern = S16(0xb1f384dc)
+	SelectWeight = U8(0xd89a0db0) # size is 2, could this be an array?
 
 class FieldOutsideParts(Row):
-	PartsKind = Enum(0x493eed57, enum_d15aca83378a_00ef512c69e8)
 	ReefType = Enum(0xb5a652fa, enum_69eaeee0564d_950b97c5042a)
+	PartsKind = Enum(0x493eed57, enum_d15aca83378a_00ef512c69e8)
 	UniqueID = U16(0x54706054)
 	ModelName = String(0x39b5a93d) # string32
 
 class FieldOutsideTemplate(Row):
-	E0Parts = Enum(0x4038a881, enum_d15aca83378a_00ef512c69e8)
-	E1Parts = Enum(0x255f93c7, enum_d15aca83378a_00ef512c69e8)
-	E2Parts = Enum(0x8af6de0d, enum_d15aca83378a_00ef512c69e8)
-	E3Parts = Enum(0xef91e54b, enum_d15aca83378a_00ef512c69e8)
+	WindDirection = Enum(0x6971370a, enum_09c40b1f72c1_d8cf6e1a81aa)
+	SeaType = Enum(0x714d3f2e, enum_009fa2d460ce_286d6aa2ee6b)
+	TemplateKind = Enum(0x29346c33, enum_d1e01a5880ce_45c1b601c21a)
+	NWParts = Enum(0xd094759a, enum_d15aca83378a_00ef512c69e8)
 	N0Parts = Enum(0x1ed42314, enum_d15aca83378a_00ef512c69e8)
 	N1Parts = Enum(0x7bb31852, enum_d15aca83378a_00ef512c69e8)
 	N2Parts = Enum(0xd41a5598, enum_d15aca83378a_00ef512c69e8)
 	N3Parts = Enum(0xb17d6ede, enum_d15aca83378a_00ef512c69e8)
 	N4Parts = Enum(0x5039c84d, enum_d15aca83378a_00ef512c69e8)
 	NEParts = Enum(0xfa9ca833, enum_d15aca83378a_00ef512c69e8)
-	NWParts = Enum(0xd094759a, enum_d15aca83378a_00ef512c69e8)
+	W0Parts = Enum(0xef18bb10, enum_d15aca83378a_00ef512c69e8)
+	W1Parts = Enum(0x8a7f8056, enum_d15aca83378a_00ef512c69e8)
+	W2Parts = Enum(0x25d6cd9c, enum_d15aca83378a_00ef512c69e8)
+	SEParts = Enum(0x19a9348c, enum_d15aca83378a_00ef512c69e8)
+	E0Parts = Enum(0x4038a881, enum_d15aca83378a_00ef512c69e8)
+	E1Parts = Enum(0x255f93c7, enum_d15aca83378a_00ef512c69e8)
+	E2Parts = Enum(0x8af6de0d, enum_d15aca83378a_00ef512c69e8)
+	E3Parts = Enum(0xef91e54b, enum_d15aca83378a_00ef512c69e8)
+	SWParts = Enum(0x33a1e925, enum_d15aca83378a_00ef512c69e8)
 	S0Parts = Enum(0xfde1bfab, enum_d15aca83378a_00ef512c69e8)
 	S1Parts = Enum(0x988684ed, enum_d15aca83378a_00ef512c69e8)
 	S2Parts = Enum(0x372fc927, enum_d15aca83378a_00ef512c69e8)
 	S3Parts = Enum(0x5248f261, enum_d15aca83378a_00ef512c69e8)
 	S4Parts = Enum(0xb30c54f2, enum_d15aca83378a_00ef512c69e8)
-	SEParts = Enum(0x19a9348c, enum_d15aca83378a_00ef512c69e8)
-	SWParts = Enum(0x33a1e925, enum_d15aca83378a_00ef512c69e8)
-	SeaType = Enum(0x714d3f2e, enum_009fa2d460ce_286d6aa2ee6b)
-	TemplateKind = Enum(0x29346c33, enum_d1e01a5880ce_45c1b601c21a)
-	W0Parts = Enum(0xef18bb10, enum_d15aca83378a_00ef512c69e8)
-	W1Parts = Enum(0x8a7f8056, enum_d15aca83378a_00ef512c69e8)
-	W2Parts = Enum(0x25d6cd9c, enum_d15aca83378a_00ef512c69e8)
 	W3Parts = Enum(0x40b1f6da, enum_d15aca83378a_00ef512c69e8)
-	WindDirection = Enum(0x6971370a, enum_09c40b1f72c1_d8cf6e1a81aa)
 	UniqueID = U16(0x54706054)
 	EnglishName = String(0xdadfa19a) # string32
 
 class FishAppearRiverParam(Row):
 	ItemID = U16(0x20cb67bc)
-	ProbAprDaytime = U16(0x9c4a43c0)
-	ProbAprMorningAndEvening = U16(0x0dbbebb5)
-	ProbAprNight = U16(0x1d790df7)
-	ProbAugDaytime = U16(0x15de6a3f)
-	ProbAugMorningAndEvening = U16(0x74ea1d73)
-	ProbAugNight = U16(0xada9eb19)
-	ProbDecDaytime = U16(0x267c99f7)
-	ProbDecMorningAndEvening = U16(0xc11af347)
 	ProbDecNight = U16(0x9217f8b8)
-	ProbFebDaytime = U16(0x5cb71135)
-	ProbFebMorningAndEvening = U16(0x0f095b88)
-	ProbFebNight = U16(0x91ee0d19)
-	ProbJanDaytime = U16(0xb3f1a70f)
 	ProbJanMorningAndEvening = U16(0x51bcedfa)
+	ProbJanDaytime = U16(0xb3f1a70f)
 	ProbJanNight = U16(0x3e01d394)
-	ProbJulDaytime = U16(0x2b74f5dc)
-	ProbJulMorningAndEvening = U16(0x7ec203a5)
-	ProbJulNight = U16(0x24dbb4e0)
-	ProbJunDaytime = U16(0xc74f6b43)
-	ProbJunMorningAndEvening = U16(0x5092ca25)
-	ProbJunNight = U16(0x202e64dd)
-	ProbMarDaytime = U16(0xdf2eadb2)
+	ProbFebMorningAndEvening = U16(0x0f095b88)
+	ProbFebDaytime = U16(0x5cb71135)
+	ProbFebNight = U16(0x91ee0d19)
 	ProbMarMorningAndEvening = U16(0x2cb125cc)
+	ProbMarDaytime = U16(0xdf2eadb2)
 	ProbMarNight = U16(0x770b5b7d)
-	ProbMayDaytime = U16(0xaebc09bc)
+	ProbAprMorningAndEvening = U16(0x0dbbebb5)
+	ProbAprDaytime = U16(0x9c4a43c0)
+	ProbAprNight = U16(0x1d790df7)
 	ProbMayMorningAndEvening = U16(0xac8aae8c)
+	ProbMayDaytime = U16(0xaebc09bc)
 	ProbMayNight = U16(0x8feba08a)
-	ProbNovDaytime = U16(0x5aafbfa6)
-	ProbNovMorningAndEvening = U16(0xc57d2eb8)
-	ProbNovNight = U16(0x5b0802f1)
-	ProbOctDaytime = U16(0xb12179b4)
-	ProbOctMorningAndEvening = U16(0x6aed60aa)
-	ProbOctNight = U16(0xce420c64)
-	ProbSepDaytime = U16(0x5e853057)
+	ProbJunMorningAndEvening = U16(0x5092ca25)
+	ProbJunDaytime = U16(0xc74f6b43)
+	ProbDecDaytime = U16(0x267c99f7)
+	ProbJulMorningAndEvening = U16(0x7ec203a5)
+	ProbJulDaytime = U16(0x2b74f5dc)
+	ProbJulNight = U16(0x24dbb4e0)
+	ProbAugMorningAndEvening = U16(0x74ea1d73)
+	ProbAugDaytime = U16(0x15de6a3f)
+	ProbAugNight = U16(0xada9eb19)
 	ProbSepMorningAndEvening = U16(0x1fe65c0c)
+	ProbSepDaytime = U16(0x5e853057)
 	ProbSepNight = U16(0x260ec620)
+	ProbOctMorningAndEvening = U16(0x6aed60aa)
+	ProbOctDaytime = U16(0xb12179b4)
+	ProbOctNight = U16(0xce420c64)
+	ProbNovMorningAndEvening = U16(0xc57d2eb8)
+	ProbNovDaytime = U16(0x5aafbfa6)
+	ProbNovNight = U16(0x5b0802f1)
+	ProbDecMorningAndEvening = U16(0xc11af347)
+	ProbJunNight = U16(0x202e64dd)
 	AppearArea = U8(0x137dd804) # size is 2, could this be an array?
 
 class FishAppearSeaParam(Row):
 	ItemID = U16(0x20cb67bc)
-	ProbAprDaytime = U16(0x9c4a43c0)
-	ProbAprMorningAndEvening = U16(0x0dbbebb5)
-	ProbAprNight = U16(0x1d790df7)
-	ProbAugDaytime = U16(0x15de6a3f)
-	ProbAugMorningAndEvening = U16(0x74ea1d73)
-	ProbAugNight = U16(0xada9eb19)
-	ProbDecDaytime = U16(0x267c99f7)
-	ProbDecMorningAndEvening = U16(0xc11af347)
 	ProbDecNight = U16(0x9217f8b8)
-	ProbFebDaytime = U16(0x5cb71135)
-	ProbFebMorningAndEvening = U16(0x0f095b88)
-	ProbFebNight = U16(0x91ee0d19)
-	ProbJanDaytime = U16(0xb3f1a70f)
 	ProbJanMorningAndEvening = U16(0x51bcedfa)
+	ProbJanDaytime = U16(0xb3f1a70f)
 	ProbJanNight = U16(0x3e01d394)
-	ProbJulDaytime = U16(0x2b74f5dc)
-	ProbJulMorningAndEvening = U16(0x7ec203a5)
-	ProbJulNight = U16(0x24dbb4e0)
-	ProbJunDaytime = U16(0xc74f6b43)
-	ProbJunMorningAndEvening = U16(0x5092ca25)
-	ProbJunNight = U16(0x202e64dd)
-	ProbMarDaytime = U16(0xdf2eadb2)
+	ProbFebMorningAndEvening = U16(0x0f095b88)
+	ProbFebDaytime = U16(0x5cb71135)
+	ProbFebNight = U16(0x91ee0d19)
 	ProbMarMorningAndEvening = U16(0x2cb125cc)
+	ProbMarDaytime = U16(0xdf2eadb2)
 	ProbMarNight = U16(0x770b5b7d)
-	ProbMayDaytime = U16(0xaebc09bc)
+	ProbAprMorningAndEvening = U16(0x0dbbebb5)
+	ProbAprDaytime = U16(0x9c4a43c0)
+	ProbAprNight = U16(0x1d790df7)
 	ProbMayMorningAndEvening = U16(0xac8aae8c)
+	ProbMayDaytime = U16(0xaebc09bc)
 	ProbMayNight = U16(0x8feba08a)
-	ProbNovDaytime = U16(0x5aafbfa6)
-	ProbNovMorningAndEvening = U16(0xc57d2eb8)
-	ProbNovNight = U16(0x5b0802f1)
-	ProbOctDaytime = U16(0xb12179b4)
-	ProbOctMorningAndEvening = U16(0x6aed60aa)
-	ProbOctNight = U16(0xce420c64)
-	ProbSepDaytime = U16(0x5e853057)
+	ProbJunMorningAndEvening = U16(0x5092ca25)
+	ProbJunDaytime = U16(0xc74f6b43)
+	ProbDecDaytime = U16(0x267c99f7)
+	ProbJulMorningAndEvening = U16(0x7ec203a5)
+	ProbJulDaytime = U16(0x2b74f5dc)
+	ProbJulNight = U16(0x24dbb4e0)
+	ProbAugMorningAndEvening = U16(0x74ea1d73)
+	ProbAugDaytime = U16(0x15de6a3f)
+	ProbAugNight = U16(0xada9eb19)
 	ProbSepMorningAndEvening = U16(0x1fe65c0c)
+	ProbSepDaytime = U16(0x5e853057)
 	ProbSepNight = U16(0x260ec620)
+	ProbOctMorningAndEvening = U16(0x6aed60aa)
+	ProbOctDaytime = U16(0xb12179b4)
+	ProbOctNight = U16(0xce420c64)
+	ProbNovMorningAndEvening = U16(0xc57d2eb8)
+	ProbNovDaytime = U16(0x5aafbfa6)
+	ProbNovNight = U16(0x5b0802f1)
+	ProbDecMorningAndEvening = U16(0xc11af347)
+	ProbJunNight = U16(0x202e64dd)
 	AppearArea = U8(0x137dd804) # size is 2, could this be an array?
 
 class FishBeyQuestParam(Row):
 	UniqueID = U16(0x54706054)
-	_748db6d8 = U8(0x748db6d8)
 	_c44b9674 = U8(0xc44b9674)
-	_fb867bc1 = U32(0xfb867bc1)
+	_fb867bc1 = U8(0xfb867bc1)
+	_748db6d8 = U32(0x748db6d8)
 
 class FishStatusParam(Row):
+	EscapeScale = Float(0xb7c9dd05)
+	_4108715d = U32(0x4108715d)
+	FishMuseumAction = Enum(0x132dd5b9, enum_01016811d685_37fe72043e75)
 	AppearArea = Enum(0x64330cb0, enum_3bcfd82ce180_8ccc4bd385f8)
 	AppearType = Enum(0x0de2a3be, enum_7a531090c8c0_d059b6858b92)
-	BuoyLv = Enum(0x770288fd, enum_b308e10c72b9_c2aae04b2493)
-	EscapeScale = Float(0xb7c9dd05)
-	FishMuseumAction = Enum(0x132dd5b9, enum_01016811d685_37fe72043e75)
-	_4108715d = U32(0x4108715d)
-	SearchRadius = Enum(0x7ec9ada7, enum_b308e10c72b9_c2aae04b2493)
 	ShadowType = Enum(0xac0ebe24, enum_a28161dd393f_a28161dd393f)
-	ItemID = U16(0x20cb67bc)
-	OpenDonatedNum = U16(0xeac6a012)
-	ToyItemID = U16(0xdaaf8ba0)
+	BuoyLv = Enum(0x770288fd, enum_b308e10c72b9_c2aae04b2493)
+	SearchRadius = Enum(0x7ec9ada7, enum_b308e10c72b9_c2aae04b2493)
 	UniqueID = U16(0x54706054)
+	ItemID = U16(0x20cb67bc)
+	ToyItemID = U16(0xdaaf8ba0)
+	OpenDonatedNum = U16(0xeac6a012)
+	_0e91fc27 = U8(0x0e91fc27)
 	DebugName = String(0xab51a3cf) # string32
-	IsCreateBait = U8(0x3dc49bc2)
-	IsSidewaysShow = U8(0x0e91fc27)
 	Label = String(0x87bf00e8) # string32
+	IsCreateBait = U8(0x3dc49bc2)
 	_1f875d3d = String(0x1f875d3d) # size 32
-	ResName = String(0x48ef0398) # string64
 	ResNameMuseum = String(0x1c8856db) # string32
+	ResName = String(0x48ef0398) # string64
 
 class GmoFootprintParam(Row):
-	Effect = Enum(0x6d4bd7da, enum_ea6867159088_b5057bd5784d)
 	Sound = Enum(0x0fd26913, enum_63bab5a95741_093e393915f9)
+	Effect = Enum(0x6d4bd7da, enum_ea6867159088_b5057bd5784d)
 	UniqueID = U16(0x54706054)
 	Name = String(0x85cf1615) # string128
 
 class HumanAnimParam(Row):
 	LowerSetting = Enum(0x0b69ec1a, enum_7a6babece06f_675c7f6d8dcb)
-	UISortID = S16(0x2fe593c3)
 	UniqueID = U16(0x54706054)
+	_2fe593c3 = U16(0x2fe593c3)
 	_9f5123d4 = U8(0x9f5123d4)
 	_d5217761 = U8(0xd5217761)
 	AsCommand = String(0x2c447591) # string65
+	Comment = String(0x96ba28fe) # string64
+	MoveAs = U8(0x49803457)
 	_84761fb6 = U8(0x84761fb6)
 	CancelFootprint = U8(0xfc3116b5)
-	Comment = String(0x96ba28fe) # string64
-	Misc = RawData(0x42ad246a, 3) # size 3
-	MoveAs = U8(0x49803457)
 	ToolAsCommand = String(0x26911c10) # string30
+	Misc = RawData(0x42ad246a, 3)
 
 class IndoorIdrParam(Row):
-	ArtObjNum = U16(0x607ccfce)
-	DecorationObjNum = U16(0x91b7e30b)
-	FossilObjNum = U16(0x707e79ff)
 	UniqueID = U16(0x54706054)
+	FossilObjNum = U16(0x707e79ff)
+	DecorationObjNum = U16(0x91b7e30b)
 	ResourceName = String(0x4b9c4229) # string64
 
 class IndoorPhotoStudioItemParam(Row):
 	Dir = Enum(0xd5a8bf7e, enum_4547a8a48a03_a84b967e0ad7)
-	ItemID = U16(0x20cb67bc)
 	PosX = S16(0x374d00da)
+	RoomIndex = S16(0x7d016b27)
+	UniqueID = U16(0x54706054)
+	ItemID = U16(0x20cb67bc)
 	PosZ = S16(0x4d8d53ba)
 	ReBody = S16(0xc61c279a)
-	ReFabric = S16(0xb5980451)
-	RoomIndex = S16(0x7d016b27)
-	UniqueID = U16(0x54706054) # size is 4, could this be an array?
+	ReFabric = S16(0xb5980451) # size is 4, could this be an array?
 
 class InsectAppearParam(Row):
+	UniqueID = U16(0x54706054)
 	ItemID = U16(0x20cb67bc)
-	ProbAprilDaytime = U16(0x655e327e)
-	ProbAprilEvening1 = U16(0x57d5055c)
-	ProbAprilEvening2 = U16(0x10757f8c)
-	ProbAprilMidnight = U16(0x77c808ae)
-	ProbAprilMorning = U16(0x93a0aeb8)
-	ProbAprilNight = U16(0xd420d79d)
-	ProbAugustDaytime = U16(0xf588704d)
-	ProbAugustEvening1 = U16(0xe895b208)
-	ProbAugustEvening2 = U16(0xaf35c8d8)
-	ProbAugustMidnight = U16(0xc888bffa)
-	ProbAugustMorning = U16(0x0376ec8b)
-	ProbAugustNight = U16(0x8d40260e)
-	ProbDecemberDaytime = U16(0x995763a6)
-	ProbDecemberEvening1 = U16(0xdf2156eb)
-	ProbDecemberEvening2 = U16(0x98812c3b)
-	ProbDecemberMidnight = U16(0xff3c5b19)
-	ProbDecemberMorning = U16(0x6fa9ff60)
 	ProbDecemberNight = U16(0xdd1caee7)
-	ProbFebruayDaytime = U16(0x4026fbe1)
-	ProbFebruayEvening1 = U16(0x3740f340)
-	ProbFebruayEvening2 = U16(0x70e08990)
-	ProbFebruayMidnight = U16(0x175dfeb2)
-	ProbFebruayMorning = U16(0xb6d86727)
-	ProbFebruayNight = U16(0x78a12603)
+	ProbJanuaryMidnight = U16(0x40104a6c)
+	ProbJanuaryMorning = U16(0x93d99c53)
 	ProbJanuaryDaytime = U16(0x65270095)
 	ProbJanuaryEvening1 = U16(0x600d479e)
 	ProbJanuaryEvening2 = U16(0x27ad3d4e)
-	ProbJanuaryMidnight = U16(0x40104a6c)
-	ProbJanuaryMorning = U16(0x93d99c53)
 	ProbJanuaryNight = U16(0x3a737394)
-	ProbJulyDaytime = U16(0x813dbbdc)
-	ProbJulyEvening1 = U16(0x6fe9a411)
-	ProbJulyEvening2 = U16(0x2849dec1)
-	ProbJulyMidnight = U16(0x4ff4a9e3)
-	ProbJulyMorning = U16(0x77c3271a)
-	ProbJulyNight = U16(0x4f6db088)
-	ProbJuneDaytime = U16(0xe873aeea)
-	ProbJuneEvening1 = U16(0xa03a7f9d)
-	ProbJuneEvening2 = U16(0xe79a054d)
-	ProbJuneMidnight = U16(0x8027726f)
-	ProbJuneMorning = U16(0x1e8d322c)
-	ProbJuneNight = U16(0x2a93682f)
+	ProbFebruayMidnight = U16(0x175dfeb2)
+	ProbFebruayMorning = U16(0xb6d86727)
+	ProbFebruayDaytime = U16(0x4026fbe1)
+	ProbFebruayEvening1 = U16(0x3740f340)
+	ProbFebruayEvening2 = U16(0x70e08990)
+	ProbFebruayNight = U16(0x78a12603)
+	ProbMarchMidnight = U16(0xb8117ffd)
+	ProbMarchMorning = U16(0xf042648e)
 	ProbMarchDaytime = U16(0x06bcf848)
 	ProbMarchEvening1 = U16(0x980c720f)
 	ProbMarchEvening2 = U16(0xdfac08df)
-	ProbMarchMidnight = U16(0xb8117ffd)
-	ProbMarchMorning = U16(0xf042648e)
 	ProbMarchNight = U16(0x7c00c111)
+	ProbAprilMidnight = U16(0x77c808ae)
+	ProbAprilMorning = U16(0x93a0aeb8)
+	ProbAprilDaytime = U16(0x655e327e)
+	ProbAprilEvening1 = U16(0x57d5055c)
+	ProbAprilEvening2 = U16(0x10757f8c)
+	ProbAprilNight = U16(0xd420d79d)
+	ProbMayMidnight = U16(0x02694909)
+	ProbMayMorning = U16(0x5842957a)
 	ProbMayDaytime = U16(0xaebc09bc)
 	ProbMayEvening1 = U16(0x227444fb)
 	ProbMayEvening2 = U16(0x65d43e2b)
-	ProbMayMidnight = U16(0x02694909)
-	ProbMayMorning = U16(0x5842957a)
 	ProbMayNight = U16(0x8feba08a)
-	ProbNovemberDaytime = U16(0x1538c8ac)
-	ProbNovemberEvening1 = U16(0x3f78d05e)
-	ProbNovemberEvening2 = U16(0x78d8aa8e)
-	ProbNovemberMidnight = U16(0x1f65ddac)
-	ProbNovemberMorning = U16(0xe3c6546a)
-	ProbNovemberNight = U16(0x6c66ea56)
+	ProbJuneMidnight = U16(0x8027726f)
+	ProbJuneMorning = U16(0x1e8d322c)
+	ProbJuneDaytime = U16(0xe873aeea)
+	ProbJuneEvening1 = U16(0xa03a7f9d)
+	ProbJuneEvening2 = U16(0xe79a054d)
+	ProbJuneNight = U16(0x2a93682f)
+	ProbJulyMidnight = U16(0x4ff4a9e3)
+	ProbJulyMorning = U16(0x77c3271a)
+	ProbJulyDaytime = U16(0x813dbbdc)
+	ProbJulyEvening1 = U16(0x6fe9a411)
+	ProbJulyEvening2 = U16(0x2849dec1)
+	ProbJulyNight = U16(0x4f6db088)
+	ProbAugustMidnight = U16(0xc888bffa)
+	ProbAugustMorning = U16(0x0376ec8b)
+	ProbAugustDaytime = U16(0xf588704d)
+	ProbAugustEvening1 = U16(0xe895b208)
+	ProbAugustEvening2 = U16(0xaf35c8d8)
+	ProbAugustNight = U16(0x8d40260e)
+	ProbSeptemberMidnight = U16(0xc7e37192)
+	ProbSeptemberMorning = U16(0x6841b0c2)
+	ProbSeptemberDaytime = U16(0x9ebf2c04)
+	ProbSeptemberEvening1 = U16(0xe7fe7c60)
+	ProbDecemberEvening2 = U16(0x98812c3b)
+	ProbSeptemberNight = U16(0x339772b5)
+	ProbOctoberMidnight = U16(0xb96c2db5)
+	ProbOctoberMorning = U16(0x56612acf)
 	ProbOctoberDaytime = U16(0xa09fb609)
 	ProbOctoberEvening1 = U16(0x99712047)
 	ProbOctoberEvening2 = U16(0xded15a97)
-	ProbOctoberMidnight = U16(0xb96c2db5)
-	ProbOctoberMorning = U16(0x56612acf)
 	ProbOctoberNight = U16(0xdac2c157)
-	ProbSeptemberDaytime = U16(0x9ebf2c04)
-	ProbSeptemberEvening1 = U16(0xe7fe7c60)
+	ProbNovemberMidnight = U16(0x1f65ddac)
+	ProbNovemberMorning = U16(0xe3c6546a)
+	ProbNovemberDaytime = U16(0x1538c8ac)
+	ProbNovemberEvening1 = U16(0x3f78d05e)
+	ProbNovemberEvening2 = U16(0x78d8aa8e)
+	ProbNovemberNight = U16(0x6c66ea56)
+	ProbDecemberMidnight = U16(0xff3c5b19)
+	ProbDecemberMorning = U16(0x6fa9ff60)
+	ProbDecemberDaytime = U16(0x995763a6)
+	ProbDecemberEvening1 = U16(0xdf2156eb)
 	ProbSeptemberEvening2 = U16(0xa05e06b0)
-	ProbSeptemberMidnight = U16(0xc7e37192)
-	ProbSeptemberMorning = U16(0x6841b0c2)
-	ProbSeptemberNight = U16(0x339772b5)
-	UniqueID = U16(0x54706054)
 	AppearArea = U8(0x137dd804) # size is 4, could this be an array?
 
 class InsectBattleParam(Row):
-	Level = U16(0x36083c78)
 	UniqueID = U16(0x54706054)
+	Level = U16(0x36083c78)
 	Strength = U8(0x4d9888d3) # size is 4, could this be an array?
 
 class InsectStatusParam(Row):
 	AppearArea = Enum(0x64330cb0, enum_3bcfd82ce180_8ccc4bd385f8)
-	AppearWeather = Enum(0xa103c985, enum_48fbbb9e63e7_c771014390e5)
 	GetScale = Float(0x27450132)
-	Kind = Enum(0x9b7aa0a0, enum_ba0d1303781b_38e4e433d05a)
 	WaitScale = Float(0xda0b5c29)
-	ItemID = U16(0x20cb67bc)
-	_5d4ef312 = U16(0x5d4ef312)
-	ToyItemID = U16(0xdaaf8ba0)
+	Kind = Enum(0x9b7aa0a0, enum_ba0d1303781b_38e4e433d05a)
+	AppearWeather = Enum(0xa103c985, enum_48fbbb9e63e7_c771014390e5)
 	UniqueID = U16(0x54706054)
-	AppearFg = RawData(0xbace6554, 3) # size 3
-	DebugName = String(0x3f45f2bf) # string64
+	ToyItemID = U16(0xdaaf8ba0)
+	_5d4ef312 = U16(0x5d4ef312)
+	ItemID = U16(0x20cb67bc)
+	AppearFg = RawData(0xbace6554, 3)
 	Label = String(0x87bf00e8) # string32
-	Property = U8(0x0909f3d4)
-	ResNameField = String(0x11b0b143) # string32
-	_4c777e9e = String(0x4c777e9e) # size 32
 	_e4b73f7d = String(0xe4b73f7d) # size 32
+	DebugName = String(0x3f45f2bf) # string64
+	ResNameField = String(0x11b0b143) # string32
+	Property = U8(0x0909f3d4)
+	_4c777e9e = String(0x4c777e9e) # size 32
 
 class ItemAct(Row):
 	AsName = Enum(0xea6a09cc, enum_156e850c7e27_b09d6477c3b6)
 	CategoryName = Enum(0xa0839d12, enum_b4fc6363b59e_18efb227c4c9)
-	_8b1904b9 = Enum(0x8b1904b9, enum_a099ed9ed7e6_1fc5597471f3)
 	UniqueID = U16(0x54706054)
-	Collision = U8(0x31cb6b0a)
-	DemoType = U8(0xd2a5c5cf)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
-	SwitchableOnWall = U8(0x0e387a24) # size is 4, could this be an array?
+	Collision = U8(0x31cb6b0a) # size is 2, could this be an array?
 
 class ItemClothGroup(Row):
 	ItemShopSeasonality = Enum(0xe83c30be, enum_5ba0e3fef915_f4a390fc627b)
-	ParentItemName = U16(0x65503f9f)
 	UniqueID = U16(0x54706054)
-	FashionThemeDaily = U8(0x52add71d)
-	FashionThemeFairyland = U8(0x47f8f099)
-	FashionThemeFomal = U8(0x44718a37)
-	FashionThemeHorror = U8(0x97eba4fc)
+	ParentItemName = U16(0x65503f9f)
 	FashionThemeOutdoor = U8(0x811b386c)
+	Name = String(0x036e8ebe) # string64
 	FashionThemeParty = U8(0x93ddc6d7)
-	FashionThemeRelax = U8(0x0cd7f9c5)
 	FashionThemeSport = U8(0x1e996a76)
+	FashionThemeWork = U8(0x8048a3a7)
+	FashionThemeRelax = U8(0x0cd7f9c5)
+	Label = String(0x13ab5198) # string64
+	FashionThemeFairyland = U8(0x47f8f099)
+	FashionThemeHorror = U8(0x97eba4fc)
 	FashionThemeStage = U8(0x9079071d)
 	FashionThemeVacation = U8(0xbaa1115f)
-	FashionThemeWork = U8(0x8048a3a7)
+	FashionThemeFomal = U8(0x44718a37)
+	FashionThemeDaily = U8(0x52add71d)
 	_83ccbe0f = String(0x83ccbe0f) # size 64
-	Label = String(0x13ab5198) # string64
-	Name = String(0x036e8ebe) # string64
 	_8d7f40e5 = U8(0x8d7f40e5)
 
 class ItemColor(Row):
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
+	Label = String(0x87bf00e8) # string32
 
 class ItemFilter(Row):
-	ItemKind1 = U16(0xab9b88d6)
-	ItemKind10 = U16(0xd6424db4)
-	ItemKind11 = U16(0xeb226404)
-	ItemKind12 = U16(0xac821ed4)
-	ItemKind13 = U16(0x91e23764)
-	ItemKind14 = U16(0x23c2eb74)
+	UniqueID = U16(0x54706054)
 	ItemKind15 = U16(0x1ea2c2c4)
+	ItemKind14 = U16(0x23c2eb74)
+	ItemKind13 = U16(0x91e23764)
+	ItemKind1 = U16(0xab9b88d6)
 	ItemKind2 = U16(0xec3bf206)
 	ItemKind3 = U16(0xd15bdbb6)
 	ItemKind4 = U16(0x637b07a6)
 	ItemKind5 = U16(0x5e1b2e16)
-	ItemKind6 = U16(0x19bb54c6)
+	ItemKind12 = U16(0xac821ed4)
 	ItemKind7 = U16(0x24db7d76)
 	ItemKind8 = U16(0xa68beaa7)
 	ItemKind9 = U16(0x9bebc317)
-	UniqueID = U16(0x54706054)
+	ItemKind10 = U16(0xd6424db4)
+	ItemKind11 = U16(0xeb226404)
+	ItemKind6 = U16(0x19bb54c6)
 	CheckDonation = U8(0xffe069a3)
 	ItemNum = S8(0x8771aa09)
 	Label = String(0x87bf00e8) # string32
 
 class ItemFrom(Row):
-	_d62525d0 = U16(0xd62525d0)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
+	_d62525d0 = U16(0xd62525d0)
 	Name = String(0x036e8ebe) # string64
+	Label = String(0x87bf00e8) # string32
 
 class ItemKind(Row):
-	_1b936128 = Enum(0x1b936128, enum_56ee1b9c32d0_341e9128ff85)
 	ItemKindUIType = Enum(0xd606a6c4, enum_f20a1de8eac2_4485ac08bc53)
+	_1b936128 = Enum(0x1b936128, enum_56ee1b9c32d0_341e9128ff85)
 	ItemRemakeType = Enum(0x6b749e8a, enum_b4a495c4cd73_f919b604a1f1)
 	MessageKind = Enum(0x29c41a0d, enum_daac3d573f2d_daac3d573f2d)
 	SLinkType = Enum(0x4d655154, enum_a397999fca4b_a59ff2e96b38)
 	MultiHoldMaxNum = S16(0x4c9ba961)
 	SaveCountMaxNum = U16(0x0ce69142)
 	UniqueID = U16(0x54706054)
-	CanBury = U8(0x472724ed)
 	CanEat = U8(0x9b433dd5)
-	CanFtr = U8(0x90bc0855)
-	CanGift = U8(0x06012035)
-	CanNpcBirthdayPresent = U8(0x2c1b3b5b)
-	CanNpcPresent = U8(0x0732bb98)
-	CanPlant = U8(0xd4697ff8)
-	CanPut = U8(0x5d389fbf)
-	_d223f25c = U8(0xd223f25c)
 	CanSell = U8(0x3d4f3f42)
 	CanSellSimple = U8(0xb52fe52e)
-	CanSetChest = U8(0xdae27694)
+	CanPlant = U8(0xd4697ff8)
+	CanBury = U8(0x472724ed)
+	CanGift = U8(0x06012035)
+	CanPut = U8(0x5d389fbf)
+	CanFtr = U8(0x90bc0855)
 	CanSetCloset = U8(0x1bcd4858)
-	CanSetInTrashBox = U8(0xc8a5a762)
+	CanSetChest = U8(0xdae27694)
 	CanSetItem = U8(0x49129b27)
-	CanUsePhotoStudio = U8(0x5218c48c)
+	CanNpcPresent = U8(0x0732bb98)
+	CanNpcBirthdayPresent = U8(0x2c1b3b5b)
 	_c37a683c = U8(0xc37a683c)
-	IsCollectAchievement = U8(0xfd3b7c9a)
 	Label = String(0x87bf00e8) # string32
+	_d223f25c = U8(0xd223f25c)
 	Name = String(0x036e8ebe) # string64
+	CanSetInTrashBox = U8(0xc8a5a762)
+	IsCollectAchievement = U8(0xfd3b7c9a)
+	CanUsePhotoStudio = U8(0x5218c48c)
 
 class ItemMailAttachCategoryGroup(Row):
 	UniqueID = U16(0x54706054)
-	_e4361c86 = String(0xe4361c86) # size 693
 	Label = String(0x3febc642) # string50
 	Name = String(0x036e8ebe) # string64
+	_e4361c86 = String(0xe4361c86) # size 540
 
 class ItemMenuIcon(Row):
 	UniqueID = U16(0x54706054)
@@ -5515,310 +5215,279 @@ class ItemMenuIcon(Row):
 class ItemNpcFtrActionParam(Row):
 	NpcFtrActionHoldTime = S32(0xae63cef0)
 	NpcFtrActionInterest = Enum(0xb422539e, enum_aa288b7299e1_ae503b12cd83)
-	NpcFtrActionWeather = Enum(0x99667bf1, enum_e7b08d8a83f9_27581a65a7ae)
-	NpcFtrActionTool = U16(0x2ca34410)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
+	NpcFtrActionTool = U16(0x2ca34410)
 	Name = String(0x977adfce) # string32
 	NpcFtrActionAsName = String(0x6c6fdb31) # string64
+	Label = String(0x87bf00e8) # string32
 
 class ItemNpcOutfitInfo(Row):
 	UniqueID = U16(0x54706054)
-	_8e07b21e = U8(0x8e07b21e) # possible string size 1
-	_e5c221d5 = U8(0xe5c221d5)
 	Label = String(0x13ab5198) # string64
 	Name = String(0x977adfce) # string32
+	_e5c221d5 = U8(0xe5c221d5)
+	_8e07b21e = U8(0x8e07b21e) # possible string size 1
 
 class ItemNpcRoomReplaceCategory(Row):
 	UniqueID = U16(0x54706054)
-	CanPutDisplay = U8(0x8a647661)
-	CanPutFish = U8(0x9f9b91e9)
-	CanPutFood = U8(0xa604b7cf)
-	CanPutForBase = U8(0xb2ac5428)
 	CanPutInsect = U8(0xef1f311c)
 	CanPutKitchen = U8(0x84432956)
-	CanPutUtility = U8(0xaa4f6b89)
-	CanPutWorkStuff = U8(0x3594f417)
+	CanPutDisplay = U8(0x8a647661)
+	CanPutFood = U8(0xa604b7cf)
 	Label = String(0x87bf00e8) # string32
+	CanPutFish = U8(0x9f9b91e9)
+	CanPutWorkStuff = U8(0x3594f417)
+	CanPutUtility = U8(0xaa4f6b89)
+	CanPutForBase = U8(0xb2ac5428) # size is 3, could this be an array?
 
 class ItemNpcTopsForm(Row):
-	OnepieceHNormalScaleMaskA = Float(0xafa7b084)
-	OnepieceHNormalScaleMaskB = Float(0xe807ca54)
-	OnepieceHNormalScaleMaskG = Float(0x20e74524)
-	OnepieceHNormalScaleMaskR = Float(0x88e75dd6)
-	OnepieceLNormalScaleMaskA = Float(0xbd5eb43f)
-	OnepieceLNormalScaleMaskB = Float(0xfafeceef)
-	OnepieceLNormalScaleMaskG = Float(0x321e419f)
-	OnepieceLNormalScaleMaskR = Float(0x9a1e596d)
-	OnepieceNNormalScaleMaskA = Float(0x599ab542)
-	OnepieceNNormalScaleMaskB = Float(0x1e3acf92)
-	OnepieceNNormalScaleMaskG = Float(0xd6da40e2)
-	OnepieceNNormalScaleMaskR = Float(0x7eda5810)
 	OuterLNormalScaleMaskA = Float(0x89dfed0e)
 	OuterLNormalScaleMaskB = Float(0xce7f97de)
 	OuterLNormalScaleMaskG = Float(0x069f18ae)
-	OuterLNormalScaleMaskR = Float(0xae9f005c)
-	TshirtsHNormalScaleMaskA = Float(0xd244561e)
-	TshirtsHNormalScaleMaskB = Float(0x95e42cce)
-	TshirtsHNormalScaleMaskG = Float(0x5d04a3be)
 	TshirtsHNormalScaleMaskR = Float(0xf504bb4c)
-	TshirtsLNormalScaleMaskA = Float(0xc0bd52a5)
-	TshirtsLNormalScaleMaskB = Float(0x871d2875)
-	TshirtsLNormalScaleMaskG = Float(0x4ffda705)
+	TshirtsHNormalScaleMaskG = Float(0x5d04a3be)
+	TshirtsHNormalScaleMaskB = Float(0x95e42cce)
+	TshirtsHNormalScaleMaskA = Float(0xd244561e)
 	TshirtsLNormalScaleMaskR = Float(0xe7fdbff7)
-	TshirtsNNormalScaleMaskA = Float(0x247953d8)
-	TshirtsNNormalScaleMaskB = Float(0x63d92908)
-	TshirtsNNormalScaleMaskG = Float(0xab39a678)
+	TshirtsLNormalScaleMaskG = Float(0x4ffda705)
+	TshirtsLNormalScaleMaskB = Float(0x871d2875)
+	TshirtsLNormalScaleMaskA = Float(0xc0bd52a5)
 	TshirtsNNormalScaleMaskR = Float(0x0339be8a)
+	TshirtsNNormalScaleMaskG = Float(0xab39a678)
+	TshirtsNNormalScaleMaskB = Float(0x63d92908)
+	TshirtsNNormalScaleMaskA = Float(0x247953d8)
+	OuterLNormalScaleMaskR = Float(0xae9f005c)
+	OnepieceHNormalScaleMaskG = Float(0x20e74524)
+	OnepieceHNormalScaleMaskB = Float(0xe807ca54)
+	OnepieceHNormalScaleMaskA = Float(0xafa7b084)
+	OnepieceLNormalScaleMaskR = Float(0x9a1e596d)
+	OnepieceLNormalScaleMaskG = Float(0x321e419f)
+	OnepieceLNormalScaleMaskB = Float(0xfafeceef)
+	OnepieceLNormalScaleMaskA = Float(0xbd5eb43f)
+	OnepieceNNormalScaleMaskR = Float(0x7eda5810)
+	OnepieceNNormalScaleMaskG = Float(0xd6da40e2)
+	OnepieceNNormalScaleMaskB = Float(0x1e3acf92)
+	OnepieceNNormalScaleMaskA = Float(0x599ab542)
+	OnepieceHNormalScaleMaskR = Float(0x88e75dd6)
 	UniqueID = U16(0x54706054)
-	Label = String(0x2f1b930d) # string8
 	Name = String(0x977adfce) # string32
+	Label = String(0x2f1b930d) # string8
 
 class ItemOutfitCategory(Row):
 	UniqueID = U16(0x54706054)
-	_7eb53ebb = U8(0x7eb53ebb)
-	_555442aa = U8(0x555442aa)
-	HandToolAsName = String(0x03b7f760) # string32
+	Misc = RawData(0x42ad246a, 2)
 	Label = String(0x87bf00e8) # string32
-	Misc = RawData(0x42ad246a, 2) # size 2
-	Name = String(0x977adfce) # string32
-	_a9f8ee25 = String(0xa9f8ee25) # size 32
-	ToolLeftModelName = String(0x6ce1d85c) # string20
-	ToolRightModelName = String(0x4ec849ec) # string20
+	HandToolAsName = String(0x03b7f760) # string32
 	_f71bffe7 = String(0xf71bffe7) # size 32
 	_1b93daa9 = String(0x1b93daa9) # size 32
-	UseToolLeft = U8(0x42739ab0) # size is 2, could this be an array?
-
-class ItemOutfitHangerInfo(Row):
-	ItemLayout = Enum(0x9dcea17e, enum_478bafec288f_571514e8ca3c)
-	ItemSize = Enum(0xe06fb090, enum_52e1af9ea232_bc050e1554c9)
-	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
-	ResName = String(0x48ef0398) # string64
+	Name = String(0x977adfce) # string32
+	ToolRightModelName = String(0x4ec849ec) # string20
+	UseToolLeft = U8(0x42739ab0)
+	ToolLeftModelName = String(0x6ce1d85c) # string20
+	_555442aa = U8(0x555442aa)
+	_7eb53ebb = U16(0x7eb53ebb)
 
 class ItemOutfitInfo(Row):
-	Category = Enum(0x90466afd, enum_2c1ecb54c4b5_fa9288c80a2d)
+	WallScale = Float(0x9f253177)
 	FloorScale = Float(0x5195e4bd)
-	RotateOffsetX = Float(0xb244d814)
-	RotateOffsetY = Float(0x8f24f1a4)
 	RotateOffsetZ = Float(0xc8848b74)
+	RotateOffsetY = Float(0x8f24f1a4)
+	Category = Enum(0x90466afd, enum_2c1ecb54c4b5_fa9288c80a2d)
 	TransOffsetX = Float(0xed7f3cfe)
 	TransOffsetY = Float(0xd01f154e)
 	TransOffsetZ = Float(0x97bf6f9e)
-	WallScale = Float(0x9f253177)
-	BreakDamage = U16(0x68db76c2)
+	RotateOffsetX = Float(0xb244d814)
 	UniqueID = U16(0x54706054)
-	HangerInfo = U8(0x46489ce7)
-	Label = String(0x87bf00e8) # string32
-	Name = String(0x036e8ebe) # string64
+	BreakDamage = U16(0x68db76c2)
 	SpecialELink = U8(0x04ac1bea)
 	SpecialSLink = U8(0xbe782346)
-	Storage = RawData(0xc89fb7af, 2) # size 5
+	Label = String(0x87bf00e8) # string32
+	Name = String(0x036e8ebe) # string64
+	Storage = RawData(0xc89fb7af, 2)
 
 class ItemParam(Row):
-	AudioPreset = Enum(0x2654be7c, enum_ded670ccf8f3_2f430bbb6124)
-	CarpetMaterial = S32(0x9c32cf82)
-	ClothGroup = Enum(0x690e3379, enum_2d78bfb5905f_6f798aada062)
-	Color1 = Enum(0xa6b1a7fd, enum_7f4abdaa06e5_875003339aa7)
-	Color2 = Enum(0xb7cccd84, enum_7f4abdaa06e5_875003339aa7)
-	_0e0acf95 = Enum(0x0e0acf95, enum_6adf97f83acf_3609f958a376)
-	Depth = Float(0xf8316716)
-	DragSE = Enum(0x43507f0d, enum_017c76af34f4_35ed35a1a2a5)
-	FossilSet = Enum(0xd7f212ea, enum_3fa655858099_cae6208225e0)
-	Height = Float(0xc187c516)
-	ItemAct = Enum(0xf1246e5f, enum_d7d32a028b49_2a813eb9cd7a)
-	ItemCatalogType = Enum(0xdaf0238c, enum_064edb92c317_a4705285e5f1)
-	ItemDailyCategory = Enum(0x8900b8a0, enum_7e3c45b5eddf_18ce80c1336a)
-	ItemFrom = Enum(0xdb1a2f07, enum_794b88fd5d5e_eaf8e9c36279)
-	ItemGender = Enum(0xf80e9fee, enum_046a2d7d535d_d28a72f9a4ec)
-	ItemHHACategory = Enum(0xf17f8753, enum_79fc030d2ca5_3b8dd86eef4f)
-	ItemHHAPart = Enum(0x16a66e06, enum_0ed369abe447_b58ba6b527fb)
-	ItemHHASeason = Enum(0x05639ab0, enum_10d294d5ba3c_9f0b7bd1cc21)
-	ItemHHASet = Enum(0x059d1682, enum_41a82db5b173_65380129188a)
-	ItemHHASituation1 = Enum(0xa7c79784, enum_ccc3fdb6f890_062ac98e2307)
-	ItemHHASituation2 = Enum(0xb6bafdfd, enum_ccc3fdb6f890_062ac98e2307)
-	ItemHHATheme = Enum(0xd61205d0, enum_870fe161ccb7_b6b6458365a4)
-	ItemHobbyType = Enum(0x7b2fdfc1, enum_07d126e46327_fafea373c976)
-	ItemKind = Enum(0x5270eb75, enum_f5a85f4bb42c_b173422234a3)
-	ItemLayout = Enum(0x9dcea17e, enum_478bafec288f_571514e8ca3c)
-	ItemLightColor = Enum(0xa69385c1, enum_41b98234401e_b5f5ba492fa2)
-	_7dcd5be1 = Enum(0x7dcd5be1, enum_07d126e46327_fafea373c976)
-	ItemMailAttachCategory = Enum(0x70e19913, enum_5c6b871e086e_81d76143976e)
-	ItemMenu = Enum(0x348d7b06, enum_5db8059c5629_f2952caee23e)
-	ItemMessageCategory = Enum(0x5032ef59, enum_53801c2056ab_77e4c99ac56b)
-	_164a5f24 = Enum(0x164a5f24, enum_0571932eb060_3c22bd5c3fdd)
-	_9ba040c2 = U32(0x9ba040c2)
-	ItemNpcFtrActionType = Enum(0xaa6a39c6, enum_af770d1cdd34_208c036ec702)
-	ItemNpcFtrWatchType = Enum(0xd9855b4e, enum_effe5979565a_894d134b30b9)
-	ItemNpcReactionGenreType = Enum(0xa812e496, enum_34f1ef8cdbcc_52861a019f72)
-	ItemNpcReactionThemeType = Enum(0xeffadab6, enum_a3f2105dc205_cf3454689058)
-	ItemNpcRoomLayoutLimit = Enum(0xbf80f575, enum_8f4bdb1e73c6_3c4e63ce8503)
-	ItemNpcRoomReplaceCategory = Enum(0xead62c46, enum_e046ae7fa48d_57a924bf70f4)
-	_ba4fd546 = Enum(0xba4fd546, enum_639356d46fa4_639356d46fa4)
-	ItemOutfitInfo = Enum(0x7724bf93, enum_de3dece1349b_9af5c41bec95)
-	ItemPlayerTopsBottomsForm = Enum(0x9feb9da6, enum_d6b51049aa8c_eb2a552f77d1)
-	ItemPriorityPlace = Enum(0x510f21dc, enum_a382e5214fd4_31aae64bf1ea)
-	_5504464e = Enum(0x5504464e, enum_60d7f7443dea_ced5321a8793)
-	ItemRegionFilter = Enum(0xea9fc92a, enum_07500acb2a20_c4ab2d74d5ad)
-	ItemSize = Enum(0xe06fb090, enum_52e1af9ea232_bc050e1554c9)
 	ItemUICategory = Enum(0x28297660, enum_3b7b05ca4a0a_52b2ca6f0581)
-	ItemUIFurnitureCategory = Enum(0x8221388c, enum_1dbcb57b21ff_7eb8e52a5bb1)
+	ItemHHAPart = Enum(0x16a66e06, enum_0ed369abe447_b58ba6b527fb)
+	ItemPriorityPlace = Enum(0x510f21dc, enum_a382e5214fd4_31aae64bf1ea)
+	ItemKind = Enum(0x5270eb75, enum_f5a85f4bb42c_b173422234a3)
+	ItemSize = Enum(0xe06fb090, enum_52e1af9ea232_bc050e1554c9)
+	RideHeight = Float(0xb662662c)
+	Height = Float(0xc187c516)
+	ItemHHASeason = Enum(0x05639ab0, enum_10d294d5ba3c_9f0b7bd1cc21)
 	ItemUnitIcon = Enum(0x010d74a6, enum_c247708f9bb1_67b0834c6103)
-	LampType = Enum(0xd65f862b, enum_19d95e13020f_5e46daa0967c)
-	LocalWindType = Enum(0x9a3fb47c, enum_4db76367118c_3ca2ed9ace4f)
-	_85c63b71 = Float(0x85c63b71) # size 4
+	ItemMenu = Enum(0x348d7b06, enum_5db8059c5629_f2952caee23e)
+	ItemFrom = Enum(0xdb1a2f07, enum_794b88fd5d5e_eaf8e9c36279)
+	Price = S32(0x718b024d)
+	ItemCatalogType = Enum(0xdaf0238c, enum_064edb92c317_a4705285e5f1)
+	ItemOutfitInfo = Enum(0x7724bf93, enum_de3dece1349b_9af5c41bec95)
+	ItemAct = Enum(0xf1246e5f, enum_d7d32a028b49_2a813eb9cd7a)
+	ItemHHASituation2 = Enum(0xb6bafdfd, enum_ccc3fdb6f890_062ac98e2307)
+	CarpetMaterial = S32(0x9c32cf82)
+	OutfitSE = Enum(0x041c3234, enum_6adf97f83acf_3609f958a376)
+	WallPlaceType = Enum(0xe1bf0894, enum_eb74bd2dde24_eaeb657f44bf)
+	Depth = Float(0xf8316716)
+	ItemLayout = Enum(0x9dcea17e, enum_478bafec288f_571514e8ca3c)
+	_85c63b71 = Float(0x85c63b71)
+	ItemNpcFtrWatchType = Enum(0xd9855b4e, enum_effe5979565a_894d134b30b9)
+	ItemNpcFtrActionType = Enum(0xaa6a39c6, enum_af770d1cdd34_208c036ec702)
+	Seasonality = Enum(0x0e6ca0d4, enum_5ba0e3fef915_f4a390fc627b)
+	ItemGender = Enum(0xf80e9fee, enum_046a2d7d535d_d28a72f9a4ec)
 	NpcGender = Enum(0x8392798c, enum_046a2d7d535d_d28a72f9a4ec)
 	NpcOutfit = Enum(0x60c99a5e, enum_f659111fbd89_a8479914e95b)
-	OutfitSE = Enum(0x041c3234, enum_6adf97f83acf_3609f958a376)
-	Price = S32(0x718b024d)
-	RideHeight = Float(0xb662662c)
-	Seasonality = Enum(0x0e6ca0d4, enum_5ba0e3fef915_f4a390fc627b)
-	WallPlaceType = Enum(0xe1bf0894, enum_eb74bd2dde24_eaeb657f44bf)
-	BridgeTypeId = U16(0x5c1c3044)
-	_02169dc7 = U16(0x02169dc7)
-	CookingRecipeID = U16(0xc353ef20)
-	DiyRecipeID = S16(0xbcf5d17a)
+	ItemHHASituation1 = Enum(0xa7c79784, enum_ccc3fdb6f890_062ac98e2307)
+	ItemHHACategory = Enum(0xf17f8753, enum_79fc030d2ca5_3b8dd86eef4f)
+	ItemHHASet = Enum(0x059d1682, enum_41a82db5b173_65380129188a)
+	ItemHHATheme = Enum(0xd61205d0, enum_870fe161ccb7_b6b6458365a4)
+	ClothGroup = Enum(0x690e3379, enum_2d78bfb5905f_6f798aada062)
+	_9ba040c2 = U32(0x9ba040c2)
+	_164a5f24 = Enum(0x164a5f24, enum_0571932eb060_3c22bd5c3fdd)
+	Color1 = Enum(0xa6b1a7fd, enum_7f4abdaa06e5_875003339aa7)
+	Color2 = Enum(0xb7cccd84, enum_7f4abdaa06e5_875003339aa7)
+	ItemPlayerTopsBottomsForm = Enum(0x9feb9da6, enum_d6b51049aa8c_eb2a552f77d1)
+	DragSE = Enum(0x43507f0d, enum_017c76af34f4_35ed35a1a2a5)
+	FossilSet = Enum(0xd7f212ea, enum_3fa655858099_cae6208225e0)
+	_0e0acf95 = Enum(0x0e0acf95, enum_6adf97f83acf_3609f958a376)
+	LocalWindType = Enum(0x9a3fb47c, enum_4db76367118c_3ca2ed9ace4f)
+	_5504464e = Enum(0x5504464e, enum_60d7f7443dea_ced5321a8793)
+	AudioPreset = Enum(0x2654be7c, enum_ded670ccf8f3_2f430bbb6124)
+	LampType = Enum(0xd65f862b, enum_19d95e13020f_5e46daa0967c)
+	ItemNpcReactionGenreType = Enum(0xa812e496, enum_34f1ef8cdbcc_52861a019f72)
+	ItemLightColor = Enum(0xa69385c1, enum_41b98234401e_b5f5ba492fa2)
+	ItemMailAttachCategory = Enum(0x70e19913, enum_5c6b871e086e_81d76143976e)
+	ItemNpcRoomReplaceCategory = Enum(0xead62c46, enum_e046ae7fa48d_57a924bf70f4)
+	ItemNpcRoomLayoutLimit = Enum(0xbf80f575, enum_8f4bdb1e73c6_3c4e63ce8503)
+	_ba4fd546 = Enum(0xba4fd546, enum_639356d46fa4_639356d46fa4)
+	ItemMessageCategory = Enum(0x5032ef59, enum_53801c2056ab_77e4c99ac56b)
+	ItemNpcReactionThemeType = Enum(0xeffadab6, enum_a3f2105dc205_cf3454689058)
+	ItemHobbyType = Enum(0x7b2fdfc1, enum_07d126e46327_fafea373c976)
+	ItemUIFurnitureCategory = Enum(0x8221388c, enum_1dbcb57b21ff_7eb8e52a5bb1)
+	ItemRegionFilter = Enum(0xea9fc92a, enum_07500acb2a20_c4ab2d74d5ad)
+	_7dcd5be1 = Enum(0x7dcd5be1, enum_07d126e46327_fafea373c976)
 	FakeArtConvertId = U16(0xbee071da)
+	WallTableId = U16(0x0f9f6747)
 	FloorTableId = U16(0xc833b068)
+	SlopeTableId = U16(0xbfba247c)
+	BridgeTypeId = U16(0x5c1c3044)
+	SewingRecipeID = S16(0x88a6501c)
+	RemakeID = S16(0xcb5eb33f)
+	DiyRecipeID = S16(0xbcf5d17a)
+	CookingRecipeID = U16(0xc353ef20)
 	_9ec34ed4 = U16(0x9ec34ed4)
 	ItemShareTextureUniqueID = U16(0x9bd046a2)
-	RemakeID = S16(0xcb5eb33f)
-	SewingRecipeID = S16(0x88a6501c)
-	SlopeTableId = U16(0xbfba247c)
+	_02169dc7 = U16(0x02169dc7)
 	UniqueID = U16(0x54706054)
-	WallTableId = U16(0x0f9f6747)
-	AITagBitRankA = RawData(0xe8c448b2, 4) # size 5
-	AITagBitRankB = RawData(0xfa71e75c, 4) # size 5
-	AITagBitRankC = RawData(0x42cd8039, 4) # size 5
-	AITagBitRankS = RawData(0x12d4d7a6, 4) # size 5
-	CanNotLookFace = U8(0xfd415a4c)
+	AITagBitRankA = RawData(0xe8c448b2, 4)
+	ValidEffect = U8(0x49cc96d0)
+	CapturePreset = String(0xfc275e86) # string32
+	AITagBitRankC = RawData(0x42cd8039, 4)
+	AITagBitRankB = RawData(0xfa71e75c, 4)
+	ItemHHADirection = U8(0x3cda3274)
+	AITagBitRankS = RawData(0x12d4d7a6, 4)
+	IsSwingFtr = U8(0xbea3e8b8)
+	_4b97cdab = U8(0x4b97cdab)
+	CaptureFtrIcon = U8(0xe65df243)
 	CaptureClosetIcon = U8(0xe4697080)
 	CaptureDiyIcon = U8(0xe24d9b0e)
 	_f179f796 = U8(0xf179f796)
-	CaptureFtrIcon = U8(0xe65df243)
-	CaptureGardeningIcon = U8(0x116f007f)
-	CapturePreset = String(0xfc275e86) # string32
+	NpcDefaultSwitch = U8(0xdeb3f8dc)
 	DefaultSwitch = U8(0xd862189a)
-	FrontSwitch = U8(0x147e658d)
 	HasJmp = U8(0xa4db9685)
-	_4b97cdab = U8(0x4b97cdab)
-	IsSwingFtr = U8(0xbea3e8b8)
-	ItemHHADirection = U8(0x3cda3274)
+	TouchRumble = U8(0x7404ebb3)
+	RumbleForEdit = U8(0x86efa036)
+	FrontSwitch = U8(0x147e658d)
+	ResName = String(0x48ef0398) # string64
+	CanNotLookFace = U8(0xfd415a4c)
+	Label = String(0x3febc642) # string50
 	ItemName = String(0xb8cc232c) # string64
 	ItemReleaseVersion = U8(0x805cdabb)
-	Label = String(0x3febc642) # string50
-	NpcDefaultSwitch = U8(0xdeb3f8dc)
-	ResName = String(0x48ef0398) # string64
-	RumbleForEdit = U8(0x86efa036)
-	_b5677509 = U8(0xb5677509)
-	ToiletType = U8(0x0eb7fa40)
-	TouchRumble = U8(0x7404ebb3)
-	ValidEffect = U8(0x49cc96d0) # size is 2, could this be an array?
 
 class ItemPlayerInitialOutfitBoyAWParam(Row):
-	AcceEye = U16(0x2b57b24a)
-	AcceMouth = U16(0x9403c267)
-	Bottoms = U16(0xcc136eb5)
-	Cap = U16(0x291a1b04)
+	UniqueID = U16(0x54706054)
 	Shoes = U16(0xce827d47)
+	Cap = U16(0x291a1b04)
+	AcceEye = U16(0x2b57b24a)
 	Socks = U16(0x39ed7f5a)
 	Tops = U16(0x870f1e29)
-	UniqueID = U16(0x54706054)
+	Bottoms = U16(0xcc136eb5)
+	AcceMouth = U16(0x9403c267)
 	Label = String(0x87bf00e8) # string32
 
 class ItemPlayerInitialOutfitBoySSParam(Row):
-	AcceEye = U16(0x2b57b24a)
-	AcceMouth = U16(0x9403c267)
-	Bottoms = U16(0xcc136eb5)
-	Cap = U16(0x291a1b04)
+	UniqueID = U16(0x54706054)
 	Shoes = U16(0xce827d47)
+	Cap = U16(0x291a1b04)
+	AcceEye = U16(0x2b57b24a)
 	Socks = U16(0x39ed7f5a)
 	Tops = U16(0x870f1e29)
-	UniqueID = U16(0x54706054)
+	Bottoms = U16(0xcc136eb5)
+	AcceMouth = U16(0x9403c267)
 	Label = String(0x87bf00e8) # string32
 
 class ItemPlayerInitialOutfitGirlAWParam(Row):
-	AcceEye = U16(0x2b57b24a)
-	AcceMouth = U16(0x9403c267)
-	Bottoms = U16(0xcc136eb5)
-	Cap = U16(0x291a1b04)
+	UniqueID = U16(0x54706054)
 	Shoes = U16(0xce827d47)
+	Cap = U16(0x291a1b04)
+	AcceEye = U16(0x2b57b24a)
 	Socks = U16(0x39ed7f5a)
 	Tops = U16(0x870f1e29)
-	UniqueID = U16(0x54706054)
+	Bottoms = U16(0xcc136eb5)
+	AcceMouth = U16(0x9403c267)
 	Label = String(0x87bf00e8) # string32
 
 class ItemPlayerInitialOutfitGirlSSParam(Row):
-	AcceEye = U16(0x2b57b24a)
-	AcceMouth = U16(0x9403c267)
-	Bottoms = U16(0xcc136eb5)
-	Cap = U16(0x291a1b04)
+	UniqueID = U16(0x54706054)
 	Shoes = U16(0xce827d47)
+	Cap = U16(0x291a1b04)
+	AcceEye = U16(0x2b57b24a)
 	Socks = U16(0x39ed7f5a)
 	Tops = U16(0x870f1e29)
-	UniqueID = U16(0x54706054)
+	Bottoms = U16(0xcc136eb5)
+	AcceMouth = U16(0x9403c267)
 	Label = String(0x87bf00e8) # string32
 
 class ItemPlayerTopsForm(Row):
-	NormalScaleMaskA = Float(0x390f180d)
-	NormalScaleMaskB = Float(0x7eaf62dd)
-	NormalScaleMaskG = Float(0xb64fedad)
 	NormalScaleMaskR = Float(0x1e4ff55f)
+	NormalScaleMaskA = Float(0x390f180d)
+	NormalScaleMaskG = Float(0xb64fedad)
+	NormalScaleMaskB = Float(0x7eaf62dd)
 	UniqueID = U16(0x54706054)
+	NpcSpResName = String(0xdf7ab4c3) # string64
+	NpcResName = String(0x4e3ee3de) # string64
+	ResName = String(0x48ef0398) # string64
 	Label = String(0x13ab5198) # string64
 	Name = String(0x036e8ebe) # string64
-	NpcResName = String(0x4e3ee3de) # string64
-	NpcSpResName = String(0xdf7ab4c3) # string64
-	ResName = String(0x48ef0398) # string64
 	TorsoResName = String(0x15d08d9a) # string32
 
 class ItemRemake(Row):
 	ItemReFabricType = Enum(0x35917e05, enum_a8722b855893_f7ee7d2a5a4e)
 	_c54eaad9 = Enum(0xc54eaad9, enum_41b98234401e_b5f5ba492fa2)
 	_924c8d08 = U32(0x924c8d08)
-	_8331e771 = U32(0x8331e771)
-	_3aca3c99 = U32(0x3aca3c99)
-	_a1cb3383 = U32(0xa1cb3383)
-	_1830e86b = U32(0x1830e86b)
-	_094d8212 = U32(0x094d8212)
-	_b0b659fa = U32(0xb0b659fa)
-	_9938d8a6 = U32(0x9938d8a6)
-	_20c3034e = U32(0x20c3034e) # possible string size 4
-	_31be6937 = U32(0x31be6937) # possible string size 4
-	_8845b2df = U32(0x8845b2df) # possible string size 4
-	_1344bdc5 = U32(0x1344bdc5) # possible string size 4
-	_aabf662d = U32(0xaabf662d) # possible string size 4
-	_bbc20c54 = U32(0xbbc20c54) # possible string size 4
 	_0239d7bc = U32(0x0239d7bc) # possible string size 4
-	_a86c26bb = Enum(0xa86c26bb, enum_cbce559724ee_944b062ad6d6)
-	ItemUniqueID = U16(0xfd9af1e1)
+	_bbc20c54 = U32(0xbbc20c54) # possible string size 4
+	_aabf662d = U32(0xaabf662d) # possible string size 4
+	_1344bdc5 = U32(0x1344bdc5) # possible string size 4
+	_8845b2df = U32(0x8845b2df) # possible string size 4
+	_31be6937 = U32(0x31be6937) # possible string size 4
+	_20c3034e = U32(0x20c3034e) # possible string size 4
+	_8331e771 = U32(0x8331e771)
+	_b0b659fa = U32(0xb0b659fa)
+	_094d8212 = U32(0x094d8212)
+	_1830e86b = U32(0x1830e86b)
+	_a1cb3383 = U32(0xa1cb3383)
+	_3aca3c99 = U32(0x3aca3c99)
+	_9938d8a6 = U32(0x9938d8a6)
 	RemakeKitNum = U16(0x29ecb129)
+	ItemUniqueID = U16(0xfd9af1e1)
 	UniqueID = U16(0x54706054)
-	_d4f43b0b = U8(0xd4f43b0b)
-	ReBodyPattern0Color0 = U8(0x1b98fdf8)
-	ReBodyPattern0Color1 = U8(0xa3249a9d)
-	ReBodyPattern1Color0 = U8(0xf45a96c6)
-	ReBodyPattern1Color1 = U8(0x4ce6f1a3)
-	ReBodyPattern2Color0 = U8(0x1f6d2dc5)
-	ReBodyPattern2Color1 = U8(0xa7d14aa0)
-	ReBodyPattern3Color0 = U8(0xf0af46fb)
-	ReBodyPattern3Color1 = U8(0x4813219e)
-	ReBodyPattern4Color0 = U8(0x12735d82)
-	ReBodyPattern4Color1 = U8(0xaacf3ae7)
-	ReBodyPattern5Color0 = U8(0xfdb136bc)
-	ReBodyPattern5Color1 = U8(0x450d51d9)
-	ReBodyPattern6Color0 = U8(0x16868dbf)
-	ReBodyPattern6Color1 = U8(0xae3aeada)
+	ReFabricPattern2Color1 = U8(0xe8163031)
 	ReBodyPattern7Color0 = U8(0xf944e681)
-	ReBodyPattern7Color1 = U8(0x41f881e4)
-	ReBodyPatternNum = S8(0xb0304b0d)
+	ReFabricPattern0VisibleOff = U8(0x62c23ed0)
 	ReFabricPattern0Color0 = U8(0x545f8769)
 	ReFabricPattern0Color1 = U8(0xece3e00c)
-	ReFabricPattern0VisibleOff = U8(0x62c23ed0)
 	ReFabricPattern1Color0 = U8(0xbb9dec57)
 	ReFabricPattern1Color1 = U8(0x03218b32)
 	ReFabricPattern2Color0 = U8(0x50aa5754)
-	ReFabricPattern2Color1 = U8(0xe8163031)
+	ReBodyPattern7Color1 = U8(0x41f881e4)
 	ReFabricPattern3Color0 = U8(0xbf683c6a)
 	ReFabricPattern3Color1 = U8(0x07d45b0f)
 	ReFabricPattern4Color0 = U8(0x5db42713)
@@ -5829,13 +5498,29 @@ class ItemRemake(Row):
 	ReFabricPattern6Color1 = U8(0xe1fd904b)
 	ReFabricPattern7Color0 = U8(0xb6839c10)
 	ReFabricPattern7Color1 = U8(0x0e3ffb75)
-	ReFabricPatternNum = S8(0x0cb402a3) # size is 3, could this be an array?
+	ReBodyPattern6Color1 = U8(0xae3aeada)
+	ReBodyPattern6Color0 = U8(0x16868dbf)
+	ReBodyPattern5Color1 = U8(0x450d51d9)
+	ReBodyPattern5Color0 = U8(0xfdb136bc)
+	ReBodyPattern4Color1 = U8(0xaacf3ae7)
+	ReBodyPattern4Color0 = U8(0x12735d82)
+	ReBodyPattern3Color1 = U8(0x4813219e)
+	ReBodyPattern3Color0 = U8(0xf0af46fb)
+	ReBodyPattern2Color1 = U8(0xa7d14aa0)
+	ReBodyPattern2Color0 = U8(0x1f6d2dc5)
+	ReBodyPattern1Color1 = U8(0x4ce6f1a3)
+	ReBodyPattern1Color0 = U8(0xf45a96c6)
+	ReBodyPattern0Color1 = U8(0xa3249a9d)
+	ReBodyPattern0Color0 = U8(0x1b98fdf8)
+	ReFabricPatternNum = S8(0x0cb402a3)
+	ReBodyPatternNum = S8(0xb0304b0d)
+	_d4f43b0b = U16(0xd4f43b0b)
 
 class ItemRemakeCommonPattern(Row):
-	Category = Enum(0x90466afd, enum_1e2429734a5c_ee729020db58)
-	Color1 = Enum(0xa6b1a7fd, enum_7f4abdaa06e5_875003339aa7)
 	Color2 = Enum(0xb7cccd84, enum_7f4abdaa06e5_875003339aa7)
+	Color1 = Enum(0xa6b1a7fd, enum_7f4abdaa06e5_875003339aa7)
 	SortID = U32(0x8fb1ed85)
+	Category = Enum(0x90466afd, enum_1e2429734a5c_ee729020db58)
 	UniqueID = U16(0x54706054)
 	Label = String(0x87bf00e8) # string32
 	TextureResName = String(0x5aebbfb5) # string64
@@ -5846,123 +5531,116 @@ class ItemRemakeCommonPatternCategory(Row):
 	Label = String(0x87bf00e8) # string32
 
 class ItemSeasonalityParam(Row):
-	EndDayNorth = U16(0xa9b28820)
-	EndDaySouth = U16(0x319a1388)
-	EndMonthNorth = U16(0x859c3e3e)
-	EndMonthSouth = U16(0x1db4a596)
-	StartDayNorth = U16(0x5fad728f)
-	StartDaySouth = U16(0xc785e927)
+	UniqueID = U16(0x54706054)
 	StartMonthNorth = U16(0xf16b7305)
+	StartDayNorth = U16(0x5fad728f)
+	EndMonthNorth = U16(0x859c3e3e)
+	EndDayNorth = U16(0xa9b28820)
 	StartMonthSouth = U16(0x6943e8ad)
-	UniqueID = U16(0x54706054) # size is 4, could this be an array?
+	StartDaySouth = U16(0xc785e927)
+	EndMonthSouth = U16(0x1db4a596)
+	EndDaySouth = U16(0x319a1388) # size is 4, could this be an array?
 
 class ItemShareTexture(Row):
 	UniqueID = U16(0x54706054)
 	ResName = String(0xdcfb52e8) # string32
 
 class ItemSize(Row):
-	_801351e6 = Float(0x801351e6) # size 4
-	MemoryUnitNum = U16(0x09b64264)
+	_801351e6 = U32(0x801351e6)
 	PolygonLimit = U16(0x3cf05708)
+	MemoryUnitNum = U16(0x09b64264)
 	UniqueID = U16(0x54706054)
 	HalfUnitSizeX = U8(0x16b8f524)
-	HalfUnitSizeZ = U8(0xbcb13daf)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
+	HalfUnitSizeZ = U8(0xbcb13daf)
 
 class ItemStrSort(Row):
-	StrSortIdCNzh = U16(0xa99eaf49)
-	StrSortIdEUde = U16(0xcb64c9a0)
+	UniqueID = U16(0x54706054)
+	StrSortIdJPja = U16(0x8ff6331b)
+	StrSortIdUSen = U16(0x68832f05)
 	StrSortIdEUen = U16(0x77e82b14)
-	StrSortIdEUes = U16(0xef987827)
+	StrSortIdEUde = U16(0xcb64c9a0)
 	StrSortIdEUfr = U16(0x546c2339)
+	StrSortIdUSfr = U16(0x4b072728)
+	StrSortIdEUes = U16(0xef987827)
+	StrSortIdUSes = U16(0xf0f37c36)
 	StrSortIdEUit = U16(0x2a7a644c)
 	StrSortIdEUnl = U16(0x67ef88b7)
 	StrSortIdEUru = U16(0x7e0bbfa4)
-	StrSortIdJPja = U16(0x8ff6331b)
 	StrSortIdKRko = U16(0xa0af4f68)
-	StrSortIdTWzh = U16(0x2da64e66)
-	StrSortIdUSen = U16(0x68832f05)
-	StrSortIdUSes = U16(0xf0f37c36)
-	StrSortIdUSfr = U16(0x4b072728)
-	UniqueID = U16(0x54706054) # size is 4, could this be an array?
+	StrSortIdCNzh = U16(0xa99eaf49)
+	StrSortIdTWzh = U16(0x2da64e66) # size is 4, could this be an array?
 
 class ItemUIContextMenu(Row):
-	Priority = U16(0x200dd382)
 	UniqueID = U16(0x54706054)
-	AutoDisappear = U8(0xf2ce6e17)
+	Priority = U16(0x200dd382)
 	Label = String(0x87bf00e8) # string32
-	MSLabel = String(0x026f0892) # string32
 	Name = String(0x036e8ebe) # string64
+	MSLabel = String(0x026f0892) # string32
+	AutoDisappear = U8(0xf2ce6e17) # size is 4, could this be an array?
 
 class ItemUnitIcon(Row):
 	ScaleOffset = Float(0x68460c05)
+	UniqueID = U16(0x54706054)
 	CatalogItemUniqueID = U16(0xfc86133a)
-	UniqueID = U16(0x54706054)
-	ColorIndex = S8(0x64b8fff8)
-	Label = String(0x87bf00e8) # string32
-	ModelName = String(0x39b5a93d) # string32
-	Name = String(0x036e8ebe) # string64
 	ResName = String(0x48ef0398) # string64
-
-class JuneBrideWallFloor(Row):
-	Theme = Enum(0x23a01e5b, enum_f8068b894699_70f716c481de)
-	FloorItemId = U16(0x4e718582)
-	RugItemId = U16(0xa1249129)
-	UniqueID = U16(0x54706054)
-	WallItemId = U16(0x350e1ef9)
+	Label = String(0x87bf00e8) # string32
+	ColorIndex = S8(0x64b8fff8)
+	Name = String(0x036e8ebe) # string64
+	ModelName = String(0x39b5a93d) # string32
 
 class LocalizeNameConvertParam(Row):
 	UniqueID = U16(0x54706054)
-	BaseName = String(0x50edd045) # string32
-	CNzh = U8(0xd22a8fc9)
-	EUde = U8(0xf551b995)
 	EUen = U8(0x1f301724)
-	EUes = U8(0xbd439866)
+	LocalizeModel = U8(0x9ff07c89)
+	LocalizeTexture = U8(0x086f5f3a)
+	LocalizeAnim = U8(0xc70be94f)
+	JPja = U8(0x638671f9)
+	USen = U8(0xaeb768f7)
+	USfr = U8(0xf3d8fa00)
+	USes = U8(0x0cc4e7b5)
+	BaseName = String(0x50edd045) # string32
 	EUfr = U8(0x425f85d3)
+	EUes = U8(0xbd439866)
+	EUde = U8(0xf551b995)
 	EUit = U8(0xe5644dde)
 	EUnl = U8(0xc2e9eebe)
 	EUru = U8(0x4ae88c28)
-	JPja = U8(0x638671f9)
 	KRko = U8(0x558685c5)
-	LocalizeAnim = U8(0xc70be94f)
-	LocalizeModel = U8(0x9ff07c89)
-	LocalizeTexture = U8(0x086f5f3a)
-	TWzh = U8(0x548a7eda)
-	USen = U8(0xaeb768f7)
-	USes = U8(0x0cc4e7b5)
-	USfr = U8(0xf3d8fa00) # size is 2, could this be an array?
+	CNzh = U8(0xd22a8fc9)
+	TWzh = U8(0x548a7eda) # size is 2, could this be an array?
 
 class MannequinCoodinate(Row):
 	MannequinPose = Enum(0x1c73934d, enum_a55023d0faad_4d2a3ca36fe8)
 	Seasonality = U32(0xb44dbf73)
+	Cap = U16(0x291a1b04)
+	Socks = U16(0x39ed7f5a)
+	Shoes = U16(0xce827d47)
+	Bottoms = U16(0xcc136eb5)
 	AccEye = U16(0x395b7795)
 	AccMouth = U16(0x79ad3f84)
-	Bottoms = U16(0xcc136eb5)
-	Cap = U16(0x291a1b04)
-	Shoes = U16(0xce827d47)
-	Socks = U16(0x39ed7f5a)
 	Tops = U16(0x870f1e29)
 	UniqueID = U16(0x54706054)
 
 class MaterialType(Row):
-	SoundAttribute = U16(0x2e17a0a7)
 	UniqueID = U16(0x54706054)
+	SoundAttribute = U16(0x2e17a0a7)
 	DebugName = String(0xab51a3cf) # string32
 
 class MessageCardBoardDesignParam(Row):
-	BackColor = U16(0xa2fe7f71)
+	UniqueID = U16(0x54706054)
+	_84818e10 = U16(0x84818e10) # possible string size 2
+	HeadColor = U16(0x32c0c064)
 	BodyColor = U16(0x41afe839)
 	FootColor = U16(0x57c98e5b)
-	HeadColor = U16(0x32c0c064)
 	PenColor1 = U16(0x990406a9)
-	PenColor2 = U16(0xdea47c79)
+	TextLotId = S16(0x5f384120)
 	PenColor3 = U16(0xe3c455c9)
 	PenColor4 = U16(0x51e489d9)
+	BackColor = U16(0xa2fe7f71)
 	RuleColor = U16(0x94d6cb5d)
-	TextLotId = S16(0x5f384120)
-	_84818e10 = U16(0x84818e10) # possible string size 2
-	UniqueID = U16(0x54706054)
+	PenColor2 = U16(0xdea47c79)
 	ResourceName = String(0x4b9c4229) # string64
 
 class MessageCardColorParam(Row):
@@ -5970,154 +5648,131 @@ class MessageCardColorParam(Row):
 	UniqueID = U16(0x54706054) # size is 4, could this be an array?
 
 class MessageCardDesignParam(Row):
-	BackColor = U16(0xa2fe7f71)
-	BodyColor = U16(0x41afe839)
-	_63a46970 = U16(0x63a46970) # possible string size 2
-	FootColor = U16(0x57c98e5b)
+	UniqueID = U16(0x54706054)
+	_ea031e9a = U16(0xea031e9a)
+	_d299f964 = U16(0xd299f964)
 	HeadColor = U16(0x32c0c064)
+	BodyColor = U16(0x41afe839)
+	FootColor = U16(0x57c98e5b)
 	PenColor1 = U16(0x990406a9)
 	PenColor2 = U16(0xdea47c79)
 	PenColor3 = U16(0xe3c455c9)
 	PenColor4 = U16(0x51e489d9)
-	RuleColor = U16(0x94d6cb5d)
 	_953983b4 = U16(0x953983b4)
-	_d299f964 = U16(0xd299f964)
-	_ada3644a = U16(0xada3644a)
-	_ea031e9a = U16(0xea031e9a)
+	RuleColor = U16(0x94d6cb5d)
 	TextLotId = S16(0x5f384120)
 	_84818e10 = U16(0x84818e10) # possible string size 2
-	UniqueID = U16(0x54706054)
-	Kind = U8(0x24da7ada)
-	ResourceName = String(0x4b9c4229) # string64
+	_63a46970 = U16(0x63a46970) # possible string size 2
+	_ada3644a = U16(0xada3644a)
+	BackColor = U16(0xa2fe7f71)
 	SelectableSeason = U8(0xaa738fed)
-	UnlockTrigger = U8(0x7a6965c5) # size is 4, could this be an array?
+	UnlockTrigger = U8(0x7a6965c5)
+	ResourceName = String(0x4b9c4229) # string64
+	Kind = U8(0x24da7ada) # size is 4, could this be an array?
 
 class MessageCardSelectDesign(Row):
 	_37571146 = U32(0x37571146)
-	DesignAlways1 = U16(0xe486805c)
+	DesignSpring2 = U16(0xcb625ad7)
 	DesignAlways2 = U16(0xa326fa8c)
 	DesignAlways3 = U16(0x9e46d33c)
 	DesignAlways4 = U16(0x2c660f2c)
-	DesignAutumn1 = U16(0xd29880f2)
-	DesignAutumn2 = U16(0x9538fa22)
 	DesignSpring1 = U16(0x8cc22007)
-	DesignSpring2 = U16(0xcb625ad7)
+	DesignAlways1 = U16(0xe486805c)
 	DesignSummer1 = U16(0xccc4afcb)
 	DesignSummer2 = U16(0x8b64d51b)
+	DesignAutumn1 = U16(0xd29880f2)
+	DesignAutumn2 = U16(0x9538fa22)
 	DesignWinter1 = U16(0x1bf6abea)
 	DesignWinter2 = U16(0x5c56d13a)
 
 class MessageCardSelectDesignSp(Row):
 	_37571146 = U32(0x37571146)
-	DesignAlways1 = U16(0xe486805c)
+	DesignSpring2 = U16(0xcb625ad7)
 	DesignAlways2 = U16(0xa326fa8c)
 	DesignAlways3 = U16(0x9e46d33c)
 	DesignAlways4 = U16(0x2c660f2c)
-	DesignAutumn1 = U16(0xd29880f2)
-	DesignAutumn2 = U16(0x9538fa22)
 	DesignSpring1 = U16(0x8cc22007)
-	DesignSpring2 = U16(0xcb625ad7)
+	DesignAlways1 = U16(0xe486805c)
 	DesignSummer1 = U16(0xccc4afcb)
 	DesignSummer2 = U16(0x8b64d51b)
+	DesignAutumn1 = U16(0xd29880f2)
+	DesignAutumn2 = U16(0x9538fa22)
 	DesignWinter1 = U16(0x1bf6abea)
 	DesignWinter2 = U16(0x5c56d13a)
 
 class MessageCardSelectPresent(Row):
+	_37571146 = U32(0x37571146)
 	ItemCategory = U32(0x368210c4)
 	ItemCategoryGroup = U32(0x128a3d9b)
-	_37571146 = U32(0x37571146)
 	_e060d3cd = U16(0xe060d3cd)
 	ItemRemakeType = U8(0xc233727b) # size is 2, could this be an array?
 
 class MessageCardSelectPresentSp(Row):
+	_37571146 = U32(0x37571146)
 	ItemCategory = U32(0x368210c4)
 	ItemCategoryGroup = U32(0x128a3d9b)
-	_37571146 = U32(0x37571146)
 	_e060d3cd = U16(0xe060d3cd)
 	ItemRemakeType = U8(0xc233727b) # size is 2, could this be an array?
 
-class MuseumArtDonateInfo(Row):
-	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
-	ModelID = U16(0xfdeed09c)
-	UniqueID = U16(0x54706054)
-	WatchItem = U16(0xb76b7d37)
-	CameraParamName = String(0xb16c3035) # string33
-
 class MuseumFossilDonateInfo(Row):
 	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
-	ModelID = U16(0xfdeed09c)
 	UniqueID = U16(0x54706054)
 	WatchItem = U16(0xb76b7d37)
+	ModelID = U16(0xfdeed09c)
 	CameraParamName = String(0xb16c3035) # string33
 
 class MuseumNPCLayoutInfo(Row):
 	UniqueID = U16(0x54706054)
-	WatchItem = U16(0xb76b7d37)
 	WatchPointID = U16(0x4765b463)
-	BalloonTalkKey = String(0xe9812e07) # string25
-	_b434805d = U32(0xb434805d) # possible string size 4
+	WatchItem = U16(0xb76b7d37)
 	ReactionTalkKey = String(0x60e4e478) # string25
 	_97be8767 = U32(0x97be8767) # possible string size 4
+	BalloonTalkKey = String(0xe9812e07) # string25
+	_b434805d = U32(0xb434805d) # possible string size 4
 
 class MuseumNPCSilhouette(Row):
+	SilhouettePosZ = Float(0x75e35e54)
+	SilhouettePosY = Float(0x32432484)
 	MuseumNpcRace = U32(0x110ca7b2)
 	SilhouettePosX = Float(0x0f230d34)
-	SilhouettePosY = Float(0x32432484)
-	SilhouettePosZ = Float(0x75e35e54)
 	UniqueID = U16(0x54706054)
 	SilhouetteName = String(0x7c6429ea) # string65
 
 class MuseumNPCSpotTalk(Row):
 	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
 	UniqueID = U16(0x54706054)
+	SpotTalkName = String(0xb10b6bc8) # string65
 	SpotTalkKey = String(0x8e768bd8) # string25
 	_9d9b3598 = U32(0x9d9b3598) # possible string size 4
-	SpotTalkName = String(0xb10b6bc8) # string65
 
 class MuseumNameboardInfo(Row):
 	NameboardAngleY = Float(0x2c40799e)
+	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
+	NameboardPosZ = Float(0xa5f3bd28)
 	NameboardPosX = Float(0xdf33ee48)
 	NameboardPosY = Float(0xe253c7f8)
-	NameboardPosZ = Float(0xa5f3bd28)
-	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
+	UniqueID = U16(0x54706054)
 	DonateItemFifth = U16(0x1ef061dd)
 	DonateItemFirst = U16(0x3574933b)
-	DonateItemFourth = U16(0xdfacc347)
 	DonateItemSecond = U16(0x50650a2b)
+	DonateItemFourth = U16(0xdfacc347)
 	DonateItemThird = U16(0xb58d7541)
-	UniqueID = U16(0x54706054)
 	ModelResName = String(0xfad4ff78) # string65
-	VisibleOff = U8(0xc1bb7d2d) # size is 3, could this be an array?
-
-class MuseumStampRackInfo(Row):
-	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
-	_98ff7f38 = U32(0x98ff7f38)
-	_e23f2c58 = U32(0xe23f2c58)
-	StampRackItemNameA = U16(0xb02f0c17)
-	StampRackItemNameB = U16(0xf78f76c7)
-	StampRackItemNameC = U16(0xcaef5f77)
-	_d4f5b3e6 = U16(0xd4f5b3e6)
-	UniqueID = U16(0x54706054)
-	StampRackIdx = U8(0xa90b807e)
-	_0512b63c = String(0x0512b63c) # size 32
-	StampRackNameTextLabel = String(0x4ab9b98a) # string32
-	_96d80132 = String(0x96d80132) # size 32
-	_ed4b6070 = U8(0xed4b6070)
 
 class MuseumWatchPoint(Row):
-	SilhouetteID = U32(0x3e884a6d)
-	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
-	_35ac2c17 = Enum(0x35ac2c17, enum_23f7dd8d5dc1_9e5af7814467)
-	_1f3893e5 = Float(0x1f3893e5) # size 4
-	_2258ba55 = Float(0x2258ba55) # size 4
-	_65f8c085 = Float(0x65f8c085) # size 4
-	WatchAngleY = Float(0xd200ffd3)
+	_65f8c085 = Float(0x65f8c085)
+	_2258ba55 = Float(0x2258ba55)
 	WatchPosX = Float(0x2633f2c1)
 	WatchPosY = Float(0x1b53db71)
 	WatchPosZ = Float(0x5cf3a1a1)
+	WatchAngleY = Float(0xd200ffd3)
+	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
+	SilhouetteID = U32(0x3e884a6d)
+	_1f3893e5 = Float(0x1f3893e5)
+	_35ac2c17 = Enum(0x35ac2c17, enum_23f7dd8d5dc1_9e5af7814467)
 	UniqueID = U16(0x54706054)
-	BattlePoint = U8(0x91eaeedd)
 	PointName = String(0x85fb9dd5) # string65
+	BattlePoint = U8(0x91eaeedd)
 	SilhouettePoint = U8(0xf58109f5) # size is 4, could this be an array?
 
 class MysteryTourFieldParam(Row):
@@ -6126,448 +5781,431 @@ class MysteryTourFieldParam(Row):
 
 class MysteryTourFishParam(Row):
 	UniqueID = U16(0x54706054)
-	TargetShadow = RawData(0xc35f78ed, 2) # size 2
+	TargetShadow = RawData(0xc35f78ed, 2)
 
 class MysteryTourInsectParam(Row):
 	UniqueID = U16(0x54706054)
-	TargetInsect = RawData(0xd086a528, 14) # size 14
+	TargetInsect = RawData(0xd086a528, 14)
 
 class MysteryTourItemParam(Row):
 	UniqueID = U16(0x54706054) # size is 4, could this be an array?
 
 class MysteryTourParam(Row):
 	ItemPlacementKind = Enum(0xdd59b554, enum_c4b640ed3760_e8e603be0f51)
-	TourType = Enum(0x1c8d9dbc, enum_960b44c579bc_90f80471d9f2)
-	FishPattern = S16(0xb1f384dc)
+	UniqueID = U16(0x54706054)
+	MysteryTourItemUniqueID = U16(0x7a09986c)
+	MysteryTourFieldUniqueID = U16(0x72573f73)
 	InsectPattern = S16(0xe23c6453)
+	FishPattern = S16(0xb1f384dc)
 	MustItem0 = U16(0xbc5f2a7b)
 	MustItem1 = U16(0x813f03cb)
-	MysteryTourFieldUniqueID = U16(0x72573f73)
-	MysteryTourItemUniqueID = U16(0x7a09986c)
-	UniqueID = U16(0x54706054)
-	_7215b154 = String(0x7215b154) # size 32
-	_88bd09c2 = String(0x88bd09c2) # size 32
-	_4e5cd9f3 = String(0x4e5cd9f3) # size 32
 	_8f2f4bf9 = String(0x8f2f4bf9) # size 32
-	_0b3d1d54 = String(0x0b3d1d54) # size 32
-	SelectWeight = U8(0xd89a0db0)
-	StatusPattern = U8(0xb1589411)
+	_4e5cd9f3 = String(0x4e5cd9f3) # size 32
+	_88bd09c2 = String(0x88bd09c2) # size 32
+	_7215b154 = String(0x7215b154) # size 32
+	SelectWeight = U8(0xd89a0db0) # size is 2, could this be an array?
 
 class NmlNpcParam(Row):
-	_a54f92fd = U32(0xa54f92fd)
 	_e2efe82d = U32(0xe2efe82d)
 	_5ef86f1f = U32(0x5ef86f1f)
+	NpcLooks = Enum(0x04f52f6a, enum_3db89b93b3c4_1360cab183ed)
+	VmPauseType = Enum(0x0e7ab6a6, enum_4608a26bdcad_ba6d01a90298)
+	Hobby = Enum(0x9eea1288, enum_a68bce6af69b_92745feba3f9)
+	Social = Enum(0xaa4403ea, enum_872b31abf9f9_cc7475a100e8)
+	VmRhythmType = Enum(0xdd2d2adc, enum_04c6f73235ef_eb1f48d30352)
 	_195815cf = U32(0x195815cf)
 	_bea84522 = Enum(0xbea84522, enum_8fe44c9d797f_aa6d915eb9ed)
-	Hobby = Enum(0x9eea1288, enum_a68bce6af69b_92745feba3f9)
-	NpcLooks = Enum(0x04f52f6a, enum_3db89b93b3c4_1360cab183ed)
-	Social = Enum(0xaa4403ea, enum_872b31abf9f9_cc7475a100e8)
-	VmPauseType = Enum(0x0e7ab6a6, enum_4608a26bdcad_ba6d01a90298)
-	VmRhythmType = Enum(0xdd2d2adc, enum_04c6f73235ef_eb1f48d30352)
-	AccentWall = U16(0x08238405)
-	BromideItemID = S16(0x71bf253b)
-	FloorType = U16(0x0b52f5bb)
-	PosterItemID = S16(0x0f640691)
-	RainHat = U16(0x03200971)
-	RainWare = U16(0x1d69405f)
-	SmartphoneRemakeCommonPattern = S16(0x57e889b2)
-	SmartphoneRemakePattern = U16(0xf8be7f94)
-	Tops = U16(0x870f1e29)
-	Umbrella = U16(0xbb9c816e)
+	_a54f92fd = U32(0xa54f92fd)
 	UniqueID = U16(0x54706054)
+	Umbrella = U16(0xbb9c816e)
+	RainWare = U16(0x1d69405f)
+	Tops = U16(0x870f1e29)
+	RainHat = U16(0x03200971)
+	SmartphoneRemakePattern = U16(0xf8be7f94)
+	SmartphoneRemakeCommonPattern = S16(0x57e889b2)
+	PosterItemID = S16(0x0f640691)
+	BromideItemID = S16(0x71bf253b)
+	AccentWall = U16(0x08238405)
 	WallType = U16(0xda63a0cc)
+	FloorType = U16(0x0b52f5bb)
+	_566f1d31 = U8(0x566f1d31)
+	Color2 = U8(0x265ef22d)
+	Color1 = U8(0x34eb5dc3)
+	_e52f0037 = U8(0xe52f0037)
+	_42f255d5 = U8(0x42f255d5)
+	_21c5bbd6 = U8(0x21c5bbd6)
+	NpcColor = U8(0x41977699)
+	HelperBoneResName = String(0xc1fb0035) # string64
+	SpecialSLink = U8(0xbe782346)
+	SpecialELink = U8(0x04ac1bea)
+	HavokResName = String(0x4ce98793) # string64
+	ResName = String(0x48ef0398) # string64
 	BirthMDay = U8(0x919ea52a)
 	BirthMonth = U8(0x9456b6a3)
-	Color1 = U8(0x34eb5dc3)
-	Color2 = U8(0x265ef22d)
-	HavokResName = String(0x4ce98793) # string64
-	HelperBoneResName = String(0xc1fb0035) # string64
 	InitLive = U8(0x454b2adc)
-	_566f1d31 = U8(0x566f1d31)
-	Label = String(0x2f1b930d) # string8
-	NpcColor = U8(0x41977699)
 	NpcTalkType = U8(0x33af13e1)
-	ResName = String(0x48ef0398) # string64
-	SpecialELink = U8(0x04ac1bea)
-	SpecialSLink = U8(0xbe782346)
-	_21c5bbd6 = U8(0x21c5bbd6)
-	_e52f0037 = U8(0xe52f0037)
-	_42f255d5 = U32(0x42f255d5)
+	Label = String(0x2f1b930d) # string8
 
 class NmlNpcRaceParam(Row):
+	Label = String(0x2f1b930d) # string8
+	AnimeTypeFishingRod = String(0x7c6fde34) # string64
+	AnimeTypeNet = String(0xfca98253) # string64
+	AnimeTypeWateringCan = String(0x09b714f9) # string64
+	AnimeTypeBloom = String(0x9916cf87) # string64
+	AnimeTypeFirewood = String(0x55c343c4) # string64
+	AnimeTypeSmartPhone = String(0xd06d98dc) # string64
+	AnimeTypeBook = String(0x41935ae1) # string64
 	AnimeTypeBag = String(0x85e386bb) # string64
 	AnimeTypeBasket = String(0xcb358e51) # string64
-	AnimeTypeBloom = String(0x9916cf87) # string64
-	AnimeTypeBook = String(0x41935ae1) # string64
-	AnimeTypeDrink = String(0x0c98243c) # string64
-	AnimeTypeFirewood = String(0x55c343c4) # string64
-	AnimeTypeFishingRod = String(0x7c6fde34) # string64
 	AnimeTypeFood = String(0x70216bfa) # string64
-	AnimeTypeHandGlass = String(0x9951a44b) # string64
-	AnimeTypeNet = String(0xfca98253) # string64
-	AnimeTypeSitDown = String(0xb109a778) # string64
-	AnimeTypeSmartPhone = String(0xd06d98dc) # string64
+	AnimeTypeDrink = String(0x0c98243c) # string64
 	AnimeTypeUmbrella = String(0x5e2aa87d) # string64
-	AnimeTypeWateringCan = String(0x09b714f9) # string64
-	Label = String(0x2f1b930d) # string8
+	AnimeTypeSitDown = String(0xb109a778) # string64
+	AnimeTypeHandGlass = String(0x9951a44b) # string64
 
 class NpcCastLabelData(Row):
-	AIFlowEntryName = String(0x02c2ac67) # string32
+	CastType = U8(0xb7a6c4a8)
 	AIFlowName = String(0xf37316e6) # string64
-	AppearStage = U8(0x378b2f14)
-	CastType = U8(0xb7a6c4a8) # size is 3, could this be an array?
+	AIFlowEntryName = String(0x02c2ac67) # string32
+	AppearStage = U8(0x378b2f14) # size is 3, could this be an array?
 
 class NpcCastScheduleData(Row):
-	ApplyNeedActivity = U8(0xaaae3a0f)
-	CanDoze = U8(0xac0593cc)
-	CastLabel = U8(0x69a9bb3c)
-	_d507df3e = U8(0xd507df3e)
-	EndHour = U8(0x675ca211)
-	EndMinute = U8(0x2b09d942)
 	EventName = String(0x7d740fa4) # string32
-	NeglectSleep = U8(0xa78d0cc5)
+	CastLabel = U8(0x69a9bb3c)
 	StartHour = U8(0x8ae48661)
 	StartMinute = U8(0x3835a9dd)
-	_e76db92f = U16(0xe76db92f)
+	EndHour = U8(0x675ca211)
+	EndMinute = U8(0x2b09d942)
+	NeglectSleep = U8(0xa78d0cc5)
+	_d507df3e = U8(0xd507df3e)
+	_e76db92f = U8(0xe76db92f)
+	ApplyNeedActivity = U8(0xaaae3a0f)
+	CanDoze = U8(0xac0593cc) # size is 3, could this be an array?
 
 class NpcEquipRule(Row):
-	_423d1c4d = Enum(0x423d1c4d, enum_8660a424ddf9_da4e1de32164)
+	ScoreMultiplier = Float(0xcbbe9d2d)
 	_b219374f = Enum(0xb219374f, enum_eac1ccc130ff_55f087e18a44)
 	_68d62ca8 = Enum(0x68d62ca8, enum_3f8ad7b8db09_a7b5a46a35b6)
 	PurposeScore = S32(0x1f401b52)
 	PurposeTag = U32(0xe765b554)
-	ScoreMultiplier = Float(0xcbbe9d2d)
 	SeasonScore = S32(0x79be959d)
 	TasteScore = S32(0xa3dc7c4c)
+	_423d1c4d = Enum(0x423d1c4d, enum_8660a424ddf9_da4e1de32164)
 	UniqueID = U16(0x54706054)
-	_f9cf603a = U8(0xf9cf603a)
+	Label = String(0x87bf00e8) # string32
+	Name = String(0x036e8ebe) # string64
 	_2c2a379e = U8(0x2c2a379e)
 	_a4396b29 = U8(0xa4396b29)
-	_744b3452 = U8(0x744b3452)
-	_a073aa81 = U8(0xa073aa81)
-	_fdf8907b = U8(0xfdf8907b)
-	Label = String(0x87bf00e8) # string32
 	_74275e7a = U8(0x74275e7a) # possible string size 1
 	_cc198281 = U8(0xcc198281) # possible string size 1
 	_14767df7 = U8(0x14767df7) # possible string size 1
-	Name = String(0x036e8ebe) # string64
+	_744b3452 = U8(0x744b3452)
+	_a073aa81 = U8(0xa073aa81)
+	_fdf8907b = U8(0xfdf8907b)
+	_f9cf603a = U16(0xf9cf603a)
 
 class NpcInterest(Row):
 	Offset = Float(0xecf95b05)
-	ContinuousTime = U16(0xb694c63b)
 	ItemUniqueID = U16(0xfd9af1e1)
+	ContinuousTime = U16(0xb694c63b)
+	TimeZoneIndoorEveningLevel = U8(0xd2ab4a8f)
+	TimeZoneOutdoorEarlyMorningLevel = U8(0xfa3b3608)
+	TimeZoneOutdoorMorningLevel = U8(0x2ae7c830)
+	TimeZoneOutdoorNoonLevel = U8(0x8d3bad84)
+	TimeZoneOutdoorEveningLevel = U8(0xe4fe6719)
+	TimeZoneOutdoorNightLevel = U8(0x1b6eaa53)
+	TimeZoneOutdoorMidnightLevel = U8(0xb9e9f361)
+	TimeZoneIndoorEarlyMorningLevel = U8(0x154eee75)
+	TimeZoneIndoorMorningLevel = U8(0x1cb2e5a6)
+	TimeZoneIndoorNoonLevel = U8(0x92827ae7)
+	IntervalTime = U8(0xa0d9d29e)
+	TimeZoneIndoorNightLevel = U8(0xcfca2366)
+	TimeZoneIndoorMidnightLevel = U8(0xa0b3903d)
+	RainActive = U8(0xa9de0384)
+	VillageDevelopmentLevel = U8(0xee0961fa)
 	BehaviorType = U8(0x40876b17)
 	ConditionType = U8(0xa8644472)
-	FlagType = U8(0x430dbf65)
-	_6bcf870d = U8(0x6bcf870d)
-	IntervalTime = U8(0xa0d9d29e)
-	LabelType = U8(0xd7ded52a)
-	MoveASType = String(0x604df507) # string32
 	MoveConditionType = U8(0xa0efadac)
-	NeedType = U8(0xd6b82305)
-	RainActive = U8(0xa9de0384)
-	TimeZoneIndoorEarlyMorningLevel = U8(0x154eee75)
-	TimeZoneIndoorEveningLevel = U8(0xd2ab4a8f)
-	TimeZoneIndoorMidnightLevel = U8(0xa0b3903d)
-	TimeZoneIndoorMorningLevel = U8(0x1cb2e5a6)
-	TimeZoneIndoorNightLevel = U8(0xcfca2366)
-	TimeZoneIndoorNoonLevel = U8(0x92827ae7)
-	TimeZoneOutdoorEarlyMorningLevel = U8(0xfa3b3608)
-	TimeZoneOutdoorEveningLevel = U8(0xe4fe6719)
-	TimeZoneOutdoorMidnightLevel = U8(0xb9e9f361)
-	TimeZoneOutdoorMorningLevel = U8(0x2ae7c830)
-	TimeZoneOutdoorNightLevel = U8(0x1b6eaa53)
-	TimeZoneOutdoorNoonLevel = U8(0x8d3bad84)
-	VillageDevelopmentLevel = U8(0xee0961fa)
+	_6bcf870d = U8(0x6bcf870d)
+	MoveASType = String(0x604df507) # string32
 	WaitASType = String(0x8eabc257) # string32
+	NeedType = U8(0xd6b82305)
+	LabelType = U8(0xd7ded52a)
+	FlagType = U8(0x430dbf65) # size is 3, could this be an array?
 
 class NpcLife(Row):
 	ArriveDist = Float(0x3b27f030)
-	ItemUniqueID = U16(0xfd9af1e1)
 	SatisfyMinute = U16(0x76e5e67a)
-	BehaviorType = U8(0x40876b17)
-	EquipRule = String(0xd941db12) # string32
-	FlagType = U8(0x430dbf65)
-	GroupActivityPlacementType = U8(0xbdd4dc0f)
-	HobbyEducationLevel = U8(0xcd61ce25)
-	HobbyFashionLevel = U8(0x9fbbc76b)
-	HobbyFitnessLevel = U8(0x54ab2c62)
-	HobbyMotif = U8(0xa42b13ce)
+	ItemUniqueID = U16(0xfd9af1e1)
+	TimeZoneIndoorMidnightLevel = U8(0xa0b3903d)
 	HobbyMusicLevel = U8(0x1eb65d06)
+	HobbyFitnessLevel = U8(0x54ab2c62)
+	HobbyFashionLevel = U8(0x9fbbc76b)
+	HobbyEducationLevel = U8(0xcd61ce25)
 	HobbyNatureLevel = U8(0xebd71bbd)
+	TimeZoneOutdoorEarlyMorningLevel = U8(0xfa3b3608)
+	TimeZoneOutdoorMorningLevel = U8(0x2ae7c830)
+	TimeZoneOutdoorNoonLevel = U8(0x8d3bad84)
+	TimeZoneOutdoorEveningLevel = U8(0xe4fe6719)
+	TimeZoneOutdoorNightLevel = U8(0x1b6eaa53)
+	TimeZoneOutdoorMidnightLevel = U8(0xb9e9f361)
+	TimeZoneIndoorEarlyMorningLevel = U8(0x154eee75)
+	TimeZoneIndoorMorningLevel = U8(0x1cb2e5a6)
+	TimeZoneIndoorNoonLevel = U8(0x92827ae7)
+	TimeZoneIndoorEveningLevel = U8(0xd2ab4a8f)
+	TimeZoneIndoorNightLevel = U8(0xcfca2366)
 	HobbyPlayLevel = U8(0x630a25b4)
-	LifeMotif = U8(0x38954eb6)
-	LiveMotif = U8(0x1f3bcf5e)
-	LookAtType = U8(0x35c78d62)
-	MoveASType = String(0x604df507) # string32
-	NetPlay = U8(0xf196e054)
 	RainActive = U8(0xa9de0384)
 	RainEquipment = U8(0x67850558)
-	SeasonAutumnLevel = U8(0x7c1b4734)
 	SeasonSpringLevel = U8(0xeaadf252)
 	SeasonSummerLevel = U8(0x2760bc87)
+	SeasonAutumnLevel = U8(0x7c1b4734)
 	SeasonWinterLevel = U8(0xb2540403)
-	SpotType = RawData(0x9bc85bd0, 3) # size 3
-	TimeZoneIndoorEarlyMorningLevel = U8(0x154eee75)
-	TimeZoneIndoorEveningLevel = U8(0xd2ab4a8f)
-	TimeZoneIndoorMidnightLevel = U8(0xa0b3903d)
-	TimeZoneIndoorMorningLevel = U8(0x1cb2e5a6)
-	TimeZoneIndoorNightLevel = U8(0xcfca2366)
-	TimeZoneIndoorNoonLevel = U8(0x92827ae7)
-	TimeZoneOutdoorEarlyMorningLevel = U8(0xfa3b3608)
-	TimeZoneOutdoorEveningLevel = U8(0xe4fe6719)
-	TimeZoneOutdoorMidnightLevel = U8(0xb9e9f361)
-	TimeZoneOutdoorMorningLevel = U8(0x2ae7c830)
-	TimeZoneOutdoorNightLevel = U8(0x1b6eaa53)
-	TimeZoneOutdoorNoonLevel = U8(0x8d3bad84)
+	LifeMotif = U8(0x38954eb6)
 	VillageDevelopmentLevel = U8(0xee0961fa)
+	NetPlay = U8(0xf196e054)
+	BehaviorType = U8(0x40876b17)
+	MoveASType = String(0x604df507) # string32
 	WaitASType = String(0x8eabc257) # string32
+	EquipRule = String(0xd941db12) # string32
+	LiveMotif = U8(0x1f3bcf5e)
+	HobbyMotif = U8(0xa42b13ce)
+	LookAtType = U8(0x35c78d62)
+	SpotType = RawData(0x9bc85bd0, 3)
+	FlagType = U8(0x430dbf65)
+	GroupActivityPlacementType = U8(0xbdd4dc0f) # size is 2, could this be an array?
 
 class NpcLooksParam(Row):
+	Speciality2 = U32(0xaf58956d)
+	Speciality1 = U32(0xe8f8efbd)
+	Music0 = U32(0xeffe09fe)
+	Music1 = U32(0xd29e204e)
+	Music2 = U32(0x953e5a9e)
 	Book0 = U32(0x6ffec71e)
 	Book1 = U32(0x529eeeae)
 	Book2 = U32(0x153e947e)
 	Comic0 = U32(0xa1e8d2bb)
 	Comic1 = U32(0x9c88fb0b)
 	Comic2 = U32(0xdb2881db)
-	Dream0 = U32(0xc4bb5846)
-	Dream1 = U32(0xf9db71f6)
-	Dream2 = U32(0xbe7b0b26)
+	Movie0 = U32(0x48a92c68)
+	Movie1 = U32(0x75c905d8)
+	Movie2 = U32(0x32697f08)
+	TvProgram0 = U32(0x6f9dd83d)
+	TvProgram1 = U32(0x52fdf18d)
+	TvProgram2 = U32(0x155d8b5d)
+	Speciality0 = U32(0xd598c60d)
+	Sports1 = U32(0xd6597c9d)
+	Sports2 = U32(0x91f9064d)
 	Drink0 = U32(0xb305defd)
 	Drink1 = U32(0x8e65f74d)
 	Drink2 = U32(0xc9c58d9d)
 	Food0 = U32(0xc34424c7)
 	Food1 = U32(0xfe240d77)
 	Food2 = U32(0xb98477a7)
+	Dream0 = U32(0xc4bb5846)
+	Dream1 = U32(0xf9db71f6)
+	Dream2 = U32(0xbe7b0b26)
 	Hobby0 = U32(0x20624ee7)
 	Hobby1 = U32(0x1d026757)
 	Hobby2 = U32(0x5aa21d87)
-	Movie0 = U32(0x48a92c68)
-	Movie1 = U32(0x75c905d8)
-	Movie2 = U32(0x32697f08)
-	Music0 = U32(0xeffe09fe)
-	Music1 = U32(0xd29e204e)
-	Music2 = U32(0x953e5a9e)
-	Speciality0 = U32(0xd598c60d)
-	Speciality1 = U32(0xe8f8efbd)
-	Speciality2 = U32(0xaf58956d)
 	Sports0 = U32(0xeb39552d)
-	Sports1 = U32(0xd6597c9d)
-	Sports2 = U32(0x91f9064d)
-	TvProgram0 = U32(0x6f9dd83d)
-	TvProgram1 = U32(0x52fdf18d)
-	TvProgram2 = U32(0x155d8b5d)
 	UniqueID = U16(0x54706054)
 	Label = String(0x87bf00e8) # string32
 
 class NpcMoveRoomTemplate(Row):
 	RoomType = U32(0xd9a1f501)
-	Direction = S8(0x3a1fca06)
-	GroupIndex = S8(0xb12e26da)
+	_ef0088e8 = U8(0xef0088e8)
 	Size = S8(0x0b6d59d2)
-	XUnitIndex = S8(0xef0088e8)
-	ZUnitIndex = S8(0x8f5c3da3) # size is 4, could this be an array?
+	GroupIndex = S8(0xb12e26da)
+	_8f5c3da3 = U8(0x8f5c3da3)
+	Direction = S8(0x3a1fca06) # size is 4, could this be an array?
 
 class NpcMsgBullfestParam(Row):
 	NpcMsgBullfestCondition = Enum(0xddf1f8bf, enum_47e581a0f3c1_94306367028d)
-	AN1Index = S16(0x754c57c7)
-	AN2Index = S16(0x9e7becc4)
-	AccessoryID = U16(0x478dd182)
-	BO1Index = S16(0xc35c5af7)
-	BO2Index = S16(0x286be1f4)
-	BagID = U16(0x3af6dfe2)
-	BottomsID = U16(0x524596a2)
+	_5ef56066 = U16(0x5ef56066)
 	CapID = U16(0x8ff469e1)
-	CombinationNum = U16(0xcd89ffeb)
-	EyeAcceID = U16(0xda01c243)
-	FU1Index = S16(0x8c03fdc7)
-	FU2Index = S16(0x673446c4)
-	GE1Index = S16(0xb9507563)
-	GE2Index = S16(0x5267ce60)
-	HA1Index = S16(0x7b1d9990)
-	HA2Index = S16(0x902a2293)
-	HelmetID = U16(0xf429d772)
-	KO1Index = S16(0x5ef56066)
-	KO2Index = S16(0xb5c2db65)
-	OT1Index = S16(0xd0241896)
-	OT2Index = S16(0x3b13a395)
-	ShoesID = U16(0xf07156d2)
-	SocksID = U16(0xe113ac8d)
-	ToolID = U16(0xebb9a634)
+	AccessoryID = U16(0x478dd182)
 	TopsID = U16(0xdfb46994)
-	UmbrellaID = U16(0x003c0210)
+	BottomsID = U16(0x524596a2)
+	SocksID = U16(0xe113ac8d)
+	ShoesID = U16(0xf07156d2)
+	_c35c5af7 = U16(0xc35c5af7)
+	_286be1f4 = U16(0x286be1f4) # possible string size 2
+	_7b1d9990 = U16(0x7b1d9990)
+	_902a2293 = U16(0x902a2293) # possible string size 2
 	UniqueID = U16(0x54706054)
-	ZK1Index = S16(0x7991b277)
-	ZK2Index = S16(0x92a60974) # size is 4, could this be an array?
+	_b5c2db65 = U16(0xb5c2db65) # possible string size 2
+	_7991b277 = U16(0x7991b277)
+	_92a60974 = U16(0x92a60974) # possible string size 2
+	_8c03fdc7 = U16(0x8c03fdc7)
+	_673446c4 = U16(0x673446c4) # possible string size 2
+	_b9507563 = U16(0xb9507563)
+	_5267ce60 = U16(0x5267ce60) # possible string size 2
+	_d0241896 = U16(0xd0241896)
+	_3b13a395 = U16(0x3b13a395) # possible string size 2
+	_754c57c7 = U16(0x754c57c7)
+	_9e7becc4 = U32(0x9e7becc4) # possible string size 4
 
 class NpcRoomTemplate(Row):
 	RoomType = U32(0xd9a1f501)
-	Direction = S8(0x3a1fca06)
-	GroupIndex = S8(0xb12e26da)
+	_ef0088e8 = U8(0xef0088e8)
 	Size = S8(0x0b6d59d2)
-	XUnitIndex = S8(0xef0088e8)
-	ZUnitIndex = S8(0x8f5c3da3) # size is 4, could this be an array?
+	GroupIndex = S8(0xb12e26da)
+	_8f5c3da3 = U8(0x8f5c3da3)
+	Direction = S8(0x3a1fca06) # size is 4, could this be an array?
 
 class NpcSpClothSetParam(Row):
-	AcceEye = U16(0x2b57b24a)
-	Bottoms = U16(0xcc136eb5)
-	Cap = U16(0x291a1b04)
+	UniqueID = U16(0x54706054)
+	Tool = U16(0x973fae34)
 	Shoes = U16(0xce827d47)
 	SpNpcID = U16(0x0207a2af)
-	Tool = U16(0x973fae34)
+	Cap = U16(0x291a1b04)
+	Bottoms = U16(0xcc136eb5)
 	Tops = U16(0x870f1e29)
-	UniqueID = U16(0x54706054)
+	AcceEye = U16(0x2b57b24a)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
 
 class NpcSpModelScale(Row):
-	NormalScaleBottomsA = Float(0xc7a5b572)
-	NormalScaleBottomsB = Float(0x8005cfa2)
-	NormalScaleBottomsG = Float(0x48e540d2)
-	NormalScaleBottomsR = Float(0xe0e55820)
-	NormalScaleHA = Float(0x91f4a29c)
-	NormalScaleHB = Float(0xd654d84c)
-	NormalScaleHG = Float(0x1eb4573c)
-	NormalScaleHR = Float(0xb6b44fce)
-	NormalScaleLA = Float(0x0a65e08a)
-	NormalScaleLB = Float(0x4dc59a5a)
-	NormalScaleLG = Float(0x8525152a)
-	NormalScaleLR = Float(0x2d250dd8)
-	NormalScaleNA = Float(0x47ad4181)
-	NormalScaleNB = Float(0x000d3b51)
-	NormalScaleNG = Float(0xc8edb421)
+	_c7a5b572 = U32(0xc7a5b572)
+	_8005cfa2 = U32(0x8005cfa2) # possible string size 4
+	_48e540d2 = U32(0x48e540d2) # possible string size 4
 	NormalScaleNR = Float(0x60edacd3)
+	NormalScaleNG = Float(0xc8edb421)
+	NormalScaleNB = Float(0x000d3b51)
+	NormalScaleNA = Float(0x47ad4181)
+	NormalScaleHR = Float(0xb6b44fce)
+	NormalScaleHG = Float(0x1eb4573c)
+	_e0e55820 = U32(0xe0e55820) # possible string size 4
+	NormalScaleHA = Float(0x91f4a29c)
+	NormalScaleLR = Float(0x2d250dd8)
+	NormalScaleLG = Float(0x8525152a)
+	NormalScaleLB = Float(0x4dc59a5a)
+	NormalScaleLA = Float(0x0a65e08a)
+	NormalScaleHB = Float(0xd654d84c)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
+	Label = String(0x87bf00e8) # string32
 
 class NpcSpServiceMotionRandom(Row):
-	SelectSecond = U16(0x1abe6e96)
 	UniqueID = U16(0x54706054)
-	ASCommand = String(0x9bee16d1) # string66
+	SelectSecond = U16(0x1abe6e96)
 	EndHour = U8(0x675ca211)
+	StartHour = U8(0x8ae48661)
+	ASCommand = String(0x9bee16d1) # string66
 	Label = String(0x87bf00e8) # string32
 	SelectRate = U8(0x1e7ef977)
-	StartHour = U8(0x8ae48661)
 	Type = U8(0xd1f6dae0) # size is 3, could this be an array?
 
 class NpcSpServiceMotionWork(Row):
 	UniqueID = U16(0x54706054)
-	ASCommand1 = String(0xcd16f843) # string66
-	ASCommand2 = String(0x26214340) # string66
-	ASCommand3 = String(0xc9e3287e) # string66
-	ASCommand4 = String(0x2b3f3307) # string66
-	ASCommand5 = String(0xc4fd5839) # string66
-	ASCommand6 = String(0x2fcae33a) # string66
-	ASCommand7 = String(0xc0088804) # string66
-	ASCommand8 = String(0x3103d389) # string66
-	Label = String(0x87bf00e8) # string32
-	Rate1 = U8(0x94113760)
-	Rate2 = U8(0x86a4988e)
-	Rate3 = U8(0x3e18ffeb)
 	Rate4 = U8(0xa3cfc752)
+	ASCommand1 = String(0xcd16f843) # string66
+	Rate1 = U8(0x94113760)
+	ASCommand2 = String(0x26214340) # string66
+	Rate2 = U8(0x86a4988e)
+	ASCommand3 = String(0xc9e3287e) # string66
+	Rate3 = U8(0x3e18ffeb)
+	ASCommand4 = String(0x2b3f3307) # string66
+	Label = String(0x87bf00e8) # string32
+	ASCommand5 = String(0xc4fd5839) # string66
 	Rate5 = U8(0x1b73a037)
+	ASCommand6 = String(0x2fcae33a) # string66
 	Rate6 = U8(0x09c60fd9)
+	ASCommand7 = String(0xc0088804) # string66
 	Rate7 = U8(0xb17a68bc)
+	ASCommand8 = String(0x3103d389) # string66
 	Rate8 = U8(0xe91978ea) # size is 3, could this be an array?
 
 class NpcSpServiceMotionWorkSp(Row):
 	UniqueID = U16(0x54706054)
+	StartHour = U8(0x8ae48661)
 	ASCommand = String(0x9bee16d1) # string66
 	EndHour = U8(0x675ca211)
-	SelectRate = U8(0x1e7ef977)
-	StartHour = U8(0x8ae48661) # size is 2, could this be an array?
+	SelectRate = U8(0x1e7ef977) # size is 2, could this be an array?
 
 class PlayerStateParam(Row):
-	BgCheckType = Enum(0x4045796c, enum_0a0cce2b4f07_e7b3e2de0566)
-	ChangeDemo = Enum(0xccf68ebe, enum_6bc751394207_9a22cc494738)
+	PacketType = Enum(0xf9dcdec7, enum_666520d79fd1_c1f7ed2fb38f)
+	ToolState = Enum(0xf299f7fc, enum_71a6eb72125d_4959f0d2a68c)
 	ObjCheckRate = Float(0x38762eaa)
 	ObjCheckType = Enum(0xc5567172, enum_4cb47c29b213_bcb1c15d0dcc)
-	PacketType = Enum(0xf9dcdec7, enum_666520d79fd1_c1f7ed2fb38f)
+	ChangeDemo = Enum(0xccf68ebe, enum_6bc751394207_9a22cc494738)
+	BgCheckType = Enum(0x4045796c, enum_0a0cce2b4f07_e7b3e2de0566)
 	RemoteChase = Enum(0x838b098c, enum_10a6294998ff_537c16dab4e8)
-	ToolState = Enum(0xf299f7fc, enum_71a6eb72125d_4959f0d2a68c)
-	AcceptAccess = U8(0xa6324d34)
-	_f413acd2 = U8(0xf413acd2)
-	_833e2942 = U8(0x833e2942)
-	BeesRunAway = U8(0x730cefc8)
-	BgmEnd = U8(0xa9f6fac2)
-	_497ac4d6 = U8(0x497ac4d6)
-	_63f77486 = U8(0x63f77486)
-	_5dcf7b24 = U8(0x5dcf7b24)
-	_16e483f0 = U8(0x16e483f0)
-	_aa0070b7 = U8(0xaa0070b7)
-	DemoNetLockState = U8(0xae3add79)
-	_1aaaddc1 = U8(0x1aaaddc1)
-	_68daf155 = U8(0x68daf155)
-	EnableStageChange = U8(0xecfe9ddb)
 	ForbidOverwrite = U8(0x35fd6466)
-	_e550abdf = U8(0xe550abdf)
-	HideHUD = U8(0x5681a1c3)
-	InWaterBody = U8(0x066fbe8e)
-	JudgeVisibleOn = U8(0xe1e934d5)
+	WaitType = U8(0x9067bb0e)
+	DemoNetLockState = U8(0xae3add79)
 	_ede0a8ca = U8(0xede0a8ca)
 	_87438100 = U8(0x87438100)
-	NpcLookAction = U8(0xa1b074dd)
-	_5b6d5751 = U8(0x5b6d5751)
-	PoseTrans = U8(0xfbb451bf)
-	PoseTransDive = U8(0x013cbdbd)
-	_65fd6b0d = U8(0x65fd6b0d)
-	_2b6186a0 = U8(0x2b6186a0)
-	_95798f28 = U8(0x95798f28)
-	StateName = String(0x2ae273e3) # string48
-	StopAutoSave = U8(0xfce7d916)
 	_a84507aa = U8(0xa84507aa)
-	_c033d95a = U8(0xc033d95a) # possible string size 1
-	_ed32aade = U8(0xed32aade)
-	WaitType = U8(0x9067bb0e) # size is 4, could this be an array?
+	_16e483f0 = U8(0x16e483f0)
+	_5b6d5751 = U8(0x5b6d5751)
+	StateName = String(0x2ae273e3) # string48
+	_497ac4d6 = U8(0x497ac4d6)
+	BeesRunAway = U8(0x730cefc8)
+	_63f77486 = U8(0x63f77486)
+	_65fd6b0d = U8(0x65fd6b0d)
+	HideHUD = U8(0x5681a1c3)
+	_e550abdf = U8(0xe550abdf)
+	_1aaaddc1 = U8(0x1aaaddc1)
+	StopAutoSave = U8(0xfce7d916)
+	EnableStageChange = U8(0xecfe9ddb)
+	BgmEnd = U8(0xa9f6fac2)
+	_833e2942 = U8(0x833e2942)
+	AcceptAccess = U8(0xa6324d34)
+	_f413acd2 = U8(0xf413acd2)
+	PoseTrans = U8(0xfbb451bf)
+	_68daf155 = U8(0x68daf155)
+	NpcLookAction = U8(0xa1b074dd)
+	_5dcf7b24 = U8(0x5dcf7b24)
+	_aa0070b7 = U8(0xaa0070b7)
+	_95798f28 = U8(0x95798f28)
+	_2b6186a0 = U8(0x2b6186a0)
 
 class RadioCM(Row):
 	SelectRate = Float(0x293ee089)
-	Frames = U16(0x45ffea9a)
 	MusicNo = U16(0x0f30a50e)
 	UniqueID = U16(0x54706054)
+	Frames = U16(0x45ffea9a)
 	BeforeDays = U8(0x00244ce4)
-	EventLabelShort = String(0x806cfd72) # string128
 	Timezone = U8(0x627277e6)
+	EventLabelShort = String(0x806cfd72) # string128
 
 class RadioJingle(Row):
 	SelectRate = Float(0x293ee089)
 	Timezone = Enum(0xfc7a1955, enum_a579ed29f896_c3ff5ecc7a5b)
-	Frames = U16(0x45ffea9a)
 	MusicNo = U16(0x0f30a50e)
 	UniqueID = U16(0x54706054)
+	Frames = U16(0x45ffea9a)
 	BeforeDays = U8(0x00244ce4)
 	EventLabelShort = String(0x806cfd72) # string128
 
 class RecipeCraftParam(Row):
-	BoardColorID = U32(0x5f405bfb)
-	CraftRecipeSeason = Enum(0x7f5b6179, enum_f924f1356c8c_64c17a17e85b)
-	_478b74e4 = Enum(0x478b74e4, enum_93cb28c3569f_1cf1287084ce)
-	CraftUnlock = Enum(0x34a742ad, enum_876f2a44aa3e_ea533d18da76)
-	NPCUnlock = Enum(0xcde5164f, enum_a7030bb7fc9b_fc546f9fbb31)
 	VillagerOpenNum = U32(0x3711677b)
-	Amount1 = U16(0x13a65775)
-	Amount2 = U16(0x54062da5)
-	Amount3 = U16(0x69660415)
+	BoardColorID = U32(0x5f405bfb)
+	NPCUnlock = Enum(0xcde5164f, enum_a7030bb7fc9b_fc546f9fbb31)
+	CraftUnlock = Enum(0x34a742ad, enum_876f2a44aa3e_ea533d18da76)
 	Amount4 = U16(0xdb46d805)
-	Amount5 = U16(0xe626f1b5)
-	Amount6 = U16(0xa1868b65)
-	Item = U16(0x89a3482c)
-	Material1 = U16(0x1bbfa75e)
-	Material2 = U16(0x5c1fdd8e)
+	Amount2 = U16(0x54062da5)
 	Material3 = U16(0x617ff43e)
+	Amount3 = U16(0x69660415)
 	Material4 = U16(0xd35f282e)
+	Material2 = U16(0x5c1fdd8e)
 	Material5 = U16(0xee3f019e)
+	Amount5 = U16(0xe626f1b5)
 	Material6 = U16(0xa99f7b4e)
+	Amount6 = U16(0xa1868b65)
+	Amount1 = U16(0x13a65775)
+	Material1 = U16(0x1bbfa75e)
+	Item = U16(0x89a3482c)
 	SerialID = S16(0x39dede36)
-	UniqueID = U16(0x54706054)
-	SelectCalendarEventSeason = String(0x33ddefc8) # string64
+	UniqueID = U16(0x54706054) # size is 4, could this be an array?
 
 class ReleaseVersionParam(Row):
-	ReleaseKey = U16(0x76c190b2)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
+	ReleaseKey = U16(0x76c190b2)
 	Name = String(0x977adfce) # string32
+	Label = String(0x87bf00e8) # string32
 
 class RoomArchParam(Row):
 	UniqueID = U16(0x54706054)
@@ -6590,40 +6228,41 @@ class RoomCurtainTexParam(Row):
 class RoomFloorParam(Row):
 	Act = Enum(0xf74f3d2c, enum_0caaf5f51cb7_b79133e4ebb1)
 	Price = S32(0x718b024d)
-	Scale = Enum(0x49295020, enum_67d8f9fad662_3c4e63ce8503)
 	_b117eb21 = Enum(0xb117eb21, enum_67d8f9fad662_3c4e63ce8503)
+	Scale = Enum(0x49295020, enum_67d8f9fad662_3c4e63ce8503)
+	UniqueID = U16(0x54706054)
+	LandingUniqueID = U16(0x8fced711)
 	Floorboards = U16(0xab771eae)
 	ItemTableId = U16(0x58aff4fb)
-	LandingUniqueID = U16(0x8fced711)
-	UniqueID = U16(0x54706054)
-	HasJmp = U8(0xa4db9685)
-	Horizon = U8(0x3543c34a)
-	ItemName = String(0xb8cc232c) # string64
+	Rotatable = U8(0x8ed948dd)
 	ResourceName = String(0x4b9c4229) # string64
-	Rotatable = U8(0x8ed948dd) # size is 2, could this be an array?
+	Horizon = U8(0x3543c34a)
+	Reverberation = S8(0x05836619)
+	ItemName = String(0xb8cc232c) # string64
+	HasJmp = U8(0xa4db9685)
 
 class RoomLandingParam(Row):
-	Floorboards = U16(0xab771eae)
-	UISortID = S16(0x2fe593c3)
 	UniqueID = U16(0x54706054)
+	Floorboards = U16(0xab771eae)
 	LandingName = String(0x05038516) # string64
 	ResourceName = String(0x4b9c4229) # string64
 
 class RoomWallParam(Row):
-	AO = Enum(0x8a377042, enum_9cef5ff8f2fc_3c4e63ce8503)
-	Act = Enum(0xf74f3d2c, enum_0caaf5f51cb7_b79133e4ebb1)
-	Light = Enum(0x85ed8743, enum_1be25fe2a516_ddd20c924fed)
 	Price = S32(0x718b024d)
-	ArchUniqueID = U16(0x499e42f9)
-	CeilingUniqueID = U16(0x947875dd)
-	CurtainTexUniqueID = U16(0xaa9bfc6e)
-	CurtainUniqueID = U16(0xa0e569dc)
-	ItemTableId = U16(0x58aff4fb)
-	UniqueID = U16(0x54706054)
+	AO = Enum(0x8a377042, enum_9cef5ff8f2fc_3c4e63ce8503)
+	Light = Enum(0x85ed8743, enum_1be25fe2a516_ddd20c924fed)
+	Act = Enum(0xf74f3d2c, enum_0caaf5f51cb7_b79133e4ebb1)
 	WindowUniqueID = U16(0xe3a28616)
-	ItemName = String(0xb8cc232c) # string64
+	UniqueID = U16(0x54706054)
+	CurtainUniqueID = U16(0xa0e569dc)
+	CeilingUniqueID = U16(0x947875dd)
+	ItemTableId = U16(0x58aff4fb)
+	ArchUniqueID = U16(0x499e42f9)
+	CurtainTexUniqueID = U16(0xaa9bfc6e)
+	TextureWindow = U8(0x318ebbf2)
+	Reverberation = S8(0x05836619)
 	ResourceName = String(0x4b9c4229) # string64
-	TextureWindow = U8(0x318ebbf2) # size is 2, could this be an array?
+	ItemName = String(0xb8cc232c) # string64
 
 class RoomWindowParam(Row):
 	RoomWindowModelType = Enum(0xc90ab4c4, enum_f18e5565c112_ab0466cfcd5a)
@@ -6632,144 +6271,85 @@ class RoomWindowParam(Row):
 	ResourceName = String(0x4b9c4229) # string64
 	WindowName = String(0x9b0b7ce4) # string64
 
-class SeafoodAppearParam(Row):
-	AppearArea = Enum(0x64330cb0, enum_3bcfd82ce180_8ccc4bd385f8)
-	ItemID = U16(0x20cb67bc)
-	ProbAprDaytime = U16(0x9c4a43c0)
-	ProbAprMorningAndEvening = U16(0x0dbbebb5)
-	ProbAprNight = U16(0x1d790df7)
-	ProbAugDaytime = U16(0x15de6a3f)
-	ProbAugMorningAndEvening = U16(0x74ea1d73)
-	ProbAugNight = U16(0xada9eb19)
-	ProbDecDaytime = U16(0x267c99f7)
-	ProbDecMorningAndEvening = U16(0xc11af347)
-	ProbDecNight = U16(0x9217f8b8)
-	ProbFebDaytime = U16(0x5cb71135)
-	ProbFebMorningAndEvening = U16(0x0f095b88)
-	ProbFebNight = U16(0x91ee0d19)
-	ProbJanDaytime = U16(0xb3f1a70f)
-	ProbJanMorningAndEvening = U16(0x51bcedfa)
-	ProbJanNight = U16(0x3e01d394)
-	ProbJulDaytime = U16(0x2b74f5dc)
-	ProbJulMorningAndEvening = U16(0x7ec203a5)
-	ProbJulNight = U16(0x24dbb4e0)
-	ProbJunDaytime = U16(0xc74f6b43)
-	ProbJunMorningAndEvening = U16(0x5092ca25)
-	ProbJunNight = U16(0x202e64dd)
-	ProbMarDaytime = U16(0xdf2eadb2)
-	ProbMarMorningAndEvening = U16(0x2cb125cc)
-	ProbMarNight = U16(0x770b5b7d)
-	ProbMayDaytime = U16(0xaebc09bc)
-	ProbMayMorningAndEvening = U16(0xac8aae8c)
-	ProbMayNight = U16(0x8feba08a)
-	ProbNovDaytime = U16(0x5aafbfa6)
-	ProbNovMorningAndEvening = U16(0xc57d2eb8)
-	ProbNovNight = U16(0x5b0802f1)
-	ProbOctDaytime = U16(0xb12179b4)
-	ProbOctMorningAndEvening = U16(0x6aed60aa)
-	ProbOctNight = U16(0xce420c64)
-	ProbSepDaytime = U16(0x5e853057)
-	ProbSepMorningAndEvening = U16(0x1fe65c0c)
-	ProbSepNight = U16(0x260ec620) # size is 4, could this be an array?
-
-class SeafoodShadowInfoParam(Row):
-	ModelScale = Float(0x093dfe4f)
-	UniqueID = U16(0x54706054)
-	ModelResName = String(0xfad4ff78) # string65
-
-class SeafoodStatusParam(Row):
-	ActionType = Enum(0xfbace208, enum_8b856bc35b2c_59489a51cf1a)
-	CaptureCategory = Enum(0xde78df0f, enum_a1951c2696f6_44fbfe232c2e)
-	CaptureLevel = Enum(0xafeb1bf1, enum_c2aae04b2493_c2aae04b2493)
-	ShadowType = Enum(0xac0ebe24, enum_92fb5e5480cc_92fb5e5480cc)
-	ItemID = U16(0x20cb67bc)
-	_d42df0b4 = U16(0xd42df0b4)
-	UniqueID = U16(0x54706054)
-	DebugName = String(0xab51a3cf) # string32
-	Label = String(0x87bf00e8) # string32
-	ResName = String(0x48ef0398) # string64
-	ResNameMuseum = String(0x1c8856db) # string32
-
 class SeasonCalendar(Row):
-	Bush_N = U8(0x4875e383)
-	Bush_S = U8(0xea066cc1)
-	Cloud_N = U8(0x8b21a26b)
-	Cloud_S = U8(0x29522d29)
-	Day = U8(0xd5692bff)
-	Fog_N = U8(0x61501334)
-	Fog_S = U8(0xc3239c76)
 	Month = U8(0x287db05d)
-	SPWeather_N = U8(0x66b4a4c1)
-	SPWeather_S = U8(0xc4c72b83)
-	Sakura_N = U8(0xb5a8fc2e)
-	Sakura_S = U8(0x17db736c)
+	Day = U8(0xd5692bff)
 	Season_N = U8(0x185d9096)
-	Season_S = U8(0xba2e1fd4)
-	Shop_N = U8(0x5b8be707)
-	Shop_S = U8(0xf9f86845)
 	Snow_N = U8(0x80e1de38)
-	Snow_S = U8(0x2292517a)
+	Cloud_N = U8(0x8b21a26b)
+	SPWeather_N = U8(0x66b4a4c1)
+	Bush_N = U8(0x4875e383)
+	Shop_N = U8(0x5b8be707)
 	Weed_N = U8(0xa155bc19)
+	Fog_N = U8(0x61501334)
+	Sakura_N = U8(0xb5a8fc2e)
+	Season_S = U8(0xba2e1fd4)
+	Snow_S = U8(0x2292517a)
+	Cloud_S = U8(0x29522d29)
+	SPWeather_S = U8(0xc4c72b83)
+	Bush_S = U8(0xea066cc1)
+	Shop_S = U8(0xf9f86845)
 	Weed_S = U8(0x0326335b)
+	Fog_S = U8(0xc3239c76)
+	Sakura_S = U8(0x17db736c)
 
 class ShopItemRouteFlags(Row):
 	FlagLand = S32(0x3fe43170)
 	FlagPlayer = S32(0x4171a41d)
 	ShopType = Enum(0xd3d4284e, enum_05496a929e72_1987c9f2e67f)
-	AttrCollectBit = U8(0x74b2eb78)
 	ItemFrom = String(0x46e66708) # string32
+	AttrCollectBit = U8(0x74b2eb78) # size is 4, could this be an array?
 
 class SoundAttributeForGround(Row):
-	_5e7a33b5 = U16(0x5e7a33b5)
 	UniqueID = U16(0x54706054)
+	_5e7a33b5 = U16(0x5e7a33b5)
 
 class SoundAttributeForPlacement(Row):
-	_5e7a33b5 = U16(0x5e7a33b5)
 	UniqueID = U16(0x54706054)
+	_5e7a33b5 = U16(0x5e7a33b5)
 
 class SoundAudioMusic(Row):
-	AudioMusicID = S16(0xd4892d19)
-	RefItemUniqueID = U16(0x3637ebb9)
 	UniqueID = U16(0x54706054)
-	_32bc8d59 = U8(0x32bc8d59) # possible string size 1
+	RefItemUniqueID = U16(0x3637ebb9)
+	AudioMusicID = S16(0xd4892d19)
 	Label = String(0x87bf00e8) # string32
+	_32bc8d59 = U16(0x32bc8d59) # possible string size 2
 
 class SoundInstruments(Row):
 	InstrumentsType = Enum(0x64bc65e7, enum_a97c5a371180_d749edee2750)
 	RefItemUniqueID = U16(0x3637ebb9)
 	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
 	Name = String(0x85cf1615) # string128
+	Label = String(0x87bf00e8) # string32
 
 class SoundMaterialType(Row):
-	SoundAttribute = U16(0x2e17a0a7)
 	UniqueID = U16(0x54706054)
+	SoundAttribute = U16(0x2e17a0a7)
 	DebugName = String(0xab51a3cf) # string32
 
 class SpNpcParam(Row):
-	GenderAsia = Enum(0xdda5d566, enum_c1ee150f0e21_f567104db912)
 	GenderUsEu = Enum(0x86ad0ce1, enum_c1ee150f0e21_f567104db912)
-	PacketId = S32(0x3ce2e8d8)
+	GenderAsia = Enum(0xdda5d566, enum_c1ee150f0e21_f567104db912)
 	Social = U32(0x23e7c2a0)
+	PacketId = S32(0x3ce2e8d8)
 	NpcSpClothSet = U16(0x9611c929)
+	Umbrella = U16(0xbb9c816e)
 	PosterItemID = S16(0x0f640691)
 	Smartphone = U16(0x3f858678)
-	Umbrella = U16(0xbb9c816e)
 	UniqueID = U16(0x54706054)
-	BirthMDay = U8(0x919ea52a)
-	BirthMonth = U8(0x9456b6a3)
-	HavokResName = String(0x4ce98793) # string64
-	Label = String(0x2f1b930d) # string8
-	NameWithTitle = U8(0x07d60b3d)
-	NpcColor = U8(0x41977699)
-	ResName = String(0x48ef0398) # string64
-	SpecialELink = U8(0x04ac1bea)
-	SpecialSLink = U8(0xbe782346)
-	_21c5bbd6 = U8(0x21c5bbd6)
-	_e52f0037 = U8(0xe52f0037)
-	_42f255d5 = U8(0x42f255d5)
+	VmRhythmType = U8(0x9d1d8e45)
 	VmPauseType = U8(0xe7534ab5)
-	VmRhythmType = U8(0x9d1d8e45) # size is 4, could this be an array?
+	_42f255d5 = U8(0x42f255d5)
+	_21c5bbd6 = U8(0x21c5bbd6)
+	NpcColor = U8(0x41977699)
+	SpecialSLink = U8(0xbe782346)
+	SpecialELink = U8(0x04ac1bea)
+	HavokResName = String(0x4ce98793) # string64
+	ResName = String(0x48ef0398) # string64
+	BirthMonth = U8(0x9456b6a3)
+	BirthMDay = U8(0x919ea52a)
+	Label = String(0x2f1b930d) # string8
+	_e52f0037 = U8(0xe52f0037)
 
 class StructureBridgeParam(Row):
 	BridgePattern = Enum(0x74be6041, enum_d213af309f1d_10d5d2b786dc)
@@ -6779,178 +6359,177 @@ class StructureBridgeParam(Row):
 
 class StructureBridgeTypeParam(Row):
 	_904611f3 = U32(0x904611f3)
-	ItemNameUniqueID = U16(0xc33a894e)
 	UniqueID = U16(0x54706054)
-	BridgeTypeName = String(0x68cf5938) # string32
+	ItemNameUniqueID = U16(0xc33a894e)
 	BridgeTypeNameJp = String(0x5c28c4db) # string32
+	BridgeTypeName = String(0x68cf5938) # string32
 
 class StructureDoorParam(Row):
-	_e7e1c6cd = U32(0xe7e1c6cd)
-	_b6f6977b = U32(0xb6f6977b) # possible string size 4
-	_a1def3bb = U32(0xa1def3bb) # possible string size 4
 	_98a65efb = U32(0x98a65efb) # possible string size 4
-	_f0c9a20d = U32(0xf0c9a20d)
-	_c9b10f4d = U32(0xc9b10f4d)
-	_de996b8d = U32(0xde996b8d)
-	_bb4055cd = U32(0xbb4055cd)
-	_ac68310d = U32(0xac68310d)
-	_95109c4d = U32(0x95109c4d) # possible string size 4
-	_8238f88d = U32(0x8238f88d)
-	_5ea2e0cd = U32(0x5ea2e0cd)
+	_a1def3bb = U32(0xa1def3bb) # possible string size 4
+	_b6f6977b = U32(0xb6f6977b) # possible string size 4
 	_498a840d = U32(0x498a840d) # possible string size 4
+	_5ea2e0cd = U32(0x5ea2e0cd)
+	_8238f88d = U32(0x8238f88d)
+	_95109c4d = U32(0x95109c4d) # possible string size 4
+	_ac68310d = U32(0xac68310d)
+	_bb4055cd = U32(0xbb4055cd)
+	_de996b8d = U32(0xde996b8d)
+	_c9b10f4d = U32(0xc9b10f4d)
+	_f0c9a20d = U32(0xf0c9a20d)
+	_e7e1c6cd = U32(0xe7e1c6cd)
 	UniqueID = U16(0x54706054)
-	Name = String(0x977adfce) # string32
-	Stage0 = String(0xbd37bfd7) # string32
-	Stage1 = String(0x52f5d4e9) # string32
-	Stage10 = String(0x12a20792) # string32
 	Stage11 = String(0xfd606cac) # string32
-	Stage12 = String(0x1657d7af) # string32
-	Stage2 = String(0xb9c26fea) # string32
-	Stage3 = String(0x560004d4) # string32
-	Stage4 = String(0xb4dc1fad) # string32
-	Stage5 = String(0x5b1e7493) # string32
-	Stage6 = String(0xb029cf90) # string32
-	Stage7 = String(0x5feba4ae) # string32
-	Stage8 = String(0xaee0ff23) # string32
+	Stage10 = String(0x12a20792) # string32
 	Stage9 = String(0x4122941d) # string32
+	Stage8 = String(0xaee0ff23) # string32
+	Stage7 = String(0x5feba4ae) # string32
+	Stage6 = String(0xb029cf90) # string32
+	Stage5 = String(0x5b1e7493) # string32
+	Stage4 = String(0xb4dc1fad) # string32
+	Stage3 = String(0x560004d4) # string32
+	Stage2 = String(0xb9c26fea) # string32
+	Stage1 = String(0x52f5d4e9) # string32
+	Stage0 = String(0xbd37bfd7) # string32
+	Name = String(0x977adfce) # string32
+	Stage12 = String(0x1657d7af) # string32
 
 class StructureFacilityModel(Row):
-	Door0Angle = Float(0x88ff5893)
 	_85a0fa49 = U32(0x85a0fa49)
-	FacilityModelVariation = Enum(0xdd9617a2, enum_7fc56270e7a7_413dac6d2d4f)
 	FloorHeight = Float(0x6efc082c)
+	FacilityModelVariation = Enum(0xdd9617a2, enum_7fc56270e7a7_413dac6d2d4f)
+	Door0Angle = Float(0x88ff5893)
+	StructureInfoUniqueID = U16(0x00c1577d)
 	Door0 = U16(0x0d664b5c)
-	DoorMaterial = U16(0x42bdd56f)
 	_9c2d6dc6 = U16(0x9c2d6dc6)
 	RoofMaterial = U16(0x83b54e59)
-	StructureInfoUniqueID = U16(0x00c1577d)
+	DoorMaterial = U16(0x42bdd56f)
 	UniqueID = U16(0x54706054)
+	UseChimneySmoke = U8(0x397b2b54)
+	HasNightLight = U8(0x42e82ded)
+	HasEigyoLight = U8(0x43d8a434)
+	UseMyDesign = U8(0x89be1d8f)
 	Construction = U8(0x9c8a400b)
 	GrowLevel = U8(0x35ac1bb4)
-	HasDoorEigyoLight = U8(0x23e16936)
-	HasEigyoLight = U8(0x43d8a434)
-	HasNightLight = U8(0x42e82ded)
-	IsUseXlink = U8(0x09d75f40)
 	ModelName = String(0x39b5a93d) # string32
-	UseChimneySmoke = U8(0x397b2b54)
-	UseMyDesign = U8(0x89be1d8f)
+	HasDoorEigyoLight = U8(0x23e16936) # size is 2, could this be an array?
 
 class StructureHouseDoorParam(Row):
 	_b619ba5c = U32(0xb619ba5c)
 	HouseDoorAnim = Enum(0x712c43a7, enum_4a1ca0237618_2589c82f75a6)
 	HouseDoorShape = Enum(0x0aa76edd, enum_4bb482986734_fd8d6be18496)
+	UniqueID = U16(0x54706054)
 	CustomizeSortID = U16(0x37d4e515)
 	Material = U16(0x39cb9646)
-	UniqueID = U16(0x54706054)
-	DecoForbidden = U8(0xc93db65a)
-	Dummy = U8(0xf75ddf51)
-	HasDoorWindow = U8(0xf489f3c5)
 	LatchBolt = U8(0x960a51fe)
+	DecoForbidden = U8(0xc93db65a)
+	HasDoorWindow = U8(0xf489f3c5)
 	ModelName = String(0x39b5a93d) # string32
+	Dummy = U8(0xf75ddf51) # size is 3, could this be an array?
 
 class StructureHouseRoofParam(Row):
 	HouseColor = Enum(0xa9424a50, enum_17a769bfe354_791918aecc14)
-	CustomizeSortID = U16(0x37d4e515)
 	HouseShapeUniqueID = U16(0xb6f501d2)
-	Material = U16(0x39cb9646)
 	UniqueID = U16(0x54706054)
+	CustomizeSortID = U16(0x37d4e515)
+	Material = U16(0x39cb9646)
 	Dummy = U8(0xf75ddf51)
 	ModelName = String(0x39b5a93d) # string32
 
 class StructureHouseShapeParam(Row):
 	AppearanceLevel = Enum(0x10dbd8bb, enum_719f8c5ace1e_9dc2d1c92509)
-	DefaultDoorUniqueID = U16(0xc86e60d5)
-	DefaultRoofUniqueID = U16(0x0966fbe3)
-	DefaultWallUniqueID = U16(0xd8727d7d)
 	_e6fc6624 = U16(0xe6fc6624)
 	UniqueID = U16(0x54706054)
-	DoorBellName = String(0xe3a73129) # string32
+	DefaultWallUniqueID = U16(0xd8727d7d)
+	DefaultDoorUniqueID = U16(0xc86e60d5)
+	DefaultRoofUniqueID = U16(0x0966fbe3)
 	Name = String(0x977adfce) # string32
+	DoorBellName = String(0xe3a73129) # string32
 
 class StructureHouseWallParam(Row):
 	HouseDoorStep = Enum(0x60680c93, enum_106465ec3a51_1268c2c082da)
-	CustomizeSortID = U16(0x37d4e515)
+	UniqueID = U16(0x54706054)
 	_9c2d6dc6 = U16(0x9c2d6dc6)
 	HouseShapeUniqueID = U16(0xb6f501d2)
-	UniqueID = U16(0x54706054)
-	LightParamName = String(0xd2c59675) # string32
+	CustomizeSortID = U16(0x37d4e515)
 	ModelName = String(0x39b5a93d) # string32
+	UseExteriorLight = U8(0x0424930f)
 	UseCurtain = U8(0x9e19c94c)
-	UseExteriorLight = U8(0x0424930f) # size is 3, could this be an array?
+	LightParamName = String(0xd2c59675) # string32
 
 class StructureInfoParam(Row):
-	_1ff4093d = Enum(0x1ff4093d, enum_8d64dd844b09_8d64dd844b09)
-	ModelType = Enum(0xc01e47a7, enum_3f984d1a17ec_8f1bbc952a3f)
 	_fec3548b = U32(0xfec3548b)
-	StructureInfoHouseType = Enum(0xcc24374e, enum_5fe6f47ed555_cd0b35a4b9fb)
 	StructureInfoType = Enum(0xd6704d8b, enum_3f984d1a17ec_8f1bbc952a3f)
+	ModelType = Enum(0xc01e47a7, enum_3f984d1a17ec_8f1bbc952a3f)
+	_1ff4093d = Enum(0x1ff4093d, enum_8d64dd844b09_8d64dd844b09)
+	StructureInfoHouseType = Enum(0xcc24374e, enum_5fe6f47ed555_cd0b35a4b9fb)
 	Door0 = U16(0x0d664b5c)
 	UniqueID = U16(0x54706054)
 
 class StructureSlopeParam(Row):
-	ItemNameUniqueID = U16(0xc33a894e)
 	UniqueID = U16(0x54706054)
-	JpName = String(0x08462f85) # string32
+	ItemNameUniqueID = U16(0xc33a894e)
 	ModelName = String(0x39b5a93d) # string32
+	JpName = String(0x08462f85) # string32
 
 class TVProgram(Row):
 	TVProgramName = Enum(0xa988063c, enum_c6e92aae9ffa_253fcc4534a4)
-	_01481890 = U8(0x01481890)
-	EndDayN1 = U8(0x43513d44)
-	EndDayN2 = U8(0x51e492aa)
-	EndDayN3 = U8(0xe958f5cf)
-	EndDayN4 = U8(0x748fcd76)
-	EndDayN5 = U8(0xcc33aa13)
-	EndDayN6 = U8(0xde8605fd)
-	EndDayS1 = U8(0xdb216e77)
-	EndDayS2 = U8(0xc994c199)
-	EndDayS3 = U8(0x7128a6fc)
-	EndDayS4 = U8(0xecff9e45)
-	EndDayS5 = U8(0x5443f920)
-	EndDayS6 = U8(0x46f656ce)
-	EndMoN1 = U8(0x6a34f3f2)
-	EndMoN2 = U8(0x78815c1c)
-	EndMoN3 = U8(0xc03d3b79)
-	EndMoN4 = U8(0x5dea03c0)
-	EndMoN5 = U8(0xe55664a5)
-	EndMoN6 = U8(0xf7e3cb4b)
-	EndMoS1 = U8(0xf244a0c1)
-	EndMoS2 = U8(0xe0f10f2f)
 	EndMoS3 = U8(0x584d684a)
-	EndMoS4 = U8(0xc59a50f3)
-	EndMoS5 = U8(0x7d263796)
-	EndMoS6 = U8(0x6f939878)
-	ResourceName = String(0xa88f23cf) # string33
+	_01481890 = U8(0x01481890)
 	ResourceNameSp1 = String(0x7834d5db) # string33
-	ResourceNameSp2 = String(0x93036ed8) # string33
-	ResourceNameSp3 = String(0x7cc105e6) # string33
-	ResourceNameSp4 = String(0x9e1d1e9f) # string33
-	ResourceNameSp5 = String(0x71df75a1) # string33
-	ResourceNameSp6 = String(0x9ae8cea2) # string33
-	StartDayN1 = U8(0x13b9f45c)
-	StartDayN2 = U8(0x010c5bb2)
-	StartDayN3 = U8(0xb9b03cd7)
-	StartDayN4 = U8(0x2467046e)
-	StartDayN5 = U8(0x9cdb630b)
-	StartDayN6 = U8(0x8e6ecce5)
-	StartDayS1 = U8(0x8bc9a76f)
-	StartDayS2 = U8(0x997c0881)
-	StartDayS3 = U8(0x21c06fe4)
-	StartDayS4 = U8(0xbc17575d)
-	StartDayS5 = U8(0x04ab3038)
-	StartDayS6 = U8(0x161e9fd6)
 	StartMoN1 = U8(0x878cd782)
-	StartMoN2 = U8(0x9539786c)
-	StartMoN3 = U8(0x2d851f09)
-	StartMoN4 = U8(0xb05227b0)
-	StartMoN5 = U8(0x08ee40d5)
-	StartMoN6 = U8(0x1a5bef3b)
+	StartDayN1 = U8(0x13b9f45c)
+	EndMoN1 = U8(0x6a34f3f2)
+	EndDayN1 = U8(0x43513d44)
 	StartMoS1 = U8(0x1ffc84b1)
+	StartDayS1 = U8(0x8bc9a76f)
+	EndMoS1 = U8(0xf244a0c1)
+	EndDayS1 = U8(0xdb216e77)
+	ResourceNameSp2 = String(0x93036ed8) # string33
+	StartMoN2 = U8(0x9539786c)
+	StartDayN2 = U8(0x010c5bb2)
+	EndMoN2 = U8(0x78815c1c)
+	EndDayN2 = U8(0x51e492aa)
 	StartMoS2 = U8(0x0d492b5f)
+	StartDayS2 = U8(0x997c0881)
+	EndMoS2 = U8(0xe0f10f2f)
+	EndDayS2 = U8(0xc994c199)
+	ResourceNameSp3 = String(0x7cc105e6) # string33
+	StartMoN3 = U8(0x2d851f09)
+	StartDayN3 = U8(0xb9b03cd7)
+	EndMoN3 = U8(0xc03d3b79)
+	EndDayN3 = U8(0xe958f5cf)
 	StartMoS3 = U8(0xb5f54c3a)
+	StartDayS3 = U8(0x21c06fe4)
+	ResourceName = String(0xa88f23cf) # string33
+	EndDayS3 = U8(0x7128a6fc)
+	ResourceNameSp4 = String(0x9e1d1e9f) # string33
+	StartMoN4 = U8(0xb05227b0)
+	StartDayN4 = U8(0x2467046e)
+	EndMoN4 = U8(0x5dea03c0)
+	EndDayN4 = U8(0x748fcd76)
 	StartMoS4 = U8(0x28227483)
+	StartDayS4 = U8(0xbc17575d)
+	EndMoS4 = U8(0xc59a50f3)
+	EndDayS4 = U8(0xecff9e45)
+	ResourceNameSp5 = String(0x71df75a1) # string33
+	StartMoN5 = U8(0x08ee40d5)
+	StartDayN5 = U8(0x9cdb630b)
+	EndMoN5 = U8(0xe55664a5)
+	EndDayN5 = U8(0xcc33aa13)
 	StartMoS5 = U8(0x909e13e6)
+	StartDayS5 = U8(0x04ab3038)
+	EndMoS5 = U8(0x7d263796)
+	EndDayS5 = U8(0x5443f920)
+	ResourceNameSp6 = String(0x9ae8cea2) # string33
+	StartMoN6 = U8(0x1a5bef3b)
+	StartDayN6 = U8(0x8e6ecce5)
+	EndMoN6 = U8(0xf7e3cb4b)
+	EndDayN6 = U8(0xde8605fd)
 	StartMoS6 = U8(0x822bbc08)
+	StartDayS6 = U8(0x161e9fd6)
+	EndMoS6 = U8(0x6f939878)
+	EndDayS6 = U8(0x46f656ce)
 
 class TVProgramFriday(Row):
 	TVProgramName = Enum(0xa988063c, enum_c6e92aae9ffa_253fcc4534a4)
@@ -6991,20 +6570,12 @@ class VMMultistepNPC(Row):
 	UniqueID = U16(0x54706054)
 	NPCLabel = String(0x091b46f5) # string128
 
-class WeatherPatternParam(Row):
-	UniqueID = U16(0x54706054)
-	Label = String(0x87bf00e8) # string32
-
 lookup = {
 	'AITag.bcsv': AITag,
 	'AmiiboData.bcsv': AmiiboData,
 	'BgmPropertyControlParam.bcsv': BgmPropertyControlParam,
 	'BgmPropertyParam.bcsv': BgmPropertyParam,
-	'CalendarEventCountryParam.bcsv': CalendarEventCountryParam,
-	'CalendarEventJuneBrideExchange.bcsv': CalendarEventJuneBrideExchange,
-	'CalendarEventJuneBrideReward.bcsv': CalendarEventJuneBrideReward,
 	'CalendarEventParam.bcsv': CalendarEventParam,
-	'CalendarEventRegionParam.bcsv': CalendarEventRegionParam,
 	'CharaMakeCheekTypeParam.bcsv': CharaMakeCheekTypeParam,
 	'CharaMakeEyeColorParam.bcsv': CharaMakeEyeColorParam,
 	'CharaMakeEyeTypeParam.bcsv': CharaMakeEyeTypeParam,
@@ -7017,8 +6588,6 @@ lookup = {
 	'ColGroundAttributeParam.bcsv': ColGroundAttributeParam,
 	'ColSoundAttributeParam.bcsv': ColSoundAttributeParam,
 	'DuckingParam.bcsv': DuckingParam,
-	'EventFlagsAocParam.bcsv': EventFlagsAocParam,
-	'EventFlagsBcatParam.bcsv': EventFlagsBcatParam,
 	'EventFlagsHouseParam.bcsv': EventFlagsHouseParam,
 	'EventFlagsLandParam.bcsv': EventFlagsLandParam,
 	'EventFlagsLandTempParam.bcsv': EventFlagsLandTempParam,
@@ -7035,7 +6604,6 @@ lookup = {
 	'EventPlazaGround.bcsv': EventPlazaGround,
 	'EventPlazaObjModelParam.bcsv': EventPlazaObjModelParam,
 	'EventPlazaPlacementParam.bcsv': EventPlazaPlacementParam,
-	'FadeOutDuckingParam.bcsv': FadeOutDuckingParam,
 	'FgFlowerHeredity.bcsv': FgFlowerHeredity,
 	'FgMainParam.bcsv': FgMainParam,
 	'FieldCreateParam.bcsv': FieldCreateParam,
@@ -7045,6 +6613,9 @@ lookup = {
 	'FieldLandMakingRoadKindParam.bcsv': FieldLandMakingRoadKindParam,
 	'FieldLandMakingUnitModelParam.bcsv': FieldLandMakingUnitModelParam,
 	'FieldMainFieldParam.bcsv': FieldMainFieldParam,
+	'FieldMysteryTourFieldParam.bcsv': FieldMysteryTourFieldParam,
+	'FieldMysteryTourItemParam.bcsv': FieldMysteryTourItemParam,
+	'FieldMysteryTourParam.bcsv': FieldMysteryTourParam,
 	'FieldOutsideParts.bcsv': FieldOutsideParts,
 	'FieldOutsideTemplate.bcsv': FieldOutsideTemplate,
 	'FishAppearRiverParam.bcsv': FishAppearRiverParam,
@@ -7071,7 +6642,6 @@ lookup = {
 	'ItemNpcRoomReplaceCategory.bcsv': ItemNpcRoomReplaceCategory,
 	'ItemNpcTopsForm.bcsv': ItemNpcTopsForm,
 	'ItemOutfitCategory.bcsv': ItemOutfitCategory,
-	'ItemOutfitHangerInfo.bcsv': ItemOutfitHangerInfo,
 	'ItemOutfitInfo.bcsv': ItemOutfitInfo,
 	'ItemParam.bcsv': ItemParam,
 	'ItemPlayerInitialOutfitBoyAWParam.bcsv': ItemPlayerInitialOutfitBoyAWParam,
@@ -7088,7 +6658,6 @@ lookup = {
 	'ItemStrSort.bcsv': ItemStrSort,
 	'ItemUIContextMenu.bcsv': ItemUIContextMenu,
 	'ItemUnitIcon.bcsv': ItemUnitIcon,
-	'JuneBrideWallFloor.bcsv': JuneBrideWallFloor,
 	'LocalizeNameConvertParam.bcsv': LocalizeNameConvertParam,
 	'MannequinCoodinate.bcsv': MannequinCoodinate,
 	'MaterialType.bcsv': MaterialType,
@@ -7099,13 +6668,11 @@ lookup = {
 	'MessageCardSelectDesignSp.bcsv': MessageCardSelectDesignSp,
 	'MessageCardSelectPresent.bcsv': MessageCardSelectPresent,
 	'MessageCardSelectPresentSp.bcsv': MessageCardSelectPresentSp,
-	'MuseumArtDonateInfo.bcsv': MuseumArtDonateInfo,
 	'MuseumFossilDonateInfo.bcsv': MuseumFossilDonateInfo,
 	'MuseumNPCLayoutInfo.bcsv': MuseumNPCLayoutInfo,
 	'MuseumNPCSilhouette.bcsv': MuseumNPCSilhouette,
 	'MuseumNPCSpotTalk.bcsv': MuseumNPCSpotTalk,
 	'MuseumNameboardInfo.bcsv': MuseumNameboardInfo,
-	'MuseumStampRackInfo.bcsv': MuseumStampRackInfo,
 	'MuseumWatchPoint.bcsv': MuseumWatchPoint,
 	'MysteryTourFieldParam.bcsv': MysteryTourFieldParam,
 	'MysteryTourFishParam.bcsv': MysteryTourFishParam,
@@ -7141,9 +6708,6 @@ lookup = {
 	'RoomLandingParam.bcsv': RoomLandingParam,
 	'RoomWallParam.bcsv': RoomWallParam,
 	'RoomWindowParam.bcsv': RoomWindowParam,
-	'SeafoodAppearParam.bcsv': SeafoodAppearParam,
-	'SeafoodShadowInfoParam.bcsv': SeafoodShadowInfoParam,
-	'SeafoodStatusParam.bcsv': SeafoodStatusParam,
 	'SeasonCalendar.bcsv': SeasonCalendar,
 	'ShopItemRouteFlags.bcsv': ShopItemRouteFlags,
 	'SoundAttributeForGround.bcsv': SoundAttributeForGround,
@@ -7171,5 +6735,4 @@ lookup = {
 	'TVProgramTuesday.bcsv': TVProgramTuesday,
 	'TVProgramWednesday.bcsv': TVProgramWednesday,
 	'VMMultistepNPC.bcsv': VMMultistepNPC,
-	'WeatherPatternParam.bcsv': WeatherPatternParam,
 }
