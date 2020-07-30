@@ -402,6 +402,12 @@ enum_282b3f1c6bd6_e34f70824d5a = (
 	('TreeBambooStump', '植物：木：竹：切り株'),
 	('TreeFruit'      , '植物：木：果物'),
 	('TreeEasterEgg'  , '植物：木：イースターのタマゴ'),
+	('BushAzalea'     , '植物：低木：ツツジ'),
+	('BushHydrangea'  , '植物：低木：あじさい'),
+	('BushHibiscus'   , '植物：低木：ハイビスカス'),
+	('BushCamellia'   , '植物：低木：ツバキ'),
+	('BushHolly'      , '植物：低木：ヒイラギ'),
+	('BushOsmathus'   , '植物：低木：キンモクセイ'),
 	('WeedSpr'        , '植物：雑草：春'),
 	('WeedSmr'        , '植物：雑草：夏'),
 	('WeedAut0'       , '植物：雑草：秋０'),
@@ -437,6 +443,7 @@ enum_2c1ecb54c4b5_fa9288c80a2d = (
 	('Bottoms'       , 'ボトムス'),
 	('Socks'         , '靴下'),
 	('Shoes'         , '靴'),
+	('Marinesuit'    , 'マリンスーツ'),
 	('Scoop'         , 'スコップ'),
 	('Axe'           , 'オノ'),
 	('FishingRod'    , 'つりざお'),
@@ -496,6 +503,9 @@ enum_2c1ecb54c4b5_fa9288c80a2d = (
 	('Smoothie'      , 'スムージー'),
 	('Hammer'        , 'かなづち'),
 	('Brush'         , 'はけ'),
+	('Bouquet'       , 'ブーケ'),
+	('Scallop'       , 'ホタテ'),
+	('Canvas'        , 'キャンバス'),
 )
 
 enum_2c27ffe999d6_e4da0c79dac6 = (
@@ -511,6 +521,7 @@ enum_2c27ffe999d6_e4da0c79dac6 = (
 	('Negative'     , 'F9：ネガティブ系'),
 	('Plant'        , 'F10：植物系'),
 	('Smartphone'   , 'F11：スマホ系'),
+	('Seafood'      , 'F12：海の幸系'),
 )
 
 enum_2d78bfb5905f_6f798aada062 = (
@@ -555,6 +566,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexTopYshirtsHWhite'                 , 'はんそでワイシャツ'),
 	('TopsTexTopYshirtsNWhite'                 , 'ノースリーブえりつきシャツ'),
 	('TopsTexOnepieceAlineLRabbit'             , 'ウサギなふく'),
+	('TopsTexTopCoatLPirate'                   , 'かいぞくのコート'),
 	('TopsTexOnepieceAlineLHeroine'            , 'ヒロインスーツ'),
 	('TopsTexTopCoatLHanten'                   , 'はんてん'),
 	('TopsTexOnepieceBoxLBathrobes'            , 'バスローブ'),
@@ -629,6 +641,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexTopYshirtsLTiedsweater'           , 'トレンディーなふく'),
 	('TopsTexTopYshirtsLSportsjersey'          , 'スポーツジャージ'),
 	('BottomsTexPantsNormalSportsjersey'       , 'スポーツジャージのズボン'),
+	('TopsTexOnepieceDressNWedding'            , 'じゅんぱくのドレス'),
 	('BottomsTexSkirtAlineKilt'                , 'キルト'),
 	('TopsTexTopYshirtsLGilet'                 , 'ベストつきワイシャツ'),
 	('BottomsTexSkirtAlineSailorNavy'          , 'セーラーふくのスカート'),
@@ -777,6 +790,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexOnepieceAlineNHalterneckstripe'   , 'ホルターネックのワンピース'),
 	('TopsTexTopTshirtsHPocketshirts'          , 'ポケットつきＴシャツ'),
 	('TopsTexOnepieceKimonoLMiko'              , 'みこしょうぞく'),
+	('TopsTexOnepieceBalloonHPirate'           , 'かいぞくのワンピース'),
 	('BottomsTexSkirtBoxCorduroy'              , 'コーデュロイスカート'),
 	('BottomsTexPantsWideGaucho'               , 'ガウチョパンツ'),
 	('TopsTexOnepieceBoxNModern'               , 'モガなワンピース'),
@@ -912,6 +926,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('BottomsTexSkirtLongWrap'                 , 'ベルトのまきスカート'),
 	('BottomsTexSkirtLongEmbroidery'           , 'ししゅうのはながらスカート'),
 	('BottomsTexSkirtLongGeometric'            , 'きかがくししゅうのスカート'),
+	('AccessoryGlassmouthDiver'                , 'シュノーケル'),
 	('AccessoryGlassCyber'                     , 'サイバーサングラス'),
 	('TopsTexTopOuterLMuffler'                 , 'チェックマフラーつきセーター'),
 	('TopsTexTopCoatLMuffler'                  , 'ロングデニムカーディガン'),
@@ -1068,6 +1083,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('CapHatSafetyhat'                         , 'あんぜんヘルメット'),
 	('CapHatCock'                              , 'コックさんのぼうし'),
 	('CapHatPolice'                            , 'けいかんのぼうし'),
+	('CapHatPirate'                            , 'かいぞくのぼうし'),
 	('CapHatAjiro'                             , 'かさぼうし'),
 	('CapHatUshanka'                           , 'フェイクファーハット'),
 	('CapHatTriangle'                          , 'さんかくきん'),
@@ -1288,6 +1304,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('CapWigRegent'                            , 'リーゼント'),
 	('CapWigSamurai'                           , 'ちょんまげ'),
 	('CapWigOnionhair'                         , 'たまねぎヘアー'),
+	('CapWigWedding'                           , 'じゅんぱくのヴェール'),
 	('CapWigDoublebun'                         , 'おだんごあたま'),
 	('CapBangsHeadphone'                       , 'ヘッドホン'),
 	('CapHelmetHeaddress'                      , 'ヘッドドレス'),
@@ -1634,6 +1651,31 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('ShoesLowcutEggforest'                    , 'ウッディなたまごのくつ'),
 	('ShoesLowcutEggsky'                       , 'そらとぶたまごのくつ'),
 	('ShoesLowcutEggfish'                      , 'サカナのたまごのくつ'),
+	('ShoesLowcutJunepumps'                    , 'じゅんぱくのパンプス'),
+	('ShoesLowcutJuneshoes'                    , 'じゅんぱくのシューズ'),
+	('TopsTexOnepieceOverallLJune'             , 'じゅんぱくのタキシード'),
+	('TopsTexTopCoatHChildren'                 , 'てづくりのマント'),
+	('CapOrnamentAChildren'                    , 'てづくりのおうかん'),
+	('CapHatSummer'                            , 'げしさいのはなかんむり'),
+	('ShoesLowcutMermaid'                      , 'マーメイドなくつ'),
+	('CapOrnamentCMermaid'                     , 'マーメイドなティアラ'),
+	('AccessoryGlassPiratespatch'              , 'かいぞくのアイパッチ'),
+	('AccessoryMouthPirates'                   , 'かいぞくのひげ'),
+	('BottomsTexPantsNormalPirates'            , 'かいぞくのズボン'),
+	('ShoesKneePirates'                        , 'かいぞくのブーツ'),
+	('CapHatPiratesbandana'                    , 'かいぞくのバンダナ'),
+	('TopsTexOnepieceAlongLPirates'            , 'かいぞくのおたからローブ'),
+	('TopsTexOnepieceOverallLPirates0'         , 'かいぞくのふく'),
+	('TopsTexOnepieceAlongNMermaiddress'       , 'マーメイドなおさかなドレス'),
+	('TopsTexOnepieceDressNMermaid'            , 'マーメイドなプリンセスドレス'),
+	('TopsTexTopOuterLWintersolstice'          , 'とうじのセーター'),
+	('CapOrnamentCPirate'                      , 'かいぞくのおたからおうかん'),
+	('TopsTexTopYshirtsHNookyellow'            , 'たぬきかいはつアロハ・コーラル'),
+	('TopsTexTopYshirtsHNookgreen'             , 'たぬきかいはつアロハ・グリーン'),
+	('TopsTexMarinesuitNormalLNook'            , 'たぬきかいはつマリンスーツ'),
+	('TopsTexMarinesuitNormalLRashguard'       , 'はっぱがらマリンスーツ'),
+	('TopsTexMarinesuitNormalNGreco'           , 'ボーダーのマリンスーツ'),
+	('AccessoryGlassmouthNook'                 , 'たぬきかいはつシュノーケル'),
 	('TopsTexTopTshirtsLBorder'                , 'ボーダーＴシャツ'),
 	('TopsTexTopYshirtsLMountain'              , 'マウンテンパーカー'),
 	('TopsTexTopCoatLDuffle'                   , 'ダッフルコート'),
@@ -1657,9 +1699,10 @@ enum_30e2684ee89a_599636c94afd = (
 )
 
 enum_322263f6b5a3_7a83210f041c = (
-	('Before', '前日'),
+	('Before', '未設定'),
 	('Skip'  , '中止'),
 	('Same'  , '同時開催'),
+	('After' , '翌日'),
 )
 
 enum_34f1ef8cdbcc_52861a019f72 = (
@@ -1676,6 +1719,9 @@ enum_34f1ef8cdbcc_52861a019f72 = (
 	('Kitchen'   , 'キッチン'),
 	('Exercise'  , '運動'),
 	('Outdoor'   , 'アウトドア'),
+	('Lamp'      , '照明'),
+	('Dresser'   , 'ドレッサー'),
+	('Chest'     , '服収納'),
 )
 
 enum_3b7b05ca4a0a_52b2ca6f0581 = (
@@ -1826,6 +1872,7 @@ enum_44bd12ada204_11a50a2b435c = (
 	('CountdownStall', 'CountdownStall'),
 	('BulletinBoard' , 'BulletinBoard'),
 	('Campfire'      , 'Campfire'),
+	('Wind'          , 'Wind'),
 )
 
 enum_4547a8a48a03_a84b967e0ad7 = (
@@ -1848,7 +1895,7 @@ enum_478bafec288f_571514e8ca3c = (
 	('Floor_DownerFront', '台になる：手前半分'),
 	('Floor_DownerUpper', '台になる：上物可'),
 	('Floor_Upper'      , '上物可'),
-	('Floor_Gate'       , '床置き：門：3x1'),
+	('Floor_Gate'       , '床置き：門：3xX'),
 	('Floor_Corner'     , '床置き：コーナー：3x3'),
 	('Wall_NoCol'       , '壁掛け：0'),
 	('Wall_HalfUnit'    , '壁掛け：0.5'),
@@ -1857,7 +1904,7 @@ enum_478bafec288f_571514e8ca3c = (
 )
 
 enum_47e581a0f3c1_94306367028d = (
-	('None'                      , '無し'),
+	('None'                      , '直指定'),
 	('NpcRelatedTops'            , 'NPC関連服'),
 	('NpcRelatedAccessory'       , 'NPC関連アクセサリ'),
 	('CapOrHelmet'               , '帽子・被り物'),
@@ -1879,6 +1926,22 @@ enum_47e581a0f3c1_94306367028d = (
 	('WearGorgeousTops'          , 'ゴージャスな服を着用'),
 	('WearActiveTops'            , 'アクティブな服を着用'),
 	('WearElegantTops'           , 'エレガントな服を着用'),
+	('RacerSet'                  , 'レーサー'),
+	('AfootballSet'              , 'アメフト'),
+	('SoccerSet'                 , 'サッカー'),
+	('BasketballSet'             , 'バスケ'),
+	('SkiSet'                    , 'スキー'),
+	('BaseballSet'               , '野球'),
+	('CowboySet'                 , 'カウボーイ'),
+	('BycycleSet'                , 'サイクル'),
+	('JockeySet'                 , 'ジョッキー'),
+	('MotherSet'                 , 'はは報酬'),
+	('PirateSet'                 , '海賊報酬'),
+	('SwimmingSet'               , 'マリンスーツ'),
+	('CatSet'                    , 'ネコ'),
+	('RabbitSet'                 , 'ウサギ'),
+	('BearSet'                   , 'クマ'),
+	('SheepSet'                  , 'ヒツジ'),
 )
 
 enum_48fbbb9e63e7_c771014390e5 = (
@@ -2071,486 +2134,555 @@ enum_5c6b871e086e_81d76143976e = (
 	('LittleFtr'        , '小さめの家具'),
 	('RoughShoes'       , 'しぶい靴'),
 	('UiniqueFtr'       , '珍家具'),
+	('ColorfulClothes'  , 'カラフル服'),
+	('ShoulderBag'      , 'ショルダーバッグ'),
+	('NormalGlasses'    , 'GEメガネ'),
+	('KoDoll'           , 'KO人形'),
+	('JuicyEquip'       , 'ジューシー装備'),
+	('BathItem'         , 'バスアイテム'),
+	('BeachFtr'         , 'ビーチ家具'),
+	('FairyShoes'       , 'メルヘン靴'),
+	('RockBottoms'      , 'ロックなパンツ'),
+	('RockBoots'        , 'ロックなブーツ'),
+	('Fossil'           , '化石'),
+	('SleepGoods'       , '快眠グッズ'),
+	('ToolItem'         , '工具アイテム'),
+	('PlayAtHome'       , '自宅玩具'),
+	('Handicraft'       , '手芸アイテム'),
+	('LivingFtr'        , 'ZK生活家具'),
+	('Headgear'         , '被り物'),
 )
 
 enum_5db8059c5629_f2952caee23e = (
-	('Leaf'                , '葉っぱ'),
-	('LeafDesign'          , '葉っぱ（マイデザイン）'),
-	('Wall'                , '壁紙'),
-	('Floor'               , '床板'),
-	('Carpet'              , 'ラグ'),
-	('Tops'                , '装備品：トップス'),
-	('Bottoms'             , '装備品：ボトムス'),
-	('Onepiece'            , '装備品：ワンピース'),
-	('Socks'               , '装備品：靴下'),
-	('Shoes'               , '装備品：靴'),
-	('Cap'                 , '装備品：帽子'),
-	('Wig'                 , '装備品：かぶりもの'),
-	('Glasses'             , '装備品：メガネ'),
-	('Bag'                 , '装備品：バッグ'),
-	('Umbrella'            , '装備品：かさ'),
-	('Fishingrod'          , 'つりざお'),
-	('GFishingrod'         , 'つりざお：金'),
-	('Net'                 , 'あみ'),
-	('GNet'                , 'あみ：金'),
-	('Scoop'               , 'スコップ'),
-	('Gscoop'              , 'スコップ：金'),
-	('Axe'                 , 'オノ'),
-	('GAxe'                , 'オノ：金'),
-	('AxeDull'             , 'オノ（切れない）'),
-	('Watering'            , 'じょうろ'),
-	('GWatering'           , 'じょうろ：金'),
-	('Pachinko'            , 'パチンコ'),
-	('GPachinko'           , 'パチンコ：金'),
-	('ToolChangeStick'     , '変身ステッキ'),
-	('ToolRiverJump'       , '川越えツール'),
-	('ToolLadder'          , 'ハシゴ'),
-	('Bridge'              , '橋'),
-	('Slope'               , '坂'),
-	('ToolGroundMaker'     , '道造成キット'),
-	('ToolRiverMaker'      , '川造成キット'),
-	('ToolCliffMaker'      , '崖造成キット'),
-	('Helmet'              , 'たぬき開発ヘルメット'),
-	('Fence'               , '柵'),
-	('Post'                , 'ポスト'),
-	('Tent'                , 'ハウジングキット：黄'),
-	('TentWhite'           , 'ハウジングキット：白'),
-	('Cracker'             , 'クラッカー'),
-	('Ocarina'             , 'オカリナ'),
-	('Panflute'            , 'パンフルート'),
-	('Tambourine'          , 'タンバリン'),
-	('GlowStick'           , 'スティックライト'),
-	('Uchiwa'              , 'うちわ'),
-	('Music'               , 'ミュージック'),
-	('Fossil'              , '化石'),
-	('FossilJ'             , '鑑定済化石'),
-	('SeedPitfall'         , 'おとしあなのタネ'),
-	('RemakeKit'           , 'リメイクキット'),
-	('SmartphoneCase'      , 'スマホケース'),
-	('Medicine'            , 'おくすり'),
-	('Timer'               , 'タイマー'),
-	('Honeycomb'           , 'ハチの巣'),
-	('FishBait'            , 'サカナの撒き餌'),
-	('Cardboard'           , 'ダンボール'),
-	('Present'             , 'プレゼントBOX'),
-	('Present2'            , 'プレゼントBOX：クエスト用'),
-	('WrappingPaper'       , 'ラッピング済みアイテム'),
-	('WPaperYellow'        , 'ラッピングペーパー：イエロー'),
-	('WPaperPink'          , 'ラッピングペーパー：ピンク'),
-	('WPaperOrange'        , 'ラッピングペーパー：オレンジ'),
-	('WPaperLightGreen'    , 'ラッピングペーパー：キミドリ'),
-	('WPaperGreen'         , 'ラッピングペーパー：ミドリ'),
-	('WPaperMint'          , 'ラッピングペーパー：ミント'),
-	('WPaperLightBlue'     , 'ラッピングペーパー：ライトブルー'),
-	('WPaperPurple'        , 'ラッピングペーパー：パープル'),
-	('WPaperNavy'          , 'ラッピングペーパー：ネイビー'),
-	('WPaperBlue'          , 'ラッピングペーパー：ブルー'),
-	('WPaperWhite'         , 'ラッピングペーパー：ホワイト'),
-	('WPaperRed'           , 'ラッピングペーパー：レッド'),
-	('WPaperGold'          , 'ラッピングペーパー：ゴールド'),
-	('WPaperBrown'         , 'ラッピングペーパー：ブラウン'),
-	('WPaperGray'          , 'ラッピングペーパー：グレー'),
-	('WPaperBlack'         , 'ラッピングペーパー：ブラック'),
-	('WBagYellow'          , 'ラッピング袋：イエロー'),
-	('WBagPink'            , 'ラッピング袋：ピンク'),
-	('WBagOrange'          , 'ラッピング袋：オレンジ'),
-	('WBagLightGreen'      , 'ラッピング袋：キミドリ'),
-	('WBagGreen'           , 'ラッピング袋：ミドリ'),
-	('WBagMint'            , 'ラッピング袋：ミント'),
-	('WBagLightBlue'       , 'ラッピング袋：ライトブルー'),
-	('WBagPurple'          , 'ラッピング袋：パープル'),
-	('WBagNavy'            , 'ラッピング袋：ネイビー'),
-	('WBagBlue'            , 'ラッピング袋：ブルー'),
-	('WBagWhite'           , 'ラッピング袋：ホワイト'),
-	('WBagRed'             , 'ラッピング袋：レッド'),
-	('WBagGold'            , 'ラッピング袋：ゴールド'),
-	('WBagBrown'           , 'ラッピング袋：ブラウン'),
-	('WBagGary'            , 'ラッピング袋：グレー'),
-	('WBagBlack'           , 'ラッピング袋：ブラック'),
-	('YellowPaperBag'      , '汎用紙袋'),
-	('Coin'                , 'ベル：コイン'),
-	('MoneyBag010'         , 'ベル：金袋小'),
-	('MoneyBag039'         , 'ベル：金袋中'),
-	('MoneyBag069'         , 'ベル：金袋大'),
-	('Book'                , '落とし物：本'),
-	('LostQuestPorch'      , '落とし物：巾着'),
-	('LostQuestMemo'       , '落とし物：本（かきもの）'),
-	('Porch'               , '落とし物：ポーチ'),
-	('OddGlove'            , '落とし物：片方の手袋'),
-	('AutumnLeaf'          , 'もみじのはっぱ'),
-	('SnowCrystal'         , '雪の結晶'),
-	('SnowCrystalLarge'    , '雪の大結晶'),
-	('Sakurapetal'         , 'さくらのはなびら'),
-	('StarPiece'           , 'ほしのかけら'),
-	('StarPieceRare'       , 'ほしのかけら：レア'),
-	('StarPieceSeason'     , 'xほしのかけら：季節'),
-	('ChristmasOrnamentA'  , 'クリスマスオーナメント赤'),
-	('StarpieceCapricornus', 'やぎざのかけら'),
-	('ChristmasOrnamentB'  , 'クリスマスオーナメント青'),
-	('StarpieceAquarius'   , 'みずがめざのかけら'),
-	('ChristmasOrnamentC'  , 'クリスマスオーナメント金'),
-	('StarpiecePisces'     , 'うおざのかけら'),
-	('StarpieceAries'      , 'おひつじざのかけら'),
-	('JohnyParts'          , 'つうしんそうちのパーツ'),
-	('StarpieceTaurus'     , 'おうしざのかけら'),
-	('JohnnyQuestDust1'    , 'さびたパーツ'),
-	('StarpieceGemini'     , 'ふたござのかけら'),
-	('StarpieceCancer'     , 'かにざのかけら'),
-	('StarpieceLeo'        , 'ししざのかけら'),
-	('StarpieceVirgo'      , 'おとめざのかけら'),
-	('StarpieceLibra'      , 'てんびんざのかけら'),
-	('StarpieceScorpio'    , 'さそりざのかけら'),
-	('StarpieceSagittarius', 'いてざのかけら'),
-	('YutaroWisp'          , 'ゆうたろうのたましい'),
-	('BdayCupcake'         , 'バースデーカップケーキ'),
-	('BottleRecipe'        , 'メッセージボトル'),
-	('PaperRecipe'         , 'レシピ'),
-	('DIYRecipeFence'      , 'レシピ：柵'),
-	('DIYRecipeFtr'        , 'レシピ：家具'),
-	('BookRecipe'          , 'レシピ本'),
-	('HowtoBookHair'       , 'ハウツー本：髪'),
-	('HowtoBookExpansion'  , 'ハウツー本：機能拡張'),
-	('MyDesignPro'         , 'マイデザインPRO'),
-	('PlaneTicket'         , 'こうくうけん'),
-	('TailorTicket'        , 'したてやひきかえけん'),
-	('BellExchangeTicket'  , 'ベルひきかえけん'),
-	('RollanTicket'        , 'ローランひきかえけん'),
-	('OreStone'            , '鉱石：いし'),
-	('OreClay'             , '鉱石：ねんど'),
-	('OreIron'             , '鉱石：鉄鉱石'),
-	('OreGold'             , '鉱石：金鉱石'),
-	('Shell0'              , 'アコヤガイのかいがら'),
-	('Oyster'              , 'カキのかいがら'),
-	('Shell1'              , 'ホラガイ'),
-	('Shell2'              , 'シャコガイ'),
-	('Shell3'              , 'サンゴ'),
-	('Shell4'              , 'ホネガイ'),
-	('Shell5'              , 'ホタテガイ'),
-	('Shell6'              , 'エビスガイ'),
-	('Shell7'              , 'タカラガイ'),
-	('Shell8'              , 'サンドダラー'),
-	('ShellSummer'         , 'なつのかいがら'),
-	('ShellFIshAsari'      , 'アサリ'),
-	('InsAmenbo'           , 'アメンボ'),
-	('InsAri'              , 'アリ'),
-	('InsOkera'            , 'オケラ'),
-	('InsKa'               , 'カ'),
-	('InsGa'               , 'ガ'),
-	('InsNishikiohtsu'     , 'ニシキオオツバメガ'),
-	('InsKumo'             , 'クモ'),
-	('InsMinomushi'        , 'ミノムシ'),
-	('InsGengorou'         , 'ゲンゴロウ'),
-	('InsKonohamushi'      , 'コノハムシ'),
-	('InsSasori'           , 'サソリ'),
-	('InsTaranchura'       , 'タランチュラ'),
-	('InsHachi'            , 'ハチ'),
-	('InsAburazemi'        , 'アブラゼミ'),
-	('InsKumazemi'         , 'クマゼミ'),
-	('InsTsukutsuku'       , 'ツクツクホウシ'),
-	('InsHigurashi'        , 'ヒグラシ'),
-	('InsMinminzemi'       , 'ミンミンゼミ'),
-	('InsSeminonukegara'   , 'セミのぬけがら'),
-	('InsDangomushi'       , 'ダンゴムシ'),
-	('InsMukade'           , 'ムカデ'),
-	('InsAosuji'           , 'アオスジアゲハ'),
-	('InsAkaeri'           , 'アカエリアゲハ'),
-	('InsAgehacho'         , 'アゲハチョウ'),
-	('InsArekisandora'     , 'アレクサンドラアゲハ'),
-	('InsOhkabamadara'     , 'オオカバマダラ'),
-	('InsOhgomamadara'     , 'オオゴマダラ'),
-	('InsOhmurasaki'       , 'オオムラサキ'),
-	('InsKarasuageha'      , 'カラスアゲハ'),
-	('InsMiirotateha'      , 'ミイロタテハ'),
-	('InsMorufuocho'       , 'モルフォチョウ'),
-	('InsMonkicho'         , 'モンキチョウ'),
-	('InsMonshirocho'      , 'モンシロチョウ'),
-	('InsAkiakane'         , 'アキアカネ'),
-	('InsOniyanma'         , 'オニヤンマ'),
-	('InsGinyanma'         , 'ギンヤンマ'),
-	('Itotonbo'            , 'イトトンボ'),
-	('InsNomi'             , 'ノミ'),
-	('InsHae'              , 'ハエ'),
-	('InsInago'            , 'イナゴ'),
-	('InsKirigirisu'       , 'キリギリス'),
-	('InsKohrogi'          , 'コオロギ'),
-	('InsShoryobatta'      , 'ショウリョウバッタ'),
-	('InsSuzumushi'        , 'スズムシ'),
-	('InsTonosamabatta'    , 'トノサマバッタ'),
-	('InsHanmyou'          , 'ハンミョウ'),
-	('InsFunamushi'        , 'フナムシ'),
-	('InsFunkorogashi'     , 'フンコロガシ'),
-	('InsHotaru'           , 'ホタル'),
-	('InsMitsubachi'       , 'ミツバチ'),
-	('InsYadokari'         , 'ヤドカリ'),
-	('InsGomadarakamikiri' , 'カミキリムシ'),
-	('InsBaiorinmushi'     , 'バイオリンムシ'),
-	('InsRuriboshikamikiri', 'ルリボシカミキリ'),
-	('InsOugononikuwa'     , 'オウゴンオニクワガタ'),
-	('InsOhkuwagata'       , 'オオクワガタ'),
-	('InsOhsenchikogane'   , 'コガネムシ'),
-	('InsKanabun'          , 'カナブン'),
-	('InsKabutomushi'      , 'カブトムシ'),
-	('InsKamemushi'        , 'カメムシ'),
-	('InsGirafanokogiri'   , 'ギラファノコギリクワ'),
-	('InsKohkasasu'        , 'コーカサスオオカブト'),
-	('InsGoraiasu'         , 'ゴライアスハナムグリ'),
-	('InsJinmenkamemushi'  , 'ジンメンカメムシ'),
-	('InsZoukabuto'        , 'ゾウカブト'),
-	('InsTamamushi'        , 'タマムシ'),
-	('InsNanafushi'        , 'ナナフシ'),
-	('InsNijiirokuwagata'  , 'ニジイロクワガタ'),
-	('InsNokogirikuwagata' , 'ノコギリクワガタ'),
-	('InsPurachinakogane'  , 'プラチナコガネ'),
-	('InsHerakuresu'       , 'ヘラクレスオオカブト'),
-	('InsHousekizoumushi'  , 'ホウセキゾウムシ'),
-	('InsHosoakakuwagata'  , 'ホソアカクワガタ'),
-	('InsMiyamakuwagata'   , 'ミヤマクワガタ'),
-	('InsYonagunisan'      , 'ヨナグニサン'),
-	('InsKatatsumuri'      , 'カタツムリ'),
-	('InsKamakiri'         , 'カマキリ'),
-	('FtrInsectTagame'     , 'タガメ'),
-	('InsTentoumushi'      , 'テントウムシ'),
-	('InsHanakamakiri'     , 'ハナカマキリ'),
-	('FishAyu'             , 'アユ'),
-	('FishArowana'         , 'アロワナ'),
-	('FishYellowparch'     , 'イエローパーチ'),
-	('FishUgui'            , 'ウグイ'),
-	('FtrFishRanchu'       , 'ランチュウ'),
-	('FishAngelfish'       , 'エンゼルフィッシュ'),
-	('FishEndorikerii'     , 'エンドリケリー'),
-	('FishOikawa'          , 'オイカワ'),
-	('FishKamitsukigame'   , 'カミツキガメ'),
-	('FishGuppi'           , 'グッピー'),
-	('FishSyanhaigani'     , 'シャンハイガニ'),
-	('FishSuppon'          , 'スッポン'),
-	('FishTanago'          , 'タナゴ'),
-	('FishThirapia'        , 'ティラピア'),
-	('FishDemekin'         , 'デメキン'),
-	('FishDokutaafish'     , 'ドクターフィッシュ'),
-	('FishDojou'           , 'ドジョウ'),
-	('FishDolado'          , 'ドラド'),
-	('FishDonko'           , 'ドンコ'),
-	('FishNeontetora'      , 'ネオンテトラ'),
-	('FishPaiku'           , 'パイク'),
-	('FishPirania'         , 'ピラニア'),
-	('FishPiraruku'        , 'ピラルク'),
-	('FishFuna'            , 'フナ'),
-	('FishBlackbass'       , 'ブラックバス'),
-	('FishBlueguill'       , 'ブルーギル'),
-	('FishBeta'            , 'ベタ'),
-	('FishRainbowfish'     , 'レインボーフィッシュ'),
-	('FishWakasagi'        , 'ワカサギ'),
-	('FishItou'            , 'イトウ'),
-	('FishOoiwana'         , 'オオイワナ'),
-	('FishGoldenTorauto'   , 'ゴールデントラウト'),
-	('FishYamame'          , 'ヤマメ'),
-	('FishOtamajakusi'     , 'オタマジャクシ'),
-	('FishGa'              , 'ガー'),
-	('FishKaeru'           , 'カエル'),
-	('FishKingyo'          , 'キンギョ'),
-	('FishKoi'             , 'コイ'),
-	('FishZarigani'        , 'ザリガニ'),
-	('FishNamazu'          , 'ナマズ'),
-	('FishNishikigoi'      , 'ニシキゴイ'),
-	('FishMedaka'          , 'メダカ'),
-	('FishRaigyo'          , 'ライギョ'),
-	('FishKingsalmon'      , 'キングサーモン'),
-	('FishSake'            , 'サケ'),
-	('FishTyouzame'        , 'チョウザメ'),
-	('FishAji'             , 'アジ'),
-	('FishAntyobi'         , 'アンチョビ'),
-	('FishIka'             , 'イカ'),
-	('FishIshidai'         , 'イシダイ'),
-	('FishUtsubo'          , 'ウツボ'),
-	('FishEi'              , 'エイ'),
-	('FishKajiki'          , 'カジキ'),
-	('FishKarei'           , 'カレイ'),
-	('FishKumanomi'        , 'クマノミ'),
-	('FishKurione'         , 'クリオネ'),
-	('FishKobanzame'       , 'コバンザメ'),
-	('FishSame'            , 'サメ'),
-	('FishShiira'          , 'シイラ'),
-	('FishSirakansu'       , 'シーラカンス'),
-	('FishShumokuzame'     , 'シュモクザメ'),
-	('FishJinbeezame'      , 'ジンベエザメ'),
-	('FishSuzuki'          , 'スズキ'),
-	('FishTai'             , 'タイ'),
-	('FishTatsunootoshigo' , 'タツノオトシゴ'),
-	('FishChouchouuo'      , 'チョウチョウウオ'),
-	('FishChouchinankou'   , 'チョウチンアンコウ'),
-	('FishDemenigisu'      , 'デメニギス'),
-	('FishNaporeonfish'    , 'ナポレオンフィッシュ'),
-	('FishNanyouhagi'      , 'ナンヨウハギ'),
-	('FishNokogirizame'    , 'ノコギリザメ'),
-	('FishHanahigeutubo'   , 'ハナヒゲウツボ'),
-	('FishHarisenbon'      , 'ハリセンボン'),
-	('FishHirame'          , 'ヒラメ'),
-	('FishFugu'            , 'フグ'),
-	('FishMaguro'          , 'マグロ'),
-	('FishManbou'          , 'マンボウ'),
-	('FishMinokasago'      , 'ミノカサゴ'),
-	('FishRyuuguunotukai'  , 'リュウグウノツカイ'),
-	('FishRouninaji'       , 'ロウニンアジ'),
-	('Can'                 , 'あきカン'),
-	('Boots'               , 'ながぐつ'),
-	('Tire'                , 'タイヤ'),
-	('Apple'               , 'リンゴ'),
-	('Orange'              , 'オレンジ'),
-	('Pear'                , 'ナシ'),
-	('Peach'               , 'モモ'),
-	('Cherry'              , 'さくらんぼ'),
-	('Coconut'             , 'ヤシの実'),
-	('BanbooShoot'         , 'たけのこ'),
-	('Kabu'                , 'カブ'),
-	('BadKabu'             , 'くさったカブ'),
-	('SquashOrange'        , 'オレンジのカボチャ'),
-	('SquashYellow'        , 'きいろいカボチャ'),
-	('SquashGreen'         , 'みどりのカボチャ'),
-	('SquashWhite'         , 'しろいカボチャ'),
-	('Mush0'               , 'りっぱなキノコ'),
-	('Mush1'               , 'まるいキノコ'),
-	('Mush2'               , 'ほそいキノコ'),
-	('Mush3'               , 'ひらたいキノコ'),
-	('Mush4'               , 'めずらしいキノコ'),
-	('DIYBranch'           , 'きのえだ'),
-	('DIYPinecone'         , 'まつぼっくり'),
-	('DIYAcorn'            , 'どんぐり'),
-	('DIYWoodNormal'       , 'もくざい'),
-	('DIYWoodSoft'         , 'やわらかいもくざい'),
-	('DIYWoodHard'         , 'かたいもくざい'),
-	('DIYBamboo'           , '竹材'),
-	('DIYBambooSpring'     , 'はるのわかたけ'),
-	('SeedPaperbag0'       , 'あかい種袋'),
-	('SeedPaperbag1'       , 'しろい種袋'),
-	('SeedPaperbag2'       , 'きいろい種袋'),
-	('SeedPaperbag3'       , 'オレンジの種袋'),
-	('Rose0'               , 'あかいバラ'),
-	('Rose1'               , 'しろいバラ'),
-	('Rose2'               , 'きいろいバラ'),
-	('Rose3'               , 'ピンクのバラ'),
-	('Rose4'               , 'オレンジのバラ'),
-	('Rose5'               , 'むらさきのバラ'),
-	('Rose6'               , 'くろいバラ'),
-	('Rose7'               , 'あおいバラ'),
-	('GoldenRose'          , '金のバラ'),
-	('Cosmos0'             , 'しろいコスモス'),
-	('Cosmos1'             , 'あかいコスモス'),
-	('Cosmos2'             , 'きいろいコスモス'),
-	('Cosmos3'             , 'ピンクのコスモス'),
-	('Cosmos4'             , 'オレンジのコスモス'),
-	('Cosmos5'             , 'くろいコスモス'),
-	('Turip0'              , 'あかいチューリップ'),
-	('Turip1'              , 'しろいチューリップ'),
-	('Turip2'              , 'きいろいチューリップ'),
-	('Turip3'              , 'ピンクのチューリップ'),
-	('Turip4'              , 'むらさきチューリップ'),
-	('Turip5'              , 'くろいチューリップ'),
-	('Pansi0'              , 'しろいパンジー'),
-	('Turip6'              , 'オレンジチューリップ'),
-	('Pansi1'              , 'きいろいパンジー'),
-	('Pansi2'              , 'あかいパンジー'),
-	('Pansi3'              , 'むらさきのパンジー'),
-	('Pansi4'              , 'あかきいろパンジー'),
-	('Pansi5'              , 'あおいパンジー'),
-	('Yuri0'               , 'しろいユリ'),
-	('Yuri1'               , 'きいろいユリ'),
-	('Yuri2'               , 'あかいユリ'),
-	('Yuri3'               , 'オレンジのユリ'),
-	('Yuri4'               , 'ピンクのユリ'),
-	('Yuri5'               , 'くろいユリ'),
-	('Anemone0'            , 'しろいアネモネ'),
-	('Anemone1'            , 'あかいアネモネ'),
-	('Anemone2'            , 'オレンジのアネモネ'),
-	('Anemone3'            , 'ピンクのアネモネ'),
-	('Anemone4'            , 'むらさきのアネモネ'),
-	('Anemone5'            , 'あおいアネモネ'),
-	('Hyacinth0'           , 'しろいヒヤシンス'),
-	('Hyacinth1'           , 'きいろいヒヤシンス'),
-	('Hyacinth2'           , 'あかいヒヤシンス'),
-	('Hyacinth3'           , 'オレンジのヒヤシンス'),
-	('Hyacinth4'           , 'ピンクのヒヤシンス'),
-	('Hyacinth5'           , 'むらさきのヒヤシンス'),
-	('Hyacinth6'           , 'あおいヒヤシンス'),
-	('Mum0'                , 'しろいキク'),
-	('Mum1'                , 'きいろいキク'),
-	('Mum2'                , 'あかいキク'),
-	('Mum3'                , 'ピンクのキク'),
-	('Mum4'                , 'みどりのキク'),
-	('Mum5'                , 'むらさきのキク'),
-	('PltRose0'            , 'あかいバラのかぶ'),
-	('PltRose1'            , 'しろいバラのかぶ'),
-	('PltRose2'            , 'きいろいバラのかぶ'),
-	('PltRose3'            , 'ピンクのバラのかぶ'),
-	('PltRose4'            , 'オレンジのバラのかぶ'),
-	('PltRose5'            , 'むらさきのバラのかぶ'),
-	('PltRose6'            , 'くろいバラのかぶ'),
-	('PltRose7'            , 'あおいバラのかぶ'),
-	('PltGoldenRose'       , '金のバラのかぶ'),
-	('PltCosmos0'          , 'しろいコスモスのかぶ'),
-	('PltCosmos1'          , 'あかいコスモスのかぶ'),
-	('PltCosmos2'          , 'きいろいコスモスのかぶ'),
-	('PltCosmos3'          , 'ピンクのコスモスのかぶ'),
-	('PltCosmos4'          , 'オレンジのコスモスのかぶ'),
-	('PltCosmos5'          , 'くろいコスモスのかぶ'),
-	('PltTurip0'           , 'あかいチューリップのかぶ'),
-	('PltTurip1'           , 'しろいチューリップのかぶ'),
-	('PltTurip2'           , 'きいろいチューリップのかぶ'),
-	('PltTurip3'           , 'ピンクのチューリップのかぶ'),
-	('PltTurip4'           , 'むらさきチューリップのかぶ'),
-	('PltTurip5'           , 'くろいチューリップのかぶ'),
-	('PltTurip6'           , 'オレンジのチューリップのかぶ'),
-	('PltPansi0'           , 'しろいパンジーのかぶ'),
-	('PltPansi1'           , 'きいろいパンジーのかぶ'),
-	('PltPansi2'           , 'あかいパンジーのかぶ'),
-	('PltPansi3'           , 'むらさきのパンジーのかぶ'),
-	('PltPansi4'           , 'あかきいろパンジーのかぶ'),
-	('PltPansi5'           , 'あおいパンジーのかぶ'),
-	('PltYuri0'            , 'しろいユリのかぶ'),
-	('PltYuri1'            , 'きいろいユリのかぶ'),
-	('PltYuri2'            , 'あかいユリのかぶ'),
-	('PltYuri3'            , 'オレンジのユリのかぶ'),
-	('PltYuri4'            , 'ピンクのユリのかぶ'),
-	('PltYuri5'            , 'くろいユリのかぶ'),
-	('PltAnemone0'         , 'しろいアネモネのかぶ'),
-	('PltAnemone1'         , 'あかいアネモネのかぶ'),
-	('PltAnemone2'         , 'オレンジのアネモネのかぶ'),
-	('PltAnemone3'         , 'ピンクのアネモネのかぶ'),
-	('PltAnemone4'         , 'むらさきのアネモネのかぶ'),
-	('PltAnemone5'         , 'あおいアネモネのかぶ'),
-	('PltHyacinth0'        , 'しろいヒヤシンスのかぶ'),
-	('PltHyacinth1'        , 'きいろいヒヤシンスのかぶ'),
-	('PltHyacinth2'        , 'あかいヒヤシンスのかぶ'),
-	('PltHyacinth3'        , 'オレンジのヒヤシンスのかぶ'),
-	('PltHyacinth4'        , 'ピンクのヒヤシンスのかぶ'),
-	('PltHyacinth5'        , 'むらさきのヒヤシンスのかぶ'),
-	('PltHyacinth6'        , 'あおいヒヤシンスのかぶ'),
-	('PltMum0'             , 'しろいキクのかぶ'),
-	('PltMum1'             , 'きいろいキクのかぶ'),
-	('PltMum2'             , 'あかいキクのかぶ'),
-	('PltMum3'             , 'ピンクのキクのかぶ'),
-	('PltMum4'             , 'みどりのキクのかぶ'),
-	('PltMum5'             , 'むらさきのキクのかぶ'),
-	('PltSuzuran'          , 'スズランのかぶ'),
-	('Seedling'            , '木の苗'),
-	('PltOak'              , '広葉樹'),
-	('SeedlingConifer'     , '針葉樹の苗'),
-	('PltConifer'          , '針葉樹'),
-	('PltBamboo'           , '竹'),
-	('PltPalm'             , 'ヤシの木'),
-	('PltApple'            , 'リンゴの木'),
-	('PltOrange'           , 'オレンジの木'),
-	('PltPear'             , 'ナシの木'),
-	('PltPeach'            , 'モモの木'),
-	('PltCherry'           , 'さくらんぼの木'),
-	('PltMoney'            , '金のなる木'),
-	('Weed'                , 'ざっそう'),
-	('EggGround'           , 'じめんのたまご'),
-	('EggRock'             , 'いわのたまご'),
-	('EggLeaf'             , 'はっぱのたまご'),
-	('EggForest'           , 'もりのたまご'),
-	('EggSky'              , 'そらとぶたまご'),
-	('EggFish'             , 'サカナのたまご'),
-	('MessageBottleEgg'    , 'たまごのメッセージボトル'),
+	('Leaf'                 , '葉っぱ'),
+	('LeafDesign'           , '葉っぱ（マイデザイン）'),
+	('Wall'                 , '壁紙'),
+	('Floor'                , '床板'),
+	('Carpet'               , 'ラグ'),
+	('Tops'                 , '装備品：トップス'),
+	('Bottoms'              , '装備品：ボトムス'),
+	('Onepiece'             , '装備品：ワンピース'),
+	('WetSuit'              , '装備品：マリンスーツ'),
+	('Socks'                , '装備品：靴下'),
+	('Shoes'                , '装備品：靴'),
+	('Cap'                  , '装備品：帽子'),
+	('Wig'                  , '装備品：かぶりもの'),
+	('Glasses'              , '装備品：メガネ'),
+	('Bag'                  , '装備品：バッグ'),
+	('Umbrella'             , '装備品：かさ'),
+	('Fishingrod'           , 'つりざお'),
+	('GFishingrod'          , 'つりざお：金'),
+	('Net'                  , 'あみ'),
+	('GNet'                 , 'あみ：金'),
+	('Scoop'                , 'スコップ'),
+	('Gscoop'               , 'スコップ：金'),
+	('Axe'                  , 'オノ'),
+	('GAxe'                 , 'オノ：金'),
+	('AxeDull'              , 'オノ（切れない）'),
+	('Watering'             , 'じょうろ'),
+	('GWatering'            , 'じょうろ：金'),
+	('Pachinko'             , 'パチンコ'),
+	('GPachinko'            , 'パチンコ：金'),
+	('ToolChangeStick'      , '変身ステッキ'),
+	('ToolRiverJump'        , '川越えツール'),
+	('ToolLadder'           , 'ハシゴ'),
+	('Bridge'               , '橋'),
+	('Slope'                , '坂'),
+	('ToolGroundMaker'      , '道造成キット'),
+	('ToolRiverMaker'       , '川造成キット'),
+	('ToolCliffMaker'       , '崖造成キット'),
+	('Helmet'               , 'たぬき開発ヘルメット'),
+	('Fence'                , '柵'),
+	('Post'                 , 'ポスト'),
+	('Tent'                 , 'ハウジングキット：黄'),
+	('TentWhite'            , 'ハウジングキット：白'),
+	('Cracker'              , 'クラッカー'),
+	('Ocarina'              , 'オカリナ'),
+	('Panflute'             , 'パンフルート'),
+	('Tambourine'           , 'タンバリン'),
+	('GlowStick'            , 'スティックライト'),
+	('Uchiwa'               , 'うちわ'),
+	('Music'                , 'ミュージック'),
+	('Fossil'               , '化石'),
+	('FossilJ'              , '鑑定済化石'),
+	('SeedPitfall'          , 'おとしあなのタネ'),
+	('RemakeKit'            , 'リメイクキット'),
+	('SmartphoneCase'       , 'スマホケース'),
+	('Medicine'             , 'おくすり'),
+	('Timer'                , 'タイマー'),
+	('Honeycomb'            , 'ハチの巣'),
+	('FishBait'             , 'サカナの撒き餌'),
+	('Cardboard'            , 'ダンボール'),
+	('Present'              , 'プレゼントBOX'),
+	('Present2'             , 'プレゼントBOX：クエスト用'),
+	('WrappingPaper'        , 'ラッピング済みアイテム'),
+	('WPaperYellow'         , 'ラッピングペーパー：イエロー'),
+	('WPaperPink'           , 'ラッピングペーパー：ピンク'),
+	('WPaperOrange'         , 'ラッピングペーパー：オレンジ'),
+	('WPaperLightGreen'     , 'ラッピングペーパー：キミドリ'),
+	('WPaperGreen'          , 'ラッピングペーパー：ミドリ'),
+	('WPaperMint'           , 'ラッピングペーパー：ミント'),
+	('WPaperLightBlue'      , 'ラッピングペーパー：ライトブルー'),
+	('WPaperPurple'         , 'ラッピングペーパー：パープル'),
+	('WPaperNavy'           , 'ラッピングペーパー：ネイビー'),
+	('WPaperBlue'           , 'ラッピングペーパー：ブルー'),
+	('WPaperWhite'          , 'ラッピングペーパー：ホワイト'),
+	('WPaperRed'            , 'ラッピングペーパー：レッド'),
+	('WPaperGold'           , 'ラッピングペーパー：ゴールド'),
+	('WPaperBrown'          , 'ラッピングペーパー：ブラウン'),
+	('WPaperGray'           , 'ラッピングペーパー：グレー'),
+	('WPaperBlack'          , 'ラッピングペーパー：ブラック'),
+	('WBagYellow'           , 'ラッピング袋：イエロー'),
+	('WBagPink'             , 'ラッピング袋：ピンク'),
+	('WBagOrange'           , 'ラッピング袋：オレンジ'),
+	('WBagLightGreen'       , 'ラッピング袋：キミドリ'),
+	('WBagGreen'            , 'ラッピング袋：ミドリ'),
+	('WBagMint'             , 'ラッピング袋：ミント'),
+	('WBagLightBlue'        , 'ラッピング袋：ライトブルー'),
+	('WBagPurple'           , 'ラッピング袋：パープル'),
+	('WBagNavy'             , 'ラッピング袋：ネイビー'),
+	('WBagBlue'             , 'ラッピング袋：ブルー'),
+	('WBagWhite'            , 'ラッピング袋：ホワイト'),
+	('WBagRed'              , 'ラッピング袋：レッド'),
+	('WBagGold'             , 'ラッピング袋：ゴールド'),
+	('WBagBrown'            , 'ラッピング袋：ブラウン'),
+	('WBagGary'             , 'ラッピング袋：グレー'),
+	('WBagBlack'            , 'ラッピング袋：ブラック'),
+	('YellowPaperBag'       , '汎用紙袋'),
+	('Coin'                 , 'ベル：コイン'),
+	('MoneyBag010'          , 'ベル：金袋小'),
+	('MoneyBag039'          , 'ベル：金袋中'),
+	('MoneyBag069'          , 'ベル：金袋大'),
+	('Book'                 , '落とし物：本'),
+	('LostQuestPorch'       , '落とし物：巾着'),
+	('LostQuestMemo'        , '落とし物：本（かきもの）'),
+	('Porch'                , '落とし物：ポーチ'),
+	('OddGlove'             , '落とし物：片方の手袋'),
+	('AutumnLeaf'           , 'もみじのはっぱ'),
+	('SnowCrystal'          , '雪の結晶'),
+	('SnowCrystalLarge'     , '雪の大結晶'),
+	('Sakurapetal'          , 'さくらのはなびら'),
+	('StarPiece'            , 'ほしのかけら'),
+	('StarPieceRare'        , 'ほしのかけら：レア'),
+	('StarPieceSeason'      , 'xほしのかけら：季節'),
+	('ChristmasOrnamentA'   , 'クリスマスオーナメント赤'),
+	('StarpieceCapricornus' , 'やぎざのかけら'),
+	('ChristmasOrnamentB'   , 'クリスマスオーナメント青'),
+	('StarpieceAquarius'    , 'みずがめざのかけら'),
+	('ChristmasOrnamentC'   , 'クリスマスオーナメント金'),
+	('StarpiecePisces'      , 'うおざのかけら'),
+	('StarpieceAries'       , 'おひつじざのかけら'),
+	('JohnyParts'           , 'つうしんそうちのパーツ'),
+	('StarpieceTaurus'      , 'おうしざのかけら'),
+	('JohnnyQuestDust1'     , 'さびたパーツ'),
+	('StarpieceGemini'      , 'ふたござのかけら'),
+	('StarpieceCancer'      , 'かにざのかけら'),
+	('StarpieceLeo'         , 'ししざのかけら'),
+	('StarpieceVirgo'       , 'おとめざのかけら'),
+	('StarpieceLibra'       , 'てんびんざのかけら'),
+	('StarpieceScorpio'     , 'さそりざのかけら'),
+	('StarpieceSagittarius' , 'いてざのかけら'),
+	('YutaroWisp'           , 'ゆうたろうのたましい'),
+	('BdayCupcake'          , 'バースデーカップケーキ'),
+	('BottleRecipe'         , 'メッセージボトル'),
+	('PaperRecipe'          , 'レシピ'),
+	('DIYRecipeFence'       , 'レシピ：柵'),
+	('DIYRecipeFtr'         , 'レシピ：家具'),
+	('BookRecipe'           , 'レシピ本'),
+	('HowtoBookHair'        , 'ハウツー本：髪'),
+	('HowtoBookExpansion'   , 'ハウツー本：機能拡張'),
+	('MyDesignPro'          , 'マイデザインPRO'),
+	('PlaneTicket'          , 'こうくうけん'),
+	('TailorTicket'         , 'したてやひきかえけん'),
+	('BellExchangeTicket'   , 'ベルひきかえけん'),
+	('RollanTicket'         , 'ローランひきかえけん'),
+	('OreStone'             , '鉱石：いし'),
+	('OreClay'              , '鉱石：ねんど'),
+	('OreIron'              , '鉱石：鉄鉱石'),
+	('OreGold'              , '鉱石：金鉱石'),
+	('Shell0'               , 'アコヤガイのかいがら'),
+	('Oyster'               , 'カキのかいがら'),
+	('Shell1'               , 'ホラガイ'),
+	('Shell2'               , 'シャコガイ'),
+	('Shell3'               , 'サンゴ'),
+	('Shell4'               , 'ホネガイ'),
+	('Shell5'               , 'ホタテガイ'),
+	('Shell6'               , 'エビスガイ'),
+	('Shell7'               , 'タカラガイ'),
+	('Shell8'               , 'サンドダラー'),
+	('ShellSummer'          , 'なつのかいがら'),
+	('ShellFIshAsari'       , 'アサリ'),
+	('InsAmenbo'            , 'アメンボ'),
+	('InsAri'               , 'アリ'),
+	('InsOkera'             , 'オケラ'),
+	('InsKa'                , 'カ'),
+	('InsGa'                , 'ガ'),
+	('InsNishikiohtsu'      , 'ニシキオオツバメガ'),
+	('InsKumo'              , 'クモ'),
+	('InsMinomushi'         , 'ミノムシ'),
+	('InsGengorou'          , 'ゲンゴロウ'),
+	('InsKonohamushi'       , 'コノハムシ'),
+	('InsSasori'            , 'サソリ'),
+	('InsTaranchura'        , 'タランチュラ'),
+	('InsHachi'             , 'ハチ'),
+	('InsAburazemi'         , 'アブラゼミ'),
+	('InsKumazemi'          , 'クマゼミ'),
+	('InsTsukutsuku'        , 'ツクツクホウシ'),
+	('InsHigurashi'         , 'ヒグラシ'),
+	('InsMinminzemi'        , 'ミンミンゼミ'),
+	('InsSeminonukegara'    , 'セミのぬけがら'),
+	('InsDangomushi'        , 'ダンゴムシ'),
+	('InsMukade'            , 'ムカデ'),
+	('InsAosuji'            , 'アオスジアゲハ'),
+	('InsAkaeri'            , 'アカエリアゲハ'),
+	('InsAgehacho'          , 'アゲハチョウ'),
+	('InsArekisandora'      , 'アレクサンドラアゲハ'),
+	('InsOhkabamadara'      , 'オオカバマダラ'),
+	('InsOhgomamadara'      , 'オオゴマダラ'),
+	('InsOhmurasaki'        , 'オオムラサキ'),
+	('InsKarasuageha'       , 'カラスアゲハ'),
+	('InsMiirotateha'       , 'ミイロタテハ'),
+	('InsMorufuocho'        , 'モルフォチョウ'),
+	('InsMonkicho'          , 'モンキチョウ'),
+	('InsMonshirocho'       , 'モンシロチョウ'),
+	('InsAkiakane'          , 'アキアカネ'),
+	('InsOniyanma'          , 'オニヤンマ'),
+	('InsGinyanma'          , 'ギンヤンマ'),
+	('Itotonbo'             , 'イトトンボ'),
+	('InsNomi'              , 'ノミ'),
+	('InsHae'               , 'ハエ'),
+	('InsInago'             , 'イナゴ'),
+	('InsKirigirisu'        , 'キリギリス'),
+	('InsKohrogi'           , 'コオロギ'),
+	('InsShoryobatta'       , 'ショウリョウバッタ'),
+	('InsSuzumushi'         , 'スズムシ'),
+	('InsTonosamabatta'     , 'トノサマバッタ'),
+	('InsHanmyou'           , 'ハンミョウ'),
+	('InsFunamushi'         , 'フナムシ'),
+	('InsFunkorogashi'      , 'フンコロガシ'),
+	('InsHotaru'            , 'ホタル'),
+	('InsMitsubachi'        , 'ミツバチ'),
+	('InsYadokari'          , 'ヤドカリ'),
+	('InsGomadarakamikiri'  , 'カミキリムシ'),
+	('InsBaiorinmushi'      , 'バイオリンムシ'),
+	('InsRuriboshikamikiri' , 'ルリボシカミキリ'),
+	('InsOugononikuwa'      , 'オウゴンオニクワガタ'),
+	('InsOhkuwagata'        , 'オオクワガタ'),
+	('InsOhsenchikogane'    , 'コガネムシ'),
+	('InsKanabun'           , 'カナブン'),
+	('InsKabutomushi'       , 'カブトムシ'),
+	('InsKamemushi'         , 'カメムシ'),
+	('InsGirafanokogiri'    , 'ギラファノコギリクワ'),
+	('InsKohkasasu'         , 'コーカサスオオカブト'),
+	('InsGoraiasu'          , 'ゴライアスハナムグリ'),
+	('InsJinmenkamemushi'   , 'ジンメンカメムシ'),
+	('InsZoukabuto'         , 'ゾウカブト'),
+	('InsTamamushi'         , 'タマムシ'),
+	('InsNanafushi'         , 'ナナフシ'),
+	('InsNijiirokuwagata'   , 'ニジイロクワガタ'),
+	('InsNokogirikuwagata'  , 'ノコギリクワガタ'),
+	('InsPurachinakogane'   , 'プラチナコガネ'),
+	('InsHerakuresu'        , 'ヘラクレスオオカブト'),
+	('InsHousekizoumushi'   , 'ホウセキゾウムシ'),
+	('InsHosoakakuwagata'   , 'ホソアカクワガタ'),
+	('InsMiyamakuwagata'    , 'ミヤマクワガタ'),
+	('InsYonagunisan'       , 'ヨナグニサン'),
+	('InsKatatsumuri'       , 'カタツムリ'),
+	('InsKamakiri'          , 'カマキリ'),
+	('FtrInsectTagame'      , 'タガメ'),
+	('InsTentoumushi'       , 'テントウムシ'),
+	('InsHanakamakiri'      , 'ハナカマキリ'),
+	('FishAyu'              , 'アユ'),
+	('FishArowana'          , 'アロワナ'),
+	('FishYellowparch'      , 'イエローパーチ'),
+	('FishUgui'             , 'ウグイ'),
+	('FtrFishRanchu'        , 'ランチュウ'),
+	('FishAngelfish'        , 'エンゼルフィッシュ'),
+	('FishEndorikerii'      , 'エンドリケリー'),
+	('FishOikawa'           , 'オイカワ'),
+	('FishKamitsukigame'    , 'カミツキガメ'),
+	('FishGuppi'            , 'グッピー'),
+	('FishSyanhaigani'      , 'シャンハイガニ'),
+	('FishSuppon'           , 'スッポン'),
+	('FishTanago'           , 'タナゴ'),
+	('FishThirapia'         , 'ティラピア'),
+	('FishDemekin'          , 'デメキン'),
+	('FishDokutaafish'      , 'ドクターフィッシュ'),
+	('FishDojou'            , 'ドジョウ'),
+	('FishDolado'           , 'ドラド'),
+	('FishDonko'            , 'ドンコ'),
+	('FishNeontetora'       , 'ネオンテトラ'),
+	('FishPaiku'            , 'パイク'),
+	('FishPirania'          , 'ピラニア'),
+	('FishPiraruku'         , 'ピラルク'),
+	('FishFuna'             , 'フナ'),
+	('FishBlackbass'        , 'ブラックバス'),
+	('FishBlueguill'        , 'ブルーギル'),
+	('FishBeta'             , 'ベタ'),
+	('FishRainbowfish'      , 'レインボーフィッシュ'),
+	('FishWakasagi'         , 'ワカサギ'),
+	('FishItou'             , 'イトウ'),
+	('FishOoiwana'          , 'オオイワナ'),
+	('FishGoldenTorauto'    , 'ゴールデントラウト'),
+	('FishYamame'           , 'ヤマメ'),
+	('FishOtamajakusi'      , 'オタマジャクシ'),
+	('FishGa'               , 'ガー'),
+	('FishKaeru'            , 'カエル'),
+	('FishKingyo'           , 'キンギョ'),
+	('FishKoi'              , 'コイ'),
+	('FishZarigani'         , 'ザリガニ'),
+	('FishNamazu'           , 'ナマズ'),
+	('FishNishikigoi'       , 'ニシキゴイ'),
+	('FishMedaka'           , 'メダカ'),
+	('FishRaigyo'           , 'ライギョ'),
+	('FishKingsalmon'       , 'キングサーモン'),
+	('FishSake'             , 'サケ'),
+	('FishTyouzame'         , 'チョウザメ'),
+	('FishAji'              , 'アジ'),
+	('FishAntyobi'          , 'アンチョビ'),
+	('FishIka'              , 'イカ'),
+	('FishIshidai'          , 'イシダイ'),
+	('FishUtsubo'           , 'ウツボ'),
+	('FishEi'               , 'エイ'),
+	('FishKajiki'           , 'カジキ'),
+	('FishKarei'            , 'カレイ'),
+	('FishKumanomi'         , 'クマノミ'),
+	('FishKurione'          , 'クリオネ'),
+	('FishKobanzame'        , 'コバンザメ'),
+	('FishSame'             , 'サメ'),
+	('FishShiira'           , 'シイラ'),
+	('FishSirakansu'        , 'シーラカンス'),
+	('FishShumokuzame'      , 'シュモクザメ'),
+	('FishJinbeezame'       , 'ジンベエザメ'),
+	('FishSuzuki'           , 'スズキ'),
+	('FishTai'              , 'タイ'),
+	('FishTatsunootoshigo'  , 'タツノオトシゴ'),
+	('FishChouchouuo'       , 'チョウチョウウオ'),
+	('FishChouchinankou'    , 'チョウチンアンコウ'),
+	('FishDemenigisu'       , 'デメニギス'),
+	('FishNaporeonfish'     , 'ナポレオンフィッシュ'),
+	('FishNanyouhagi'       , 'ナンヨウハギ'),
+	('FishNokogirizame'     , 'ノコギリザメ'),
+	('FishHanahigeutubo'    , 'ハナヒゲウツボ'),
+	('FishHarisenbon'       , 'ハリセンボン'),
+	('FishHirame'           , 'ヒラメ'),
+	('FishFugu'             , 'フグ'),
+	('FishMaguro'           , 'マグロ'),
+	('FishManbou'           , 'マンボウ'),
+	('FishMinokasago'       , 'ミノカサゴ'),
+	('FishRyuuguunotukai'   , 'リュウグウノツカイ'),
+	('FishRouninaji'        , 'ロウニンアジ'),
+	('Can'                  , 'あきカン'),
+	('Boots'                , 'ながぐつ'),
+	('Tire'                 , 'タイヤ'),
+	('Fish54'               , 'ロブスター'),
+	('Wakame'               , 'ワカメ'),
+	('Umibudou'             , 'ウミブドウ'),
+	('Uni'                  , 'ウニ'),
+	('Fujitsubo'            , 'フジツボ'),
+	('Kaki'                 , 'カキ'),
+	('Sazae'                , 'サザエ'),
+	('Awabi'                , 'アワビ'),
+	('Akoyagai'             , 'アコヤガイ'),
+	('Hotate'               , 'ホタテ'),
+	('Isogintyaku'          , 'イソギンチャク'),
+	('Hitode'               , 'ヒトデ'),
+	('Namako'               , 'ナマコ'),
+	('Umiushi'              , 'ウミウシ'),
+	('Hiramushi'            , 'ヒラムシ'),
+	('Shako'                , 'シャコ'),
+	('Amaebi'               , 'アマエビ'),
+	('Kurumaebi'            , 'クルマエビ'),
+	('Iseebi'               , 'イセエビ'),
+	('Zuwaigani'            , 'ズワイガニ'),
+	('Tarabagani'           , 'タラバガニ'),
+	('Takaashigani'         , 'タカアシガニ'),
+	('Tako'                 , 'タコ'),
+	('Chinanago'            , 'チンアナゴ'),
+	('Oumugai'              , 'オウムガイ'),
+	('Kabutogani'           , 'カブトガニ'),
+	('Daiougusokumushi'     , 'ダイオウグソクムシ'),
+	('Hotaruika'            , 'ホタルイカ'),
+	('Gazami'               , 'ガザミ'),
+	('Koumoridako'          , 'コウモリダコ'),
+	('Shakogai'             , 'オオシャコガイ'),
+	('Hoya'                 , 'ホヤ'),
+	('Mizukurage'           , 'ミズクラゲ'),
+	('Mendako'              , 'メンダコ'),
+	('Paipuuni'             , 'パイプウニ'),
+	('Baigai'               , 'バイガイ'),
+	('Senjunamako'          , 'センジュナマコ'),
+	('DungenessCrab'        , 'ダンジネスクラブ'),
+	('Kairoudouketsu'       , 'カイロウドウケツ'),
+	('Muhrugai'             , 'ムールガイ'),
+	('Apple'                , 'リンゴ'),
+	('Orange'               , 'オレンジ'),
+	('Pear'                 , 'ナシ'),
+	('Peach'                , 'モモ'),
+	('Cherry'               , 'さくらんぼ'),
+	('Coconut'              , 'ヤシの実'),
+	('BanbooShoot'          , 'たけのこ'),
+	('Kabu'                 , 'カブ'),
+	('BadKabu'              , 'くさったカブ'),
+	('Mush0'                , 'りっぱなキノコ'),
+	('Mush1'                , 'まるいキノコ'),
+	('Mush2'                , 'ほそいキノコ'),
+	('Mush3'                , 'ひらたいキノコ'),
+	('Mush4'                , 'めずらしいキノコ'),
+	('DIYBranch'            , 'きのえだ'),
+	('DIYPinecone'          , 'まつぼっくり'),
+	('DIYAcorn'             , 'どんぐり'),
+	('DIYWoodNormal'        , 'もくざい'),
+	('DIYWoodSoft'          , 'やわらかいもくざい'),
+	('DIYWoodHard'          , 'かたいもくざい'),
+	('DIYBamboo'            , '竹材'),
+	('DIYBambooSpring'      , 'はるのわかたけ'),
+	('SeedPaperbag0'        , 'あかい種袋'),
+	('SeedPaperbag1'        , 'しろい種袋'),
+	('SeedPaperbag2'        , 'きいろい種袋'),
+	('SeedPaperbag3'        , 'オレンジの種袋'),
+	('Rose0'                , 'あかいバラ'),
+	('Rose1'                , 'しろいバラ'),
+	('Rose2'                , 'きいろいバラ'),
+	('Rose3'                , 'ピンクのバラ'),
+	('Rose4'                , 'オレンジのバラ'),
+	('Rose5'                , 'むらさきのバラ'),
+	('Rose6'                , 'くろいバラ'),
+	('Rose7'                , 'あおいバラ'),
+	('GoldenRose'           , '金のバラ'),
+	('Cosmos0'              , 'しろいコスモス'),
+	('Cosmos1'              , 'あかいコスモス'),
+	('Cosmos2'              , 'きいろいコスモス'),
+	('Cosmos3'              , 'ピンクのコスモス'),
+	('Cosmos4'              , 'オレンジのコスモス'),
+	('Cosmos5'              , 'くろいコスモス'),
+	('Turip0'               , 'あかいチューリップ'),
+	('Turip1'               , 'しろいチューリップ'),
+	('Turip2'               , 'きいろいチューリップ'),
+	('Turip3'               , 'ピンクのチューリップ'),
+	('Turip4'               , 'むらさきチューリップ'),
+	('Turip5'               , 'くろいチューリップ'),
+	('Pansi0'               , 'しろいパンジー'),
+	('Turip6'               , 'オレンジチューリップ'),
+	('Pansi1'               , 'きいろいパンジー'),
+	('Pansi2'               , 'あかいパンジー'),
+	('Pansi3'               , 'むらさきのパンジー'),
+	('Pansi4'               , 'あかきいろパンジー'),
+	('Pansi5'               , 'あおいパンジー'),
+	('Yuri0'                , 'しろいユリ'),
+	('Yuri1'                , 'きいろいユリ'),
+	('Yuri2'                , 'あかいユリ'),
+	('Yuri3'                , 'オレンジのユリ'),
+	('Yuri4'                , 'ピンクのユリ'),
+	('Yuri5'                , 'くろいユリ'),
+	('Anemone0'             , 'しろいアネモネ'),
+	('Anemone1'             , 'あかいアネモネ'),
+	('Anemone2'             , 'オレンジのアネモネ'),
+	('Anemone3'             , 'ピンクのアネモネ'),
+	('Anemone4'             , 'むらさきのアネモネ'),
+	('Anemone5'             , 'あおいアネモネ'),
+	('Hyacinth0'            , 'しろいヒヤシンス'),
+	('Hyacinth1'            , 'きいろいヒヤシンス'),
+	('Hyacinth2'            , 'あかいヒヤシンス'),
+	('Hyacinth3'            , 'オレンジのヒヤシンス'),
+	('Hyacinth4'            , 'ピンクのヒヤシンス'),
+	('Hyacinth5'            , 'むらさきのヒヤシンス'),
+	('Hyacinth6'            , 'あおいヒヤシンス'),
+	('Mum0'                 , 'しろいキク'),
+	('Mum1'                 , 'きいろいキク'),
+	('Mum2'                 , 'あかいキク'),
+	('Mum3'                 , 'ピンクのキク'),
+	('Mum4'                 , 'みどりのキク'),
+	('Mum5'                 , 'むらさきのキク'),
+	('PltRose0'             , 'あかいバラのかぶ'),
+	('PltRose1'             , 'しろいバラのかぶ'),
+	('PltRose2'             , 'きいろいバラのかぶ'),
+	('PltRose3'             , 'ピンクのバラのかぶ'),
+	('PltRose4'             , 'オレンジのバラのかぶ'),
+	('PltRose5'             , 'むらさきのバラのかぶ'),
+	('PltRose6'             , 'くろいバラのかぶ'),
+	('PltRose7'             , 'あおいバラのかぶ'),
+	('PltGoldenRose'        , '金のバラのかぶ'),
+	('PltCosmos0'           , 'しろいコスモスのかぶ'),
+	('PltCosmos1'           , 'あかいコスモスのかぶ'),
+	('PltCosmos2'           , 'きいろいコスモスのかぶ'),
+	('PltCosmos3'           , 'ピンクのコスモスのかぶ'),
+	('PltCosmos4'           , 'オレンジのコスモスのかぶ'),
+	('PltCosmos5'           , 'くろいコスモスのかぶ'),
+	('PltTurip0'            , 'あかいチューリップのかぶ'),
+	('PltTurip1'            , 'しろいチューリップのかぶ'),
+	('PltTurip2'            , 'きいろいチューリップのかぶ'),
+	('PltTurip3'            , 'ピンクのチューリップのかぶ'),
+	('PltTurip4'            , 'むらさきチューリップのかぶ'),
+	('PltTurip5'            , 'くろいチューリップのかぶ'),
+	('PltTurip6'            , 'オレンジのチューリップのかぶ'),
+	('PltPansi0'            , 'しろいパンジーのかぶ'),
+	('PltPansi1'            , 'きいろいパンジーのかぶ'),
+	('PltPansi2'            , 'あかいパンジーのかぶ'),
+	('PltPansi3'            , 'むらさきのパンジーのかぶ'),
+	('PltPansi4'            , 'あかきいろパンジーのかぶ'),
+	('PltPansi5'            , 'あおいパンジーのかぶ'),
+	('PltYuri0'             , 'しろいユリのかぶ'),
+	('PltYuri1'             , 'きいろいユリのかぶ'),
+	('PltYuri2'             , 'あかいユリのかぶ'),
+	('PltYuri3'             , 'オレンジのユリのかぶ'),
+	('PltYuri4'             , 'ピンクのユリのかぶ'),
+	('PltYuri5'             , 'くろいユリのかぶ'),
+	('PltAnemone0'          , 'しろいアネモネのかぶ'),
+	('PltAnemone1'          , 'あかいアネモネのかぶ'),
+	('PltAnemone2'          , 'オレンジのアネモネのかぶ'),
+	('PltAnemone3'          , 'ピンクのアネモネのかぶ'),
+	('PltAnemone4'          , 'むらさきのアネモネのかぶ'),
+	('PltAnemone5'          , 'あおいアネモネのかぶ'),
+	('PltHyacinth0'         , 'しろいヒヤシンスのかぶ'),
+	('PltHyacinth1'         , 'きいろいヒヤシンスのかぶ'),
+	('PltHyacinth2'         , 'あかいヒヤシンスのかぶ'),
+	('PltHyacinth3'         , 'オレンジのヒヤシンスのかぶ'),
+	('PltHyacinth4'         , 'ピンクのヒヤシンスのかぶ'),
+	('PltHyacinth5'         , 'むらさきのヒヤシンスのかぶ'),
+	('PltHyacinth6'         , 'あおいヒヤシンスのかぶ'),
+	('PltMum0'              , 'しろいキクのかぶ'),
+	('PltMum1'              , 'きいろいキクのかぶ'),
+	('PltMum2'              , 'あかいキクのかぶ'),
+	('PltMum3'              , 'ピンクのキクのかぶ'),
+	('PltMum4'              , 'みどりのキクのかぶ'),
+	('PltMum5'              , 'むらさきのキクのかぶ'),
+	('PltSuzuran'           , 'スズランのかぶ'),
+	('SeedlingBush'         , '低木の苗'),
+	('Seedling'             , '木の苗'),
+	('PltOak'               , '広葉樹'),
+	('SeedlingConifer'      , '針葉樹の苗'),
+	('PltConifer'           , '針葉樹'),
+	('PltBamboo'            , '竹'),
+	('PltPalm'              , 'ヤシの木'),
+	('PltApple'             , 'リンゴの木'),
+	('PltOrange'            , 'オレンジの木'),
+	('PltPear'              , 'ナシの木'),
+	('PltPeach'             , 'モモの木'),
+	('PltCherry'            , 'さくらんぼの木'),
+	('PltMoney'             , '金のなる木'),
+	('Weed'                 , 'ざっそう'),
+	('PltAzaleaWhite'       , 'しろいツツジのかぶ'),
+	('PltAzaleaPink'        , 'ピンクのツツジのかぶ'),
+	('PltHydrangeaPink'     , 'ピンクのアジサイのかぶ'),
+	('PltHydrangeaBlue'     , 'あおいアジサイのかぶ'),
+	('PltHibiscusRed'       , 'あかいハイビスカスのかぶ'),
+	('PltHibiscusYellow'    , 'きいろいハイビスカスのかぶ'),
+	('PltBushOsmathusYellow', 'きいろいキンモクセイのかぶ'),
+	('PltBushOsmathusOrange', 'オレンジキンモクセイのかぶ'),
+	('PltBushCamelliaRed'   , 'あかいツバキのかぶ'),
+	('PltBushCamelliaPink'  , 'ピンクツバキのかぶ'),
+	('PltHolly'             , 'ヒイラギのかぶ'),
+	('EggGround'            , 'じめんのたまご'),
+	('EggRock'              , 'いわのたまご'),
+	('EggLeaf'              , 'はっぱのたまご'),
+	('EggForest'            , 'もりのたまご'),
+	('EggSky'               , 'そらとぶたまご'),
+	('EggFish'              , 'サカナのたまご'),
+	('MessageBottleEgg'     , 'たまごのメッセージボトル'),
+	('Love'                 , 'あいのけっしょう'),
+	('Pearl'                , 'しんじゅ'),
+	('PirateQuest'          , 'むせんき'),
 )
 
 enum_5fe6f47ed555_cd0b35a4b9fb = (
@@ -2670,6 +2802,21 @@ enum_6bc751394207_9a22cc494738 = (
 	('IsDemo'                , 'デモ状態'),
 )
 
+enum_6d22f468bc18_bb56dd7d751d = (
+	('None'       , '0'),
+	('Brazil'     , '6'),
+	('Japan'      , '10'),
+	('France'     , '25'),
+	('Spain'      , '26'),
+	('Italy'      , '28'),
+	('Germany'    , '29'),
+	('Europe'     , '33'),
+	('EachCountry', '37'),
+	('World'      , '38'),
+	('Northern'   , '39'),
+	('Southern'   , '40'),
+)
+
 enum_6f6d6ff1098e_dbf69e6d0415 = (
 	('None'     , 'なし'),
 	('MakeFall' , '崖 -> 滝'),
@@ -2755,6 +2902,7 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('ShopVarietyShovel'        , '店_店売り：スコップ'),
 	('ShopVarietyWatering'      , '店_店売り：ジョウロ'),
 	('ShopVarietySlingShot'     , '店_店売り：パチンコ'),
+	('ShopVarietyManieSuit'     , '店_店売り：水着'),
 	('Shop_EnableShovel'        , '店_スコップ解禁'),
 	('Shop_EnableAxe'           , '店_オノ解禁'),
 	('ShopRecipeBook2'          , '店_レシピブック2'),
@@ -2788,6 +2936,9 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('LaurentWallFloor'         , 'ローラン壁床'),
 	('ShoesBagShop'             , 'シャンク'),
 	('HgcQuestReward'           , 'ことの報酬'),
+	('Gardening'                , '園芸店'),
+	('InariMarket'              , 'いなりマーケット'),
+	('InariMarketFake'          , 'いなりマーケット_贋作'),
 	('TkkGood'                  , 'とたけけ_ゴキゲン！'),
 	('TkkBad'                   , 'とたけけ_フキゲン'),
 	('TkkRelax'                 , 'とたけけ_まったり'),
@@ -2810,11 +2961,13 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('JohnnyQuest'              , 'ジョニークエスト'),
 	('JohnnyQuestDust'          , 'ジョニークエストごみ'),
 	('JohnnyQuestReward'        , 'ジョニークエスト報酬'),
+	('PirateQuestReward'        , '海賊クエスト報酬'),
 	('TournamentFishing'        , 'つり大会'),
 	('TournamentInsect'         , 'ムシとり大会'),
 	('CountDown'                , 'カウントダウン'),
 	('BeyDailyFishModel'        , 'ジャスティン(来訪)'),
 	('ChyDailyInsectModel'      , 'レオン(来訪)'),
+	('SeoReward'                , 'ラコスケ報酬'),
 	('RecycleBox'               , 'リサイクルBOX'),
 	('ShopSeed_Chrysanthemum'   , '販売種_菊'),
 	('ShopSeed_Lily'            , '販売種_ユリ'),
@@ -2852,8 +3005,16 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('DIYCherryBrossom'         , '<DIY>桜の花びら'),
 	('DIYSnowCrystal'           , '<DIY>雪の結晶'),
 	('DIYEasterEgg'             , '<DIY>イースターのたまご'),
+	('DIYPearl'                 , '<DIY>しんじゅ'),
+	('MotherDay'                , '<リージョン>母の日'),
+	('WoldChildDay'             , '<リージョン>ワールドチャイルド'),
+	('FatherDay'                , '<リージョン>父の日'),
+	('SummerSolstice'           , '<リージョン>夏至祭'),
+	('StarFestival'             , '<リージョン>七夕'),
+	('WinterSolstice_Southern'  , '<リージョン>冬至祭（６月南半球）'),
 	('DeliveryPocketCamp'       , '<永続配信>ポケ森コラボ'),
 	('Easter'                   , 'イースター'),
+	('JuneBride'                , 'ジューンブライド'),
 	('FutureItem'               , '■アップデート向け■'),
 	('NotAvailable'             , '◆入手不可◆'),
 )
@@ -2889,7 +3050,17 @@ enum_7a6babece06f_675c7f6d8dcb = (
 	('DisableOnlyLowerBody'     , '下半身再生不可'),
 	('EnableOnlyLowerBody_Sit'  , '下半身再生可(座り系)'),
 	('EnableOnlyLowerBody_Bed'  , '下半身再生可(寝る系)'),
+	('EnableOnlyLowerBody_Swim' , '下半身再生可(泳ぎ系)'),
 	('EnableOnlyLowerBody_Stand', '下半身再生可(立ち系)'),
+)
+
+enum_7e3c45b5eddf_18ce80c1336a = (
+	('None'                   , 'なし'),
+	('EarthDayFlowerCrown'    , 'アースデー：はなかんむり'),
+	('EarthDayFlowerWreath'   , 'アースデー：はなのリース'),
+	('EarthDayFlowerFurniture', 'アースデー：はなの家具'),
+	('EarthDayFlowerTool'     , 'アースデー：はなの道具'),
+	('EarthDayFlower'         , 'アースデー：はな'),
 )
 
 enum_7f4abdaa06e5_875003339aa7 = (
@@ -2919,6 +3090,7 @@ enum_80fe2e01edeb_a0944789ee2d = (
 	('RedPinkFlower'        , '赤・桃系の花'),
 	('BluePurpleBlackFlower', '青・紫・黒系の花'),
 	('YellowFlower'         , '黄色系の花'),
+	('Bush'                 , '低木'),
 	('MatureTreeOak'        , '広葉樹（成木）'),
 	('MatureTreeCedar'      , '針葉樹（成木）'),
 	('MatureTreePalm'       , 'ヤシの木（成木）'),
@@ -2970,6 +3142,9 @@ enum_870fe161ccb7_b6b6458365a4 = (
 	('Mother'       , 'はは'),
 	('Christmas'    , 'クリスマス'),
 	('Easter'       , 'イースター'),
+	('Wedding'      , 'ウェディング'),
+	('Pirate'       , 'かいぞく'),
+	('Mermaid'      , 'マーメイド'),
 )
 
 enum_872b31abf9f9_cc7475a100e8 = (
@@ -3037,6 +3212,14 @@ enum_876f2a44aa3e_ea533d18da76 = (
 	('EasterFish'             , 'イースター：ひらめき：サカナ'),
 	('EasterCapHat'           , 'イースター：ひらめき：からコンプ'),
 	('EasterTops'             , 'イースター：ひらめき：ふくコンプ'),
+	('Efitem'                 , '＜Efアイテム直接指定＞'),
+	('Seo01'                  , '＜ラコスケ（マーメイド）＞'),
+)
+
+enum_8b856bc35b2c_59489a51cf1a = (
+	('Stop'  , '静止'),
+	('Flick' , 'ゆらゆら'),
+	('GoStop', '飛び飛び'),
 )
 
 enum_8bcffcdc34f9_75d5da8d5621 = (
@@ -3073,6 +3256,14 @@ enum_917e0a06d70e_917e0a06d70e = (
 	('ON' , 'ON'),
 )
 
+enum_92fb5e5480cc_92fb5e5480cc = (
+	('SS', 'SS'),
+	('S' , 'S'),
+	('M' , 'M'),
+	('L' , 'L'),
+	('LL', 'LL'),
+)
+
 enum_93cb28c3569f_1cf1287084ce = (
 	('NoSelect'           , '指定無し'),
 	('SelectRecipeSeason' , 'レシピ用季節'),
@@ -3087,6 +3278,7 @@ enum_9601b1ddc20d_b837359c7300 = (
 
 enum_960b44c579bc_90f80471d9f2 = (
 	('Normal', '通常'),
+	('MayDay', 'メーデー'),
 )
 
 enum_9cef5ff8f2fc_3c4e63ce8503 = (
@@ -3101,6 +3293,11 @@ enum_a099ed9ed7e6_1fc5597471f3 = (
 	('MailBoxTypeC', 'ポスト：タイプC'),
 	('MailBoxTypeD', 'ポスト：タイプD'),
 	('MailBoxTypeE', 'ポスト：タイプE'),
+)
+
+enum_a1951c2696f6_44fbfe232c2e = (
+	('Aquatic', '生き物'),
+	('Weed'   , '海藻'),
 )
 
 enum_a28161dd393f_a28161dd393f = (
@@ -3150,6 +3347,11 @@ enum_a3f2105dc205_cf3454689058 = (
 	('Shell'        , 'かいがら'),
 	('IronWood'     , 'アイアンウッド'),
 	('Easter'       , 'イースター'),
+	('Mother'       , 'おかん'),
+	('Space'        , '宇宙'),
+	('JuneBride'    , 'ジューンブライド'),
+	('Mermaid'      , 'マーメイド'),
+	('Sign'         , '星座'),
 )
 
 enum_a55023d0faad_4d2a3ca36fe8 = (
@@ -3314,6 +3516,9 @@ enum_c1ee150f0e21_f567104db912 = (
 enum_c247708f9bb1_67b0834c6103 = (
 	('None'                , '（なし）'),
 	('MileCard'            , 'たぬきマイルカード'),
+	('MarineSuit'          , 'マリンスーツ'),
+	('Pearl'               , 'しんじゅ'),
+	('PirateQuest'         , 'むせんき'),
 	('Leaf'                , '葉っぱ'),
 	('LeafYellow'          , '葉っぱ：黄'),
 	('RoomWall'            , '壁紙'),
@@ -3381,6 +3586,8 @@ enum_c247708f9bb1_67b0834c6103 = (
 	('PltCedar'            , '針葉樹'),
 	('PltPalm'             , 'ヤシの木'),
 	('PltBamboo'           , '竹'),
+	('SeedlingBush'        , '低木の苗'),
+	('PltBush'             , '低木'),
 	('SeedPaperbag'        , '花の種袋'),
 	('Seed'                , '花の種'),
 	('DIYBranch'           , 'D：枝'),
@@ -3478,6 +3685,15 @@ enum_c247708f9bb1_67b0834c6103 = (
 	('EggSky'              , 'そらとぶたまご'),
 	('EggFish'             , 'サカナのたまご'),
 	('MessageBottleEgg'    , 'たまごのメッセージボトル'),
+	('Love'                , 'あいのけっしょう'),
+)
+
+enum_c2aae04b2493_c2aae04b2493 = (
+	('1', '1'),
+	('2', '2'),
+	('3', '3'),
+	('4', '4'),
+	('5', '5'),
 )
 
 enum_c2f1120003e9_c2f1120003e9 = (
@@ -3638,6 +3854,15 @@ enum_d6b51049aa8c_eb2a552f77d1 = (
 	('PlayerTopsTopTshirtsmydesignN'      , 'PlayerTopsTopTshirtsmydesignN'),
 	('PlayerTopsTopOutermydesignL'        , 'PlayerTopsTopOutermydesignL'),
 	('PlayerTopsOnepieceRobeL'            , 'PlayerTopsOnepieceRobeL'),
+	('NpcSpTopsXctTshirtsN'               , 'NpcSpTopsXctTshirtsN'),
+	('NpcSpBottomsFoxApronNS'             , 'NpcSpBottomsFoxApronNS'),
+	('NpcSpTopsAlwOnepieceN'              , 'NpcSpTopsAlwOnepieceN'),
+	('NpcSpTopsAlpOnepieceN'              , 'NpcSpTopsAlpOnepieceN'),
+	('NpcSpTopsAlwOnepieceDressN'         , 'NpcSpTopsAlwOnepieceDressN'),
+	('NpcSpTopsAlpTshirtsL'               , 'NpcSpTopsAlpTshirtsL'),
+	('PlayerTopsMarinesuitNormalL'        , 'PlayerTopsMarinesuitNormalL'),
+	('PlayerTopsMarinesuitNormalN'        , 'PlayerTopsMarinesuitNormalN'),
+	('PlayerTopsMarinesuitNormalH'        , 'PlayerTopsMarinesuitNormalH'),
 	('PlayerTopsTopTshirtsH'              , 'PlayerTopsTopTshirtsH'),
 	('PlayerTopsTopOuterL'                , 'PlayerTopsTopOuterL'),
 	('PlayerTopsTopCoatL'                 , 'PlayerTopsTopCoatL'),
@@ -3705,6 +3930,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('ChairFB'                   , 'イス：前後'),
 	('ChairLeftFB'               , 'イス：前後：左半分'),
 	('ChairCenterF'              , 'イス：前：中央のみ'),
+	('ChairSwitch'               , 'イス：スイッチ'),
 	('ChairFLRTouchSwitch'       , 'イス：SP：接触スイッチ'),
 	('Bed'                       , 'ベッド：通常'),
 	('BedSwitch'                 , 'ベッド：スイッチ'),
@@ -3723,6 +3949,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('ClockPigeon'               , '時計：ハト'),
 	('ClockDigital'              , '時計：デジタル'),
 	('ClockSwitch'               , '時計：スイッチ'),
+	('ClockTrigger'              , '時計：トリガー'),
 	('WorkBench'                 , '作業台'),
 	('LoopAuto'                  , 'ループ'),
 	('LoopSwitch'                , 'ループ：スイッチ'),
@@ -3730,6 +3957,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('LoopTrigger'               , 'ループ：トリガー'),
 	('LoopAutoOnOff'             , 'ループ：オンオフ'),
 	('LoopTriggerOnOff'          , 'ループ：トリガー：オンオフ'),
+	('LoopTriggerWaitEndOnKeep'  , 'ループ終了待ち：トリガー'),
 	('TriggerOnce'               , 'トリガー'),
 	('TriggerOnOff'              , 'トリガー：オンオフ'),
 	('TriggerRestart'            , 'トリガー：上書き'),
@@ -3747,11 +3975,13 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('MailBoxTypeD'              , 'ポスト：タイプD'),
 	('MailBoxTypeE'              , 'ポスト：タイプE'),
 	('TrashBox'                  , 'ゴミ箱'),
+	('Bamboo'                    , 'たなばたのささ'),
 	('SingInsect'                , '鳴くムシ'),
 	('MoveBox'                   , '初期支給プレゼントBOX'),
 	('MyDesignRug'               , 'マイデザインラグ'),
 	('MusicJacket'               , 'ミュージックジャケット'),
 	('Bromide'                   , 'ブロマイド'),
+	('StampRack'                 , 'スタンプ台(国際ミュージアム)'),
 )
 
 enum_daac3d573f2d_daac3d573f2d = (
@@ -3772,6 +4002,7 @@ enum_daac3d573f2d_daac3d573f2d = (
 	('20_Tool'           , '20_Tool'),
 	('30_Insect'         , '30_Insect'),
 	('31_Fish'           , '31_Fish'),
+	('32_DiveFish'       , '32_DiveFish'),
 	('33_Shell'          , '33_Shell'),
 	('34_Fossil'         , '34_Fossil'),
 	('40_Plant'          , '40_Plant'),
@@ -3825,6 +4056,7 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('ShoesSoft'                     , '靴：やわらかい'),
 	('Socks'                         , '靴下'),
 	('Tops'                          , 'トップス'),
+	('Marinesuit'                    , 'マリンスーツ'),
 	('Onepiece'                      , 'ワンピース'),
 	('None'                          , 'なし'),
 	('Bottoms'                       , 'ボトムス'),
@@ -3838,6 +4070,7 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('Net'                           , 'アミ：下位'),
 	('NetMiddleLevel'                , 'アミ：中位'),
 	('NetUpperLevel'                 , 'アミ：上位'),
+	('AxeFragile'                    , 'オノ：壊れかけ'),
 	('Axe'                           , 'オノ：下位'),
 	('AxeMiddleLevel'                , 'オノ：中位'),
 	('AxeUpperLevel'                 , 'オノ：上位'),
@@ -3900,7 +4133,9 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('Doughnut'                      , 'ドーナッツ'),
 	('TkkGuitar'                     , 'とたけけギター'),
 	('Duster'                        , 'はたき'),
+	('Bouquet'                       , 'ブーケ'),
 	('Broom'                         , 'ほうき'),
+	('Scallop'                       , 'ホタテ'),
 	('Book'                          , '本'),
 	('SmallBook'                     , '本(小)'),
 	('Firewood'                      , '薪'),
@@ -4033,6 +4268,7 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('TopsDefault'       , '装備品：トップスデフォルト'),
 	('Tops'              , '装備品：トップス'),
 	('OnePiece'          , '装備品：ワンピース'),
+	('MarineSuit'        , '装備品：マリンスーツ'),
 	('BottomsDefault'    , '装備品：ボトムスデフォルト'),
 	('Bottoms'           , '装備品：ボトムス'),
 	('Socks'             , '装備品：くつした'),
@@ -4066,6 +4302,8 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('Timer'             , 'タイマー'),
 	('TreeSeedling'      , '植物：木の苗'),
 	('Tree'              , '植物：木'),
+	('BushSeedling'      , '植物：低木の苗'),
+	('Bush'              , '植物：低木'),
 	('Vegetable'         , '植物：野菜'),
 	('Weed'              , '植物：雑草'),
 	('FlowerSeed'        , '植物：花の種'),
@@ -4091,6 +4329,7 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('StarPiece'         , '星のかけら'),
 	('Insect'            , '生き物：ムシ'),
 	('Fish'              , '生き物：サカナ'),
+	('DiveFish'          , '生き物：海の幸'),
 	('ShellDrift'        , '漂着貝'),
 	('ShellFish'         , '生き物：潮干狩り貝'),
 	('FishToy'           , 'サカナ模型'),
@@ -4117,10 +4356,12 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('HousingKitRcoQuest', 'ハウジングキット：移住クエスト'),
 	('HousingKitBirdge'  , 'ハウジングキット：橋用'),
 	('Money'             , 'ベル（お金）'),
+	('FireworkM'         , '花火（置き）'),
 	('BdayCupcake'       , 'バースデーカップケーキ'),
 	('YutaroWisp'        , 'ゆうたろうのたましい'),
 	('JohnnyQuest'       , 'ジョニークエスト'),
 	('JohnnyQuestDust'   , 'ジョニークエストごみ'),
+	('PirateQuest'       , '海賊クエスト'),
 	('QuestWrapping'     , 'クエスト配達プレゼントBOX'),
 	('LostQuest'         , 'おとしもの'),
 	('LostQuestDust'     , 'おとしものゴミ'),
@@ -4130,10 +4371,15 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('MilePlaneTicket'   , 'マイル航空券'),
 	('RollanTicket'      , 'ローラン引換券'),
 	('EasterEgg'         , 'イースターのたまご'),
+	('LoveCrystal'       , 'あいのけっしょう'),
 	('Giftbox'           , '初期支給プレゼントBOX'),
 	('PinataStick'       , '装備専用：ピニャータ割り棒'),
 	('NpcOutfit'         , '装備品：NPC専用'),
 	('PlayerDemoOutfit'  , '装備品：プレイヤ演出専用'),
+	('Picture'           , '芸術品：絵画'),
+	('Sculpture'         , '芸術品：彫刻'),
+	('PictureFake'       , '芸術品：絵画贋作'),
+	('SculptureFake'     , '芸術品：彫刻贋作'),
 	('SmartPhone'        , 'スマホ'),
 	('DummyFtr'          , 'ダミー家具'),
 	('SequenceOnly'      , 'シーケンス専用'),
@@ -4181,6 +4427,16 @@ enum_f6bb6e7f3141_66cb3d119f1c = (
 	('IdrMuseumFossil_0', '[かせき]古生代の部屋'),
 	('IdrMuseumFossil_1', '[かせき]中生代の部屋'),
 	('IdrMuseumFossil_2', '[かせき]新生代の部屋'),
+	('IdrMuseumArt_0'   , '芸術品部屋1'),
+	('IdrMuseumArt_1'   , '芸術品部屋2'),
+)
+
+enum_f8068b894699_70f716c481de = (
+	('Wedding', '挙式'),
+	('Banquet', '披露宴'),
+	('Cute'   , 'キュート'),
+	('Chic'   , 'シック'),
+	('Garden' , 'ガーデン'),
 )
 
 enum_f924f1356c8c_64c17a17e85b = (
@@ -4226,6 +4482,19 @@ class CalendarEventCountryParam(Row):
 	UniqueID = U16(0x54706054)
 	Label = String(0x87bf00e8) # string32
 
+class CalendarEventJuneBrideExchange(Row):
+	RequiredNum = U32(0x598463c8)
+	UniqueID = U32(0x612bc6cf)
+	ExchangeItem = U16(0xad1e04ad)
+	DispInteriorMode = U8(0xa0bb7510)
+	JuneBrideProgress = U8(0x7c226372)
+
+class CalendarEventJuneBrideReward(Row):
+	UniqueID = U32(0x612bc6cf)
+	PriorityReward = U16(0x60836eaa)
+	SubordinateReward = U16(0x657550b3)
+	JuneBrideProgress = U8(0x7c226372) # size is 4, could this be an array?
+
 class CalendarEventParam(Row):
 	EventType = Enum(0x70703269, enum_7797cc9a6dbe_5f875c1a6730)
 	FlagLand1 = S32(0xa75689ff)
@@ -4235,6 +4504,7 @@ class CalendarEventParam(Row):
 	UniqueID = U16(0x54706054)
 	Announce = U8(0x32c643e6)
 	BbsDays = U8(0x952cf32e)
+	BcatLevel = U8(0xe5337bd9)
 	BoardDesign = U8(0xceb81aff)
 	Day2000 = U8(0xa45750cc)
 	Day2001 = U8(0x1ceb37a9)
@@ -4377,19 +4647,15 @@ class CalendarEventParam(Row):
 	Output = U8(0x87ff95cc)
 	PreMsgLabelValue = U8(0xb92288a3)
 	ReadyDays = U8(0xba007e4f)
-	RegionAsia = U8(0xfe807868)
-	RegionEu = U8(0x4ac8ebbc)
-	RegionJp = U8(0xff468c5f)
-	RegionUs = U8(0x0f4323e2)
-	TalkFlowName = String(0xc6ddbf67) # string64
+	_46df4305 = U8(0x46df4305)
 	WdayNorth = U8(0x06da20a1)
 	WdaySouth = U8(0xfc6134e3)
-	WeatherPattern = String(0x062ec6cf) # string32
 	WeekNorth = U8(0x4c8935ec)
-	WeekSouth = U8(0xb63221ae) # size is 4, could this be an array?
+	WeekSouth = U8(0xb63221ae) # size is 2, could this be an array?
 
 class CalendarEventRegionParam(Row):
-	RegionEventCountry1 = U32(0x82bfcf29) # possible string size 4
+	RegionEventCountry1 = Enum(0x82bfcf29, enum_6d22f468bc18_bb56dd7d751d)
+	SortID = S32(0x8b3c9137)
 	RegionEventCountry2 = U16(0xaf2602cd)
 	RegionEventCountry3 = U16(0x92462b7d)
 	RegionEventCountry4 = U16(0x2066f76d)
@@ -4599,6 +4865,7 @@ class EventFlagsLifeSupportAchievementParam(Row):
 	Reward6 = U32(0xfc5fe459)
 	WaitFrame = U32(0x5971a42e)
 	UniqueID = U16(0x54706054)
+	_bed25a86 = U8(0xbed25a86)
 	IsSpecial = U8(0x895442dc)
 	Key = String(0x45f320f2) # string64
 	MaxLevel = U8(0x1be772f0)
@@ -4682,7 +4949,7 @@ class EventFlagsPlayerTempParam(Row):
 	DefaultValue = U16(0x797f5754)
 	MaxValue = U16(0x0110b14c)
 	UniqueID = U16(0x54706054)
-	_3dad9135 = U8(0x3dad9135) # possible string size 1
+	_3dad9135 = U8(0x3dad9135)
 	_3c7fb88f = U8(0x3c7fb88f)
 	FlagsFlowAccess = U8(0xfa93f14b)
 	Key = String(0x45f320f2) # string64
@@ -4701,6 +4968,7 @@ class EventPlazaFtrParam(Row):
 	EventFtrSwitch = Enum(0x24726310, enum_917e0a06d70e_917e0a06d70e)
 	ItemNameUniqueID = U16(0xc33a894e)
 	UniqueID = U16(0x54706054)
+	_cb7385a8 = U32(0xcb7385a8)
 
 class EventPlazaGround(Row):
 	UniqueID = U16(0x54706054)
@@ -4709,7 +4977,9 @@ class EventPlazaGround(Row):
 class EventPlazaObjModelParam(Row):
 	DemoDistance = Float(0x158a4c61)
 	_a9c1118b = Enum(0xa9c1118b, enum_44bd12ada204_11a50a2b435c)
+	RoofMaterial = U16(0x83b54e59)
 	UniqueID = U16(0x54706054)
+	_30d3f8f7 = String(0x30d3f8f7) # size 32
 	FlowFileName = String(0x364c173e) # string32
 	NearCulling = U8(0xb418fb3b)
 	ResourceName = String(0xdf881359) # string32
@@ -4725,11 +4995,17 @@ class EventPlazaPlacementParam(Row):
 	OffsetZ = S16(0x3b94564c)
 	UniqueID = U16(0x54706054)
 	CalendarEventKey = String(0x52f0badd) # string32
+	_b8e42602 = U8(0xb8e42602)
+	_30127dfd = U8(0x30127dfd)
 	_e6c63c5c = String(0xe6c63c5c) # size 32
 	_7215b154 = String(0x7215b154) # size 32
 	NpcSpLabel = String(0x5ba37406) # string32
 	PlacementKey = String(0xe2d0ac54) # string32
 	VisitorNpcLabel = String(0x7e322ef0) # string32
+
+class FadeOutDuckingParam(Row):
+	UniqueID = U16(0x54706054)
+	Name = String(0x85cf1615) # string128
 
 class FgFlowerHeredity(Row):
 	Kind = Enum(0x9b7aa0a0, enum_282b3f1c6bd6_e34f70824d5a)
@@ -5007,6 +5283,7 @@ class GmoFootprintParam(Row):
 	Name = String(0x85cf1615) # string128
 
 class HumanAnimParam(Row):
+	_58102055 = U32(0x58102055) # possible string size 4
 	LowerSetting = Enum(0x0b69ec1a, enum_7a6babece06f_675c7f6d8dcb)
 	UISortID = S16(0x2fe593c3)
 	UniqueID = U16(0x54706054)
@@ -5016,11 +5293,13 @@ class HumanAnimParam(Row):
 	_84761fb6 = U8(0x84761fb6)
 	CancelFootprint = U8(0xfc3116b5)
 	Comment = String(0x96ba28fe) # string64
+	_ba199df0 = U8(0xba199df0) # possible string size 1
 	Misc = RawData(0x42ad246a, 3) # size 3
 	MoveAs = U8(0x49803457)
 	ToolAsCommand = String(0x26911c10) # string30
 
 class IndoorIdrParam(Row):
+	ArtObjNum = U16(0x607ccfce)
 	DecorationObjNum = U16(0x91b7e30b)
 	FossilObjNum = U16(0x707e79ff)
 	UniqueID = U16(0x54706054)
@@ -5142,8 +5421,10 @@ class ItemAct(Row):
 	_8b1904b9 = Enum(0x8b1904b9, enum_a099ed9ed7e6_1fc5597471f3)
 	UniqueID = U16(0x54706054)
 	Collision = U8(0x31cb6b0a)
+	DemoType = U8(0xd2a5c5cf)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
+	SwitchableOnWall = U8(0x0e387a24) # size is 4, could this be an array?
 
 class ItemClothGroup(Row):
 	ItemShopSeasonality = Enum(0xe83c30be, enum_5ba0e3fef915_f4a390fc627b)
@@ -5229,7 +5510,7 @@ class ItemKind(Row):
 
 class ItemMailAttachCategoryGroup(Row):
 	UniqueID = U16(0x54706054)
-	_e4361c86 = String(0xe4361c86) # size 540
+	_e4361c86 = String(0xe4361c86) # size 693
 	Label = String(0x3febc642) # string50
 	Name = String(0x036e8ebe) # string64
 
@@ -5305,15 +5586,24 @@ class ItemOutfitCategory(Row):
 	UniqueID = U16(0x54706054)
 	CanHasSit = U8(0x7eb53ebb)
 	_555442aa = U8(0x555442aa)
+	_b645432f = String(0xb645432f) # size 32
 	HandToolAsName = String(0x03b7f760) # string32
 	Label = String(0x87bf00e8) # string32
 	Misc = RawData(0x42ad246a, 2) # size 2
 	Name = String(0x977adfce) # string32
+	_a9f8ee25 = String(0xa9f8ee25) # size 32
 	ToolLeftModelName = String(0x6ce1d85c) # string20
 	ToolRightModelName = String(0x4ec849ec) # string20
 	_f71bffe7 = String(0xf71bffe7) # size 32
 	_1b93daa9 = String(0x1b93daa9) # size 32
 	UseToolLeft = U8(0x42739ab0) # size is 2, could this be an array?
+
+class ItemOutfitHangerInfo(Row):
+	ItemLayout = Enum(0x9dcea17e, enum_478bafec288f_571514e8ca3c)
+	ItemSize = Enum(0xe06fb090, enum_52e1af9ea232_bc050e1554c9)
+	UniqueID = U16(0x54706054)
+	Label = String(0x87bf00e8) # string32
+	ResName = String(0x48ef0398) # string64
 
 class ItemOutfitInfo(Row):
 	Category = Enum(0x90466afd, enum_2c1ecb54c4b5_fa9288c80a2d)
@@ -5327,11 +5617,12 @@ class ItemOutfitInfo(Row):
 	WallScale = Float(0x9f253177)
 	BreakDamage = U16(0x68db76c2)
 	UniqueID = U16(0x54706054)
+	HangerInfo = U8(0x46489ce7)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
 	SpecialELink = U8(0x04ac1bea)
 	SpecialSLink = U8(0xbe782346)
-	Storage = RawData(0xc89fb7af, 2) # size 2
+	Storage = RawData(0xc89fb7af, 2) # size 5
 
 class ItemParam(Row):
 	AudioPreset = Enum(0x2654be7c, enum_ded670ccf8f3_2f430bbb6124)
@@ -5346,6 +5637,7 @@ class ItemParam(Row):
 	Height = Float(0xc187c516)
 	ItemAct = Enum(0xf1246e5f, enum_d7d32a028b49_2a813eb9cd7a)
 	ItemCatalogType = Enum(0xdaf0238c, enum_064edb92c317_a4705285e5f1)
+	ItemDailyCategory = Enum(0x8900b8a0, enum_7e3c45b5eddf_18ce80c1336a)
 	ItemFrom = Enum(0xdb1a2f07, enum_794b88fd5d5e_eaf8e9c36279)
 	ItemGender = Enum(0xf80e9fee, enum_046a2d7d535d_d28a72f9a4ec)
 	ItemHHACategory = Enum(0xf17f8753, enum_79fc030d2ca5_3b8dd86eef4f)
@@ -5404,15 +5696,16 @@ class ItemParam(Row):
 	SlopeTableId = U16(0xbfba247c)
 	UniqueID = U16(0x54706054)
 	WallTableId = U16(0x0f9f6747)
-	AITagBitRankA = RawData(0xe8c448b2, 4) # size 4
-	AITagBitRankB = RawData(0xfa71e75c, 4) # size 4
-	AITagBitRankC = RawData(0x42cd8039, 4) # size 4
-	AITagBitRankS = RawData(0x12d4d7a6, 4) # size 4
+	AITagBitRankA = RawData(0xe8c448b2, 5) # size 5
+	AITagBitRankB = RawData(0xfa71e75c, 5) # size 5
+	AITagBitRankC = RawData(0x42cd8039, 5) # size 5
+	AITagBitRankS = RawData(0x12d4d7a6, 5) # size 5
 	CanNotLookFace = U8(0xfd415a4c)
 	CaptureClosetIcon = U8(0xe4697080)
 	CaptureDiyIcon = U8(0xe24d9b0e)
 	_f179f796 = U8(0xf179f796)
 	CaptureFtrIcon = U8(0xe65df243)
+	CaptureGardeningIcon = U8(0x116f007f)
 	CapturePreset = String(0xfc275e86) # string32
 	DefaultSwitch = U8(0xd862189a)
 	FrontSwitch = U8(0x147e658d)
@@ -5426,9 +5719,10 @@ class ItemParam(Row):
 	NpcDefaultSwitch = U8(0xdeb3f8dc)
 	ResName = String(0x48ef0398) # string64
 	RumbleForEdit = U8(0x86efa036)
+	_b5677509 = U8(0xb5677509)
 	ToiletType = U8(0x0eb7fa40)
 	TouchRumble = U8(0x7404ebb3)
-	ValidEffect = U8(0x49cc96d0) # size is 4, could this be an array?
+	ValidEffect = U8(0x49cc96d0) # size is 2, could this be an array?
 
 class ItemPlayerInitialOutfitBoyAWParam(Row):
 	AcceEye = U16(0x2b57b24a)
@@ -5620,6 +5914,13 @@ class ItemUnitIcon(Row):
 	Name = String(0x036e8ebe) # string64
 	ResName = String(0x48ef0398) # string64
 
+class JuneBrideWallFloor(Row):
+	Theme = Enum(0x23a01e5b, enum_f8068b894699_70f716c481de)
+	FloorItemId = U16(0x4e718582)
+	RugItemId = U16(0xa1249129)
+	UniqueID = U16(0x54706054)
+	WallItemId = U16(0x350e1ef9)
+
 class LocalizeNameConvertParam(Row):
 	UniqueID = U16(0x54706054)
 	BaseName = String(0x50edd045) # string32
@@ -5744,6 +6045,13 @@ class MessageCardSelectPresentSp(Row):
 	_e060d3cd = U16(0xe060d3cd)
 	ItemRemakeType = U8(0xc233727b) # size is 2, could this be an array?
 
+class MuseumArtDonateInfo(Row):
+	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
+	ModelID = U16(0xfdeed09c)
+	UniqueID = U16(0x54706054)
+	WatchItem = U16(0xb76b7d37)
+	CameraParamName = String(0xb16c3035) # string33
+
 class MuseumFossilDonateInfo(Row):
 	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
 	ModelID = U16(0xfdeed09c)
@@ -5788,6 +6096,22 @@ class MuseumNameboardInfo(Row):
 	DonateItemThird = U16(0xb58d7541)
 	UniqueID = U16(0x54706054)
 	ModelResName = String(0xfad4ff78) # string65
+	VisibleOff = U8(0xc1bb7d2d) # size is 3, could this be an array?
+
+class MuseumStampRackInfo(Row):
+	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
+	StampRackPutUnitX = S32(0x98ff7f38)
+	StampRackPutUnitZ = S32(0xe23f2c58)
+	StampRackItemNameA = U16(0xb02f0c17)
+	StampRackItemNameB = U16(0xf78f76c7)
+	StampRackItemNameC = U16(0xcaef5f77)
+	StampRackSetDirection = S16(0xd4f5b3e6)
+	UniqueID = U16(0x54706054)
+	StampRackIdx = U8(0xa90b807e)
+	_0512b63c = String(0x0512b63c) # size 32
+	StampRackNameTextLabel = String(0x4ab9b98a) # string32
+	_96d80132 = String(0x96d80132) # size 32
+	_ed4b6070 = U8(0xed4b6070)
 
 class MuseumWatchPoint(Row):
 	SilhouetteID = U32(0x3e884a6d)
@@ -5834,7 +6158,9 @@ class MysteryTourParam(Row):
 	_88bd09c2 = String(0x88bd09c2) # size 32
 	_4e5cd9f3 = String(0x4e5cd9f3) # size 32
 	_8f2f4bf9 = String(0x8f2f4bf9) # size 32
-	SelectWeight = U8(0xd89a0db0) # size is 2, could this be an array?
+	_0b3d1d54 = String(0x0b3d1d54) # size 32
+	SelectWeight = U8(0xd89a0db0)
+	StatusPattern = U8(0xb1589411)
 
 class NmlNpcParam(Row):
 	_a54f92fd = U32(0xa54f92fd)
@@ -6076,7 +6402,9 @@ class NpcMsgBullfestParam(Row):
 	OT2Index = S16(0x3b13a395)
 	ShoesID = U16(0xf07156d2)
 	SocksID = U16(0xe113ac8d)
+	ToolID = U16(0xebb9a634)
 	TopsID = U16(0xdfb46994)
+	UmbrellaID = U16(0x003c0210)
 	UniqueID = U16(0x54706054)
 	ZK1Index = S16(0x7991b277)
 	ZK2Index = S16(0x92a60974) # size is 4, could this be an array?
@@ -6167,6 +6495,7 @@ class PlayerStateParam(Row):
 	PacketType = Enum(0xf9dcdec7, enum_666520d79fd1_c1f7ed2fb38f)
 	RemoteChase = Enum(0x838b098c, enum_10a6294998ff_537c16dab4e8)
 	ToolState = Enum(0xf299f7fc, enum_71a6eb72125d_4959f0d2a68c)
+	_e50d3218 = U16(0xe50d3218)
 	AcceptAccess = U8(0xa6324d34)
 	_f413acd2 = U8(0xf413acd2)
 	_833e2942 = U8(0x833e2942)
@@ -6177,19 +6506,20 @@ class PlayerStateParam(Row):
 	_5dcf7b24 = U8(0x5dcf7b24)
 	_16e483f0 = U8(0x16e483f0)
 	_aa0070b7 = U8(0xaa0070b7)
-	DemoNetLockState = U8(0xae3add79)
 	DummyMenuDemo = U8(0x1aaaddc1)
 	EnableRodCloth = U8(0x68daf155)
 	EnableStageChange = U8(0xecfe9ddb)
 	ForbidOverwrite = U8(0x35fd6466)
 	_e550abdf = U8(0xe550abdf)
 	HideHUD = U8(0x5681a1c3)
+	InWaterBody = U8(0x066fbe8e)
 	JudgeVisibleOn = U8(0xe1e934d5)
 	_ede0a8ca = U8(0xede0a8ca)
 	_87438100 = U8(0x87438100)
 	NpcLookAction = U8(0xa1b074dd)
 	_5b6d5751 = U8(0x5b6d5751)
 	PoseTrans = U8(0xfbb451bf)
+	PoseTransDive = U8(0x013cbdbd)
 	_65fd6b0d = U8(0x65fd6b0d)
 	_2b6186a0 = U8(0x2b6186a0)
 	_95798f28 = U8(0x95798f28)
@@ -6197,6 +6527,7 @@ class PlayerStateParam(Row):
 	StopAutoSave = U8(0xfce7d916)
 	_a84507aa = U8(0xa84507aa)
 	_c033d95a = U8(0xc033d95a) # possible string size 1
+	ValidDiveRate = U8(0xed32aade)
 	WaitType = U8(0x9067bb0e) # size is 3, could this be an array?
 
 class RadioCM(Row):
@@ -6278,11 +6609,11 @@ class RoomFloorParam(Row):
 	Horizon = U8(0x3543c34a)
 	ItemName = String(0xb8cc232c) # string64
 	ResourceName = String(0x4b9c4229) # string64
-	Reverberation = S8(0x05836619)
-	Rotatable = U8(0x8ed948dd)
+	Rotatable = U8(0x8ed948dd) # size is 2, could this be an array?
 
 class RoomLandingParam(Row):
 	Floorboards = U16(0xab771eae)
+	UISortID = S16(0x2fe593c3)
 	UniqueID = U16(0x54706054)
 	LandingName = String(0x05038516) # string64
 	ResourceName = String(0x4b9c4229) # string64
@@ -6301,8 +6632,7 @@ class RoomWallParam(Row):
 	WindowUniqueID = U16(0xe3a28616)
 	ItemName = String(0xb8cc232c) # string64
 	ResourceName = String(0x4b9c4229) # string64
-	Reverberation = S8(0x05836619)
-	TextureWindow = U8(0x318ebbf2)
+	TextureWindow = U8(0x318ebbf2) # size is 2, could this be an array?
 
 class RoomWindowParam(Row):
 	RoomWindowModelType = Enum(0xc90ab4c4, enum_f18e5565c112_ab0466cfcd5a)
@@ -6310,6 +6640,68 @@ class RoomWindowParam(Row):
 	UniqueID = U16(0x54706054)
 	ResourceName = String(0x4b9c4229) # string64
 	WindowName = String(0x9b0b7ce4) # string64
+
+class SceneChangeFadeOutDuckingParam(Row):
+	UniqueID = U16(0x54706054)
+	Name = String(0x85cf1615) # string128
+
+class SeafoodAppearParam(Row):
+	AppearArea = Enum(0x64330cb0, enum_3bcfd82ce180_8ccc4bd385f8)
+	ItemID = U16(0x20cb67bc)
+	ProbAprDaytime = U16(0x9c4a43c0)
+	ProbAprMorningAndEvening = U16(0x0dbbebb5)
+	ProbAprNight = U16(0x1d790df7)
+	ProbAugDaytime = U16(0x15de6a3f)
+	ProbAugMorningAndEvening = U16(0x74ea1d73)
+	ProbAugNight = U16(0xada9eb19)
+	ProbDecDaytime = U16(0x267c99f7)
+	ProbDecMorningAndEvening = U16(0xc11af347)
+	ProbDecNight = U16(0x9217f8b8)
+	ProbFebDaytime = U16(0x5cb71135)
+	ProbFebMorningAndEvening = U16(0x0f095b88)
+	ProbFebNight = U16(0x91ee0d19)
+	ProbJanDaytime = U16(0xb3f1a70f)
+	ProbJanMorningAndEvening = U16(0x51bcedfa)
+	ProbJanNight = U16(0x3e01d394)
+	ProbJulDaytime = U16(0x2b74f5dc)
+	ProbJulMorningAndEvening = U16(0x7ec203a5)
+	ProbJulNight = U16(0x24dbb4e0)
+	ProbJunDaytime = U16(0xc74f6b43)
+	ProbJunMorningAndEvening = U16(0x5092ca25)
+	ProbJunNight = U16(0x202e64dd)
+	ProbMarDaytime = U16(0xdf2eadb2)
+	ProbMarMorningAndEvening = U16(0x2cb125cc)
+	ProbMarNight = U16(0x770b5b7d)
+	ProbMayDaytime = U16(0xaebc09bc)
+	ProbMayMorningAndEvening = U16(0xac8aae8c)
+	ProbMayNight = U16(0x8feba08a)
+	ProbNovDaytime = U16(0x5aafbfa6)
+	ProbNovMorningAndEvening = U16(0xc57d2eb8)
+	ProbNovNight = U16(0x5b0802f1)
+	ProbOctDaytime = U16(0xb12179b4)
+	ProbOctMorningAndEvening = U16(0x6aed60aa)
+	ProbOctNight = U16(0xce420c64)
+	ProbSepDaytime = U16(0x5e853057)
+	ProbSepMorningAndEvening = U16(0x1fe65c0c)
+	ProbSepNight = U16(0x260ec620) # size is 4, could this be an array?
+
+class SeafoodShadowInfoParam(Row):
+	ModelScale = Float(0x093dfe4f)
+	UniqueID = U16(0x54706054)
+	ModelResName = String(0xfad4ff78) # string65
+
+class SeafoodStatusParam(Row):
+	ActionType = Enum(0xfbace208, enum_8b856bc35b2c_59489a51cf1a)
+	CaptureCategory = Enum(0xde78df0f, enum_a1951c2696f6_44fbfe232c2e)
+	CaptureLevel = Enum(0xafeb1bf1, enum_c2aae04b2493_c2aae04b2493)
+	ShadowType = Enum(0xac0ebe24, enum_92fb5e5480cc_92fb5e5480cc)
+	ItemID = U16(0x20cb67bc)
+	OpenRecordNum = U16(0xd42df0b4)
+	UniqueID = U16(0x54706054)
+	DebugName = String(0xab51a3cf) # string32
+	Label = String(0x87bf00e8) # string32
+	ResName = String(0x48ef0398) # string64
+	ResNameMuseum = String(0x1c8856db) # string32
 
 class SeasonCalendar(Row):
 	Bush_N = U8(0x4875e383)
@@ -6339,10 +6731,6 @@ class ShopItemRouteFlags(Row):
 	ShopType = Enum(0xd3d4284e, enum_05496a929e72_1987c9f2e67f)
 	AttrCollectBit = U8(0x74b2eb78)
 	ItemFrom = String(0x46e66708) # string32
-
-class SoundAmbientPlacementParam(Row):
-	UniqueID = U16(0x54706054)
-	Name = String(0x85cf1615) # string128
 
 class SoundAttributeForGround(Row):
 	RefSoundAttributeID = U16(0x5e7a33b5)
@@ -6484,6 +6872,7 @@ class StructureHouseRoofParam(Row):
 
 class StructureHouseShapeParam(Row):
 	AppearanceLevel = Enum(0x10dbd8bb, enum_719f8c5ace1e_9dc2d1c92509)
+	CustomizeSortID = U16(0x37d4e515)
 	DefaultDoorUniqueID = U16(0xc86e60d5)
 	DefaultRoofUniqueID = U16(0x0966fbe3)
 	DefaultWallUniqueID = U16(0xd8727d7d)
@@ -6626,6 +7015,8 @@ lookup = {
 	'BgmPropertyControlParam.bcsv': BgmPropertyControlParam,
 	'BgmPropertyParam.bcsv': BgmPropertyParam,
 	'CalendarEventCountryParam.bcsv': CalendarEventCountryParam,
+	'CalendarEventJuneBrideExchange.bcsv': CalendarEventJuneBrideExchange,
+	'CalendarEventJuneBrideReward.bcsv': CalendarEventJuneBrideReward,
 	'CalendarEventParam.bcsv': CalendarEventParam,
 	'CalendarEventRegionParam.bcsv': CalendarEventRegionParam,
 	'CharaMakeCheekTypeParam.bcsv': CharaMakeCheekTypeParam,
@@ -6658,6 +7049,7 @@ lookup = {
 	'EventPlazaGround.bcsv': EventPlazaGround,
 	'EventPlazaObjModelParam.bcsv': EventPlazaObjModelParam,
 	'EventPlazaPlacementParam.bcsv': EventPlazaPlacementParam,
+	'FadeOutDuckingParam.bcsv': FadeOutDuckingParam,
 	'FgFlowerHeredity.bcsv': FgFlowerHeredity,
 	'FgMainParam.bcsv': FgMainParam,
 	'FieldCreateParam.bcsv': FieldCreateParam,
@@ -6693,6 +7085,7 @@ lookup = {
 	'ItemNpcRoomReplaceCategory.bcsv': ItemNpcRoomReplaceCategory,
 	'ItemNpcTopsForm.bcsv': ItemNpcTopsForm,
 	'ItemOutfitCategory.bcsv': ItemOutfitCategory,
+	'ItemOutfitHangerInfo.bcsv': ItemOutfitHangerInfo,
 	'ItemOutfitInfo.bcsv': ItemOutfitInfo,
 	'ItemParam.bcsv': ItemParam,
 	'ItemPlayerInitialOutfitBoyAWParam.bcsv': ItemPlayerInitialOutfitBoyAWParam,
@@ -6709,6 +7102,7 @@ lookup = {
 	'ItemStrSort.bcsv': ItemStrSort,
 	'ItemUIContextMenu.bcsv': ItemUIContextMenu,
 	'ItemUnitIcon.bcsv': ItemUnitIcon,
+	'JuneBrideWallFloor.bcsv': JuneBrideWallFloor,
 	'LocalizeNameConvertParam.bcsv': LocalizeNameConvertParam,
 	'MannequinCoodinate.bcsv': MannequinCoodinate,
 	'MaterialType.bcsv': MaterialType,
@@ -6719,11 +7113,13 @@ lookup = {
 	'MessageCardSelectDesignSp.bcsv': MessageCardSelectDesignSp,
 	'MessageCardSelectPresent.bcsv': MessageCardSelectPresent,
 	'MessageCardSelectPresentSp.bcsv': MessageCardSelectPresentSp,
+	'MuseumArtDonateInfo.bcsv': MuseumArtDonateInfo,
 	'MuseumFossilDonateInfo.bcsv': MuseumFossilDonateInfo,
 	'MuseumNPCLayoutInfo.bcsv': MuseumNPCLayoutInfo,
 	'MuseumNPCSilhouette.bcsv': MuseumNPCSilhouette,
 	'MuseumNPCSpotTalk.bcsv': MuseumNPCSpotTalk,
 	'MuseumNameboardInfo.bcsv': MuseumNameboardInfo,
+	'MuseumStampRackInfo.bcsv': MuseumStampRackInfo,
 	'MuseumWatchPoint.bcsv': MuseumWatchPoint,
 	'MysteryTourFieldParam.bcsv': MysteryTourFieldParam,
 	'MysteryTourFishParam.bcsv': MysteryTourFishParam,
@@ -6759,9 +7155,12 @@ lookup = {
 	'RoomLandingParam.bcsv': RoomLandingParam,
 	'RoomWallParam.bcsv': RoomWallParam,
 	'RoomWindowParam.bcsv': RoomWindowParam,
+	'SceneChangeFadeOutDuckingParam.bcsv': SceneChangeFadeOutDuckingParam,
+	'SeafoodAppearParam.bcsv': SeafoodAppearParam,
+	'SeafoodShadowInfoParam.bcsv': SeafoodShadowInfoParam,
+	'SeafoodStatusParam.bcsv': SeafoodStatusParam,
 	'SeasonCalendar.bcsv': SeasonCalendar,
 	'ShopItemRouteFlags.bcsv': ShopItemRouteFlags,
-	'SoundAmbientPlacementParam.bcsv': SoundAmbientPlacementParam,
 	'SoundAttributeForGround.bcsv': SoundAttributeForGround,
 	'SoundAttributeForPlacement.bcsv': SoundAttributeForPlacement,
 	'SoundAudioMusic.bcsv': SoundAudioMusic,
