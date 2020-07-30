@@ -869,7 +869,7 @@
                 },
                 {
                     "id": 3444743824,
-                    "name": "_cd529e90",
+                    "name": "SendGiftCountTotal",
                     "type": 271399315,
                     "size": 4,
                     "offset": 92,
@@ -905,7 +905,7 @@
                 },
                 {
                     "id": 664937048,
-                    "name": "_27a22258",
+                    "name": "SendGiftCountToday",
                     "type": 1700537250,
                     "size": 1,
                     "offset": 109,
@@ -2712,7 +2712,7 @@
                 },
                 {
                     "id": 854972334,
-                    "name": "_32f5d7ae",
+                    "name": "Marinesuit",
                     "type": 1106985317,
                     "size": 8,
                     "offset": 4496,

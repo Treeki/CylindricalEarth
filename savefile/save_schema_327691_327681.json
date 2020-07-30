@@ -1020,7 +1020,7 @@
                 },
                 {
                     "id": 3444743824,
-                    "name": "_cd529e90",
+                    "name": "SendGiftCountTotal",
                     "type": 271399315,
                     "size": 4,
                     "offset": 92,
@@ -1056,7 +1056,7 @@
                 },
                 {
                     "id": 664937048,
-                    "name": "_27a22258",
+                    "name": "SendGiftCountToday",
                     "type": 1700537250,
                     "size": 1,
                     "offset": 109,
@@ -3004,7 +3004,7 @@
                 },
                 {
                     "id": 854972334,
-                    "name": "_32f5d7ae",
+                    "name": "Marinesuit",
                     "type": 1106985317,
                     "size": 8,
                     "offset": 4496,
@@ -4366,7 +4366,7 @@
             "fields": [
                 {
                     "id": 288602426,
-                    "name": "_1133b93a",
+                    "name": "HomeAddress",
                     "type": 3322328799,
                     "size": 48,
                     "offset": 0,
@@ -4427,7 +4427,7 @@
             ]
         },
         "3322328799": {
-            "name": "s_c606b6df",
+            "name": "::Game::SaveNetHomeAddress",
             "size": 48,
             "alignment": 8,
             "fields": [
@@ -4445,7 +4445,7 @@
                 },
                 {
                     "id": 1115650652,
-                    "name": "_427f7a5c",
+                    "name": "PolId",
                     "type": 2938107850,
                     "size": 8,
                     "offset": 8,
@@ -4457,7 +4457,7 @@
                 },
                 {
                     "id": 620532440,
-                    "name": "_24fc92d8",
+                    "name": "IslandId",
                     "type": 3900059793,
                     "size": 28,
                     "offset": 16,
@@ -6025,7 +6025,7 @@
                 },
                 {
                     "id": 1882787897,
-                    "name": "_70391039",
+                    "name": "GulBRewardItem",
                     "type": 1106985317,
                     "size": 8,
                     "offset": 132,
@@ -7044,7 +7044,7 @@
                 },
                 {
                     "id": 2244731716,
-                    "name": "_85cbe344",
+                    "name": "BackupService",
                     "type": 3674210176,
                     "size": 16,
                     "offset": 6334936,
@@ -9192,7 +9192,7 @@
                 },
                 {
                     "id": 328416030,
-                    "name": "_13933b1e",
+                    "name": "MainUnitIndexX",
                     "type": 3680203393,
                     "size": 2,
                     "offset": 16,
@@ -9204,7 +9204,7 @@
                 },
                 {
                     "id": 2567068983,
-                    "name": "_99025d37",
+                    "name": "MainUnitIndexZ",
                     "type": 3680203393,
                     "size": 2,
                     "offset": 18,
@@ -10408,7 +10408,7 @@
                 },
                 {
                     "id": 548700112,
-                    "name": "_20b47fd0",
+                    "name": "MyDesignFireworks",
                     "type": 2864560021,
                     "size": 20,
                     "offset": 5216552,
@@ -11340,7 +11340,7 @@
                 },
                 {
                     "id": 1855753095,
-                    "name": "_6e9c8b87",
+                    "name": "EventEasterBuryPlace",
                     "type": 3680203393,
                     "size": 2,
                     "offset": 572,
@@ -11352,7 +11352,7 @@
                 },
                 {
                     "id": 3571441849,
-                    "name": "_d4dfe0b9",
+                    "name": "EventEasterTreePlace",
                     "type": 3680203393,
                     "size": 2,
                     "offset": 828,
@@ -11699,13 +11699,13 @@
             ]
         },
         "2864560021": {
-            "name": "s_aabdb795",
+            "name": "::Game::SaveMyDesignFireworks",
             "size": 20,
             "alignment": 2,
             "fields": [
                 {
                     "id": 327992672,
-                    "name": "_138cc560",
+                    "name": "MyDesignIds",
                     "type": 175868289,
                     "size": 2,
                     "offset": 0,
@@ -12837,7 +12837,7 @@
             ]
         },
         "3674210176": {
-            "name": "s_daffff80",
+            "name": "::Game::SaveBackupService",
             "size": 16,
             "alignment": 8,
             "fields": [
@@ -12855,7 +12855,7 @@
                 },
                 {
                     "id": 4134693459,
-                    "name": "_f6726a53",
+                    "name": "BackupAgent",
                     "type": 2391922858,
                     "size": 1,
                     "offset": 8,
@@ -12934,7 +12934,7 @@
                 },
                 {
                     "id": 788037194,
-                    "name": "_2ef87e4a",
+                    "name": "FirstDreamTime",
                     "type": 3168277518,
                     "size": 8,
                     "offset": 72,

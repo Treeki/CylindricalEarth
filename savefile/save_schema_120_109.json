@@ -917,7 +917,7 @@
                 },
                 {
                     "id": 3444743824,
-                    "name": "_cd529e90",
+                    "name": "SendGiftCountTotal",
                     "type": 271399315,
                     "size": 4,
                     "offset": 92,
@@ -953,7 +953,7 @@
                 },
                 {
                     "id": 664937048,
-                    "name": "_27a22258",
+                    "name": "SendGiftCountToday",
                     "type": 1700537250,
                     "size": 1,
                     "offset": 109,
@@ -2810,7 +2810,7 @@
                 },
                 {
                     "id": 854972334,
-                    "name": "_32f5d7ae",
+                    "name": "Marinesuit",
                     "type": 1106985317,
                     "size": 8,
                     "offset": 4496,
@@ -8644,7 +8644,7 @@
                 },
                 {
                     "id": 328416030,
-                    "name": "_13933b1e",
+                    "name": "MainUnitIndexX",
                     "type": 3680203393,
                     "size": 2,
                     "offset": 16,
@@ -8656,7 +8656,7 @@
                 },
                 {
                     "id": 2567068983,
-                    "name": "_99025d37",
+                    "name": "MainUnitIndexZ",
                     "type": 3680203393,
                     "size": 2,
                     "offset": 18,
@@ -10768,7 +10768,7 @@
                 },
                 {
                     "id": 1855753095,
-                    "name": "_6e9c8b87",
+                    "name": "EventEasterBuryPlace",
                     "type": 3680203393,
                     "size": 2,
                     "offset": 572,
@@ -10780,7 +10780,7 @@
                 },
                 {
                     "id": 3571441849,
-                    "name": "_d4dfe0b9",
+                    "name": "EventEasterTreePlace",
                     "type": 3680203393,
                     "size": 2,
                     "offset": 828,

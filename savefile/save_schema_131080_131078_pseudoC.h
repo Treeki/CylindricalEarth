@@ -104,10 +104,10 @@ struct GSaveFriendData {                           /* 0x70 big, align 8 */
   GSaveTime                         UpdateTime;                             // @0x48 size 0x8, align 2
   GSaveTime                         SendTime;                               // @0x50 size 0x8, align 2
   u32                               SendMailCountTotal;                     // @0x58 size 0x4, align 4
-  u32                               _cd529e90;                              // @0x5c size 0x4, align 4
+  u32                               SendGiftCountTotal;                     // @0x5c size 0x4, align 4
   Game::CharaMakeSetting            CharaMakeSetting;                       // @0x60 size 0xc, align 2
   u8                                SendMailCountToday;                     // @0x6c size 0x1, align 1
-  u8                                _27a22258;                              // @0x6d size 0x1, align 1
+  u8                                SendGiftCountToday;                     // @0x6d size 0x1, align 1
   _44c6787c                         Status;                                 // @0x6e size 0x1, align 1
 };
 struct GSaveWordCoordinateName {                   /* 0x60 big, align 2 */
@@ -330,7 +330,7 @@ struct GSaveItemCollectBit {                       /* 0x754 big, align 4 */
 };
 struct GSavePlayerOutfit {                         /* 0x1198 big, align 8 */
   GSaveCoordinateOutfit             CoordinateOutfit;                       // @0x0 size 0x1190, align 8
-  GSaveItemName                     _32f5d7ae;                              // @0x1190 size 0x8, align 4
+  GSaveItemName                     Marinesuit;                             // @0x1190 size 0x8, align 4
 };
 struct GSaveAmiibo {                               /* 0xa0 big, align 4 */
   GSaveSpecialNpcBitFlag            _e51f22f7;                              // @0x0 size 0x10, align 4
@@ -1036,8 +1036,8 @@ struct s_443ce6bc {                                /* 0x20 big, align 4 */
   s8                                _749b78c2;                              // @0x2 size 0x1, align 1
   _44c6787c                         IsShuffle;                              // @0x3 size 0x1, align 1
   V3f                               PlayingPosition;                        // @0x4 size 0xc, align 4
-  s16                               _13933b1e;                              // @0x10 size 0x2, align 2
-  s16                               _99025d37;                              // @0x12 size 0x2, align 2
+  s16                               MainUnitIndexX;                         // @0x10 size 0x2, align 2
+  s16                               MainUnitIndexZ;                         // @0x12 size 0x2, align 2
   s16                               MainUnitLayer;                          // @0x14 size 0x2, align 2
   s8                                AudioType;                              // @0x16 size 0x1, align 1
   s8                                VolumeType;                             // @0x17 size 0x1, align 1
@@ -1278,8 +1278,8 @@ struct GSaveFgOther {                              /* 0x3fc big, align 4 */
   GSaveGrowUpParam                  GrowUpData;                             // @0x230 size 0x4, align 4
   _54ed4ece                         BuildCelebrationHHA;                    // @0x234 size 0x4, align 4
   u32                               _f380f477;                              // @0x238 size 0x4, align 4
-  s16                               _6e9c8b87[128];                         // @0x23c size 0x2, align 2
-  s16                               _d4dfe0b9[96];                          // @0x33c size 0x2, align 2
+  s16                               EventEasterBuryPlace[128];              // @0x23c size 0x2, align 2
+  s16                               EventEasterTreePlace[96];               // @0x33c size 0x2, align 2
 };
 struct s_99f29105 {                                /* 0x4 big, align 4 */
   s32                               Enum;                                   // @0x0 size 0x4, align 4

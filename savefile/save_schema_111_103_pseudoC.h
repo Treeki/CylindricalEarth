@@ -90,10 +90,10 @@ struct GSaveFriendData {                           /* 0x70 big, align 8 */
   GSaveTime                         UpdateTime;                             // @0x48 size 0x8, align 2
   GSaveTime                         SendTime;                               // @0x50 size 0x8, align 2
   u32                               SendMailCountTotal;                     // @0x58 size 0x4, align 4
-  u32                               _cd529e90;                              // @0x5c size 0x4, align 4
+  u32                               SendGiftCountTotal;                     // @0x5c size 0x4, align 4
   Game::CharaMakeSetting            CharaMakeSetting;                       // @0x60 size 0xc, align 2
   u8                                SendMailCountToday;                     // @0x6c size 0x1, align 1
-  u8                                _27a22258;                              // @0x6d size 0x1, align 1
+  u8                                SendGiftCountToday;                     // @0x6d size 0x1, align 1
   _44c6787c                         Status;                                 // @0x6e size 0x1, align 1
 };
 struct GSaveWordCoordinateName {                   /* 0x60 big, align 2 */
@@ -303,7 +303,7 @@ struct GSaveItemCollectBit {                       /* 0x754 big, align 4 */
 };
 struct GSavePlayerOutfit {                         /* 0x1198 big, align 8 */
   GSaveCoordinateOutfit             CoordinateOutfit;                       // @0x0 size 0x1190, align 8
-  GSaveItemName                     _32f5d7ae;                              // @0x1190 size 0x8, align 4
+  GSaveItemName                     Marinesuit;                             // @0x1190 size 0x8, align 4
 };
 struct GSaveAmiibo {                               /* 0xa0 big, align 4 */
   GSaveSpecialNpcBitFlag            _e51f22f7;                              // @0x0 size 0x10, align 4
