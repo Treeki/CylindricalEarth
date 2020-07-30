@@ -5582,11 +5582,11 @@ class ItemOutfitCategory(Row):
 	Label = String(0x87bf00e8) # string32
 	Misc = RawData(0x42ad246a, 2) # size 2
 	Name = String(0x977adfce) # string32
-	_a9f8ee25 = String(0xa9f8ee25) # size 32
+	ToolEnterAsName = String(0xa9f8ee25) # string32
 	ToolLeftModelName = String(0x6ce1d85c) # string20
 	ToolRightModelName = String(0x4ec849ec) # string20
-	_f71bffe7 = String(0xf71bffe7) # size 32
-	_1b93daa9 = String(0x1b93daa9) # size 32
+	ToolSetupAsName = String(0xf71bffe7) # string32
+	ToolSetupPutawayAsName = String(0x1b93daa9) # string32
 	UseToolLeft = U8(0x42739ab0) # size is 2, could this be an array?
 
 class ItemOutfitHangerInfo(Row):

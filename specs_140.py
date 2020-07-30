@@ -4647,7 +4647,7 @@ class CalendarEventParam(Row):
 	Output = U8(0x87ff95cc)
 	PreMsgLabelValue = U8(0xb92288a3)
 	ReadyDays = U8(0xba007e4f)
-	_46df4305 = U8(0x46df4305)
+	RemoveEventObj = U8(0x46df4305)
 	WdayNorth = U8(0x06da20a1)
 	WdaySouth = U8(0xfc6134e3)
 	WeekNorth = U8(0x4c8935ec)
@@ -4979,7 +4979,7 @@ class EventPlazaObjModelParam(Row):
 	_a9c1118b = Enum(0xa9c1118b, enum_44bd12ada204_11a50a2b435c)
 	RoofMaterial = U16(0x83b54e59)
 	UniqueID = U16(0x54706054)
-	_30d3f8f7 = String(0x30d3f8f7) # size 32
+	FlowEntryName = String(0x30d3f8f7) # string32
 	FlowFileName = String(0x364c173e) # string32
 	NearCulling = U8(0xb418fb3b)
 	ResourceName = String(0xdf881359) # string32
@@ -5293,7 +5293,7 @@ class HumanAnimParam(Row):
 	_84761fb6 = U8(0x84761fb6)
 	CancelFootprint = U8(0xfc3116b5)
 	Comment = String(0x96ba28fe) # string64
-	_ba199df0 = U8(0xba199df0) # possible string size 1
+	DisableEmoticon = U8(0xba199df0)
 	Misc = RawData(0x42ad246a, 3) # size 3
 	MoveAs = U8(0x49803457)
 	ToolAsCommand = String(0x26911c10) # string30
@@ -5586,16 +5586,16 @@ class ItemOutfitCategory(Row):
 	UniqueID = U16(0x54706054)
 	CanHasSit = U8(0x7eb53ebb)
 	_555442aa = U8(0x555442aa)
-	_b645432f = String(0xb645432f) # size 32
+	HandToolAsLabel = String(0xb645432f) # string32
 	HandToolAsName = String(0x03b7f760) # string32
 	Label = String(0x87bf00e8) # string32
 	Misc = RawData(0x42ad246a, 2) # size 2
 	Name = String(0x977adfce) # string32
-	_a9f8ee25 = String(0xa9f8ee25) # size 32
+	ToolEnterAsName = String(0xa9f8ee25) # string32
 	ToolLeftModelName = String(0x6ce1d85c) # string20
 	ToolRightModelName = String(0x4ec849ec) # string20
-	_f71bffe7 = String(0xf71bffe7) # size 32
-	_1b93daa9 = String(0x1b93daa9) # size 32
+	ToolSetupAsName = String(0xf71bffe7) # string32
+	ToolSetupPutawayAsName = String(0x1b93daa9) # string32
 	UseToolLeft = U8(0x42739ab0) # size is 2, could this be an array?
 
 class ItemOutfitHangerInfo(Row):
@@ -6495,7 +6495,7 @@ class PlayerStateParam(Row):
 	PacketType = Enum(0xf9dcdec7, enum_666520d79fd1_c1f7ed2fb38f)
 	RemoteChase = Enum(0x838b098c, enum_10a6294998ff_537c16dab4e8)
 	ToolState = Enum(0xf299f7fc, enum_71a6eb72125d_4959f0d2a68c)
-	_e50d3218 = U16(0xe50d3218)
+	DemoNetLockState = U16(0xe50d3218)
 	AcceptAccess = U8(0xa6324d34)
 	_f413acd2 = U8(0xf413acd2)
 	_833e2942 = U8(0x833e2942)
