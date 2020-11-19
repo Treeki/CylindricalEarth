@@ -1,5 +1,11 @@
 {
     "f": {
+        "4211768341": "EventItem",
+        "165588602": "PreviousVillagerIndex",
+        "4017866909": "XmasItem",
+        "3200103340": "LatestDreamTime",
+        "1997310327": "PlayerHouse",
+        "3894823582": "VisitTime",
         "788037194": "FirstDreamTime",
         "1115650652": "PolId",
         "620532440": "IslandId",
@@ -1052,6 +1058,7 @@
         "595185056": "::Game::SaveJuneBrideRoomExtra",
         "3674210176": "::Game::SaveBackupService",
         "2864560021": "::Game::SaveMyDesignFireworks",
-        "3322328799": "::Game::SaveNetHomeAddress"
+        "3322328799": "::Game::SaveNetHomeAddress",
+        "471272837": "::Game::SaveDreamLandMeta"
     }
 }

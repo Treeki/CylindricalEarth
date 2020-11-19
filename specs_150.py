@@ -443,6 +443,7 @@ enum_2c1ecb54c4b5_fa9288c80a2d = (
 	('Bottoms'       , 'ボトムス'),
 	('Socks'         , '靴下'),
 	('Shoes'         , '靴'),
+	('Marinesuit'    , 'マリンスーツ'),
 	('Scoop'         , 'スコップ'),
 	('Axe'           , 'オノ'),
 	('FishingRod'    , 'つりざお'),
@@ -503,6 +504,8 @@ enum_2c1ecb54c4b5_fa9288c80a2d = (
 	('Hammer'        , 'かなづち'),
 	('Brush'         , 'はけ'),
 	('Bouquet'       , 'ブーケ'),
+	('Scallop'       , 'ホタテ'),
+	('Canvas'        , 'キャンバス'),
 )
 
 enum_2c27ffe999d6_e4da0c79dac6 = (
@@ -518,6 +521,7 @@ enum_2c27ffe999d6_e4da0c79dac6 = (
 	('Negative'     , 'F9：ネガティブ系'),
 	('Plant'        , 'F10：植物系'),
 	('Smartphone'   , 'F11：スマホ系'),
+	('Seafood'      , 'F12：海の幸系'),
 )
 
 enum_2d78bfb5905f_6f798aada062 = (
@@ -562,6 +566,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexTopYshirtsHWhite'                 , 'はんそでワイシャツ'),
 	('TopsTexTopYshirtsNWhite'                 , 'ノースリーブえりつきシャツ'),
 	('TopsTexOnepieceAlineLRabbit'             , 'ウサギなふく'),
+	('TopsTexTopCoatLPirate'                   , 'かいぞくのコート'),
 	('TopsTexOnepieceAlineLHeroine'            , 'ヒロインスーツ'),
 	('TopsTexTopCoatLHanten'                   , 'はんてん'),
 	('TopsTexOnepieceBoxLBathrobes'            , 'バスローブ'),
@@ -785,6 +790,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexOnepieceAlineNHalterneckstripe'   , 'ホルターネックのワンピース'),
 	('TopsTexTopTshirtsHPocketshirts'          , 'ポケットつきＴシャツ'),
 	('TopsTexOnepieceKimonoLMiko'              , 'みこしょうぞく'),
+	('TopsTexOnepieceBalloonHPirate'           , 'かいぞくのワンピース'),
 	('BottomsTexSkirtBoxCorduroy'              , 'コーデュロイスカート'),
 	('BottomsTexPantsWideGaucho'               , 'ガウチョパンツ'),
 	('TopsTexOnepieceBoxNModern'               , 'モガなワンピース'),
@@ -920,6 +926,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('BottomsTexSkirtLongWrap'                 , 'ベルトのまきスカート'),
 	('BottomsTexSkirtLongEmbroidery'           , 'ししゅうのはながらスカート'),
 	('BottomsTexSkirtLongGeometric'            , 'きかがくししゅうのスカート'),
+	('AccessoryGlassmouthDiver'                , 'シュノーケル'),
 	('AccessoryGlassCyber'                     , 'サイバーサングラス'),
 	('TopsTexTopOuterLMuffler'                 , 'チェックマフラーつきセーター'),
 	('TopsTexTopCoatLMuffler'                  , 'ロングデニムカーディガン'),
@@ -1076,6 +1083,7 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('CapHatSafetyhat'                         , 'あんぜんヘルメット'),
 	('CapHatCock'                              , 'コックさんのぼうし'),
 	('CapHatPolice'                            , 'けいかんのぼうし'),
+	('CapHatPirate'                            , 'かいぞくのぼうし'),
 	('CapHatAjiro'                             , 'かさぼうし'),
 	('CapHatUshanka'                           , 'フェイクファーハット'),
 	('CapHatTriangle'                          , 'さんかくきん'),
@@ -1649,9 +1657,25 @@ enum_2d78bfb5905f_6f798aada062 = (
 	('TopsTexTopCoatHChildren'                 , 'てづくりのマント'),
 	('CapOrnamentAChildren'                    , 'てづくりのおうかん'),
 	('CapHatSummer'                            , 'げしさいのはなかんむり'),
+	('ShoesLowcutMermaid'                      , 'マーメイドなくつ'),
+	('CapOrnamentCMermaid'                     , 'マーメイドなティアラ'),
+	('AccessoryGlassPiratespatch'              , 'かいぞくのアイパッチ'),
+	('AccessoryMouthPirates'                   , 'かいぞくのひげ'),
+	('BottomsTexPantsNormalPirates'            , 'かいぞくのズボン'),
+	('ShoesKneePirates'                        , 'かいぞくのブーツ'),
+	('CapHatPiratesbandana'                    , 'かいぞくのバンダナ'),
+	('TopsTexOnepieceAlongLPirates'            , 'かいぞくのおたからローブ'),
+	('TopsTexOnepieceOverallLPirates0'         , 'かいぞくのふく'),
+	('TopsTexOnepieceAlongNMermaiddress'       , 'マーメイドなおさかなドレス'),
+	('TopsTexOnepieceDressNMermaid'            , 'マーメイドなプリンセスドレス'),
 	('TopsTexTopOuterLWintersolstice'          , 'とうじのセーター'),
+	('CapOrnamentCPirate'                      , 'かいぞくのおたからおうかん'),
 	('TopsTexTopYshirtsHNookyellow'            , 'たぬきかいはつアロハ・コーラル'),
 	('TopsTexTopYshirtsHNookgreen'             , 'たぬきかいはつアロハ・グリーン'),
+	('TopsTexMarinesuitNormalLNook'            , 'たぬきかいはつマリンスーツ'),
+	('TopsTexMarinesuitNormalLRashguard'       , 'はっぱがらマリンスーツ'),
+	('TopsTexMarinesuitNormalNGreco'           , 'ボーダーのマリンスーツ'),
+	('AccessoryGlassmouthNook'                 , 'たぬきかいはつシュノーケル'),
 	('TopsTexTopTshirtsLBorder'                , 'ボーダーＴシャツ'),
 	('TopsTexTopYshirtsLMountain'              , 'マウンテンパーカー'),
 	('TopsTexTopCoatLDuffle'                   , 'ダッフルコート'),
@@ -1675,9 +1699,10 @@ enum_30e2684ee89a_599636c94afd = (
 )
 
 enum_322263f6b5a3_7a83210f041c = (
-	('Before', '前日'),
+	('Before', '未設定'),
 	('Skip'  , '中止'),
 	('Same'  , '同時開催'),
+	('After' , '翌日'),
 )
 
 enum_34f1ef8cdbcc_52861a019f72 = (
@@ -1901,17 +1926,22 @@ enum_47e581a0f3c1_94306367028d = (
 	('WearGorgeousTops'          , 'ゴージャスな服を着用'),
 	('WearActiveTops'            , 'アクティブな服を着用'),
 	('WearElegantTops'           , 'エレガントな服を着用'),
-	('SwimmingSet'               , '水泳'),
+	('RacerSet'                  , 'レーサー'),
 	('AfootballSet'              , 'アメフト'),
 	('SoccerSet'                 , 'サッカー'),
 	('BasketballSet'             , 'バスケ'),
 	('SkiSet'                    , 'スキー'),
 	('BaseballSet'               , '野球'),
 	('CowboySet'                 , 'カウボーイ'),
-	('RacerSet'                  , 'レーサー'),
 	('BycycleSet'                , 'サイクル'),
 	('JockeySet'                 , 'ジョッキー'),
 	('MotherSet'                 , 'はは報酬'),
+	('PirateSet'                 , '海賊報酬'),
+	('SwimmingSet'               , 'マリンスーツ'),
+	('CatSet'                    , 'ネコ'),
+	('RabbitSet'                 , 'ウサギ'),
+	('BearSet'                   , 'クマ'),
+	('SheepSet'                  , 'ヒツジ'),
 )
 
 enum_48fbbb9e63e7_c771014390e5 = (
@@ -2132,6 +2162,7 @@ enum_5db8059c5629_f2952caee23e = (
 	('Tops'                 , '装備品：トップス'),
 	('Bottoms'              , '装備品：ボトムス'),
 	('Onepiece'             , '装備品：ワンピース'),
+	('WetSuit'              , '装備品：マリンスーツ'),
 	('Socks'                , '装備品：靴下'),
 	('Shoes'                , '装備品：靴'),
 	('Cap'                  , '装備品：帽子'),
@@ -2444,6 +2475,46 @@ enum_5db8059c5629_f2952caee23e = (
 	('Can'                  , 'あきカン'),
 	('Boots'                , 'ながぐつ'),
 	('Tire'                 , 'タイヤ'),
+	('Fish54'               , 'ロブスター'),
+	('Wakame'               , 'ワカメ'),
+	('Umibudou'             , 'ウミブドウ'),
+	('Uni'                  , 'ウニ'),
+	('Fujitsubo'            , 'フジツボ'),
+	('Kaki'                 , 'カキ'),
+	('Sazae'                , 'サザエ'),
+	('Awabi'                , 'アワビ'),
+	('Akoyagai'             , 'アコヤガイ'),
+	('Hotate'               , 'ホタテ'),
+	('Isogintyaku'          , 'イソギンチャク'),
+	('Hitode'               , 'ヒトデ'),
+	('Namako'               , 'ナマコ'),
+	('Umiushi'              , 'ウミウシ'),
+	('Hiramushi'            , 'ヒラムシ'),
+	('Shako'                , 'シャコ'),
+	('Amaebi'               , 'アマエビ'),
+	('Kurumaebi'            , 'クルマエビ'),
+	('Iseebi'               , 'イセエビ'),
+	('Zuwaigani'            , 'ズワイガニ'),
+	('Tarabagani'           , 'タラバガニ'),
+	('Takaashigani'         , 'タカアシガニ'),
+	('Tako'                 , 'タコ'),
+	('Chinanago'            , 'チンアナゴ'),
+	('Oumugai'              , 'オウムガイ'),
+	('Kabutogani'           , 'カブトガニ'),
+	('Daiougusokumushi'     , 'ダイオウグソクムシ'),
+	('Hotaruika'            , 'ホタルイカ'),
+	('Gazami'               , 'ガザミ'),
+	('Koumoridako'          , 'コウモリダコ'),
+	('Shakogai'             , 'オオシャコガイ'),
+	('Hoya'                 , 'ホヤ'),
+	('Mizukurage'           , 'ミズクラゲ'),
+	('Mendako'              , 'メンダコ'),
+	('Paipuuni'             , 'パイプウニ'),
+	('Baigai'               , 'バイガイ'),
+	('Senjunamako'          , 'センジュナマコ'),
+	('DungenessCrab'        , 'ダンジネスクラブ'),
+	('Kairoudouketsu'       , 'カイロウドウケツ'),
+	('Muhrugai'             , 'ムールガイ'),
 	('Apple'                , 'リンゴ'),
 	('Orange'               , 'オレンジ'),
 	('Pear'                 , 'ナシ'),
@@ -2610,6 +2681,8 @@ enum_5db8059c5629_f2952caee23e = (
 	('EggFish'              , 'サカナのたまご'),
 	('MessageBottleEgg'     , 'たまごのメッセージボトル'),
 	('Love'                 , 'あいのけっしょう'),
+	('Pearl'                , 'しんじゅ'),
+	('PirateQuest'          , 'むせんき'),
 )
 
 enum_5fe6f47ed555_cd0b35a4b9fb = (
@@ -2725,14 +2798,22 @@ enum_6bc751394207_9a22cc494738 = (
 	('EnableToDemoStandSpeak', 'デモ立ちSpeak可'),
 	('EnableToDemoSitSpeak'  , 'デモ座りSpeak可'),
 	('EnableToDemoBedSpeak'  , 'デモベッドSpeak可'),
+	('EnableToDemoSwimSpeak' , 'デモ泳ぎSpeak可'),
 	('IsDemo'                , 'デモ状態'),
 )
 
 enum_6d22f468bc18_bb56dd7d751d = (
 	('None'       , '0'),
+	('Brazil'     , '6'),
+	('Japan'      , '10'),
+	('France'     , '25'),
+	('Spain'      , '26'),
+	('Italy'      , '28'),
+	('Germany'    , '29'),
 	('Europe'     , '33'),
 	('EachCountry', '37'),
 	('World'      , '38'),
+	('Northern'   , '39'),
 	('Southern'   , '40'),
 )
 
@@ -2821,6 +2902,7 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('ShopVarietyShovel'        , '店_店売り：スコップ'),
 	('ShopVarietyWatering'      , '店_店売り：ジョウロ'),
 	('ShopVarietySlingShot'     , '店_店売り：パチンコ'),
+	('ShopVarietyManieSuit'     , '店_店売り：水着'),
 	('Shop_EnableShovel'        , '店_スコップ解禁'),
 	('Shop_EnableAxe'           , '店_オノ解禁'),
 	('ShopRecipeBook2'          , '店_レシピブック2'),
@@ -2879,11 +2961,13 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('JohnnyQuest'              , 'ジョニークエスト'),
 	('JohnnyQuestDust'          , 'ジョニークエストごみ'),
 	('JohnnyQuestReward'        , 'ジョニークエスト報酬'),
+	('PirateQuestReward'        , '海賊クエスト報酬'),
 	('TournamentFishing'        , 'つり大会'),
 	('TournamentInsect'         , 'ムシとり大会'),
 	('CountDown'                , 'カウントダウン'),
 	('BeyDailyFishModel'        , 'ジャスティン(来訪)'),
 	('ChyDailyInsectModel'      , 'レオン(来訪)'),
+	('SeoReward'                , 'ラコスケ報酬'),
 	('RecycleBox'               , 'リサイクルBOX'),
 	('ShopSeed_Chrysanthemum'   , '販売種_菊'),
 	('ShopSeed_Lily'            , '販売種_ユリ'),
@@ -2921,10 +3005,12 @@ enum_794b88fd5d5e_eaf8e9c36279 = (
 	('DIYCherryBrossom'         , '<DIY>桜の花びら'),
 	('DIYSnowCrystal'           , '<DIY>雪の結晶'),
 	('DIYEasterEgg'             , '<DIY>イースターのたまご'),
+	('DIYPearl'                 , '<DIY>しんじゅ'),
 	('MotherDay'                , '<リージョン>母の日'),
 	('WoldChildDay'             , '<リージョン>ワールドチャイルド'),
 	('FatherDay'                , '<リージョン>父の日'),
 	('SummerSolstice'           , '<リージョン>夏至祭'),
+	('StarFestival'             , '<リージョン>七夕'),
 	('WinterSolstice_Southern'  , '<リージョン>冬至祭（６月南半球）'),
 	('DeliveryPocketCamp'       , '<永続配信>ポケ森コラボ'),
 	('Easter'                   , 'イースター'),
@@ -2964,6 +3050,7 @@ enum_7a6babece06f_675c7f6d8dcb = (
 	('DisableOnlyLowerBody'     , '下半身再生不可'),
 	('EnableOnlyLowerBody_Sit'  , '下半身再生可(座り系)'),
 	('EnableOnlyLowerBody_Bed'  , '下半身再生可(寝る系)'),
+	('EnableOnlyLowerBody_Swim' , '下半身再生可(泳ぎ系)'),
 	('EnableOnlyLowerBody_Stand', '下半身再生可(立ち系)'),
 )
 
@@ -3056,6 +3143,8 @@ enum_870fe161ccb7_b6b6458365a4 = (
 	('Christmas'    , 'クリスマス'),
 	('Easter'       , 'イースター'),
 	('Wedding'      , 'ウェディング'),
+	('Pirate'       , 'かいぞく'),
+	('Mermaid'      , 'マーメイド'),
 )
 
 enum_872b31abf9f9_cc7475a100e8 = (
@@ -3124,6 +3213,13 @@ enum_876f2a44aa3e_ea533d18da76 = (
 	('EasterCapHat'           , 'イースター：ひらめき：からコンプ'),
 	('EasterTops'             , 'イースター：ひらめき：ふくコンプ'),
 	('Efitem'                 , '＜Efアイテム直接指定＞'),
+	('Seo01'                  , '＜ラコスケ（マーメイド）＞'),
+)
+
+enum_8b856bc35b2c_59489a51cf1a = (
+	('Stop'  , '静止'),
+	('Flick' , 'ゆらゆら'),
+	('GoStop', '飛び飛び'),
 )
 
 enum_8bcffcdc34f9_75d5da8d5621 = (
@@ -3160,6 +3256,14 @@ enum_917e0a06d70e_917e0a06d70e = (
 	('ON' , 'ON'),
 )
 
+enum_92fb5e5480cc_92fb5e5480cc = (
+	('SS', 'SS'),
+	('S' , 'S'),
+	('M' , 'M'),
+	('L' , 'L'),
+	('LL', 'LL'),
+)
+
 enum_93cb28c3569f_1cf1287084ce = (
 	('NoSelect'           , '指定無し'),
 	('SelectRecipeSeason' , 'レシピ用季節'),
@@ -3189,6 +3293,11 @@ enum_a099ed9ed7e6_1fc5597471f3 = (
 	('MailBoxTypeC', 'ポスト：タイプC'),
 	('MailBoxTypeD', 'ポスト：タイプD'),
 	('MailBoxTypeE', 'ポスト：タイプE'),
+)
+
+enum_a1951c2696f6_44fbfe232c2e = (
+	('Aquatic', '生き物'),
+	('Weed'   , '海藻'),
 )
 
 enum_a28161dd393f_a28161dd393f = (
@@ -3241,6 +3350,8 @@ enum_a3f2105dc205_cf3454689058 = (
 	('Mother'       , 'おかん'),
 	('Space'        , '宇宙'),
 	('JuneBride'    , 'ジューンブライド'),
+	('Mermaid'      , 'マーメイド'),
+	('Sign'         , '星座'),
 )
 
 enum_a55023d0faad_4d2a3ca36fe8 = (
@@ -3405,6 +3516,9 @@ enum_c1ee150f0e21_f567104db912 = (
 enum_c247708f9bb1_67b0834c6103 = (
 	('None'                , '（なし）'),
 	('MileCard'            , 'たぬきマイルカード'),
+	('MarineSuit'          , 'マリンスーツ'),
+	('Pearl'               , 'しんじゅ'),
+	('PirateQuest'         , 'むせんき'),
 	('Leaf'                , '葉っぱ'),
 	('LeafYellow'          , '葉っぱ：黄'),
 	('RoomWall'            , '壁紙'),
@@ -3574,6 +3688,14 @@ enum_c247708f9bb1_67b0834c6103 = (
 	('Love'                , 'あいのけっしょう'),
 )
 
+enum_c2aae04b2493_c2aae04b2493 = (
+	('1', '1'),
+	('2', '2'),
+	('3', '3'),
+	('4', '4'),
+	('5', '5'),
+)
+
 enum_c2f1120003e9_c2f1120003e9 = (
 	('Default'          , 'Default'),
 	('MainField'        , 'MainField'),
@@ -3738,6 +3860,9 @@ enum_d6b51049aa8c_eb2a552f77d1 = (
 	('NpcSpTopsAlpOnepieceN'              , 'NpcSpTopsAlpOnepieceN'),
 	('NpcSpTopsAlwOnepieceDressN'         , 'NpcSpTopsAlwOnepieceDressN'),
 	('NpcSpTopsAlpTshirtsL'               , 'NpcSpTopsAlpTshirtsL'),
+	('PlayerTopsMarinesuitNormalL'        , 'PlayerTopsMarinesuitNormalL'),
+	('PlayerTopsMarinesuitNormalN'        , 'PlayerTopsMarinesuitNormalN'),
+	('PlayerTopsMarinesuitNormalH'        , 'PlayerTopsMarinesuitNormalH'),
 	('PlayerTopsTopTshirtsH'              , 'PlayerTopsTopTshirtsH'),
 	('PlayerTopsTopOuterL'                , 'PlayerTopsTopOuterL'),
 	('PlayerTopsTopCoatL'                 , 'PlayerTopsTopCoatL'),
@@ -3805,6 +3930,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('ChairFB'                   , 'イス：前後'),
 	('ChairLeftFB'               , 'イス：前後：左半分'),
 	('ChairCenterF'              , 'イス：前：中央のみ'),
+	('ChairSwitch'               , 'イス：スイッチ'),
 	('ChairFLRTouchSwitch'       , 'イス：SP：接触スイッチ'),
 	('Bed'                       , 'ベッド：通常'),
 	('BedSwitch'                 , 'ベッド：スイッチ'),
@@ -3823,6 +3949,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('ClockPigeon'               , '時計：ハト'),
 	('ClockDigital'              , '時計：デジタル'),
 	('ClockSwitch'               , '時計：スイッチ'),
+	('ClockTrigger'              , '時計：トリガー'),
 	('WorkBench'                 , '作業台'),
 	('LoopAuto'                  , 'ループ'),
 	('LoopSwitch'                , 'ループ：スイッチ'),
@@ -3830,6 +3957,7 @@ enum_d7d32a028b49_2a813eb9cd7a = (
 	('LoopTrigger'               , 'ループ：トリガー'),
 	('LoopAutoOnOff'             , 'ループ：オンオフ'),
 	('LoopTriggerOnOff'          , 'ループ：トリガー：オンオフ'),
+	('LoopTriggerWaitEndOnKeep'  , 'ループ終了待ち：トリガー'),
 	('TriggerOnce'               , 'トリガー'),
 	('TriggerOnOff'              , 'トリガー：オンオフ'),
 	('TriggerRestart'            , 'トリガー：上書き'),
@@ -3874,6 +4002,7 @@ enum_daac3d573f2d_daac3d573f2d = (
 	('20_Tool'           , '20_Tool'),
 	('30_Insect'         , '30_Insect'),
 	('31_Fish'           , '31_Fish'),
+	('32_DiveFish'       , '32_DiveFish'),
 	('33_Shell'          , '33_Shell'),
 	('34_Fossil'         , '34_Fossil'),
 	('40_Plant'          , '40_Plant'),
@@ -3898,7 +4027,6 @@ enum_daac3d573f2d_daac3d573f2d = (
 )
 
 enum_de3dece1349b_9af5c41bec95 = (
-	('Bouquet'                       , 'ブーケ'),
 	('AccessoryOneEye'               , 'アクセサリ：片目'),
 	('AccessoryMouth'                , 'アクセサリ：口'),
 	('AccessoryMouthInvisibleNose'   , 'アクセサリ：口(鼻なし)'),
@@ -3928,6 +4056,7 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('ShoesSoft'                     , '靴：やわらかい'),
 	('Socks'                         , '靴下'),
 	('Tops'                          , 'トップス'),
+	('Marinesuit'                    , 'マリンスーツ'),
 	('Onepiece'                      , 'ワンピース'),
 	('None'                          , 'なし'),
 	('Bottoms'                       , 'ボトムス'),
@@ -4004,7 +4133,9 @@ enum_de3dece1349b_9af5c41bec95 = (
 	('Doughnut'                      , 'ドーナッツ'),
 	('TkkGuitar'                     , 'とたけけギター'),
 	('Duster'                        , 'はたき'),
+	('Bouquet'                       , 'ブーケ'),
 	('Broom'                         , 'ほうき'),
+	('Scallop'                       , 'ホタテ'),
 	('Book'                          , '本'),
 	('SmallBook'                     , '本(小)'),
 	('Firewood'                      , '薪'),
@@ -4137,6 +4268,7 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('TopsDefault'       , '装備品：トップスデフォルト'),
 	('Tops'              , '装備品：トップス'),
 	('OnePiece'          , '装備品：ワンピース'),
+	('MarineSuit'        , '装備品：マリンスーツ'),
 	('BottomsDefault'    , '装備品：ボトムスデフォルト'),
 	('Bottoms'           , '装備品：ボトムス'),
 	('Socks'             , '装備品：くつした'),
@@ -4197,6 +4329,7 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('StarPiece'         , '星のかけら'),
 	('Insect'            , '生き物：ムシ'),
 	('Fish'              , '生き物：サカナ'),
+	('DiveFish'          , '生き物：海の幸'),
 	('ShellDrift'        , '漂着貝'),
 	('ShellFish'         , '生き物：潮干狩り貝'),
 	('FishToy'           , 'サカナ模型'),
@@ -4223,10 +4356,12 @@ enum_f5a85f4bb42c_b173422234a3 = (
 	('HousingKitRcoQuest', 'ハウジングキット：移住クエスト'),
 	('HousingKitBirdge'  , 'ハウジングキット：橋用'),
 	('Money'             , 'ベル（お金）'),
+	('FireworkM'         , '花火（置き）'),
 	('BdayCupcake'       , 'バースデーカップケーキ'),
 	('YutaroWisp'        , 'ゆうたろうのたましい'),
 	('JohnnyQuest'       , 'ジョニークエスト'),
 	('JohnnyQuestDust'   , 'ジョニークエストごみ'),
+	('PirateQuest'       , '海賊クエスト'),
 	('QuestWrapping'     , 'クエスト配達プレゼントBOX'),
 	('LostQuest'         , 'おとしもの'),
 	('LostQuestDust'     , 'おとしものゴミ'),
@@ -4364,6 +4499,7 @@ class CalendarEventParam(Row):
 	EventType = Enum(0x70703269, enum_7797cc9a6dbe_5f875c1a6730)
 	FlagLand1 = S32(0xa75689ff)
 	FlagLand2 = S32(0xe0f6f32f)
+	FlagPlayerAnnounce = S32(0xa745c103)
 	TkkSkipBirthday = Enum(0x52c75c1e, enum_322263f6b5a3_7a83210f041c)
 	TkkSkipNormal = Enum(0x8c2aec6a, enum_322263f6b5a3_7a83210f041c)
 	UniqueID = U16(0x54706054)
@@ -4512,16 +4648,11 @@ class CalendarEventParam(Row):
 	Output = U8(0x87ff95cc)
 	PreMsgLabelValue = U8(0xb92288a3)
 	ReadyDays = U8(0xba007e4f)
-	RegionAsia = U8(0xfe807868)
-	RegionEu = U8(0x4ac8ebbc)
-	RegionJp = U8(0xff468c5f)
-	RegionUs = U8(0x0f4323e2)
-	TalkFlowName = String(0xc6ddbf67) # string64
+	RemoveEventObj = U8(0x46df4305)
 	WdayNorth = U8(0x06da20a1)
 	WdaySouth = U8(0xfc6134e3)
-	WeatherPattern = String(0x062ec6cf) # string32
 	WeekNorth = U8(0x4c8935ec)
-	WeekSouth = U8(0xb63221ae) # size is 3, could this be an array?
+	WeekSouth = U8(0xb63221ae) # size is 2, could this be an array?
 
 class CalendarEventRegionParam(Row):
 	RegionEventCountry1 = Enum(0x82bfcf29, enum_6d22f468bc18_bb56dd7d751d)
@@ -4610,6 +4741,11 @@ class CharaMakeHairStyleParam(Row):
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x977adfce) # string32
 	ResName = String(0xdcfb52e8) # string32
+
+class CharaMakeHalloweenMakePresetParam(Row):
+	FacePaint = U16(0xea6d4070)
+	SkinColor = U16(0x25de7b8f)
+	UniqueID = U16(0x54706054) # size is 4, could this be an array?
 
 class CharaMakeMouthTypeParam(Row):
 	UniqueID = U16(0x54706054)
@@ -4735,6 +4871,7 @@ class EventFlagsLifeSupportAchievementParam(Row):
 	Reward6 = U32(0xfc5fe459)
 	WaitFrame = U32(0x5971a42e)
 	UniqueID = U16(0x54706054)
+	_bed25a86 = U8(0xbed25a86)
 	IsSpecial = U8(0x895442dc)
 	Key = String(0x45f320f2) # string64
 	MaxLevel = U8(0x1be772f0)
@@ -4766,6 +4903,7 @@ class EventFlagsNpcMemoryParam(Row):
 	UniqueID = U16(0x54706054)
 	_5f77b61a = U8(0x5f77b61a)
 	_5140e4b4 = U8(0x5140e4b4)
+	_bed25a86 = U8(0xbed25a86)
 	_8d401df7 = U8(0x8d401df7)
 	DefaultValue = U8(0xd55938bd)
 	FlagsFlowAccess = U8(0xfa93f14b)
@@ -4837,6 +4975,7 @@ class EventPlazaFtrParam(Row):
 	EventFtrSwitch = Enum(0x24726310, enum_917e0a06d70e_917e0a06d70e)
 	ItemNameUniqueID = U16(0xc33a894e)
 	UniqueID = U16(0x54706054)
+	_cb7385a8 = U32(0xcb7385a8)
 
 class EventPlazaGround(Row):
 	UniqueID = U16(0x54706054)
@@ -4847,26 +4986,37 @@ class EventPlazaObjModelParam(Row):
 	_a9c1118b = Enum(0xa9c1118b, enum_44bd12ada204_11a50a2b435c)
 	RoofMaterial = U16(0x83b54e59)
 	UniqueID = U16(0x54706054)
+	FlowEntryName = String(0x30d3f8f7) # string32
 	FlowFileName = String(0x364c173e) # string32
 	NearCulling = U8(0xb418fb3b)
 	ResourceName = String(0xdf881359) # string32
+	_e2760d00 = U8(0xe2760d00)
+	UseCollision = U8(0xa5010be8) # size is 2, could this be an array?
 
 class EventPlazaPlacementParam(Row):
 	_036dd90c = U32(0x036dd90c)
 	EventType = Enum(0x70703269, enum_f3c18336bb2d_2196d32cce4c)
 	_24e5b19d = U32(0x24e5b19d)
 	PlacementKind = Enum(0x65a97fab, enum_5174da149586_78f560476764)
+	_160cb241 = U32(0x160cb241)
 	EventFtrUniqueID = U16(0x20dd4435)
 	EventObjUniqueID = U16(0x26db5137)
 	OffsetX = S16(0x4154052c)
 	OffsetZ = S16(0x3b94564c)
 	UniqueID = U16(0x54706054)
 	CalendarEventKey = String(0x52f0badd) # string32
+	_b8e42602 = U8(0xb8e42602)
+	DisableInDream = U8(0x30127dfd)
 	_e6c63c5c = String(0xe6c63c5c) # size 32
 	_7215b154 = String(0x7215b154) # size 32
+	_56ee0925 = String(0x56ee0925) # size 32
 	NpcSpLabel = String(0x5ba37406) # string32
 	PlacementKey = String(0xe2d0ac54) # string32
 	VisitorNpcLabel = String(0x7e322ef0) # string32
+
+class FadeOutDuckingParam(Row):
+	UniqueID = U16(0x54706054)
+	Name = String(0x85cf1615) # string128
 
 class FgFlowerHeredity(Row):
 	Kind = Enum(0x9b7aa0a0, enum_282b3f1c6bd6_e34f70824d5a)
@@ -5144,6 +5294,7 @@ class GmoFootprintParam(Row):
 	Name = String(0x85cf1615) # string128
 
 class HumanAnimParam(Row):
+	EmoticonTool = U32(0x58102055) # possible string size 4
 	LowerSetting = Enum(0x0b69ec1a, enum_7a6babece06f_675c7f6d8dcb)
 	UISortID = S16(0x2fe593c3)
 	UniqueID = U16(0x54706054)
@@ -5153,6 +5304,7 @@ class HumanAnimParam(Row):
 	CancelFootSE = U8(0x84761fb6)
 	CancelFootprint = U8(0xfc3116b5)
 	Comment = String(0x96ba28fe) # string64
+	DisableEmoticon = U8(0xba199df0)
 	Misc = RawData(0x42ad246a, 3) # size 3
 	MoveAs = U8(0x49803457)
 	ToolAsCommand = String(0x26911c10) # string30
@@ -5280,8 +5432,10 @@ class ItemAct(Row):
 	_8b1904b9 = Enum(0x8b1904b9, enum_a099ed9ed7e6_1fc5597471f3)
 	UniqueID = U16(0x54706054)
 	Collision = U8(0x31cb6b0a)
+	DemoType = U8(0xd2a5c5cf)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
+	SwitchableOnWall = U8(0x0e387a24) # size is 4, could this be an array?
 
 class ItemClothGroup(Row):
 	ItemShopSeasonality = Enum(0xe83c30be, enum_5ba0e3fef915_f4a390fc627b)
@@ -5440,9 +5594,11 @@ class ItemNpcTopsForm(Row):
 	Name = String(0x977adfce) # string32
 
 class ItemOutfitCategory(Row):
+	_2924e11f = U16(0x2924e11f)
 	UniqueID = U16(0x54706054)
 	CanHasSit = U8(0x7eb53ebb)
 	EquipOnlyOutdoor = U8(0x555442aa)
+	HandToolAsLabel = String(0xb645432f) # string32
 	HandToolAsName = String(0x03b7f760) # string32
 	Label = String(0x87bf00e8) # string32
 	Misc = RawData(0x42ad246a, 2) # size 2
@@ -5452,7 +5608,14 @@ class ItemOutfitCategory(Row):
 	ToolRightModelName = String(0x4ec849ec) # string20
 	ToolSetupAsName = String(0xf71bffe7) # string32
 	ToolSetupPutawayAsName = String(0x1b93daa9) # string32
-	UseToolLeft = U8(0x42739ab0) # size is 2, could this be an array?
+	UseToolLeft = U8(0x42739ab0) # size is 4, could this be an array?
+
+class ItemOutfitHangerInfo(Row):
+	ItemLayout = Enum(0x9dcea17e, enum_478bafec288f_571514e8ca3c)
+	ItemSize = Enum(0xe06fb090, enum_52e1af9ea232_bc050e1554c9)
+	UniqueID = U16(0x54706054)
+	Label = String(0x87bf00e8) # string32
+	ResName = String(0x48ef0398) # string64
 
 class ItemOutfitInfo(Row):
 	Category = Enum(0x90466afd, enum_2c1ecb54c4b5_fa9288c80a2d)
@@ -5466,11 +5629,12 @@ class ItemOutfitInfo(Row):
 	WallScale = Float(0x9f253177)
 	BreakDamage = U16(0x68db76c2)
 	UniqueID = U16(0x54706054)
+	HangerInfo = U8(0x46489ce7)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
 	SpecialELink = U8(0x04ac1bea)
 	SpecialSLink = U8(0xbe782346)
-	Storage = RawData(0xc89fb7af, 2) # size 2
+	Storage = RawData(0xc89fb7af, 2) # size 5
 
 class ItemParam(Row):
 	AudioPreset = Enum(0x2654be7c, enum_ded670ccf8f3_2f430bbb6124)
@@ -5544,15 +5708,18 @@ class ItemParam(Row):
 	SlopeTableId = U16(0xbfba247c)
 	UniqueID = U16(0x54706054)
 	WallTableId = U16(0x0f9f6747)
-	AITagBitRankA = RawData(0xe8c448b2, 4) # size 4
-	AITagBitRankB = RawData(0xfa71e75c, 4) # size 4
-	AITagBitRankC = RawData(0x42cd8039, 4) # size 4
-	AITagBitRankS = RawData(0x12d4d7a6, 4) # size 4
+	AITagBitRankA = RawData(0xe8c448b2, 5) # size 5
+	AITagBitRankB = RawData(0xfa71e75c, 5) # size 5
+	AITagBitRankC = RawData(0x42cd8039, 5) # size 5
+	AITagBitRankS = RawData(0x12d4d7a6, 5) # size 5
+	CanHide = U8(0x622c3346)
 	CanNotLookFace = U8(0xfd415a4c)
 	CaptureClosetIcon = U8(0xe4697080)
 	CaptureDiyIcon = U8(0xe24d9b0e)
+	_b91ea6c2 = U8(0xb91ea6c2)
 	_f179f796 = U8(0xf179f796)
 	CaptureFtrIcon = U8(0xe65df243)
+	CaptureGardeningIcon = U8(0x116f007f)
 	CapturePreset = String(0xfc275e86) # string32
 	DefaultSwitch = U8(0xd862189a)
 	FrontSwitch = U8(0x147e658d)
@@ -5566,6 +5733,7 @@ class ItemParam(Row):
 	NpcDefaultSwitch = U8(0xdeb3f8dc)
 	ResName = String(0x48ef0398) # string64
 	RumbleForEdit = U8(0x86efa036)
+	_b5677509 = U8(0xb5677509)
 	ToiletType = U8(0x0eb7fa40)
 	TouchRumble = U8(0x7404ebb3)
 	ValidEffect = U8(0x49cc96d0) # size is 4, could this be an array?
@@ -6101,6 +6269,7 @@ class NpcEquipRule(Row):
 	GlassesFrequencyWear = U8(0x744b3452)
 	GlassesPurposeLimit = U8(0xa073aa81)
 	GlassesTemporarilyCreate = U8(0xfdf8907b)
+	IsEquipCeremony = U8(0x6510a4fe)
 	Label = String(0x87bf00e8) # string32
 	MaskFrequencyWear = U8(0x74275e7a)
 	MaskPurposeLimit = U8(0xcc198281)
@@ -6341,6 +6510,7 @@ class PlayerStateParam(Row):
 	PacketType = Enum(0xf9dcdec7, enum_666520d79fd1_c1f7ed2fb38f)
 	RemoteChase = Enum(0x838b098c, enum_10a6294998ff_537c16dab4e8)
 	ToolState = Enum(0xf299f7fc, enum_71a6eb72125d_4959f0d2a68c)
+	DemoNetLockState = U16(0xe50d3218)
 	AcceptAccess = U8(0xa6324d34)
 	_f413acd2 = U8(0xf413acd2)
 	_833e2942 = U8(0x833e2942)
@@ -6351,19 +6521,20 @@ class PlayerStateParam(Row):
 	_5dcf7b24 = U8(0x5dcf7b24)
 	_16e483f0 = U8(0x16e483f0)
 	_aa0070b7 = U8(0xaa0070b7)
-	DemoNetLockState = U8(0xae3add79)
 	DummyMenuDemo = U8(0x1aaaddc1)
 	EnableRodCloth = U8(0x68daf155)
 	EnableStageChange = U8(0xecfe9ddb)
 	ForbidOverwrite = U8(0x35fd6466)
 	HideFoodCounter = U8(0xe550abdf)
 	HideHUD = U8(0x5681a1c3)
+	InWaterBody = U8(0x066fbe8e)
 	JudgeVisibleOn = U8(0xe1e934d5)
 	_ede0a8ca = U8(0xede0a8ca)
 	_87438100 = U8(0x87438100)
 	NpcLookAction = U8(0xa1b074dd)
 	_5b6d5751 = U8(0x5b6d5751)
 	PoseTrans = U8(0xfbb451bf)
+	PoseTransDive = U8(0x013cbdbd)
 	_65fd6b0d = U8(0x65fd6b0d)
 	_2b6186a0 = U8(0x2b6186a0)
 	_95798f28 = U8(0x95798f28)
@@ -6372,7 +6543,7 @@ class PlayerStateParam(Row):
 	_a84507aa = U8(0xa84507aa)
 	_c033d95a = U8(0xc033d95a) # possible string size 1
 	ValidDiveRate = U8(0xed32aade)
-	WaitType = U8(0x9067bb0e) # size is 2, could this be an array?
+	WaitType = U8(0x9067bb0e) # size is 3, could this be an array?
 
 class RadioCM(Row):
 	SelectRate = Float(0x293ee089)
@@ -6453,11 +6624,11 @@ class RoomFloorParam(Row):
 	Horizon = U8(0x3543c34a)
 	ItemName = String(0xb8cc232c) # string64
 	ResourceName = String(0x4b9c4229) # string64
-	Reverberation = S8(0x05836619)
-	Rotatable = U8(0x8ed948dd)
+	Rotatable = U8(0x8ed948dd) # size is 2, could this be an array?
 
 class RoomLandingParam(Row):
 	Floorboards = U16(0xab771eae)
+	UISortID = S16(0x2fe593c3)
 	UniqueID = U16(0x54706054)
 	LandingName = String(0x05038516) # string64
 	ResourceName = String(0x4b9c4229) # string64
@@ -6476,8 +6647,7 @@ class RoomWallParam(Row):
 	WindowUniqueID = U16(0xe3a28616)
 	ItemName = String(0xb8cc232c) # string64
 	ResourceName = String(0x4b9c4229) # string64
-	Reverberation = S8(0x05836619)
-	TextureWindow = U8(0x318ebbf2)
+	TextureWindow = U8(0x318ebbf2) # size is 2, could this be an array?
 
 class RoomWindowParam(Row):
 	RoomWindowModelType = Enum(0xc90ab4c4, enum_f18e5565c112_ab0466cfcd5a)
@@ -6485,6 +6655,68 @@ class RoomWindowParam(Row):
 	UniqueID = U16(0x54706054)
 	ResourceName = String(0x4b9c4229) # string64
 	WindowName = String(0x9b0b7ce4) # string64
+
+class SceneChangeFadeOutDuckingParam(Row):
+	UniqueID = U16(0x54706054)
+	Name = String(0x85cf1615) # string128
+
+class SeafoodAppearParam(Row):
+	AppearArea = Enum(0x64330cb0, enum_3bcfd82ce180_8ccc4bd385f8)
+	ItemID = U16(0x20cb67bc)
+	ProbAprDaytime = U16(0x9c4a43c0)
+	ProbAprMorningAndEvening = U16(0x0dbbebb5)
+	ProbAprNight = U16(0x1d790df7)
+	ProbAugDaytime = U16(0x15de6a3f)
+	ProbAugMorningAndEvening = U16(0x74ea1d73)
+	ProbAugNight = U16(0xada9eb19)
+	ProbDecDaytime = U16(0x267c99f7)
+	ProbDecMorningAndEvening = U16(0xc11af347)
+	ProbDecNight = U16(0x9217f8b8)
+	ProbFebDaytime = U16(0x5cb71135)
+	ProbFebMorningAndEvening = U16(0x0f095b88)
+	ProbFebNight = U16(0x91ee0d19)
+	ProbJanDaytime = U16(0xb3f1a70f)
+	ProbJanMorningAndEvening = U16(0x51bcedfa)
+	ProbJanNight = U16(0x3e01d394)
+	ProbJulDaytime = U16(0x2b74f5dc)
+	ProbJulMorningAndEvening = U16(0x7ec203a5)
+	ProbJulNight = U16(0x24dbb4e0)
+	ProbJunDaytime = U16(0xc74f6b43)
+	ProbJunMorningAndEvening = U16(0x5092ca25)
+	ProbJunNight = U16(0x202e64dd)
+	ProbMarDaytime = U16(0xdf2eadb2)
+	ProbMarMorningAndEvening = U16(0x2cb125cc)
+	ProbMarNight = U16(0x770b5b7d)
+	ProbMayDaytime = U16(0xaebc09bc)
+	ProbMayMorningAndEvening = U16(0xac8aae8c)
+	ProbMayNight = U16(0x8feba08a)
+	ProbNovDaytime = U16(0x5aafbfa6)
+	ProbNovMorningAndEvening = U16(0xc57d2eb8)
+	ProbNovNight = U16(0x5b0802f1)
+	ProbOctDaytime = U16(0xb12179b4)
+	ProbOctMorningAndEvening = U16(0x6aed60aa)
+	ProbOctNight = U16(0xce420c64)
+	ProbSepDaytime = U16(0x5e853057)
+	ProbSepMorningAndEvening = U16(0x1fe65c0c)
+	ProbSepNight = U16(0x260ec620) # size is 4, could this be an array?
+
+class SeafoodShadowInfoParam(Row):
+	ModelScale = Float(0x093dfe4f)
+	UniqueID = U16(0x54706054)
+	ModelResName = String(0xfad4ff78) # string65
+
+class SeafoodStatusParam(Row):
+	ActionType = Enum(0xfbace208, enum_8b856bc35b2c_59489a51cf1a)
+	CaptureCategory = Enum(0xde78df0f, enum_a1951c2696f6_44fbfe232c2e)
+	CaptureLevel = Enum(0xafeb1bf1, enum_c2aae04b2493_c2aae04b2493)
+	ShadowType = Enum(0xac0ebe24, enum_92fb5e5480cc_92fb5e5480cc)
+	ItemID = U16(0x20cb67bc)
+	OpenRecordNum = U16(0xd42df0b4)
+	UniqueID = U16(0x54706054)
+	DebugName = String(0xab51a3cf) # string32
+	Label = String(0x87bf00e8) # string32
+	ResName = String(0x48ef0398) # string64
+	ResNameMuseum = String(0x1c8856db) # string32
 
 class SeasonCalendar(Row):
 	Bush_N = U8(0x4875e383)
@@ -6514,10 +6746,6 @@ class ShopItemRouteFlags(Row):
 	ShopType = Enum(0xd3d4284e, enum_05496a929e72_1987c9f2e67f)
 	AttrCollectBit = U8(0x74b2eb78)
 	ItemFrom = String(0x46e66708) # string32
-
-class SoundAmbientPlacementParam(Row):
-	UniqueID = U16(0x54706054)
-	Name = String(0x85cf1615) # string128
 
 class SoundAttributeForGround(Row):
 	RefSoundAttributeID = U16(0x5e7a33b5)
@@ -6659,6 +6887,7 @@ class StructureHouseRoofParam(Row):
 
 class StructureHouseShapeParam(Row):
 	AppearanceLevel = Enum(0x10dbd8bb, enum_719f8c5ace1e_9dc2d1c92509)
+	CustomizeSortID = U16(0x37d4e515)
 	DefaultDoorUniqueID = U16(0xc86e60d5)
 	DefaultRoofUniqueID = U16(0x0966fbe3)
 	DefaultWallUniqueID = U16(0xd8727d7d)
@@ -6810,6 +7039,7 @@ lookup = {
 	'CharaMakeEyeTypeParam.bcsv': CharaMakeEyeTypeParam,
 	'CharaMakeHairColorParam.bcsv': CharaMakeHairColorParam,
 	'CharaMakeHairStyleParam.bcsv': CharaMakeHairStyleParam,
+	'CharaMakeHalloweenMakePresetParam.bcsv': CharaMakeHalloweenMakePresetParam,
 	'CharaMakeMouthTypeParam.bcsv': CharaMakeMouthTypeParam,
 	'CharaMakeNoseTypeParam.bcsv': CharaMakeNoseTypeParam,
 	'CharaMakeSkinColorParam.bcsv': CharaMakeSkinColorParam,
@@ -6835,6 +7065,7 @@ lookup = {
 	'EventPlazaGround.bcsv': EventPlazaGround,
 	'EventPlazaObjModelParam.bcsv': EventPlazaObjModelParam,
 	'EventPlazaPlacementParam.bcsv': EventPlazaPlacementParam,
+	'FadeOutDuckingParam.bcsv': FadeOutDuckingParam,
 	'FgFlowerHeredity.bcsv': FgFlowerHeredity,
 	'FgMainParam.bcsv': FgMainParam,
 	'FieldCreateParam.bcsv': FieldCreateParam,
@@ -6870,6 +7101,7 @@ lookup = {
 	'ItemNpcRoomReplaceCategory.bcsv': ItemNpcRoomReplaceCategory,
 	'ItemNpcTopsForm.bcsv': ItemNpcTopsForm,
 	'ItemOutfitCategory.bcsv': ItemOutfitCategory,
+	'ItemOutfitHangerInfo.bcsv': ItemOutfitHangerInfo,
 	'ItemOutfitInfo.bcsv': ItemOutfitInfo,
 	'ItemParam.bcsv': ItemParam,
 	'ItemPlayerInitialOutfitBoyAWParam.bcsv': ItemPlayerInitialOutfitBoyAWParam,
@@ -6939,9 +7171,12 @@ lookup = {
 	'RoomLandingParam.bcsv': RoomLandingParam,
 	'RoomWallParam.bcsv': RoomWallParam,
 	'RoomWindowParam.bcsv': RoomWindowParam,
+	'SceneChangeFadeOutDuckingParam.bcsv': SceneChangeFadeOutDuckingParam,
+	'SeafoodAppearParam.bcsv': SeafoodAppearParam,
+	'SeafoodShadowInfoParam.bcsv': SeafoodShadowInfoParam,
+	'SeafoodStatusParam.bcsv': SeafoodStatusParam,
 	'SeasonCalendar.bcsv': SeasonCalendar,
 	'ShopItemRouteFlags.bcsv': ShopItemRouteFlags,
-	'SoundAmbientPlacementParam.bcsv': SoundAmbientPlacementParam,
 	'SoundAttributeForGround.bcsv': SoundAttributeForGround,
 	'SoundAttributeForPlacement.bcsv': SoundAttributeForPlacement,
 	'SoundAudioMusic.bcsv': SoundAudioMusic,
