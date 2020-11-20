@@ -4725,8 +4725,8 @@ class EventPlazaPlacementParam(Row):
 	OffsetZ = S16(0x3b94564c)
 	UniqueID = U16(0x54706054)
 	CalendarEventKey = String(0x52f0badd) # string32
-	_e6c63c5c = String(0xe6c63c5c) # size 32
-	_7215b154 = String(0x7215b154) # size 32
+	LandFlagKeyOFF = String(0xe6c63c5c) # string32
+	LandFlagKeyON = String(0x7215b154) # string32
 	NpcSpLabel = String(0x5ba37406) # string32
 	PlacementKey = String(0xe2d0ac54) # string32
 	VisitorNpcLabel = String(0x7e322ef0) # string32
@@ -4788,7 +4788,7 @@ class FieldLandMakingActionParam(Row):
 	_7674c4d6 = Enum(0x7674c4d6, enum_62e4c6f51ad1_474f8f35cfdc)
 	SuccessResult = Enum(0x4932f93e, enum_a3c5bfa601e4_a3c5bfa601e4)
 	ActionLockRange = U8(0x7c8e7f81)
-	_f9a37bdc = U8(0xf9a37bdc)
+	FallToRiver = U8(0xf9a37bdc)
 	MainType = U8(0x31450aa2)
 	UpdateParts = U8(0x926d7dd8)
 
@@ -5013,7 +5013,7 @@ class HumanAnimParam(Row):
 	_9f5123d4 = U8(0x9f5123d4)
 	_d5217761 = U8(0xd5217761)
 	AsCommand = String(0x2c447591) # string65
-	_84761fb6 = U8(0x84761fb6)
+	CancelFootSE = U8(0x84761fb6)
 	CancelFootprint = U8(0xfc3116b5)
 	Comment = String(0x96ba28fe) # string64
 	Misc = RawData(0x42ad246a, 3) # size 3
@@ -5222,7 +5222,7 @@ class ItemKind(Row):
 	CanSetInTrashBox = U8(0xc8a5a762)
 	CanSetItem = U8(0x49129b27)
 	CanUsePhotoStudio = U8(0x5218c48c)
-	_c37a683c = U8(0xc37a683c)
+	CantTakeOver = U8(0xc37a683c)
 	IsCollectAchievement = U8(0xfd3b7c9a)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
@@ -5304,7 +5304,7 @@ class ItemNpcTopsForm(Row):
 class ItemOutfitCategory(Row):
 	UniqueID = U16(0x54706054)
 	CanHasSit = U8(0x7eb53ebb)
-	_555442aa = U8(0x555442aa)
+	EquipOnlyOutdoor = U8(0x555442aa)
 	HandToolAsName = String(0x03b7f760) # string32
 	Label = String(0x87bf00e8) # string32
 	Misc = RawData(0x42ad246a, 2) # size 2
@@ -5830,10 +5830,10 @@ class MysteryTourParam(Row):
 	MysteryTourFieldUniqueID = U16(0x72573f73)
 	MysteryTourItemUniqueID = U16(0x7a09986c)
 	UniqueID = U16(0x54706054)
-	_7215b154 = String(0x7215b154) # size 32
-	_88bd09c2 = String(0x88bd09c2) # size 32
-	_4e5cd9f3 = String(0x4e5cd9f3) # size 32
-	_8f2f4bf9 = String(0x8f2f4bf9) # size 32
+	LandFlagKeyON = String(0x7215b154) # string32
+	PlayerFlagKeyAfterSelect = String(0x88bd09c2) # string32
+	PlayerFlagKeyOFF = String(0x4e5cd9f3) # string32
+	PlayerFlagKeyON = String(0x8f2f4bf9) # string32
 	SelectWeight = U8(0xd89a0db0) # size is 2, could this be an array?
 
 class NmlNpcParam(Row):
@@ -5911,7 +5911,7 @@ class NpcCastScheduleData(Row):
 	NeglectSleep = U8(0xa78d0cc5)
 	StartHour = U8(0x8ae48661)
 	StartMinute = U8(0x3835a9dd)
-	_e76db92f = U16(0xe76db92f)
+	UseRainGoods = U8(0xe76db92f) # size is 3, could this be an array?
 
 class NpcEquipRule(Row):
 	ClothesFrequencyWear = Enum(0x423d1c4d, enum_8660a424ddf9_da4e1de32164)
@@ -6172,7 +6172,7 @@ class PlayerStateParam(Row):
 	_833e2942 = U8(0x833e2942)
 	BeesRunAway = U8(0x730cefc8)
 	BgmEnd = U8(0xa9f6fac2)
-	_497ac4d6 = U8(0x497ac4d6)
+	CanChaseForInsect = U8(0x497ac4d6)
 	_63f77486 = U8(0x63f77486)
 	_5dcf7b24 = U8(0x5dcf7b24)
 	_16e483f0 = U8(0x16e483f0)
@@ -6182,7 +6182,7 @@ class PlayerStateParam(Row):
 	EnableRodCloth = U8(0x68daf155)
 	EnableStageChange = U8(0xecfe9ddb)
 	ForbidOverwrite = U8(0x35fd6466)
-	_e550abdf = U8(0xe550abdf)
+	HideFoodCounter = U8(0xe550abdf)
 	HideHUD = U8(0x5681a1c3)
 	JudgeVisibleOn = U8(0xe1e934d5)
 	_ede0a8ca = U8(0xede0a8ca)

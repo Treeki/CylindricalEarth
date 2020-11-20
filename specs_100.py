@@ -4222,16 +4222,16 @@ class BgmPropertyParam(Row):
 	Label = String(0x13ab5198) # string64
 
 class CalendarEventParam(Row):
-	_8c2aec6a = Enum(0x8c2aec6a, enum_322263f6b5a3_7a83210f041c)
+	TkkSkipNormal = Enum(0x8c2aec6a, enum_322263f6b5a3_7a83210f041c)
 	EventType = Enum(0x70703269, enum_7797cc9a6dbe_5f875c1a6730)
-	_52c75c1e = Enum(0x52c75c1e, enum_322263f6b5a3_7a83210f041c)
+	TkkSkipBirthday = Enum(0x52c75c1e, enum_322263f6b5a3_7a83210f041c)
 	UniqueID = U16(0x54706054)
 	Month2041 = U8(0x12ed4e02)
 	NameShort = String(0x3c835e2c) # string128
 	NameLong = String(0x1144c9a1) # string128
 	EventBegin = U8(0x8d58a3bf)
 	EventHalf = S8(0xac69956e)
-	EventEnd = S8(0x73a932ae)
+	EventEnd = U8(0x73a932ae)
 	NpcBegin = U8(0xd605c40d)
 	NpcEnd = U8(0x69834ab9)
 	LabelLong = String(0x443c0fb7) # string64
@@ -4243,7 +4243,7 @@ class CalendarEventParam(Row):
 	RegionAsia = U8(0xfe807868)
 	MsgFile = String(0xa425d8a5) # string64
 	TalkFlowName = String(0xc6ddbf67) # string64
-	_b92288a3 = U8(0xb92288a3)
+	PreMsgLabelValue = U8(0xb92288a3)
 	ReadyDays = U8(0xba007e4f)
 	MainDays = U8(0xc17c7ca8)
 	BbsDays = U8(0x952cf32e)
@@ -4518,16 +4518,16 @@ class EventFlagsHouseParam(Row):
 	DefaultValue = U32(0x4c24f1cf)
 	MaxValue = U32(0x344b17d7)
 	UniqueID = U16(0x54706054)
-	_fa93f14b = U8(0xfa93f14b)
+	FlagsFlowAccess = U8(0xfa93f14b)
 	Name = String(0x85cf1615) # string128
 	Key = String(0x45f320f2) # string64
 	_5140e4b4 = U8(0x5140e4b4) # possible string size 1
 
 class EventFlagsLandParam(Row):
-	_93f49ec4 = Enum(0x93f49ec4, enum_10c129883403_814d6adbca21)
+	FlagsNetAccess = Enum(0x93f49ec4, enum_10c129883403_814d6adbca21)
 	MaxValue = U32(0x344b17d7)
 	DefaultValue = U32(0x4c24f1cf)
-	_fca0adb0 = Enum(0xfca0adb0, enum_c3ddc88645a5_d774c8361500)
+	FlagsFlowAccess = Enum(0xfca0adb0, enum_c3ddc88645a5_d774c8361500)
 	_fdb1f290 = Enum(0xfdb1f290, enum_6375519ed254_5b8e07b717c6)
 	UniqueID = U16(0x54706054)
 	Name = String(0x85cf1615) # string128
@@ -4538,8 +4538,8 @@ class EventFlagsLandTempParam(Row):
 	UniqueID = U16(0x54706054)
 	MaxValue = U16(0x0110b14c)
 	DefaultValue = U16(0x797f5754)
-	_4f7333fd = U8(0x4f7333fd)
-	_fa93f14b = U8(0xfa93f14b)
+	FlagsNetAccess = U8(0x4f7333fd)
+	FlagsFlowAccess = U8(0xfa93f14b)
 	_5140e4b4 = U8(0x5140e4b4)
 	Name = String(0x85cf1615) # string128
 	Key = String(0x45f320f2) # string64
@@ -4578,7 +4578,7 @@ class EventFlagsLifeSupportDailyParam(Row):
 	MaxValue = U16(0x0110b14c)
 	Reward = U16(0x127ccfd9)
 	Weighting = U8(0xf163e8be)
-	_fa93f14b = U8(0xfa93f14b)
+	FlagsFlowAccess = U8(0xfa93f14b)
 	Key = String(0x45f320f2) # string64
 	CountOtherVillage = U8(0xafb1f366)
 	NetPlaySelect = U8(0x60da5fef)
@@ -4590,7 +4590,7 @@ class EventFlagsNpcMemoryParam(Row):
 	UniqueID = U16(0x54706054)
 	DefaultValue = U8(0xd55938bd)
 	Name = String(0x85cf1615) # string128
-	_fa93f14b = U8(0xfa93f14b)
+	FlagsFlowAccess = U8(0xfa93f14b)
 	Key = String(0x45f320f2) # string64
 	MaxValue = U8(0xbd7682f5)
 	_5140e4b4 = U8(0x5140e4b4)
@@ -4604,13 +4604,13 @@ class EventFlagsNpcSaveParam(Row):
 	Name = String(0x85cf1615) # string128
 	_5140e4b4 = U8(0x5140e4b4)
 	Key = String(0x45f320f2) # string64
-	_fa93f14b = U8(0xfa93f14b)
+	FlagsFlowAccess = U8(0xfa93f14b)
 
 class EventFlagsNpcTempParam(Row):
 	UniqueID = U16(0x54706054)
 	MaxValue = U16(0x0110b14c)
 	DefaultValue = U16(0x797f5754)
-	_fa93f14b = U8(0xfa93f14b)
+	FlagsFlowAccess = U8(0xfa93f14b)
 	Name = String(0x85cf1615) # string128
 	Key = String(0x45f320f2) # string64
 	_5f77b61a = U8(0x5f77b61a) # possible string size 1
@@ -4619,10 +4619,10 @@ class EventFlagsNpcTempParam(Row):
 class EventFlagsPlayerActivityParam(Row):
 	UniqueID = U16(0x54706054)
 	MessageLabel = U16(0x110a7053)
-	_e6317726 = U16(0xe6317726)
-	_ccd4c25f = U16(0xccd4c25f)
+	TalkValueVisitor = U16(0xe6317726)
+	TalkValueVillager = U16(0xccd4c25f)
 	MaxValue = U16(0x0110b14c)
-	_fa93f14b = U8(0xfa93f14b) # possible string size 1
+	FlagsFlowAccess = U8(0xfa93f14b)
 	Name = String(0x85cf1615) # string128
 	Key = String(0x45f320f2) # string64
 
@@ -4630,7 +4630,7 @@ class EventFlagsPlayerParam(Row):
 	DefaultValue = U32(0x4c24f1cf)
 	MaxValue = U32(0x344b17d7)
 	UniqueID = U16(0x54706054)
-	_fa93f14b = U8(0xfa93f14b)
+	FlagsFlowAccess = U8(0xfa93f14b)
 	Name = String(0x85cf1615) # string128
 	Key = String(0x45f320f2) # string64
 	_5140e4b4 = U8(0x5140e4b4)
@@ -4641,7 +4641,7 @@ class EventFlagsPlayerTempParam(Row):
 	UniqueID = U16(0x54706054)
 	MaxValue = U16(0x0110b14c)
 	DefaultValue = U16(0x797f5754)
-	_fa93f14b = U8(0xfa93f14b)
+	FlagsFlowAccess = U8(0xfa93f14b)
 	Name = String(0x85cf1615) # string128
 	Key = String(0x45f320f2) # string64
 	_3c7fb88f = U8(0x3c7fb88f)
@@ -4652,7 +4652,7 @@ class EventFlagsPlayerVisitParam(Row):
 	MaxValue = U16(0x0110b14c)
 	Name = String(0x85cf1615) # string128
 	Key = String(0x45f320f2) # string64
-	_fa93f14b = U16(0xfa93f14b)
+	FlagsFlowAccess = U8(0xfa93f14b) # size is 2, could this be an array?
 
 class EventPlazaFtrParam(Row):
 	EventFtrSwitch = Enum(0x24726310, enum_917e0a06d70e_917e0a06d70e)
@@ -4686,8 +4686,8 @@ class EventPlazaPlacementParam(Row):
 	PlacementKey = String(0xe2d0ac54) # string32
 	CalendarEventKey = String(0x52f0badd) # string32
 	VisitorNpcLabel = String(0x7e322ef0) # string32
-	_7215b154 = String(0x7215b154) # size 32
-	_e6c63c5c = String(0xe6c63c5c) # size 34
+	LandFlagKeyON = String(0x7215b154) # string32
+	LandFlagKeyOFF = String(0xe6c63c5c) # string32
 
 class FgFlowerHeredity(Row):
 	Kind = Enum(0x9b7aa0a0, enum_282b3f1c6bd6_e34f70824d5a)
@@ -4702,7 +4702,7 @@ class FgFlowerHeredity(Row):
 class FgMainParam(Row):
 	Kind = Enum(0x9b7aa0a0, enum_282b3f1c6bd6_e34f70824d5a)
 	CollisionHeight = Float(0x0c315945)
-	_123efcf1 = Float(0x123efcf1)
+	PicIconHeight = Float(0x123efcf1) # size 4
 	InsectParam = Enum(0x360b721a, enum_80fe2e01edeb_a0944789ee2d)
 	UniqueID = U16(0x54706054)
 	NutItem = U16(0xbe17c845)
@@ -4716,8 +4716,8 @@ class FgMainParam(Row):
 	SoundAttribute = U16(0x2e17a0a7)
 	ChangeFg = U16(0x76e7fe08)
 	ModelName = String(0x39b5a93d) # string32
-	_a4b2d66d = RawData(0xa4b2d66d, 1)
-	Nature = RawData(0x623dc307, 2)
+	_a4b2d66d = RawData(0xa4b2d66d, 1) # size 1
+	Nature = RawData(0x623dc307, 2) # size 2
 	Grow = U8(0xf5a73337)
 	ColorIndex = S8(0x64b8fff8)
 	DebugName = String(0x3f45f2bf) # string64
@@ -4746,9 +4746,9 @@ class FieldLandMakingActionParam(Row):
 	FallActionType = Enum(0x281f90a8, enum_6f6d6ff1098e_dbf69e6d0415)
 	_7674c4d6 = Enum(0x7674c4d6, enum_62e4c6f51ad1_474f8f35cfdc)
 	UpdateParts = U8(0x926d7dd8)
-	_f9a37bdc = U8(0xf9a37bdc)
+	FallToRiver = U8(0xf9a37bdc)
 	MainType = U8(0x31450aa2)
-	_7c8e7f81 = U8(0x7c8e7f81)
+	ActionLockRange = U8(0x7c8e7f81)
 
 class FieldLandMakingError(Row):
 	UniqueID = U16(0x54706054)
@@ -4766,7 +4766,7 @@ class FieldLandMakingRoadKindParam(Row):
 
 class FieldLandMakingUnitModelParam(Row):
 	CornerType = Enum(0x9dfa9b39, enum_06495113f123_3d33eb822663)
-	_d943e2bd = Enum(0xd943e2bd, enum_4270b8b74b46_c144e90289f3)
+	ChangeFallType = Enum(0xd943e2bd, enum_4270b8b74b46_c144e90289f3)
 	InnerType000 = Enum(0xeb4430c7, enum_717e8e90873e_eb9d94566e11)
 	TriangleType = Enum(0x59d78633, enum_b0f707938ca8_32e4190d51a4)
 	EdgePatternType = Enum(0x0d54d810, enum_e88a63f4642d_4d2cf72813b3)
@@ -4949,9 +4949,9 @@ class FishAppearSeaParam(Row):
 
 class FishBeyQuestParam(Row):
 	UniqueID = U16(0x54706054)
-	_c44b9674 = U8(0xc44b9674)
-	_fb867bc1 = U8(0xfb867bc1)
-	_748db6d8 = U32(0x748db6d8)
+	IsSelectQuestS = U8(0xc44b9674)
+	IsSelectQuestSS = U8(0xfb867bc1)
+	IsSelectQuestM = U8(0x748db6d8) # size is 4, could this be an array?
 
 class FishStatusParam(Row):
 	EscapeScale = Float(0xb7c9dd05)
@@ -4966,7 +4966,7 @@ class FishStatusParam(Row):
 	ItemID = U16(0x20cb67bc)
 	ToyItemID = U16(0xdaaf8ba0)
 	OpenDonatedNum = U16(0xeac6a012)
-	_0e91fc27 = U8(0x0e91fc27)
+	IsSidewaysShow = U8(0x0e91fc27)
 	DebugName = String(0xab51a3cf) # string32
 	Label = String(0x87bf00e8) # string32
 	IsCreateBait = U8(0x3dc49bc2)
@@ -4983,16 +4983,16 @@ class GmoFootprintParam(Row):
 class HumanAnimParam(Row):
 	LowerSetting = Enum(0x0b69ec1a, enum_7a6babece06f_675c7f6d8dcb)
 	UniqueID = U16(0x54706054)
-	_2fe593c3 = U16(0x2fe593c3)
+	UISortID = S16(0x2fe593c3)
 	_9f5123d4 = U8(0x9f5123d4)
 	_d5217761 = U8(0xd5217761)
 	AsCommand = String(0x2c447591) # string65
 	Comment = String(0x96ba28fe) # string64
 	MoveAs = U8(0x49803457)
-	_84761fb6 = U8(0x84761fb6)
+	CancelFootSE = U8(0x84761fb6)
 	CancelFootprint = U8(0xfc3116b5)
 	ToolAsCommand = String(0x26911c10) # string30
-	Misc = RawData(0x42ad246a, 3)
+	Misc = RawData(0x42ad246a, 3) # size 4
 
 class IndoorIdrParam(Row):
 	UniqueID = U16(0x54706054)
@@ -5100,15 +5100,15 @@ class InsectStatusParam(Row):
 	AppearWeather = Enum(0xa103c985, enum_48fbbb9e63e7_c771014390e5)
 	UniqueID = U16(0x54706054)
 	ToyItemID = U16(0xdaaf8ba0)
-	_5d4ef312 = U16(0x5d4ef312)
+	OpenAchievementCount = U16(0x5d4ef312)
 	ItemID = U16(0x20cb67bc)
-	AppearFg = RawData(0xbace6554, 3)
+	AppearFg = RawData(0xbace6554, 3) # size 3
 	Label = String(0x87bf00e8) # string32
-	_e4b73f7d = String(0xe4b73f7d) # size 32
+	ResNameReplaceMuseum = String(0xe4b73f7d) # string32
 	DebugName = String(0x3f45f2bf) # string64
 	ResNameField = String(0x11b0b143) # string32
 	Property = U8(0x0909f3d4)
-	_4c777e9e = String(0x4c777e9e) # size 32
+	ResNameReplaceField = String(0x4c777e9e) # string32
 
 class ItemAct(Row):
 	AsName = Enum(0xea6a09cc, enum_156e850c7e27_b09d6477c3b6)
@@ -5136,7 +5136,7 @@ class ItemClothGroup(Row):
 	FashionThemeFomal = U8(0x44718a37)
 	FashionThemeDaily = U8(0x52add71d)
 	_83ccbe0f = String(0x83ccbe0f) # size 64
-	_8d7f40e5 = U8(0x8d7f40e5)
+	UseColorGroupSort = U8(0x8d7f40e5)
 
 class ItemColor(Row):
 	UniqueID = U16(0x54706054)
@@ -5166,13 +5166,13 @@ class ItemFilter(Row):
 
 class ItemFrom(Row):
 	UniqueID = U16(0x54706054)
-	_d62525d0 = U16(0xd62525d0)
+	HHABaseScore = S16(0xd62525d0)
 	Name = String(0x036e8ebe) # string64
 	Label = String(0x87bf00e8) # string32
 
 class ItemKind(Row):
 	ItemKindUIType = Enum(0xd606a6c4, enum_f20a1de8eac2_4485ac08bc53)
-	_1b936128 = Enum(0x1b936128, enum_56ee1b9c32d0_341e9128ff85)
+	FtrIconCaptureType = Enum(0x1b936128, enum_56ee1b9c32d0_341e9128ff85)
 	ItemRemakeType = Enum(0x6b749e8a, enum_b4a495c4cd73_f919b604a1f1)
 	MessageKind = Enum(0x29c41a0d, enum_daac3d573f2d_daac3d573f2d)
 	SLinkType = Enum(0x4d655154, enum_a397999fca4b_a59ff2e96b38)
@@ -5192,9 +5192,9 @@ class ItemKind(Row):
 	CanSetItem = U8(0x49129b27)
 	CanNpcPresent = U8(0x0732bb98)
 	CanNpcBirthdayPresent = U8(0x2c1b3b5b)
-	_c37a683c = U8(0xc37a683c)
+	CantTakeOver = U8(0xc37a683c)
 	Label = String(0x87bf00e8) # string32
-	_d223f25c = U8(0xd223f25c)
+	CanPutWallAndFloor = U8(0xd223f25c)
 	Name = String(0x036e8ebe) # string64
 	CanSetInTrashBox = U8(0xc8a5a762)
 	IsCollectAchievement = U8(0xfd3b7c9a)
@@ -5275,17 +5275,17 @@ class ItemNpcTopsForm(Row):
 
 class ItemOutfitCategory(Row):
 	UniqueID = U16(0x54706054)
-	Misc = RawData(0x42ad246a, 2)
+	Misc = RawData(0x42ad246a, 2) # size 2
 	Label = String(0x87bf00e8) # string32
 	HandToolAsName = String(0x03b7f760) # string32
-	_f71bffe7 = String(0xf71bffe7) # size 32
-	_1b93daa9 = String(0x1b93daa9) # size 32
+	ToolSetupAsName = String(0xf71bffe7) # string32
+	ToolSetupPutawayAsName = String(0x1b93daa9) # string32
 	Name = String(0x977adfce) # string32
 	ToolRightModelName = String(0x4ec849ec) # string20
 	UseToolLeft = U8(0x42739ab0)
 	ToolLeftModelName = String(0x6ce1d85c) # string20
-	_555442aa = U8(0x555442aa)
-	_7eb53ebb = U16(0x7eb53ebb)
+	EquipOnlyOutdoor = U8(0x555442aa)
+	CanHasSit = U8(0x7eb53ebb) # size is 2, could this be an array?
 
 class ItemOutfitInfo(Row):
 	WallScale = Float(0x9f253177)
@@ -5303,7 +5303,7 @@ class ItemOutfitInfo(Row):
 	SpecialSLink = U8(0xbe782346)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
-	Storage = RawData(0xc89fb7af, 2)
+	Storage = RawData(0xc89fb7af, 2) # size 2
 
 class ItemParam(Row):
 	ItemUICategory = Enum(0x28297660, enum_3b7b05ca4a0a_52b2ca6f0581)
@@ -5327,7 +5327,7 @@ class ItemParam(Row):
 	WallPlaceType = Enum(0xe1bf0894, enum_eb74bd2dde24_eaeb657f44bf)
 	Depth = Float(0xf8316716)
 	ItemLayout = Enum(0x9dcea17e, enum_478bafec288f_571514e8ca3c)
-	_85c63b71 = Float(0x85c63b71)
+	NpcFtrWatchPos = Float(0x85c63b71)
 	ItemNpcFtrWatchType = Enum(0xd9855b4e, enum_effe5979565a_894d134b30b9)
 	ItemNpcFtrActionType = Enum(0xaa6a39c6, enum_af770d1cdd34_208c036ec702)
 	Seasonality = Enum(0x0e6ca0d4, enum_5ba0e3fef915_f4a390fc627b)
@@ -5346,9 +5346,9 @@ class ItemParam(Row):
 	ItemPlayerTopsBottomsForm = Enum(0x9feb9da6, enum_d6b51049aa8c_eb2a552f77d1)
 	DragSE = Enum(0x43507f0d, enum_017c76af34f4_35ed35a1a2a5)
 	FossilSet = Enum(0xd7f212ea, enum_3fa655858099_cae6208225e0)
-	_0e0acf95 = Enum(0x0e0acf95, enum_6adf97f83acf_3609f958a376)
+	DebugFtrSeries = Enum(0x0e0acf95, enum_6adf97f83acf_3609f958a376)
 	LocalWindType = Enum(0x9a3fb47c, enum_4db76367118c_3ca2ed9ace4f)
-	_5504464e = Enum(0x5504464e, enum_60d7f7443dea_ced5321a8793)
+	ItemRandomColorGroup = Enum(0x5504464e, enum_60d7f7443dea_ced5321a8793)
 	AudioPreset = Enum(0x2654be7c, enum_ded670ccf8f3_2f430bbb6124)
 	LampType = Enum(0xd65f862b, enum_19d95e13020f_5e46daa0967c)
 	ItemNpcReactionGenreType = Enum(0xa812e496, enum_34f1ef8cdbcc_52861a019f72)
@@ -5356,7 +5356,7 @@ class ItemParam(Row):
 	ItemMailAttachCategory = Enum(0x70e19913, enum_5c6b871e086e_81d76143976e)
 	ItemNpcRoomReplaceCategory = Enum(0xead62c46, enum_e046ae7fa48d_57a924bf70f4)
 	ItemNpcRoomLayoutLimit = Enum(0xbf80f575, enum_8f4bdb1e73c6_3c4e63ce8503)
-	_ba4fd546 = Enum(0xba4fd546, enum_639356d46fa4_639356d46fa4)
+	ItemOrderSale = Enum(0xba4fd546, enum_639356d46fa4_639356d46fa4)
 	ItemMessageCategory = Enum(0x5032ef59, enum_53801c2056ab_77e4c99ac56b)
 	ItemNpcReactionThemeType = Enum(0xeffadab6, enum_a3f2105dc205_cf3454689058)
 	ItemHobbyType = Enum(0x7b2fdfc1, enum_07d126e46327_fafea373c976)
@@ -5374,15 +5374,15 @@ class ItemParam(Row):
 	CookingRecipeID = U16(0xc353ef20)
 	_9ec34ed4 = U16(0x9ec34ed4)
 	ItemShareTextureUniqueID = U16(0x9bd046a2)
-	_02169dc7 = U16(0x02169dc7)
+	ColorGroupSortId = U16(0x02169dc7)
 	UniqueID = U16(0x54706054)
-	AITagBitRankA = RawData(0xe8c448b2, 4)
+	AITagBitRankA = RawData(0xe8c448b2, 4) # size 4
 	ValidEffect = U8(0x49cc96d0)
 	CapturePreset = String(0xfc275e86) # string32
-	AITagBitRankC = RawData(0x42cd8039, 4)
-	AITagBitRankB = RawData(0xfa71e75c, 4)
+	AITagBitRankC = RawData(0x42cd8039, 4) # size 4
+	AITagBitRankB = RawData(0xfa71e75c, 4) # size 4
 	ItemHHADirection = U8(0x3cda3274)
-	AITagBitRankS = RawData(0x12d4d7a6, 4)
+	AITagBitRankS = RawData(0x12d4d7a6, 4) # size 4
 	IsSwingFtr = U8(0xbea3e8b8)
 	_4b97cdab = U8(0x4b97cdab)
 	CaptureFtrIcon = U8(0xe65df243)
@@ -5460,22 +5460,22 @@ class ItemPlayerTopsForm(Row):
 
 class ItemRemake(Row):
 	ItemReFabricType = Enum(0x35917e05, enum_a8722b855893_f7ee7d2a5a4e)
-	_c54eaad9 = Enum(0xc54eaad9, enum_41b98234401e_b5f5ba492fa2)
-	_924c8d08 = U32(0x924c8d08)
-	_0239d7bc = U32(0x0239d7bc) # possible string size 4
-	_bbc20c54 = U32(0xbbc20c54) # possible string size 4
-	_aabf662d = U32(0xaabf662d) # possible string size 4
-	_1344bdc5 = U32(0x1344bdc5) # possible string size 4
-	_8845b2df = U32(0x8845b2df) # possible string size 4
-	_31be6937 = U32(0x31be6937) # possible string size 4
-	_20c3034e = U32(0x20c3034e) # possible string size 4
-	_8331e771 = U32(0x8331e771)
-	_b0b659fa = U32(0xb0b659fa)
-	_094d8212 = U32(0x094d8212)
-	_1830e86b = U32(0x1830e86b)
-	_a1cb3383 = U32(0xa1cb3383)
-	_3aca3c99 = U32(0x3aca3c99)
-	_9938d8a6 = U32(0x9938d8a6)
+	RebodyPattern0LightColor = Enum(0xc54eaad9, enum_41b98234401e_b5f5ba492fa2)
+	RebodyPattern1LightColor = U32(0x924c8d08)
+	RefabricPattern7LightColor = U32(0x0239d7bc)
+	RefabricPattern6LightColor = U32(0xbbc20c54)
+	RefabricPattern5LightColor = U32(0xaabf662d)
+	RefabricPattern4LightColor = U32(0x1344bdc5)
+	RefabricPattern3LightColor = U32(0x8845b2df)
+	RefabricPattern2LightColor = U32(0x31be6937)
+	RefabricPattern1LightColor = U32(0x20c3034e)
+	RebodyPattern2LightColor = U32(0x8331e771)
+	RebodyPattern7LightColor = U32(0xb0b659fa)
+	RebodyPattern6LightColor = U32(0x094d8212)
+	RebodyPattern5LightColor = U32(0x1830e86b)
+	RebodyPattern4LightColor = U32(0xa1cb3383)
+	RebodyPattern3LightColor = U32(0x3aca3c99)
+	RefabricPattern0LightColor = U32(0x9938d8a6)
 	RemakeKitNum = U16(0x29ecb129)
 	ItemUniqueID = U16(0xfd9af1e1)
 	UniqueID = U16(0x54706054)
@@ -5546,7 +5546,7 @@ class ItemShareTexture(Row):
 	ResName = String(0xdcfb52e8) # string32
 
 class ItemSize(Row):
-	_801351e6 = U32(0x801351e6)
+	ResSizeLimit = Float(0x801351e6) # size 4
 	PolygonLimit = U16(0x3cf05708)
 	MemoryUnitNum = U16(0x09b64264)
 	UniqueID = U16(0x54706054)
@@ -5649,8 +5649,8 @@ class MessageCardColorParam(Row):
 
 class MessageCardDesignParam(Row):
 	UniqueID = U16(0x54706054)
-	_ea031e9a = U16(0xea031e9a)
-	_d299f964 = U16(0xd299f964)
+	SelectableEndDate2 = U16(0xea031e9a)
+	SelectableBeginDate2 = U16(0xd299f964)
 	HeadColor = U16(0x32c0c064)
 	BodyColor = U16(0x41afe839)
 	FootColor = U16(0x57c98e5b)
@@ -5658,12 +5658,12 @@ class MessageCardDesignParam(Row):
 	PenColor2 = U16(0xdea47c79)
 	PenColor3 = U16(0xe3c455c9)
 	PenColor4 = U16(0x51e489d9)
-	_953983b4 = U16(0x953983b4)
+	SelectableBeginDate1 = U16(0x953983b4)
 	RuleColor = U16(0x94d6cb5d)
 	TextLotId = S16(0x5f384120)
 	_84818e10 = U16(0x84818e10) # possible string size 2
 	_63a46970 = U16(0x63a46970) # possible string size 2
-	_ada3644a = U16(0xada3644a)
+	SelectableEndDate1 = U16(0xada3644a)
 	BackColor = U16(0xa2fe7f71)
 	SelectableSeason = U8(0xaa738fed)
 	UnlockTrigger = U8(0x7a6965c5)
@@ -5726,9 +5726,9 @@ class MuseumNPCLayoutInfo(Row):
 	WatchPointID = U16(0x4765b463)
 	WatchItem = U16(0xb76b7d37)
 	ReactionTalkKey = String(0x60e4e478) # string25
-	_97be8767 = U32(0x97be8767) # possible string size 4
+	ReactionTalkLabelKey = String(0x97be8767) # string4
 	BalloonTalkKey = String(0xe9812e07) # string25
-	_b434805d = U32(0xb434805d) # possible string size 4
+	BalloonTalkLabelKey = String(0xb434805d) # string4
 
 class MuseumNPCSilhouette(Row):
 	SilhouettePosZ = Float(0x75e35e54)
@@ -5743,7 +5743,7 @@ class MuseumNPCSpotTalk(Row):
 	UniqueID = U16(0x54706054)
 	SpotTalkName = String(0xb10b6bc8) # string65
 	SpotTalkKey = String(0x8e768bd8) # string25
-	_9d9b3598 = U32(0x9d9b3598) # possible string size 4
+	SpotTalkLabelKey = String(0x9d9b3598) # string4
 
 class MuseumNameboardInfo(Row):
 	NameboardAngleY = Float(0x2c40799e)
@@ -5760,15 +5760,15 @@ class MuseumNameboardInfo(Row):
 	ModelResName = String(0xfad4ff78) # string65
 
 class MuseumWatchPoint(Row):
-	_65f8c085 = Float(0x65f8c085)
-	_2258ba55 = Float(0x2258ba55)
+	WalkWatchOffsetZ = Float(0x65f8c085) # size 4
+	WalkWatchOffsetY = Float(0x2258ba55) # size 4
 	WatchPosX = Float(0x2633f2c1)
 	WatchPosY = Float(0x1b53db71)
 	WatchPosZ = Float(0x5cf3a1a1)
 	WatchAngleY = Float(0xd200ffd3)
 	StageName = Enum(0xbe776e71, enum_f6bb6e7f3141_66cb3d119f1c)
 	SilhouetteID = U32(0x3e884a6d)
-	_1f3893e5 = Float(0x1f3893e5)
+	WalkWatchOffsetX = Float(0x1f3893e5) # size 4
 	_35ac2c17 = Enum(0x35ac2c17, enum_23f7dd8d5dc1_9e5af7814467)
 	UniqueID = U16(0x54706054)
 	PointName = String(0x85fb9dd5) # string65
@@ -5781,11 +5781,11 @@ class MysteryTourFieldParam(Row):
 
 class MysteryTourFishParam(Row):
 	UniqueID = U16(0x54706054)
-	TargetShadow = RawData(0xc35f78ed, 2)
+	TargetShadow = RawData(0xc35f78ed, 2) # size 2
 
 class MysteryTourInsectParam(Row):
 	UniqueID = U16(0x54706054)
-	TargetInsect = RawData(0xd086a528, 14)
+	TargetInsect = RawData(0xd086a528, 14) # size 14
 
 class MysteryTourItemParam(Row):
 	UniqueID = U16(0x54706054) # size is 4, could this be an array?
@@ -5799,10 +5799,10 @@ class MysteryTourParam(Row):
 	FishPattern = S16(0xb1f384dc)
 	MustItem0 = U16(0xbc5f2a7b)
 	MustItem1 = U16(0x813f03cb)
-	_8f2f4bf9 = String(0x8f2f4bf9) # size 32
-	_4e5cd9f3 = String(0x4e5cd9f3) # size 32
-	_88bd09c2 = String(0x88bd09c2) # size 32
-	_7215b154 = String(0x7215b154) # size 32
+	PlayerFlagKeyON = String(0x8f2f4bf9) # string32
+	PlayerFlagKeyOFF = String(0x4e5cd9f3) # string32
+	PlayerFlagKeyAfterSelect = String(0x88bd09c2) # string32
+	LandFlagKeyON = String(0x7215b154) # string32
 	SelectWeight = U8(0xd89a0db0) # size is 2, could this be an array?
 
 class NmlNpcParam(Row):
@@ -5828,7 +5828,7 @@ class NmlNpcParam(Row):
 	AccentWall = U16(0x08238405)
 	WallType = U16(0xda63a0cc)
 	FloorType = U16(0x0b52f5bb)
-	_566f1d31 = U8(0x566f1d31)
+	InitRemakeId = U8(0x566f1d31)
 	Color2 = U8(0x265ef22d)
 	Color1 = U8(0x34eb5dc3)
 	_e52f0037 = U8(0xe52f0037)
@@ -5878,31 +5878,31 @@ class NpcCastScheduleData(Row):
 	EndMinute = U8(0x2b09d942)
 	NeglectSleep = U8(0xa78d0cc5)
 	_d507df3e = U8(0xd507df3e)
-	_e76db92f = U8(0xe76db92f)
+	UseRainGoods = U8(0xe76db92f)
 	ApplyNeedActivity = U8(0xaaae3a0f)
 	CanDoze = U8(0xac0593cc) # size is 3, could this be an array?
 
 class NpcEquipRule(Row):
 	ScoreMultiplier = Float(0xcbbe9d2d)
-	_b219374f = Enum(0xb219374f, enum_eac1ccc130ff_55f087e18a44)
-	_68d62ca8 = Enum(0x68d62ca8, enum_3f8ad7b8db09_a7b5a46a35b6)
+	ClothesPurposeLimit = Enum(0xb219374f, enum_eac1ccc130ff_55f087e18a44)
+	ClothesTemporarilyCreate = Enum(0x68d62ca8, enum_3f8ad7b8db09_a7b5a46a35b6)
 	PurposeScore = S32(0x1f401b52)
 	PurposeTag = U32(0xe765b554)
 	SeasonScore = S32(0x79be959d)
 	TasteScore = S32(0xa3dc7c4c)
-	_423d1c4d = Enum(0x423d1c4d, enum_8660a424ddf9_da4e1de32164)
+	ClothesFrequencyWear = Enum(0x423d1c4d, enum_8660a424ddf9_da4e1de32164)
 	UniqueID = U16(0x54706054)
 	Label = String(0x87bf00e8) # string32
 	Name = String(0x036e8ebe) # string64
-	_2c2a379e = U8(0x2c2a379e)
-	_a4396b29 = U8(0xa4396b29)
-	_74275e7a = U8(0x74275e7a) # possible string size 1
-	_cc198281 = U8(0xcc198281) # possible string size 1
-	_14767df7 = U8(0x14767df7) # possible string size 1
-	_744b3452 = U8(0x744b3452)
-	_a073aa81 = U8(0xa073aa81)
-	_fdf8907b = U8(0xfdf8907b)
-	_f9cf603a = U16(0xf9cf603a)
+	CapPurposeLimit = U8(0x2c2a379e)
+	CapTemporarilyCreate = U8(0xa4396b29)
+	MaskFrequencyWear = U8(0x74275e7a)
+	MaskPurposeLimit = U8(0xcc198281)
+	MaskTemporarilyCreate = U8(0x14767df7)
+	GlassesFrequencyWear = U8(0x744b3452)
+	GlassesPurposeLimit = U8(0xa073aa81)
+	GlassesTemporarilyCreate = U8(0xfdf8907b)
+	CapFrequencyWear = U8(0xf9cf603a) # size is 2, could this be an array?
 
 class NpcInterest(Row):
 	Offset = Float(0xecf95b05)
@@ -5926,7 +5926,7 @@ class NpcInterest(Row):
 	BehaviorType = U8(0x40876b17)
 	ConditionType = U8(0xa8644472)
 	MoveConditionType = U8(0xa0efadac)
-	_6bcf870d = U8(0x6bcf870d)
+	InterestEndModeType = U8(0x6bcf870d)
 	MoveASType = String(0x604df507) # string32
 	WaitASType = String(0x8eabc257) # string32
 	NeedType = U8(0xd6b82305)
@@ -5971,7 +5971,7 @@ class NpcLife(Row):
 	LiveMotif = U8(0x1f3bcf5e)
 	HobbyMotif = U8(0xa42b13ce)
 	LookAtType = U8(0x35c78d62)
-	SpotType = RawData(0x9bc85bd0, 3)
+	SpotType = RawData(0x9bc85bd0, 3) # size 2
 	FlagType = U8(0x430dbf65)
 	GroupActivityPlacementType = U8(0xbdd4dc0f) # size is 2, could this be an array?
 
@@ -6014,44 +6014,44 @@ class NpcLooksParam(Row):
 
 class NpcMoveRoomTemplate(Row):
 	RoomType = U32(0xd9a1f501)
-	_ef0088e8 = U8(0xef0088e8)
+	XUnitIndex = S8(0xef0088e8)
 	Size = S8(0x0b6d59d2)
 	GroupIndex = S8(0xb12e26da)
-	_8f5c3da3 = U8(0x8f5c3da3)
+	ZUnitIndex = S8(0x8f5c3da3)
 	Direction = S8(0x3a1fca06) # size is 4, could this be an array?
 
 class NpcMsgBullfestParam(Row):
 	NpcMsgBullfestCondition = Enum(0xddf1f8bf, enum_47e581a0f3c1_94306367028d)
-	_5ef56066 = U16(0x5ef56066)
+	KO1Index = S16(0x5ef56066)
 	CapID = U16(0x8ff469e1)
 	AccessoryID = U16(0x478dd182)
 	TopsID = U16(0xdfb46994)
 	BottomsID = U16(0x524596a2)
 	SocksID = U16(0xe113ac8d)
 	ShoesID = U16(0xf07156d2)
-	_c35c5af7 = U16(0xc35c5af7)
-	_286be1f4 = U16(0x286be1f4) # possible string size 2
-	_7b1d9990 = U16(0x7b1d9990)
-	_902a2293 = U16(0x902a2293) # possible string size 2
+	BO1Index = S16(0xc35c5af7)
+	BO2Index = S16(0x286be1f4)
+	HA1Index = S16(0x7b1d9990)
+	HA2Index = S16(0x902a2293)
 	UniqueID = U16(0x54706054)
-	_b5c2db65 = U16(0xb5c2db65) # possible string size 2
-	_7991b277 = U16(0x7991b277)
-	_92a60974 = U16(0x92a60974) # possible string size 2
-	_8c03fdc7 = U16(0x8c03fdc7)
-	_673446c4 = U16(0x673446c4) # possible string size 2
-	_b9507563 = U16(0xb9507563)
-	_5267ce60 = U16(0x5267ce60) # possible string size 2
-	_d0241896 = U16(0xd0241896)
-	_3b13a395 = U16(0x3b13a395) # possible string size 2
-	_754c57c7 = U16(0x754c57c7)
-	_9e7becc4 = U32(0x9e7becc4) # possible string size 4
+	KO2Index = S16(0xb5c2db65)
+	ZK1Index = S16(0x7991b277)
+	ZK2Index = S16(0x92a60974)
+	FU1Index = S16(0x8c03fdc7)
+	FU2Index = S16(0x673446c4)
+	GE1Index = S16(0xb9507563)
+	GE2Index = S16(0x5267ce60)
+	OT1Index = S16(0xd0241896)
+	OT2Index = S16(0x3b13a395)
+	AN1Index = S16(0x754c57c7)
+	AN2Index = S16(0x9e7becc4) # size is 4, could this be an array?
 
 class NpcRoomTemplate(Row):
 	RoomType = U32(0xd9a1f501)
-	_ef0088e8 = U8(0xef0088e8)
+	XUnitIndex = S8(0xef0088e8)
 	Size = S8(0x0b6d59d2)
 	GroupIndex = S8(0xb12e26da)
-	_8f5c3da3 = U8(0x8f5c3da3)
+	ZUnitIndex = S8(0x8f5c3da3)
 	Direction = S8(0x3a1fca06) # size is 4, could this be an array?
 
 class NpcSpClothSetParam(Row):
@@ -6067,16 +6067,16 @@ class NpcSpClothSetParam(Row):
 	Name = String(0x036e8ebe) # string64
 
 class NpcSpModelScale(Row):
-	_c7a5b572 = U32(0xc7a5b572)
-	_8005cfa2 = U32(0x8005cfa2) # possible string size 4
-	_48e540d2 = U32(0x48e540d2) # possible string size 4
+	NormalScaleBottomsA = Float(0xc7a5b572)
+	NormalScaleBottomsB = Float(0x8005cfa2)
+	NormalScaleBottomsG = Float(0x48e540d2)
 	NormalScaleNR = Float(0x60edacd3)
 	NormalScaleNG = Float(0xc8edb421)
 	NormalScaleNB = Float(0x000d3b51)
 	NormalScaleNA = Float(0x47ad4181)
 	NormalScaleHR = Float(0xb6b44fce)
 	NormalScaleHG = Float(0x1eb4573c)
-	_e0e55820 = U32(0xe0e55820) # possible string size 4
+	NormalScaleBottomsR = Float(0xe0e55820)
 	NormalScaleHA = Float(0x91f4a29c)
 	NormalScaleLR = Float(0x2d250dd8)
 	NormalScaleLG = Float(0x8525152a)
@@ -6141,13 +6141,13 @@ class PlayerStateParam(Row):
 	_16e483f0 = U8(0x16e483f0)
 	_5b6d5751 = U8(0x5b6d5751)
 	StateName = String(0x2ae273e3) # string48
-	_497ac4d6 = U8(0x497ac4d6)
+	CanChaseForInsect = U8(0x497ac4d6)
 	BeesRunAway = U8(0x730cefc8)
 	_63f77486 = U8(0x63f77486)
 	_65fd6b0d = U8(0x65fd6b0d)
 	HideHUD = U8(0x5681a1c3)
-	_e550abdf = U8(0xe550abdf)
-	_1aaaddc1 = U8(0x1aaaddc1)
+	HideFoodCounter = U8(0xe550abdf)
+	DummyMenuDemo = U8(0x1aaaddc1)
 	StopAutoSave = U8(0xfce7d916)
 	EnableStageChange = U8(0xecfe9ddb)
 	BgmEnd = U8(0xa9f6fac2)
@@ -6155,7 +6155,7 @@ class PlayerStateParam(Row):
 	AcceptAccess = U8(0xa6324d34)
 	_f413acd2 = U8(0xf413acd2)
 	PoseTrans = U8(0xfbb451bf)
-	_68daf155 = U8(0x68daf155)
+	EnableRodCloth = U8(0x68daf155)
 	NpcLookAction = U8(0xa1b074dd)
 	_5dcf7b24 = U8(0x5dcf7b24)
 	_aa0070b7 = U8(0xaa0070b7)
@@ -6228,7 +6228,7 @@ class RoomCurtainTexParam(Row):
 class RoomFloorParam(Row):
 	Act = Enum(0xf74f3d2c, enum_0caaf5f51cb7_b79133e4ebb1)
 	Price = S32(0x718b024d)
-	_b117eb21 = Enum(0xb117eb21, enum_67d8f9fad662_3c4e63ce8503)
+	Scale10x6 = Enum(0xb117eb21, enum_67d8f9fad662_3c4e63ce8503)
 	Scale = Enum(0x49295020, enum_67d8f9fad662_3c4e63ce8503)
 	UniqueID = U16(0x54706054)
 	LandingUniqueID = U16(0x8fced711)
@@ -6302,11 +6302,11 @@ class ShopItemRouteFlags(Row):
 
 class SoundAttributeForGround(Row):
 	UniqueID = U16(0x54706054)
-	_5e7a33b5 = U16(0x5e7a33b5)
+	RefSoundAttributeID = U16(0x5e7a33b5)
 
 class SoundAttributeForPlacement(Row):
 	UniqueID = U16(0x54706054)
-	_5e7a33b5 = U16(0x5e7a33b5)
+	RefSoundAttributeID = U16(0x5e7a33b5)
 
 class SoundAudioMusic(Row):
 	UniqueID = U16(0x54706054)
@@ -6438,7 +6438,7 @@ class StructureHouseRoofParam(Row):
 
 class StructureHouseShapeParam(Row):
 	AppearanceLevel = Enum(0x10dbd8bb, enum_719f8c5ace1e_9dc2d1c92509)
-	_e6fc6624 = U16(0xe6fc6624)
+	HousePartsType = U16(0xe6fc6624)
 	UniqueID = U16(0x54706054)
 	DefaultWallUniqueID = U16(0xd8727d7d)
 	DefaultDoorUniqueID = U16(0xc86e60d5)
@@ -6461,7 +6461,7 @@ class StructureInfoParam(Row):
 	_fec3548b = U32(0xfec3548b)
 	StructureInfoType = Enum(0xd6704d8b, enum_3f984d1a17ec_8f1bbc952a3f)
 	ModelType = Enum(0xc01e47a7, enum_3f984d1a17ec_8f1bbc952a3f)
-	_1ff4093d = Enum(0x1ff4093d, enum_8d64dd844b09_8d64dd844b09)
+	HousePartsType = Enum(0x1ff4093d, enum_8d64dd844b09_8d64dd844b09)
 	StructureInfoHouseType = Enum(0xcc24374e, enum_5fe6f47ed555_cd0b35a4b9fb)
 	Door0 = U16(0x0d664b5c)
 	UniqueID = U16(0x54706054)

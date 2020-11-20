@@ -4997,8 +4997,8 @@ class EventPlazaPlacementParam(Row):
 	CalendarEventKey = String(0x52f0badd) # string32
 	_b8e42602 = U8(0xb8e42602)
 	DisableInDream = U8(0x30127dfd)
-	_e6c63c5c = String(0xe6c63c5c) # size 32
-	_7215b154 = String(0x7215b154) # size 32
+	LandFlagKeyOFF = String(0xe6c63c5c) # string32
+	LandFlagKeyON = String(0x7215b154) # string32
 	NpcSpLabel = String(0x5ba37406) # string32
 	PlacementKey = String(0xe2d0ac54) # string32
 	VisitorNpcLabel = String(0x7e322ef0) # string32
@@ -6154,11 +6154,11 @@ class MysteryTourParam(Row):
 	MysteryTourFieldUniqueID = U16(0x72573f73)
 	MysteryTourItemUniqueID = U16(0x7a09986c)
 	UniqueID = U16(0x54706054)
-	_7215b154 = String(0x7215b154) # size 32
-	_88bd09c2 = String(0x88bd09c2) # size 32
-	_4e5cd9f3 = String(0x4e5cd9f3) # size 32
-	_8f2f4bf9 = String(0x8f2f4bf9) # size 32
-	_0b3d1d54 = String(0x0b3d1d54) # size 32
+	LandFlagKeyON = String(0x7215b154) # string32
+	PlayerFlagKeyAfterSelect = String(0x88bd09c2) # string32
+	PlayerFlagKeyOFF = String(0x4e5cd9f3) # string32
+	PlayerFlagKeyON = String(0x8f2f4bf9) # string32
+	PlayerFlagKeyON2 = String(0x0b3d1d54) # string32
 	SelectWeight = U8(0xd89a0db0)
 	StatusPattern = U8(0xb1589411)
 

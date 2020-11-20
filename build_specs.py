@@ -77,6 +77,7 @@ preset_names = {
 	0x0ac45a99: 'Month2033 u8',
 	0x0aca2b48: 'ReFabricPattern5Color1 u8',
 	0x0ae6386e: 'Month2057 u8',
+	0x0b3d1d54: 'PlayerFlagKeyON2 string32',
 	0x0b52f5bb: 'FloorType u16',
 	0x0b69ec1a: 'LowerSetting.hshCstringRef',
 	0x0b6d59d2: 'Size s8',
@@ -472,6 +473,7 @@ preset_names = {
 	0x4dc59a5a: 'NormalScaleLB f32',
 	0x4e3ee3de: 'NpcResName string64',
 	0x4e46c669: 'PropertyID u16',
+	0x4e5cd9f3: 'PlayerFlagKeyOFF string32',
 	0x4e718582: 'FloorItemId u16',
 	0x4e7f3849: 'Reward1 u32',
 	0x4ec849ec: 'ToolRightModelName string20',
@@ -538,6 +540,7 @@ preset_names = {
 	0x5971a42e: 'WaitFrame u32',
 	0x598463c8: 'RequiredNum u32',
 	0x599ab542: 'OnepieceNNormalScaleMaskA f32',
+	0x59a07c63: 'Open2020 u8',
 	0x59d78633: 'TriangleType.hshCstringRef',
 	0x5a52c5f4: 'SkinEdgeColorB f32',
 	0x5aa21d87: 'Hobby2 u32',
@@ -680,6 +683,7 @@ preset_names = {
 	0x718b024d: 'Price s32',
 	0x71bf253b: 'BromideItemID s16',
 	0x71df75a1: 'ResourceNameSp5 string33',
+	0x7215b154: 'LandFlagKeyON string32',
 	0x72573f73: 'MysteryTourFieldUniqueID u16',
 	0x730cefc8: 'BeesRunAway u8',
 	0x736adca8: 'FlagAnim u16', # possibly?
@@ -796,6 +800,7 @@ preset_names = {
 	0x87ff95cc: 'Output u8',
 	0x8845b2df: 'RefabricPattern3LightColor u32',
 	0x88a6501c: 'SewingRecipeID s16',
+	0x88bd09c2: 'PlayerFlagKeyAfterSelect string32',
 	0x88e75dd6: 'OnepieceHNormalScaleMaskR f32',
 	0x88ff5893: 'Door0Angle f32',
 	0x8900b8a0: 'ItemDailyCategory.hshCstringRef',
@@ -831,6 +836,7 @@ preset_names = {
 	0x8ed948dd: 'Rotatable u8',
 	0x8f18144c: 'Month2022 u8',
 	0x8f24f1a4: 'RotateOffsetY f32',
+	0x8f2f4bf9: 'PlayerFlagKeyON string32',
 	0x8f3a76bb: 'Month2046 u8',
 	0x8f4fe5ee: 'BackRotateOffsetY f32',
 	0x8f5c3da3: 'ZUnitIndex s8',
@@ -1359,6 +1365,7 @@ preset_names = {
 	0xe0f10f2f: 'EndMoS2 u8',
 	0xe0f6f32f: 'FlagLand2 s32',
 	0xe113ac8d: 'SocksID u16',
+	0xe11c1b06: 'Open2021 u8',
 	0xe1bf0894: 'WallPlaceType.hshCstringRef',
 	0xe1e934d5: 'JudgeVisibleOn u8', # check me, really
 	0xe1fd904b: 'ReFabricPattern6Color1 u8',
@@ -1391,6 +1398,7 @@ preset_names = {
 	0xe626f1b5: 'Amount5 u16',
 	0xe6317726: 'TalkValueVisitor u16',
 	0xe65df243: 'CaptureFtrIcon u8',
+	0xe6c63c5c: 'LandFlagKeyOFF string32',
 	0xe6fc6624: 'HousePartsType u16',
 	0xe7534ab5: 'VmPauseType u8',
 	0xe765b554: 'PurposeTag u32',
@@ -1648,6 +1656,18 @@ if __name__ == '__main__':
 	with open(sys.argv[2], 'rb') as f:
 		enumData = json.load(f)
 
+	candidates = None
+	if len(sys.argv) > 3 and sys.argv[3] != '-p':
+		candidates = {}
+		for line in open(sys.argv[3], 'r'):
+			hsh, _, name = line.strip().split(':')
+			try:
+				candidates[hsh].append(name)
+			except KeyError:
+				candidates[hsh] = [name]
+		for lst in candidates.values():
+			lst.sort()
+
 	# build info for each field we know of
 	enLookup, jpLookup = {}, {}
 
@@ -1745,6 +1765,12 @@ if __name__ == '__main__':
 					else:
 						possible.append('string%d' % size)
 					missing_hashes[key] = '/'.join(possible)
+					if candidates and ('%08x' % key) in candidates:
+						for candidate in candidates['%08x' % key]:
+							if size == 1 and not candidate.endswith('8'): continue
+							if size == 2 and (candidate.endswith('32') or candidate.endswith('stringRef')): continue
+							if size == 4 and (strippedName, key) in enLookup and not candidate.endswith('stringRef'): continue
+							print('\t\t# possible: ' + candidate)
 			print()
 
 	print('lookup = {')
