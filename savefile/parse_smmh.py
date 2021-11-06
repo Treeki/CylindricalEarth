@@ -16,15 +16,15 @@ MAX_FIELD_NAME_LEN = 0
 import json
 with open('save_keys.json', 'r') as f:
     blob = json.load(f)
-    FIELD_KEYS = {int(k): v for k,v in blob['f'].items() if v is not None}
-    TYPE_KEYS = {int(k): v for k,v in blob['t'].items() if v is not None}
+    FIELD_KEYS = {int(k, 16): v for k,v in blob['f'].items()}
+    TYPE_KEYS = {int(k, 16): v for k,v in blob['t'].items()}
 
 KEY_CHECK_DEBUG = False
 if KEY_CHECK_DEBUG:
     with open('save_keys_manualCleanup2.json', 'r') as f:
         blob = json.load(f)
-        KEY_CHECK_FIELDS = {int(k): v for k,v in blob['f'].items()}
-        KEY_CHECK_TYPES = {int(k): v for k,v in blob['t'].items()}
+        KEY_CHECK_FIELDS = {int(k, 16): v for k,v in blob['f'].items()}
+        KEY_CHECK_TYPES = {int(k, 16): v for k,v in blob['t'].items()}
         FIELD_KEYS = {k: v[0] for k,v in KEY_CHECK_FIELDS.items() if len(v) == 1}
         TYPE_KEYS = {k: v[0] for k,v in KEY_CHECK_TYPES.items() if len(v) == 1}
 
@@ -99,7 +99,7 @@ class SaveDefinition:
         self.types = {}
 
         struct_types = set([e[KEY_TYPE_ID] for e in yaml])
-        struct_names = {k: TYPE_KEYS.get(k, 's_%08x' % k) for k in struct_types}
+        struct_names = {k: TYPE_KEYS[k] or ('s_%08x' % k) for k in struct_types}
 
         for entry in yaml:
             type_id = entry[KEY_TYPE_ID]
@@ -109,8 +109,8 @@ class SaveDefinition:
                 field_type_id = field[KEY_TYPE_ID]
                 field_id = field[KEY_FIELD_ID]
                 type_obj.fields.append(SaveField(
-                    field_type_id, struct_names.get(field_type_id, TYPE_KEYS.get(field_type_id, '_%08x' % field_type_id)),
-                    field_id, FIELD_KEYS.get(field_id, '_%08x' % field_id),
+                    field_type_id, struct_names.get(field_type_id, TYPE_KEYS[field_type_id] or ('_%08x' % field_type_id)),
+                    field_id, FIELD_KEYS[field_id] or ('_%08x' % field_id),
                     field[KEY_SIZE], field[KEY_OFFSET], field[KEY_LENGTH_1],
                     field.get(KEY_LENGTH_2, 1), field[KEY_ALIGNMENT]))
             type_obj.fields.sort(key=lambda f: f.offset)
@@ -134,19 +134,28 @@ with open('typeHashes', 'w') as f:
     for h in type_hashes:
         if h not in TYPE_KEYS or TYPE_KEYS[h] == None:
             f.write(f'{h:08x}:00000000\n')
+            TYPE_KEYS[h] = None
 with open('fieldHashes', 'w') as f:
     for h in field_hashes:
         if h not in FIELD_KEYS or FIELD_KEYS[h] == None:
             f.write(f'{h:08x}:00000000\n')
+            FIELD_KEYS[h] = None
 #with open('all_save_field_keys.json', 'w') as f:
 #    json.dump({'t': list(type_hashes), 'f': list(field_hashes)}, f)
-
+with open('save_keys.json', 'w') as f:
+    obj = {
+        't': {('%08x' % k): v for k,v in TYPE_KEYS.items()},
+        'f': {('%08x' % k): v for k,v in FIELD_KEYS.items()}
+    }
+    json.dump(obj, f, sort_keys=True, indent=4)
 
 def dump(path, version):
     types = {}
-    for name in ('P00', 'P01', 'P02', 'P03', 'S00'):
-        sd = SaveDefinition(open(f'{path}/{name}_{version}.byml', 'rb').read())
-        types.update(sd.types)
+    for name in ('M00', 'P00', 'P01', 'P02', 'P03', 'P04', 'S00'):
+        byml_path = f'{path}/{name}_{version}.byml'
+        if os.path.exists(byml_path):
+            sd = SaveDefinition(open(byml_path, 'rb').read())
+            types.update(sd.types)
 
     jtypes = {}
     jprimitives = {}
@@ -191,3 +200,9 @@ if __name__ == '__main__':
     dump(sys.argv[1], '327691_327681')
     dump(sys.argv[1], '393228_393217')
     dump(sys.argv[1], '458758_458753')
+    dump(sys.argv[1], '475141_475137')
+    dump(sys.argv[1], '491521_491521')
+    dump(sys.argv[1], '507910_507905')
+    dump(sys.argv[1], '512004_512001')
+    dump(sys.argv[1], '516097_516097')
+    dump(sys.argv[1], '524421_524297')

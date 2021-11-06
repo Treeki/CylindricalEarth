@@ -2960,7 +2960,7 @@
                 },
                 {
                     "id": 1995260990,
-                    "name": "_76ed443e",
+                    "name": "CoordinateIconItem",
                     "type": 1106985317,
                     "size": 8,
                     "offset": 4592,
@@ -5700,7 +5700,7 @@
                 },
                 {
                     "id": 3098527542,
-                    "name": "_b8afc736",
+                    "name": "InfoBit2",
                     "type": 1153857660,
                     "size": 1,
                     "offset": 32,
@@ -6563,7 +6563,7 @@
                 },
                 {
                     "id": 2883735923,
-                    "name": "_abe25173",
+                    "name": "TodayAddItem",
                     "type": 1106985317,
                     "size": 8,
                     "offset": 4780,

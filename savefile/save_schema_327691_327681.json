@@ -597,7 +597,7 @@
                 },
                 {
                     "id": 2350549960,
-                    "name": "_8c1a8bc8",
+                    "name": "FavoriteDesignerList",
                     "type": 3812197642,
                     "size": 25200,
                     "offset": 230248,
@@ -3252,7 +3252,7 @@
                 },
                 {
                     "id": 1995260990,
-                    "name": "_76ed443e",
+                    "name": "CoordinateIconItem",
                     "type": 1106985317,
                     "size": 8,
                     "offset": 4592,
@@ -5308,7 +5308,7 @@
             "fields": [
                 {
                     "id": 2350549960,
-                    "name": "_8c1a8bc8",
+                    "name": "FavoriteDesignerList",
                     "type": 386928239,
                     "size": 25200,
                     "offset": 0,
@@ -6257,7 +6257,7 @@
                 },
                 {
                     "id": 3098527542,
-                    "name": "_b8afc736",
+                    "name": "InfoBit2",
                     "type": 1153857660,
                     "size": 1,
                     "offset": 32,
@@ -7357,7 +7357,7 @@
                 },
                 {
                     "id": 2883735923,
-                    "name": "_abe25173",
+                    "name": "TodayAddItem",
                     "type": 1106985317,
                     "size": 8,
                     "offset": 4780,
@@ -9138,7 +9138,7 @@
             ]
         },
         "1144841916": {
-            "name": "s_443ce6bc",
+            "name": "::Game::SaveAudioInfoV2",
             "size": 32,
             "alignment": 4,
             "fields": [
@@ -12719,7 +12719,7 @@
                 },
                 {
                     "id": 500423372,
-                    "name": "_1dd3dacc",
+                    "name": "AudioInfoV2",
                     "type": 1144841916,
                     "size": 32,
                     "offset": 893612,
@@ -12910,7 +12910,7 @@
                 },
                 {
                     "id": 178659979,
-                    "name": "_0aa6228b",
+                    "name": "DreamUploaderPOPID",
                     "type": 2832377044,
                     "size": 8,
                     "offset": 56,
